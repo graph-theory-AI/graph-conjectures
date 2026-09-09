@@ -1,0 +1,2 @@
+      1 k=4 win_cf=1 rounds_cf=1
+     10 k=4 win_cf=1 rounds_cf=2
