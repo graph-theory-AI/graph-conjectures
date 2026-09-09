@@ -91,8 +91,7 @@ tests/                  smoke test: builds the solver and checks Petersen = 3, R
 ```
 
 The regenerable `geng` enumerations are not committed; the exact commands are in
-[docs/computations.md](docs/computations.md). A LaTeX write-up with a dated progress log lives in
-the companion repository `graph-theory-AI/meyniels-conjecture` (private at the time of writing).
+[docs/computations.md](docs/computations.md).
 
 ## Start here
 
