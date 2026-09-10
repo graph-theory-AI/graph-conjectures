@@ -67,10 +67,10 @@ def _author_slug_from_name(name: str) -> str:
 def _build_search_text(p: dict) -> str:
     """Lowercase concatenation of all searchable text for a row (used by index filter)."""
     parts = [p.get("title", ""), "source:" + p.get("_source", "opg")]
-    if p.get("_source") == "arxiv":
+    if p.get("_source") in ("arxiv", "bm"):
         parts += [p.get("statement_text", "")]
         parts += [a.get("label", "") for a in p.get("authors", [])]
-        parts += [p.get("attributed_to", ""), p.get("kind", "")]
+        parts += [p.get("attributed_to", ""), p.get("kind", ""), p.get("section", "")]
     else:
         parts += [s.get("text", "") for s in p.get("statements", [])]
         parts += [a.get("label", "") for a in p.get("authors", [])]
@@ -173,6 +173,9 @@ def _timeline_row(
         page_slug = item.get("_review_id") or item.get("safe_id") or item.get("slug", "")
         url = f"arxiv/{page_slug}/"
         subtitle = item.get("paper_title", "")
+    elif source == "bm":
+        url = f"bm/{item.get('bm_id', '')}/"
+        subtitle = f"Bondy–Murty, Graph Theory, Appendix A, item {item.get('appendix_number')}"
     else:
         url = f"op/{item.get('slug', '')}/"
         subtitle = ""
@@ -194,9 +197,17 @@ def _timeline_row(
     }
 
 
+def _claim_year_for_bm(row: dict) -> tuple[int | None, str]:
+    year = row.get("attributed_year")
+    if isinstance(year, int):
+        return year, "attribution"
+    return None, "unknown"
+
+
 def _build_timeline_rows(
     problems: list[dict],
     arxiv_rows: list[dict],
+    bm_rows: list[dict] | None = None,
 ) -> tuple[list[dict], list[dict]]:
     rows: list[dict] = []
     for problem in problems:
@@ -216,6 +227,16 @@ def _build_timeline_rows(
 
         start_year, start_basis = _claim_year_for_arxiv(arxiv_row)
         row = _timeline_row(arxiv_row, review, start_year, start_basis, "arxiv")
+        if row:
+            rows.append(row)
+
+    for bm_row in bm_rows or []:
+        review = bm_row.get("_review")
+        if not review or review.get("status") not in {"solved", "disproved"}:
+            continue
+
+        start_year, start_basis = _claim_year_for_bm(bm_row)
+        row = _timeline_row(bm_row, review, start_year, start_basis, "bm")
         if row:
             rows.append(row)
 
@@ -329,6 +350,51 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "_review_id":      rec.get("_review_id"),
         "_nice_name":      nice_name,
         "_paper_label":    paper_label,
+    }
+
+
+def _virtual_problem_from_bm(rec: dict) -> dict:
+    """Project a Bondy–Murty Appendix A record (data/bondy_murty_conjectures.json)
+    into the same row shape as an OPG problem, so the index, timeline and
+    relation machinery can treat all three corpora alike."""
+    bm_id      = rec["bm_id"]
+    src        = rec.get("source") or {}
+    attributed = rec.get("attributed_to", "") or ""
+    year       = rec.get("attributed_year")
+    section    = rec.get("section", "") or ""
+    return {
+        "_source":         "bm",
+        "slug":            bm_id,                         # used for URL path
+        "bm_id":           bm_id,
+        "appendix_number": rec.get("appendix_number"),
+        "section":         section,
+        "title":           rec.get("title") or f"Bondy–Murty Appendix A, item {rec.get('appendix_number')}",
+        "statements":      [{"kind": rec.get("kind", "Conjecture"),
+                             "text": rec.get("statement_text", ""), "html": ""}],
+        "statement_text":  rec.get("statement_text", ""),
+        "context_text":    rec.get("context_text", ""),
+        "attributed_to":   attributed,
+        "attributed_year": year,
+        "kind":            rec.get("kind", "Conjecture"),
+        "book_refs":       rec.get("book_refs") or [],
+        "coverage":        rec.get("coverage", ""),
+        "related":         rec.get("related") or [],
+        "notes":           rec.get("notes", ""),
+        "source_info":     src,
+
+        # Fields shared with OPG problems so the same templates can render them.
+        "authors":         [{"label": attributed, "slug": ""}] if attributed else [],
+        "subject_path":    [{"slug": "", "label": section}] if section else [],
+        "keywords":        [],
+        "discussion_text": "",
+        "references":      [],
+        "importance":      {"label": "—", "stars": 0},
+        "posted_by":       None,
+        "posted_at":       str(year) if isinstance(year, int) else "",
+        "canonical_url":   src.get("url", ""),
+        "_erdos":          None,
+        "_review":         rec.get("_review"),
+        "_review_id":      bm_id,
     }
 
 
@@ -477,6 +543,24 @@ def main(argv: list[str] | None = None) -> int:
     log.info("attached %d arxiv reviews and %d nice names to states records",
              n_reviews_attached, n_names_attached)
 
+    # ── load Bondy–Murty Appendix A data (optional) ────────────────────────────
+    bm_path        = args.data_dir / "bondy_murty_conjectures.json"
+    bm_reviews_dir = args.data_dir / "bondy_murty_reviews"
+    bm_records = (
+        json.loads(bm_path.read_text(encoding="utf-8"))
+        if bm_path.exists() else []
+    )
+    n_bm_reviews = 0
+    for rec in bm_records:
+        rp = bm_reviews_dir / f"{rec['bm_id']}.json"
+        if rp.exists():
+            try:
+                rec["_review"] = json.loads(rp.read_text(encoding="utf-8"))
+                n_bm_reviews += 1
+            except Exception as e:  # noqa: BLE001
+                log.warning("could not load Bondy–Murty review %s: %s", rp.name, e)
+    log.info("loaded %d Bondy–Murty record(s), %d with a review", len(bm_records), n_bm_reviews)
+
     # Manually-curated set of confirmed cross-refs to erdosproblems.com.
     confirmed_intersection_slugs = {
         "erdos_faber_lovasz_conjecture",
@@ -502,8 +586,12 @@ def main(argv: list[str] | None = None) -> int:
     arxiv_rows = [_virtual_problem_from_arxiv(r) for r in arxiv_states]
     log.info("built %d arxiv virtual row(s)", len(arxiv_rows))
 
+    # ── virtualise Bondy–Murty records as rows ─────────────────────────────────
+    bm_rows = [_virtual_problem_from_bm(r) for r in bm_records]
+    log.info("built %d Bondy–Murty virtual row(s)", len(bm_rows))
+
     # ── compute _search for every row ──────────────────────────────────────────
-    for row in problems + arxiv_rows:
+    for row in problems + arxiv_rows + bm_rows:
         row["_search"] = _build_search_text(row)
 
     # ── conjecture relation graph (optional; data/relations.json) ──────────────
@@ -543,6 +631,16 @@ def main(argv: list[str] | None = None) -> int:
             # arXiv extraction keeps definitions/background in context_text.
             "context":   row.get("context_text", ""),
         }
+    for row in bm_rows:
+        rel_node_meta["bm:" + row["bm_id"]] = {
+            "name":      row["title"],
+            "status":    (row.get("_review") or {}).get("status"),
+            "url":       f"bm/{row['bm_id']}/",
+            "source":    "bm",
+            "kind":      row.get("kind", ""),
+            "statement": row.get("statement_text", ""),
+            "context":   row.get("context_text", ""),
+        }
     rel_graph = build_relations_graph(relations, rel_node_meta) if relations else None
     rel_by_node = relations_by_node(relations, rel_node_meta) if relations else {}
     if rel_graph:
@@ -568,7 +666,14 @@ def main(argv: list[str] | None = None) -> int:
             s = r["_review"].get("status", "unclear")
             arxiv_review_status_counts[s] = arxiv_review_status_counts.get(s, 0) + 1
 
-    timeline_rows, timeline_ticks = _build_timeline_rows(problems, arxiv_rows)
+    bm_review_count = sum(1 for r in bm_rows if r.get("_review"))
+    bm_review_status_counts: dict[str, int] = {}
+    for r in bm_rows:
+        if r.get("_review"):
+            s = r["_review"].get("status", "unclear")
+            bm_review_status_counts[s] = bm_review_status_counts.get(s, 0) + 1
+
+    timeline_rows, timeline_ticks = _build_timeline_rows(problems, arxiv_rows, bm_rows)
     timeline_status_counts: dict[str, int] = {}
     timeline_source_counts: dict[str, int] = {}
     for row in timeline_rows:
@@ -578,7 +683,7 @@ def main(argv: list[str] | None = None) -> int:
         timeline_source_counts[src] = timeline_source_counts.get(src, 0) + 1
 
     rows_sorted = sorted(
-        problems + arxiv_rows,
+        problems + arxiv_rows + bm_rows,
         key=lambda r: (
             -r.get("importance", {}).get("stars", 0),
             -(int(r.get("posted_at", "0000")[:4])
@@ -605,6 +710,9 @@ def main(argv: list[str] | None = None) -> int:
         "arxiv_count":          len(arxiv_rows),
         "arxiv_review_count":   arxiv_review_count,
         "arxiv_review_status_counts": arxiv_review_status_counts,
+        "bm_count":             len(bm_rows),
+        "bm_review_count":      bm_review_count,
+        "bm_review_status_counts": bm_review_status_counts,
         "timeline_count":       len(timeline_rows),
         "timeline_status_counts": timeline_status_counts,
         "timeline_source_counts": timeline_source_counts,
@@ -624,8 +732,8 @@ def main(argv: list[str] | None = None) -> int:
         env.get_template("index.html").render(root="", rows=rows_sorted, **common),
         encoding="utf-8",
     )
-    log.info("wrote index.html (%d rows: %d OPG + %d arXiv)",
-             len(rows_sorted), len(problems), len(arxiv_rows))
+    log.info("wrote index.html (%d rows: %d OPG + %d arXiv + %d Bondy–Murty)",
+             len(rows_sorted), len(problems), len(arxiv_rows), len(bm_rows))
 
     # Timeline of resolved OPG and arXiv conjectures
     timeline_dir = args.site_dir / "timeline"
@@ -713,6 +821,41 @@ def main(argv: list[str] | None = None) -> int:
                 encoding="utf-8",
             )
         log.info("wrote %d arXiv page(s) under arxiv/", len(arxiv_rows))
+
+    # Bondy–Murty Appendix A detail pages
+    if bm_rows:
+        bm_dir = args.site_dir / "bm"
+        bm_dir.mkdir(parents=True, exist_ok=True)
+        bm_template  = env.get_template("bm_problem.html")
+        opg_titles   = {p["slug"]: p["title"] for p in problems}
+        arxiv_titles = {r["_review_id"]: r["title"] for r in arxiv_rows if r.get("_review_id")}
+        for row in bm_rows:
+            related: list[dict] = []
+            for r in row.get("related", []):
+                corpus, note = r.get("corpus"), r.get("note", "")
+                if corpus == "opg" and r.get("slug") in opg_titles:
+                    related.append({"url": f"op/{r['slug']}/", "title": opg_titles[r["slug"]],
+                                    "note": note, "external": False})
+                elif corpus == "arxiv" and r.get("id") in arxiv_titles:
+                    related.append({"url": f"arxiv/{r['id']}/", "title": arxiv_titles[r["id"]],
+                                    "note": note, "external": False})
+                elif corpus == "erdosproblems" and r.get("id"):
+                    related.append({"url": f"https://www.erdosproblems.com/{r['id']}",
+                                    "title": f"erdosproblems.com #{r['id']}", "note": note, "external": True})
+                else:
+                    log.warning("Bondy–Murty %s: unresolved related record %r", row["bm_id"], r)
+            sub_dir = bm_dir / row["bm_id"]
+            sub_dir.mkdir(parents=True, exist_ok=True)
+            node_id = "bm:" + row["bm_id"]
+            (sub_dir / "index.html").write_text(
+                bm_template.render(
+                    root="../../", p=row, related=related,
+                    node_id=node_id, node_relations=rel_by_node.get(node_id),
+                    **common,
+                ),
+                encoding="utf-8",
+            )
+        log.info("wrote %d Bondy–Murty page(s) under bm/", len(bm_rows))
 
     # Tag and author landing pages — same machinery, both OPG and arXiv rows
     tag_template = env.get_template("tag.html")

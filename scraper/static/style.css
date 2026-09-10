@@ -123,6 +123,7 @@ table.problems-table th.sorted-desc::after { content: ' ▼'; font-size: 0.7em; 
 }
 .badge.source-opg   { background: var(--accent-bg); color: var(--accent); }
 .badge.source-arxiv { background: #fff3e0;          color: #b85c00;       }
+.badge.source-bm    { background: #e8f5e9;          color: #1b5e20;       }
 .badge.pdf-source   { background: #ececec;          color: #555;           font-size: 0.7rem; padding: 0.05rem 0.35rem; border-radius: 3px; }
 
 .status-summary {
