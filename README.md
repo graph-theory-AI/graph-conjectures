@@ -3,7 +3,8 @@
 ![Resolved graph conjectures timeline](scraper/static/resolved-conjectures-timeline.png)
 
 Resolved-conjecture timeline: 96 solved or disproved conjectures, split across
-OPG literature reviews and arXiv-extracted conjectures. Editable SVG:
+OPG literature reviews and arXiv-extracted conjectures (the image predates the
+Bondy–Murty corpus, which adds 4 more; the site's `/timeline/` page shows all 100). Editable SVG:
 [`scraper/static/resolved-conjectures-timeline.svg`](scraper/static/resolved-conjectures-timeline.svg).
 
 A browseable, status-annotated mirror of the **graph-theory category** of
