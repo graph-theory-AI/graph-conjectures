@@ -15,7 +15,7 @@
     {% if problem_count - review_count > 0 %}<span class="status-pending">{{ problem_count - review_count }} unreviewed</span>{% endif %}
   </span>
   {% endif %}
-  {% if arxiv_review_count %}
+  {% if arxiv_count %}
   <span class="status-summary" title="arXiv conjecture-review status counts">
     arXiv:
     {% for s in ['open','partial','solved','disproved','unclear'] -%}
@@ -26,7 +26,7 @@
     {% if arxiv_count - arxiv_review_count > 0 %}<span class="status-pending">{{ arxiv_count - arxiv_review_count }} unreviewed</span>{% endif %}
   </span>
   {% endif %}
-  {% if bm_review_count %}
+  {% if bm_count %}
   <span class="status-summary" title="Bondy–Murty Appendix A review status counts">
     Bondy–Murty:
     {% for s in ['open','partial','solved','disproved','unclear'] -%}

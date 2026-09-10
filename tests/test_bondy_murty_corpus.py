@@ -9,11 +9,14 @@ pointer resolves to a record scraper/build.py will actually render.
 from __future__ import annotations
 
 import json
+import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
+sys.path.insert(0, str(ROOT / "scripts"))
+from bm_build_records import PDF_OFFSET  # noqa: E402  (book page → PDF page offset, single source of truth)
 
 STATUSES = {"open", "partial", "solved", "disproved", "unclear"}
 
@@ -56,7 +59,7 @@ class BondyMurtyCorpusTests(unittest.TestCase):
                 self.assertIn(r["coverage"], {"missing", "weak"})
                 src = r["source"]
                 self.assertTrue(src["url"].startswith("https://inria.hal.science/"))
-                self.assertEqual(src["pdf_page"], src["book_page"] + 16)
+                self.assertEqual(src["pdf_page"], src["book_page"] + PDF_OFFSET)
                 self.assertTrue(625 <= src["book_page"] <= 634)
 
     def test_weak_records_point_at_an_existing_record(self):
