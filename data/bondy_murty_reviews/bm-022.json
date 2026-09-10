@@ -1,0 +1,22 @@
+{
+  "review_id": "bm-022",
+  "bm_id": "bm-022",
+  "appendix_number": 22,
+  "conjecture_title": "Internally disjoint odd paths: is it in co-NP?",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "unclear",
+  "confidence": "low",
+  "summary": "Thomassen (1980) asked whether the decision problem—given a graph G and two k-subsets X and Y of V(G), do there exist k internally disjoint (X,Y)-paths of odd length?—lies in co-NP. A 'yes' certificate is trivial (exhibit the k paths), but certifying 'no' requires a compact structural witness analogous to a Menger-type separator for ordinary disjoint paths. No verified primary source settling or substantially advancing the question was found during this review session, as all web search tools were unavailable or rate-limited.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Thomassen \"internally disjoint\" \"odd paths\" complexity NP co-NP graph",
+    "\"disjoint odd paths\" \"co-NP\" complexity graph theory",
+    "odd paths internally disjoint complexity NP-hard Thomassen 1980",
+    "k disjoint odd paths graph complexity hardness NP",
+    "packing odd paths min-max group-labelled graphs arXiv"
+  ],
+  "notes": "All four WebSearch calls failed with a tool-unavailable error; arXiv search returned HTTP 429 (rate-limited); ScienceDirect returned HTTP 403; Wikipedia's disjoint-paths article returned HTTP 404; arXiv abstract lookups fetched unrelated papers. The problem is asking for co-NP membership of an existential problem, which reduces to asking whether there is a polynomial-size structural certificate (Menger-type min-max) for the non-existence of k internally disjoint odd (X,Y)-paths. The closely related work 'Packing non-zero A-paths in group-labelled graphs' (Chudnovsky, Geelen, Gerards, Goddyn, Loebl, Seymour, Combinatorica 26, 2006) provides a min-max theorem for A-paths with non-zero Z_2-labels (which capture odd-length paths when all edge labels equal 1), but the 'A-paths' setting (both endpoints in a single set A) differs from the '(X,Y)-paths' setting (one endpoint in X, one in Y), so it is uncertain without further reading whether that result resolves Thomassen's question. This connection is unverified; no URL was confirmed by WebFetch. Given the search failures, the true status may well be 'open' rather than 'unclear'."
+}

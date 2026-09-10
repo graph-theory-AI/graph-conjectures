@@ -1,0 +1,25 @@
+{
+  "review_id": "bm-070",
+  "bm_id": "bm-070",
+  "appendix_number": 70,
+  "conjecture_title": "Weighted Caccetta–Häggkvist conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The weighted Caccetta–Häggkvist conjecture, proposed by Bollobás and Scott, remains open as of 2026. Bollobás and Scott themselves proved the analogous statement for directed paths (that a strongly connected digraph with w^-(v) ≥ 1 and w^+(v) ≥ 1 for all v contains a directed path of total weight at least 1), but the extension to directed cycles has not been settled. No paper on arXiv or in the surveyed literature claims a proof or counterexample for the full cycle statement.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Weighted Caccetta-Häggkvist conjecture Bollobás Scott directed cycle weight",
+    "Caccetta Häggkvist conjecture weighted version strongly connected digraph arc weight",
+    "arXiv search: Caccetta Haggkvist (all results listing)",
+    "arXiv search: Bollobás Scott directed cycle weight strongly connected",
+    "arXiv search: Caccetta Haggkvist weighted digraph",
+    "arXiv search: Caccetta Haggkvist survey",
+    "Open Problem Garden: caccetta_haggkvist_conjecture",
+    "Sullivan survey math/0605646 (PDF)"
+  ],
+  "notes": "The Open Problem Garden page for the (unweighted) Caccetta–Häggkvist conjecture explicitly confirms that Bollobás and Scott proposed this weighted variant and proved the directed-path analogue, but that the weighted directed-cycle statement remains open. A broad arXiv search for all papers mentioning 'Caccetta-Haggkvist' (returning 29 results up to April 2026) found no paper specifically addressing the weighted cycle conjecture. The corpus record OPG:caccetta_haggkvist_conjecture tracks the unweighted case; this weighted version is strictly stronger (a short directed cycle would also be a short directed path, but the weight condition interacts differently). The 1996 Bollobás–Scott paper is cited in the book as conference/unpublished work; no journal version or arXiv preprint was located."
+}

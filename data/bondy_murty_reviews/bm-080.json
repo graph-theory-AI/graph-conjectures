@@ -1,0 +1,33 @@
+{
+  "review_id": "bm-080",
+  "bm_id": "bm-080",
+  "appendix_number": 80,
+  "conjecture_title": "Barnette's conjecture on 4-regular 4-polytopes",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Barnette's conjecture that every simple 4-dimensional convex polytope has a Hamiltonian graph remains open. It is attributed to D.W. Barnette and was referenced in Grünbaum (1970). Partial results have confirmed the conjecture for specific families of simple 4-polytopes, including Kalai's squeezed polytopes and their polars (Pfeifle 2001, citing also Hebble–Lee 2000). No complete proof or counterexample has been found.",
+  "since_posted": [
+    {
+      "title": "Kalai's squeezed 3-spheres are polytopal",
+      "authors": "Julian Pfeifle",
+      "year": 2001,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/math/0110240",
+      "arxiv_id": "math/0110240",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Shows that the polars of Kalai's squeezed polytopes form a new family of simple 4-polytopes supporting Barnette's conjecture that all simple 4-polytopes admit a Hamiltonian circuit; also gives a shorter proof of Hebble–Lee's 2000 result that the dual graphs of these 4-polytopes are Hamiltonian."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Barnette conjecture simple 4-polytope Hamiltonian graph status",
+    "Hamiltonian graph simple 4-dimensional convex polytope Barnette open problem",
+    "Barnette conjecture simple polytope Hamiltonian arXiv",
+    "Hamiltonian simple 4-polytope arXiv search"
+  ],
+  "notes": "This is Barnette's lesser-known conjecture (on simple 4-polytopes) and must not be confused with his better-known conjecture on cubic bipartite planar graphs (tracked in the corpus as OPG record 'barnettes_conjecture'). The statement as given — every simple 4-dimensional convex polytope has a Hamiltonian graph — is sometimes called 'Barnette's conjecture on 4-polytopes' or the 'Barnette–Grünbaum conjecture'. The only verified primary source found is Pfeifle (2001, math/0110240), which is pre-2008 and provides partial evidence. WebSearch was unavailable during this review, limiting comprehensiveness; no post-2008 paper claiming a resolution was found across multiple arXiv queries. Confidence is medium rather than high because of the WebSearch outage."
+}

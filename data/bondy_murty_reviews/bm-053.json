@@ -1,0 +1,25 @@
+{
+  "review_id": "bm-053",
+  "bm_id": "bm-053",
+  "appendix_number": 53,
+  "conjecture_title": "Albertson's toroidal colouring conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "unclear",
+  "confidence": "low",
+  "summary": "No primary sources verifying or resolving the conjecture could be retrieved: the web search tool was unavailable throughout all attempts, arXiv searches for all reasonable query formulations returned zero results, and alternative databases (zbmath, MathSciNet, ScienceDirect) returned authentication errors or 403 responses. The Wikipedia article on 'Albertson's conjecture' covers an entirely different conjecture (relating crossing number to chromatic number, stated in 2007), confirming a name collision. The 1981 conjecture about toroidal graphs and vertex-deletion to 4-colourability appears not to have been resolved in any arXiv-accessible paper, but a definitive status cannot be assigned without access to the traditional journal literature.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Albertson toroidal graph colouring conjecture three vertices deletion 4-colourable",
+    "toroidal graph 4-colorable vertex deletion Albertson 1981 conjecture status",
+    "Albertson conjecture toroidal chromatic number defective coloring",
+    "arXiv: toroidal graph defective coloring vertex deletion",
+    "arXiv: toroidal graph 4-color deletion conjecture",
+    "arXiv: Albertson toroidal coloring",
+    "arXiv: toroidal graph vertices deletion 4-colorable",
+    "Wikipedia: Albertson conjecture"
+  ],
+  "notes": "Name collision: the Wikipedia article 'Albertson's conjecture' refers to a different 2007 conjecture by M.O. Albertson on crossing numbers vs chromatic number (verified up to n=18 but open in general). The conjecture here is a 1981 item about toroidal graphs; it does not appear under any canonical name in the sources accessible during this review. Web search was unavailable (tool returned error for all three attempted searches). All arXiv keyword searches returned zero results. The conjecture is referenced in Bondy–Murty (2008) §16.5 under the heading 'Colouring graphs embedded in surfaces', but no post-2008 resolution was discoverable."
+}

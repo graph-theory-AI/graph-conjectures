@@ -1,0 +1,59 @@
+{
+  "review_id": "bm-088",
+  "bm_id": "bm-088",
+  "appendix_number": 88,
+  "conjecture_title": "Thomassen's conjecture on Hamiltonian vertex-transitive graphs",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Thomassen's 1976 conjecture that all but finitely many connected vertex-transitive graphs are Hamiltonian remains open. A series of recent papers has substantially improved the best-known lower bound on the length of longest cycles in connected vertex-transitive graphs on n vertices: from Babai's 1979 bound of Ω(√n) to Ω(n^{13/21}) (2024), then Ω(n^{9/14}) (2025), and most recently n^{2/3−o(1)} (2026). These results make partial progress toward the conjecture but fall far short of establishing Hamiltonicity.",
+  "since_posted": [
+    {
+      "title": "Longest cycles in vertex-transitive and highly connected graphs",
+      "authors": "Groenland, Carla; Longbrake, Sean; Steiner, Raphael; Turcotte, Jérémie; Yepremyan, Liana",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2408.04618",
+      "arxiv_id": "2408.04618",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves every connected vertex-transitive graph on n vertices contains a cycle of length Ω(n^{13/21}), improving the previous bound of Ω(n^{3/5})."
+    },
+    {
+      "title": "Small hitting sets for longest paths and cycles",
+      "authors": "Norin, Sergey; Steiner, Raphael; Thomassé, Stephan; Wollan, Paul",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2505.08634",
+      "arxiv_id": "2505.08634",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves every connected vertex-transitive graph of order n contains a cycle (and path) of length Ω(n^{9/14}), improving the Ω(n^{13/21}) bound of Groenland et al."
+    },
+    {
+      "title": "Towards the Lovász conjecture via sublinear expanders",
+      "authors": "Bucić, Matija; Christoph, Micha; Pokrovskiy, Alexey; Steiner, Raphael",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2606.09742",
+      "arxiv_id": "2606.09742",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves every connected vertex-transitive graph of order n contains a cycle of length at least n^{2/3−o(1)}, improving the previous best bound of Ω(n^{9/14}); the authors note this hits a natural barrier for current approaches."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Thomassen conjecture Hamiltonian vertex-transitive graphs 1976 status progress",
+    "vertex-transitive graphs Hamilton cycle conjecture Thomassen finitely many exceptions recent results",
+    "arxiv.org search: Thomassen Hamiltonian vertex-transitive",
+    "openproblemgarden.org: hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
+    "arxiv.org/abs/2606.09742",
+    "arxiv.org/abs/2408.04618",
+    "arxiv.org search: Norin vertex-transitive cycle length",
+    "arxiv.org/abs/2505.08634"
+  ],
+  "notes": "The statement reviewed ('All but finitely many connected vertex-transitive graphs are Hamiltonian') is equivalent to Thomassen's 1978 formulation ('sufficiently large connected vertex-transitive graphs are Hamiltonian') referenced in some papers. This is a stronger statement than the related Lovász conjecture (OPG record hamiltonian_paths_and_cycles_in_vertex_transitive_graphs), which only asks for a Hamiltonian path; the Thomassen conjecture asks for a Hamiltonian cycle and is the focus of the three cited partial results. The OPG record hamiltonicity_of_cayley_graphs covers the special case of Cayley graphs, for which better results are known (e.g. abelian groups). A parallel line of work on directed vertex-transitive digraphs (arXiv:2602.16333, arXiv:2607.05807) is not directly relevant to the undirected conjecture reviewed here. The 2026 paper (arXiv:2606.09742) explicitly states its cycle-length bound 'hits a natural barrier for several existing approaches,' suggesting that resolving the full conjecture will require genuinely new techniques."
+}

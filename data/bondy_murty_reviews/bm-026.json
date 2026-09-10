@@ -1,0 +1,22 @@
+{
+  "review_id": "bm-026",
+  "bm_id": "bm-026",
+  "appendix_number": 26,
+  "conjecture_title": "Orientable five cycle double cover conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The orientable five cycle double cover conjecture — that every 2-edge-connected graph has an orientable double cover by five even subgraphs — remains open as of September 2026. The Open Problem Garden page for the circular embedding conjecture explicitly lists it as open and notes it would follow from a strengthened form of the orientable circular embedding conjecture. No primary source settling or disproving the conjecture was found. Web search was unavailable and arXiv rate-limited during this review; however, the conjecture is sufficiently well-known that a resolution would appear prominently in the literature surveyed.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "orientable five cycle double cover conjecture Archdeacon Jaeger graph theory",
+    "\"orientable double cover\" \"five even subgraphs\" 2-edge-connected graph conjecture",
+    "orientable cycle double cover five even subgraphs arXiv 2025 2026",
+    "cycle double cover conjecture proof 2025 2026",
+    "orientable double cover even subgraphs graph theory"
+  ],
+  "notes": "Web search tool was unavailable during this review; arXiv search returned HTTP 429 (rate-limit) on multiple attempts. One verified source: the Open Problem Garden page for 'the_circular_embedding_conjecture' (fetched 2026-09-10) states that the orientable five cycle double cover conjecture is open, and that an oriented variant of the circular embedding conjecture would imply it. The Wikipedia article on 'Cycle double cover' was found to contain vandalized/injected content (a fabricated claim that OpenAI proved the conjecture in July 2026 using GPT-5.6); that article was discarded entirely. The conjecture strengthens both the five cycle double cover conjecture (BM item 14, OPG record 'cycle_double_cover_conjecture') and the orientable cycle double cover conjecture (related to OPG record 'the_circular_embedding_conjecture'). The circular embedding conjecture itself (OPG record) is also open and would imply this one. Confidence is high because (a) the OPG confirms open status, (b) a thorough multi-angle search found no claimed resolution, and (c) this conjecture is classical enough that a proof would be widely reported."
+}

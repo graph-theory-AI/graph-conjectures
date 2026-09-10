@@ -1,0 +1,22 @@
+{
+  "review_id": "bm-062",
+  "bm_id": "bm-062",
+  "appendix_number": 62,
+  "conjecture_title": "Kotzig's unique $k$-path conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Kotzig's conjecture (1979) asserts that for k ≥ 3 no graph exists in which every pair of vertices is connected by a unique path of length k. The k = 2 case is the classical Friendship Theorem (Erdős–Rényi–Sós 1966). No P_k-graph for k ≥ 3 has been constructed, and no proof of non-existence is known. The Wikipedia article on Friendship Graphs, verified via WebFetch, explicitly categorises this as an open conjecture as of its most recent revision.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Kotzig unique k-path conjecture graph theory every pair vertices connected unique path length k",
+    "Kotzig conjecture 1979 unique path length friendship theorem generalization",
+    "Kotzig unique path length arXiv",
+    "unique path of length graph conjecture arXiv",
+    "Kotzig path graph arXiv"
+  ],
+  "notes": "The primary WebSearch tool was unavailable for both search calls (tool returned errors). Status 'open' is confirmed by the Wikipedia 'Friendship graph' article (fetched and verified at https://en.wikipedia.org/wiki/Friendship_graph), which states in its Generalizations section: 'For values of k greater than or equal to 3, no such graphs have been identified … the non-existence of P_k-graphs in this range … is formalized as Kotzig's conjecture.' Multiple arXiv searches (different query formulations) returned zero results for this specific problem, consistent with it being a long-standing hard open problem that has not attracted recent arXiv activity. Wikipedia's reference [4] for this section is Chvátal, Kotzig, Rosenberg, Davies (1976), Canadian Mathematical Bulletin 19(4): 431–433 — a paper predating the 1979 attribution in Bondy–Murty; this may reflect an earlier discussion of the problem by Kotzig before his 1979 formulation. Confidence is medium rather than high because WebSearch was unavailable, limiting coverage of recent journals; however, the complete absence of any arXiv output and the Wikipedia confirmation together support the 'open' assessment."
+}

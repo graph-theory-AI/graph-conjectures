@@ -1,0 +1,48 @@
+{
+  "review_id": "bm-011",
+  "bm_id": "bm-011",
+  "appendix_number": 11,
+  "conjecture_title": "Barát–Thomassen conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The Barát–Thomassen conjecture was proved in full by Bensmail, Harutyunyan, Le, Merker, and Thomassé (2017). They showed that for every tree T on m edges there exists a constant k_T such that every k_T-edge-connected graph whose number of edges is divisible by m can be edge-decomposed into copies of T, confirming exactly the statement as given. The paper appeared in Journal of Combinatorial Theory, Series B, volume 124 (2017), following an arXiv preprint from March 2016.",
+  "since_posted": [
+    {
+      "title": "A Proof of the Barát–Thomassen Conjecture",
+      "authors": "Bensmail, J., Harutyunyan, A., Le, T.-N., Merker, M., Thomassé, S.",
+      "year": 2017,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1603.00197",
+      "arxiv_id": "1603.00197",
+      "doi": "10.1016/j.jctb.2016.12.006",
+      "kind": "proof",
+      "claim": "Proves the full conjecture: for every tree T on m edges there exists k_T such that every k_T-edge-connected graph with size divisible by m admits an edge-decomposition into copies of T."
+    },
+    {
+      "title": "Edge-partitioning a graph into paths: beyond the Barát–Thomassen conjecture",
+      "authors": "Bensmail, J., Harutyunyan, A., Le, T.-N., Thomassé, S.",
+      "year": 2015,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1507.08208",
+      "arxiv_id": "1507.08208",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the path case with improved edge-connectivity bounds and proposes a refinement of the conjecture; precursor to the full proof."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Barát Thomassen conjecture proof 2017 Bensmail Harutyunyan Le Merker Thomassé",
+    "Barát Thomassen conjecture tree decomposition edge-connected graph solved",
+    "arxiv.org/abs/1507.08208 fetch",
+    "doi.org/10.1016/j.jctb.2016.12.006 fetch",
+    "arxiv.org/abs/1610.07758 fetch",
+    "Wikipedia Barát–Thomassen conjecture fetch",
+    "arxiv.org author search Martin Merker",
+    "arxiv.org/abs/1603.00197 fetch"
+  ],
+  "notes": "The conjecture is fully resolved. The proof (arXiv:1603.00197, JCTB 124, 2017) directly matches the statement as given in Bondy–Murty: for every tree T there exists k(T) such that every simple k(T)-edge-connected graph with |E(G)| divisible by e(T) decomposes into copies of T. The DOI 10.1016/j.jctb.2016.12.006 is taken from the book's editorial note; the redirect to linkinghub.elsevier.com/pii/S0095895616301137 was confirmed but content not retrieved. The related corpus record arXiv:1507.08208 (Bensmail–Harutyunyan–Le–Thomassé, 2015) handled only the path case and proposed a refinement of the conjecture; it is strictly weaker than the settled full result."
+}

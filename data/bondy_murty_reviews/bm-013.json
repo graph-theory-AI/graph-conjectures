@@ -1,0 +1,47 @@
+{
+  "review_id": "bm-013",
+  "bm_id": "bm-013",
+  "appendix_number": 13,
+  "conjecture_title": "Bondy's small cycle double cover conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Bondy's small cycle double cover conjecture (every bridgeless graph on n vertices has a cycle double cover of size at most n-1) remains open in full generality. Partial results have been established for planar graphs: Jooken, Seamone, and Zamfirescu (2025) prove the bound for planar 4-connected graphs and show every planar 2-connected cubic graph on n > 4 vertices has a CDC of size at most n/2. Notably, the parent CDC conjecture (every bridgeless graph has some cycle double cover) was apparently proved in 2026 via an OpenAI-announced proof with an exposition by Sang-il Oum, but his exposition explicitly notes that Bondy's n-1 bound does not follow immediately from those methods.",
+  "since_posted": [
+    {
+      "title": "Counting Small Cycle Double Covers",
+      "authors": "Jorik Jooken, Ben Seamone, Carol T. Zamfirescu",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2506.10604",
+      "arxiv_id": "2506.10604",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Bondy's n-1 bound for planar 4-connected graphs and shows every planar 2-connected cubic graph on n > 4 vertices has a CDC of size at most n/2; does not resolve the full conjecture."
+    },
+    {
+      "title": "A proof of the cycle double cover conjecture by OpenAI: An exposition",
+      "authors": "Sang-il Oum",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2607.16356",
+      "arxiv_id": "2607.16356",
+      "doi": null,
+      "kind": "survey",
+      "claim": "Expounds a 2026 OpenAI-announced proof of the parent CDC conjecture (every bridgeless graph has a cycle double cover); Section 9 explicitly notes Bondy's small CDC conjecture (at most n-1 cycles) does not follow from these methods."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bondy small cycle double cover conjecture n-1 cycles status",
+    "\"cycle double cover\" \"n-1 cycles\" bridgeless graph conjecture",
+    "https://en.wikipedia.org/wiki/Cycle_double_cover",
+    "https://arxiv.org/search/?searchtype=all&query=small+cycle+double+cover+Bondy",
+    "https://arxiv.org/abs/2506.10604",
+    "https://arxiv.org/abs/2607.16356",
+    "https://arxiv.org/html/2607.16356"
+  ],
+  "notes": "Confidence is medium because paper content was assessed via WebFetch AI-model summaries rather than full PDF reads. The distinction between the parent CDC conjecture (Appendix A item 12, now apparently proved) and Bondy's strengthening (item 13, requiring at most n-1 cycles) is crucial: the Oum exposition of the 2026 CDC proof explicitly states the n-1 bound does not follow from those methods, so item 13 remains open. The 2025 paper 2506.10604 directly addresses the exact statement of Bondy's conjecture for planar graphs. This conjecture is strictly stronger than the OPG corpus record cycle_double_cover_conjecture, which appears now settled."
+}

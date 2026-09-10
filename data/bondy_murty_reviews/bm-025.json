@@ -1,0 +1,20 @@
+{
+  "review_id": "bm-025",
+  "bm_id": "bm-025",
+  "appendix_number": 25,
+  "conjecture_title": "Thomassen's spanning k-connected bipartite subgraph conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "Thomassen (1989) asked whether every f(k)-connected graph has a spanning k-connected bipartite subgraph, with the specific conjecture that f(k) = 2k suffices. The full conjecture remains open for general k as of the review date. The k=1 case is trivial (any spanning tree of a 2-connected graph is a spanning connected bipartite subgraph). Partial results exist in the literature (notably the weaker question of whether some function f exists at all has been addressed), but the tight bound f(k) = 2k has not been established in full generality.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Thomassen spanning k-connected bipartite subgraph conjecture 2k-connected",
+    "Delcourt Ferber spanning bipartite subgraph connectivity conjecture Thomassen",
+    "Thomassen 1989 conjecture spanning bipartite subgraph k-connected graph"
+  ],
+  "notes": "Web search was unavailable during this review session, and all arXiv/Semantic Scholar fetch attempts either returned HTTP 429/403/404 errors or matched unrelated papers. No paper URLs could be verified, so since_posted is empty. From training knowledge: (1) Thomassen posed this in 'Configurations in graphs of large minimum degree, connectivity, or chromatic number' (Annals NYAS 1989). (2) The literature (including a c. 2015 paper by Delcourt and Ferber) appears to address the weaker existence-of-f question and obtain partial bounds, but these could not be confirmed. (3) The book editorial note flags a translation issue: the French edition states the conjecture for oriented digraphs, whereas the English edition and Thomassen's original 1989 question concern undirected graphs and spanning bipartite subgraphs; this review follows the undirected reading. Confidence is low solely because no primary sources could be fetched and verified during this session; the conjecture is well-known and the assessment of 'open' is consistent with training-knowledge up to August 2025."
+}

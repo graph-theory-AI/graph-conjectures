@@ -1,0 +1,58 @@
+{
+  "review_id": "bm-054",
+  "bm_id": "bm-054",
+  "appendix_number": 54,
+  "conjecture_title": "Chromatic number of the plane (Hadwiger–Nelson problem)",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The exact chromatic number of the plane remains unknown. De Grey (2018) improved the lower bound from 4 to 5 by constructing a 1581-vertex unit-distance graph that is not 4-colourable, so the current range is 5 ≤ χ(ℝ²) ≤ 7. Subsequent work (Heule 2018, Polymath16 2021) reduced the smallest known witness to 509 vertices, but no progress on the upper bound has been made. For the map-type colouring variant (regions bounded by non-unit-circle arcs with trivalent vertices), Sokolov–Voronov (2025) proved a lower bound of 7, but this does not settle the point-colouring formulation.",
+  "since_posted": [
+    {
+      "title": "The chromatic number of the plane is at least 5",
+      "authors": "Aubrey D.N.J. de Grey",
+      "year": 2018,
+      "venue": "Geombinatorics, vol. 28, pp. 5–18",
+      "url": "https://arxiv.org/abs/1804.02385",
+      "arxiv_id": "1804.02385",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Constructs a finite unit-distance graph in the plane with chromatic number 5, proving χ(ℝ²) ≥ 5 and raising the lower bound from 4 to 5."
+    },
+    {
+      "title": "Computing Small Unit-Distance Graphs with Chromatic Number 5",
+      "authors": "Marijn J.H. Heule",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1805.12181",
+      "arxiv_id": "1805.12181",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Uses SAT-solver methods to find 553-vertex unit-distance graphs with chromatic number 5, significantly reducing de Grey's original 1581-vertex construction."
+    },
+    {
+      "title": "On the chromatic number of the plane for map-type colorings",
+      "authors": "Georgy Sokolov, Vsevolod Voronov",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2502.01958",
+      "arxiv_id": "2502.01958",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that at least 7 colours are required for map-type colorings of the plane (regions bounded by non-unit-circle arcs, trivalent vertices), a variant stronger than the standard point-colouring formulation."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "de Grey 2018 chromatic number plane at least 5 Hadwiger-Nelson problem",
+    "Hadwiger-Nelson problem chromatic number plane 2024 2025 2026 progress",
+    "arxiv.org/abs/1804.02385",
+    "en.wikipedia.org/wiki/Hadwiger-Nelson_problem",
+    "arxiv.org search chromatic number plane unit distance 2022 onwards",
+    "arxiv.org/abs/1805.12181",
+    "arxiv.org/abs/2502.01958"
+  ],
+  "notes": "The book states 4 ≤ χ(ℝ²) ≤ 7; de Grey's 2018 result tightens this to 5 ≤ χ(ℝ²) ≤ 7. The Polymath16 collaborative project (2019–2021) reduced the smallest known 5-chromatic unit-distance graph to 509 vertices (as of 2021). The related OPG record 'coloring_the_odd_distance_graph' concerns the analogous problem for odd distances and is a distinct (open) problem. The map-type colouring result of Sokolov–Voronov (2025) applies to a stronger geometric variant and does not settle the standard point-colouring version. Web search was unavailable; WebFetch calls were used directly on arXiv and Wikipedia."
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "bm-034",
+  "bm_id": "bm-034",
+  "appendix_number": 34,
+  "conjecture_title": "Even-cycle Turán number",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture that ex(n, C_{2k}) ≥ c·n^{1+1/k} for every k ≥ 2 remains open in full generality. The matching lower bound Ω(n^{1+1/k}) is established for k ∈ {2, 3, 5} via algebraic constructions—polarity graphs of finite projective planes (k=2), incidence graphs of projective planes (k=3), and incidence graphs of generalized hexagons (k=5)—but is unknown for k=4 or k ≥ 6. The best known general lower bound, due to Lazebnik, Ustimenko, and Woldar (1995), is Ω(n^{1+2/(3k-3)}), which falls strictly below the conjectured exponent 1+1/k for k ≥ 4.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "even cycle Turán number ex(n, C_{2k}) lower bound n^{1+1/k} Erdős conjecture",
+    "Zarankiewicz problem even cycle extremal graph theory 2024 2025 2026",
+    "ex(n C_{2k}) lower bound n^{1+1/k} all k recent progress arXiv 2020 2021 2022 2023 2024",
+    "Janzer Sudakov even cycle extremal lower bound 2022 2023 graph theory",
+    "Turán number even cycles C_{2k} bipartite graph algebraic construction lower bound 2022 2023 2024 2025"
+  ],
+  "notes": "Conjecture attributed to Erdős (1971). Known cases k=2,3,5 are classical: polarity graphs of projective planes give C_4-free graphs with Θ(n^{3/2}) edges; incidence graphs of projective planes give C_6-free graphs with Θ(n^{4/3}) edges; incidence graphs of finite generalized hexagons give C_{10}-free graphs with Θ(n^{6/5}) edges. The Lazebnik–Ustimenko–Woldar (1995) construction achieves n^{1+2/(3k-3)} for all k, but 2/(3k-3) < 1/k for k ≥ 4, leaving the conjecture open in those cases. The Bondy–Simonovits theorem provides the matching upper bound O(n^{1+1/k}) for all k. Web searches were largely unavailable during review; all WebFetch calls for candidate arXiv papers returned unrelated papers (guessed IDs) or access errors (SSL/403/429), so no post-2008 primary source could be cited. OPG record 'turan_number_of_a_finite_family' and erdosproblems.com item 572 track the same statement. Status is 'partial' reflecting the known special cases; the full universal statement remains open."
+}

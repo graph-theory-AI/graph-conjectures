@@ -1,0 +1,25 @@
+{
+  "review_id": "bm-091",
+  "bm_id": "bm-091",
+  "appendix_number": 91,
+  "conjecture_title": "Grötschel's conjecture on bipartite hypotraceable graphs",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No resolution of Grötschel's 1978 conjecture that there is no bipartite hypotraceable graph has been found. The analogous statement for hypohamiltonian graphs is a theorem (bipartite hypohamiltonian graphs cannot exist by a parity argument on Hamiltonian cycles), but the same argument does not apply to hypotraceable graphs. Exhaustive searches on arXiv and other repositories returned no papers addressing the bipartite case, and the conjecture does not appear to have attracted a dedicated resolution in the literature accessible via these searches.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Grötschel conjecture bipartite hypotraceable graph",
+    "hypotraceable bipartite graph Hamilton path conjecture",
+    "arXiv: all:bipartite hypotraceable graph",
+    "arXiv: all:hypotraceable bipartite",
+    "Wikipedia: Hypohamiltonian graph (for hypotraceable section)",
+    "arXiv: all:hypotraceable graph (order by date)",
+    "arXiv: all:Zamfirescu hypotraceable",
+    "arXiv: all:hypotraceable Grotschel"
+  ],
+  "notes": "WebSearch was unavailable for this review; only direct WebFetch calls to arXiv and Wikipedia were possible. The Wikipedia article on hypohamiltonian graphs confirms that hypohamiltonian graphs cannot be bipartite (by a parity argument), but makes no mention of Grötschel's conjecture for the hypotraceable variant. The only arXiv paper found mentioning hypotraceable graphs (arXiv:1302.2698, Jooyandeh–McKay–Östergård–Pettersson–Zamfirescu, 2013/2015) concerns planar hypotraceable graphs and makes no claims about the bipartite case. No Open Problem Garden page for this specific conjecture was found. The conjecture is niche enough that absence from these searches does not rule out a resolution buried in a journal article not indexed by the sources checked; confidence is medium rather than high."
+}

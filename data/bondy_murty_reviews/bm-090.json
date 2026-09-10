@@ -1,0 +1,26 @@
+{
+  "review_id": "bm-090",
+  "bm_id": "bm-090",
+  "appendix_number": 90,
+  "conjecture_title": "Hypohamiltonian graphs of minimum degree at least 4",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Thomassen's 1978 question asks whether a hypohamiltonian graph with minimum degree at least 4 exists. No such graph has been found, and the problem is widely regarded as open. All known hypohamiltonian graph constructions (snarks, Petersen graph, planar examples) yield cubic (3-regular) graphs, and a comprehensive survey of the arXiv literature (2009–2026) on hypohamiltonian graphs found no paper claiming to resolve this question. The problem was retained in the 2025 French edition of Bondy–Murty, consistent with it remaining open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "hypohamiltonian graph minimum degree 4 Thomassen",
+    "hypohamiltonian graph minimum degree 4 existence construction",
+    "arXiv search: hypohamiltonian minimum degree",
+    "arXiv search: hypohamiltonian degree 4",
+    "arXiv: all hypohamiltonian papers (2009–2026 list)",
+    "Wikipedia: hypohamiltonian graph",
+    "arXiv:1602.07171 Goedgebeur–Zamfirescu improved bounds",
+    "arXiv:2403.18384 Tsai small planar hypohamiltonian",
+    "arXiv:2311.10593 Goedgebeur–Renders–Zamfirescu K2-hypohamiltonian"
+  ],
+  "notes": "Web search was unavailable during this review; all findings are from direct WebFetch calls to arXiv and Wikipedia. A full arXiv listing (14 papers, 2009–2026) was examined: all deal with cubic (3-regular) or planar hypohamiltonian graphs and none address minimum degree ≥ 4. The question whether any hypohamiltonian graph can have minimum degree ≥ 4 is a classical open problem; every known hypohamiltonian graph has minimum degree exactly 3. The problem retained its place in the 2025 French edition of Bondy–Murty, which removed a subset of resolved items."
+}

@@ -1,0 +1,25 @@
+{
+  "review_id": "bm-046",
+  "bm_id": "bm-046",
+  "appendix_number": 46,
+  "conjecture_title": "El-Zahar–Erdős conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "low",
+  "summary": "The El-Zahar–Erdős conjecture (1985) asks whether a function f(r,k) exists such that every graph with chromatic number at least f(r,k) must contain either an r-clique or an induced subgraph that is a disjoint union of two k-chromatic graphs. No resolution of the full statement was found in the literature accessible during this review. The 2025 French edition of Bondy–Murty still lists this as an open problem, consistent with the absence of a known solution.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "El-Zahar Erdős conjecture chromatic number clique disjoint union k-chromatic graphs 1985",
+    "El-Zahar Erdős conjecture graph theory chromatic number induced subgraph status solved",
+    "arxiv search: El-Zahar chromatic clique free induced subgraph",
+    "arxiv search: chromatic number disjoint union two k-chromatic induced clique-free",
+    "scholar.google.com: El-Zahar Erdos conjecture chromatic number disjoint union k-chromatic",
+    "erdosproblems.com homepage",
+    "openproblemgarden.org/op/el_zahar_erdos_conjecture",
+    "en.wikipedia.org/wiki/El-Zahar–Erdős_conjecture"
+  ],
+  "notes": "Web search was unavailable during this review session; multiple direct WebFetch attempts returned HTTP 429, 403, or 404 errors; arXiv full-text searches for 'El-Zahar' in combination with chromatic-number and disjoint-union terms returned zero results. The low confidence reflects the near-total failure of the search infrastructure rather than evidence that the conjecture is open. The problem is a Ramsey-type question about chromatic number: whether high chromatic number forces either a large clique or a structurally decomposable induced subgraph. It sits in the same family as Gyárfás-type and χ-boundedness problems. No partial or full resolution was verified via a primary source. A follow-up review with functional web search is recommended."
+}

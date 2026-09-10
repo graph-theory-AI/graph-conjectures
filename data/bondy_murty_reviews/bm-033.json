@@ -1,0 +1,20 @@
+{
+  "review_id": "bm-033",
+  "bm_id": "bm-033",
+  "appendix_number": 33,
+  "conjecture_title": "Erdős–Sós conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "low",
+  "summary": "The Erdős–Sós conjecture (1963) remains open in full generality as of August 2025 (the reviewer's knowledge cutoff). The most significant partial result is the long-announced but not fully peer-reviewed proof by Ajtai, Komlós, Simonovits, and Szemerédi that the conjecture holds for all sufficiently large k (k ≥ k₀ for an explicit but large constant k₀); their proof, reportedly spanning over 200 pages across multiple papers, has been in preparation since the early 1990s. Special cases are settled for paths, stars, caterpillars, trees of diameter at most 4, and several other tree families. A resolution for all k may have appeared between August 2025 and the review date of September 2026, which the reviewer cannot verify due to tool failures.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Erdős–Sós conjecture proof status 2024 2025 2026",
+    "Erdos-Sos conjecture tree edges graph proved solved",
+    "Ajtai Komlos Simonovits Szemeredi Erdos Sos conjecture arxiv"
+  ],
+  "notes": "All web retrieval attempts failed during this review: WebSearch returned 'tool unavailable'; Wikipedia pages for the conjecture returned HTTP 404; arXiv search returned HTTP 429 (rate-limited); erdosproblems.com returned HTTP 403; guessed arXiv IDs (2408.06402, 2501.18753, 2206.03768) resolved to unrelated papers. The status 'partial' and the description of the Ajtai–Komlós–Simonovits–Szemerédi announcement are based solely on the reviewer's training knowledge (cutoff August 2025) and carry low confidence because no primary sources could be verified. The AKSS result covers sufficiently large k only; the full conjecture (all k ≥ 2) was still open as of that cutoff. Because today is September 2026, a full proof or counterexample may have appeared in the interim and cannot be reported here. No verified URLs are included in since_posted."
+}
