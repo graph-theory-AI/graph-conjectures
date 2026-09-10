@@ -7,17 +7,26 @@
   "model": "claude-sonnet-4-6",
   "search_enabled": true,
   "status": "open",
-  "confidence": "low",
-  "summary": "The Hajós conjecture for k=5 and k=6 — whether every k-chromatic graph contains a subdivision of K_k — remains open. The conjecture holds for k≤4 (Dirac 1952) and was disproved by Catlin (1979) for all k≥7; the two intermediate cases k=5 and k=6 are the only ones whose status is unknown. No resolution of either case was found in the present search.",
-  "since_posted": [],
+  "confidence": "high",
+  "summary": "The Hajós conjecture — that every k-chromatic graph contains a subdivision of K_k — remains open for k = 5 and k = 6. The conjecture holds for k ≤ 4 (Dirac 1952) and was disproved by Catlin (1979) for every k ≥ 7, leaving k = 5 and k = 6 as the only unresolved cases. A line of structural work on Hajós graphs (minimal 5-chromatic graphs without a K_5-subdivision) is ongoing, aiming to reduce the k = 5 case to the Four Color Theorem, but the full conjecture for both k = 5 and k = 6 remains open as of September 2026.",
+  "since_posted": [
+    {
+      "title": "4-Separations in Hajós Graphs",
+      "authors": "unknown (not retrieved)",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2004.12468",
+      "arxiv_id": "2004.12468",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves structural results about 4-separations in Hajós graphs (minimal 5-chromatic graphs without K_5-subdivision), described by the authors as a step toward reducing Hajós' conjecture (k = 5 case) to the Four Color Theorem."
+    }
+  ],
   "internal_refs_verified": [],
   "search_queries": [
-    "Hajós conjecture k=5 k=6 chromatic graph subdivision K5 K6 2020 2021 2022 2023 2024 2025 2026",
-    "Hajós conjecture 5-chromatic 6-chromatic subdivision complete graph open problem status",
-    "Wikipedia: Hajós conjecture (multiple URL variants)",
-    "Open Problem Garden: hajos_conjecture (multiple URL variants)",
-    "arXiv search: Hajos conjecture subdivision chromatic",
-    "arXiv: 2309.09109 (fetched — unrelated paper)"
+    "Hajós conjecture k=5 k=6 chromatic graph subdivision K5 K6 status 2024 2025",
+    "Hajos conjecture 5-chromatic 6-chromatic subdivision complete graph open problem",
+    "Hajós conjecture k=5 solved proven 2020 2021 2022 2023 2024 2025 2026"
   ],
-  "notes": "Web search was unavailable (infrastructure error) and all WebFetch attempts either returned HTTP 4xx errors or an unrelated paper. No primary source could be verified. Status 'open' and confidence 'low' reflect training-knowledge consensus through August 2025: both k=5 and k=6 cases are widely considered open. The related OPG corpus record 'coloring_and_immersion' tracks the immersion analogue of Hajós' conjecture, which is a distinct (weaker) statement."
+  "notes": "The book states Catlin (1979) disproved Hajós' conjecture for k ≥ 7; some survey sources say k ≥ 6, but the consensus is that k = 5 and k = 6 are both open. A Cal State master's thesis titled 'On the Fifth Case of the Hajós Conjecture' was found in searches but the PDF was inaccessible (HTTP 403); it likely contains partial results rather than a full proof (no published journal paper resolving k = 5 was found). The OPG corpus record 'coloring_and_immersion' tracks the immersion analogue (every graph contains an immersion of K_{χ(G)}), which is a distinct, weaker statement; arXiv:2303.06483 concerns that immersion variant, not the subdivision (Hajós) conjecture studied here."
 }

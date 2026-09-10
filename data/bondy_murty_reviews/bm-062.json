@@ -6,17 +6,45 @@
   "reviewed_at": "2026-09-10",
   "model": "claude-sonnet-4-6",
   "search_enabled": true,
-  "status": "open",
-  "confidence": "medium",
-  "summary": "Kotzig's conjecture (1979) asserts that for k ≥ 3 no graph exists in which every pair of vertices is connected by a unique path of length k. The k = 2 case is the classical Friendship Theorem (Erdős–Rényi–Sós 1966). No P_k-graph for k ≥ 3 has been constructed, and no proof of non-existence is known. The Wikipedia article on Friendship Graphs, verified via WebFetch, explicitly categorises this as an open conjecture as of its most recent revision.",
-  "since_posted": [],
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Kotzig's conjecture asserts that for k ≥ 3 no finite graph (called a P_k-graph or k-graph) exists in which every pair of vertices is connected by exactly one path of length k. The conjecture has been verified for all k ≤ 20 by Kostochka (1988), who also claimed—without publishing a proof—that his techniques extend to k ≤ 33. An earlier claimed proof for k ≥ 12 by Xing and Hu (1994) was identified as fatally flawed by Häggkvist in 2000. As of July 2026 the conjecture remains open in the general case.",
+  "since_posted": [
+    {
+      "title": "The nonexistence of certain generalized friendship graphs",
+      "authors": "Kostochka, A.V.",
+      "year": 1988,
+      "venue": "Combinatorics (Eger, 1987), Colloq. Math. Soc. János Bolyai 52, North-Holland, pp. 341–356",
+      "url": null,
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that no P_k-graph with at least two vertices exists for all k ≤ 20, and claims (without a published proof) an extension to k ≤ 33."
+    },
+    {
+      "title": "On Kotzig's conjecture for graphs with a regular path-connectedness",
+      "authors": "Xing, K.; Hu, B.",
+      "year": 1994,
+      "venue": "Discrete Mathematics 135(1–3), 387–393",
+      "url": "https://www.sciencedirect.com/science/article/pii/0012365X93E0106E",
+      "arxiv_id": null,
+      "doi": "10.1016/0012-365X(93)E0106-E",
+      "kind": "partial",
+      "claim": "Claimed to prove the conjecture for k ≥ 12, but the proof was subsequently found to be flawed (error identified by Häggkvist in 2000)."
+    }
+  ],
   "internal_refs_verified": [],
   "search_queries": [
-    "Kotzig unique k-path conjecture graph theory every pair vertices connected unique path length k",
-    "Kotzig conjecture 1979 unique path length friendship theorem generalization",
-    "Kotzig unique path length arXiv",
-    "unique path of length graph conjecture arXiv",
-    "Kotzig path graph arXiv"
+    "Kotzig conjecture unique path length k graph every pair vertices",
+    "\"unique path of length k\" graph conjecture Kotzig 1979 solved",
+    "https://en.wikipedia.org/wiki/Kotzig%27s_conjecture (WebFetch)",
+    "https://arxiv.org/abs/2510.01949 (WebFetch)",
+    "https://www.tu-chemnitz.de/mathematik/discrete/master/martin_winter.pdf (WebFetch)",
+    "Kotzig conjecture k-graph unique path Kostochka verified k≤20 2025 2026",
+    "https://kostochk.web.illinois.edu/publ.html (WebFetch)",
+    "https://en.wikipedia.org/wiki/Kotzig%27s_conjecture full content (WebFetch)",
+    "Kotzig conjecture P(k)-graph unique path length arxiv 2020 2021 2022 2023 2024 2025 2026",
+    "https://www.researchgate.net/publication/338081246_New_Advances_in_Kotzig's_Conjecture (WebFetch, 403)"
   ],
-  "notes": "The primary WebSearch tool was unavailable for both search calls (tool returned errors). Status 'open' is confirmed by the Wikipedia 'Friendship graph' article (fetched and verified at https://en.wikipedia.org/wiki/Friendship_graph), which states in its Generalizations section: 'For values of k greater than or equal to 3, no such graphs have been identified … the non-existence of P_k-graphs in this range … is formalized as Kotzig's conjecture.' Multiple arXiv searches (different query formulations) returned zero results for this specific problem, consistent with it being a long-standing hard open problem that has not attracted recent arXiv activity. Wikipedia's reference [4] for this section is Chvátal, Kotzig, Rosenberg, Davies (1976), Canadian Mathematical Bulletin 19(4): 431–433 — a paper predating the 1979 attribution in Bondy–Murty; this may reflect an earlier discussion of the problem by Kotzig before his 1979 formulation. Confidence is medium rather than high because WebSearch was unavailable, limiting coverage of recent journals; however, the complete absence of any arXiv output and the Wikipedia confirmation together support the 'open' assessment."
+  "notes": "The Wikipedia article on Kotzig's conjecture (verified via WebFetch, current as of July 2026) is the primary source for the k ≤ 20 status. The case k = 2 is exactly the Friendship Theorem (Theorem 3.1 in the book), which states that the only graphs where every pair of vertices has a unique path of length 2 are the windmill graphs. The arXiv paper 2510.01949 titled 'On Kotzig's conjecture in random graphs' addresses a different Kotzig conjecture concerning Hamilton cycle decompositions of complete graphs, not the unique-k-path conjecture. The Xing & Hu paper listed in since_posted is included for completeness as it determined the research landscape post-2000, even though its main claim was retracted. The ScienceDirect URL for the Xing & Hu paper was found in search results but not independently verified via WebFetch; only the Kostochka (1988) result and the Wikipedia summary were independently confirmed."
 }

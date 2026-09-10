@@ -6,15 +6,38 @@
   "reviewed_at": "2026-09-10",
   "model": "claude-sonnet-4-6",
   "search_enabled": true,
-  "status": "open",
-  "confidence": "low",
-  "summary": "Thomassen (1989) asked whether every f(k)-connected graph has a spanning k-connected bipartite subgraph, with the specific conjecture that f(k) = 2k suffices. The full conjecture remains open for general k as of the review date. The k=1 case is trivial (any spanning tree of a 2-connected graph is a spanning connected bipartite subgraph). Partial results exist in the literature (notably the weaker question of whether some function f exists at all has been addressed), but the tight bound f(k) = 2k has not been established in full generality.",
-  "since_posted": [],
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The full conjecture — that every 2k-connected graph contains a spanning k-connected bipartite subgraph — remains open, as does Thomassen's more general question of whether any function f(k) independent of n suffices. Delcourt and Ferber (2015) proved f(k,n) ≤ 10^10 k^3 log n (true up to a log n factor), and Yuster (2024) improved this to f(k,n) ≤ 22k^2 log n, reducing the degree in k from cubic to quadratic while the n-dependence remains logarithmic.",
+  "since_posted": [
+    {
+      "title": "On a Conjecture of Thomassen",
+      "authors": "Delcourt, Michelle; Ferber, Asaf",
+      "year": 2015,
+      "venue": "Electronic Journal of Combinatorics, vol. 22, no. 3, article P3.2",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v22i3p2",
+      "arxiv_id": "1410.4902",
+      "doi": "10.37236/4762",
+      "kind": "partial",
+      "claim": "Proves Thomassen's conjecture up to a log n factor, establishing f(k,n) ≤ 10^10 k^3 log n, giving the first quantitative bound on the connectivity needed to guarantee a spanning k-connected bipartite subgraph."
+    },
+    {
+      "title": "Highly Connected Graphs Have Highly Connected Spanning Bipartite Subgraphs",
+      "authors": "Yuster, Raphael",
+      "year": 2024,
+      "venue": "Electronic Journal of Combinatorics, vol. 31, no. 1, article P1.67",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i1p67",
+      "arxiv_id": "2403.15599",
+      "doi": "10.37236/12084",
+      "kind": "partial",
+      "claim": "Improves Delcourt–Ferber's bound to f(k,n) ≤ 22k^2 log n (and ≤ 30√(n(k+1)) in the linear regime), reducing the degree in k from cubic to quadratic; the specific conjecture f(k) = 2k and even the existence of any f(k) independent of n remain open."
+    }
+  ],
   "internal_refs_verified": [],
   "search_queries": [
-    "Thomassen spanning k-connected bipartite subgraph conjecture 2k-connected",
-    "Delcourt Ferber spanning bipartite subgraph connectivity conjecture Thomassen",
-    "Thomassen 1989 conjecture spanning bipartite subgraph k-connected graph"
+    "Thomassen conjecture 2k-connected spanning k-connected bipartite subgraph",
+    "Delcourt Ferber spanning k-connected bipartite subgraph 2015",
+    "Thomassen conjecture spanning bipartite k-connected subgraph f(k) solved 2024 2025 2026"
   ],
-  "notes": "Web search was unavailable during this review session, and all arXiv/Semantic Scholar fetch attempts either returned HTTP 429/403/404 errors or matched unrelated papers. No paper URLs could be verified, so since_posted is empty. From training knowledge: (1) Thomassen posed this in 'Configurations in graphs of large minimum degree, connectivity, or chromatic number' (Annals NYAS 1989). (2) The literature (including a c. 2015 paper by Delcourt and Ferber) appears to address the weaker existence-of-f question and obtain partial bounds, but these could not be confirmed. (3) The book editorial note flags a translation issue: the French edition states the conjecture for oriented digraphs, whereas the English edition and Thomassen's original 1989 question concern undirected graphs and spanning bipartite subgraphs; this review follows the undirected reading. Confidence is low solely because no primary sources could be fetched and verified during this session; the conjecture is well-known and the assessment of 'open' is consistent with training-knowledge up to August 2025."
+  "notes": "The editorial note in the French Havet edition flags a possible translation issue: the French text refers to a directed/oriented graph version, while the English Bondy–Murty edition and the published literature (Delcourt–Ferber 2015, Yuster 2024) consistently treat the undirected case; this review follows the undirected reading. The specific claim f(k) = 2k from Bondy–Murty is strictly stronger than Thomassen's original question (existence of any f(k)); neither is proven. An IBS preprint found in search titled 'How to build a pillar: a proof of Thomassen's conjecture' could not be read (binary PDF, 2022) and likely refers to a different Thomassen conjecture unrelated to bipartite subgraphs."
 }

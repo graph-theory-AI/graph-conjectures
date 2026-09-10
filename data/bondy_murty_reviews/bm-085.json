@@ -6,19 +6,28 @@
   "reviewed_at": "2026-09-10",
   "model": "claude-sonnet-4-6",
   "search_enabled": true,
-  "status": "open",
-  "confidence": "medium",
-  "summary": "Cantoni's conjecture (1950) — that every planar cubic graph with exactly three Hamilton cycles contains a triangle — remains open as far as can be determined. An arXiv full-text search returned no papers addressing it by name, the Open Problem Garden has no dedicated entry, and every fetched paper on planar cubic Hamilton cycles either addressed unrelated variants or mentioned only graphs with four or more Hamilton cycles. The conjecture is thematically close to Vizing's (1965) open question on uniquely 3-edge-colorable cubic planar graphs having a triangle; the connection is that a uniquely 3-edge-colorable cubic graph has exactly three Hamilton cycles, so Vizing's question is a special case. Ninčák (1974) and Tutte (1976) are cited in Bondy–Murty as related works, but their specific contributions to the conjecture could not be verified from available online sources.",
-  "since_posted": [],
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Cantoni's conjecture (that every planar cubic graph with exactly three Hamilton cycles contains a triangle) remains open in full generality. Goedgebeur, Meersman, and Zamfirescu (2020, Mathematics of Computation) computationally verified the conjecture for all planar cubic 3H graphs up to 48 vertices, providing strong but finite evidence. No proof for the general case has been published as of September 2026.",
+  "since_posted": [
+    {
+      "title": "Graphs with few Hamiltonian Cycles",
+      "authors": "Goedgebeur, Jan; Meersman, Barbara; Zamfirescu, Carol T.",
+      "year": 2020,
+      "venue": "Mathematics of Computation, vol. 89, no. 322",
+      "url": "https://arxiv.org/abs/1812.05650",
+      "arxiv_id": "1812.05650",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Computationally verifies Cantoni's conjecture for all planar cubic graphs with exactly three Hamilton cycles (3H graphs) up to 48 vertices."
+    }
+  ],
   "internal_refs_verified": [],
   "search_queries": [
     "Cantoni conjecture planar cubic graph Hamilton cycles triangle 1950",
-    "planar cubic graph exactly three Hamilton cycles triangle conjecture Nincak Tutte",
-    "Cantoni conjecture planar cubic uniquely 3-edge-colorable triangle Hamilton cycles",
-    "\"Cantoni\" \"Hamilton cycles\" planar cubic graph triangle conjecture graph theory",
-    "Nincak 1974 planar cubic Hamilton cycles triangle graph theory",
-    "arxiv search: Cantoni planar cubic Hamilton cycles triangle",
-    "arxiv search: planar cubic exactly three Hamilton cycles triangle"
+    "planar cubic graph exactly three Hamilton cycles triangle conjecture Ninčák Tutte",
+    "Cantoni 1950 cubic graph Hamiltonian cycles",
+    "Cantoni conjecture planar cubic 3H graph triangle proved 2020 2021 2022 2023 2024 2025 2026"
   ],
-  "notes": "Multiple web searches failed (tool unavailability). ArXiv full-text searches for both 'Cantoni planar cubic Hamilton cycles triangle' and 'planar cubic exactly three Hamilton cycles triangle' returned zero results. No Open Problem Garden entry found. The conjecture is distinct from but related to Vizing's (1965) conjecture (uniquely 3-edge-colorable cubic graphs have a triangle), since unique 3-edge-colorability implies exactly three Hamilton cycles; the converse need not hold, so Cantoni's conjecture is potentially weaker. Bondy–Murty cross-references Ninčák (1974) and Tutte (1976); these 1970s papers likely contain partial results or reformulations but could not be fetched. Confidence is medium rather than high because the conjecture is obscure enough that the negative search result is not fully conclusive."
+  "notes": "The conjecture is sometimes stated in terms of 'planar cubic 3H graphs', where 3H means exactly three Hamilton cycles. There is a closely related conjecture that every planar uniquely 3-edge-colorable cubic graph contains a triangle; uniquely 3-edge-colorable cubic graphs have exactly three Hamilton cycles, so this is a special case of Cantoni's conjecture. Bondy–Murty cross-references Ninčák (1974) and Tutte (1976) for related work. A 2026 search returns no claimed proof of the full conjecture; the most recent papers found still treat it as open. The computational verification up to order 48 by Goedgebeur–Meersman–Zamfirescu is the primary post-2008 contribution."
 }

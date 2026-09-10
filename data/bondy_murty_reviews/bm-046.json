@@ -6,20 +6,31 @@
   "reviewed_at": "2026-09-10",
   "model": "claude-sonnet-4-6",
   "search_enabled": true,
-  "status": "open",
-  "confidence": "low",
-  "summary": "The El-Zahar–Erdős conjecture (1985) asks whether a function f(r,k) exists such that every graph with chromatic number at least f(r,k) must contain either an r-clique or an induced subgraph that is a disjoint union of two k-chromatic graphs. No resolution of the full statement was found in the literature accessible during this review. The 2025 French edition of Bondy–Murty still lists this as an open problem, consistent with the absence of a known solution.",
-  "since_posted": [],
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The El-Zahar–Erdős conjecture (1985/1986) asks whether every graph with chromatic number at least f(r,k) must contain either an r-clique or an induced subgraph that is the disjoint union of two k-chromatic graphs (equivalently, two anticomplete subgraphs each with chromatic number at least k). The full conjecture remains open. Nguyen, Scott, and Seymour (2023) proved a weaker variant: for all t, c ≥ 1 there exists d such that if χ(G) ≥ d and ω(G) < t, then G has anticomplete subgraphs A, B where one has minimum degree at least c and the other has chromatic number at least c—but not both chromatic number at least c as the conjecture requires. The problem was still listed as open at the Barbados 2025 Graph Theory Workshop.",
+  "since_posted": [
+    {
+      "title": "On a problem of El-Zahar and Erdős",
+      "authors": "Tung Nguyen, Alex Scott, Paul Seymour",
+      "year": 2023,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2303.13449",
+      "arxiv_id": "2303.13449",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that if χ(G) ≥ d and ω(G) < t, then G contains anticomplete subgraphs A, B where A has minimum degree at least c and B has chromatic number at least c; this is strictly weaker than the conjecture which requires both A and B to have chromatic number at least c."
+    }
+  ],
   "internal_refs_verified": [],
   "search_queries": [
-    "El-Zahar Erdős conjecture chromatic number clique disjoint union k-chromatic graphs 1985",
-    "El-Zahar Erdős conjecture graph theory chromatic number induced subgraph status solved",
-    "arxiv search: El-Zahar chromatic clique free induced subgraph",
-    "arxiv search: chromatic number disjoint union two k-chromatic induced clique-free",
-    "scholar.google.com: El-Zahar Erdos conjecture chromatic number disjoint union k-chromatic",
-    "erdosproblems.com homepage",
-    "openproblemgarden.org/op/el_zahar_erdos_conjecture",
-    "en.wikipedia.org/wiki/El-Zahar–Erdős_conjecture"
+    "El-Zahar Erdős conjecture chromatic number induced subgraph disjoint union",
+    "El-Zahar Erdős 1985 graph chromatic number clique induced subgraph status solved",
+    "\"El-Zahar\" \"Erdős\" anticomplete chromatic 2024 2025 2026 solved proved",
+    "arXiv:2303.13449 On a problem of El-Zahar and Erdős (abstract page)",
+    "Barbados 2025 Graph Theory Workshop open problems (PDF)",
+    "arXiv:2504.21127 polynomially high-chromatic pure pairs (abstract page)",
+    "people.maths.ox.ac.uk/scott/Papers/elzaharerdos.pdf (full paper)"
   ],
-  "notes": "Web search was unavailable during this review session; multiple direct WebFetch attempts returned HTTP 429, 403, or 404 errors; arXiv full-text searches for 'El-Zahar' in combination with chromatic-number and disjoint-union terms returned zero results. The low confidence reflects the near-total failure of the search infrastructure rather than evidence that the conjecture is open. The problem is a Ramsey-type question about chromatic number: whether high chromatic number forces either a large clique or a structurally decomposable induced subgraph. It sits in the same family as Gyárfás-type and χ-boundedness problems. No partial or full resolution was verified via a primary source. A follow-up review with functional web search is recommended."
+  "notes": "The Bondy–Murty formulation (induced subgraph = disjoint union of two k-chromatic graphs) is equivalent to the standard anticomplete formulation: two vertex-disjoint, edge-free-between-them subgraphs each of chromatic number at least k. The 2023 Nguyen–Scott–Seymour paper (arXiv:2303.13449) appeared in JCTB (ScienceDirect pii S0095895623000989, verified as a returned search result but 403 on direct fetch). The partial result weakens the conclusion for one of the two subgraphs (minimum degree instead of chromatic number). The problem remains open in particular for triangle-free graphs (ω(G) ≤ 2)."
 }

@@ -8,19 +8,15 @@
   "search_enabled": true,
   "status": "open",
   "confidence": "high",
-  "summary": "Thomassen's 1978 question asks whether a hypohamiltonian graph with minimum degree at least 4 exists. No such graph has been found, and the problem is widely regarded as open. All known hypohamiltonian graph constructions (snarks, Petersen graph, planar examples) yield cubic (3-regular) graphs, and a comprehensive survey of the arXiv literature (2009–2026) on hypohamiltonian graphs found no paper claiming to resolve this question. The problem was retained in the 2025 French edition of Bondy–Murty, consistent with it remaining open.",
+  "summary": "The question of whether there exists a hypohamiltonian graph with minimum degree at least 4 remains a longstanding open problem first posed by Thomassen (1978). The main structural constraint known is that every planar hypohamiltonian graph must contain a vertex of degree 3 (Thomassen), so any hypothetical example with minimum degree ≥ 4 must be non-planar. C. T. Zamfirescu later strengthened this by showing every planar hypohamiltonian graph contains at least four cubic vertices. Multiple papers from 2019–2025 continue to describe the general question as open.",
   "since_posted": [],
   "internal_refs_verified": [],
   "search_queries": [
     "hypohamiltonian graph minimum degree 4 Thomassen",
-    "hypohamiltonian graph minimum degree 4 existence construction",
-    "arXiv search: hypohamiltonian minimum degree",
-    "arXiv search: hypohamiltonian degree 4",
-    "arXiv: all hypohamiltonian papers (2009–2026 list)",
-    "Wikipedia: hypohamiltonian graph",
-    "arXiv:1602.07171 Goedgebeur–Zamfirescu improved bounds",
-    "arXiv:2403.18384 Tsai small planar hypohamiltonian",
-    "arXiv:2311.10593 Goedgebeur–Renders–Zamfirescu K2-hypohamiltonian"
+    "hypohamiltonian graphs minimum degree construction existence",
+    "hypohamiltonian graph minimum degree 4 open problem solved 2020 2021 2022 2023 2024 2025 2026",
+    "hypohamiltonian graph survey open problems minimum degree Zamfirescu",
+    "\"hypohamiltonian\" \"minimum degree\" \"4\" OR \"degree 4\" arXiv 2022 2023 2024 2025"
   ],
-  "notes": "Web search was unavailable during this review; all findings are from direct WebFetch calls to arXiv and Wikipedia. A full arXiv listing (14 papers, 2009–2026) was examined: all deal with cubic (3-regular) or planar hypohamiltonian graphs and none address minimum degree ≥ 4. The question whether any hypohamiltonian graph can have minimum degree ≥ 4 is a classical open problem; every known hypohamiltonian graph has minimum degree exactly 3. The problem retained its place in the 2025 French edition of Bondy–Murty, which removed a subset of resolved items."
+  "notes": "Thomassen (1978) proved every planar hypohamiltonian graph contains a cubic vertex, ruling out planar examples with minimum degree ≥ 4. C. T. Zamfirescu strengthened this post-2008: every planar hypohamiltonian graph has at least four cubic vertices ('Cubic vertices in planar hypohamiltonian graphs', referenced in search results). All recent literature found (papers from 2019–2025 on hypohamiltonian graphs, including arXiv:1602.07171, arXiv:2311.10593, arXiv:2403.18384) consistently treat the existence of a hypohamiltonian graph with minimum degree ≥ 4 as open. No verified primary source reporting a resolution was found. Note: the cited Zamfirescu paper URL (czamfirescu.tricube.de/CTZamfirescu-32.pdf) returned a connection error and could not be verified, so it is not included in since_posted."
 }

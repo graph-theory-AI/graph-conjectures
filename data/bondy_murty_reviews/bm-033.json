@@ -7,14 +7,49 @@
   "model": "claude-sonnet-4-6",
   "search_enabled": true,
   "status": "partial",
-  "confidence": "low",
-  "summary": "The Erdős–Sós conjecture (1963) remains open in full generality as of August 2025 (the reviewer's knowledge cutoff). The most significant partial result is the long-announced but not fully peer-reviewed proof by Ajtai, Komlós, Simonovits, and Szemerédi that the conjecture holds for all sufficiently large k (k ≥ k₀ for an explicit but large constant k₀); their proof, reportedly spanning over 200 pages across multiple papers, has been in preparation since the early 1990s. Special cases are settled for paths, stars, caterpillars, trees of diameter at most 4, and several other tree families. A resolution for all k may have appeared between August 2025 and the review date of September 2026, which the reviewer cannot verify due to tool failures.",
-  "since_posted": [],
+  "confidence": "high",
+  "summary": "The Erdős–Sós conjecture (1963) remains open in full generality. Major partial results have appeared: Pokrovskiy (2024) proved the conjecture for all sufficiently large bounded-degree trees; Davoodi, Piguet, Řada, and Sanhueza-Matamala (2026) established an asymptotic version for dense host graphs without any degree restriction on the guest tree; Reed and Stein (2026) proved the conjecture exactly (without approximation) for dense host graphs when k ≥ γn for any fixed γ > 0, also resolving a 51-year-old problem of Erdős and Graham on multicolor Ramsey numbers for trees. The long-announced proof by Ajtai, Komlós, Simonovits, and Szemerédi for sufficiently large k remains unpublished.",
+  "since_posted": [
+    {
+      "title": "Hyperstability in the Erdős-Sós Conjecture",
+      "authors": "Alexey Pokrovskiy",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2409.15191",
+      "arxiv_id": "2409.15191",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the Erdős–Sós conjecture for all sufficiently large bounded-degree trees, by establishing a structure theorem that converts sparse T-free graphs into dense T-free ones amenable to regularity methods."
+    },
+    {
+      "title": "The asymptotic version of the Erdős-Sós conjecture and beyond",
+      "authors": "Akbar Davoodi, Diana Piguet, Hanka Řada, Nicolás Sanhueza-Matamala",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.17755",
+      "arxiv_id": "2603.17755",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves an asymptotic version of the Erdős–Sós conjecture for dense host graphs without any bounded-degree restriction on the guest tree, as a consequence of a more general tree-containment result."
+    },
+    {
+      "title": "The Erdős-Sós conjecture in dense graphs",
+      "authors": "Bruce Reed, Maya Stein",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2609.05417",
+      "arxiv_id": "2609.05417",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the Erdős–Sós conjecture exactly (without approximation) for all graphs on n vertices when k ≥ γn for any fixed γ > 0, and as a byproduct resolves a 51-year-old problem of Erdős and Graham on multicolor Ramsey numbers for trees."
+    }
+  ],
   "internal_refs_verified": [],
   "search_queries": [
-    "Erdős–Sós conjecture proof status 2024 2025 2026",
-    "Erdos-Sos conjecture tree edges graph proved solved",
-    "Ajtai Komlos Simonovits Szemeredi Erdos Sos conjecture arxiv"
+    "Erdős–Sós conjecture proof 2023 2024 2025 Ajtai Komlós Simonovits Szemerédi",
+    "Erdős-Sós conjecture trees graph current status solved",
+    "Erdős-Sós conjecture dense graphs Davoodi Piguet Řada Sanhueza-Matamala proof 2024 2025",
+    "Pokrovskiy Erdős-Sós bounded degree trees 2024 arXiv proof large trees"
   ],
-  "notes": "All web retrieval attempts failed during this review: WebSearch returned 'tool unavailable'; Wikipedia pages for the conjecture returned HTTP 404; arXiv search returned HTTP 429 (rate-limited); erdosproblems.com returned HTTP 403; guessed arXiv IDs (2408.06402, 2501.18753, 2206.03768) resolved to unrelated papers. The status 'partial' and the description of the Ajtai–Komlós–Simonovits–Szemerédi announcement are based solely on the reviewer's training knowledge (cutoff August 2025) and carry low confidence because no primary sources could be verified. The AKSS result covers sufficiently large k only; the full conjecture (all k ≥ 2) was still open as of that cutoff. Because today is September 2026, a full proof or counterexample may have appeared in the interim and cannot be reported here. No verified URLs are included in since_posted."
+  "notes": "The full conjecture — every graph on n vertices with more than n(k-1)/2 edges contains every tree with k edges — remains open. Three significant partial results have appeared since the book's 2008 publication: (1) the bounded-degree case for large trees (Pokrovskiy 2024); (2) an asymptotic dense-graph result for all trees (Davoodi et al. 2026); (3) the exact dense-graph result for k ≥ γn (Reed–Stein 2026). The AKSS proof announced in the 1990s for 'large enough k' (without any bounded-degree restriction) was never formally published and has not appeared as of 2026. The companion paper arXiv:2409.15189 (Pokrovskiy, notes on covers) supports the 2409.15191 result. The arXiv paper 2608.25746 (Zhao–Peng) addresses a Gerbner–Palmer variant about clique counts in T-free graphs, not the original conjecture."
 }

@@ -29,11 +29,11 @@ Reviewed status counts:
 
 | status    | OPG  | arXiv | Bondy–Murty | meaning                                                   |
 |-----------|-----:|------:|------------:|------------------------------------------------------------|
-| open      |   57 |   554 |          15 | no significant progress found in literature search         |
-| partial   |  137 |   132 |          17 | progress since posting (special cases, weakened version)   |
+| open      |   57 |   554 |          13 | no significant progress found in literature search         |
+| partial   |  137 |   132 |          21 | progress since posting (special cases, weakened version)   |
 | solved    |   19 |    58 |           3 | fully proved by a follow-up paper                          |
 | disproved |   13 |    13 |           1 | counterexample found                                       |
-| unclear   |    1 |     5 |           2 | insufficient information to decide                         |
+| unclear   |    1 |     5 |           0 | insufficient information to decide                         |
 
 **44 of the arXiv-extracted records** were also identified as direct progress
 on existing OPG problems and attached as citations on those OPG pages (e.g. on

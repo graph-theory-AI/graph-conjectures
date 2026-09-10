@@ -8,15 +8,26 @@
   "search_enabled": true,
   "status": "open",
   "confidence": "high",
-  "summary": "The orientable five cycle double cover conjecture — that every 2-edge-connected graph has an orientable double cover by five even subgraphs — remains open as of September 2026. The Open Problem Garden page for the circular embedding conjecture explicitly lists it as open and notes it would follow from a strengthened form of the orientable circular embedding conjecture. No primary source settling or disproving the conjecture was found. Web search was unavailable and arXiv rate-limited during this review; however, the conjecture is sufficiently well-known that a resolution would appear prominently in the literature surveyed.",
-  "since_posted": [],
+  "summary": "The orientable five cycle double cover conjecture (every 2-edge-connected graph has an orientable double cover by five even subgraphs, attributed to Archdeacon 1984 and Jaeger 1988) remains open as of September 2026. It is strictly stronger than both the ordinary cycle double cover conjecture and the five-cycle double cover conjecture. The July 2026 proof of the cycle double cover conjecture (by OpenAI/GPT 5.6, expounded by Oum) does not resolve it; Oum's exposition explicitly labels the orientable 5-CDC as Conjecture 21 and leaves it open. The Open Problem Garden page for (m,n)-cycle covers likewise records it as open with limited progress.",
+  "since_posted": [
+    {
+      "title": "A Proof of the Cycle Double Cover Conjecture by OpenAI: An Exposition",
+      "authors": "Sang-il Oum",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2607.16356",
+      "arxiv_id": "2607.16356",
+      "doi": null,
+      "kind": "survey",
+      "claim": "Proves the general cycle double cover conjecture (Theorem 1) via an exposition of the OpenAI/GPT-5.6 proof, but explicitly lists the orientable 5-cycle double cover conjecture as Conjecture 21 and leaves it open; notes it would imply Tutte's 5-flow conjecture."
+    }
+  ],
   "internal_refs_verified": [],
   "search_queries": [
     "orientable five cycle double cover conjecture Archdeacon Jaeger graph theory",
     "\"orientable double cover\" \"five even subgraphs\" 2-edge-connected graph conjecture",
-    "orientable cycle double cover five even subgraphs arXiv 2025 2026",
-    "cycle double cover conjecture proof 2025 2026",
-    "orientable double cover even subgraphs graph theory"
+    "\"orientable five cycle double cover\" OR \"O5CDC\" graph theory 2020 2021 2022 2023 2024 2025 2026",
+    "five cycle double cover conjecture proof 2022 2023 2024 2025 2026 arXiv"
   ],
-  "notes": "Web search tool was unavailable during this review; arXiv search returned HTTP 429 (rate-limit) on multiple attempts. One verified source: the Open Problem Garden page for 'the_circular_embedding_conjecture' (fetched 2026-09-10) states that the orientable five cycle double cover conjecture is open, and that an oriented variant of the circular embedding conjecture would imply it. The Wikipedia article on 'Cycle double cover' was found to contain vandalized/injected content (a fabricated claim that OpenAI proved the conjecture in July 2026 using GPT-5.6); that article was discarded entirely. The conjecture strengthens both the five cycle double cover conjecture (BM item 14, OPG record 'cycle_double_cover_conjecture') and the orientable cycle double cover conjecture (related to OPG record 'the_circular_embedding_conjecture'). The circular embedding conjecture itself (OPG record) is also open and would imply this one. Confidence is high because (a) the OPG confirms open status, (b) a thorough multi-angle search found no claimed resolution, and (c) this conjecture is classical enough that a proof would be widely reported."
+  "notes": "The conjecture (Bondy–Murty Appendix A item 26, also Conjecture 22.14 in the book) is the common strengthening of: (a) the five-cycle double cover conjecture (item 14 of Appendix A; CDC with at most 5 Eulerian subgraphs), and (b) the orientable cycle double cover conjecture. The July 2026 proof of the ordinary CDC by OpenAI (expounded in arXiv:2607.16356 by Oum) is a major landmark for the weaker statement but leaves this conjecture untouched — the paper identifies the orientable 5-CDC (Conjecture 21) as a further open problem. The OPG page for (m,n)-cycle covers confirms it is open and notes that 'considerably less is known about (m,n)-oriented-cycle-covers'. The arXiv:0911.2713 paper establishes the orientable CDC for 2-edge-connected projective-planar graphs (a partial result for a special class), not the full orientable 5-CDC. Relation to corpus: stronger than OPG record cycle_double_cover_conjecture; consequence of the circular embedding conjecture (OPG record the_circular_embedding_conjecture); OPG record grunbaums_conjecture compared with the orientable CDC variant."
 }
