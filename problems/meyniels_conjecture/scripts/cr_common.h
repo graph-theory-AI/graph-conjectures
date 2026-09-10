@@ -13,8 +13,12 @@ static u64 binom[100][20];
 static void init_binom(void){ for(int a=0;a<100;a++){ binom[a][0]=1; for(int b=1;b<20;b++) binom[a][b]=(a==0)?0:binom[a-1][b-1]+binom[a-1][b]; } }
 static void build_lists(void){ for(int v=0;v<n;v++){ nbc[v]=0; for(int u=0;u<n;u++) if(cl[v]>>u&1) nbl[v][nbc[v]++]=u; } }
 static int parse_g6(const char*s){
-  int N=s[0]-63; if(N<1||N>62) return -1; n=N; for(int i=0;i<n;i++) cl[i]=1ULL<<i;
-  int bitpos=0; const char*p=s+1;
+  int N=s[0]-63; if(N<1||N>62) return -1;
+  // The adjacency payload must be present in full: ceil(N(N-1)/2 / 6) characters, each in '?'..'~'.
+  size_t need=((size_t)N*(N-1)/2+5)/6; const char*p=s+1;
+  for(size_t i=0;i<need;i++){ if(p[i]<63||p[i]>126) return -1; }   // stops at a NUL terminator too
+  n=N; for(int i=0;i<n;i++) cl[i]=1ULL<<i;
+  int bitpos=0;
   for(int j=1;j<n;j++) for(int i=0;i<j;i++){ int byte=bitpos/6, bit=5-(bitpos%6); int v=(p[byte]-63)>>bit&1; bitpos++; if(v){ cl[i]|=1ULL<<j; cl[j]|=1ULL<<i; } }
   build_lists(); return 0;
 }
@@ -31,8 +35,13 @@ static inline int test_and_set(u64*a,u64 i){ u64 old=__atomic_fetch_or(&a[i>>6],
 typedef struct { int win_cf, rounds_cf, win_rf, rounds_rf; double frac_ct; double mean_ct_round; u64 M; int rounds_total; u64 nwin_place; int place[20]; int maxround_place; } result_t;
 
 // early: 1 => stop as soon as cops (moving first after placement) are known to win.
+// Supported range: 1 <= k <= MAXK-1 and n <= 62 (graph6), so every binom[n+k-1][k] and
+// binom[c+i][i+1] index stays inside binom[100][20] and the u8 c[MAXK] scratch arrays fit.
+#define MAXK 20
+static int k_supported(int k){ return k>=1 && k<MAXK && n+k-1<100; }
 static result_t solve_staged(int k, int verbose, int early){
   result_t res; memset(&res,0,sizeof res); res.rounds_cf=-1; res.rounds_rf=-1;
+  if(!k_supported(k)){ fprintf(stderr,"unsupported k=%d for n=%d (need 1 <= k <= %d)\n",k,n,MAXK-1); exit(2); }
   u64 M=binom[n+k-1][k]; res.M=M;
   // all sorted tuples of size k stored by rank
   u8 *tup=malloc(M*k);

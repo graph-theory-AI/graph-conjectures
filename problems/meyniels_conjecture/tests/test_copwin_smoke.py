@@ -52,10 +52,14 @@ class CopwinSmoke(unittest.TestCase):
              *link_flags], cwd=SRC,
         )
 
+    def run_raw(self, args, g6):
+        return subprocess.run([self.exe, *args], input=g6 + "\n", capture_output=True,
+                              text=True, env={**os.environ, "OMP_NUM_THREADS": "2"})
+
     def run_solver(self, args, g6):
-        out = subprocess.run([self.exe, *args], input=g6 + "\n", capture_output=True,
-                             text=True, env={**os.environ, "OMP_NUM_THREADS": "2"}, check=True).stdout
-        return out
+        proc = self.run_raw(args, g6)
+        proc.check_returncode()
+        return proc.stdout
 
     def test_petersen_is_3(self):
         self.assertIn(" c=3 ", self.run_solver(["-c", "4", "-e"], PETERSEN_G6))
@@ -73,6 +77,26 @@ class CopwinSmoke(unittest.TestCase):
         lines = self.run_solver(["-c", "4", "-e"], ">>graph6<<\n\n" + PETERSEN_G6).splitlines()
         self.assertEqual(len(lines), 1)
         self.assertIn(" c=3 ", lines[0])
+
+    def test_truncated_or_invalid_graph6_is_rejected(self):
+        # A truncated payload, an out-of-range payload character and a bare header must be
+        # skipped with a diagnostic instead of being decoded from whatever follows in memory.
+        for bad in (PETERSEN_G6[:4], PETERSEN_G6[:-1] + " ", "I"):
+            with self.subTest(bad=bad):
+                proc = self.run_raw(["-c", "4", "-e"], bad + "\n" + PETERSEN_G6)
+                self.assertEqual(proc.returncode, 0)
+                self.assertIn("bad g6", proc.stderr)
+                lines = proc.stdout.splitlines()
+                self.assertEqual(len(lines), 1)
+                self.assertIn(" c=3 ", lines[0])
+
+    def test_bad_arguments_are_rejected(self):
+        for args in (["-c"], [], ["0"], ["20"], ["-c", "25"], ["-x", "3"]):
+            with self.subTest(args=args):
+                proc = self.run_raw(args, PETERSEN_G6)
+                self.assertEqual(proc.returncode, 2)
+                self.assertIn("usage", proc.stderr)
+                self.assertEqual(proc.stdout, "")
 
     def test_robertson_is_4(self):
         with open(os.path.join(DATA, "robertson.g6")) as graph_file:

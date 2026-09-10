@@ -1,7 +1,16 @@
 #include "cr_common.h"
 int main(int argc,char**argv){
   init_binom(); int k=0,verbose=0,copnum=0,maxk=0,early=0;
-  for(int i=1;i<argc;i++){ if(!strcmp(argv[i],"-v")) verbose=1; else if(!strcmp(argv[i],"-e")) early=1; else if(!strcmp(argv[i],"-c")){copnum=1;maxk=atoi(argv[++i]);} else k=atoi(argv[i]); }
+  const char*usage="usage: copwin2 [-v] [-e] (K | -c MAXK) < graphs.g6   with 1 <= K, MAXK <= 19\n";
+  for(int i=1;i<argc;i++){
+    if(!strcmp(argv[i],"-v")) verbose=1;
+    else if(!strcmp(argv[i],"-e")) early=1;
+    else if(!strcmp(argv[i],"-c")){ if(i+1>=argc){ fputs(usage,stderr); return 2; } copnum=1; maxk=atoi(argv[++i]); }
+    else if(argv[i][0]=='-'){ fprintf(stderr,"unknown option %s\n%s",argv[i],usage); return 2; }
+    else k=atoi(argv[i]);
+  }
+  int want=copnum?maxk:k;
+  if(want<1||want>=MAXK){ fputs(usage,stderr); return 2; }
   char line[8192];
   while(fgets(line,sizeof line,stdin)){
     size_t L=strlen(line);
