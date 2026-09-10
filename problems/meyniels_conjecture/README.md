@@ -87,7 +87,7 @@ scripts/copwin2.c, cr_common.h   exact k-cop solver (C, OpenMP; graph6 in, n <= 
 scripts/*.py            constructions: Hoffman-Singleton and its Petersen subgraphs, Wells graph, polarity graphs
 data/*.g6               every hand-constructed graph whose cop number was computed (graph6)
 results/                raw computational log and tallies of the exhaustive runs
-tests/                  smoke test: builds the solver and checks Petersen = 3, Robertson = 4
+tests/                  smoke tests: published cop numbers and graph6 headers; configurable OpenMP compiler
 ```
 
 The regenerable `geng` enumerations are not committed; the exact commands are in
@@ -99,6 +99,9 @@ The regenerable `geng` enumerations are not committed; the exact commands are in
 2. [docs/computations.md](docs/computations.md), for what was computed and how to reproduce it.
 3. `scripts/copwin2.c`, the solver (`gcc -O3 -march=native -fopenmp -o copwin2 copwin2.c`;
    `./copwin2 -c 6 -e < data/cages55_all.g6` prints the cop numbers of the four (5,5)-cages).
+
+For smoke-test commands and macOS/OpenMP compiler configuration, see
+[docs/computations.md](docs/computations.md#solver-scriptscopwin2c-scriptscr_commonh).
 
 ## References
 

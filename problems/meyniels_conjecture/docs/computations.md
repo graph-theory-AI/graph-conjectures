@@ -19,6 +19,31 @@ gcc -O3 -march=native -fopenmp -o copwin2 copwin2.c
 ./copwin2 -c K -e < graphs.g6       # cop number, trying k = 1..K
 ```
 
+The optional `>>graph6<<` header is accepted on the first graph's line or on
+a line of its own. Blank lines and both LF and CRLF line endings are accepted.
+
+Run the smoke tests from the repository root:
+```bash
+python -m unittest problems/meyniels_conjecture/tests/test_copwin_smoke.py -v
+```
+The tests use `CC` (default `gcc`), `CPPFLAGS`, `CFLAGS` (default `-O2 -fopenmp`),
+`LDFLAGS`, and `LDLIBS`. Flag values are split as shell arguments. The suite skips
+with an explanation if the compiler is missing or an OpenMP compile/link probe
+fails; solver compilation errors after a successful probe remain test failures.
+
+On macOS, `/usr/bin/gcc` is Apple Clang. With Homebrew's `libomp` already installed,
+the tests can use it as follows:
+```bash
+MEYNIEL_LIBOMP_PREFIX="$(brew --prefix libomp)"
+CC=clang CFLAGS='-O2 -Xpreprocessor -fopenmp' \
+  CPPFLAGS="-I\"$MEYNIEL_LIBOMP_PREFIX/include\"" \
+  LDFLAGS="-L\"$MEYNIEL_LIBOMP_PREFIX/lib\"" LDLIBS=-lomp \
+  python -m unittest problems/meyniels_conjecture/tests/test_copwin_smoke.py -v
+```
+Alternatively, set `CC` to an installed GNU GCC executable with OpenMP support.
+The tests cover Petersen and Robertson, header-bearing multi-graph input, and
+standalone headers.
+
 **Validation.** $C_4=2$, $C_5=2$, $P_5=1$, $K_5=1$, Petersen 3, Heawood 3, dodecahedron 3,
 $4\times4$ grid 2; Robertson graph: 3 cops lose, 4 win. Over all connected graphs on
 $5,\dots,9$ vertices the numbers of cop-win graphs are $16,68,403,3791,65561$ (the known values),
