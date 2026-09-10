@@ -150,6 +150,10 @@ def _build_user_prompt(rec: dict, out_path: Path) -> str:
 def review_one(rec: dict, out_dir: Path, model: str, dry_run: bool = False,
                system_prompt_path: Path = SYSTEM_PROMPT_PATH) -> int:
     rid = _rid(rec)
+    if not rid:
+        log.error("record without `bm_id`/`id` (title=%r); refusing to write %s/.json",
+                  rec.get("title"), out_dir)
+        return 1
     out_path = out_dir / f"{rid}.json"
     if out_path.exists():
         log.info("  skip (already reviewed): %s", rid)
@@ -209,6 +213,10 @@ def main(argv: list[str] | None = None) -> int:
     )
     args.out_dir.mkdir(parents=True, exist_ok=True)
     records = _load_records(args.records)
+    missing = [r.get("title") for r in records if not _rid(r)]
+    if missing:
+        log.error("%d record(s) in %s have neither `bm_id` nor `id`: %s", len(missing), args.records, missing)
+        return 1
 
     if args.bm_id:
         rec = next((r for r in records if _rid(r) == args.bm_id), None)

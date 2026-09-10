@@ -122,8 +122,9 @@ class CuratedCorpusTests(unittest.TestCase):
                 self.assertIn(r["kind"], {"Conjecture", "Problem"})
                 self.assertTrue(r["source"].get("url"))
                 if r.get("workstream"):
-                    self.assertTrue((ROOT / r["workstream"]).is_dir() or True,
-                                    "workstream path may live on another branch; recorded as given")
+                    # The directory may live on another branch until that PR merges, so only
+                    # the shape is checked: a relative problems/<name> path, no trailing slash.
+                    self.assertRegex(r["workstream"], r"^problems/[A-Za-z0-9_.-]+$")
 
     def test_related_pointers_resolve(self):
         for r in self.records:
