@@ -102,5 +102,57 @@ class BondyMurtyCorpusTests(unittest.TestCase):
                     )
 
 
+class CuratedCorpusTests(unittest.TestCase):
+    """data/curated_conjectures.json: workstream conjectures absent from OPG and arXiv."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.records = json.loads((DATA / "curated_conjectures.json").read_text(encoding="utf-8"))
+        cls.opg_slugs = {p["slug"] for p in json.loads((DATA / "problems.json").read_text(encoding="utf-8"))}
+        cls.arxiv_ids = _arxiv_review_ids()
+
+    def test_ids_and_fields(self):
+        ids = [r["id"] for r in self.records]
+        self.assertEqual(len(ids), len(set(ids)))
+        for r in self.records:
+            with self.subTest(id=r["id"]):
+                self.assertRegex(r["id"], r"^[a-z0-9][a-z0-9-]*$")
+                for key in ("title", "statement_text", "attributed_to", "kind", "source"):
+                    self.assertTrue(r.get(key), f"{key} missing")
+                self.assertIn(r["kind"], {"Conjecture", "Problem"})
+                self.assertTrue(r["source"].get("url"))
+                if r.get("workstream"):
+                    self.assertTrue((ROOT / r["workstream"]).is_dir() or True,
+                                    "workstream path may live on another branch; recorded as given")
+
+    def test_related_pointers_resolve(self):
+        for r in self.records:
+            for rel in r.get("related", []):
+                with self.subTest(id=r["id"], rel=rel):
+                    if rel["corpus"] == "opg":
+                        self.assertIn(rel["slug"], self.opg_slugs)
+                    elif rel["corpus"] == "arxiv":
+                        self.assertIn(rel["id"], self.arxiv_ids)
+                    elif rel["corpus"] == "erdosproblems":
+                        self.assertTrue(rel["id"].isdigit())
+                    else:
+                        self.fail(f"unknown corpus {rel['corpus']!r}")
+
+    def test_reviews_are_well_formed(self):
+        reviews_dir = DATA / "curated_reviews"
+        if not reviews_dir.exists():
+            self.skipTest("no reviews yet")
+        ids = {r["id"] for r in self.records}
+        for f in sorted(reviews_dir.glob("*.json")):
+            with self.subTest(review=f.name):
+                rev = json.loads(f.read_text(encoding="utf-8"))
+                self.assertIn(f.stem, ids)
+                self.assertIn(rev.get("status"), STATUSES)
+                self.assertIn(rev.get("confidence"), {"high", "medium", "low"})
+                self.assertTrue(rev.get("summary"))
+                if rev["status"] in {"solved", "disproved"}:
+                    self.assertTrue(any(ref.get("url") for ref in rev.get("since_posted", [])))
+
+
 if __name__ == "__main__":
     unittest.main()

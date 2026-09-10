@@ -1,13 +1,17 @@
 {% extends "base.html" %}
-{% block title %}{{ p.title }} — Graph-theory open problems (Bondy–Murty){% endblock %}
+{% block title %}{{ p.title }} — Graph-theory open problems ({{ 'Bondy–Murty' if p._source == 'bm' else 'curated' }}){% endblock %}
 
 {% block main %}
-<article class="problem bm">
+<article class="problem {{ p._source }}">
 <header>
   <h1>{{ p.title }}</h1>
+  {% if p._source == 'bm' %}
   <p class="paper-label">Bondy–Murty, <em>Graph Theory</em>, Appendix A, item {{ p.appendix_number }} · {{ p.section }}</p>
+  {% elif p.workstream %}
+  <p class="paper-label">{% if p.section %}{{ p.section }} · {% endif %}Research workstream: <a href="https://github.com/graph-theory-AI/graph-conjectures/tree/main/{{ p.workstream }}"><code>{{ p.workstream }}/</code></a></p>
+  {% endif %}
   <div class="meta">
-    <span class="badge source source-bm">Bondy–Murty</span>
+    {% if p._source == 'bm' %}<span class="badge source source-bm">Bondy–Murty</span>{% else %}<span class="badge source source-curated">curated</span>{% endif %}
     <span class="kind">{{ p.kind }}</span>
     {% if p.attributed_year %}<span class="posted">— first stated {{ p.attributed_year }}</span>{% endif %}
   </div>
@@ -105,17 +109,23 @@
 <h2>Source</h2>
 <p>
   <strong>{{ p.source_info.title }}</strong><br>
+  {% if p._source == 'bm' %}
   Item {{ p.appendix_number }}, book p. {{ p.source_info.book_page }} (PDF p. {{ p.source_info.pdf_page }}) ·
   <a href="{{ p.source_info.url }}">{{ p.source_info.url }}</a> ·
   <a href="{{ p.source_info.pdf_url }}#page={{ p.source_info.pdf_page }}">PDF</a><br>
   English edition: {{ p.source_info.english_edition }}.
+  {% else %}
+  {% if p.source_info.reference %}Original reference: {{ p.source_info.reference }}.<br>{% endif %}
+  <a href="{{ p.source_info.url }}">{{ p.source_info.url }}</a>
+  {% endif %}
 </p>
 </section>
 
 {% include "_related.html" %}
 
 <footer class="canonical">
-<a href="{{ p.source_info.pdf_url }}#page={{ p.source_info.pdf_page }}">View the appendix page on HAL</a>
+{% if p._source == 'bm' %}<a href="{{ p.source_info.pdf_url }}#page={{ p.source_info.pdf_page }}">View the appendix page on HAL</a>
+{% else %}<a href="{{ p.source_info.url }}">View the workstream on GitHub</a>{% endif %}
 </footer>
 </article>
 {% endblock %}
