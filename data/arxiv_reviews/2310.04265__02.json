@@ -5,18 +5,40 @@
   "conjecture_title": "Conjecture 3.12",
   "paper_title": "Clique number of tournaments",
   "published": "2023-10-06",
-  "reviewed_at": "2026-05-15",
-  "model": "claude-sonnet-4-6",
+  "reviewed_at": "2026-09-10",
+  "model": "codex",
   "search_enabled": true,
-  "status": "open",
+  "status": "solved",
   "confidence": "high",
-  "summary": "Conjecture 3.12 from arXiv:2310.04265 asks whether every class of tournaments with twin-width at most k is χ⃗-bounded. The conjecture is explicitly motivated by the fact that tournaments with bounded twin-width can have arbitrarily large dichromatic number (the tournament S_k has twin-width 1 and dichromatic number k), yet χ⃗-boundedness — dichromatic number bounded as a function of the clique number — may still hold. No follow-up paper resolving this conjecture was found in the indexed literature as of May 2026. A related 2024 paper (arXiv:2401.07776) disproves a different conjecture from the same source paper (concerning the computational complexity of the clique number of tournaments), leaving Conjecture 3.12 open.",
-  "since_posted": [],
+  "summary": "Proved by Aubian and Coulomb (Theorem 5.7, arXiv:2609.07481) and by Tang and Zhang (Corollary 1.2, arXiv:2609.02763). For each fixed twin-width bound k, the dichromatic number of a tournament is bounded by a function of its tournament clique number.",
+  "since_posted": [
+    {
+      "title": "Clique Number of Tournaments II",
+      "authors": "Guillaume Aubian, Samuel Coulomb",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2609.07481",
+      "arxiv_id": "2609.07481",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Theorem 5.7 proves that classes of tournaments with bounded twin-width are χ⃗-bounded."
+    },
+    {
+      "title": "Bounded Twin-Width Tournaments are χ⃗-Bounded",
+      "authors": "Chaoliang Tang, Junchi Zhang",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2609.02763",
+      "arxiv_id": "2609.02763",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Corollary 1.2 gives, for every k ≥ 0, a function f_k bounding the dichromatic number by f_k of the tournament clique number whenever twin-width is at most k."
+    }
+  ],
   "internal_refs_verified": [],
   "search_queries": [
-    "twin-width tournaments dichromatic number chi-bounded 2310.04265",
-    "tournaments twin-width chi-vec-bounded dichromatic number conjecture arxiv",
-    "Aboulker Aubian Charbit Lopes \"clique number of tournaments\" twin-width chi-bounded follow-up 2024 2025"
+    "https://arxiv.org/html/2609.07481",
+    "https://arxiv.org/html/2609.02763"
   ],
-  "notes": "The 2024 paper arXiv:2401.07776 ('Computing the clique number of tournaments') provides a counterexample to a conjecture of the same authors from arXiv:2310.04265, but that counterexample concerns clique-number complexity (NP-completeness for k≥3), not Conjecture 3.12 on twin-width and χ⃗-boundedness. No resolution of Conjecture 3.12 was found in 6 web calls (3 searches, 3 fetches). Given the conjecture was posted in October 2023 and is relatively recent, open status with high confidence is appropriate."
+  "notes": "Corrected on 2026-09-10 following Samuel Coulomb's report; both cited results were checked in the full text. Tang and Zhang call the source conjecture 3.13, but its statement matches this catalog's original Conjecture 3.12. The result is χ⃗-boundedness, not a constant bound on dichromatic number or a claim of polynomial χ⃗-boundedness."
 }
