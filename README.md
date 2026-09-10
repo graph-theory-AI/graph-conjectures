@@ -2,8 +2,10 @@
 
 ![Resolved graph conjectures timeline](scraper/static/resolved-conjectures-timeline.png)
 
-Resolved-conjecture timeline: 96 solved or disproved conjectures, split across
-OPG literature reviews and arXiv-extracted conjectures. Editable SVG:
+The image above is a snapshot of 96 solved or disproved conjectures, split across
+OPG literature reviews and arXiv-extracted conjectures. The
+[live timeline](https://graph-theory-ai.github.io/graph-conjectures/timeline/)
+is rebuilt from the current reviews (101 resolved records). Editable snapshot SVG:
 [`scraper/static/resolved-conjectures-timeline.svg`](scraper/static/resolved-conjectures-timeline.svg).
 
 A browseable, status-annotated mirror of the **graph-theory category** of
@@ -27,11 +29,11 @@ Reviewed status counts:
 
 | status    | OPG  | arXiv | meaning                                                   |
 |-----------|-----:|------:|------------------------------------------------------------|
-| open      |   57 |   554 | no significant progress found in literature search         |
-| partial   |  137 |   132 | progress since posting (special cases, weakened version)   |
-| solved    |   19 |    58 | fully proved by a follow-up paper                          |
-| disproved |   13 |    13 | counterexample found                                       |
-| unclear   |    1 |     5 | insufficient information to decide                         |
+| open      |   57 |   551 | no significant progress found in literature search         |
+| partial   |  137 |   131 | progress since posting (special cases, weakened version)   |
+| solved    |   19 |    61 | fully proved by a follow-up paper                          |
+| disproved |   13 |    16 | counterexample found                                       |
+| unclear   |    1 |     3 | insufficient information to decide                         |
 
 **44 of the arXiv-extracted records** were also identified as direct progress
 on existing OPG problems and attached as citations on those OPG pages (e.g. on
