@@ -12,6 +12,10 @@ For one bm_id (a record in data/bondy_murty_conjectures.json):
 Same review schema as the arXiv pipeline (scraper/arxiv_review.py), so
 scraper/build.py attaches the result with the same code path.
 
+Also drives the hand-curated corpus (data/curated_conjectures.json, ids in `id`):
+    python scraper/bm_review.py --records data/curated_conjectures.json \
+        --out-dir data/curated_reviews --system-prompt scraper/curated_review_system_prompt.md --all
+
 Usage
 -----
     PER_REVIEW_TIMEOUT=900 python scraper/bm_review.py --bm-id bm-041
@@ -42,6 +46,11 @@ def _load_records(path: Path) -> list[dict]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _rid(rec: dict) -> str:
+    """Record id: `bm_id` for Bondy–Murty items, `id` for curated records."""
+    return rec.get("bm_id") or rec.get("id") or ""
+
+
 def _build_user_prompt(rec: dict, out_path: Path) -> str:
     src = rec.get("source", {})
     lines = [
@@ -50,11 +59,21 @@ def _build_user_prompt(rec: dict, out_path: Path) -> str:
         "============================================================",
         "  SOURCE",
         "============================================================",
-        f"Book       : {src.get('title', '')}",
-        f"Item       : Appendix A, item {rec.get('appendix_number')} "
-        f"(section: {rec.get('section', '')}; book p. {src.get('book_page')}, PDF p. {src.get('pdf_page')})",
+        f"Source     : {src.get('title', '')}",
+    ]
+    if rec.get("appendix_number") is not None:
+        lines.append(f"Item       : Appendix A, item {rec.get('appendix_number')} "
+                     f"(section: {rec.get('section', '')}; book p. {src.get('book_page')}, PDF p. {src.get('pdf_page')})")
+    if src.get("reference"):
+        lines.append(f"Reference  : {src['reference']}")
+    if rec.get("workstream"):
+        lines.append(f"Workstream : {rec['workstream']} (in our repository)")
+    lines += [
         f"URL        : {src.get('url', '')}",
-        f"English ed.: {src.get('english_edition', '')}",
+    ]
+    if src.get("english_edition"):
+        lines.append(f"English ed.: {src['english_edition']}")
+    lines += [
         "",
         "============================================================",
         f"  CONJECTURE   ({rec.get('kind', 'Conjecture')})",
@@ -107,33 +126,46 @@ def _build_user_prompt(rec: dict, out_path: Path) -> str:
         f"  {out_path}",
         "",
         "Include these extra fields in the JSON object on top of the schema in your instructions:",
-        f"  - \"review_id\":        \"{rec.get('bm_id')}\"",
-        f"  - \"bm_id\":            \"{rec.get('bm_id')}\"",
-        f"  - \"appendix_number\":  {rec.get('appendix_number')}",
+        f"  - \"review_id\":        \"{_rid(rec)}\"",
+    ]
+    if rec.get("bm_id"):
+        lines += [
+            f"  - \"bm_id\":            \"{rec.get('bm_id')}\"",
+            f"  - \"appendix_number\":  {rec.get('appendix_number')}",
+        ]
+    else:
+        lines += [f"  - \"id\":               \"{_rid(rec)}\""]
+    lines += [
         f"  - \"conjecture_title\": \"{(rec.get('title') or '').replace(chr(34), chr(39))}\"",
         "  - \"reviewed_at\":      today's date in YYYY-MM-DD form",
         "  - \"model\":            the model name you are running as",
         "  - \"search_enabled\":   true",
         "",
         f"After writing, output one line: "
-        f"done: {rec.get('bm_id')} -> <status> (<confidence>, <N> cites)",
+        f"done: {_rid(rec)} -> <status> (<confidence>, <N> cites)",
     ]
     return "\n".join(lines)
 
 
-def review_one(rec: dict, out_dir: Path, model: str, dry_run: bool = False) -> int:
-    out_path = out_dir / f"{rec['bm_id']}.json"
+def review_one(rec: dict, out_dir: Path, model: str, dry_run: bool = False,
+               system_prompt_path: Path = SYSTEM_PROMPT_PATH) -> int:
+    rid = _rid(rec)
+    if not rid:
+        log.error("record without `bm_id`/`id` (title=%r); refusing to write %s/.json",
+                  rec.get("title"), out_dir)
+        return 1
+    out_path = out_dir / f"{rid}.json"
     if out_path.exists():
-        log.info("  skip (already reviewed): %s", rec["bm_id"])
+        log.info("  skip (already reviewed): %s", rid)
         return 0
     user_prompt = _build_user_prompt(rec, out_path.resolve())
     if dry_run:
         print(user_prompt)
         return 0
-    if not SYSTEM_PROMPT_PATH.exists():
-        log.error("system prompt not found: %s", SYSTEM_PROMPT_PATH)
+    if not system_prompt_path.exists():
+        log.error("system prompt not found: %s", system_prompt_path)
         return 1
-    system_prompt = SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
+    system_prompt = system_prompt_path.read_text(encoding="utf-8")
     cmd = [
         sys.executable, str(TIMEOUT_SCRIPT), str(PER_REVIEW_TIMEOUT),
         "claude", "-p", user_prompt,
@@ -143,16 +175,16 @@ def review_one(rec: dict, out_dir: Path, model: str, dry_run: bool = False) -> i
         "--model", model,
         "--no-session-persistence",
     ]
-    log.info("  running claude (timeout=%ds) for %s …", PER_REVIEW_TIMEOUT, rec["bm_id"])
+    log.info("  running claude (timeout=%ds) for %s …", PER_REVIEW_TIMEOUT, rid)
     try:
         result = subprocess.run(cmd, timeout=PER_REVIEW_TIMEOUT + 30,
                                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     except subprocess.TimeoutExpired:
-        log.error("  claude timed out for %s", rec["bm_id"])
+        log.error("  claude timed out for %s", rid)
         return 1
     tail = (result.stdout or "").strip().splitlines()[-1:] or [""]
     if not out_path.exists():
-        log.error("  FAILED %s (exit=%d, no JSON written): %s", rec["bm_id"], result.returncode, tail[0][:200])
+        log.error("  FAILED %s (exit=%d, no JSON written): %s", rid, result.returncode, tail[0][:200])
         return 1
     log.info("  saved %s  |  %s", out_path.name, tail[0][:160])
     return 0
@@ -161,10 +193,12 @@ def review_one(rec: dict, out_dir: Path, model: str, dry_run: bool = False) -> i
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     g = ap.add_mutually_exclusive_group(required=True)
-    g.add_argument("--bm-id", help="Record id, e.g. bm-041")
+    g.add_argument("--bm-id", help="Record id, e.g. bm-041 (or a curated `id` with --records)")
     g.add_argument("--all", action="store_true", help="Review every record without a review JSON")
     ap.add_argument("--records", type=Path, default=PROJECT / "data" / "bondy_murty_conjectures.json")
     ap.add_argument("--out-dir", type=Path, default=PROJECT / "data" / "bondy_murty_reviews")
+    ap.add_argument("--system-prompt", type=Path, default=SYSTEM_PROMPT_PATH,
+                    help="system prompt file (use scraper/curated_review_system_prompt.md for curated records)")
     ap.add_argument("--model",   default="claude-sonnet-4-6")
     ap.add_argument("--jobs",    type=int, default=1, help="parallel claude processes for --all")
     ap.add_argument("--dry-run", action="store_true", help="Print the composed prompt; do not call claude.")
@@ -179,19 +213,24 @@ def main(argv: list[str] | None = None) -> int:
     )
     args.out_dir.mkdir(parents=True, exist_ok=True)
     records = _load_records(args.records)
+    missing = [r.get("title") for r in records if not _rid(r)]
+    if missing:
+        log.error("%d record(s) in %s have neither `bm_id` nor `id`: %s", len(missing), args.records, missing)
+        return 1
 
     if args.bm_id:
-        rec = next((r for r in records if r.get("bm_id") == args.bm_id), None)
+        rec = next((r for r in records if _rid(r) == args.bm_id), None)
         if rec is None:
-            log.error("bm_id %s not found in %s", args.bm_id, args.records)
+            log.error("record %s not found in %s", args.bm_id, args.records)
             return 1
-        return review_one(rec, args.out_dir, args.model, args.dry_run)
+        return review_one(rec, args.out_dir, args.model, args.dry_run, args.system_prompt)
 
-    todo = [r for r in records if not (args.out_dir / f"{r['bm_id']}.json").exists()]
+    todo = [r for r in records if not (args.out_dir / f"{_rid(r)}.json").exists()]
     log.info("%d record(s) to review (%d already done), jobs=%d", len(todo), len(records) - len(todo), args.jobs)
     failures = 0
     with ThreadPoolExecutor(max_workers=max(1, args.jobs)) as pool:
-        futs = {pool.submit(review_one, r, args.out_dir, args.model, args.dry_run): r["bm_id"] for r in todo}
+        futs = {pool.submit(review_one, r, args.out_dir, args.model, args.dry_run, args.system_prompt): _rid(r)
+                for r in todo}
         for f in as_completed(futs):
             try:
                 failures += 1 if f.result() else 0

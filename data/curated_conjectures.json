@@ -1,0 +1,40 @@
+[
+  {
+    "id": "meyniels-conjecture",
+    "title": "Meyniel's conjecture on the cop number",
+    "kind": "Conjecture",
+    "section": "Cops and Robbers",
+    "statement_text": "There is an absolute constant $C$ such that every connected graph $G$ on $n$ vertices has cop number $c(G) \\le C\\sqrt{n}$.",
+    "context_text": "In the game of Cops and Robbers, $k$ cops choose vertices, then the robber chooses a vertex, and the two sides alternate moves (cops first), each piece moving to a vertex at distance at most one; the cops win if a cop occupies the robber's vertex. The cop number $c(G)$ is the least $k$ for which the cops have a winning strategy. Writing $c(n)$ for the maximum of $c(G)$ over connected graphs of order $n$, the conjecture says $c(n) = O(\\sqrt{n})$; it is equivalent to $M_k = \\Omega(k^2)$, where $M_k$ is the minimum order of a connected graph with cop number $k$ (Baird et al. 2014). The bound would be tight up to the constant: incidence graphs of projective planes give $c(n) \\ge \\sqrt{n/2} - o(\\sqrt n)$.",
+    "attributed_to": "H. Meyniel",
+    "attributed_year": 1985,
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "arxiv",
+        "id": "2602.07435__00",
+        "arxiv_id": "2602.07435",
+        "note": "cop number vs. treedepth, from the paper proving $c(G) \\le k/2^{(1-o(1))\\sqrt{\\log k}}$ for vertex cover number $k$"
+      },
+      {
+        "corpus": "arxiv",
+        "id": "2307.15512__00",
+        "arxiv_id": "2307.15512",
+        "note": "hypergraph analogue $c(H) = O(\\sqrt{n/k})$"
+      },
+      {
+        "corpus": "arxiv",
+        "id": "2005.10849__00",
+        "arxiv_id": "2005.10849",
+        "note": "sharpness of the high-girth lower bound $\\Omega((\\delta-1)^{g/4})$"
+      }
+    ],
+    "workstream": "problems/meyniels_conjecture",
+    "notes": "Stated by Meyniel in a 1985 personal communication to Frankl and first published in P. Frankl, 'Cops and robbers in graphs with large girth and Cayley graphs', Discrete Appl. Math. 17 (1987). Not in the corpus before this record: Open Problem Garden has no Cops and Robbers page, and the arXiv-extracted records that cite the conjecture were matched against OPG and manually rejected. The workstream approaches the conjecture from the disproof side (what a counterexample would have to look like).",
+    "source": {
+      "title": "problems/meyniels_conjecture — self-contained workstream in this repository",
+      "url": "https://github.com/graph-theory-AI/graph-conjectures/tree/main/problems/meyniels_conjecture",
+      "reference": "P. Frankl, Cops and robbers in graphs with large girth and Cayley graphs, Discrete Applied Mathematics 17 (1987) 301–305"
+    }
+  }
+]
