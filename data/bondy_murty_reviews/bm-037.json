@@ -1,0 +1,57 @@
+{
+  "review_id": "bm-037",
+  "bm_id": "bm-037",
+  "appendix_number": 37,
+  "conjecture_title": "Constructive exponential lower bound for diagonal Ramsey numbers",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The problem of giving a constructive (explicit) proof that r(k,k) ≥ c^k for some constant c > 1 remains open as of September 2026. Erdős's 1947 probabilistic argument establishing r(k,k) ≥ 2^{k/2} still represents the best-known lower bound method; no explicit construction is known to achieve exponential growth in the diagonal case. Major recent breakthroughs in Ramsey theory have improved the upper bound (Campos et al., 2023: r(k,k) ≤ (4-ε)^k) and constructive lower bounds for off-diagonal cases such as R(3,t), but the constructive exponential lower bound for the diagonal case remains one of the central unsolved problems in combinatorics.",
+  "since_posted": [
+    {
+      "title": "An exponential improvement for diagonal Ramsey",
+      "authors": "Marcelo Campos, Simon Griffiths, Robert Morris, Julian Sahasrabudhe",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2303.09521",
+      "arxiv_id": "2303.09521",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves r(k,k) ≤ (4-ε)^k for some ε > 0, the first exponential improvement to the upper bound since 1935; this is not constructive and concerns the upper bound, not the constructive lower bound, confirming the constructive lower bound problem remains open."
+    },
+    {
+      "title": "Some recent results in Ramsey theory",
+      "authors": "Unknown (survey, arXiv 2601.05221)",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.05221",
+      "arxiv_id": "2601.05221",
+      "doi": null,
+      "kind": "survey",
+      "claim": "Survey of recent breakthroughs in graph Ramsey theory confirms that modern lower bounds on r(k,k) still rely on probabilistic (non-constructive) methods; no constructive exponential lower bound is discussed."
+    },
+    {
+      "title": "Explicit geometric construction of Ramsey graphs",
+      "authors": "Unknown (arXiv 2507.09235)",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2507.09235",
+      "arxiv_id": "2507.09235",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Provides an explicit geometric construction achieving a constructive lower bound of Ω(t^{3/2}) for the off-diagonal Ramsey number R(3,t), but does not address the diagonal case r(k,k)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "constructive lower bound diagonal Ramsey numbers r(k,k) exponential explicit construction",
+    "Erdos constructive proof r(k,k) exponential lower bound open problem 2024 2025",
+    "explicit construction Ramsey graph exponential lower bound r(k,k) 2025 2026 arXiv",
+    "constructive Ramsey lower bound r(k,k) open problem MathOverflow explicit 2025",
+    "Ramsey number r(k,k) constructive proof exponential bound breakthrough",
+    "site:arxiv.org Ramsey r(k,k) constructive explicit exponential lower bound 2024 2025 2026"
+  ],
+  "notes": "The problem (erdosproblems.com #78) asks for an explicit/algorithmic construction of a graph on n vertices with no clique or independent set of size c log n, for some c > 1, witnessing r(k,k) ≥ c^k. The best known constructive lower bounds for the diagonal case remain quasi-polynomial (of order 2^{Ω(sqrt(k))} at best via algebraic constructions) — far from the probabilistic 2^{k/2}. The 2023 breakthrough of Campos et al. (2303.09521) dramatically improved the upper bound but does not address constructive lower bounds. Off-diagonal constructive results (e.g., arXiv 2507.09235 for R(3,t)) do not transfer to the diagonal case. The related corpus record erdosproblems #78 confirms this is listed as open. The constructive vs. probabilistic gap for diagonal Ramsey remains one of the most celebrated open problems at the interface of combinatorics and complexity theory."
+}

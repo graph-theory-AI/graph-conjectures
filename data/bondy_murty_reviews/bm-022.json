@@ -1,0 +1,25 @@
+{
+  "review_id": "bm-022",
+  "bm_id": "bm-022",
+  "appendix_number": 22,
+  "conjecture_title": "Internally disjoint odd paths: is it in co-NP?",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "Thomassen (1980) asked whether the problem of deciding, given a graph G and two k-subsets X and Y of V(G), whether there exist k internally disjoint (X,Y)-paths of odd length, is in co-NP (where k is part of the input). No resolution of this specific question has been found in the literature. For fixed k, the parity k-disjoint paths problem—deciding whether k vertex-disjoint paths exist each with a specified parity—is solvable in nearly linear time (Kawarabayashi, Reed, and Wollan, FOCS 2011), but this does not resolve the variable-k membership question. The co-NP question posed by Thomassen remains open.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Thomassen \"internally disjoint\" \"odd paths\" co-NP complexity graph theory",
+    "internally disjoint XY-paths odd length co-NP NP-complete complexity",
+    "Thomassen 1980 \"odd paths\" k paths complexity graph NP",
+    "\"disjoint paths\" \"odd length\" k paths complexity NP-hard polynomial graph algorithm",
+    "\"parity disjoint paths\" OR \"odd disjoint paths\" complexity co-NP NP-hard Kawarabayashi Reed",
+    "Kawarabayashi Reed Wollan \"graph minor algorithm parity\" 2011 FOCS parity disjoint paths NP",
+    "\"Thomassen\" \"odd paths\" \"co-NP\" OR \"NP-complete\" disjoint graph 2010 2015 2020",
+    "Kawarabayashi Reed Wollan \"parity disjoint paths\" FPT algorithm polynomial fixed parameter"
+  ],
+  "notes": "The problem as stated has k as part of the input (X and Y are k-subsets). The question is whether the complement (non-existence of k odd internally disjoint (X,Y)-paths) is in NP, i.e., whether there is a polynomial-size certificate for non-existence. This would require a min-max or duality theorem for parity-constrained disjoint paths. The closest known result is by Kawarabayashi, Reed, and Wollan ('The Graph Minor Algorithm with Parity Conditions', FOCS 2011), which gives an O(m α(m,n) n) algorithm for the parity k-disjoint paths problem for each fixed k; this puts the fixed-k version in P (hence also in co-NP) but does not resolve the variable-k co-NP question. No verified primary source addressing Thomassen's exact co-NP question was found within the allowed search budget. The problem is distinct from but related to the 'parity 2-disjoint rooted paths' work of Kawarabayashi, Li, and Reed (SODA 2010). URLs for the Kawarabayashi et al. papers could not be verified via WebFetch and are therefore not included as citations."
+}

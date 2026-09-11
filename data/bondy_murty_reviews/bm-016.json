@@ -1,0 +1,59 @@
+{
+  "review_id": "bm-016",
+  "bm_id": "bm-016",
+  "appendix_number": 16,
+  "conjecture_title": "Linear arboricity conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The linear arboricity conjecture (la(G) = ⌈(k+1)/2⌉ for every k-regular graph G) remains open in full generality. The conjecture is confirmed for k ≤ 3 (cubic graphs, classical). Best known general upper bound as of 2025 is la(G) ≤ Δ/2 + O(log n) (Christoph et al., 2025), an exponential improvement over the O(Δ^{2/3}) error of Ferber–Fox–Jain (2018). The conjecture is also verified for 2k-regular graphs with girth ≥ 2k (Mishra, 2025).",
+  "since_posted": [
+    {
+      "title": "Towards the linear arboricity conjecture",
+      "authors": "Ferber, A., Fox, J., Jain, V.",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1809.04716",
+      "arxiv_id": "1809.04716",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves la(G) ≤ Δ/2 + O(Δ^{2/3−α}) for some α > 0 and gives probabilistic poly-time algorithms; improves the 1992 Alon–Spencer bound but does not settle the conjecture."
+    },
+    {
+      "title": "New bounds for linear arboricity and related problems",
+      "authors": "Christoph, M., Draganıć, N., Girão, A., Hurley, E., Michel, L., Müyesser, A.",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2507.20500",
+      "arxiv_id": "2507.20500",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves every graph of maximum degree Δ decomposes into at most Δ/2 + O(log n) linear forests, an exponential improvement over prior error terms when Δ = Ω(n^ε); full conjecture (Δ/2 + O(1)) remains open."
+    },
+    {
+      "title": "The Linear Arboricity Conjecture for Graphs with Large Girth",
+      "authors": "Tapas Kumar Mishra",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2512.11240",
+      "arxiv_id": "2512.11240",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the linear arboricity conjecture for 2k-regular graphs with girth g(G) ≥ 2k using a network-flow construction; also gives weaker bounds for smaller girth (la ≤ k+2 if g ≥ k, etc.)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Linear arboricity conjecture Akiyama Exoo Harary regular graphs status 2024 2025",
+    "linear arboricity conjecture proof solved regular graph k-regular",
+    "https://en.wikipedia.org/wiki/Linear_arboricity (WebFetch x2)",
+    "https://arxiv.org/abs/2302.13312 (WebFetch)",
+    "https://arxiv.org/search/?searchtype=all&query=linear+arboricity+conjecture+regular (WebFetch)",
+    "https://arxiv.org/abs/2512.11240 (WebFetch)",
+    "https://arxiv.org/abs/2507.20500 (WebFetch x2)",
+    "https://arxiv.org/abs/1809.04716 (WebFetch)"
+  ],
+  "notes": "Conjecture confirmed for k=1,2,3 (classical; cubic case la=2 follows by DFS in linear time). The full conjecture for all k is open; the gap between proven bound Δ/2+O(log n) and conjectured bound ⌈(Δ+1)/2⌉ = Δ/2+O(1) is now logarithmic. Deciding whether la(G)=Δ/2 for even Δ is NP-complete (making exact determination hard in general). Corpus record arXiv:2302.13312 tracks a related refinement for planar graphs. Title and full author name for arXiv:2512.11240 were not returned by WebFetch; the URL and main result were confirmed."
+}

@@ -1,0 +1,69 @@
+{
+  "review_id": "bm-031",
+  "bm_id": "bm-031",
+  "appendix_number": 31,
+  "conjecture_title": "Conway's thrackle conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Conway's thrackle conjecture — that no thrackle drawing has more edges than vertices — remains open as of mid-2026. The best known upper bound is approximately 1.393n edges for an n-vertex thrackle, established by Fulek and Pach (journal version 2019). The conjecture has been verified for special classes: linear thrackles (Erdős) and monotone thrackles (Pach and Sterling, 2011). A minimal counterexample, if one exists, would necessarily consist of two even cycles sharing a vertex.",
+  "since_posted": [
+    {
+      "title": "Conway's conjecture for monotone thrackles",
+      "authors": "Pach, J., Sterling, E.",
+      "year": 2011,
+      "venue": "American Mathematical Monthly 118(6), 544–548",
+      "url": "https://doi.org/10.4169/amer.math.monthly.118.06.544",
+      "arxiv_id": null,
+      "doi": "10.4169/amer.math.monthly.118.06.544",
+      "kind": "partial",
+      "claim": "Proves the thrackle conjecture for monotone thrackles, where every edge is an x-monotone curve crossed at most once by every vertical line."
+    },
+    {
+      "title": "A computational approach to Conway's thrackle conjecture",
+      "authors": "Fulek, R., Pach, J.",
+      "year": 2011,
+      "venue": "Computational Geometry 44(6–7), 345–355",
+      "url": "https://doi.org/10.1007/978-3-642-18469-7_21",
+      "arxiv_id": null,
+      "doi": "10.1007/978-3-642-18469-7_21",
+      "kind": "partial",
+      "claim": "Develops a finite algorithm that can either improve upper bounds or disprove the conjecture, and shows a minimal counterexample would consist of two even cycles sharing a vertex."
+    },
+    {
+      "title": "Thrackles: An Improved Upper Bound",
+      "authors": "Fulek, R., Pach, J.",
+      "year": 2019,
+      "venue": "Discrete Applied Mathematics 259, 226–231",
+      "url": "https://doi.org/10.1016/j.dam.2018.12.025",
+      "arxiv_id": null,
+      "doi": "10.1016/j.dam.2018.12.025",
+      "kind": "partial",
+      "claim": "Improves the upper bound on the number of edges in an n-vertex thrackle to approximately 1.393n (from 1.5n), the best known bound to date."
+    },
+    {
+      "title": "A New Upper Bound for Conway's Thrackles",
+      "authors": "Xu, Y.",
+      "year": 2021,
+      "venue": "Applied Mathematics and Computation 389, 125573",
+      "url": "https://doi.org/10.1016/j.amc.2020.125573",
+      "arxiv_id": null,
+      "doi": "10.1016/j.amc.2020.125573",
+      "kind": "partial",
+      "claim": "Establishes an improved upper bound on the number of edges in a thrackle drawing."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Conway thrackle conjecture proof disproof 2020 2021 2022 2023 2024 2025 2026",
+    "thrackle conjecture graph edges vertices solved counterexample",
+    "https://en.wikipedia.org/wiki/Thrackle",
+    "https://arxiv.org/search/?query=thrackle+conjecture",
+    "https://doi.org/10.1016/j.amc.2020.125573",
+    "https://doi.org/10.1016/j.dam.2018.12.025",
+    "https://arxiv.org/search/?query=thrackle&searchtype=all&order=-announced_date_first"
+  ],
+  "notes": "Primary verification source: Wikipedia article on Thrackle (https://en.wikipedia.org/wiki/Thrackle), last updated May 18, 2026, which explicitly states the conjecture remains open and lists the 1.393n upper bound as the best known result. Paper DOIs were retrieved from the Wikipedia references section; publisher pages (Elsevier) returned redirects or access errors when fetched directly, confirming existence but preventing full-text verification. The web search tool was unavailable during this review. The Fulek–Pach 2017 result was presented at GD 2017 (Lecture Notes in Computer Science 10692) and published in journal form in Discrete Applied Mathematics in 2019 (doi:10.1016/j.dam.2018.12.025). Conway offered a $1000 prize for proof or disproof (as of his 2017 update). The conjecture is equivalent to: |E(G)| ≤ |V(G)| for any thrackle drawing of G."
+}

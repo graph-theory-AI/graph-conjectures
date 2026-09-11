@@ -1,0 +1,23 @@
+{
+  "review_id": "bm-091",
+  "bm_id": "bm-091",
+  "appendix_number": 91,
+  "conjecture_title": "Grötschel's conjecture on bipartite hypotraceable graphs",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Grötschel's 1978 conjecture that no bipartite hypotraceable graph exists remains open as of 2026. While the analogous statement for hypohamiltonian graphs is known to be true (no hypohamiltonian graph is bipartite), the hypotraceable case is harder. An arXiv search for 'hypotraceable bipartite' returns no results, and no paper in the literature retrieved through multiple searches claims to settle this conjecture. The question of whether a bipartite graph can fail to have a Hamilton path while every one of its vertex-deleted subgraphs does have one remains unresolved.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Grötschel conjecture bipartite hypotraceable graph",
+    "bipartite hypotraceable graph Hamilton path conjecture",
+    "bipartite hypotraceable graph existence counterexample 2020 2021 2022 2023 2024 2025",
+    "hypotraceable graph survey open problems arXiv 2023 2024 2025 2026",
+    "arXiv search: hypotraceable bipartite (no results)",
+    "hypotraceable bipartite graph 2024 2025 2026"
+  ],
+  "notes": "The conjecture is attributed to Grötschel (1978) and is listed as Exercise 19.1.17 in Bondy–Murty. The analogous fact for hypohamiltonian graphs — that no hypohamiltonian graph is bipartite — is a classical theorem. The hypotraceable case is open because a bipartite graph can be untraceable for parity reasons alone (unequal part sizes) but the conjecture concerns balanced bipartite graphs where the parity obstruction does not immediately apply. An arXiv full-text search for 'hypotraceable bipartite' returned zero results, and no dedicated paper settling this conjecture was found in six targeted web searches. Grötschel's 1980 Journal of Graph Theory paper on hypotraceable digraphs (doi:10.1002/jgt.3190040406) is related but concerns directed graphs. Confidence is high because the conjecture is well-known and a thorough search found no claimed resolution."
+}

@@ -1,0 +1,33 @@
+{
+  "review_id": "bm-029",
+  "bm_id": "bm-029",
+  "appendix_number": 29,
+  "conjecture_title": "Kelmans–Seymour conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "high",
+  "summary": "The Kelmans–Seymour conjecture—that every 5-connected non-planar graph contains a subdivision of K_5—was proved by Dawei He, Yan Wang, and Xingxing Yu in a series of four papers published in the Journal of Combinatorial Theory, Series B, volume 144 (2020). A proof was announced in 2016; the complete series appeared in 2019–2020. The fourth paper (arXiv:1612.07189, verified) explicitly states that it 'gives a proof of the Kelmans–Seymour conjecture', settling the full statement as given in Bondy–Murty.",
+  "since_posted": [
+    {
+      "title": "The Kelmans–Seymour conjecture IV: A proof",
+      "authors": "Dawei He, Yan Wang, Xingxing Yu",
+      "year": 2020,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1612.07189",
+      "arxiv_id": "1612.07189",
+      "doi": "10.1016/j.jctb.2019.12.002",
+      "kind": "proof",
+      "claim": "The fourth and final paper in a four-part series; the abstract explicitly states it gives a complete proof of the Kelmans–Seymour conjecture (every 5-connected non-planar graph contains a subdivision of K_5)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Kelmans-Seymour conjecture He Wang Yu proof 2020 K5 subdivision 5-connected",
+    "Kelmans Seymour conjecture 5-connected non-planar K5 subdivision solved",
+    "https://arxiv.org/abs/1612.07189",
+    "https://en.wikipedia.org/wiki/Kelmans%E2%80%93Seymour_conjecture"
+  ],
+  "notes": "The conjecture was settled by a four-paper series by He, Wang and Yu: (I) 'Special separations', arXiv:1511.05020, JCTB 144:197–224; (II) '2-vertices in K4−', arXiv:1602.07557, JCTB 144:225–264; (III) '3-vertices in K4−', arXiv:1609.05747, JCTB 144:265–308; (IV) 'A proof', arXiv:1612.07189, JCTB 144:309–358. Only paper IV (arXiv:1612.07189) was directly verified via WebFetch; arXiv IDs for papers I–III and the DOI for paper IV were retrieved from the Wikipedia article on the conjecture (also fetched). The book's editorial note (He, Wang and Yu, JCTB 144, 2020) is accurate. WebSearch was unavailable; Wikipedia and the arXiv abstract for paper IV were the primary sources used."
+}

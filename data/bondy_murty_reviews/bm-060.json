@@ -1,0 +1,46 @@
+{
+  "review_id": "bm-060",
+  "bm_id": "bm-060",
+  "appendix_number": 60,
+  "conjecture_title": "Vizing's interchange conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "solved",
+  "confidence": "medium",
+  "summary": "Narboni (arXiv:2302.12914, February 2023) proves the full statement: starting from any proper edge colouring of a graph G, one can reach an optimal (Δ-edge) colouring by a sequence of Kempe changes, provided such a colouring exists. This resolves Vizing's 1965 conjecture for all graphs. A precursor result by Bonamy, Defrain, Klimošová, Lagoutte, and Narboni (arXiv:2107.07900) had established the conjecture for the special case of triangle-free graphs, published in J. Combin. Theory Ser. B (2023). As of this review, Narboni's general proof remains an arXiv preprint without verified journal publication, hence confidence is medium rather than high.",
+  "since_posted": [
+    {
+      "title": "Vizing's edge-recoloring conjecture holds",
+      "authors": "Jonathan Narboni",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2302.12914",
+      "arxiv_id": "2302.12914",
+      "doi": null,
+      "kind": "proof",
+      "claim": "Proves that for any graph G, starting from any proper edge colouring, a Δ-edge-colouring can be reached via Kempe swaps whenever one exists, resolving Vizing's 1965 interchange conjecture in full generality."
+    },
+    {
+      "title": "On Vizing's edge colouring question",
+      "authors": "Marthe Bonamy, Oscar Defrain, Tereza Klimošová, Aurélie Lagoutte, Jonathan Narboni",
+      "year": 2023,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/2107.07900",
+      "arxiv_id": "2107.07900",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Vizing's interchange conjecture for the special case of triangle-free graphs, establishing that an optimal edge colouring is reachable from any proper edge colouring via Kempe changes in this setting."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Vizing interchange conjecture edge recoloring Kempe changes proof 2023",
+    "Narboni Vizing's edge-recoloring conjecture arXiv 2302.12914 2023",
+    "Bonamy Defrain Klimosova Lagoutte Narboni Kempe changes triangle-free edge coloring 2023",
+    "arXiv:2302.12914 (direct fetch)",
+    "arXiv:2309.06072 (ID disambiguation)",
+    "arXiv:2107.07900 (Bonamy et al. triangle-free case)"
+  ],
+  "notes": "The editorial note in the Bondy–Murty pipeline correctly identifies Narboni's arXiv:2302.12914 as the resolution. The arXiv page (fetched directly) confirms the paper title 'Vizing's edge-recoloring conjecture holds', author Jonathan Narboni, submitted February 24, 2023, and that it proves the conjecture for all graphs. No journal publication record appears on the arXiv page as of the review date (2026-09-10), which is unusual given 3.5 years have elapsed; this prevents a 'high' confidence rating. The Bonamy et al. triangle-free precursor (arXiv:2107.07900) is the same statement restricted to triangle-free graphs, published in J. Combin. Theory Ser. B 2023 per the editorial note (DOI not independently verified here due to HTTP 403 from ScienceDirect). The conjecture is also listed as 'Vizing's edge-recoloring conjecture' or 'Vizing's interchange conjecture' in the literature. Note that a related but distinct result by Vizing (already known before the conjecture) is that any proper edge colouring can reach a (Δ+1)-edge-colouring via Kempe swaps; the conjecture specifically concerns reaching the chromatic index χ'(G) = Δ for class-1 graphs."
+}

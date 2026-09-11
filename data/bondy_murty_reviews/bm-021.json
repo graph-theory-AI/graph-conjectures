@@ -1,0 +1,37 @@
+{
+  "review_id": "bm-021",
+  "bm_id": "bm-021",
+  "appendix_number": 21,
+  "conjecture_title": "Finding a second Hamilton cycle in a cubic graph",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The problem of finding a second Hamilton cycle in a cubic graph (given one Hamilton cycle) in polynomial time remains open as of 2026. The best known exact algorithm, due to Deligkas, Mertzios, Spirakis, and Zamaraev (2020), runs in time O(n · 2^((0.3−ε)n)) with polynomial space, which is an exponential-time improvement over prior work but far from polynomial. The same paper also gives a linear-time approximation algorithm that finds a second cycle of length at least n − 4α(√n + 2α) + 8, but this does not answer the membership-in-P question. No polynomial-time algorithm is known, and the problem has not been placed in P.",
+  "since_posted": [
+    {
+      "title": "Exact and Approximate Algorithms for Computing a Second Hamiltonian Cycle",
+      "authors": "Argyrios Deligkas, George B. Mertzios, Paul G. Spirakis, Viktor Zamaraev",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2004.06036",
+      "arxiv_id": "2004.06036",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Provides an exact algorithm in time O(n · 2^((0.3−ε)n)) with polynomial space for finding a second Hamilton cycle in cubic graphs, and a linear-time approximation algorithm guaranteeing a second cycle of length at least n − 4α(√n+2α)+8; the problem in P remains open."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "second Hamilton cycle cubic graph polynomial time complexity Chrobak Poljak",
+    "finding second Hamiltonian cycle cubic graph given one Hamilton cycle computational complexity",
+    "arXiv: second Hamilton cycle cubic graph polynomial",
+    "arXiv: Smith theorem Hamilton cycle cubic graph algorithm",
+    "arXiv: second Hamiltonian cycle cubic",
+    "Wikipedia: Hamiltonian path problem",
+    "arXiv abs/2004.06036 (verification fetch)",
+    "arXiv: second Hamiltonian cycle cubic complexity 2020-2026"
+  ],
+  "notes": "The Wikipedia article on the Hamiltonian path problem notes that Papadimitriou introduced the class PPA precisely for problems of this type (finding a second object guaranteed by a parity argument such as handshaking/Smith's theorem); however, the exact complexity-class placement of the cubic-graph case (in P, PPAD, or PPA-complete) has not been resolved in the papers found. The related OPG records concern existence questions (are there uniquely Hamiltonian 4-connected or regular graphs?) rather than the algorithmic question here. The Deligkas et al. 2020 paper is the most recent primary source found addressing the exact statement."
+}

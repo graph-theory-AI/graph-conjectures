@@ -1,0 +1,45 @@
+{
+  "review_id": "bm-057",
+  "bm_id": "bm-057",
+  "appendix_number": 57,
+  "conjecture_title": "1-factorization conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The 1-factorization conjecture has been proved for all sufficiently large n by Csaba, Kühn, Lo, Osthus, and Treglown in a landmark paper published in Memoirs of the American Mathematical Society 244 (2016). Their result establishes that every simple d-regular graph on n even vertices with d ≥ n/2 is d-edge-colourable, provided n exceeds an unspecified absolute constant. The conjecture in full generality—covering all even n with no lower bound on n—remains open.",
+  "since_posted": [
+    {
+      "title": "Proof of the 1-factorization and Hamilton decomposition conjectures",
+      "authors": "Csaba, B., Kühn, D., Lo, A., Osthus, D., Treglown, A.",
+      "year": 2016,
+      "venue": "Memoirs of the American Mathematical Society 244 (2016), no. 1154",
+      "url": "https://en.wikipedia.org/wiki/1-factorization_conjecture",
+      "arxiv_id": null,
+      "doi": "10.1090/memo/1154",
+      "kind": "partial",
+      "claim": "Proves the conjecture (every simple d-regular graph on n even vertices with d ≥ n/2 is d-edge-colourable) for all sufficiently large n; the full statement for all n remains open."
+    },
+    {
+      "title": "Proof of the 1-factorization and Hamilton decomposition conjectures IV: exceptional systems for the two cliques case",
+      "authors": "Kühn, D., Lo, A., Osthus, D.",
+      "year": 2014,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1401.4183",
+      "arxiv_id": "1401.4183",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Part IV of the four-paper series culminating in the Memoirs proof; handles the case when the graph is close to the union of two disjoint cliques, contributing to the proof for sufficiently large n."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "1-factorization conjecture Chetwynd Hilton proof regular graph d-edge-colorable",
+    "Csaba Kühn Lo Osthus Treglown 1-factorization Hamilton decomposition 2016 Memoirs AMS",
+    "Wikipedia 1-factorization conjecture",
+    "arXiv:1401.4183 Kühn Lo Osthus exceptional systems two cliques",
+    "arXiv search 1-factorization Hamilton decomposition conjecture Csaba"
+  ],
+  "notes": "The book states both the threshold d ≥ n/2 (Hilton 1989) and the sharper d ≥ 2⌈n/4⌉−1 (Chetwynd–Hilton 1985); the Csaba–Kühn–Lo–Osthus–Treglown Memoirs paper is understood to prove the d ≥ n/2 version for sufficiently large n. The Wikipedia article on '1-factorization conjecture' (verified) explicitly confirms that 'the conjecture was confirmed by Csaba, Kühn, Lo, Osthus and Treglown for sufficiently large n' and that the full general statement remains open. The related OPG record 'goldbergs_conjecture' concerns the overfull graph parameter and chromatic index; Wikipedia notes that the overfull conjecture implies the 1-factorization conjecture, so these are related but distinct problems. Web search was unavailable during this review; status was established via verified WebFetch of the Wikipedia article and arXiv:1401.4183 (Part IV of the proof series). The AMS Memoirs page (memo/1154) returned HTTP 403; the DOI is included from the editorial note but the AMS URL was not independently verified."
+}

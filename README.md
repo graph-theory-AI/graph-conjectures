@@ -2,10 +2,9 @@
 
 ![Resolved graph conjectures timeline](scraper/static/resolved-conjectures-timeline.png)
 
-The image above is a snapshot of 96 solved or disproved conjectures, split across
-OPG literature reviews and arXiv-extracted conjectures. The
-[live timeline](https://graph-theory-ai.github.io/graph-conjectures/timeline/)
-is rebuilt from the current reviews (101 resolved records). Editable snapshot SVG:
+Resolved-conjecture timeline: 96 solved or disproved conjectures, split across
+OPG literature reviews and arXiv-extracted conjectures (the image predates the
+Bondy–Murty corpus, which adds 4 more; the site's `/timeline/` page shows all 100). Editable SVG:
 [`scraper/static/resolved-conjectures-timeline.svg`](scraper/static/resolved-conjectures-timeline.svg).
 
 A browseable, status-annotated mirror of the **graph-theory category** of
@@ -18,22 +17,23 @@ and connected by a **relation graph** of AI-reviewed implications,
 equivalences, and duplicates, browsable interactively on the site
 ([details](#relations-between-conjectures)).
 
-**Two corpora, one merged index:**
+**Three corpora, one merged index:**
 
 | corpus | count | scope |
 |---|---:|---|
 | **OPG**    |  227 | full graph-theory tag of openproblemgarden.org |
 | **arXiv**  |  768 | new conjectures from 857 arxiv papers (2016–2026) by 12 curated authors |
+| **Bondy–Murty** | 38 | items of Appendix A (100 "unsolved problems") of Bondy & Murty's *Graph Theory* that the two corpora above did not cover ([cross-check](BONDY_MURTY_APPENDIX_A.md)) |
 
 Reviewed status counts:
 
-| status    | OPG  | arXiv | meaning                                                   |
-|-----------|-----:|------:|------------------------------------------------------------|
-| open      |   57 |   551 | no significant progress found in literature search         |
-| partial   |  137 |   131 | progress since posting (special cases, weakened version)   |
-| solved    |   19 |    61 | fully proved by a follow-up paper                          |
-| disproved |   13 |    16 | counterexample found                                       |
-| unclear   |    1 |     3 | insufficient information to decide                         |
+| status    | OPG  | arXiv | Bondy–Murty | meaning                                                   |
+|-----------|-----:|------:|------------:|------------------------------------------------------------|
+| open      |   57 |   554 |          13 | no significant progress found in literature search         |
+| partial   |  137 |   132 |          21 | progress since posting (special cases, weakened version)   |
+| solved    |   19 |    58 |           3 | fully proved by a follow-up paper                          |
+| disproved |   13 |    13 |           1 | counterexample found                                       |
+| unclear   |    1 |     5 |           0 | insufficient information to decide                         |
 
 **44 of the arXiv-extracted records** were also identified as direct progress
 on existing OPG problems and attached as citations on those OPG pages (e.g. on
@@ -128,7 +128,29 @@ re-runs idempotently.
 # In 8 terminals: PER_REVIEW_TIMEOUT=900 WORKER=NN bash scripts/arxiv_review_run_worker.sh
 ```
 
-### C. Site build
+### C. Bondy–Murty Appendix A (38 conjectures)
+
+Appendix A of Bondy & Murty's *Graph Theory* (GTM 244, 2008; French edition
+by F. Havet, 2025, [HAL](https://inria.hal.science/hal-05211979v1)) lists 100
+open problems. [`BONDY_MURTY_APPENDIX_A.md`](BONDY_MURTY_APPENDIX_A.md)
+cross-checks every item against the OPG and arXiv corpora: 60 were already
+present, 6 only weakly covered, 32 missing, 2 out of scope. The 38 uncovered
+items form the third corpus.
+
+```bash
+# (1) Regenerate the records (hand-transcribed statements live in the script)
+.venv/bin/python scripts/bm_build_records.py       # → data/bondy_murty_conjectures.json
+
+# (2) Status review via `claude -p` with web search, same schema as the arXiv reviews
+PER_REVIEW_TIMEOUT=900 .venv/bin/python scraper/bm_review.py --all --jobs 6
+#                                                   # → data/bondy_murty_reviews/<bm_id>.json
+```
+
+Each record keeps the appendix number, the book section and page, the
+English statement, the attribution, and `related` pointers to the nearest
+OPG / arXiv / erdosproblems.com records. Pages render under `/bm/<bm_id>/`.
+
+### D. Site build
 
 ```bash
 .venv/bin/python scraper/build.py --confirmed-only
@@ -157,11 +179,16 @@ arXiv branch:
   arxiv_internal_refs.py  → data/arxiv_internal_refs.json    148 cross-corpus refs
   arxiv_review_*          → data/arxiv_reviews/<id>.json     762 status reviews
 
+Bondy–Murty branch:
+  bm_build_records.py     → data/bondy_murty_conjectures.json 38 appendix items not covered above
+  bm_review.py            → data/bondy_murty_reviews/<id>.json 38 status reviews
+
 Site:
   build.py        →  site/                    Jinja2 → static HTML, KaTeX
                      /                        merged index (995 rows, filter by source/status)
                      /op/<slug>/              227 OPG problem pages
                      /arxiv/<id>/             768 arxiv conjecture pages
+                     /bm/<bm_id>/             38 Bondy–Murty appendix pages
                      /author/<slug>/          218 author landing pages
                      /tag/<slug>/             227 subject pages
                      /relations/              interactive relation-graph drawing
@@ -185,8 +212,10 @@ graph-conjectures/
 │   ├── arxiv_fetch.py                # legacy /api/query author search (kept for reference)
 │   ├── arxiv_extract.py              # claude -p extraction of one paper
 │   ├── arxiv_review.py               # claude -p status review of one conjecture
+│   ├── bm_review.py                  # claude -p status review of Bondy–Murty items
 │   ├── arxiv_system_prompt.md        # extraction prompt
 │   ├── arxiv_review_system_prompt.md # review prompt
+│   ├── bm_review_system_prompt.md    # Bondy–Murty review prompt
 │   ├── review_system_prompt.md       # OPG-review prompt
 │   ├── build.py                      # site generator
 │   ├── templates/                    # Jinja2 templates
@@ -202,6 +231,7 @@ graph-conjectures/
 │   ├── arxiv_internal_refs.py        # intra-corpus cross-reference
 │   ├── arxiv_review_partition.py     # review-bucket partition
 │   ├── arxiv_review_run_worker.sh    # review worker
+│   ├── bm_build_records.py           # Bondy–Murty Appendix A records → JSON
 │   ├── arxiv_fetch_all.py            # legacy /api/query driver (kept for reference)
 │   ├── arxiv_disambig.py             # legacy disambiguation gate
 │   ├── status.sh                     # snapshot all OPG workers
@@ -217,6 +247,8 @@ graph-conjectures/
 │   ├── arxiv_reviews/                # 762 per-conjecture review JSONs
 │   ├── arxiv_opg_matches.{json,tsv}  # arxiv → OPG citation matches (manually triaged)
 │   ├── arxiv_internal_refs.{json,tsv} # intra-corpus cross-refs (Phase 1)
+│   ├── bondy_murty_conjectures.json  # 38 Bondy–Murty Appendix A items not covered elsewhere
+│   ├── bondy_murty_reviews/          # 38 per-item status reviews
 │   ├── relations.json                # 190 verified conjecture-to-conjecture relations
 │   ├── relations_work/               # relation-pipeline provenance (tags, candidates, verdicts)
 │   ├── categories.json
@@ -227,6 +259,7 @@ graph-conjectures/
 │   ├── 3_decomposition_conjecture/
 │   ├── pebbling_cartesian_product/
 │   └── unit_vector_flows/
+├── BONDY_MURTY_APPENDIX_A.md         # Bondy–Murty Appendix A vs. this repo, item by item
 ├── PLAN.md                           # OPG crawler / parser / site design
 ├── LIT_REVIEW.md                     # OPG literature-review design
 ├── RELATIONS.md                      # conjecture relation graph: pipeline + findings

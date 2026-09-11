@@ -1,0 +1,36 @@
+{
+  "review_id": "bm-038",
+  "bm_id": "bm-038",
+  "appendix_number": 38,
+  "conjecture_title": "Limit of $r(k,k)^{1/k}$",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The existence of the limit $\\lim_{k\\to\\infty} r(k,k)^{1/k}$ remains open. The lower bound gives $\\liminf_{k\\to\\infty} r(k,k)^{1/k} \\ge \\sqrt{2}$ (Erd\\u0151s 1947, sharpened by Spencer). In 2023, Campos, Griffiths, Morris, and Sahasrabudhe proved $r(k,k) \\le (4-\\varepsilon)^k$ for $\\varepsilon = 2^{-7}$, the first exponential improvement over the 1935 Erd\\u0151s\\u2013Szekeres upper bound of $4^k$; a 2024 preprint reportedly pushed the upper bound further to approximately $3.799^k$. Neither result resolves whether the limit exists or determines its value.",
+  "since_posted": [
+    {
+      "title": "An exponential improvement for diagonal Ramsey",
+      "authors": "Campos, M., Griffiths, S., Morris, R., Sahasrabudhe, J.",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2303.09521",
+      "arxiv_id": "2303.09521",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves $r(k,k) \\le (4 - 2^{-7})^k$, the first exponential improvement over the 1935 Erd\\u0151s\\u2013Szekeres bound of $4^k$; strictly shows $\\limsup_{k\\to\\infty} r(k,k)^{1/k} < 4$, but does not settle the existence of the limit."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Ramsey number r(k,k)^{1/k} limit existence 2023 2024 breakthrough Campos Griffiths Morris Sahasrabudhe",
+    "Erdos conjecture diagonal Ramsey number r(k,k) limit upper bound improvement 2023",
+    "WebFetch https://arxiv.org/abs/2303.09521",
+    "WebFetch https://erdosproblems.com/77 (403)",
+    "WebFetch https://arxiv.org/pdf/2303.09521",
+    "WebFetch https://en.wikipedia.org/wiki/Ramsey%27s_theorem",
+    "WebFetch https://en.wikipedia.org/wiki/Ramsey_number"
+  ],
+  "notes": "The related corpus record erdosproblems.com/77 tracks the same problem. The 2023 Campos--Griffiths--Morris--Sahasrabudhe result is a major partial advance: it shows $\\limsup r(k,k)^{1/k} < 4$, narrowing the gap between the lower bound ($\\sqrt{2} \\approx 1.414$) and the new upper bound ($\\approx 3.992$), but leaves the existence question open. Wikipedia (checked 2026-09-10) also mentions a 2024 preprint that reportedly improves the upper bound to approximately $3.799^k$, but that preprint URL could not be verified within the 8-call cap and is not cited. The arXiv listing for 2303.09521 shows a revision dated August 2025, possibly corresponding to a journal submission or acceptance, but no journal DOI was confirmed."
+}

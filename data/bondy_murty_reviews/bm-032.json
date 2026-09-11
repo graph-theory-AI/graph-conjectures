@@ -1,0 +1,81 @@
+{
+  "review_id": "bm-032",
+  "bm_id": "bm-032",
+  "appendix_number": 32,
+  "conjecture_title": "Harborth's conjecture (integral straight-line drawings)",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Harborth's conjecture — that every simple planar graph has a straight-line planar embedding with all edges of integer length — remains open as of early 2025. The conjecture has been established for several special classes: cubic (3-regular) planar graphs (Geelen, Guo & McKinnon 2008; the stronger integer-coordinate form), some 4-regular planar graphs (Sun 2013), planar 3-trees and maximum-degree-4 graphs (Benediktovich 2013), and additional classes via rigidity-theory constructions (Biedl 2011, Sun 2011). Wikipedia's article on the problem, last updated February 2025, explicitly confirms the general conjecture is unsolved.",
+  "since_posted": [
+    {
+      "title": "Straight line embeddings of cubic planar graphs with integer edge lengths",
+      "authors": "Geelen, J., Guo, A., McKinnon, D.",
+      "year": 2008,
+      "venue": "Journal of Graph Theory, 58(3): 270–274",
+      "url": null,
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Harborth's conjecture (as a consequence of the stronger integer-coordinate form) for all cubic (3-regular) planar graphs."
+    },
+    {
+      "title": "Drawing some planar graphs with integer edge-lengths",
+      "authors": "Biedl, T.",
+      "year": 2011,
+      "venue": "Proceedings of the Canadian Conference on Computational Geometry (CCCG 2011)",
+      "url": null,
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for additional special classes of planar graphs using direct constructions."
+    },
+    {
+      "title": "Rigidity-Theoretic Constructions of Integral Fary Embeddings",
+      "authors": "Sun, T.",
+      "year": 2011,
+      "venue": "Proceedings of the Canadian Conference on Computational Geometry (CCCG 2011)",
+      "url": null,
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Constructs integral Fáry embeddings for additional planar graph classes using rigidity theory."
+    },
+    {
+      "title": "Drawing some 4-regular planar graphs with integer edge lengths",
+      "authors": "Sun, T.",
+      "year": 2013,
+      "venue": "Proceedings of the Canadian Conference on Computational Geometry (CCCG 2013)",
+      "url": null,
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves Harborth's conjecture for certain 4-regular planar graphs."
+    },
+    {
+      "title": "On rational approximation of a geometric graph",
+      "authors": "Benediktovich, V.",
+      "year": 2013,
+      "venue": "Discrete Mathematics, 313(20): 2061–2064",
+      "url": null,
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for planar 3-trees and graphs of maximum degree 4."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Harborth conjecture integer length edges planar graph straight-line embedding",
+    "Kemnitz Harborth 2001 integral straight-line drawings planar graph conjecture status",
+    "WebFetch: https://en.wikipedia.org/wiki/Harborth%27s_conjecture (status summary)",
+    "WebFetch: https://en.wikipedia.org/wiki/Harborth%27s_conjecture (full references)",
+    "WebFetch: https://arxiv.org/search/?query=Harborth+integer+planar+drawing (HTTP 429)",
+    "WebFetch: https://arxiv.org/search/?query=Harborth+integer+planar&order=-announced_date_first (HTTP 429)",
+    "WebFetch: https://arxiv.org/find/grp_math/1/ti:+AND+harborth+planar (HTTP 404)",
+    "WebFetch: https://mathscinet.ams.org search for Harborth (redirect/auth wall)"
+  ],
+  "notes": "The Wikipedia article on Harborth's conjecture (https://en.wikipedia.org/wiki/Harborth%27s_conjecture, last edited 27 February 2025) explicitly states the general conjecture remains unsolved. Partial results cover: all 3-regular planar graphs (Geelen et al. 2008, via the stronger integer-coordinate form), some 4-regular planar graphs (Sun 2013), bipartite and series-parallel planar graphs, graphs of treewidth at most 3, and additional classes via rigidity constructions. A stronger variant requiring integer vertex coordinates (not just integer edge lengths) is also open in general. The conjecture relates to the Erdős–Ulam problem on dense rational-distance sets. Individual paper URLs could not be verified due to access restrictions and arXiv rate limits; paper details sourced from the verified Wikipedia article."
+}

@@ -1,0 +1,1137 @@
+[
+  {
+    "bm_id": "bm-003",
+    "appendix_number": 3,
+    "section": "Reconstruction",
+    "title": "Halin's conjecture on hypomorphic infinite graphs",
+    "kind": "Conjecture",
+    "statement_text": "If two infinite graphs are hypomorphic, then each is isomorphic to a subgraph of the other.",
+    "context_text": "Two graphs $G$ and $H$ are hypomorphic if there is a bijection $\\varphi\\colon V(G)\\to V(H)$ with $G - v \\cong H - \\varphi(v)$ for every vertex $v$. For finite graphs the Reconstruction Conjecture asserts that hypomorphic graphs are isomorphic; this fails for infinite graphs, and Halin's conjecture is the natural weakening.",
+    "attributed_to": "R. Halin",
+    "attributed_year": 1970,
+    "book_refs": [
+      "Exercise 4.2.10"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "reconstruction_conjecture",
+        "note": "finite analogue"
+      }
+    ],
+    "notes": "Bowler, Erde, Heinig, Lehner and Pitz, 'A counterexample to the reconstruction conjecture for locally finite trees' (Bull. London Math. Soc. 49, 2017), state that their construction also answers a question of Halin; the status review should check whether it is this one.",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 626,
+      "pdf_page": 642,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-011",
+    "appendix_number": 11,
+    "section": "Covers, decompositions and packings",
+    "title": "Barát–Thomassen conjecture",
+    "kind": "Conjecture",
+    "statement_text": "For every tree $T$ there exists a natural number $k := k(T)$ such that every simple $k$-edge-connected graph whose number of edges is divisible by $e(T)$ admits a decomposition into copies of $T$.",
+    "context_text": "",
+    "attributed_to": "J. Barát and C. Thomassen",
+    "attributed_year": 2006,
+    "book_refs": [
+      "Exercise 2.4.8",
+      "Exercise 17.4.19"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "arxiv",
+        "id": "1507.08208__00",
+        "arxiv_id": "1507.08208",
+        "note": "Bensmail, Harutyunyan, Le and Thomassé propose a refinement of this conjecture"
+      }
+    ],
+    "notes": "Editorial lead, to be confirmed by the status review: Bensmail, Harutyunyan, Le, Merker and Thomassé, 'A proof of the Barát–Thomassen conjecture', J. Combin. Theory Ser. B 124 (2017).",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 627,
+      "pdf_page": 643,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-013",
+    "appendix_number": 13,
+    "section": "Covers, decompositions and packings",
+    "title": "Bondy's small cycle double cover conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every simple graph on $n$ vertices without cut edges has a cycle double cover consisting of at most $n - 1$ cycles.",
+    "context_text": "A cycle double cover is a family of cycles covering every edge exactly twice. This strengthens the Cycle Double Cover Conjecture (Appendix A, item 12).",
+    "attributed_to": "J.A. Bondy",
+    "attributed_year": 1990,
+    "book_refs": [
+      "Conjecture 3.11"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "cycle_double_cover_conjecture",
+        "note": "implied by this conjecture"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 627,
+      "pdf_page": 643,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-014",
+    "appendix_number": 14,
+    "section": "Covers, decompositions and packings",
+    "title": "Five cycle double cover conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+    "context_text": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+    "attributed_to": "M. Preissmann",
+    "attributed_year": 1981,
+    "book_refs": [
+      "Exercise 3.5.3"
+    ],
+    "coverage": "weak",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "strong_5_cycle_double_cover_conjecture",
+        "note": "stronger form (prescribed cycle in the cover)"
+      },
+      {
+        "corpus": "opg",
+        "slug": "cycle_double_cover_conjecture",
+        "note": "weaker: no bound on the number of even subgraphs"
+      },
+      {
+        "corpus": "opg",
+        "slug": "petersen_coloring_conjecture",
+        "note": "implies the 5-cycle double cover conjecture"
+      },
+      {
+        "corpus": "opg",
+        "slug": "m_n_cycle_covers",
+        "note": "general (m,n)-cycle cover framework"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 627,
+      "pdf_page": 643,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-016",
+    "appendix_number": 16,
+    "section": "Covers, decompositions and packings",
+    "title": "Linear arboricity conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every simple $k$-regular graph has linear arboricity $\\lceil (k+1)/2 \\rceil$.",
+    "context_text": "The linear arboricity $\\mathrm{la}(G)$ is the least number of linear forests (forests whose components are paths) whose union is $G$. Equivalently: every simple graph of maximum degree $\\Delta$ satisfies $\\mathrm{la}(G) \\le \\lceil (\\Delta+1)/2 \\rceil$.",
+    "attributed_to": "J. Akiyama, G. Exoo and F. Harary (1981); A.J.W. Hilton (1982)",
+    "attributed_year": 1981,
+    "book_refs": [
+      "Theorem 13.19"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "arxiv",
+        "id": "2302.13312__00",
+        "arxiv_id": "2302.13312",
+        "note": "refinement for planar graphs"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 627,
+      "pdf_page": 643,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-021",
+    "appendix_number": 21,
+    "section": "Complexity",
+    "title": "Finding a second Hamilton cycle in a cubic graph",
+    "kind": "Problem",
+    "statement_text": "Is the following problem in $\\mathsf{P}$? Given a cubic graph $G$ and a Hamilton cycle in $G$, find a second Hamilton cycle in $G$.",
+    "context_text": "By Smith's theorem every edge of a cubic graph lies in an even number of Hamilton cycles, so a second Hamilton cycle always exists; the question is whether one can be found in polynomial time.",
+    "attributed_to": "M. Chrobak and S. Poljak",
+    "attributed_year": 1988,
+    "book_refs": [
+      "Exercise 19.4.1"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "4_connected_graphs_are_not_uniquely_hamiltonian",
+        "note": "existence question for 4-connected graphs"
+      },
+      {
+        "corpus": "opg",
+        "slug": "uniquely_hamiltonian_graphs",
+        "note": "existence of a second Hamilton cycle in regular graphs"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 628,
+      "pdf_page": 644,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-022",
+    "appendix_number": 22,
+    "section": "Complexity",
+    "title": "Internally disjoint odd paths: is it in co-NP?",
+    "kind": "Problem",
+    "statement_text": "Is the following problem in $\\mathsf{co\\text{-}NP}$? Given a graph $G$ and two $k$-subsets $X$ and $Y$ of $V(G)$, decide whether there exist $k$ internally disjoint $(X,Y)$-paths of odd length in $G$.",
+    "context_text": "",
+    "attributed_to": "C. Thomassen",
+    "attributed_year": 1980,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 628,
+      "pdf_page": 644,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-025",
+    "appendix_number": 25,
+    "section": "Connectivity",
+    "title": "Thomassen's spanning k-connected bipartite subgraph conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every $2k$-connected graph contains a spanning $k$-connected bipartite subgraph.",
+    "context_text": "Thomassen (1989) asked more generally whether there is a function $f$ such that every $f(k)$-connected graph has a spanning $k$-connected bipartite subgraph; the book states the conjecture with $f(k) = 2k$.",
+    "attributed_to": "C. Thomassen",
+    "attributed_year": 1989,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [],
+    "notes": "Translation caveat: the French edition prints « Tout graphe orienté 2k-connexe contient un sous-graphe orienté simple k-connexe couvrant » (digraph / oriented subgraph). Thomassen's 1989 question, as cited in the literature (Delcourt–Ferber 2015), concerns spanning bipartite subgraphs of undirected graphs; the statement above follows that reading. The status review should confirm against the English edition.",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 628,
+      "pdf_page": 644,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-026",
+    "appendix_number": 26,
+    "section": "Embeddings",
+    "title": "Orientable five cycle double cover conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every 2-edge-connected graph has an orientable double cover by five even subgraphs.",
+    "context_text": "A double cover by even subgraphs is orientable if each even subgraph can be oriented so that every edge of the graph is traversed once in each direction. Strengthens both the five cycle double cover conjecture (item 14) and the orientable cycle double cover conjecture.",
+    "attributed_to": "D. Archdeacon (1984); F. Jaeger (1988)",
+    "attributed_year": 1984,
+    "book_refs": [
+      "Conjecture 22.14"
+    ],
+    "coverage": "weak",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "the_circular_embedding_conjecture",
+        "note": "its discussion lists this as a consequence of the strong form"
+      },
+      {
+        "corpus": "opg",
+        "slug": "cycle_double_cover_conjecture",
+        "note": "weaker"
+      },
+      {
+        "corpus": "opg",
+        "slug": "grunbaums_conjecture",
+        "note": "compared with the orientable cycle double cover conjecture"
+      },
+      {
+        "corpus": "opg",
+        "slug": "three_4_flows_conjecture",
+        "note": "implies the orientable 4-cover conjecture"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 629,
+      "pdf_page": 645,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-029",
+    "appendix_number": 29,
+    "section": "Embeddings",
+    "title": "Kelmans–Seymour conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every 5-connected non-planar graph contains a subdivision of $K_5$.",
+    "context_text": "",
+    "attributed_to": "P.D. Seymour (1974); A.K. Kelmans (1979)",
+    "attributed_year": 1974,
+    "book_refs": [
+      "Exercise 10.5.14"
+    ],
+    "coverage": "missing",
+    "related": [],
+    "notes": "Editorial lead, to be confirmed by the status review: He, Wang and Yu, 'The Kelmans–Seymour conjecture I–IV', J. Combin. Theory Ser. B 144 (2020).",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 629,
+      "pdf_page": 645,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-031",
+    "appendix_number": 31,
+    "section": "Embeddings",
+    "title": "Conway's thrackle conjecture",
+    "kind": "Conjecture",
+    "statement_text": "No graph with more edges than vertices has a thrackle drawing.",
+    "context_text": "A thrackle is a drawing of a graph in the plane in which every pair of edges meets exactly once, either at a common endpoint or at a proper crossing. French: « plongement en manoque ».",
+    "attributed_to": "J.H. Conway",
+    "attributed_year": 1968,
+    "book_refs": [
+      "Exercise 10.1.11"
+    ],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 629,
+      "pdf_page": 645,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-032",
+    "appendix_number": 32,
+    "section": "Embeddings",
+    "title": "Harborth's conjecture (integral straight-line drawings)",
+    "kind": "Conjecture",
+    "statement_text": "Every simple planar graph admits a straight-line planar embedding in which every edge has integer length.",
+    "context_text": "",
+    "attributed_to": "A. Kemnitz and H. Harborth",
+    "attributed_year": 2001,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 629,
+      "pdf_page": 645,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-033",
+    "appendix_number": 33,
+    "section": "Extremal problems",
+    "title": "Erdős–Sós conjecture",
+    "kind": "Conjecture",
+    "statement_text": "If $G$ is a simple graph on $n$ vertices with $m > n(k-1)/2$ edges, then $G$ contains every tree with $k$ edges.",
+    "context_text": "",
+    "attributed_to": "P. Erdős and V.T. Sós",
+    "attributed_year": 1963,
+    "book_refs": [
+      "Exercise 4.1.9"
+    ],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 629,
+      "pdf_page": 645,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-034",
+    "appendix_number": 34,
+    "section": "Extremal problems",
+    "title": "Even-cycle Turán number",
+    "kind": "Conjecture",
+    "statement_text": "For every $k \\ge 2$ there is a positive constant $c$ such that $\\mathrm{ex}(n, C_{2k}) \\ge c\\, n^{1+1/k}$.",
+    "context_text": "$\\mathrm{ex}(n, C_{2k})$ is the maximum number of edges of a simple graph on $n$ vertices with no cycle of length $2k$; the Bondy–Simonovits theorem gives the matching upper bound $O(n^{1+1/k})$. Known for $k = 2, 3, 5$.",
+    "attributed_to": "P. Erdős",
+    "attributed_year": 1971,
+    "book_refs": [
+      "Exercise 12.2.14"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "turan_number_of_a_finite_family",
+        "note": "discusses the even-cycle case"
+      },
+      {
+        "corpus": "erdosproblems",
+        "id": "572",
+        "note": "same statement"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 629,
+      "pdf_page": 645,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-037",
+    "appendix_number": 37,
+    "section": "Ramsey numbers",
+    "title": "Constructive exponential lower bound for diagonal Ramsey numbers",
+    "kind": "Problem",
+    "statement_text": "Give a constructive proof that $r(k,k) \\ge c^k$ for some constant $c > 1$ and all $k \\ge 1$.",
+    "context_text": "Erdős's 1947 probabilistic argument gives $r(k,k) \\ge 2^{k/2}$ non-constructively.",
+    "attributed_to": "P. Erdős",
+    "attributed_year": 1969,
+    "book_refs": [
+      "Theorem 12.12"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "erdosproblems",
+        "id": "78",
+        "note": "same problem"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 629,
+      "pdf_page": 645,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-038",
+    "appendix_number": 38,
+    "section": "Ramsey numbers",
+    "title": "Limit of $r(k,k)^{1/k}$",
+    "kind": "Problem",
+    "statement_text": "Does $\\lim_{k\\to\\infty} r(k,k)^{1/k}$ exist? If so, determine its value.",
+    "context_text": "",
+    "attributed_to": "P. Erdős",
+    "attributed_year": 1947,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "erdosproblems",
+        "id": "77",
+        "note": "same problem"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 630,
+      "pdf_page": 646,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-039",
+    "appendix_number": 39,
+    "section": "Ramsey numbers",
+    "title": "Burr–Erdős tree Ramsey conjecture",
+    "kind": "Conjecture",
+    "statement_text": "For every tree $T$ on $n$ vertices, $r(T,T) \\le 2n - 2$.",
+    "context_text": "",
+    "attributed_to": "S.A. Burr and P. Erdős",
+    "attributed_year": 1976,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "erdosproblems",
+        "id": "547",
+        "note": "same statement"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 630,
+      "pdf_page": 646,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-041",
+    "appendix_number": 41,
+    "section": "Vertex colouring",
+    "title": "Hadwiger's conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every $k$-chromatic graph has a $K_k$-minor.",
+    "context_text": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+    "attributed_to": "H. Hadwiger",
+    "attributed_year": 1943,
+    "book_refs": [
+      "Conjecture 16.11"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "list_hadwiger_conjecture",
+        "note": "list-colouring variant"
+      },
+      {
+        "corpus": "opg",
+        "slug": "fractional_hadwiger",
+        "note": "fractional variant"
+      },
+      {
+        "corpus": "opg",
+        "slug": "seagull_problem",
+        "note": "an unproved consequence"
+      },
+      {
+        "corpus": "opg",
+        "slug": "coloring_and_immersion",
+        "note": "immersion analogue"
+      },
+      {
+        "corpus": "opg",
+        "slug": "jorgensens_conjecture",
+        "note": "structure of $K_6$-minor-free graphs"
+      }
+    ],
+    "notes": "Open Problem Garden itself has no page for this conjecture; only the list and fractional variants.",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 630,
+      "pdf_page": 646,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-042",
+    "appendix_number": 42,
+    "section": "Vertex colouring",
+    "title": "Hajós conjecture for $k = 5$ and $k = 6$",
+    "kind": "Problem",
+    "statement_text": "Does every $k$-chromatic graph contain a subdivision of $K_k$ when $k = 5$ and when $k = 6$?",
+    "context_text": "Hajós conjectured this for all $k$; it holds for $k \\le 4$ (Dirac 1952) and Catlin (1979) disproved it for every $k \\ge 7$.",
+    "attributed_to": "G. Hajós; P.A. Catlin",
+    "attributed_year": 1979,
+    "book_refs": [
+      "Exercise 16.4.3"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "coloring_and_immersion",
+        "note": "immersion analogue of Hajós' conjecture"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 630,
+      "pdf_page": 646,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-045",
+    "appendix_number": 45,
+    "section": "Vertex colouring",
+    "title": "Erdős–Lovász Tihany conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Let $G$ be a $k$-chromatic graph containing no $k$-clique, and let $k + 1 = k_1 + k_2$ with $k_1, k_2 \\ge 2$. Then $G$ has vertex-disjoint subgraphs $G_1$ and $G_2$ such that $G_i$ is $k_i$-chromatic, $i = 1, 2$.",
+    "context_text": "",
+    "attributed_to": "L. Lovász",
+    "attributed_year": 1968,
+    "book_refs": [
+      "Exercise 17.3.13"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "double_critical_graph_conjecture",
+        "note": "the special case $k_1 = 2$"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 630,
+      "pdf_page": 646,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-046",
+    "appendix_number": 46,
+    "section": "Vertex colouring",
+    "title": "El-Zahar–Erdős conjecture",
+    "kind": "Problem",
+    "statement_text": "Does there exist a function $f$ such that every graph of chromatic number at least $f(r,k)$ contains either an $r$-clique or an induced subgraph which is the disjoint union of two $k$-chromatic graphs?",
+    "context_text": "",
+    "attributed_to": "M. El-Zahar and P. Erdős",
+    "attributed_year": 1985,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 630,
+      "pdf_page": 646,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-050",
+    "appendix_number": 50,
+    "section": "Vertex colouring",
+    "title": "Gyárfás's tree conjecture for triangle-free graphs",
+    "kind": "Conjecture",
+    "statement_text": "Every triangle-free graph of infinite chromatic number contains every finite tree as an induced subgraph.",
+    "context_text": "Follows from the Gyárfás–Sumner conjecture (Appendix A, item 49): if $T$-free graphs are $\\chi$-bounded, a triangle-free $T$-free graph has bounded chromatic number.",
+    "attributed_to": "A. Gyárfás",
+    "attributed_year": 1975,
+    "book_refs": [],
+    "coverage": "weak",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+        "note": "Gyárfás–Sumner conjecture, which implies this"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 630,
+      "pdf_page": 646,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-053",
+    "appendix_number": 53,
+    "section": "Colouring graphs embedded in surfaces",
+    "title": "Albertson's toroidal colouring conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every toroidal graph has three vertices whose deletion leaves a 4-colourable graph.",
+    "context_text": "",
+    "attributed_to": "M.O. Albertson",
+    "attributed_year": 1981,
+    "book_refs": [
+      "Section 16.5"
+    ],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 631,
+      "pdf_page": 647,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-054",
+    "appendix_number": 54,
+    "section": "Colouring graphs embedded in surfaces",
+    "title": "Chromatic number of the plane (Hadwiger–Nelson problem)",
+    "kind": "Problem",
+    "statement_text": "Determine the chromatic number of the unit-distance graph of the plane, i.e. the least number of colours needed to colour the points of $\\mathbb{R}^2$ so that no two points at distance $1$ receive the same colour.",
+    "context_text": "At the time of the book, $4 \\le \\chi(\\mathbb{R}^2) \\le 7$.",
+    "attributed_to": "E. Nelson",
+    "attributed_year": 1950,
+    "book_refs": [
+      "Exercise 15.1.20"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "coloring_the_odd_distance_graph",
+        "note": "odd-distance analogue"
+      }
+    ],
+    "notes": "Editorial lead, to be confirmed by the status review: de Grey (2018) showed the chromatic number is at least 5.",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 631,
+      "pdf_page": 647,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-057",
+    "appendix_number": 57,
+    "section": "Edge colouring",
+    "title": "1-factorization conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every simple $d$-regular graph on $n$ vertices with $n$ even and $d \\ge n/2$ is $d$-edge-colourable.",
+    "context_text": "Equivalently, such graphs have a 1-factorization. Usually stated (Chetwynd and Hilton 1985) with the sharper threshold $d \\ge 2\\lceil n/4 \\rceil - 1$.",
+    "attributed_to": "A.J.W. Hilton",
+    "attributed_year": 1989,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "goldbergs_conjecture",
+        "note": "overfull parameter and chromatic index"
+      }
+    ],
+    "notes": "Editorial lead, to be confirmed by the status review: Csaba, Kühn, Lo, Osthus and Treglown, 'Proof of the 1-factorization and Hamilton decomposition conjectures', Mem. Amer. Math. Soc. 244 (2016), for sufficiently large $n$.",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 631,
+      "pdf_page": 647,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-060",
+    "appendix_number": 60,
+    "section": "Edge colouring",
+    "title": "Vizing's interchange conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Given a proper edge colouring of a graph $G$, a proper edge colouring of $G$ with $\\chi'(G)$ colours can be obtained by a sequence of colour interchanges on alternating paths or cycles (Kempe changes).",
+    "context_text": "",
+    "attributed_to": "V.G. Vizing",
+    "attributed_year": 1965,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [],
+    "notes": "Editorial lead, to be confirmed by the status review: Narboni, 'Vizing's edge-recoloring conjecture holds' (arXiv:2302.12914, 2023); triangle-free case by Bonamy, Defrain, Klimošová, Lagoutte and Narboni (J. Combin. Theory Ser. B, 2023).",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 631,
+      "pdf_page": 647,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-062",
+    "appendix_number": 62,
+    "section": "Paths and cycles in graphs",
+    "title": "Kotzig's unique $k$-path conjecture",
+    "kind": "Conjecture",
+    "statement_text": "For $k \\ge 3$ there is no graph in which every pair of vertices is connected by a unique path of length $k$.",
+    "context_text": "The case $k = 2$ is the Friendship Theorem (Theorem 3.1 in the book).",
+    "attributed_to": "A. Kotzig",
+    "attributed_year": 1979,
+    "book_refs": [
+      "Theorem 3.1"
+    ],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 632,
+      "pdf_page": 648,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-064",
+    "appendix_number": 64,
+    "section": "Paths and cycles in graphs",
+    "title": "Smith's conjecture on longest cycles",
+    "kind": "Conjecture",
+    "statement_text": "In a $k$-connected graph, $k \\ge 2$, any two longest cycles have at least $k$ vertices in common.",
+    "context_text": "Attributed to S. Smith; see Grötschel (1984).",
+    "attributed_to": "S. Smith",
+    "attributed_year": null,
+    "book_refs": [
+      "Exercise 5.1.5"
+    ],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "chords_of_longest_cycles",
+        "note": "longest cycles in 3-connected graphs"
+      },
+      {
+        "corpus": "opg",
+        "slug": "do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common",
+        "note": "analogous question for longest paths"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 632,
+      "pdf_page": 648,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-065",
+    "appendix_number": 65,
+    "section": "Paths and cycles in graphs",
+    "title": "Bondy's linear-length cycle conjecture for cyclically 4-edge-connected cubic graphs",
+    "kind": "Conjecture",
+    "statement_text": "There is a positive constant $c$ such that every 3-connected, cyclically 4-edge-connected cubic graph on $n$ vertices contains a cycle of length at least $cn$.",
+    "context_text": "Attributed to J.A. Bondy; see Fleischner and Jackson (1989).",
+    "attributed_to": "J.A. Bondy",
+    "attributed_year": null,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 632,
+      "pdf_page": 648,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-066",
+    "appendix_number": 66,
+    "section": "Paths and cycles in graphs",
+    "title": "Birmelé's conjecture on long cycles",
+    "kind": "Conjecture",
+    "statement_text": "If any two cycles of length at least $k$ in a graph intersect, then the graph has a set of $k$ vertices meeting every cycle of length at least $k$.",
+    "context_text": "",
+    "attributed_to": "E. Birmelé",
+    "attributed_year": 2003,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "erdos_posa_property_for_long_directed_cycles",
+        "note": "Erdős–Pósa property for long cycles (directed version)"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 632,
+      "pdf_page": 648,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-070",
+    "appendix_number": 70,
+    "section": "Paths and cycles in digraphs",
+    "title": "Weighted Caccetta–Häggkvist conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Let $D$ be a strongly connected digraph with a positive weight function $w$ on its arcs such that $w^-(v) \\ge 1$ and $w^+(v) \\ge 1$ for every vertex $v$. Then $D$ contains a directed cycle of weight at least $1$.",
+    "context_text": "$w^-(v)$ and $w^+(v)$ denote the total weight of the arcs entering and leaving $v$. Bollobás and Scott proved the analogous statement for directed paths.",
+    "attributed_to": "B. Bollobás and A.D. Scott",
+    "attributed_year": 1996,
+    "book_refs": [
+      "Exercise 2.5.9"
+    ],
+    "coverage": "weak",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "caccetta_haggkvist_conjecture",
+        "note": "the unweighted case; this statement appears in its discussion"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 632,
+      "pdf_page": 648,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-079",
+    "appendix_number": 79,
+    "section": "Hamilton paths and cycles",
+    "title": "Matthews–Sumner conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every 4-connected claw-free graph is Hamiltonian.",
+    "context_text": "Equivalent, via Ryjáček's closure, to Thomassen's conjecture that every 4-connected line graph is Hamiltonian.",
+    "attributed_to": "M.M. Matthews and D.P. Sumner",
+    "attributed_year": 1984,
+    "book_refs": [
+      "Exercise 19.3.16"
+    ],
+    "coverage": "weak",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "hamiltonian_cycles_in_line_graphs",
+        "note": "equivalent (Ryjáček 1997)"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 633,
+      "pdf_page": 649,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-080",
+    "appendix_number": 80,
+    "section": "Hamilton paths and cycles",
+    "title": "Barnette's conjecture on 4-regular 4-polytopes",
+    "kind": "Conjecture",
+    "statement_text": "The graph of every 4-regular 4-polytope (every simple 4-dimensional convex polytope) is Hamiltonian.",
+    "context_text": "Attributed to D.W. Barnette; see Grünbaum (1970), p. 1145.",
+    "attributed_to": "D.W. Barnette",
+    "attributed_year": null,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "barnettes_conjecture",
+        "note": "Barnette's better-known conjecture on cubic bipartite planar graphs"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 633,
+      "pdf_page": 649,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-085",
+    "appendix_number": 85,
+    "section": "Hamilton paths and cycles",
+    "title": "Cantoni's conjecture",
+    "kind": "Conjecture",
+    "statement_text": "Every planar cubic graph with exactly three Hamilton cycles contains a triangle.",
+    "context_text": "See also Ninčák (1974) and Tutte (1976).",
+    "attributed_to": "R. Cantoni",
+    "attributed_year": 1950,
+    "book_refs": [],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 633,
+      "pdf_page": 649,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-088",
+    "appendix_number": 88,
+    "section": "Hamilton paths and cycles",
+    "title": "Thomassen's conjecture on Hamiltonian vertex-transitive graphs",
+    "kind": "Conjecture",
+    "statement_text": "All but finitely many connected vertex-transitive graphs are Hamiltonian.",
+    "context_text": "Only five connected vertex-transitive graphs without a Hamilton cycle are known: $K_2$, the Petersen graph, the Coxeter graph, and the truncations of the last two.",
+    "attributed_to": "C. Thomassen",
+    "attributed_year": 1976,
+    "book_refs": [
+      "Exercise 19.1.12"
+    ],
+    "coverage": "weak",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
+        "note": "Lovász's Hamilton-path problem; discusses the known exceptions"
+      },
+      {
+        "corpus": "opg",
+        "slug": "hamiltonicity_of_cayley_graphs",
+        "note": "special case: Cayley graphs"
+      }
+    ],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 633,
+      "pdf_page": 649,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-089",
+    "appendix_number": 89,
+    "section": "Hamilton paths and cycles",
+    "title": "Chvátal's toughness conjecture",
+    "kind": "Conjecture",
+    "statement_text": "There exists a positive integer $k$ such that every $k$-tough graph is Hamiltonian.",
+    "context_text": "A graph $G$ is $t$-tough if $|S| \\ge t \\cdot c(G - S)$ for every vertex cut $S$, where $c(\\cdot)$ counts components. French: « k-endurant ».",
+    "attributed_to": "V. Chvátal",
+    "attributed_year": 1973,
+    "book_refs": [
+      "Exercise 19.1.22"
+    ],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 634,
+      "pdf_page": 650,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-090",
+    "appendix_number": 90,
+    "section": "Hamilton paths and cycles",
+    "title": "Hypohamiltonian graphs of minimum degree at least 4",
+    "kind": "Problem",
+    "statement_text": "Is there a hypohamiltonian graph of minimum degree at least $4$?",
+    "context_text": "A graph is hypohamiltonian if it is not Hamiltonian but every vertex-deleted subgraph is.",
+    "attributed_to": "C. Thomassen",
+    "attributed_year": 1978,
+    "book_refs": [
+      "Exercise 19.1.16"
+    ],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 634,
+      "pdf_page": 650,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  },
+  {
+    "bm_id": "bm-091",
+    "appendix_number": 91,
+    "section": "Hamilton paths and cycles",
+    "title": "Grötschel's conjecture on bipartite hypotraceable graphs",
+    "kind": "Conjecture",
+    "statement_text": "There is no bipartite hypotraceable graph.",
+    "context_text": "A graph is hypotraceable if it has no Hamilton path but every vertex-deleted subgraph has one.",
+    "attributed_to": "M. Grötschel",
+    "attributed_year": 1978,
+    "book_refs": [
+      "Exercise 19.1.17"
+    ],
+    "coverage": "missing",
+    "related": [],
+    "notes": "",
+    "source": {
+      "title": "Théorie des graphes (J.A. Bondy, U.S.R. Murty; French edition by Frédéric Havet, 2025), Appendix A « Problèmes ouverts »",
+      "url": "https://inria.hal.science/hal-05211979v1",
+      "pdf_url": "https://inria.hal.science/hal-05211979v1/file/master.pdf",
+      "book_page": 634,
+      "pdf_page": 650,
+      "english_edition": "J.A. Bondy, U.S.R. Murty, Graph Theory, GTM 244, Springer 2008, Appendix A"
+    }
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "review_id": "bm-066",
+  "bm_id": "bm-066",
+  "appendix_number": 66,
+  "conjecture_title": "Birmelé's conjecture on long cycles",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture is known in the literature as the Birmelé–Bondy–Reed conjecture: every graph without two vertex-disjoint cycles of length at least ℓ has a set of at most ℓ vertices meeting all cycles of length at least ℓ. It remains open. A sequence of papers has improved the bound: Birmelé–Bondy–Reed proved 2ℓ+3 vertices suffice; Meierling–Rautenbach–Sasse improved this to 5ℓ/3+29/2; Ma and Zu (2021) further improved to 3ℓ/2+7/2. No resolution was found in papers from 2022–2026.",
+  "since_posted": [
+    {
+      "title": "Towards a conjecture of Birmelé-Bondy-Reed on the Erdős-Pósa property of long cycles",
+      "authors": "Jie Ma, Chunlei Zu",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2112.14065",
+      "arxiv_id": "2112.14065",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every graph without two vertex-disjoint cycles of length ≥ ℓ contains a set of at most 3ℓ/2+7/2 vertices meeting all such cycles, improving the previous best bound of 5ℓ/3+29/2 due to Meierling–Rautenbach–Sasse."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Birmelé conjecture long cycles hitting set vertex disjoint",
+    "Erdős–Pósa long cycles k vertices transversal conjecture Birmelé 2003",
+    "arxiv: Birmelé long cycles hitting set",
+    "arxiv: Birmelé Erdős-Pósa long cycles",
+    "arxiv abs 2112.14065",
+    "arxiv: Birmelé Bondy Reed long cycles sorted by date",
+    "Semantic Scholar: Birmelé conjecture long cycles",
+    "Google Scholar: Birmelé Bondy Reed conjecture long cycles (since 2022)"
+  ],
+  "notes": "The conjecture is attributed to Birmelé (2003) in Bondy–Murty, but the literature consistently calls it the 'Birmelé–Bondy–Reed conjecture'; the Birmelé–Bondy–Reed paper (pre-2008) also proved the weaker bound of 2ℓ+3 vertices. The statement in item 66 is equivalent to: the Erdős–Pósa multiplicity-1 threshold for long cycles equals ℓ (a linear, optimal hitting set). The related OPG record erdos_posa_property_for_long_directed_cycles concerns the directed analogue and is a distinct open problem. A Google Scholar search restricted to 2022–2026 found no papers on this conjecture, and arXiv searches likewise returned no post-2021 results."
+}

@@ -1,0 +1,46 @@
+{
+  "review_id": "bm-079",
+  "bm_id": "bm-079",
+  "appendix_number": 79,
+  "conjecture_title": "Matthews–Sumner conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Matthews–Sumner conjecture (every 4-connected claw-free graph is Hamiltonian, 1984) remains open as of September 2026. Via Ryjáček's 1997 closure theorem it is equivalent to Thomassen's conjecture that every 4-connected line graph is Hamiltonian, also open. The strongest known partial result is Kaiser and Vrána (2012), who proved that every 5-connected line graph of minimum degree at least 6 is Hamiltonian, improving the previous threshold from 7-connected. A 2026 paper by Ozeki and Zhang addresses Hamiltonicity in 3-connected claw-free graphs with small domination number, motivated by Thomassen's conjecture, but does not resolve the 4-connected case.",
+  "since_posted": [
+    {
+      "title": "Hamilton cycles in 5-connected line graphs",
+      "authors": "Kaiser, Tomáš; Vrána, Petr",
+      "year": 2012,
+      "venue": "Journal of Combinatorial Theory, Series B",
+      "url": "https://arxiv.org/abs/1009.3754",
+      "arxiv_id": "1009.3754",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every 5-connected line graph of minimum degree at least 6 is Hamiltonian (and the result extends to claw-free graphs and Hamilton-connectedness), improving the previously known threshold of 7-connectivity but falling short of the conjectured 4-connectivity."
+    },
+    {
+      "title": "Hamiltonian Properties of 3-Connected Claw-Free Graphs and Line Graphs of 3-Hypergraphs",
+      "authors": "Ozeki, Kenta; Zhang, Leilei",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.03361",
+      "arxiv_id": "2603.03361",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every 3-connected claw-free graph with domination number at most 5 is Hamiltonian (with limited exceptions), motivated by Thomassen's line graph conjecture; does not address the Matthews–Sumner conjecture for 4-connected graphs."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Matthews-Sumner conjecture 4-connected claw-free Hamiltonian status 2020 2021 2022 2023 2024 2025 2026",
+    "Thomassen conjecture 4-connected line graph Hamiltonian solved proof",
+    "claw-free graph Hamiltonian 4-connected Ryjaček closure line graph 2024 2025 2026 arXiv",
+    "Matthews Sumner conjecture claw-free Hamiltonian open problem survey 2023 2024 2025",
+    "4-connected claw-free Hamiltonian proof 2020 2021 2022 2023 2024 2025 2026",
+    "site:arxiv.org Matthews Sumner 4-connected claw-free Hamiltonian 2022 2023 2024 2025"
+  ],
+  "notes": "The conjecture is equivalent to Thomassen's conjecture (every 4-connected line graph is Hamiltonian) via Ryjáček's closure (1997), already noted in the book and tracked in OPG record hamiltonian_cycles_in_line_graphs. Searches were hampered by intermittent WebSearch failures; the arXiv and Open Problem Garden were consulted directly. No paper claiming a proof or counterexample of the full conjecture was found. The Kaiser–Vrána result (arXiv 1009.3754) is the key post-2008 partial result; its published form appeared in J. Combin. Theory Ser. B 103 (2013) 461–477 (year cited as 2012 matching arXiv submission year commonly used). The Ozeki–Zhang 2026 preprint is included as the most recent work motivated by the same circle of conjectures."
+}

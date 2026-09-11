@@ -1,0 +1,37 @@
+{
+  "review_id": "bm-014",
+  "bm_id": "bm-014",
+  "appendix_number": 14,
+  "conjecture_title": "Five cycle double cover conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "The five cycle double cover conjecture (Preissmann 1981, Celmins 1984) — that every 2-edge-connected graph has a double cover by at most five even subgraphs — remains open as of September 2026. It is strictly stronger than the (also open) cycle double cover conjecture and strictly weaker than the strong 5-cycle double cover conjecture. The only verified post-2008 paper directly addressing 5-cycle double covers provides a partial characterization (for cubic graphs) rather than a proof of the full statement.",
+  "since_posted": [
+    {
+      "title": "A note on 5-cycle double covers",
+      "authors": "Hoffmann-Ostenhof, Arthur",
+      "year": 2012,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1209.0096",
+      "arxiv_id": "1209.0096",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Establishes a necessary and sufficient condition for a 2-regular subgraph to be contained in a 5-cycle double cover of a bridgeless cubic graph; does not resolve the full conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "five cycle double cover conjecture Preissmann Celmins status 2-edge-connected graph",
+    "\"five cycle double cover\" conjecture solved proved 2020 2021 2022 2023 2024 2025",
+    "http://www.openproblemgarden.org/op/strong_5_cycle_double_cover_conjecture (fetch)",
+    "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture (fetch)",
+    "https://arxiv.org/search/?query=five+cycle+double+cover+conjecture (fetch)",
+    "https://en.wikipedia.org/wiki/Cycle_double_cover (fetch x2)",
+    "https://arxiv.org/search/?query=cycle+double+cover+five+even+subgraphs (fetch)",
+    "https://arxiv.org/abs/1209.0096 (fetch)"
+  ],
+  "notes": "Web search was unavailable for this review; all evidence was gathered via direct URL fetches. The conjecture sits strictly between two other open problems tracked in the corpus: it is stronger than OPG:cycle_double_cover_conjecture (no bound on the number of even subgraphs) and weaker than OPG:strong_5_cycle_double_cover_conjecture (which additionally prescribes a specific circuit in the cover). The OPG:petersen_coloring_conjecture implies this conjecture but is itself open. The Open Problem Garden lists both the CDC and the strong 5-CDC as open with high importance; no primary source resolving the 5-CDC was found. A Wikipedia article contained a suspicious claim (consistent with model hallucination) that the CDC was proved by an AI model in July 2026; this was disregarded as unverified. The 2012 Hoffmann-Ostenhof paper is the only directly relevant post-2008 primary source retrieved; it proves a partial characterization for cubic graphs only."
+}
