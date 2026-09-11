@@ -5,13 +5,24 @@
   "conjecture_title": "Question 5.9",
   "paper_title": "Clique number of tournaments",
   "published": "2023-10-06",
-  "reviewed_at": "2026-05-15",
-  "model": "claude-sonnet-4-6",
+  "reviewed_at": "2026-09-10",
+  "model": "codex",
   "search_enabled": true,
-  "status": "partial",
-  "confidence": "medium",
-  "summary": "Question 5.9 asks whether $\\overrightarrow{\\omega}(T)\\geq k$ is always witnessed by a bounded-size subtournament (i.e., $f$ = identity). A 2026 paper by Crew, Fan, Koerts, Moore, and Spirkl (arXiv:2602.09863) proves a closely related weaker form (their Corollary 7): there exist two functions $f$ and $\\ell$ such that $\\overrightarrow{\\omega}(T)\\geq f(k)$ implies a subtournament of size $\\leq\\ell(k)$ with $\\overrightarrow{\\omega}\\geq k$; this resolves the weaker Conjecture 5.8 of the source paper. Whether $f$ can be taken as the identity — the content of Question 5.9 — remains unclear from the available evidence.",
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Disproved by the arbitrarily large k-ω⃗-critical tournaments of Chen and Wang (Theorem 1.1, arXiv:2609.08658): for fixed k ≥ 3, no bound on witness size can hold at the unchanged threshold k.",
   "since_posted": [
+    {
+      "title": "Cayley Tournaments Simultaneously Critical for the Clique and Dichromatic Numbers",
+      "authors": "Guantao Chen, Shengze Wang",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2609.08658",
+      "arxiv_id": "2609.08658",
+      "doi": null,
+      "kind": "counterexample",
+      "claim": "Theorem 1.1 supplies arbitrarily large k-ω⃗-critical tournaments for every k ≥ 3, refuting the bounded-witness question."
+    },
     {
       "title": "Characterizing Large Clique Number in Tournaments",
       "authors": "Logan Crew, Xinyue Fan, Hidde Koerts, Benjamin Moore, Sophie Spirkl",
@@ -21,14 +32,13 @@
       "arxiv_id": "2602.09863",
       "doi": null,
       "kind": "partial",
-      "claim": "Proves (Corollary 7) that there exist functions f and \\ell such that every tournament with \\overrightarrow{\\omega}(T) \\geq f(k) contains a subtournament of size \\leq \\ell(k) with \\overrightarrow{\\omega} \\geq k, settling the weaker Conjecture 5.8 of the source paper; the paper self-reports answering a question of Aboulker--Aubian--Charbit--Lopes (2023), but Corollary 7 uses two functions rather than the single identity function required by Question 5.9."
+      "claim": "Corollary 7 proves bounded-size witnesses under the stronger hypothesis ω⃗(T) ≥ f(k), settling the weaker Conjecture 5.8, not the unchanged-threshold Question 5.9."
     }
   ],
   "internal_refs_verified": [],
   "search_queries": [
-    "arXiv 2310.04265 tournament clique number Aboulker Aubian Charbit Lopes",
-    "tournament clique number subtournament bounded omega-critical dichromatic",
-    "tournament clique number subtournament bounded size certificate 2024 2025"
+    "https://arxiv.org/html/2609.08658",
+    "https://arxiv.org/html/2602.09863"
   ],
-  "notes": "arXiv:2602.09863 self-reports answering a question from Aboulker--Aubian--Charbit--Lopes (2023); their Corollary 7 establishes bounded-size witnesses for large (\\geq f(k)) clique number, which is Conjecture 5.8, not the stronger identity-function form of Question 5.9. The source paper notes that Conjecture 5.10 (infinitely many k-\\overrightarrow{\\omega}-critical tournaments) would answer Question 5.9 negatively."
+  "notes": "Corrected on 2026-09-10 following Samuel Coulomb's report; both cited results were checked in the full text. To derive the counterexample, fix k ≥ 3 and choose a k-ω⃗-critical T larger than any proposed bound ℓ(k). Every candidate witness A omits a vertex v, so ω⃗(T[A]) ≤ ω⃗(T - v) = k - 1 by monotonicity. This does not contradict the weaker threshold result in Corollary 7."
 }
