@@ -15,7 +15,7 @@
     {% if problem_count - review_count > 0 %}<span class="status-pending">{{ problem_count - review_count }} unreviewed</span>{% endif %}
   </span>
   {% endif %}
-  {% if arxiv_review_count %}
+  {% if arxiv_count %}
   <span class="status-summary" title="arXiv conjecture-review status counts">
     arXiv:
     {% for s in ['open','partial','solved','disproved','unclear'] -%}
@@ -26,10 +26,22 @@
     {% if arxiv_count - arxiv_review_count > 0 %}<span class="status-pending">{{ arxiv_count - arxiv_review_count }} unreviewed</span>{% endif %}
   </span>
   {% endif %}
-  {% if arxiv_count %}
+  {% if bm_count %}
+  <span class="status-summary" title="Bondy–Murty Appendix A review status counts">
+    Bondy–Murty:
+    {% for s in ['open','partial','solved','disproved','unclear'] -%}
+      {% if bm_review_status_counts.get(s) -%}
+        <span class="status-badge status-{{ s }}">{{ s }} {{ bm_review_status_counts[s] }}</span>
+      {%- endif %}
+    {%- endfor %}
+    {% if bm_count - bm_review_count > 0 %}<span class="status-pending">{{ bm_count - bm_review_count }} unreviewed</span>{% endif %}
+  </span>
+  {% endif %}
+  {% if arxiv_count or bm_count %}
   <span class="source-summary">
     <span class="badge source source-opg" data-source="opg">OPG {{ problem_count }}</span>
-    <span class="badge source source-arxiv" data-source="arxiv">arXiv {{ arxiv_count }}</span>
+    {% if arxiv_count %}<span class="badge source source-arxiv" data-source="arxiv">arXiv {{ arxiv_count }}</span>{% endif %}
+    {% if bm_count %}<span class="badge source source-bm" data-source="bm">Bondy–Murty {{ bm_count }}</span>{% endif %}
   </span>
   {% endif %}
 </div>
@@ -52,6 +64,8 @@
   <td>
     {% if p._source == 'arxiv' %}
       <a href="arxiv/{{ p._review_id or p.safe_id }}/">{{ p.title }}</a>
+    {% elif p._source == 'bm' %}
+      <a href="bm/{{ p.bm_id }}/">{{ p.title }}</a>
     {% else %}
       <a href="op/{{ p.slug }}/">{{ p.title }}</a>
     {% endif %}

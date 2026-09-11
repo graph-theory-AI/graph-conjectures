@@ -1,0 +1,35 @@
+{
+  "review_id": "bm-041",
+  "bm_id": "bm-041",
+  "appendix_number": 41,
+  "conjecture_title": "Hadwiger's conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Hadwiger's conjecture (every k-chromatic graph has a K_k minor) remains open for k ≥ 7. It is proven for k ≤ 6: the k=5 case is equivalent to the Four Colour Theorem (Wagner 1937) and k=6 was settled by Robertson, Seymour and Thomas (1993). The most significant post-2008 progress is by Delcourt and Postle (arXiv:2108.01633, 2021/2024), who proved that K_t-minor-free graphs are O(t log log t)-colorable, improving the longstanding O(t√(log t)) bound; this advances the weaker ‘Linear Hadwiger’s conjecture’ but does not settle any new case of the original. A 2025 preprint reportedly disproves the Gerards–Seymour odd-minor conjecture (a strengthening of Hadwiger’s conjecture involving odd minors), but that paper could not be URL-verified within the call budget and concerns a distinct statement.",
+  "since_posted": [
+    {
+      "title": "Reducing Linear Hadwiger's Conjecture to Coloring Small Graphs",
+      "authors": "Michelle Delcourt, Luke Postle",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2108.01633",
+      "arxiv_id": "2108.01633",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that every K_t-minor-free graph is O(t log log t)-colorable (improving the 1980s bound of O(t√(log t)) by Kostochka and Thomason), making progress toward the weaker Linear Hadwiger’s conjecture but not resolving any new case k ≥ 7 of the original conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Hadwiger conjecture graph theory progress 2024 2025 2026",
+    "Hadwiger conjecture k-chromatic Kk minor proof counterexample recent",
+    "https://en.wikipedia.org/wiki/Hadwiger_conjecture_(graph_theory)",
+    "https://arxiv.org/abs/2108.01633",
+    "https://arxiv.org/abs/2006.11798",
+    "https://mathworld.wolfram.com/HadwigerConjecture.html"
+  ],
+  "notes": "The conjecture is open for k ≥ 7; the book's statement of known cases (k ≤ 6) is accurate. The Delcourt–Postle result (first posted 2021, revised March 2024) establishes O(t log log t)-colorability for K_t-minor-free graphs, which is strictly weaker than Hadwiger's conjecture (which requires the bound t−1, not just O(t log log t)). An earlier 2020 preprint by Postle (arXiv:2006.11798) on the same topic was withdrawn in 2022 and merged into arXiv:2108.01633. A 2025 preprint (Kühn et al.) reportedly disproves the Gerards–Seymour conjecture (the odd-minor analogue of Hadwiger), but this concerns a different statement and the URL could not be verified within the 8-call budget. Related corpus records: fractional_hadwiger and list_hadwiger_conjecture track weaker variants; seagull_problem is an unproved consequence of Hadwiger’s conjecture; jorgensens_conjecture concerns the structure of K_6-minor-free graphs (adjacent to the k=6 case)."
+}

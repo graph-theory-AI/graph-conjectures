@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}{{ p.title }} — Graph-theory open problems (Bondy–Murty){% endblock %}
+
+{% block main %}
+<article class="problem bm">
+<header>
+  <h1>{{ p.title }}</h1>
+  <p class="paper-label">Bondy–Murty, <em>Graph Theory</em>, Appendix A, item {{ p.appendix_number }} · {{ p.section }}</p>
+  <div class="meta">
+    <span class="badge source source-bm">Bondy–Murty</span>
+    <span class="kind">{{ p.kind }}</span>
+    {% if p.attributed_year %}<span class="posted">— first stated {{ p.attributed_year }}</span>{% endif %}
+  </div>
+  <div class="byline">
+    {% if p.attributed_to %}<strong>Attributed to:</strong> {{ p.attributed_to }}{% endif %}
+  </div>
+</header>
+
+{% if p._review %}
+<section class="lit-review">
+  <h2>
+    Status
+    <span class="status-badge status-{{ p._review.status }}">{{ p._review.status }}</span>
+    <span class="confidence confidence-{{ p._review.confidence }}">{{ p._review.confidence }} confidence</span>
+  </h2>
+  <p class="summary">{{ p._review.summary }}</p>
+
+  {% if p._review.since_posted %}
+  <h3>Cited literature ({{ p._review.since_posted|length }})</h3>
+  <ul class="since-posted">
+  {% for ref in p._review.since_posted %}
+    <li>
+      <div class="ref-line">
+        {% if ref.kind %}<span class="ref-kind kind-{{ ref.kind }}">{{ ref.kind }}</span>{% endif %}
+        <strong class="ref-title">{% if ref.url %}<a href="{{ ref.url }}">{{ ref.title }}</a>{% else %}{{ ref.title }}{% endif %}</strong>
+        <span class="ref-year">({{ ref.year }})</span>
+      </div>
+      <div class="ref-meta">
+        {{ ref.authors }}{% if ref.venue %} · <em>{{ ref.venue }}</em>{% endif %}
+        {%- if ref.arxiv_id %} · <a href="https://arxiv.org/abs/{{ ref.arxiv_id }}">arXiv:{{ ref.arxiv_id }}</a>{% endif -%}
+        {%- if ref.doi %} · <a href="https://doi.org/{{ ref.doi }}">doi:{{ ref.doi }}</a>{% endif -%}
+      </div>
+      {% if ref.claim %}<p class="ref-claim">{{ ref.claim }}</p>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if p._review.notes %}
+  <p class="notes"><strong>Reviewer notes.</strong> {{ p._review.notes }}</p>
+  {% endif %}
+
+  <p class="review-meta">
+    Auto-reviewed {{ p._review.reviewed_at }} with <code>{{ p._review.model }}</code>
+    {%- if p._review.search_enabled %} (web search enabled){% endif -%}
+    .
+  </p>
+</section>
+{% endif %}
+
+<section class="statements">
+<div class="envtheorem envtheorem-{{ p.kind|lower|replace(' ','-') }}">
+<strong>{{ p.kind }}.</strong> {{ p.statement_text }}
+</div>
+</section>
+
+{% if p.context_text %}
+<section class="discussion">
+<h2>Context</h2>
+<p>{{ p.context_text }}</p>
+</section>
+{% endif %}
+
+{% if p.book_refs %}
+<section class="book-refs">
+<p><strong>In the book:</strong> {{ p.book_refs | join(', ') }}.</p>
+</section>
+{% endif %}
+
+{% if related %}
+<section class="also-stated">
+<h2>Related records in this index</h2>
+<p class="coverage-note">
+  {% if p.coverage == 'weak' %}This conjecture had no record of its own; it was only covered indirectly by the records below.
+  {% else %}This conjecture was absent from the Open Problem Garden and arXiv corpora; the records below are the nearest ones.{% endif %}
+</p>
+<ul>
+{% for r in related %}
+  <li>
+    {% if r.url %}<a href="{% if not r.external %}{{ root }}{% endif %}{{ r.url }}">{{ r.title }}</a>{% else %}{{ r.title }}{% endif %}
+    {% if r.note %} — {{ r.note }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
+</section>
+{% endif %}
+
+{% if p.notes %}
+<section class="notes">
+<p><strong>Editorial notes.</strong> {{ p.notes }}</p>
+</section>
+{% endif %}
+
+<section class="source-paper">
+<h2>Source</h2>
+<p>
+  <strong>{{ p.source_info.title }}</strong><br>
+  Item {{ p.appendix_number }}, book p. {{ p.source_info.book_page }} (PDF p. {{ p.source_info.pdf_page }}) ·
+  <a href="{{ p.source_info.url }}">{{ p.source_info.url }}</a> ·
+  <a href="{{ p.source_info.pdf_url }}#page={{ p.source_info.pdf_page }}">PDF</a><br>
+  English edition: {{ p.source_info.english_edition }}.
+</p>
+</section>
+
+{% include "_related.html" %}
+
+<footer class="canonical">
+<a href="{{ p.source_info.pdf_url }}#page={{ p.source_info.pdf_page }}">View the appendix page on HAL</a>
+</footer>
+</article>
+{% endblock %}

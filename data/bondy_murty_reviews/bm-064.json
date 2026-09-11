@@ -1,0 +1,59 @@
+{
+  "review_id": "bm-064",
+  "bm_id": "bm-064",
+  "appendix_number": 64,
+  "conjecture_title": "Smith's conjecture on longest cycles",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "Smith's conjecture that any two longest cycles in a k-connected graph (k ≥ 2) share at least k vertices remains open. Gutiérrez and Valqui (2023) proved that any two longest cycles in a k-connected graph on n vertices intersect in at least min{n, 8k−n−16} vertices, confirming the conjecture when k ≥ (n+16)/7. Ma and Zhao (2025) established an Ω(k^{2/3}) lower bound on the intersection size for general k-connected graphs, and Chen (2026) further improved this to Ω(k^{8/11}) via a forbidden-subdivision approach.",
+  "since_posted": [
+    {
+      "title": "On two conjectures about the intersection of longest paths and cycles",
+      "authors": "Juan Gutiérrez, Christian Valqui",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2310.03849",
+      "arxiv_id": "2310.03849",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that any two longest cycles in a k-connected graph on n vertices intersect in at least min{n, 8k−n−16} vertices, confirming Smith's conjecture for the regime k ≥ (n+16)/7; also addresses the analogous Hippchen conjecture for longest paths."
+    },
+    {
+      "title": "Intersections of longest cycles in vertex-transitive and highly connected graphs",
+      "authors": "Jie Ma, Ziyuan Zhao",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2508.17438",
+      "arxiv_id": "2508.17438",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that any two longest cycles in a k-connected graph intersect in at least Ω(k^{2/3}) vertices, improving all prior lower bounds; also resolves a 1979 problem of Babai for vertex-transitive graphs."
+    },
+    {
+      "title": "An Improved Bound for Smith's Longest Cycles Conjecture via a Forbidden Subdivision",
+      "authors": "Douglas M. Chen",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2608.30353",
+      "arxiv_id": "2608.30353",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Improves the best known lower bound on the intersection size of any two longest cycles in a k-connected graph to Ω(k^{8/11}), surpassing the Ω(k^{2/3}) bound of Ma–Zhao, using a Ramsey-theoretic refinement of Turán-type methods."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Smith's conjecture longest cycles k-connected graph vertices in common Grötschel 1984",
+    "\"longest cycles\" \"k-connected\" \"vertices in common\" conjecture graph theory",
+    "openproblemgarden.org/op/chords_of_longest_cycles",
+    "arxiv.org search: longest cycles k-connected common vertices",
+    "arxiv.org search: Smith conjecture longest cycles k-connected",
+    "https://arxiv.org/abs/2310.03849 fetch",
+    "https://arxiv.org/abs/2508.17438 fetch",
+    "https://arxiv.org/abs/2608.30353 fetch"
+  ],
+  "notes": "WebSearch was unavailable; all results obtained via WebFetch on arXiv. The three cited papers were found via an arXiv keyword search and each abstract was verified by direct WebFetch. Confidence is medium because the fetched abstracts were summarised by a small model and could not be cross-checked by independent keyword search. The conjecture is related to OPG record chords_of_longest_cycles (Thomassen's chord conjecture for 3-connected graphs, a structurally different statement) and OPG do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common (analogous question for paths). The Gutiérrez–Valqui paper (arXiv:2310.03849) also addresses the Hippchen longest-path conjecture, linking the two problems."
+}

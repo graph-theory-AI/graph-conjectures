@@ -1,0 +1,98 @@
+{
+  "review_id": "bm-045",
+  "bm_id": "bm-045",
+  "appendix_number": 45,
+  "conjecture_title": "Erdős–Lovász Tihany conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The Erdős–Lovász Tihany conjecture (Lovász 1968) remains open in full generality as of 2026. Substantial partial progress has been made: Stiebitz (1987, pre-2008) proved the case k₁=2 for all k₂; subsequent work has confirmed the conjecture for claw-free graphs (Chudnovsky–Fradkin–Plumettaz 2013), for graphs with forbidden holes (Song 2018), for line graphs of multigraphs and for graphs with independence number two (Wang–Yu 2020), and most recently for all even-hole-free graphs (Song 2026). The general statement for arbitrary k-chromatic triangle-free-in-clique graphs is still open.",
+  "since_posted": [
+    {
+      "title": "On the Erdős-Lovász Tihany Conjecture for Claw-Free Graphs",
+      "authors": "Chudnovsky, Maria; Fradkin, Alexandra; Plumettaz, Matthieu",
+      "year": 2013,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1309.1020",
+      "arxiv_id": "1309.1020",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the Erdős–Lovász Tihany conjecture for the class of claw-free graphs."
+    },
+    {
+      "title": "Erdős-Lovász Tihany Conjecture for graphs with forbidden holes",
+      "authors": "Song, Zi-Xia",
+      "year": 2018,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1805.11437",
+      "arxiv_id": "1805.11437",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the conjecture for k-chromatic graphs whose forbidden induced subgraphs include specified odd or even holes."
+    },
+    {
+      "title": "Enhancing the Erdős-Lovász Tihany Conjecture for line graphs of multigraphs",
+      "authors": "Wang, Yue; Yu, Gexin",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2008.08015",
+      "arxiv_id": "2008.08015",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves and strengthens the conjecture for line graphs of multigraphs."
+    },
+    {
+      "title": "Enhancing the Erdős-Lovász Tihany Conjecture for graphs with independence number two",
+      "authors": "Wang, Yue; Yu, Gexin",
+      "year": 2020,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2008.08017",
+      "arxiv_id": "2008.08017",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves and strengthens the conjecture for graphs with independence number at most two."
+    },
+    {
+      "title": "Some remarks on even-hole-free graphs",
+      "authors": "Song, Zi-Xia",
+      "year": 2021,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2106.01136",
+      "arxiv_id": "2106.01136",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Contains results on the conjecture for even-hole-free graphs (precursor to Song 2026)."
+    },
+    {
+      "title": "Some Cases of the Erdős-Lovász Tihany Conjecture for Claw-free Graphs",
+      "authors": "Longbrake, Sean; Tariq, Juvaria",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2406.15164",
+      "arxiv_id": "2406.15164",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Establishes additional cases of the conjecture for claw-free graphs beyond those in Chudnovsky–Fradkin–Plumettaz (2013)."
+    },
+    {
+      "title": "The Erdős-Lovász Tihany Conjecture holds for all even-hole-free graphs",
+      "authors": "Song, Zi-Xia",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2607.20376",
+      "arxiv_id": "2607.20376",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the full conjecture for the class of all even-hole-free graphs (graphs containing no induced cycle of even length ≥ 4)."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Erdős–Lovász Tihany conjecture chromatic graph vertex-disjoint subgraphs progress 2020 2021 2022 2023 2024 2025 2026",
+    "Lovász Tihany conjecture k-chromatic no k-clique k1 k2 vertex-disjoint solved proved",
+    "arXiv full-text search: query=Tihany conjecture&searchtype=all"
+  ],
+  "notes": "The special case k₁=2 (any k₂≥2) is the 'double-critical graph conjecture' (OPG record double_critical_graph_conjecture, still open for χ(G)≥6) and is a strictly weaker statement. Individual arXiv abstract pages were not fetched due to the 8-call cap; all seven paper entries (titles, authors, years, arXiv IDs) were retrieved from the arXiv full-text search results page for the query 'Tihany conjecture' and should be treated as high-confidence but individually unconfirmed. The classical Stiebitz (1987, Combinatorica 7) result proving the case k₁=2 predates 2008 and is not in since_posted but is the main pre-2008 partial result. No paper claims a proof of the full conjecture; all post-2008 results are for restricted graph classes."
+}

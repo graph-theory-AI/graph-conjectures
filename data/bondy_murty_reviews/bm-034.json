@@ -1,0 +1,24 @@
+{
+  "review_id": "bm-034",
+  "bm_id": "bm-034",
+  "appendix_number": 34,
+  "conjecture_title": "Even-cycle Turán number",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "The conjecture that ex(n, C_{2k}) >= c * n^{1+1/k} for all k >= 2 remains open in general. The lower bound is established only for k = 2 (via polarity graphs giving Theta(n^{3/2})), k = 3 (incidence graphs of projective planes giving Theta(n^{4/3})), and k = 5 (related to generalized hexagons, giving Theta(n^{6/5})). For all other k, the best known general lower bound is the Lazebnik–Ustimenko–Woldar construction (1995) yielding ex(n, C_{2k}) >= c * n^{1 + 2/(3k-3)}, which falls short of the conjectured n^{1+1/k}. No recent breakthrough resolving the conjecture for all k was found in a thorough search through 2026.",
+  "since_posted": [],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "even cycle Turán number ex(n, C_2k) lower bound n^{1+1/k} conjecture Erdős 2024 2025 2026",
+    "Turán number C_{2k} even cycle extremal graph lower bound all k proof recent",
+    "Conlon Lee Sudakov even cycle Turán lower bound n^{1+1/k} proof 2023 2024 2025",
+    "arXiv even cycle Turán lower bound n^{1+1/k} solved proved 2024 2025 2026",
+    "ex(n C_{2k}) Lazebnik Ustimenko Woldar lower bound all even cycles conjecture open 2025",
+    "even cycle Turán number all k lower bound breakthrough solved 2024 2025 2026 graph theory",
+    "arxiv 2025 2026 ex(n C_{2k}) lower bound Erdos conjecture resolved proof construction"
+  ],
+  "notes": "The Bondy–Murty statement is the weak form: existence of some constant c > 0 (not the exact constant 1/2 conjectured by Erdős–Simonovits). The three known cases (k=2,3,5) arise from classical algebraic constructions via finite geometry (polarity graphs, incidence graphs of finite projective planes, generalized hexagons / Wenger graphs). For general k, the Lazebnik–Ustimenko–Woldar 1995 construction yields ex(n, C_{2k}) >= c * n^{1+2/(3k-3)}, which is the best known general lower bound but weaker than n^{1+1/k} for k >= 4. The OPG record 'turan_number_of_a_finite_family' and erdosproblems.com item 572 both track this problem; the erdosproblems.com page returned HTTP 403 and could not be verified directly. Checked arXiv preprints 2211.02015, 2411.01782, and 2506.09020 — none address this conjecture. The Springer Combinatorica paper 'On a conjecture of Erdős and Simonovits: Even cycles' (Keevash, 2013) was found in search results but not fetched; from context it does not resolve the general case. No resolution for all k >= 2 was found as of September 2026."
+}

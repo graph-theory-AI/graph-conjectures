@@ -1,0 +1,34 @@
+{
+  "review_id": "bm-003",
+  "bm_id": "bm-003",
+  "appendix_number": 3,
+  "conjecture_title": "Halin's conjecture on hypomorphic infinite graphs",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "disproved",
+  "confidence": "high",
+  "summary": "Halin's conjecture is disproved by Bowler, Erde, Heinig, Lehner, and Pitz (2017). Their Theorem 1.6 constructs two hypomorphic infinite trees T and S with maximum degree 3 such that neither T embeds in S nor S embeds in T, providing an explicit counterexample to the statement that hypomorphic infinite graphs are each isomorphic to a subgraph of the other. The counterexample uses locally finite trees, and the paper explicitly identifies it as a negative answer to Halin's Problem 1.5, which is exactly the conjecture in question.",
+  "since_posted": [
+    {
+      "title": "A counterexample to the reconstruction conjecture for locally finite trees",
+      "authors": "Nathan Bowler, Joshua Erde, Peter Heinig, Florian Lehner, Max Pitz",
+      "year": 2017,
+      "venue": "Bulletin of the London Mathematical Society",
+      "url": "https://arxiv.org/abs/1606.02926",
+      "arxiv_id": "1606.02926",
+      "doi": "10.1112/blms.12053",
+      "kind": "counterexample",
+      "claim": "Theorem 1.6 constructs two hypomorphic infinite trees with maximum degree three admitting no embedding in either direction, thereby refuting Halin's Problem 1.5 — which is exactly the conjecture that hypomorphic infinite graphs are each isomorphic to a subgraph of the other."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bowler Erde Heinig Lehner Pitz counterexample reconstruction conjecture locally finite trees Halin",
+    "Halin conjecture hypomorphic infinite graphs subgraph isomorphic status",
+    "arxiv.org/search: Bowler Erde Heinig Lehner Pitz reconstruction locally finite trees",
+    "arxiv.org/search: hypomorphic infinite graphs Halin",
+    "ar5iv.labs.arxiv.org/html/1606.02926 — full HTML text"
+  ],
+  "notes": "The counterexample addresses the exact statement as given: two hypomorphic locally finite trees (max degree 3) are constructed that are not each isomorphic to a subgraph of the other. The ar5iv rendering of the paper confirms Problem 1.5 is attributed to Halin and reads 'If G and H are hypomorphic, do there exist embeddings G↪H and H↪G?', matching bm-003 word-for-word. The editorial note in the French Bondy–Murty edition correctly anticipated this resolution. The related OPG record (reconstruction_conjecture) concerns the finite case, which remains open and is not affected by this result."
+}

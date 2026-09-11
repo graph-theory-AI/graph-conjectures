@@ -1,0 +1,33 @@
+{
+  "review_id": "bm-085",
+  "bm_id": "bm-085",
+  "appendix_number": 85,
+  "conjecture_title": "Cantoni's conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Cantoni's conjecture (that every planar cubic graph with exactly three Hamilton cycles contains a triangle) remains open in full generality. Goedgebeur, Meersman, and Zamfirescu (2020, Mathematics of Computation) computationally verified the conjecture for all planar cubic 3H graphs up to 48 vertices, providing strong but finite evidence. No proof for the general case has been published as of September 2026.",
+  "since_posted": [
+    {
+      "title": "Graphs with few Hamiltonian Cycles",
+      "authors": "Goedgebeur, Jan; Meersman, Barbara; Zamfirescu, Carol T.",
+      "year": 2020,
+      "venue": "Mathematics of Computation, vol. 89, no. 322",
+      "url": "https://arxiv.org/abs/1812.05650",
+      "arxiv_id": "1812.05650",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Computationally verifies Cantoni's conjecture for all planar cubic graphs with exactly three Hamilton cycles (3H graphs) up to 48 vertices."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Cantoni conjecture planar cubic graph Hamilton cycles triangle 1950",
+    "planar cubic graph exactly three Hamilton cycles triangle conjecture Ninčák Tutte",
+    "Cantoni 1950 cubic graph Hamiltonian cycles",
+    "Cantoni conjecture planar cubic 3H graph triangle proved 2020 2021 2022 2023 2024 2025 2026"
+  ],
+  "notes": "The conjecture is sometimes stated in terms of 'planar cubic 3H graphs', where 3H means exactly three Hamilton cycles. There is a closely related conjecture that every planar uniquely 3-edge-colorable cubic graph contains a triangle; uniquely 3-edge-colorable cubic graphs have exactly three Hamilton cycles, so this is a special case of Cantoni's conjecture. Bondy–Murty cross-references Ninčák (1974) and Tutte (1976) for related work. A 2026 search returns no claimed proof of the full conjecture; the most recent papers found still treat it as open. The computational verification up to order 48 by Goedgebeur–Meersman–Zamfirescu is the primary post-2008 contribution."
+}

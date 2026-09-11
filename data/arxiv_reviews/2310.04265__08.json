@@ -5,29 +5,28 @@
   "conjecture_title": "Conjecture 5.6",
   "paper_title": "Clique number of tournaments",
   "published": "2023-10-06",
-  "reviewed_at": "2026-05-15",
-  "model": "claude-sonnet-4-6",
+  "reviewed_at": "2026-09-10",
+  "model": "codex",
   "search_enabled": true,
-  "status": "unclear",
-  "confidence": "medium",
-  "summary": "Conjecture 5.6 asks whether bounded out-neighborhood clique number implies bounded global clique number in tournaments, as a clique-number analogue of the Harutyunyan-Le-Thomassé-Wu theorem. A 2024 follow-up paper by Aubian (arXiv:2401.07776) explicitly disproves a conjecture of Aboulker-Aubian-Charbit-Lopes from arXiv:2310.04265, but full-text access was required to determine whether it targets Conjecture 5.6 specifically or another conjecture in the same paper (e.g., Conjecture 5.3, which implies 5.6 per Theorem 5.7). The status of Conjecture 5.6 therefore cannot be settled with certainty from the available abstract-level evidence.",
+  "status": "solved",
+  "confidence": "high",
+  "summary": "Proved by Crew, Fan, Koerts, Moore, and Spirkl (Corollary 13, arXiv:2602.09863). Its out-neighborhood conclusion, by contraposition, bounds the global tournament clique number whenever every out-neighborhood has bounded tournament clique number.",
   "since_posted": [
     {
-      "title": "Computing the clique number of tournaments",
-      "authors": "Guillaume Aubian",
-      "year": 2024,
+      "title": "Characterizing Large Clique Number in Tournaments",
+      "authors": "Logan Crew, Xinyue Fan, Hidde Koerts, Benjamin Moore, Sophie Spirkl",
+      "year": 2026,
       "venue": "arXiv preprint",
-      "url": "https://arxiv.org/abs/2401.07776",
-      "arxiv_id": "2401.07776",
+      "url": "https://arxiv.org/abs/2602.09863",
+      "arxiv_id": "2602.09863",
       "doi": null,
-      "kind": "counterexample",
-      "claim": "Proves NP-completeness of deciding whether a tournament has clique number at most k (for k ≥ 3) and provides a counterexample to a conjecture of Aboulker, Aubian, Charbit and Lopes (arXiv:2310.04265); the abstract does not specify which conjecture, so it is unclear whether Conjecture 5.6 is the one disproved."
+      "kind": "proof",
+      "claim": "Corollary 13 supplies a function h such that tournament clique number at least h(b) forces some out-neighborhood to have tournament clique number at least b."
     }
   ],
   "internal_refs_verified": [],
   "search_queries": [
-    "arXiv 2310.04265 tournament clique number citing papers 2024 2025",
-    "tournament clique number out-neighborhood bounded dichromatic Aboulker Aubian Charbit Lopes"
+    "https://arxiv.org/html/2602.09863"
   ],
-  "notes": "arXiv:2401.07776 (Aubian, Jan 2024) is the most relevant follow-up: its abstract states it gives a counterexample to a conjecture of the source-paper authors, but does not name the conjecture. Since Theorem 5.7 of the source paper establishes that Conjecture 5.3 implies Conjecture 5.6, a counterexample to 5.3 would not settle 5.6. Full-text reading of 2401.07776 is needed to resolve this. A second 2026 paper (arXiv:2602.08736, Aubian-Kuffner) disproves a different conjecture about dichromatic number and is unrelated to Conjecture 5.6."
+  "notes": "Corrected on 2026-09-10 following Samuel Coulomb's report; Corollary 13 was checked in the full text. Set b = t + 1: if every out-neighborhood has clique number at most t, the global clique number is less than h(t + 1). Thus g(t) = h(t + 1) - 1 works. The counterexample in arXiv:2401.07776 concerns the forest-backedge χ⃗-binding conjecture, not this statement."
 }

@@ -1,0 +1,34 @@
+{
+  "review_id": "bm-053",
+  "bm_id": "bm-053",
+  "appendix_number": 53,
+  "conjecture_title": "Albertson's toroidal colouring conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "high",
+  "summary": "Albertson (1981) asked whether every toroidal graph can be made 4-colourable by deleting at most three vertices (M_1 = 3). An infinite family of toroidal graphs requires exactly three deletions, so the bound cannot be lowered. Thomassen proved the five-colour analogue without invoking the Four Colour Theorem, and Hutchinson–Miller showed that all but O(√(gn)) vertices of an n-vertex genus-g graph can be 4-coloured. As of 2018 both the original conjecture (M_1 = 3 for the torus) and the weaker question asking for any finite bound K remain open.",
+  "since_posted": [
+    {
+      "title": "Open Problems for the Barbados Graph Theory Workshop 2018",
+      "authors": "Dan Král', Jon Noel (Problem 5)",
+      "year": 2018,
+      "venue": "Workshop open-problems list",
+      "url": "https://web.math.princeton.edu/~pds/barbados18/openproblems2018.html",
+      "arxiv_id": null,
+      "doi": null,
+      "kind": "survey",
+      "claim": "Identifies Albertson's conjecture (every toroidal graph is 4-colourable after deleting at most 3 vertices) as open in 2018, notes an infinite family requiring exactly 3 deletions, and observes that even the weaker question of whether any finite bound K exists remains unresolved."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Albertson toroidal graph 4-colourable deletion three vertices conjecture",
+    "toroidal graph chromatic number vertex deletion 4-colorable Albertson 1981",
+    "Albertson conjecture toroidal graph 4-colorable vertex deletion solved 2020 2021 2022 2023 2024 2025",
+    "\"toroidal graph\" \"4-colorable\" \"vertex deletion\" site:arxiv.org 2022 2023 2024 2025 2026",
+    "Albertson 1981 Theory Applications Graphs toroidal 4-color vertex deletion open problem survey"
+  ],
+  "notes": "The conjecture is part of Albertson's broader 1981 question (in G. Chartrand et al., eds., Theory and Applications of Graphs, Wiley, p. 609): for each surface S_g, does there exist M_g such that every graph embeddable on S_g has all but M_g vertices 4-colourable? For the torus (g=1), the conjecture is M_1 = 3. This should be distinguished from defective/improper 4-coloring of toroidal graphs: a 2025 preprint (arXiv:2509.15870) studies (d_1,d_2,d_3,d_4)-colourability but does not address vertex deletion and leaves 4-colorability with defect 1 open. Known partial results: Thomassen's 5-colour analogue (without 4CT); Hutchinson–Miller O(√(gn)) bound for 4-colouring; existence of an infinite family requiring exactly 3 deletions (tightness). The Mohar open-problems page (sfu.ca, 1995, verified) and the Barbados 2018 workshop (verified) confirm the problem is open. No post-2008 paper resolving the exact statement was found."
+}

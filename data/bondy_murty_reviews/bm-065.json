@@ -1,0 +1,48 @@
+{
+  "review_id": "bm-065",
+  "bm_id": "bm-065",
+  "appendix_number": 65,
+  "conjecture_title": "Bondy's linear-length cycle conjecture for cyclically 4-edge-connected cubic graphs",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "open",
+  "confidence": "medium",
+  "summary": "No proof or disproof of the full conjecture has been found. The Dominating Cycle Conjecture, if true, would imply a circumference of at least 0.75n for cyclically 4-edge-connected cubic graphs, giving Bondy's conjecture with c = 0.75; but the Dominating Cycle Conjecture itself remains open. The 2025 French edition of the textbook retains this problem. Recent work (Máčajová–Mazák 2013) constructs cyclically 4-edge-connected cubic graphs with circumference ratio at most 0.876, illustrating the gap between known upper and lower bounds, while Lo (2026) gives cycle-length structure results in the planar subcase.",
+  "since_posted": [
+    {
+      "title": "Cubic graphs with large circumference deficit",
+      "authors": "Edita Máčajová, Ján Mazák",
+      "year": 2013,
+      "venue": "Electronic Journal of Combinatorics (arXiv preprint)",
+      "url": "https://arxiv.org/abs/1310.1042",
+      "arxiv_id": "1310.1042",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Constructs infinite classes of cyclically 4-edge-connected cubic graphs whose circumference ratio c(G)/|V(G)| is bounded above by 0.876; also notes that the Dominating Cycle Conjecture would imply a linear lower bound of 0.75n for the circumference of cyclically 4-edge-connected cubic graphs."
+    },
+    {
+      "title": "A note on cycles in cyclically 4-edge-connected cubic planar graphs",
+      "authors": "On-Hei Solomon Lo",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2605.03786",
+      "arxiv_id": "2605.03786",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves cycle-length structure results for graphs derived from cyclically 4-edge-connected cubic planar graphs (excluding K_4): if such a derived graph has circumference at least k (even, ≥ 4) then it contains a cycle of length between k and 3k/2; does not establish a linear circumference lower bound for the full class."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Bondy conjecture cyclically 4-edge-connected cubic graph linear cycle length",
+    "Fleischner Jackson 1989 long cycles cubic graphs cyclically 4-edge-connected",
+    "3-connected cyclically 4-edge-connected cubic graph cycle length cn linear",
+    "arXiv search: cyclically 4-edge-connected cubic graph long cycle",
+    "arXiv search: long cycles cubic graphs Bondy conjecture",
+    "arXiv search: Fleischner Jackson cubic cycle",
+    "Wikipedia: cubic graph conjectures",
+    "arXiv search: cyclically 4-edge-connected cubic circumference"
+  ],
+  "notes": "WebSearch was unavailable during this review; searches were conducted via direct arXiv search URL fetches and Wikipedia. The Fleischner–Jackson (1989) paper cited in the book predates arXiv and could not be fetched directly; it likely established an early partial result motivating the conjecture. The Dominating Cycle Conjecture (that every cyclically 4-edge-connected cubic graph has a dominating cycle) would, if proved, yield Bondy's conjecture as a corollary with c ≥ 0.75, but is itself open. For general (not cyclically 4-edge-connected) cubic graphs, the best known circumference lower bound is sublinear (≈ n^0.631 by Jackson 1986). The conjecture's retention in the 2025 French edition confirms it was open as of that revision. The Lo (2026) paper is partially motivated by 'conjectures of Bondy and Malkevitch' but addresses a different statement about cycle-length ranges in the planar case, not the linear-circumference lower bound directly."
+}

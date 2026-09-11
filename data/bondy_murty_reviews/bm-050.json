@@ -1,0 +1,37 @@
+{
+  "review_id": "bm-050",
+  "bm_id": "bm-050",
+  "appendix_number": 50,
+  "conjecture_title": "Gyárfás's tree conjecture for triangle-free graphs",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "medium",
+  "summary": "The conjecture that every triangle-free graph of infinite chromatic number contains every finite tree as an induced subgraph remains open in general. It follows from the Gyárfás–Sumner conjecture (item 49), which is itself open. Partial results are known: Martin (2016) proved that certain radius-three trees appear as induced subgraphs in radius-two triangle-free graphs of sufficiently large chromatic number, establishing the conjecture for this restricted class of graphs and trees. No full resolution has been found in the literature.",
+  "since_posted": [
+    {
+      "title": "A note on a conjecture of Gyárfás",
+      "authors": "Ryan R. Martin",
+      "year": 2016,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1605.06638",
+      "arxiv_id": "1605.06638",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves that, given one member T of a particular family of radius-three trees, every radius-two triangle-free graph G with large enough chromatic number contains an induced copy of T — a special case of item 50 restricted to specific trees and radius-two triangle-free host graphs."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Gyárfás tree conjecture triangle-free infinite chromatic number induced subgraph",
+    "Gyarfas conjecture triangle-free graphs finite tree induced subgraph chi-bounded 2020 2025",
+    "arXiv search: induced trees triangle-free chromatic",
+    "arXiv search: triangle-free chromatic number tree induced subgraph Gyarfas",
+    "arXiv abs 1605.06638 (Martin 2016)",
+    "Wikipedia: Gyárfás–Sumner conjecture",
+    "Open Problem Garden: graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+    "arXiv abs 2106.16089 (Burling graphs)"
+  ],
+  "notes": "This conjecture (item 50) is presented in the book as a consequence of the Gyárfás–Sumner conjecture (item 49, OPG record: graphs_with_a_forbidden_induced_tree_are_chi_bounded): if T-free graphs are chi-bounded, then a triangle-free T-free graph has bounded chromatic number, contradicting infinite chromatic number unless every finite tree T appears as an induced subgraph. Since the Gyárfás–Sumner conjecture is open, item 50 cannot be derived from it yet. However, item 50 is logically independent and might admit a direct proof. The partial result by Martin (2016) specifically addresses a restricted version: radius-three trees as induced subgraphs in radius-two triangle-free graphs with large chromatic number. WebSearch was unavailable during this review; all sources were retrieved via direct WebFetch. The arXiv search interface returned sparse results, so more recent papers (2020–2026) may exist that were not captured here. Confidence is rated medium accordingly."
+}

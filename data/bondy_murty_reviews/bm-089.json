@@ -1,0 +1,59 @@
+{
+  "review_id": "bm-089",
+  "bm_id": "bm-089",
+  "appendix_number": 89,
+  "conjecture_title": "Chvátal's toughness conjecture",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Chvátal's toughness conjecture remains open in full generality as of September 2026. If the conjecture is true, the constant k must satisfy k ≥ 9/4 (a lower bound from Bauer, Broersma, and Veldman via non-Hamiltonian (9/4−ε)-tough graphs). The conjecture has been verified for several special graph classes: chordal graphs (k=10 suffices, Kabela–Kaiser 2015), claw-free graphs, planar graphs, and various forbidden-subgraph-free families addressed in a sequence of recent papers through 2026. No counterexample to the general existential statement is known, and no proof for general graphs has been found.",
+  "since_posted": [
+    {
+      "title": "10-tough chordal graphs are Hamiltonian",
+      "authors": "Kabela, Kaiser",
+      "year": 2015,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1508.02568",
+      "arxiv_id": "1508.02568",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Every 10-tough chordal graph is Hamiltonian (and Hamilton-connected), improving the prior bound of 18 (Chen et al.) and verifying Chvátal's conjecture for chordal graphs with explicit constant k=10."
+    },
+    {
+      "title": "Hamiltonian cycles in tough (P₄∪P₁)-free graphs",
+      "authors": "not extracted from fetch",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2504.08936",
+      "arxiv_id": "2504.08936",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Every 23-tough (P₄∪P₁)-free graph on at least three vertices is Hamiltonian, verifying Chvátal's conjecture for this forbidden-subgraph class with k=23."
+    },
+    {
+      "title": "Toughness Bounds for Fractional Hamiltonicity and Resistance Positivity",
+      "authors": "not extracted from fetch",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2609.03412",
+      "arxiv_id": "2609.03412",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Every 10-tough graph is fractionally Hamiltonian; this verifies an analog of Chvátal's conjecture for the fractional relaxation (a weaker property than Hamiltonicity), but does not resolve the original conjecture."
+    }
+  ],
+  "internal_refs_verified": [],
+  "search_queries": [
+    "Chvátal toughness conjecture Hamiltonian k-tough graph status 2024 2025",
+    "toughness conjecture Hamiltonian graph solved disproved recent progress",
+    "Chvátal toughness conjecture open problem survey 9/4 lower bound Bauer Broersma",
+    "https://arxiv.org/abs/2504.08936",
+    "https://arxiv.org/abs/2605.15738",
+    "https://arxiv.org/abs/2503.14735",
+    "https://arxiv.org/abs/2609.03412",
+    "https://arxiv.org/abs/1508.02568"
+  ],
+  "notes": "The conjecture as stated asks for existence of a positive integer k; this has been neither proved nor disproved for general graphs. The best known lower bound on k (if the conjecture is true) is 9/4, due to Bauer, Broersma, and Veldman (non-Hamiltonian (9/4−ε)-tough graphs for all ε>0). Verified special classes include: claw-free graphs (Enomoto et al., 1998, k=1 suffices for a strengthening), planar graphs (Böhme, Harant, Tkáč, 1999, k=4), chordal graphs (Kabela–Kaiser, arXiv:1508.02568, k=10), and numerous forbidden-subgraph-free families in recent 2024–2026 papers. A separate conjecture by Haemers on a spectral lower bound for toughness was proved in arXiv:2605.15738 (2026) but concerns a different statement unrelated to Hamiltonicity. Hoàng's degree-sequence conjecture for t-tough graphs (arXiv:2503.14735, 2025, verified for t≥4) is a related but distinct open problem. The general existential statement of Chvátal's conjecture remains open with no announced breakthrough found in this search."
+}
