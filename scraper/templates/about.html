@@ -14,8 +14,12 @@ with conjectures extracted from recent arXiv papers by a curated set of graph th
 two main corpora covered. Each such page says which nearby records exist and where in the book the
 item appears.</p>
 
-<p>The merged index contains {{ problem_count }} OPG problems, {{ arxiv_count }} arXiv-extracted conjectures
-and {{ bm_count }} Bondy–Murty appendix items.
+<p>A handful of further conjectures are hand-curated because they are the subject of a research
+workstream under <code>problems/</code> in the repository but appear in neither of the two main corpora
+(source badge <span class="badge source source-curated">curated</span>); each such page links to its workstream.</p>
+
+<p>The merged index contains {{ problem_count }} OPG problems, {{ arxiv_count }} arXiv-extracted conjectures,
+{{ bm_count }} Bondy–Murty appendix items and {{ curated_count }} curated workstream conjecture{{ 's' if curated_count != 1 else '' }}.
 Each reviewed item is classified as <code>open</code>, <code>partial</code>, <code>solved</code>,
 <code>disproved</code>, or <code>unclear</code>. The <a href="{{ root }}timeline/">timeline</a>
 shows {{ timeline_count }} solved or disproved conjectures as horizontal intervals from
@@ -42,7 +46,7 @@ The project code is MIT licensed; data derived from OPG remains under the GFDL.<
 
 <h2>Stats</h2>
 <ul>
-<li>{{ problem_count + arxiv_count + bm_count }} total index rows: {{ problem_count }} OPG, {{ arxiv_count }} arXiv and {{ bm_count }} Bondy–Murty</li>
+<li>{{ problem_count + arxiv_count + bm_count + curated_count }} total index rows: {{ problem_count }} OPG, {{ arxiv_count }} arXiv, {{ bm_count }} Bondy–Murty and {{ curated_count }} curated</li>
 <li>OPG review statuses:
 {% for s in ['open','partial','solved','disproved','unclear'] -%}
   {% if review_status_counts.get(s) -%}
@@ -65,7 +69,7 @@ The project code is MIT licensed; data derived from OPG remains under the GFDL.<
 {%- endfor %}
 </li>
 <li>{{ timeline_count }} solved or disproved conjectures on the resolved timeline:
-{% for source in ['opg','arxiv','bm'] -%}
+{% for source in ['opg','arxiv','bm','curated'] -%}
   {% if timeline_source_counts.get(source) -%}
     <span class="badge source source-{{ source }}">{{ source }} {{ timeline_source_counts[source] }}</span>
   {%- endif %}

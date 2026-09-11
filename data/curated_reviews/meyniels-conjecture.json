@@ -1,0 +1,58 @@
+{
+  "review_id": "meyniels-conjecture",
+  "id": "meyniels-conjecture",
+  "conjecture_title": "Meyniel's conjecture on the cop number",
+  "reviewed_at": "2026-09-10",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Meyniel's conjecture (c(G) ≤ C√n for every connected n-vertex graph) remains open. The best known general upper bound is n · 2^{-(1-o(1))√log₂ n}, proved independently by Lu–Peng (2012) and Scott–Sudakov (2011); the weak Meyniel conjecture (c(G) = O(n^{1−ε}) for some ε > 0) is also open for general graphs. Recent work has verified the full conjecture for dense large-girth graphs (minimum degree δ ≥ n^{2/g+ε}) and the weak form for algebraic graphs including Cayley sum and generalised Cayley graphs; a 2026 paper proves the hypergraph analogue c(H) = O(√(n/k)) for expanding hypergraphs and with high probability for random k-uniform hypergraphs under density conditions.",
+  "since_posted": [
+    {
+      "title": "On the cop number and the weak Meyniel conjecture for algebraic graphs",
+      "authors": "(see arXiv abstract)",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2303.05381",
+      "arxiv_id": "2303.05381",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the weak Meyniel conjecture for Cayley sum graphs, generalised Cayley graphs, and twisted Cayley sum graphs by showing the cop number is at most twice the degree, with the bound combining with Bollobás–Janson–Riordan to yield c(G) = O(n^{1-ε}) for these families."
+    },
+    {
+      "title": "Graphs with Large Girth and Small Cop Number",
+      "authors": "Alexander Clow",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2306.00220",
+      "arxiv_id": "2306.00220",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Establishes c(G) = O(n log(n)(δ−1)^{−⌊(g+1)/4⌋}) for graphs of girth g and minimum degree δ ≥ 2; verifies the full Meyniel conjecture when δ ≥ n^{2/g+ε}, and the weak form (c(G) = O(n^{1−α})) for girth g ≥ 7 with δ ≥ n^ε."
+    },
+    {
+      "title": "On Meyniel's Conjecture in Random Hypergraphs",
+      "authors": "(see arXiv abstract)",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2606.27066",
+      "arxiv_id": "2606.27066",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Proves the hypergraph Meyniel conjecture c(H) = O(√(n/k)) for expanding k-uniform hypergraphs and shows it holds with high probability for random H^k(n,p) when k ≥ log³n and the typical degree p·C(n−1,k−1) = ω(log³n); extends corpus record 2307.15512."
+    }
+  ],
+  "internal_refs_verified": [
+    "arxiv:2602.07435__00",
+    "arxiv:2307.15512__00",
+    "arxiv:2005.10849__00"
+  ],
+  "search_queries": [
+    "Meyniel's conjecture cop number sqrt(n) 2024 2025 2026 progress solved",
+    "Meyniel conjecture cops robbers graph cop number best known bound",
+    "Meyniel conjecture cop number 2025 2026 arXiv new result",
+    "\"cop number\" \"sqrt\" OR \"square root\" \"n vertices\" 2025 2026 arXiv graph theory breakthrough"
+  ],
+  "notes": "The full conjecture c(G) ≤ C√n for all connected n-vertex graphs remains open; the best general bound n · 2^{-(1-o(1))√log n} (Lu–Peng 2012; Scott–Sudakov 2011) predates this record. The weak Meyniel conjecture is also open in full generality. A paper arXiv:2311.13792 claiming progress for expanders was withdrawn. Corpus record 2602.07435 addresses a related but distinct parameter (vertex cover number k), giving c(G) ≤ k/2^{(1-o(1))√log k}. Author names for arXiv:2303.05381 and arXiv:2606.27066 were not returned by the WebFetch summaries and are marked '(see arXiv abstract)' to avoid fabrication. The 2026 hypergraph paper (2606.27066) complements corpus record 2307.15512 by handling random/expanding hypergraphs. The workstream's disproof-oriented approach is consistent with the conjecture remaining wide open."
+}

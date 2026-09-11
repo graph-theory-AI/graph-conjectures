@@ -17,13 +17,14 @@ and connected by a **relation graph** of AI-reviewed implications,
 equivalences, and duplicates, browsable interactively on the site
 ([details](#relations-between-conjectures)).
 
-**Three corpora, one merged index:**
+**Four corpora, one merged index:**
 
 | corpus | count | scope |
 |---|---:|---|
 | **OPG**    |  227 | full graph-theory tag of openproblemgarden.org |
 | **arXiv**  |  768 | new conjectures from 857 arxiv papers (2016–2026) by 12 curated authors |
 | **Bondy–Murty** | 38 | items of Appendix A (100 "unsolved problems") of Bondy & Murty's *Graph Theory* that the two corpora above did not cover ([cross-check](BONDY_MURTY_APPENDIX_A.md)) |
+| **curated** | 1 | hand-added conjectures studied in a `problems/` workstream but absent from OPG and the arXiv extraction (currently Meyniel's cop-number conjecture) |
 
 Reviewed status counts:
 
@@ -150,6 +151,18 @@ Each record keeps the appendix number, the book section and page, the
 English statement, the attribution, and `related` pointers to the nearest
 OPG / arXiv / erdosproblems.com records. Pages render under `/bm/<bm_id>/`.
 
+**Curated workstream conjectures.** `data/curated_conjectures.json` holds
+hand-written records with the same shape (plus a `workstream` path) for
+conjectures that a `problems/` workstream studies but that neither OPG nor the
+arXiv extraction contains. The same driver reviews them:
+
+```bash
+.venv/bin/python scraper/bm_review.py --records data/curated_conjectures.json \
+    --out-dir data/curated_reviews --system-prompt scraper/curated_review_system_prompt.md --all
+```
+
+Pages render under `/curated/<id>/` with a link back to the workstream.
+
 ### D. Site build
 
 ```bash
@@ -183,12 +196,17 @@ Bondy–Murty branch:
   bm_build_records.py     → data/bondy_murty_conjectures.json 38 appendix items not covered above
   bm_review.py            → data/bondy_murty_reviews/<id>.json 38 status reviews
 
+Curated branch:
+  data/curated_conjectures.json                              hand-written workstream conjectures
+  bm_review.py --records … → data/curated_reviews/<id>.json  status reviews
+
 Site:
   build.py        →  site/                    Jinja2 → static HTML, KaTeX
                      /                        merged index (995 rows, filter by source/status)
                      /op/<slug>/              227 OPG problem pages
                      /arxiv/<id>/             768 arxiv conjecture pages
                      /bm/<bm_id>/             38 Bondy–Murty appendix pages
+                     /curated/<id>/           curated workstream conjecture pages
                      /author/<slug>/          218 author landing pages
                      /tag/<slug>/             227 subject pages
                      /relations/              interactive relation-graph drawing
@@ -216,6 +234,7 @@ graph-conjectures/
 │   ├── arxiv_system_prompt.md        # extraction prompt
 │   ├── arxiv_review_system_prompt.md # review prompt
 │   ├── bm_review_system_prompt.md    # Bondy–Murty review prompt
+│   ├── curated_review_system_prompt.md # curated-record review prompt
 │   ├── review_system_prompt.md       # OPG-review prompt
 │   ├── build.py                      # site generator
 │   ├── templates/                    # Jinja2 templates
@@ -249,6 +268,8 @@ graph-conjectures/
 │   ├── arxiv_internal_refs.{json,tsv} # intra-corpus cross-refs (Phase 1)
 │   ├── bondy_murty_conjectures.json  # 38 Bondy–Murty Appendix A items not covered elsewhere
 │   ├── bondy_murty_reviews/          # 38 per-item status reviews
+│   ├── curated_conjectures.json      # hand-curated workstream conjectures (Meyniel, …)
+│   ├── curated_reviews/              # their status reviews
 │   ├── relations.json                # 190 verified conjecture-to-conjecture relations
 │   ├── relations_work/               # relation-pipeline provenance (tags, candidates, verdicts)
 │   ├── categories.json
