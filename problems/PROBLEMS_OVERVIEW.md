@@ -1,6 +1,6 @@
 # `problems/` — Onboarding Overview
 
-A reader's guide to the eight problem subfolders under `problems/`. Each
+A reader's guide to the problem subfolders under `problems/`. Each
 section below is **self-contained**: it states the conjecture with every
 nonstandard term defined inline, then labels every claim as **PROVED /
 OPEN / REFUTED / WITHDRAWN** (or *computer-checked at n ≤ X*, when the
@@ -22,6 +22,7 @@ files record the audit chain.
 | `pebbling_cartesian_product/` | Graham's pebbling conjecture on the Lemke square | OPEN at the conjecture's `≤ 64`; `π(L_fpy □ L_fpy) ≤ 246` PROVED (rooted `≤ 106` PROVED) | `docs/terminal_report.md` |
 | `positive_square_energy_equality/` | Akbari–Kumar–Mohar–Pragada–Zhang Conjecture 9.2 for 2-trees | OPEN at the slot-shift wall; existential ear-selection lemma `(L')` OPEN; 40-page paper drafted | `paper/paper.pdf` |
 | `unit_vector_flows/` | Jain's `S²`-flow conjecture for bridgeless graphs | OPEN; finite theorem PROVED for nontrivial snarks on `n ≤ 28`; Jain's *second* (finite-labeling) conjecture REFUTED (Ulyanov 2026) | `THEOREM.md`, `paper/main.tex` |
+| `meyniels_conjecture/` | Meyniel's cop-number conjecture (`c(G) = O(sqrt n)`), attacked from the disproof side | OPEN; two barrier propositions PROVED; `c = delta` computer-checked on all (5,5)-cages, the (6,5)-cage, the Wells graph, and all 4-regular girth-5 graphs on `n <= 24` | `docs/barriers.md`, `docs/computations.md` |
 
 ## How to read this document
 
@@ -1083,3 +1084,84 @@ tests**, plus replay of **3 247** interval certificates.
 - Negative result: `docs/flower_snarks.md` (symmetric constructions fail for
   `J_{2k+1}`).
 - Quick reproduction: `make -C problems/unit_vector_flows verify-certs` (~70 min).
+
+## 9. `meyniels_conjecture/`
+
+### Conjecture
+
+**Definitions.** In the game of **Cops and Robbers** on a finite connected graph `G`,
+`k` cops choose vertices, then the robber chooses a vertex, then the two sides
+alternate, cops first; each piece moves to a vertex at distance at most one
+(staying is allowed). The cops win if a cop occupies the robber's vertex. The
+**cop number** `c(G)` is the least `k` for which the cops have a winning strategy;
+`c(n)` is the maximum of `c(G)` over connected graphs of order `n`. `M_k` is the
+minimum order of a connected graph with `c(G) = k`. A **`(d,5)`-cage** is a
+`d`-regular graph of girth 5 of minimum order; a **Moore graph of girth 5** is a
+`d`-regular girth-5 graph on `d^2 + 1` vertices. The **local blocking number** is
+`b(G) = max_{u != v} |N[u] ∩ N(v)|`, the largest number of a robber's neighbours a
+single cop can threaten; `b = 1` iff the girth is at least 5.
+
+> **Meyniel's conjecture (1985, reported by Frankl 1987).** There is an absolute
+> constant `C` such that every connected graph on `n` vertices has `c(G) <= C sqrt(n)`.
+> Equivalently `M_k = Ω(k^2)` (Baird et al. 2014).
+
+### Status
+
+- **OPEN.** The conjecture, and even the soft form `c(n) = O(n^{1-ε})`. Best general
+  upper bound `c(n) <= n / 2^{(1-o(1)) sqrt(log_2 n)}` (Lu–Peng; Scott–Sudakov;
+  Frieze–Krivelevich–Loh). Best lower bound `c(n) >= sqrt(n/2) - n^{0.2625}`
+  (projective-plane incidence graphs). No graph with `c(G) > sqrt(n)` is known;
+  `c(G)^2 = n` only for `C_4`.
+- **PROVED (literature).** Diameter 2 and bipartite diameter 3 (`c <= 2 sqrt(n) - 1`,
+  Lu–Peng 2012); diameter 3 and 4 (`n^{4/7+o(1)}`, `n^{3/5+o(1)}`, Hosseini–Knox–Mohar
+  2019); random graphs (Prałat–Wormald 2016); abelian Cayley graphs (Bradshaw 2020);
+  vertex cover number `k` gives `k / 2^{(1-o(1)) sqrt(log k)}` (Bose et al. 2026);
+  `M_3 = 10`, `M_4 = 19` (Turcotte–Yvon 2021).
+- **PROVED (this workstream, elementary; `docs/barriers.md`).** *Escape counting:*
+  `k < γ(G)` and `k b(G) < δ(G)` imply that `k` cops lose, so
+  `c(G) >= min{γ(G), ceil(δ/b)}`. *Cap:* `n >= 1 + δ^2/b`, hence `δ/b <= sqrt(n-1)`,
+  with equality only for Moore graphs of girth 5. So no one-step escape-counting
+  argument certifies `c(G) > sqrt(n-1)`; the Moore bound caps the high-girth bounds of
+  Frankl and of Bradshaw–Hosseini–Mohar–Stacho by `sqrt(n)` in the same way.
+- **Computer-checked (exact solver; validated on cop-win counts for `n <= 9` and on
+  `M_3`, `M_4`).** `c = δ` for all four `(5,5)`-cages (`c = 5`), the `(6,5)`-cage
+  (`c = 6`), the Wells graph (`c = 5`), Hoffman–Singleton minus a closed neighbourhood
+  (`n = 42`, `c = 6`) and minus two adjacent closed neighbourhoods (`n = 36`, `c = 5`),
+  every 4-regular girth-5 graph on `20 <= n <= 24` (`127 917` graphs, `c = 4`), and every
+  girth-5 graph of minimum degree `>= 4` on `n = 20, 21`. Cubic cages of girth 7 and 8
+  have `c = 3`. Every `δ`-cop win is a two-move fan-out from cops stacked on 1–3 vertices.
+- **OPEN (question raised here).** Is there `f` with `c(G) = δ` for every `δ`-regular
+  girth-5 graph on `n <= δ^2 + 1 + f(δ)` vertices? True in all tested cases (excess `<= 7`).
+- **Computer-checked (structure).** Hoffman–Singleton has exactly 525 induced Petersen
+  subgraphs; deleting any one gives the `(6,5)`-cage, deleting any two disjoint ones gives
+  the Robertson–Wegner graph.
+- **NEGATIVE (search).** Simulated annealing on 20–22 vertices found no graph on which
+  4 cops lose; 4-regular girth-5 graphs are strict local maxima of robber territory.
+
+### Layout
+
+- `README.md` — statement, status, references.
+- `docs/barriers.md` — the two propositions with full proofs; Moore-bound cap of the
+  high-girth bounds.
+- `docs/computations.md` — solver, validation, results table, fan-out placements,
+  `geng` commands to regenerate the exhaustive enumerations.
+- `scripts/` — exact `k`-cop solver (`copwin2.c`, `cr_common.h`, C + OpenMP) and
+  constructions (Hoffman–Singleton, Petersen subgraphs, Wells graph, polarity graphs).
+- `data/` — graph6 files of every hand-constructed graph tested.
+- `results/` — raw log and tallies of the exhaustive runs.
+- `tests/` — smoke test building the solver and checking Petersen `= 3`, Robertson `= 4`.
+
+### Start here
+
+1. `docs/barriers.md`
+2. `docs/computations.md`
+3. `scripts/copwin2.c`
+
+### Notable artifacts
+
+- Exact cop numbers of all four `(5,5)`-cages, the `(6,5)`-cage and the Wells graph
+  (`docs/computations.md`, `data/*.g6`).
+- Tally of `123 859` four-regular girth-5 graphs on 24 vertices, all with `c = 4`
+  (`results/g24_k4_summary.txt`).
+- Not an OPG entry: the OPG graph-theory corpus has no Cops and Robbers page; the four
+  arXiv-extracted records citing the conjecture were matched against OPG and rejected.

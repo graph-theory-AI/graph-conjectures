@@ -258,8 +258,8 @@ graph-conjectures/
 │   ├── earth_moon_problem/
 │   ├── 3_decomposition_conjecture/
 │   ├── pebbling_cartesian_product/
-│   └── unit_vector_flows/
-├── BONDY_MURTY_APPENDIX_A.md         # Bondy–Murty Appendix A vs. this repo, item by item
+│   ├── unit_vector_flows/
+│   └── meyniels_conjecture/
 ├── PLAN.md                           # OPG crawler / parser / site design
 ├── LIT_REVIEW.md                     # OPG literature-review design
 ├── RELATIONS.md                      # conjecture relation graph: pipeline + findings
