@@ -135,7 +135,6 @@ table.problems-table th.sorted-desc::after { content: ' ▼'; font-size: 0.7em; 
   font-size: 0.85rem;
 }
 .status-pending { color: var(--muted); }
-
 .status-badge {
   display: inline-block;
   font-size: 0.72rem;
@@ -152,6 +151,52 @@ table.problems-table th.sorted-desc::after { content: ' ▼'; font-size: 0.7em; 
 .status-solved    { background: #d8efe1; color: #1f7a3a; }
 .status-disproved { background: #fadbd8; color: #b03030; }
 .status-unclear   { background: #ececec; color: #555; }
+.attack-badge {
+  display: inline-block;
+  margin-left: 0.2rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+.attack-ill-posed { background: #f9d9e8; color: #9b285e; }
+
+section.llm-attack {
+  border: 1px solid #edbfd4;
+  border-left: 3px solid #c0447d;
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  background: #fff8fb;
+  margin: 1rem 0 1.5rem;
+}
+section.llm-attack h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+section.llm-attack .summary { margin: 0.4rem 0 0.8rem; }
+section.llm-attack .confidence { font-size: 0.78rem; font-weight: 400; color: var(--muted); }
+section.llm-attack .notes { font-size: 0.88rem; color: var(--muted); }
+section.llm-attack .attack-warning {
+  padding: 0.45rem 0.6rem;
+  background: #fcebf3;
+  color: #792047;
+  font-size: 0.86rem;
+}
+section.llm-attack .attack-meta {
+  margin: 0.8rem 0 0;
+  padding-top: 0.4rem;
+  border-top: 1px solid #f0d4e1;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
 
 /* literature-review section on problem detail */
 section.lit-review {

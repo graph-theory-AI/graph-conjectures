@@ -30,8 +30,8 @@ jobs:
       - name: Install Python deps
         run: pip install -r scraper/requirements.txt
 
-      - name: Test arXiv catalog pipeline
-        run: python -m unittest discover -s tests -p 'test_arxiv_catalog_pipeline.py'
+      - name: Run test suite
+        run: python -m unittest discover -s tests
 
       - name: Validate arXiv statements
         run: python scripts/validate_arxiv_statements.py

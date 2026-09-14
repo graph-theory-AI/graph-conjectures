@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs",
+  "methodology_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs#readme",
+  "disclaimer": "Attack verdicts are unrefereed model self-reports. An ill-posed label is a diagnostic of the catalog statement supplied to the model, not a literature-review status or a peer-reviewed result.",
+  "results": [
+    {
+      "id": "1609.05458__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The catalog item is a research direction rather than a proposition, since “near-extremal,” “large piece,” and “based on a projective plane” have no specified quantitative meanings.",
+      "caveats": "The auxiliary results below require linearity and balanced part sizes and do not settle an additive-stability formulation.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T04:43:34Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/1609.05458__00"
+    },
+    {
+      "id": "1611.01270__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The catalog item is a research programme rather than a quantified conjecture; moreover, one natural universal Kendall-tau formulation is false in the canonical sampling model.",
+      "caveats": "The negative result below concerns property-independent canonical induced-subpermutation testers, not fixed-property polynomial bounds or adaptive value-query models.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T05:51:06Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/1611.01270__00"
+    },
+    {
+      "id": "1705.02166__01",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "As written, the claim is elementary for every m at least 2 with n=1, while including m=1 makes it false.",
+      "caveats": "The catalog statement almost certainly reverses an arrow or misplaces a quantifier.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T05:35:12Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/1705.02166__01"
+    },
+    {
+      "id": "1804.06104__01",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "Without a formal definition of “probabilistic methods” and “on their own,” the stated methodological forecast has no determinate mathematical truth value.",
+      "caveats": "This does not settle the Δ+2 conjecture; only a narrow obstruction to the canonical direct LLL setup is proved below.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T09:17:07Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/1804.06104__01"
+    },
+    {
+      "id": "1908.03788__01",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "As extracted, the question has no determinate truth value because avoidability is defined only for induced path occurrences and no corresponding predicate is specified for non-path graphs.",
+      "caveats": "A finite nonempty two-rooted reformulation could be genuine; below I prove only bounded-family obstructions under one explicit model.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T01:43:26Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/1908.03788__01"
+    },
+    {
+      "id": "1909.08426__04",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The catalog item is an informal research expectation rather than a proposition, because neither “very few” nor “will end up” specifies a mathematical quantifier or asymptotic notion.",
+      "caveats": "Universal, finite-exception, and density-one reformulations are distinct genuine conjectures and remain unresolved.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T06:03:33Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/1909.08426__04"
+    },
+    {
+      "id": "1911.03427__01",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The quoted conjecture has no determinate truth value, and the most direct uniform finite-group formulation is false.",
+      "caveats": "The counterexamples exploit precisely the unspecified infinite-complexity and torsion/trivial-solution exclusions, so a suitably repaired formulation may remain open.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-08-31T11:09:49Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/1911.03427__01"
+    },
+    {
+      "id": "2002.00258__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The quoted belief has no fixed quantifiers or specified hopper variant, although the natural strong-hopper reading forces a rigid two-unit genus-jump configuration.",
+      "caveats": "The conditional reductions below do not decide existence under the source paper's intended conventions.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T02:16:32Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2002.00258__00"
+    },
+    {
+      "id": "2002.11100__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The quoted sentence is a programmatic methodological suggestion, not a proposition with specified hypotheses, conclusions, or quantifiers.",
+      "caveats": "A particular formalization could become a genuine graph-theoretic problem, but none is specified here.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T02:05:30Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2002.11100__00"
+    },
+    {
+      "id": "2003.01846__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The quoted remark does not specify a forbidden family or an if-and-only-if assertion, so it has no determinate truth value as a conjecture.",
+      "caveats": "A precise completeness conjecture may be recoverable from the paper's defined examples, but it is not present in the supplied statement.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T01:21:01Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2003.01846__00"
+    },
+    {
+      "id": "2004.06788__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The prose claim has no truth value as stated, and its natural absolute-threshold interpretation is false even for connected simple bipartite cubic graphs.",
+      "caveats": "Only absolute or sufficiently low order-dependent counting thresholds are ruled out; no probabilistic, normalized, or high-connectivity meaning of 'tend' was specified.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-08-31T11:47:01Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2004.06788__00"
+    },
+    {
+      "id": "2007.14161__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The modal claim has no definite truth value; under the natural fixed-width, supplied-sequence formulation, a constant-factor MIS approximation is equivalent to a PTAS and its existence remains open.",
+      "caveats": "No MIS PTAS or fixed-width hardness is proved; the powering argument assumes a supplied contraction sequence.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T02:00:19Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2007.14161__00"
+    },
+    {
+      "id": "2102.10220__02",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "With the displayed minimum over all n-vertex graphs, m(n,k)=0 identically, while replacing the minimum by a maximum gives a meaningful problem for which only partial results are established below.",
+      "caveats": "This assumes open neighborhoods and induced edges on their union; the catalog may have transcribed max as min.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-08-31T09:14:04Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2102.10220__02"
+    },
+    {
+      "id": "2102.10220__03",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "Under the literal unrestricted definition, m(n,k) has an elementary exact formula, contradicting the quoted n^2/(ek) bound and showing that an H-free hypothesis or some other restriction is missing.",
+      "caveats": "This resolves the formulation supplied here, not the undefined parameter intended in the source paper.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T01:51:22Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2102.10220__03"
+    },
+    {
+      "id": "2104.11626__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The phrase “similar growth” specifies no asymptotic equivalence, and while the same-parameter Theta interpretation is false, plausible logarithmic or polynomial-equivalence versions remain open.",
+      "caveats": "The argument uses the standard normalization in which N_DFL bounds the number of triangles; edge-count and endpoint conventions only change constants or parameter rescalings.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T01:37:26Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2104.11626__00"
+    },
+    {
+      "id": "2109.09205__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The phrase \"not best possible\" has no quantified meaning; the bound is literally improvable for p=2 and k=1, but the intended nondegenerate asymptotic claim is unspecified.",
+      "caveats": "No improvement is obtained for p>=3 and k>=2, and the unverified 2025 article is not used.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T03:21:23Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2109.09205__00"
+    },
+    {
+      "id": "2209.12023__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "Without an independent definition of twin-width for rational matrices the claimed equivalence is tautological or undefined; bounded grid rank does satisfy it over every infinite field, while the natural equality-contraction extension is false.",
+      "caveats": "The full source question is truncated, and the grid-rank conclusion uses the precise definition stated below.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-08-31T10:25:32Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2209.12023__00"
+    },
+    {
+      "id": "2301.02177__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "A weak finite-Grassmannian interpretation is trivially true, whereas a faithful stable interpretation requires an unspecified compatible family and already encounters a concrete obstruction for the graph K2.",
+      "caveats": "The sign convention, ambient Grassmannian, stabilization, and meaning of subvariety are unspecified; the likely intended scheme-theoretic stable problem remains open.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-08-31T09:33:02Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2301.02177__00"
+    },
+    {
+      "id": "2402.04237__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "Literally every graph H works by taking H'=H; under the natural requirement H' not isomorphic to H, I prove that every complete graph K_r has the larger witness 2K_r on the class of nonempty graphs.",
+      "caveats": "The intended extra condition on H' is absent; the witness 2K_r is disconnected and fails if the null input graph is allowed.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T04:28:23Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2402.04237__00"
+    },
+    {
+      "id": "2503.05562__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "With no graph class specified the question has no single answer, and its universal interpretation is false even for the hereditary class of split graphs.",
+      "caveats": "The counterexamples settle only the universal reading; they do not characterize all classes with bounded ratio and may overlap known negative examples.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T04:04:08Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2503.05562__00"
+    },
+    {
+      "id": "2505.05997__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "As written, the claim is vacuous via the K_1 solution, and uniform FPT testing in fact yields a polynomial-time approximation with ratio o(OPT) by a timeout construction.",
+      "caveats": "The catalog omits the required restriction on f; no claim is made about a prescribed elementary, power-type, or certifying guarantee.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-08-31T12:38:51Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2505.05997__00"
+    },
+    {
+      "id": "2509.02561__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "As quoted, the conjecture omits essential bounds and quantifiers and hence has no truth value, although natural level-zero and structured special cases admit rigorous coverings.",
+      "caveats": "The exact Conjecture 15 is absent; the conditional results below do not close the global quadratic-in-doubling complexity gap.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-08-31T08:15:08Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2509.02561__00"
+    },
+    {
+      "id": "2601.12746__00",
+      "verdict": "ill_posed",
+      "confidence": "high",
+      "one_line": "The catalog item is a schematic research programme rather than a quantified conjecture, since neither the connectivity class, the containment relation, nor the permitted obstruction type is specified.",
+      "caveats": "Under the standard crossing-free definition, an exact dual criterion and a complete strongly connected 3-connected special case are proved below.",
+      "would_publish": false,
+      "model": "gpt-5.6-sol",
+      "assessed_at": "2026-09-01T03:35:54Z",
+      "artifact_url": "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs/tree/main/attacks/2601.12746__00"
+    }
+  ]
+}

@@ -17,6 +17,13 @@ and connected by a **relation graph** of AI-reviewed implications,
 equivalences, and duplicates, browsable interactively on the site
 ([details](#relations-between-conjectures)).
 
+The site also displays a separate `ill-posed` diagnostic on 23 arXiv records
+flagged by the automated attacks in
+[Graph-Theory-LLM-Proofs](https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs).
+These unrefereed model self-reports do not overwrite the literature-review
+status; each affected detail page links to the complete attack artifact and
+includes its reason and caveat.
+
 **Four corpora, one merged index:**
 
 | corpus | count | scope |

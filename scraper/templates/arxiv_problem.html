@@ -33,6 +33,25 @@
 </aside>
 {% endif %}
 
+{% if p._llm_attack %}
+<section class="llm-attack">
+  <h2>
+    Diagnostic tag
+    <span class="attack-badge attack-ill-posed">ill-posed</span>
+    <span class="confidence confidence-{{ p._llm_attack.confidence }}">{{ p._llm_attack.confidence }} confidence</span>
+  </h2>
+  <p class="summary">{{ p._llm_attack.one_line }}</p>
+  {% if p._llm_attack.caveats %}
+  <p class="notes"><strong>Caveat.</strong> {{ p._llm_attack.caveats }}</p>
+  {% endif %}
+  <p class="attack-warning">{{ llm_results_disclaimer }}</p>
+  <p class="attack-meta">
+    Assessed {% if p._llm_attack.assessed_at %}{{ p._llm_attack.assessed_at[:10] }} {% endif %}with <code>{{ p._llm_attack.model }}</code>
+    · <a href="{{ p._llm_attack.artifact_url }}">view the full attack artifact</a>.
+  </p>
+</section>
+{% endif %}
+
 {% if p._review %}
 <section class="lit-review">
   <h2>

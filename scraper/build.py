@@ -7,6 +7,7 @@ Inputs:
   data/intersection.json        (optional)
   data/arxiv_conjectures.json   (optional; produced by scripts/arxiv_aggregate.py)
   data/arxiv_opg_matches.json   (optional; same)
+  data/llm_proof_results.json   (optional; produced by scripts/sync_llm_proof_results.py)
   data/arxiv_authors.json       (optional; used for the author-slug → display-name map)
 
 Outputs:
@@ -78,6 +79,13 @@ def _build_search_text(p: dict) -> str:
         parts += [k.get("label", "") for k in p.get("keywords", [])]
         if p.get("posted_by"):
             parts.append(p["posted_by"].get("name", ""))
+    attack = p.get("_llm_attack") or {}
+    if attack:
+        parts += [
+            "llm-attack:" + attack.get("verdict", ""),
+            attack.get("one_line", ""),
+            attack.get("caveats", ""),
+        ]
     return " ".join(parts).lower().replace('"', "").replace("'", "")
 
 
@@ -361,6 +369,7 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "canonical_url":   rec.get("abs_url", f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else ""),
         "_erdos":          None,
         "_review":         rec.get("_review"),
+        "_llm_attack":     rec.get("_llm_attack"),
         "_review_id":      rec.get("_review_id"),
         "_nice_name":      nice_name,
         "_paper_label":    paper_label,
@@ -530,14 +539,31 @@ def main(argv: list[str] | None = None) -> int:
     # paper-local index, then attach the matching arxiv review JSON if present.
     arxiv_reviews_dir = args.data_dir / "arxiv_reviews"
     arxiv_names_dir   = args.data_dir / "arxiv_names"
+    llm_results_path  = args.data_dir / "llm_proof_results.json"
+    llm_results_doc = (
+        json.loads(llm_results_path.read_text(encoding="utf-8"))
+        if llm_results_path.exists() else {}
+    )
+    llm_results = llm_results_doc.get("results", []) if isinstance(llm_results_doc, dict) else []
+    llm_results_by_id = {
+        result["id"]: result for result in llm_results
+        if isinstance(result, dict) and result.get("id")
+    }
+    llm_results_disclaimer = (
+        llm_results_doc.get("disclaimer", "") if isinstance(llm_results_doc, dict) else ""
+    )
     counters: dict[str, int] = {}
     n_reviews_attached = 0
     n_names_attached   = 0
+    n_llm_results_attached = 0
     for s in arxiv_states:
         sid = s.get("safe_id") or s.get("arxiv_id","").replace("/","_")
         idx = counters.get(sid, 0)
         counters[sid] = idx + 1
         s["_review_id"] = f"{sid}__{idx:02d}"
+        if s["_review_id"] in llm_results_by_id:
+            s["_llm_attack"] = llm_results_by_id[s["_review_id"]]
+            n_llm_results_attached += 1
         if arxiv_reviews_dir.exists():
             rp = arxiv_reviews_dir / f"{s['_review_id']}.json"
             if rp.exists():
@@ -560,6 +586,13 @@ def main(argv: list[str] | None = None) -> int:
                     log.warning("could not load arxiv name %s: %s", np_.name, e)
     log.info("attached %d arxiv reviews and %d nice names to states records",
              n_reviews_attached, n_names_attached)
+    matched_llm_ids = {
+        s["_review_id"] for s in arxiv_states if s.get("_llm_attack")
+    }
+    unmatched_llm_results = set(llm_results_by_id) - matched_llm_ids
+    if unmatched_llm_results:
+        log.warning("LLM results do not match arXiv records: %s", sorted(unmatched_llm_results))
+    log.info("attached %d LLM proof-attack result(s)", n_llm_results_attached)
 
     # ── load Bondy–Murty Appendix A data (optional) ────────────────────────────
     bm_path        = args.data_dir / "bondy_murty_conjectures.json"
@@ -755,6 +788,8 @@ def main(argv: list[str] | None = None) -> int:
         "arxiv_count":          len(arxiv_rows),
         "arxiv_review_count":   arxiv_review_count,
         "arxiv_review_status_counts": arxiv_review_status_counts,
+        "llm_ill_posed_count": n_llm_results_attached,
+        "llm_results_disclaimer": llm_results_disclaimer,
         "bm_count":             len(bm_rows),
         "bm_review_count":      bm_review_count,
         "bm_review_status_counts": bm_review_status_counts,

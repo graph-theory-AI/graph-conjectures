@@ -14,6 +14,12 @@ with conjectures extracted from recent arXiv papers by a curated set of graph th
 two main corpora covered. Each such page says which nearby records exist and where in the book the
 item appears.</p>
 
+{% if llm_ill_posed_count %}
+<p>A separate automated proof-attack workstream has flagged {{ llm_ill_posed_count }} arXiv-extracted
+items as <span class="attack-badge attack-ill-posed">ill-posed</span> in the form supplied to the model.
+These diagnostics are displayed alongside, and never replace, the literature-review status.</p>
+{% endif %}
+
 <p>A handful of further conjectures are hand-curated because they are the subject of a research
 workstream under <code>problems/</code> in the repository but appear in neither of the two main corpora
 (source badge <span class="badge source source-curated">curated</span>); each such page links to its workstream.</p>
@@ -40,6 +46,7 @@ The project code is MIT licensed; data derived from OPG remains under the GFDL.<
 <li><code>scraper/erdos_index.py</code> indexes the graph-theory problems on <a href="https://www.erdosproblems.com/tags/graph%20theory">erdosproblems.com</a> for cross-referencing.</li>
 <li><code>scraper/intersect.py</code> identifies likely duplicates between the two sources via citation overlap and fuzzy statement matching. Confirmed matches are surfaced as <span class="badge erdos">EP #N</span> badges.</li>
 <li>The arXiv pipeline harvests paper metadata, downloads available HTML/PDF content, extracts conjectures, deduplicates them, and reviews each conjecture's current status.</li>
+<li><code>scripts/sync_llm_proof_results.py</code> imports the ill-posed diagnostics from the separate <a href="https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs">Graph-Theory-LLM-Proofs</a> attack corpus.</li>
 <li>The Bondy–Murty appendix was cross-checked item by item against the two corpora (<code>BONDY_MURTY_APPENDIX_A.md</code>); the uncovered items were transcribed into <code>data/bondy_murty_conjectures.json</code> and reviewed with the same status pipeline (<code>scraper/bm_review.py</code>).</li>
 <li><code>scraper/build.py</code> renders Jinja2 templates over the JSON into the static HTML you are reading, including the merged index, per-item pages, author/tag pages, and resolved timeline. Math is typeset client-side by <a href="https://katex.org">KaTeX</a>.</li>
 </ul>
@@ -77,13 +84,14 @@ The project code is MIT licensed; data derived from OPG remains under the GFDL.<
 </li>
 <li>{{ category_count }} distinct subject / keyword / author categories</li>
 <li>{{ erdos_match_count }} cross-references to erdosproblems.com</li>
+{% if llm_ill_posed_count %}<li>{{ llm_ill_posed_count }} arXiv items with an unrefereed LLM <code>ill_posed</code> diagnostic</li>{% endif %}
 <li>Last build: {{ build_date }}</li>
 </ul>
 
 <h2>Review caveat</h2>
 <p>The status reviews are automated literature reviews with verified cited URLs.
 They are designed as a research aid and should be spot-checked before being used
-as definitive mathematical or bibliographic claims.</p>
+as definitive mathematical or bibliographic claims. {{ llm_results_disclaimer }}</p>
 
 <h2>Inspiration</h2>
 <p>Layout is inspired by Thomas Bloom's <a href="https://www.erdosproblems.com">erdosproblems.com</a>.</p>
