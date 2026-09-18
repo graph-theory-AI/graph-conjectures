@@ -1,0 +1,19 @@
+{% if p._ai_result %}
+<section class="ai-result">
+  <h2>
+    AI-generated write-up
+    <span class="status-badge status-{{ p._ai_result.site_status }}">{{ p._ai_result.site_status }}</span>
+  </h2>
+  <p class="ai-artifact-links">
+    <a href="{{ p._ai_result.pdf_url }}">Open the PDF write-up</a>
+  </p>
+  <p class="notes">
+    This is a model-generated research artifact, not a peer-reviewed publication
+    or a formally verified proof.
+    {% if not p._ai_result.status_promoted %}
+    The ordinary literature status above takes precedence because the result was
+    already known independently.
+    {% endif %}
+  </p>
+</section>
+{% endif %}

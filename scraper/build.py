@@ -100,12 +100,12 @@ def _review_with_known_resolution(review: dict | None, result: dict,
     resolution_ref = dict(existing)
     resolution_ref.update({
         "title": result.get("article_title", ""),
-        "authors": existing.get("authors", "See linked article"),
-        "year": existing.get("year") or article_year,
-        "venue": existing.get("venue", "Existing literature or final source version"),
+        "authors": result.get("article_authors") or existing.get("authors", "See linked article"),
+        "year": result.get("article_year") or existing.get("year") or article_year,
+        "venue": result.get("article_venue") or existing.get("venue", "Existing literature or final source version"),
         "url": article_url,
-        "doi": existing.get("doi"),
-        "arxiv_id": existing.get("arxiv_id"),
+        "doi": result.get("article_doi") or existing.get("doi"),
+        "arxiv_id": result.get("article_arxiv_id") or existing.get("arxiv_id"),
         "kind": "counterexample" if result.get("site_status") == "disproved" else "proof",
         "claim": result.get("one_line", ""),
         "_known_resolution": True,
@@ -122,6 +122,21 @@ def _review_with_known_resolution(review: dict | None, result: dict,
         "summary": result.get("one_line", ""),
         "since_posted": refs,
         "notes": notes,
+        "reviewed_at": result.get("assessed_at", "")[:10],
+        "model": result.get("model", ""),
+        "search_enabled": False,
+    })
+    return merged
+
+
+def _review_with_ai_result(review: dict | None, result: dict) -> dict:
+    """Overlay an AI-result status without presenting it as literature."""
+    merged = dict(review or {})
+    merged.update({
+        "status": result["site_status"],
+        "confidence": result.get("confidence", "unknown"),
+        "summary": result.get("one_line", ""),
+        "notes": "",
         "reviewed_at": result.get("assessed_at", "")[:10],
         "model": result.get("model", ""),
         "search_enabled": False,
@@ -410,6 +425,7 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "_erdos":          None,
         "_review":         rec.get("_review"),
         "_known_resolution": rec.get("_known_resolution"),
+        "_ai_result":      rec.get("_ai_result"),
         "_review_id":      rec.get("_review_id"),
         "_nice_name":      nice_name,
         "_paper_label":    paper_label,
@@ -589,6 +605,11 @@ def main(argv: list[str] | None = None) -> int:
         result["id"]: result for result in known_resolutions
         if isinstance(result, dict) and result.get("id")
     }
+    ai_results = llm_results_doc.get("ai_results", []) if isinstance(llm_results_doc, dict) else []
+    ai_results_by_id = {
+        result["id"]: result for result in ai_results
+        if isinstance(result, dict) and result.get("id")
+    }
     llm_disclaimer = (
         llm_results_doc.get("disclaimer", "") if isinstance(llm_results_doc, dict) else ""
     )
@@ -596,6 +617,9 @@ def main(argv: list[str] | None = None) -> int:
     n_reviews_attached = 0
     n_names_attached   = 0
     n_known_resolutions_attached = 0
+    n_ai_results_attached = 0
+    matched_resolution_ids: set[str] = set()
+    matched_ai_result_ids: set[str] = set()
     for s in arxiv_states:
         sid = s.get("safe_id") or s.get("arxiv_id","").replace("/","_")
         idx = counters.get(sid, 0)
@@ -627,15 +651,23 @@ def main(argv: list[str] | None = None) -> int:
                 s.get("_review"), s["_known_resolution"], llm_disclaimer,
             )
             n_known_resolutions_attached += 1
+            matched_resolution_ids.add(s["_review_id"])
+        if s["_review_id"] in ai_results_by_id:
+            s["_ai_result"] = dict(ai_results_by_id[s["_review_id"]])
+            current_status = (s.get("_review") or {}).get("status")
+            status_promoted = (
+                s["_ai_result"].get("promote_status", True)
+                and current_status not in {"solved", "disproved"}
+            )
+            s["_ai_result"]["status_promoted"] = status_promoted
+            if status_promoted:
+                s["_review"] = _review_with_ai_result(
+                    s.get("_review"), s["_ai_result"],
+                )
+            n_ai_results_attached += 1
+            matched_ai_result_ids.add(s["_review_id"])
     log.info("attached %d arxiv reviews and %d nice names to states records",
              n_reviews_attached, n_names_attached)
-    matched_resolution_ids = {
-        s["_review_id"] for s in arxiv_states if s.get("_known_resolution")
-    }
-    unmatched_resolutions = set(known_resolutions_by_id) - matched_resolution_ids
-    if unmatched_resolutions:
-        log.warning("known resolutions do not match arXiv records: %s", sorted(unmatched_resolutions))
-    log.info("attached %d known literature resolution(s)", n_known_resolutions_attached)
 
     # ── load Bondy–Murty Appendix A data (optional) ────────────────────────────
     bm_path        = args.data_dir / "bondy_murty_conjectures.json"
@@ -687,6 +719,38 @@ def main(argv: list[str] | None = None) -> int:
         else:
             prob["_erdos"] = None
         prob["_review"] = reviews.get(prob["slug"])
+        if prob["slug"] in known_resolutions_by_id:
+            prob["_known_resolution"] = known_resolutions_by_id[prob["slug"]]
+            prob["_review"] = _review_with_known_resolution(
+                prob.get("_review"), prob["_known_resolution"], llm_disclaimer,
+            )
+            n_known_resolutions_attached += 1
+            matched_resolution_ids.add(prob["slug"])
+        if prob["slug"] in ai_results_by_id:
+            prob["_ai_result"] = dict(ai_results_by_id[prob["slug"]])
+            current_status = (prob.get("_review") or {}).get("status")
+            status_promoted = (
+                prob["_ai_result"].get("promote_status", True)
+                and current_status not in {"solved", "disproved"}
+            )
+            prob["_ai_result"]["status_promoted"] = status_promoted
+            if status_promoted:
+                prob["_review"] = _review_with_ai_result(
+                    prob.get("_review"), prob["_ai_result"],
+                )
+            n_ai_results_attached += 1
+            matched_ai_result_ids.add(prob["slug"])
+
+    unmatched_resolutions = set(known_resolutions_by_id) - matched_resolution_ids
+    if unmatched_resolutions:
+        log.warning("known resolutions do not match catalog records: %s",
+                    sorted(unmatched_resolutions))
+    unmatched_ai_results = set(ai_results_by_id) - matched_ai_result_ids
+    if unmatched_ai_results:
+        log.warning("AI write-ups do not match catalog records: %s",
+                    sorted(unmatched_ai_results))
+    log.info("attached %d known literature resolution(s) and %d AI write-up(s)",
+             n_known_resolutions_attached, n_ai_results_attached)
 
     n_attached = _attach_arxiv_matches_to_opg(
         problems, arxiv_matches, confirmed_only=args.confirmed_only,

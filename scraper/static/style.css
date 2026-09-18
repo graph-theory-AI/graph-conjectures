@@ -151,6 +151,8 @@ table.problems-table th.sorted-desc::after { content: ' ▼'; font-size: 0.7em; 
 .status-partial   { background: #fce8d4; color: #b14d00; }
 .status-solved    { background: #d8efe1; color: #1f7a3a; }
 .status-disproved { background: #fadbd8; color: #b03030; }
+.status-ai-proved { background: #e8e0f7; color: #5e35b1; }
+.status-ai-disproved { background: #f8deea; color: #a31558; }
 .status-unclear   { background: #ececec; color: #555; }
 
 /* literature-review section on problem detail */
@@ -183,6 +185,23 @@ section.lit-review .confidence {
   letter-spacing: 0;
 }
 section.lit-review .confidence-low { color: var(--warn); }
+
+section.ai-result {
+  border: 1px solid #c9b7eb;
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  background: #faf7ff;
+  margin: 1rem 0 1.5rem;
+}
+section.ai-result h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.ai-artifact-links { font-weight: 600; }
 
 ul.since-posted {
   list-style: none;
@@ -593,6 +612,8 @@ article.prose code { background: var(--code-bg); padding: 0.05rem 0.3rem; border
 .status-fill-partial   { fill: #e8842c; }
 .status-fill-solved    { fill: #2e9e5b; }
 .status-fill-disproved { fill: #c0392b; }
+.status-fill-ai-proved { fill: #7450b8; }
+.status-fill-ai-disproved { fill: #b52b6a; }
 .status-fill-unclear   { fill: #b5b5b5; }
 .rel-label { font-size: 9px; fill: #444; pointer-events: none; }
 .relations-panel {

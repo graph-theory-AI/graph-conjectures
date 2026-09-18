@@ -58,6 +58,9 @@
         {%- if ref.doi %} · <a href="https://doi.org/{{ ref.doi }}">doi:{{ ref.doi }}</a>{% endif -%}
       </div>
       {% if ref.claim %}<p class="ref-claim">{{ ref.claim }}</p>{% endif %}
+      {% if ref._audit_url %}
+      <p class="ref-claim"><a href="{{ ref._audit_url }}">Read the literature-status audit</a></p>
+      {% endif %}
     </li>
   {% endfor %}
   </ul>
@@ -75,6 +78,8 @@
   </p>
 </section>
 {% endif %}
+
+{% include "_ai_result.html" %}
 
 <section class="statements">
 {% if p.statements %}

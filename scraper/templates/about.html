@@ -21,7 +21,11 @@ workstream under <code>problems/</code> in the repository but appear in none of 
 <p>The merged index contains {{ problem_count }} OPG problems, {{ arxiv_count }} arXiv-extracted conjectures,
 {{ bm_count }} Bondy–Murty appendix items and {{ others_count }} other workstream conjecture{{ 's' if others_count != 1 else '' }}.
 Each reviewed item is classified as <code>open</code>, <code>partial</code>, <code>solved</code>,
-<code>disproved</code>, or <code>unclear</code>. The <a href="{{ root }}timeline/">timeline</a>
+<code>disproved</code>, or <code>unclear</code>. Separate <code>ai-proved</code> and
+<code>ai-disproved</code> labels identify model-generated arguments listed in the
+Graph-Theory-LLM-Proofs README, rated <code>CONFIRMED</code>, and accompanied by a linked
+PDF. Results rated <code>MINOR_GAPS</code> are excluded; these labels do not claim peer
+review. The <a href="{{ root }}timeline/">timeline</a>
 shows {{ timeline_count }} solved or disproved conjectures as horizontal intervals from
 first claimed year to proof or counterexample year.</p>
 
@@ -48,21 +52,21 @@ The project code is MIT licensed; data derived from OPG remains under the GFDL.<
 <ul>
 <li>{{ problem_count + arxiv_count + bm_count + others_count }} total index rows: {{ problem_count }} OPG, {{ arxiv_count }} arXiv, {{ bm_count }} Bondy–Murty and {{ others_count }} others</li>
 <li>OPG review statuses:
-{% for s in ['open','partial','solved','disproved','unclear'] -%}
+{% for s in ['open','partial','ai-proved','ai-disproved','solved','disproved','unclear'] -%}
   {% if review_status_counts.get(s) -%}
     <span class="status-badge status-{{ s }}">{{ s }} {{ review_status_counts[s] }}</span>
   {%- endif %}
 {%- endfor %}
 </li>
 <li>arXiv review statuses:
-{% for s in ['open','partial','solved','disproved','unclear'] -%}
+{% for s in ['open','partial','ai-proved','ai-disproved','solved','disproved','unclear'] -%}
   {% if arxiv_review_status_counts.get(s) -%}
     <span class="status-badge status-{{ s }}">{{ s }} {{ arxiv_review_status_counts[s] }}</span>
   {%- endif %}
 {%- endfor %}
 </li>
 <li>Bondy–Murty review statuses:
-{% for s in ['open','partial','solved','disproved','unclear'] -%}
+{% for s in ['open','partial','ai-proved','ai-disproved','solved','disproved','unclear'] -%}
   {% if bm_review_status_counts.get(s) -%}
     <span class="status-badge status-{{ s }}">{{ s }} {{ bm_review_status_counts[s] }}</span>
   {%- endif %}

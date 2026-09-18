@@ -2,9 +2,9 @@
 
 ![Resolved graph conjectures timeline](scraper/static/resolved-conjectures-timeline.png)
 
-Resolved-conjecture timeline: 96 solved or disproved conjectures, split across
-OPG literature reviews and arXiv-extracted conjectures (the image predates the
-Bondy–Murty corpus, which adds 4 more; the site's `/timeline/` page shows all 100). Editable SVG:
+Resolved-conjecture timeline: the illustration predates the Bondy–Murty corpus
+and later literature-status corrections; the site's `/timeline/` page currently
+shows 129 dated solved or disproved entries. Editable SVG:
 [`scraper/static/resolved-conjectures-timeline.svg`](scraper/static/resolved-conjectures-timeline.svg).
 
 A browseable, status-annotated mirror of the **graph-theory category** of
@@ -17,13 +17,20 @@ and connected by a **relation graph** of AI-reviewed implications,
 equivalences, and duplicates, browsable interactively on the site
 ([details](#relations-between-conjectures)).
 
-The site also imports literature-status corrections from the `already_resolved`
-results in
+The site also imports literature-status corrections from `already_resolved`
+results and full-problem `ALREADY_KNOWN` referee verdicts in
 [Graph-Theory-LLM-Proofs](https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs).
 They appear as `solved` or `disproved` according to the result, with a reference
 to the existing article credited for the resolution and a separate link to the
 automated audit. No model-generated proof is promoted to `solved`. Refresh the
 data from sibling checkouts with `python scripts/sync_llm_proof_results.py`.
+
+The same import exposes only PDF write-ups that are listed in that repository's
+README and received a `CONFIRMED` referee verdict. Results marked `MINOR_GAPS`
+are excluded. These model-generated results use the separate `ai-proved` or
+`ai-disproved` labels and link the corresponding PDF. If the literature already
+settles the problem, the ordinary literature status takes precedence while the
+AI artifact remains available on the detail page.
 
 **Four corpora, one merged index:**
 
@@ -36,13 +43,15 @@ data from sibling checkouts with `python scripts/sync_llm_proof_results.py`.
 
 Reviewed status counts:
 
-| status    | OPG  | arXiv | Bondy–Murty | meaning                                                   |
-|-----------|-----:|------:|------------:|------------------------------------------------------------|
-| open      |   57 |   554 |          13 | no significant progress found in literature search         |
-| partial   |  137 |   132 |          21 | progress since posting (special cases, weakened version)   |
-| solved    |   19 |    58 |           3 | fully proved by a follow-up paper                          |
-| disproved |   13 |    13 |           1 | counterexample found                                       |
-| unclear   |    1 |     5 |           0 | insufficient information to decide                         |
+| status        | OPG  | arXiv | Bondy–Murty | meaning                                                 |
+|---------------|-----:|------:|------------:|----------------------------------------------------------|
+| open          |   51 |   518 |          13 | no significant progress found in literature search       |
+| partial       |  136 |   118 |          21 | progress since posting                                   |
+| ai-proved     |    1 |    10 |           0 | confirmed model-generated proof artifact                 |
+| ai-disproved  |    3 |     8 |           0 | confirmed model-generated counterexample/disproof        |
+| solved        |   22 |    83 |           3 | fully proved in the literature                            |
+| disproved     |   13 |    22 |           1 | counterexample in the literature                          |
+| unclear       |    1 |     3 |           0 | insufficient information to decide                       |
 
 **44 of the arXiv-extracted records** were also identified as direct progress
 on existing OPG problems and attached as citations on those OPG pages (e.g. on

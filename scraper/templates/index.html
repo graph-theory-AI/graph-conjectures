@@ -7,7 +7,7 @@
   {% if review_count %}
   <span class="status-summary" title="OPG literature-review status counts">
     OPG:
-    {% for s in ['open','partial','solved','disproved','unclear'] -%}
+    {% for s in ['open','partial','ai-proved','ai-disproved','solved','disproved','unclear'] -%}
       {% if review_status_counts.get(s) -%}
         <span class="status-badge status-{{ s }}">{{ s }} {{ review_status_counts[s] }}</span>
       {%- endif %}
@@ -18,7 +18,7 @@
   {% if arxiv_count %}
   <span class="status-summary" title="arXiv conjecture-review status counts">
     arXiv:
-    {% for s in ['open','partial','solved','disproved','unclear'] -%}
+    {% for s in ['open','partial','ai-proved','ai-disproved','solved','disproved','unclear'] -%}
       {% if arxiv_review_status_counts.get(s) -%}
         <span class="status-badge status-{{ s }}">{{ s }} {{ arxiv_review_status_counts[s] }}</span>
       {%- endif %}
@@ -29,7 +29,7 @@
   {% if bm_count %}
   <span class="status-summary" title="Bondy–Murty Appendix A review status counts">
     Bondy–Murty:
-    {% for s in ['open','partial','solved','disproved','unclear'] -%}
+    {% for s in ['open','partial','ai-proved','ai-disproved','solved','disproved','unclear'] -%}
       {% if bm_review_status_counts.get(s) -%}
         <span class="status-badge status-{{ s }}">{{ s }} {{ bm_review_status_counts[s] }}</span>
       {%- endif %}
