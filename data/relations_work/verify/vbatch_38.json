@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e152",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Conjecture 2.9 (ε** > 0) is exactly Conjecture 2.8 (ε* > 0) restricted to the case where the positively-correlated random-subset distribution with Bernoulli(1/2) marginals is the plain binomial distribution (vertices included independently with probability 1/2), as stated in the paper; so ε* > 0 for the general class yields ε** > 0."
+  ],
+  "source": {
+   "id": "arxiv:2208.06858__03",
+   "name": "Positive gap in hat-problem success probability",
+   "kind": "Conjecture",
+   "statement": "$\\varepsilon^*(\\alpha) > 0$ for all $\\alpha \\in (0, 1/2)$.",
+   "context": "Here $\\varepsilon^*(\\alpha) = \\inf_{G:\\,\\bar{\\alpha}(G)\\geq\\alpha}(\\bar{\\alpha}(G) - \\alpha^*(G))$, where $\\alpha^*(G)$ is defined via an optimal partition of $V(G)^r$ and a positively-correlated random-subset distribution with Bernoulli$(1/2)$ marginals. This conjecture would imply Conjecture 2.6 and hence Levine's conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2208.06858",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2208.06858__04",
+   "name": "Binomial sampling gap for independence ratio",
+   "kind": "Conjecture",
+   "statement": "$\\varepsilon^{**}(\\alpha) > 0$ for all $\\alpha \\in (0, 1/2)$. In other words, there exists a monotone non-decreasing function $\\varepsilon^{**} : (0,1/2) \\to (0,1/2)$ such that the following holds: if $G$ is a graph on $n$ vertices with maximum independent set of size $\\alpha n$, $W$ is a binomial random subset of $V(G)$, and $I_W$ is the maximal independent set contained in $W$, then $$\\alpha^{**}(G) = E_W\\!\\left[|I_W|/n\\right] \\leq \\alpha - \\varepsilon^{**}(\\alpha).$$",
+   "context": "This is the special case of Conjecture 2.8 where the random-subset distribution is simply binomial (each vertex included independently with probability $1/2$), which the authors describe as 'a fundamental problem in the study of independent sets in graphs'. The paper proves this for $\\alpha > 1/4$ (Theorem 2.10) and for regular graphs with $\\alpha > 1/8$ (Theorem 2.11).",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2208.06858",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e153",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "The paper states that Conjecture 9 (f(K_m,p) = 2^{o(m)} p^{-2m/3+c_m} in the Subgraph Query Game) together with the proven Theorem 10 implies both parts of Conjecture 7: specializing the query bound at the appropriate p gives the diagonal rate 2^{(2/3+o(1))n} and the off-diagonal rate n^{(2/3+o(1))m} for the online random Ramsey numbers r̃_rand."
+  ],
+  "source": {
+   "id": "arxiv:1806.09726__01",
+   "name": "Subgraph query complexity for K_m",
+   "kind": "Conjecture",
+   "statement": "For any $m \\geq 4$, $$f(K_m, p) = 2^{o(m)} p^{-\\frac{2}{3}m + c_m},$$ where $c_m$ is a constant depending on $m \\bmod 3$ (exact case formula garbled in PDF extraction).",
+   "context": "Here $f(K_m, p)$ is the minimum number of queries needed to find a copy of $K_m$ with probability at least $1/2$ in the Subgraph Query Game on $G(\\mathbb{Z}, p)$. The upper bound in this conjecture is proved in Section 5.2, and together with Theorem 12 (the matching lower bound) it is fully verified for $m = 4$ and $m = 5$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1806.09726",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1806.09726__00",
+   "name": "Diagonal and off-diagonal online random Ramsey growth rates",
+   "kind": "Conjecture",
+   "statement": "(a) The diagonal online random Ramsey numbers satisfy $$\\tilde{r}_{rand}(n, n) = 2^{(1+o(1)) \\frac{2}{3} n}.$$ (b) The off-diagonal online random Ramsey numbers ($m \\geq 3$ fixed and $n \\to \\infty$) satisfy $$\\tilde{r}_{rand}(m, n) = n^{(1+o(1)) \\frac{2}{3} m}.$$",
+   "context": "The authors define the online random Ramsey number $\\tilde{r}_{rand}(m,n)$ as the maximum over $p \\in (0,1)$ of $\\tilde{r}(m,n;p)$, where Painter independently colors each edge red with probability $p$. These conjectures on the growth rate are motivated by a connection with the Subgraph Query Problem; Theorem 10 and Conjecture 9 together imply both parts of this conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1806.09726",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e154",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Since ln(pn²) <= 2 ln n for all p <= 1, the asymptotic E[F] = (1+o(1)) ln(pn²) for random embeddings of G(n,p) gives E[F] = O(log n) for every edge-probability function p(n). Caveat: the target asserts the bound for almost all graphs (E over embedding only), so the implication is clean under the a.a.s.-per-graph reading of the source."
+  ],
+  "source": {
+   "id": "arxiv:2211.01032__00",
+   "name": "Expected faces in G(n,p) random embedding logarithmic",
+   "kind": "Conjecture",
+   "statement": "Let $p = p(n)$ be the probability of edges in $G(n,p)$. The expected number of faces in a random embedding of a random graph $G \\in G(n,p)$ is $(1 + o(1))\\ln(pn^{2})$.",
+   "context": "In light of the paper's theorems for specific graph families and Monte Carlo experiments, the authors conjecture that a logarithmic bound holds for any usual model of random graphs. Extending the proof of Theorem 1.5 to arbitrary random graphs requires further ideas; Section 9 provides additional discussion.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2211.01032",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2211.01032__01",
+   "name": "Expected faces logarithmic for all G(n,p)",
+   "kind": "Conjecture",
+   "statement": "For any $p(n) : \\mathbb{N} \\rightarrow [0,1]$, almost all graphs in $G(n,p)$ satisfy $\\mathbb{E}[F] = O(\\log(n))$.",
+   "context": "Corollary 7.3 establishes a polylogarithmic bound for almost all dense graphs (when $p \\geq 1/\\mathrm{polylog}\\, n$), and Section 8 gives a logarithmic bound for random sparse graphs. The authors conjecture that the logarithmic property holds without any density condition on edges. This conjecture would follow from the stronger Conjecture 1.13.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2211.01032",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e155",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 2,
+  "sketches": [
+   "λ(d,1) = (1+o(1))/e is the s = 1 instance of the problem of obtaining tight asymptotic bounds for λ(d,s) over essentially all admissible (d,s); resolving the general problem determines the asymptotics at s = 1, matching the conjectured lower bound (1-2^{-d})^{2^d - 1} -> 1/e.",
+   "The conjecture λ(d,1)=(1+o(1))/e is the s=1 instance of the general open problem of obtaining tight asymptotic bounds for λ(d,s) over essentially all admissible (d,s): a tight determination for all admissible parameters would in particular decide whether the proven lower bound (1−2^{-d})^{2^d−1} → 1/e is asymptotically sharp at s=1."
+  ],
+  "source": {
+   "id": "arxiv:2410.20498__01",
+   "name": "Tight bounds for hypercube λ(d,s)",
+   "kind": "Problem",
+   "statement": "Obtain tight bounds for $\\lambda(d,s)$ for essentially all admissible values of $d$ and $s$.",
+   "context": "The paper proves several upper and lower bounds on $\\lambda(d,s)$ and determines the exact set of $s$ for which $\\lambda(d,s)=1$, but tight asymptotic characterisation of $\\lambda(d,s)$ for general $s$ remains open.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2410.20498",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2410.20498__00",
+   "name": "λ(d,1) asymptotic limit 1/e hypercube",
+   "kind": "Informal",
+   "statement": "$\\lambda(d,1)=(1+o(1))/e$ where the $o(1)$-term tends to $0$ as $d$ tends to infinity.",
+   "context": "The lower bound in Theorem 2, $(1-2^{-d})^{2^{d}-1}$, approaches $e^{-1}\\approx 0.37$ as $d\\to\\infty$. The authors suspect this lower bound is asymptotically sharp, making $1/e$ the true limit of $\\lambda(d,1)$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2410.20498",
+   "attributed_to": "paper authors"
+  }
+ }
+]

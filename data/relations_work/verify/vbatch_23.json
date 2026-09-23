@@ -1,0 +1,131 @@
+[
+ {
+  "edge_id": "e092",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "From six perfect matchings covering each edge exactly twice, any three of them, say M1,M2,M3, satisfy M1∩M2∩M3=∅ (an edge in all three would be covered ≥3 times). If an odd edge-cut C were contained in M1∩M2, then M3, being a perfect matching, must meet C, giving an edge in M1∩M2∩M3 — contradiction. So M1∩M2 contains no odd edge-cut.",
+   "Given a Fulkerson cover M_1..M_6 (each edge in exactly two), take M_1,M_2. If an odd edge-cut D=delta(X) were contained in M_1 cap M_2, every edge of D has both its two memberships used by M_1,M_2, so M_3 cap D is empty; but a perfect matching of a cubic graph meets every odd cut in an odd (>=1) number of edges. Contradiction.",
+   "Take M1,M2 from a Fulkerson cover. If an odd edge-cut C were contained in M1 cap M2, each edge of C is already covered twice by M1,M2, so M3..M6 avoid C; but every perfect matching of a cubic graph meets every odd edge-cut in an odd (>=1) number of edges - contradiction."
+  ],
+  "source": {
+   "id": "opg:the_berge_fulkerson_conjecture",
+   "name": "The Berge-Fulkerson conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a bridgeless cubic graph, then there exist 6 perfect matchings $ M_1,\\ldots,M_6 $ of $ G $ with the property that every edge of $ G $ is contained in exactly two of $ M_1,\\ldots,M_6 $ .",
+   "context": "This conjecture is due to Berge and Fulkerson, and appears first in [F] (see [S79b]). If $ G $ is 3- edge-colorable , then we may choose three perfect matchings $ M_1,M_2,M_3 $ so that every edge is in exactly one. Taking each of these twice gives us 6 perfect matchings with the properties described above. Thus, the above conjecture holds trivially for 3-edge-colorable graphs. There do exist bridgeless cubic graphs which are not 3-edge-colorable (for instance the Petersen graph ), but the above conjecture asserts that every such graph is close to being 3-edge-colorable. Definition: An $ r $ -graph is an $ r $ - regular graph $ G $ on an even number of vertices with the property that every edge-cut which separates $ V(G) $ into two sets of odd cardinality has size at least $ r $ . Observe that a cubic graph is a 3-graph if and only if it has no bridge. If G is an $ r $ -regular graph which has an $ r $ -edge-coloring, then every color class is a perfect matching, so $ |V(G)| $ must be even, and every color must appear in every edge-cut which separates $ V(G) $ into two sets of odd size, so every edge-cut of this form must have size at least $ r $ . Thus, every $ r $ -edge-colorable $ r $ -regular graph is an $ r $ -graph. In a sense, we may view the $ r $ -graphs as the $ r $ -regular graphs which have the obvious necessary conditions to be $ r $ -edge-colorable. Seymour [S79b] defined $ r $ -graphs and offered the following generalization of the Berge-Fulkerson conjecture. Co…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/the_berge_fulkerson_conjecture",
+   "attributed_to": "Berge, Claude, Fulkerson, Delbert R."
+  },
+  "target": {
+   "id": "opg:intersecting_two_perfect_matchings",
+   "name": "The intersection of two perfect matchings",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless cubic graph has two perfect matchings $ M_1 $ , $ M_2 $ so that $ M_1 \\cap M_2 $ does not contain an odd edge-cut.",
+   "context": "Let $ G = (V,E) $ be a bridgeless cubic graph. A binary cycle (henceforth called cycle ) is a set $ C \\subseteq E $ so that every vertex of $ (V,C) $ has even degree (equivalently, a cycle is any member of the binary cycle space). A postman join is a set $ J \\subseteq E $ so that $ E \\setminus J $ is a cycle. Note that since $ G $ is cubic, every perfect matching is a postman join. Next we state a well-known theorem of Jaeger in three equivalent forms. Theorem (Jaeger's 8-flow theorem) \\item $ G $ has a nowhere-zero flow in the group $ {\\mathbb Z}_2^3 $ . \\item $ G $ has three cycles $ C_1,C_2,C_3 $ so that $ C_1 \\cup C_2 \\cup C_3 = E $ . \\item $ G $ has three postman joins $ J_1,J_2,J_3 $ so that $ J_1 \\cap J_2 \\cap J_3 = \\emptyset $ . The last of these statements is interesting, since The Berge Fulkerson Conjecture (if true) implies the following: Conjecture $ G $ has three perfect matchings $ M_1,M_2,M_3 $ so that $ M_1 \\cap M_2 \\cap M_3= \\emptyset $ . So, we know that $ G $ has three postman joins $ J_1,J_2,J_3 $ with empty intersection, and it is conjectured that $ J_1,J_2,J_3 $ may be chosen so that each is a perfect matching, but now we see two statements in between the theorem and the conjecture. Namely, is it true that $ J_1,J_2,J_3 $ may be chosen so that one is a perfect matching? or two? The first of these was solved recently. Theorem (Macajova, Skoviera) $ G $ has two postman sets $ J_1,J_2 $ and one perfect matching $ M $ so that $ M \\cap J_1 \\cap J_2 = \\emptyse…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/intersecting_two_perfect_matchings",
+   "attributed_to": "Macajova, Edita, Skoviera, Martin"
+  }
+ },
+ {
+  "edge_id": "e093",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "The case k=1 of Jaeger's conjecture asserts every 4-edge-connected graph has an orientation with indeg−outdeg ≡ 0 (mod 3), which is equivalent (Tutte) to a nowhere-zero Z3-flow, hence to a nowhere-zero 3-flow — exactly the 3-flow conjecture. (Jaeger's conjecture is disproved for large k, but the k=1 case remains open.)",
+   "Jaeger's conjecture at k=1 asserts every 4-edge-connected graph has a modular 3-orientation, and a graph has a modular 3-orientation iff it has a nowhere-zero 3-flow. So the 3-flow conjecture is exactly the k=1 case; the OPG page states this verbatim.",
+   "For k=1 a modular 3-orientation of a 4-edge-connected graph is exactly a nowhere-zero 3-flow (mod-3 orientation), so the k=1 case of Jaeger's modular orientation conjecture is precisely the 3-flow conjecture; the OPG entry states this identity.",
+   "For k=1 a modular 3-orientation exists iff the graph has a nowhere-zero 3-flow (Tutte/Jaeger), so the k=1 case of the modular orientation conjecture for 4-edge-connected graphs is exactly the 3-flow conjecture. (Its disproof for k >= 3 leaves k=1 open.)"
+  ],
+  "source": {
+   "id": "opg:jaegers_modular_orientation_conjecture",
+   "name": "Jaeger's modular orientation conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ 4k $ - edge-connected graph can be oriented so that $ {\\mathit indegree}(v) - {\\mathit outdegree}(v) \\cong 0 $ (mod $ 2k+1 $ ) for every vertex $ v $ .",
+   "context": "Jaeger called an orientation with the above property a modular $ (2k+1) $ - orientation , and observed that a graph has a modular $ (2k+1) $ -orientation if and only if it has a $ (2+\\frac{1}{k}) $ -flow. Thus, this conjecture may be seen as a sharp form of the 2+epsilon flow conjecture . For k=1, this problem is precisely the 3-flow conjecture , and for k=2, Jaeger showed that this conjecture (if true) would imply the 5-flow conjecture . If true, this conjecture would be best possible for every value of k. The restriction of this conjecture to planar graphs is open, and has a dual formulation. See Mapping planar graphs to odd cycles .",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/jaegers_modular_orientation_conjecture",
+   "attributed_to": "Jaeger, Francois"
+  },
+  "target": {
+   "id": "opg:3_flow_conjecture",
+   "name": "3-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 4- edge-connected graph has a nowhere-zero 3-flow.",
+   "context": "Grotzsch proved that every triangle free (and loopless) planar graph is 3- colorable . By flow/coloring duality , this is equivalent to the statement that every 4-edge-connected planar graph has a nowhere-zero 3-flow. The 3-flow conjecture asserts that this is still true without the assumption of planarity. Jaeger proved that 4-edge-connected graphs have nowhere-zero 4-flows, but very little is known about nowhere-zero 3-flows. In particular, the following weak version of the 3-flow conjecture is still wide open. Conjecture (The weak 3-flow conjecture (Jaeger)) There exists a fixed integer $ k $ so that every $ k $ -edge-connected graph has a nowhere-zero 3-flow. Lai and Zhang [LZ] have proved that if $ G $ has $ n $ vertices and edge-connectivity at least $ 4 \\log_2(n) $ then $ G $ has a nowhere-zero 3-flow. A similar result (edge connectivity at least $ 4 \\log(n) + 2 $ ) also follows from a theorem of Alon, Linial, and Meshulam [ALM] on additive bases of vector spaces.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/3_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e094",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "The flow polynomial of a bridgeless graph is monic of degree |E|−|V|+c (positive for large x) and not identically zero; if all its real roots are ≤4 then Φ(G,5)>0, i.e., G has a nowhere-zero Z5-flow, equivalently a nowhere-zero 5-flow (Tutte).",
+   "The flow polynomial Q_G(t) is monic of degree |E|-|V|+c, so if all its real roots are at most 4 then Q_G(t)>0 for all t>4; in particular Q_G(5)>0, and Q_G(5) counts nowhere-zero Z_5-flows, whose existence is equivalent to a nowhere-zero 5-flow of the bridgeless graph G.",
+   "Same sign argument: for bridgeless G, Phi(G,6)>0 (Seymour), Phi positive at infinity, and no real root in (4,infinity) forces Phi(G,5)>0, i.e. G has a nowhere-zero Z_5-flow, equivalent to a nowhere-zero 5-flow."
+  ],
+  "source": {
+   "id": "opg:real_roots_of_the_flow_polynomial",
+   "name": "Real roots of the flow polynomial",
+   "kind": "Conjecture",
+   "statement": "Conjecture All real roots of nonzero flow polynomials are at most 4.",
+   "context": "For every graph $ G $ , let $ P_G $ be the chromatic polynomial of $ G $ and let $ Q_G $ be the flow polynomial of $ G $ . If $ G $ is loopless, then $ P_G(k)>0 $ for all sufficiently large integers $ k $ (as $ P_G(k) $ = # of k-colorings of $ G $ ). It follows from Seymour's 6-flow theorem that if $ G $ has no bridge , then $ Q_G(k)>0 $ for all integers $ k>5 $ (as $ Q_G(k) $ = # of nowhere-zero flows in the group of integers modulo $ k $ ). It is natural to ask if all real roots of these polynomials are small. For the chromatic polynomial, $ P_G $ , this is not the case. There exist graphs with chromatic number 3 for which $ P_G $ has arbitrarily large real roots. The above conjecture asserts that the flow polynomial exhibits the opposite behavior. One word of caution, it is known that the set of roots of flow polynomials is dense in the complex plane.",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/real_roots_of_the_flow_polynomial",
+   "attributed_to": "Welsh, Dominic J. A."
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e095",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "For 2-edge-connected G the flow polynomial is monic (positive for large x) and nonzero; if it has no real root exceeding 4 it stays positive on (4,∞), in particular Φ(G,5.5)>0.",
+   "The flow polynomial is monic, so if every real root of Q_G is at most 4, then Q_G(t)>0 for all real t>4, and in particular Phi(G,5.5)>0 for every 2-edge-connected G.",
+   "For 2-edge-connected G, Phi(G,6)>0 by Seymour's 6-flow theorem, so Phi is a nonzero polynomial, positive for large x. If Phi has no real root >4, it cannot change sign on (4,infinity), hence Phi(G,5.5)>0."
+  ],
+  "source": {
+   "id": "opg:real_roots_of_the_flow_polynomial",
+   "name": "Real roots of the flow polynomial",
+   "kind": "Conjecture",
+   "statement": "Conjecture All real roots of nonzero flow polynomials are at most 4.",
+   "context": "For every graph $ G $ , let $ P_G $ be the chromatic polynomial of $ G $ and let $ Q_G $ be the flow polynomial of $ G $ . If $ G $ is loopless, then $ P_G(k)>0 $ for all sufficiently large integers $ k $ (as $ P_G(k) $ = # of k-colorings of $ G $ ). It follows from Seymour's 6-flow theorem that if $ G $ has no bridge , then $ Q_G(k)>0 $ for all integers $ k>5 $ (as $ Q_G(k) $ = # of nowhere-zero flows in the group of integers modulo $ k $ ). It is natural to ask if all real roots of these polynomials are small. For the chromatic polynomial, $ P_G $ , this is not the case. There exist graphs with chromatic number 3 for which $ P_G $ has arbitrarily large real roots. The above conjecture asserts that the flow polynomial exhibits the opposite behavior. One word of caution, it is known that the set of roots of flow polynomials is dense in the complex plane.",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/real_roots_of_the_flow_polynomial",
+   "attributed_to": "Welsh, Dominic J. A."
+  },
+  "target": {
+   "id": "opg:half_integral_flow_polynomial_values",
+   "name": "Half-integral flow polynomial values",
+   "kind": "Conjecture",
+   "statement": "Let $ \\Phi(G,x) $ be the flow polynomial of a graph $ G $ . So for every positive integer $ k $ , the value $ \\Phi(G,k) $ equals the number of nowhere-zero $ k $ -flows in $ G $ . Conjecture $ \\Phi(G,5.5) > 0 $ for every 2-edge-connected graph $ G $ .",
+   "context": "By Seymour's 6-flow theorem, $ \\Phi(G,k) > 0 $ for every 2-edge-connected graph $ G $ and every integer $ k\\ge6 $ . It would be interesting to find any non-integer rational number $ x>5 $ so that $ \\Phi(G,x) > 0 $ for every 2-edge-connected graph $ G $ . It is known that zeros of flow polynomials are dense in the complex plane.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/half_integral_flow_polynomial_values",
+   "attributed_to": "Mohar, Bojan"
+  }
+ }
+]

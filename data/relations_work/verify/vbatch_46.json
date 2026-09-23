@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e184",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "aphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow conjecture. For $ t=2 $ it is Tutte's 3-flow conjecture."
+  ],
+  "source": {
+   "id": "opg:circular_flow_numbers_of_r_graphs",
+   "name": "Circular flow numbers of $r$-graphs",
+   "kind": "Conjecture",
+   "statement": "A nowhere-zero $ r $ -flow $ (D(G),\\phi) $ on $ G $ is an orientation $ D $ of $ G $ together with a function $ \\phi $ from the edge set of $ G $ into the real numbers such that $ 1 \\leq |\\phi(e)| \\leq r-1 $ , for all $ e \\in E(G) $ , and $ \\sum_{e \\in E^+(v)}\\phi(e) = \\sum_{e \\in E^-(v)}\\phi(e), \\textrm{ for all } v \\in V(G) $ . A $ (2t+1) $ -regular graph $ G $ is a $ (2t+1) $ -graph if $ |\\partial_G(X)| \\geq 2t+1 $ for every $ X \\subseteq V(G) $ with $ |X| $ odd. Conjecture Let $ t > 1 $ be an integer. If $ G $ is a $ (2t+1) $ -graph, then $ F_c(G) \\leq 2 + \\frac{2}{t} $ .",
+   "context": "Since every $ (2t+1) $ -regular class 1 graph is a $ (2t+1) $ -graph, the truth of this conjecture would imply the truth of the conjecture on the circular flow number of regular class 1 graphs. If it is true for even $ t $ , say $ t=2t' $ , then Jaeger's modular orientation conjecture is true for $ (4t'+1) $ -regular graphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow conjecture. For $ t=2 $ it is Tutte's 3-flow conjecture.",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/circular_flow_numbers_of_r_graphs",
+   "attributed_to": "Steffen, Eckhard"
+  },
+  "target": {
+   "id": "opg:3_flow_conjecture",
+   "name": "3-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 4- edge-connected graph has a nowhere-zero 3-flow.",
+   "context": "Grotzsch proved that every triangle free (and loopless) planar graph is 3- colorable . By flow/coloring duality , this is equivalent to the statement that every 4-edge-connected planar graph has a nowhere-zero 3-flow. The 3-flow conjecture asserts that this is still true without the assumption of planarity. Jaeger proved that 4-edge-connected graphs have nowhere-zero 4-flows, but very little is known about nowhere-zero 3-flows. In particular, the following weak version of the 3-flow conjecture is still wide open. Conjecture (The weak 3-flow conjecture (Jaeger)) There exists a fixed integer $ k $ so that every $ k $ -edge-connected graph has a nowhere-zero 3-flow. Lai and Zhang [LZ] have proved that if $ G $ has $ n $ vertices and edge-connectivity at least $ 4 \\log_2(n) $ then $ G $ has a nowhere-zero 3-flow. A similar result (edge connectivity at least $ 4 \\log(n) + 2 $ ) also follows from a theorem of Alon, Linial, and Meshulam [ALM] on additive bases of vector spaces.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/3_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e185",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "onjecture is true for $ (4t'+1) $ -regular graphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow conjecture. For $ t=2 $ it is Tutte's 3-flow conjecture."
+  ],
+  "source": {
+   "id": "opg:circular_flow_numbers_of_r_graphs",
+   "name": "Circular flow numbers of $r$-graphs",
+   "kind": "Conjecture",
+   "statement": "A nowhere-zero $ r $ -flow $ (D(G),\\phi) $ on $ G $ is an orientation $ D $ of $ G $ together with a function $ \\phi $ from the edge set of $ G $ into the real numbers such that $ 1 \\leq |\\phi(e)| \\leq r-1 $ , for all $ e \\in E(G) $ , and $ \\sum_{e \\in E^+(v)}\\phi(e) = \\sum_{e \\in E^-(v)}\\phi(e), \\textrm{ for all } v \\in V(G) $ . A $ (2t+1) $ -regular graph $ G $ is a $ (2t+1) $ -graph if $ |\\partial_G(X)| \\geq 2t+1 $ for every $ X \\subseteq V(G) $ with $ |X| $ odd. Conjecture Let $ t > 1 $ be an integer. If $ G $ is a $ (2t+1) $ -graph, then $ F_c(G) \\leq 2 + \\frac{2}{t} $ .",
+   "context": "Since every $ (2t+1) $ -regular class 1 graph is a $ (2t+1) $ -graph, the truth of this conjecture would imply the truth of the conjecture on the circular flow number of regular class 1 graphs. If it is true for even $ t $ , say $ t=2t' $ , then Jaeger's modular orientation conjecture is true for $ (4t'+1) $ -regular graphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow conjecture. For $ t=2 $ it is Tutte's 3-flow conjecture.",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/circular_flow_numbers_of_r_graphs",
+   "attributed_to": "Steffen, Eckhard"
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e186",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "e conjecture on the circular flow number of regular class 1 graphs. If it is true for even $ t $ , say $ t=2t' $ , then Jaeger's modular orientation conjecture is true for $ (4t'+1) $ -regular graphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow co"
+  ],
+  "source": {
+   "id": "opg:circular_flow_numbers_of_r_graphs",
+   "name": "Circular flow numbers of $r$-graphs",
+   "kind": "Conjecture",
+   "statement": "A nowhere-zero $ r $ -flow $ (D(G),\\phi) $ on $ G $ is an orientation $ D $ of $ G $ together with a function $ \\phi $ from the edge set of $ G $ into the real numbers such that $ 1 \\leq |\\phi(e)| \\leq r-1 $ , for all $ e \\in E(G) $ , and $ \\sum_{e \\in E^+(v)}\\phi(e) = \\sum_{e \\in E^-(v)}\\phi(e), \\textrm{ for all } v \\in V(G) $ . A $ (2t+1) $ -regular graph $ G $ is a $ (2t+1) $ -graph if $ |\\partial_G(X)| \\geq 2t+1 $ for every $ X \\subseteq V(G) $ with $ |X| $ odd. Conjecture Let $ t > 1 $ be an integer. If $ G $ is a $ (2t+1) $ -graph, then $ F_c(G) \\leq 2 + \\frac{2}{t} $ .",
+   "context": "Since every $ (2t+1) $ -regular class 1 graph is a $ (2t+1) $ -graph, the truth of this conjecture would imply the truth of the conjecture on the circular flow number of regular class 1 graphs. If it is true for even $ t $ , say $ t=2t' $ , then Jaeger's modular orientation conjecture is true for $ (4t'+1) $ -regular graphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow conjecture. For $ t=2 $ it is Tutte's 3-flow conjecture.",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/circular_flow_numbers_of_r_graphs",
+   "attributed_to": "Steffen, Eckhard"
+  },
+  "target": {
+   "id": "opg:jaegers_modular_orientation_conjecture",
+   "name": "Jaeger's modular orientation conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ 4k $ - edge-connected graph can be oriented so that $ {\\mathit indegree}(v) - {\\mathit outdegree}(v) \\cong 0 $ (mod $ 2k+1 $ ) for every vertex $ v $ .",
+   "context": "Jaeger called an orientation with the above property a modular $ (2k+1) $ - orientation , and observed that a graph has a modular $ (2k+1) $ -orientation if and only if it has a $ (2+\\frac{1}{k}) $ -flow. Thus, this conjecture may be seen as a sharp form of the 2+epsilon flow conjecture . For k=1, this problem is precisely the 3-flow conjecture , and for k=2, Jaeger showed that this conjecture (if true) would imply the 5-flow conjecture . If true, this conjecture would be best possible for every value of k. The restriction of this conjecture to planar graphs is open, and has a dual formulation. See Mapping planar graphs to odd cycles .",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/jaegers_modular_orientation_conjecture",
+   "attributed_to": "Jaeger, Francois"
+  }
+ },
+ {
+  "edge_id": "e187",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   ". See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conj"
+  ],
+  "source": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  },
+  "target": {
+   "id": "opg:decomposing_eulerian_graphs",
+   "name": "Decomposing eulerian graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a 6- edge-connected Eulerian graph and $ P $ is a 2-transition system for $ G $ , then $ (G,P) $ has a compaible decomposition.",
+   "context": "Definition: Let $ G $ be an Eulerian graph and for every vertex $ v $ , let $ P(v) $ be a partition of the edges incident with $ v $ . We call $ P $ a transition system . If every member of $ P(v) $ has size at most $ k $ (for every $ v $ ), then we call $ P $ a $ k $ - transition sytem . A compatible decomposition of $ (G,P) $ is a list of edge-disjoint cycles $ C_1,\\ldots,C_n $ with union $ G $ so that every $ C_i $ contains at most one edge from every member of $ P(v) $ . Let $ G $ be a graph and let $ G' $ be the graph obtained from $ G $ by replacing each edge $ e $ of G by two edges $ e',e'' $ in parallel. Let $ P $ be the 2-transition system of $ G $ with $ {e',e''} \\in P(v) $ whenever $ e' $ and $ e'' $ are incident with $ v $ . Now, $ G' $ is an Eulerian graph and every compatible decomposition of $ (G',P) $ gives a cycle double cover of $ G $ . Since the cycle double cover conjecture can be reduced to graphs which are 3-edge-connected, the above conjecture would imply the cycle double cover conjecture. We define a transition system $ P $ to be admissable if every member of $ P(v) $ contains no more than half of the edges in any edge-cut. It is easy to see that if there is a compatible decomposition of $ (G,P) $ , then $ P $ must be admissable. The converse of this is not true; There is an admissable 2-transition system of the graph $ K_5 $ which does not admit a compatible decomposition. Recently, G. Fan and C.Q. Zhang [FZ] have proved that $ (G,P) $ does have a com…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/decomposing_eulerian_graphs",
+   "attributed_to": ""
+  }
+ }
+]

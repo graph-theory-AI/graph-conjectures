@@ -1,0 +1,191 @@
+[
+ {
+  "edge_id": "b014",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-034: opg:turan_number_of_a_finite_family — discusses the even-cycle case"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-034",
+   "name": "Even-cycle Turán number",
+   "kind": "Conjecture",
+   "statement": "For every $k \\ge 2$ there is a positive constant $c$ such that $\\mathrm{ex}(n, C_{2k}) \\ge c\\, n^{1+1/k}$.",
+   "context": "$\\mathrm{ex}(n, C_{2k})$ is the maximum number of edges of a simple graph on $n$ vertices with no cycle of length $2k$; the Bondy–Simonovits theorem gives the matching upper bound $O(n^{1+1/k})$. Known for $k = 2, 3, 5$.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:turan_number_of_a_finite_family",
+   "name": "Turán number of a finite family.",
+   "kind": "Conjecture",
+   "statement": "Given a finite family $ {\\cal F} $ of graphs and an integer $ n $ , the Turán number $ ex(n,{\\cal F}) $ of $ {\\cal F} $ is the largest integer $ m $ such that there exists a graph on $ n $ vertices with $ m $ edges which contains no member of $ {\\cal F} $ as a subgraph. Conjecture For every finite family $ {\\cal F} $ of graphs there exists an $ F\\in {\\cal F} $ such that $ ex(n, F ) = O(ex(n, {\\cal F})) $ .",
+   "context": "For the case when $ {\\cal F} $ consists of even cycles, this would mean that (up to constants) the Turán number of $ {\\cal F} $ is given by that of the longest cycle in $ {\\cal F} $ . Verstraëte (see [KO]) conjectured something stronger: Conjecture For all integers $ k < \\ell $ there exists a positive c = c(\\ell) such that every $ C_{2\\ell} $ -free graph $ G $ has a $ C_{2k} $ -free subgraph $ H $ with $ e(H) ≥ e(G)/c $ . This conjecture was motivated by a result of Györi [G] who showed that every bipartite $ C_6 $ -free graph $ G $ has a $ C_4 $ -free subgraph which contains at least half of the edges of $ G $ . The case $ k=2 $ was proved in [KO].",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b015",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:list_hadwiger_conjecture — list-colouring variant"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:list_hadwiger_conjecture",
+   "name": "List Hadwiger Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ K_t $ -minor-free graph is $ c t $ -list-colourable for some constant $ c\\geq1 $ .",
+   "context": "Hadwiger's conjecture asserts that every $ K_t $ - minor -free graph is $ (t − 1) $ -colourable. Robertson, Seymour and Thomas [RST] proved Hadwiger's conjecture for $ t \\leq 6 $ . It remains open for $ t \\geq 7 $ . In fact, it is open whether every $ K_t $ -minor-free graph is $ ct $ -colourable for some constant $ c\\geq 1 $ . It is natural to consider analogous problems for list colourings . First, consider planar graphs. While every planar graph is 4-colourable, Erdös, Rubin and Taylor. [ERT] conjectured that some planar graph is not 4-list-colourable, and that every planar graph is 5-list-colourable. The first conjecture was verified by Voigt [V] and the second by Thomassen [T]. More generally, Borowiecki [B] asked whether every $ K_t $ -minor-free graph is $ (t − 1) $ -list-colourable, which is true for $ t \\leq 4 $ but false for $ t = 5 $ by Voigt’s example. Kawarabayashi and Mohar [KM] proposed the stated conjecture, and suggested it might be true with $ c=\\frac{3}{2} $ . Barát, Joret and Wood [BJW] proved that $ c\\geq\\frac{4}{3} $ . In particular, they constructed a $ K_{3t+2} $ -minor-free graph that is not $ 4t $ -list-colourable.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b016",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:fractional_hadwiger — fractional variant"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:fractional_hadwiger",
+   "name": "Fractional Hadwiger",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ , (a) $ \\chi_f(G)\\leq\\text{had}(G) $ (b) $ \\chi(G)\\leq\\text{had}_f(G) $ (c) $ \\chi_f(G)\\leq\\text{had}_f(G) $ .",
+   "context": "Here $ \\chi $ is the chromatic number, $ \\chi_f $ is the fractional chromatic number, $ \\text{had} $ is the Hadwiger number, and $ \\text{had}_f $ is the fractional Hadwiger number (which was recently introduced independently by Fox [F] and Pedersen [P]). It is well known and easily proved (see [HW]) that $ \\chi_f(G)\\leq\\chi(G)\\text{ and }\\text{had}(G)\\leq\\text{had}_f(G)\\leq\\text{tw}(G)+1, $ where $ \\text{tw}(G) $ is the treewidth of $ G $ . Hadwiger's famous conjecture, $ \\chi(G)\\leq\\text{had}(G) $ , bridges the gap in the above inequalities. The above conjectures therefore are weaker than Hadwiger's conjecture. Note that Conjecture (a) implies Conjecture (c), and Conjecture (b) implies Conjecture (c). Note that Reed and Seymour [RS] proved that $ \\chi_f(G)\\leq2\\,\\text{had}(G) $ . Conjecture (a) is due to Reed and Seymour [RS]. Conjecture (b) is due to Harvey and Wood [HW]. Conjecture (c) is independently due to Harvey and Wood [HW] and Pedersen [P]. Pedersen [P] presents a natural equivalent formulation of Conjecture (c).",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b017",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:seagull_problem — an unproved consequence"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:seagull_problem",
+   "name": "Seagull problem",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ n $ vertex graph with no independent set of size $ 3 $ has a complete graph on $ \\ge \\frac{n}{2} $ vertices as a minor.",
+   "context": "This conjecture is significant because it is an interesting unproved consequence of Hadwiger's conjecture (this implication is proved next). In fact, some experts have suggested that this problem might hold the key to finding a counterexample to Hadwiger. I (M. DeVos) have attributed this conjecture to Seymour, but I believe that it may have been independently suggested by Mader and by others. Its curious title will be explained later in this discussion. Hadwiger's conjecture (every loopless graph with chromatic number $ \\ge n $ has $ K_n $ as a minor) is one of the outstanding problems in graph theory. This conjecture has been resolved for small values of $ n $ ; when $ n \\le 4 $ it is relatively easy, for $ n=5,6 $ it has been proven to be equivalent to the Four color theorem. The Seagull problem concerns the other extreme - when the size of the chromatic number is close to the order of the graph. If $ G $ is an $ n $ vertex graph with no independent set of size 3, then $ \\chi(G) \\ge \\frac{n}{2} $ since each color class has size $ \\le 2 $ . If Hadwiger's conjecture holds for $ G $ , it must then have a minor which is a complete graph on $ \\ge \\frac{n}{2} $ vertices. This is precisely the statement of the Seagull problem. The (essentially) best known bound for the conjecture is that every $ n $ vertex graph $ G $ with no independent set of size 3 has a complete graph on $ \\ge \\frac{n}{3} $ vertices as a minor. This argument is where the name of this conjecture arises. Let us…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b018",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:coloring_and_immersion — immersion analogue"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:coloring_and_immersion",
+   "name": "Coloring and immersion",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every positive integer $ t $ , every (loopless) graph $ G $ with $ \\chi(G) \\ge t $ immerses $ K_t $ .",
+   "context": "Let $ G $ be a graph and let $ uv, vw \\in E(G) $ . The operation of deleting the edges $ uv $ and $ vw $ and then adding a new edge between $ v $ and $ w $ is called a split . We say that a graph $ G $ immerses a graph $ H $ if a graph isomorphic to $ H $ may be obtained from $ G $ by repeatedly making splits and deleting vertices and edges. The graph containment relations of minor and topological minor have been thoroughly studied with respect to graph coloring. In particular, there are two famous conjectures: Hajos conjectured that every graph with chromatic number $ \\ge t $ contains a subdivision of the complete graph $ K_t $ as a subgraph. Hadwiger conjectured that every graph with chromatic number $ \\ge t $ contains $ K_t $ as a minor. While Hajos' Conjecture is false for $ t \\ge 8 $ (indeed it is actually false on average), Hadwiger's Conjecture remains open, and is one of the outstanding problems in Graph Theory. On the other hand, the relationship between graph coloring and immersions seems to have been largely ignored until Abu-Khzam and Langston made the above conjecture. In addition to formulating this conjecture, they proved it for $ t \\le 4 $ and showed that a minimal counterexample to it must be 4-connected and $ t $ -edge-connected. Recently, DeVos, Kawarabayashi, Mohar, and Okamura have resolved the conjecture for $ t \\le 7 $ .",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b019",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:jorgensens_conjecture — structure of $K_6$-minor-free graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:jorgensens_conjecture",
+   "name": "Jorgensen's Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 6- connected graph without a $ K_6 $ minor is apex (planar plus one vertex).",
+   "context": "For $ n \\le 5 $ , the class of graphs with no $ K_n $ minor is very well understood. Simple graphs without $ K_3 $ minors are forests. Graphs without $ K_4 $ minors are called series-parallel graphs , and have a simple construction. Finally, Wagner [W] obtained a construction for all graphs without $ K_5 $ minors. For $ n \\ge 6 $ , an explicit characterization of those graphs without $ K_n $ minors appears hopeless. The graph minors project of Robertson and Seymour give a rough structure theorem for such classes, but much remains unknown. In particular, this conjecture and Thomas' conjecture highly connected graphs with no $ K_n $ -minor suggest interesting properties of highly connected graphs without $ K_n $ minors which appear quite difficult to resolve. Part of the interest in graphs without $ K_n $ minors stems from Hadwiger's conjecture (every loopless graph without a $ K_{n+1} $ minor is $ n $ -colorable). Indeed, Wagner's work on graphs with no $ K_5 $ minor was done while studying the $ n=4 $ case of Hadwiger. More recently, Robertson, Seymour, and Thomas [RST] proved Hadwiger's conjecture for $ n=5 $ , and in doing so came somewhat close to proving Jorgensoen's conjecture. The thrust of their argument is to prove that any minimal counterexample to Hadwiger for $ n=5 $ is apex. However, in doing so, they exploit both connectivity and coloring properties of a minimal counterexample. It would appear to be difficult to modify their argument to prove Jorgensen's conjectu…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b020",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-042: opg:coloring_and_immersion — immersion analogue of Hajós' conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-042",
+   "name": "Hajós conjecture for $k = 5$ and $k = 6$",
+   "kind": "Problem",
+   "statement": "Does every $k$-chromatic graph contain a subdivision of $K_k$ when $k = 5$ and when $k = 6$?",
+   "context": "Hajós conjectured this for all $k$; it holds for $k \\le 4$ (Dirac 1952) and Catlin (1979) disproved it for every $k \\ge 7$.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:coloring_and_immersion",
+   "name": "Coloring and immersion",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every positive integer $ t $ , every (loopless) graph $ G $ with $ \\chi(G) \\ge t $ immerses $ K_t $ .",
+   "context": "Let $ G $ be a graph and let $ uv, vw \\in E(G) $ . The operation of deleting the edges $ uv $ and $ vw $ and then adding a new edge between $ v $ and $ w $ is called a split . We say that a graph $ G $ immerses a graph $ H $ if a graph isomorphic to $ H $ may be obtained from $ G $ by repeatedly making splits and deleting vertices and edges. The graph containment relations of minor and topological minor have been thoroughly studied with respect to graph coloring. In particular, there are two famous conjectures: Hajos conjectured that every graph with chromatic number $ \\ge t $ contains a subdivision of the complete graph $ K_t $ as a subgraph. Hadwiger conjectured that every graph with chromatic number $ \\ge t $ contains $ K_t $ as a minor. While Hajos' Conjecture is false for $ t \\ge 8 $ (indeed it is actually false on average), Hadwiger's Conjecture remains open, and is one of the outstanding problems in Graph Theory. On the other hand, the relationship between graph coloring and immersions seems to have been largely ignored until Abu-Khzam and Langston made the above conjecture. In addition to formulating this conjecture, they proved it for $ t \\le 4 $ and showed that a minimal counterexample to it must be 4-connected and $ t $ -edge-connected. Recently, DeVos, Kawarabayashi, Mohar, and Okamura have resolved the conjecture for $ t \\le 7 $ .",
+   "status": "partial"
+  }
+ }
+]

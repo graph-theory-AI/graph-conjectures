@@ -606,6 +606,10 @@ article.prose code { background: var(--code-bg); padding: 0.05rem 0.3rem; border
 .rel-edge.rel-same_conjecture { stroke: #888; stroke-dasharray: 5 3; }
 .rel-edge.rel-related_only { stroke: #c9a227; stroke-dasharray: 2 3; }
 .rel-edge.rel-plausible { stroke-opacity: 0.3; stroke-dasharray: 1 4; }
+.rel-edge.rel-flagged { stroke-opacity: 0.22; }
+.rel-edge.rel-flagged:hover { stroke-opacity: 1; }
+.rel-edge.rel-flagged-inconsistent { stroke: #b3261e; stroke-dasharray: 4 2; }
+.rel-edge.rel-flagged-to_verify { stroke: #b06f00; stroke-dasharray: 4 2; }
 .rel-node { stroke: #333; stroke-width: 1; cursor: pointer; }
 .rel-node:hover { stroke-width: 2.5; }
 .status-fill-open      { fill: #f4c430; }
@@ -641,3 +645,17 @@ article.prose code { background: var(--code-bg); padding: 0.05rem 0.3rem; border
 .relations-panel details { margin: 0.4rem 0 0.6rem; }
 .relations-panel details summary { cursor: pointer; color: var(--accent); font-size: 0.82rem; }
 .relations-panel details p { color: #555; font-size: 0.82rem; margin: 0.3rem 0 0; }
+
+/* status-consistency flags on relation edges */
+.rel-flag {
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  padding: 0 0.35em;
+  border-radius: 3px;
+  border: 1px solid;
+}
+.rel-flag-vacuous { color: #6b6b6b; border-color: #cfcfcf; background: #f4f4f4; }
+.rel-flag-inconsistent { color: #8c1d16; border-color: #e2b3af; background: #fdeceb; }
+.rel-flag-to_verify { color: #7a4d00; border-color: #e8c98f; background: #fdf4e3; }
+.relations-header .rel-audit { margin-top: 0.4rem; }

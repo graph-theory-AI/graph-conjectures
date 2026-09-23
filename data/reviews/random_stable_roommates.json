@@ -7,9 +7,9 @@
       "title": "Stable Roommates Problem with Random Preferences",
       "authors": "Stephan Mertens",
       "year": 2015,
-      "venue": "arXiv preprint",
+      "venue": "Journal of Statistical Mechanics: Theory and Experiment",
       "url": "https://arxiv.org/abs/1401.5269",
-      "doi": null,
+      "doi": "10.1088/1742-5468/2015/01/P01020",
       "arxiv_id": "1401.5269",
       "kind": "partial",
       "claim": "Introduces an $O(n^{3/2})$ average-case algorithm and provides large-scale simulation evidence (up to $n=20000$) supporting the conjecture $p_n = \\Theta(n^{-1/4})$."

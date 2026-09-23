@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e136",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Any family of vertex-disjoint pairwise-anticomplete induced odd cycles is a family of disjoint odd cycles, so iocp(G) <= ocp(G); graphs with ocp <= k (embedded in any surface) thus have iocp <= k. Tractability of MIS on bounded-iocp graphs (2206.00594__02) therefore covers the class in 1908.06300__01."
+  ],
+  "source": {
+   "id": "arxiv:2206.00594__02",
+   "name": "MIS tractability in bounded-iocp graphs",
+   "kind": "Informal",
+   "statement": "Maximum Independent Set could be tractable in graphs with bounded $\\mathrm{iocp}$ (induced odd cycle packing number).",
+   "context": "The paper establishes tractability of MIS for graphs with bounded induced cycle packing number ($\\mathrm{icp}$, i.e., $\\mathcal{O}_k$-free graphs) in the sparse case, and quasipolynomial time in general. The authors remark that extending this to bounded $\\mathrm{iocp}$ would be a surprising and formidable generalisation of Conjecture 1.3 and of the known polynomial-time result for bounded $\\mathrm{ocp}$ (odd cycle packing number).",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2206.00594",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1908.06300__01",
+   "name": "Stable set for bounded ocp, unbounded genus",
+   "kind": "Informal",
+   "statement": "Is the stable set problem polynomial-time solvable for graphs $G$ with $\\mathrm{ocp}(G) \\leq k$ (for fixed $k$) embedded in a surface of arbitrary Euler genus?",
+   "context": "The paper's main result (Theorem 2) gives a polynomial-time algorithm when both the odd cycle packing number and the Euler genus are fixed constants. Immediately after stating this result the authors note they do not know whether the genus bound can be dropped while retaining polynomial-time solvability.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1908.06300",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e137",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "low",
+  "n_finders": 1,
+  "sketches": [
+   "Weighted Min Vertex Cover is a monotone FO minimization problem; a local-search PTAS for all monotone FO optimization problems on hereditary classes with (strongly) sublinear separators would give the weighted-MVC PTAS asked for in 2105.01780__00, whose 'more general' setting is exactly hereditary classes with sublinear separators."
+  ],
+  "source": {
+   "id": "arxiv:1901.01797__00",
+   "name": "PTAS for monotone FO optimization via local search",
+   "kind": "Problem",
+   "statement": "It is an open problem whether some variation on the local search approach can give PTAS for all monotone FO optimization problems.",
+   "context": "Cabello–Gajser and Har-Peled–Quanrud showed that the trivial local search algorithm (performing bounded-size changes on an initial solution as long as it can be improved) gives PTASes for maximum independent set and minimum dominating set, as well as many related problems, on classes with strongly sublinear separators. The question is whether this approach, or a variation thereof, can be extended to cover all monotone first-order optimization problems on such classes.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1901.01797",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2105.01780__00",
+   "name": "PTAS for weighted Minimum Vertex Cover in fragile classes",
+   "kind": "Problem",
+   "statement": "For the minimization problems, we do not know whether fractional treewidth-fragility is sufficient even for the distance-1 problems. In particular, consider the Minimum Vertex Cover problem in fractionally treewidth-fragile graphs, or more generally in hereditary classes with sublinear separators: while the unweighted version can be dealt with by the local search method, we do not know whether there exists a PTAS for the weighted version of this problem.",
+   "context": "The paper's main results (Theorem 2 and its corollaries) apply exclusively to maximization problems; the authors extend fractional treewidth-fragility techniques to handle bounded-distance dependencies for near-monotone maximization. For minimization problems the analogous question is left open, with weighted Minimum Vertex Cover in fractionally treewidth-fragile (or sublinear-separator) classes offered as a concrete test case.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2105.01780",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e138",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "The open 5-Coloring cases for H-free graphs with H = P4 plus an induced subgraph of rP3 are instances (k = 5, specific linear forests H) of the general k-Coloring dichotomy classification problem for H-free graphs."
+  ],
+  "source": {
+   "id": "arxiv:2311.05713__01",
+   "name": "k-Coloring dichotomy for H-free graphs",
+   "kind": "Informal",
+   "statement": "For every integer $k \\geq 3$, characterise the graphs $H$ for which the $k$-Coloring Problem restricted to $H$-free graphs is polynomial-time solvable versus NP-hard.",
+   "context": "The paper observes that, in contrast with the List-$k$-Coloring Problem (now settled for all $k>4$), 'for the $k$-Coloring Problem, no value of $k\\geq 3$ is known for which the \"easy\" choices of $H$ are completely distinguished from the \"hard\" ones.' This identifies a broad open problem motivating the paper's List-$k$-Coloring results.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2311.05713",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2105.01787__00",
+   "name": "5-Coloring complexity for P₄+rP₃-free graphs",
+   "kind": "Informal",
+   "statement": "The complexity of the $5$-Coloring Problem restricted to $H$-free graphs remains open when $H$ has exactly one connected component $C$ isomorphic to $P_4$, and $H - V(C)$ is an induced subgraph of $rP_3$ containing at least one edge for some $r \\geq 1$.",
+   "context": "After proving that the $k$-Coloring Problem on $2P_4$-free graphs is NP-complete for all $k \\geq 5$ (Theorem 7), the authors observe that combined with Theorem 4 this leaves the 5-Coloring complexity unresolved only for the described family of forbidden subgraphs $H$. This is the last remaining gap toward a full dichotomy for the $5$-Coloring Problem on $H$-free graphs.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/2105.01787",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e139",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "(K3, S_{1,2,3}) is one of the five remaining unresolved pairs in the boundedness-of-clique-width classification of (H1,H2)-free graphs, so deciding all five pairs answers whether (triangle, S_{1,2,3})-free graphs have bounded cliquewidth."
+  ],
+  "source": {
+   "id": "arxiv:1811.12252__02",
+   "name": "Clique-Width Boundedness for Five Open Pairs",
+   "kind": "Problem",
+   "statement": "Determine, for each of the five remaining pairs $(H_1, H_2)$, whether the class of $(H_1, H_2)$-free graphs has bounded or unbounded clique-width.",
+   "context": "The paper continues a project [4,8,11,12,14,15] classifying the boundedness of clique-width of $(H_1,H_2)$-free graph classes. By showing that (gem, $P_1+2P_2$)-free graphs have unbounded clique-width, the authors reduce the number of open pairs from six to five.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1811.12252",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2001.01607__02",
+   "name": "Cliquewidth of triangle, S₁,₂,₃-free graphs",
+   "kind": "Question",
+   "statement": "Do (triangle, $S_{1,2,3}$)-free graphs have bounded cliquewidth?",
+   "context": "Bounded cliquewidth is known for (triangle, $S_{1,2,2}$)-free graphs and for (triangle, $H$)-free graphs when $H$ is contained in a graph from $H_B = \\{P_6, S_{1,1,3}\\}$. The status of $S_{1,2,3}$ is explicitly open; the authors refer to [16] for further open problems of the same flavour.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2001.01607",
+   "attributed_to": "paper authors"
+  }
+ }
+]

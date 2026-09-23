@@ -1,0 +1,92 @@
+[
+ {
+  "edge_id": "e204",
+  "claimed_relation": "same_conjecture",
+  "via": "fuzzy_match",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "Caccetta-Häggkvist Conjecture"
+  ],
+  "source": {
+   "id": "arxiv:2206.10733__00",
+   "name": "Happy triples extremal bound for l < k/2",
+   "kind": "Informal",
+   "statement": "It would be interesting to consider the best upper bound on the number of happy triples in a graph with $k$ edges and maximum degree at most $l$, for the regime when $l < k/2$.",
+   "context": "Lemma 2 establishes a tight bound on happy triples when $l \\geq k/2$, achieved by specific extremal graphs. The authors note that their algorithmic/dynamic-programming approach gives little insight into the $l < k/2$ regime; for example, for $l=3$ and $k=3t$ the extremal graph output is $K_{t,3}$, which does not actually have maximum degree 3 for $t \\geq 4$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2206.10733",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:caccetta_haggkvist_conjecture",
+   "name": "Caccetta-Häggkvist Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ \\lceil n/r\\rceil $",
+   "context": "It is one of the most famous conjectures in graph theory. It has many alternative formulations and lots of work have been done around it. Many interesting conjectures are related to it. See [Sul]. It is in particular implied by a conjecture of Thomassé and Hoàng-Reed Conjecture . The Caccetta-Häggkvist Conjecture is a generalization of an earlier conjecture of Behzad, Chartrand, and Wall, who conjectured it only for diregular digraphs. Caccetta-H äggkvist Conjecture has been proved for $ r\\leq \\sqrt{n/2} $ by Shen [She1]. For $ r\\geq n/2 $ it is trivial. But already for $ r=n/3 $ , it is still open as well as Behzad-Chartrand-Wall Conjecture Conjecture Every simple $ n $ -vertex digraph with minimum outdegree at least $ r/3 $ and minimum indegree at least $ r/3 $ has a cycle with length at most $ 3 $ . This conjecture would be implied by Seymour's Second Neighbourhood Conjecure . Shen [She2] also proved the following approximate version. Theorem Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ n/r + 73 $ . Bollobás and Scott [BS] proposed a weighted version of the Caccetta-Häggkvist Conjecture. Conjecture Let $ w:E(D) \\rightarrow [0,1] $ be a weight function on the arcs of a digraph $ D $ . If $ \\sum_{u\\in N^-(v)} w(uv) \\geq 1 $ and $ \\sum_{u\\in N^+(v)} w(vu) \\geq 1 $ for all $ v\\in V(D) $ , then there is a directed cycle in $ D $ of total weight at least 1. They gave a nice proof that there is a directed path of tota…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/caccetta_haggkvist_conjecture",
+   "attributed_to": "Caccetta, L., Häggkvist, Roland"
+  }
+ },
+ {
+  "edge_id": "e205",
+  "claimed_relation": "same_conjecture",
+  "via": "fuzzy_match",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "Question 1"
+  ],
+  "source": {
+   "id": "arxiv:2302.08182__00",
+   "name": "MIS quasipolynomial time for planar induced-minor-free",
+   "kind": "Question",
+   "statement": "Is it true that for every planar graph $H$, Max Independent Set can be solved in quasipolynomial time in the class of graphs excluding $H$ as an induced minor?",
+   "context": "Question 2 is the quasipolynomial-time relaxation of Question 1, for which substantially more positive evidence exists: quasipolynomial-time algorithms are known for $C_t$-induced-minor-free graphs and for $tC_3$-induced-minor-free graphs. The present paper contributes a quasipolynomial-time algorithm for $tC_3 \\uplus C_4$-induced-minor-free graphs, running in $n^{O(t^{2}\\log n)+f(t)}$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2302.08182",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian",
+   "name": "What is the smallest number of disjoint spanning trees made a graph Hamiltonian",
+   "kind": "Conjecture",
+   "statement": "We are given a complete simple undirected weighted graph $ G_1=(V,E) $ and its first arbitrary shortest spanning tree $ T_1=(V,E_1) $ . We define the next graph $ G_2=(V,E\\setminus E_1) $ and find on $ G_2 $ the second arbitrary shortest spanning tree $ T_2=(V,E_2) $ . We continue similarly by finding $ T_3=(V,E_3) $ on $ G_3=(V,E\\setminus \\cup_{i=1}^{2}E_i) $ , etc. Let k be the smallest number of disjoint shortest spanning trees as defined above and let $ T^{k}=(V,\\cup_{i=1}^{k}E_i) $ be the graph obtained as union of all $ k $ disjoint trees. Question 1 . What is the smallest number of disjoint spanning trees creates a graph $ T^{k} $ containing a Hamiltonian path. Question 2 . What is the smallest number of disjoint spanning trees creates a graph $ T^{k} $ containing a shortest Hamiltonian path? Questions 3 and 4 . Replace in questions 1 and 2 a shortest spanning tree by a 1-tree. What is the smallest number of disjoint 1-trees creates a Hamiltonian graph? What is the smallest number of disjoint 1-trees creates a graph containing a shortest Hamiltonian cycle?",
+   "context": "These questions are induced by the following paper Chrobak and Poljak. On common edges in optimal solutions to travelling salesman and other optimization problems, Discrete Applied Mathematics 20 (1988) 101-111.",
+   "status": "unclear",
+   "url": "http://www.openproblemgarden.org/op/what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian",
+   "attributed_to": "Goldengorin"
+  }
+ },
+ {
+  "edge_id": "e206",
+  "claimed_relation": "same_conjecture",
+  "via": "fuzzy_match",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "Question 1"
+  ],
+  "source": {
+   "id": "arxiv:2502.04177__00",
+   "name": "Scol bounded by bramble number in polynomial expansion",
+   "kind": "Question",
+   "statement": "Is it true that for every graph class $\\mathcal{C}$ with polynomial expansion, there exists a polynomial function $f$ such that for every integer $r\\geqslant 0$ and every graph $G\\in\\mathcal{C}$, $$\\mathrm{scol}_{r}(G)\\leqslant f(r,\\mathrm{bn}_{r}(G))?$$",
+   "context": "A positive answer to this question would be sufficient to answer Question 1 positively. The polynomial expansion assumption on $\\mathcal{C}$ is essential: without it, $\\mathrm{scol}_r(G)$ cannot be bounded by any function of $r$ and the depth-$r$ bramble number $\\mathrm{bn}_r(G)$, even if the bramble number is replaced by $\\mathrm{bn}_{g(r)}(G)$ for an arbitrary function $g$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2502.04177",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian",
+   "name": "What is the smallest number of disjoint spanning trees made a graph Hamiltonian",
+   "kind": "Conjecture",
+   "statement": "We are given a complete simple undirected weighted graph $ G_1=(V,E) $ and its first arbitrary shortest spanning tree $ T_1=(V,E_1) $ . We define the next graph $ G_2=(V,E\\setminus E_1) $ and find on $ G_2 $ the second arbitrary shortest spanning tree $ T_2=(V,E_2) $ . We continue similarly by finding $ T_3=(V,E_3) $ on $ G_3=(V,E\\setminus \\cup_{i=1}^{2}E_i) $ , etc. Let k be the smallest number of disjoint shortest spanning trees as defined above and let $ T^{k}=(V,\\cup_{i=1}^{k}E_i) $ be the graph obtained as union of all $ k $ disjoint trees. Question 1 . What is the smallest number of disjoint spanning trees creates a graph $ T^{k} $ containing a Hamiltonian path. Question 2 . What is the smallest number of disjoint spanning trees creates a graph $ T^{k} $ containing a shortest Hamiltonian path? Questions 3 and 4 . Replace in questions 1 and 2 a shortest spanning tree by a 1-tree. What is the smallest number of disjoint 1-trees creates a Hamiltonian graph? What is the smallest number of disjoint 1-trees creates a graph containing a shortest Hamiltonian cycle?",
+   "context": "These questions are induced by the following paper Chrobak and Poljak. On common edges in optimal solutions to travelling salesman and other optimization problems, Discrete Applied Mathematics 20 (1988) 101-111.",
+   "status": "unclear",
+   "url": "http://www.openproblemgarden.org/op/what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian",
+   "attributed_to": "Goldengorin"
+  }
+ }
+]

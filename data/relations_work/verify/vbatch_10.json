@@ -1,0 +1,125 @@
+[
+ {
+  "edge_id": "e040",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 2,
+  "sketches": [
+   "Both concern the same quantity — the supremum/infimum behaviour of fractional chromatic numbers of planar graphs with no C4 or C5 — one asking its value, the other whether the proven 11/3 bound is tight; a single determination problem stated twice.",
+   "Both entries, from the same paper, ask to determine the optimal constant sup{chi_f(G): G planar with no C4, C5}: __00 asks for the exact extremal value, __01 asks whether the proved bound 11/3 is that value or can be lowered. They are the same open question about one constant."
+  ],
+  "source": {
+   "id": "arxiv:1802.04179__00",
+   "name": "Fractional chromatic number of {C₄,C₅}-free planar graphs",
+   "kind": "Problem",
+   "statement": "What is the infimum of fractional chromatic numbers of planar graphs without cycles of length 4 or 5?",
+   "context": "The authors prove that every planar graph without cycles of length 4 or 5 is $(11:3)$-colorable, giving an upper bound of $\\frac{11}{3}$ on the fractional chromatic number. They note the counterexample to Steinberg's conjecture from [4] is $(6:2)$-colorable, so the answer could be as low as $3$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1802.04179",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1802.04179__01",
+   "name": "11/3 non-tight fractional chromatic bound for {C₄,C₅}-free planar",
+   "kind": "Informal",
+   "statement": "It is not clear whether the constant $\\frac{11}{3}$ from Theorem 1.1 is the best possible, and we suspect this is not the case.",
+   "context": "Immediately after stating Problem 1.3, the authors express their belief that $\\frac{11}{3}$ is not the tight infimum of fractional chromatic numbers for planar graphs without cycles of length 4 or 5, motivating the open problem.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1802.04179",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e041",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Every induced copy of a tree T is in particular a path-induced copy, so graphs with no path-induced copy of (T,r) are T-free; polynomial Gyárfás–Sumner then bounds their chromatic number by a polynomial in ω(G) ≤ t, answering Question __00 affirmatively."
+  ],
+  "source": {
+   "id": "arxiv:2302.08922__01",
+   "name": "Polynomial χ-bounding in Gyárfás-Sumner",
+   "kind": "Informal",
+   "statement": "It is possible that the Gy\\'{a}rf\\'{a}s-Sumner conjecture holds with polynomial bounds; that is, 1.1 holds with a bound on the chromatic number that is polynomial in $t$.",
+   "context": "The authors note that polynomial bounds on the $\\chi$-bounding function have recently been established for trees not containing $P_5$ as an induced subgraph, and suggest that the full Gyárfás-Sumner conjecture may admit a polynomial $\\chi$-bounding function in $t$ for every fixed tree $T$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2302.08922",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2302.08922__00",
+   "name": "Polynomial χ-bound for path-induced rooted tree",
+   "kind": "Question",
+   "statement": "Is there any hope for a comparable strengthening of 1.2, giving a polynomial bound on the chromatic number of graphs with no path-induced copy of a rooted tree $(T,r)$ and with clique number at most $t$?",
+   "context": "Scott, Seymour and Spirkl proved (Theorem 3.2) that excluding an induced tree and $K_{t,t}$ as a subgraph yields a polynomial bound $f(t)$ on average degree. The authors ask whether an analogous polynomial bound on chromatic number can be obtained for 1.2, which imposes the weaker hypothesis of bounded clique number at the cost of weakening the conclusion to a path-induced copy.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2302.08922",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e042",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Part (a) of Fractional Hadwiger states chi_f(G) <= had(G). If alpha(G) <= 2 then chi_f(G) >= n/alpha(G) >= n/2, so had(G) >= n/2, and since had is an integer G has a K_{ceil(n/2)} minor, which is exactly the seagull statement."
+  ],
+  "source": {
+   "id": "opg:fractional_hadwiger",
+   "name": "Fractional Hadwiger",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ , (a) $ \\chi_f(G)\\leq\\text{had}(G) $ (b) $ \\chi(G)\\leq\\text{had}_f(G) $ (c) $ \\chi_f(G)\\leq\\text{had}_f(G) $ .",
+   "context": "Here $ \\chi $ is the chromatic number, $ \\chi_f $ is the fractional chromatic number, $ \\text{had} $ is the Hadwiger number, and $ \\text{had}_f $ is the fractional Hadwiger number (which was recently introduced independently by Fox [F] and Pedersen [P]). It is well known and easily proved (see [HW]) that $ \\chi_f(G)\\leq\\chi(G)\\text{ and }\\text{had}(G)\\leq\\text{had}_f(G)\\leq\\text{tw}(G)+1, $ where $ \\text{tw}(G) $ is the treewidth of $ G $ . Hadwiger's famous conjecture, $ \\chi(G)\\leq\\text{had}(G) $ , bridges the gap in the above inequalities. The above conjectures therefore are weaker than Hadwiger's conjecture. Note that Conjecture (a) implies Conjecture (c), and Conjecture (b) implies Conjecture (c). Note that Reed and Seymour [RS] proved that $ \\chi_f(G)\\leq2\\,\\text{had}(G) $ . Conjecture (a) is due to Reed and Seymour [RS]. Conjecture (b) is due to Harvey and Wood [HW]. Conjecture (c) is independently due to Harvey and Wood [HW] and Pedersen [P]. Pedersen [P] presents a natural equivalent formulation of Conjecture (c).",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/fractional_hadwiger",
+   "attributed_to": "Harvey, Daniel J., Reed, Bruce A., Seymour, Paul D., Wood, David R."
+  },
+  "target": {
+   "id": "opg:seagull_problem",
+   "name": "Seagull problem",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ n $ vertex graph with no independent set of size $ 3 $ has a complete graph on $ \\ge \\frac{n}{2} $ vertices as a minor.",
+   "context": "This conjecture is significant because it is an interesting unproved consequence of Hadwiger's conjecture (this implication is proved next). In fact, some experts have suggested that this problem might hold the key to finding a counterexample to Hadwiger. I (M. DeVos) have attributed this conjecture to Seymour, but I believe that it may have been independently suggested by Mader and by others. Its curious title will be explained later in this discussion. Hadwiger's conjecture (every loopless graph with chromatic number $ \\ge n $ has $ K_n $ as a minor) is one of the outstanding problems in graph theory. This conjecture has been resolved for small values of $ n $ ; when $ n \\le 4 $ it is relatively easy, for $ n=5,6 $ it has been proven to be equivalent to the Four color theorem. The Seagull problem concerns the other extreme - when the size of the chromatic number is close to the order of the graph. If $ G $ is an $ n $ vertex graph with no independent set of size 3, then $ \\chi(G) \\ge \\frac{n}{2} $ since each color class has size $ \\le 2 $ . If Hadwiger's conjecture holds for $ G $ , it must then have a minor which is a complete graph on $ \\ge \\frac{n}{2} $ vertices. This is precisely the statement of the Seagull problem. The (essentially) best known bound for the conjecture is that every $ n $ vertex graph $ G $ with no independent set of size 3 has a complete graph on $ \\ge \\frac{n}{3} $ vertices as a minor. This argument is where the name of this conjecture arises. Let us…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/seagull_problem",
+   "attributed_to": "Seymour, Paul D."
+  }
+ },
+ {
+  "edge_id": "e043",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Suppose alpha(G) <= 2 and G has no K_{ceil(n/2)} minor. Apply the target with t+1 = ceil(n/2): alpha(G) >= n/(ceil(n/2)-1) > 2 for every n (check n even: n/(n/2-1) > 2; n odd: 2n/(n-1) > 2), a contradiction. So the alpha >= n/t conjecture implies the seagull problem (its alpha = 2 case).",
+   "Contrapositive with t = ⌈n/2⌉−1: if G has no K_{⌈n/2⌉} minor, it is K_{t+1}-minor-free, so α(G) ≥ n/t ≥ n/((n−1)/2) > 2, i.e. α(G) ≥ 3. Hence α(G) ≤ 2 forces a K_{⌈n/2⌉} minor, which is the Seagull problem (the known α=2 case of the Hadwiger-weakening α ≥ n/t).",
+   "Let G have no independent set of size 3 (alpha <= 2) and let h be its Hadwiger number; G is K_{h+1}-minor-free, so the conjecture gives 2 >= alpha >= n/h, hence h >= n/2, i.e. G has a K_{ceil(n/2)} minor. The seagull problem is the alpha=2 case of the alpha >= n/t conjecture."
+  ],
+  "source": {
+   "id": "arxiv:1907.12999__00",
+   "name": "Independence number lower bound in K_{t+1}-minor-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every positive integer $t$, if an $n$-vertex graph $G$ does not contain $K_{t+1}$ as a minor then $\\alpha(G) \\geq n/t$.",
+   "context": "This conjecture is a natural weakening of Hadwiger's conjecture: since Hadwiger's conjecture would imply every $n$-vertex $K_{t+1}$-minor-free graph has chromatic number at most $t$ and thus an independent set of size at least $n/t$, this bound has attracted considerable attention (see Seymour's survey [31]). Duchet and Meyniel proved the bound holds within a factor of 2 in 1982, and subsequent improvements have been made by Fox, Balogh–Kostochka, and others. The present paper studies this conjecture restricted to triangle-free graphs.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1907.12999",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:seagull_problem",
+   "name": "Seagull problem",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ n $ vertex graph with no independent set of size $ 3 $ has a complete graph on $ \\ge \\frac{n}{2} $ vertices as a minor.",
+   "context": "This conjecture is significant because it is an interesting unproved consequence of Hadwiger's conjecture (this implication is proved next). In fact, some experts have suggested that this problem might hold the key to finding a counterexample to Hadwiger. I (M. DeVos) have attributed this conjecture to Seymour, but I believe that it may have been independently suggested by Mader and by others. Its curious title will be explained later in this discussion. Hadwiger's conjecture (every loopless graph with chromatic number $ \\ge n $ has $ K_n $ as a minor) is one of the outstanding problems in graph theory. This conjecture has been resolved for small values of $ n $ ; when $ n \\le 4 $ it is relatively easy, for $ n=5,6 $ it has been proven to be equivalent to the Four color theorem. The Seagull problem concerns the other extreme - when the size of the chromatic number is close to the order of the graph. If $ G $ is an $ n $ vertex graph with no independent set of size 3, then $ \\chi(G) \\ge \\frac{n}{2} $ since each color class has size $ \\le 2 $ . If Hadwiger's conjecture holds for $ G $ , it must then have a minor which is a complete graph on $ \\ge \\frac{n}{2} $ vertices. This is precisely the statement of the Seagull problem. The (essentially) best known bound for the conjecture is that every $ n $ vertex graph $ G $ with no independent set of size 3 has a complete graph on $ \\ge \\frac{n}{3} $ vertices as a minor. This argument is where the name of this conjecture arises. Let us…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/seagull_problem",
+   "attributed_to": "Seymour, Paul D."
+  }
+ }
+]

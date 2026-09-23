@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e172",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "With min out-degree r, Hoang-Reed gives cycles C_1..C_r whose union has at most sum|C_i| - (r-1) <= n vertices, so some C_i has length <= (n+r-1)/r <= ceil(n/r), which is Caccetta-Haggkvist. Noted already in the Hoang-Reed paper."
+  ],
+  "source": {
+   "id": "opg:hoand_reed_conjecture",
+   "name": "Hoàng-Reed Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every digraph in which each vertex has outdegree at least $ k $ contains $ k $ directed cycles $ C_1, \\ldots, C_k $ such that $ C_j $ meets $ \\cup_{i=1}^{j-1}C_i $ in at most one vertex, $ 2 \\leq j \\leq k $ .",
+   "context": "This conjecture is not even known to be true for $ k=3 $ . In the case $ k=2 $ , Thomassen proved [T] that every digraph with minimum outdegree 2 has two directed cycles intersecting on a vertex. This conjecture would imply the Caccetta-Häggkvist Conjecture .",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/hoand_reed_conjecture",
+   "attributed_to": "Hoang, Chinh T., Reed, Bruce A."
+  },
+  "target": {
+   "id": "opg:caccetta_haggkvist_conjecture",
+   "name": "Caccetta-Häggkvist Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ \\lceil n/r\\rceil $",
+   "context": "It is one of the most famous conjectures in graph theory. It has many alternative formulations and lots of work have been done around it. Many interesting conjectures are related to it. See [Sul]. It is in particular implied by a conjecture of Thomassé and Hoàng-Reed Conjecture . The Caccetta-Häggkvist Conjecture is a generalization of an earlier conjecture of Behzad, Chartrand, and Wall, who conjectured it only for diregular digraphs. Caccetta-H äggkvist Conjecture has been proved for $ r\\leq \\sqrt{n/2} $ by Shen [She1]. For $ r\\geq n/2 $ it is trivial. But already for $ r=n/3 $ , it is still open as well as Behzad-Chartrand-Wall Conjecture Conjecture Every simple $ n $ -vertex digraph with minimum outdegree at least $ r/3 $ and minimum indegree at least $ r/3 $ has a cycle with length at most $ 3 $ . This conjecture would be implied by Seymour's Second Neighbourhood Conjecure . Shen [She2] also proved the following approximate version. Theorem Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ n/r + 73 $ . Bollobás and Scott [BS] proposed a weighted version of the Caccetta-Häggkvist Conjecture. Conjecture Let $ w:E(D) \\rightarrow [0,1] $ be a weight function on the arcs of a digraph $ D $ . If $ \\sum_{u\\in N^-(v)} w(uv) \\geq 1 $ and $ \\sum_{u\\in N^+(v)} w(vu) \\geq 1 $ for all $ v\\in V(D) $ , then there is a directed cycle in $ D $ of total weight at least 1. They gave a nice proof that there is a directed path of tota…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/caccetta_haggkvist_conjecture",
+   "attributed_to": "Caccetta, L., Häggkvist, Roland"
+  }
+ },
+ {
+  "edge_id": "e173",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Min semidegree delta^0(D) >= f(k) implies min out-degree >= f(k), so Mader's out-degree conjecture forces a TT_k subdivision under the stronger semidegree hypothesis, giving mader_{delta0}(TT_k) <= f(k)."
+  ],
+  "source": {
+   "id": "opg:subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+   "name": "Subdivision of a transitive tournament in digraphs with large outdegree.",
+   "kind": "Conjecture",
+   "statement": "Conjecture For all $ k $ there is an integer \u000e $ f(k) $ such that every digraph of minimum outdegree at least \u000e $ f(k) $ contains a subdivision of a transitive tournament of order $ k $ .",
+   "context": "A fundamental result of Mader [M1] states that for every integer $ k $ there is a smallest $ g(k) $ so that every graph of average degree at least $ g(k) $ contains a subdivision of a complete graph on $ k $ vertices. Bollobás and Thomason [BT] as well as Komlós and Szemerédi [KS] showed that $ g $ is quadratic in $ k $ . The above conjecture is a digraph analogue of this result. However one cannot replace the minimum outdegree in this conjecture by the average degree as in Mader's analogue for graphs: consider the complete bipartite graph $ K_{n,n} $ and orient all edges from the first to the second class. The resulting digraph has average degree $ n $ but not even a transitive tournament on 3 vertices. One might be tempted to conjecture that large minimum outdegree would even force the existence of a subdivision of a large complete digraph. However, for all $ n $ Thomassen [T] constructed a digraph on $ n $ vertices whose minimum outdegree is at least $ \\frac{1}{2} \\log_2 n $ but which does not contain an even directed cycle (and thus no complete digraph on 3 vertices). A simpler construction was found by DeVos et al. [DMMS]. It is easy to see that \u000e $ f(1)=0 $ and $ f(2)=1 $ . Mader [M3] showed that $ f(4) = 3 $ . Even the existence of \u000e $ f(5) $ is not known.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+   "attributed_to": "Mader, W."
+  },
+  "target": {
+   "id": "arxiv:1610.00876__00",
+   "name": "TT_k Subdivision via Minimum Semidegree",
+   "kind": "Conjecture",
+   "statement": "There exists a least integer $\\mathrm{mader}_{\\delta^0}(TT_k)$ such that every digraph $D$ with $\\delta^0(D) \\geq \\mathrm{mader}_{\\delta^0}(TT_k)$ contains a subdivision of $TT_k$.",
+   "context": "The paper shows Conjecture 3 is equivalent to Mader's Conjecture 2: if transitive tournaments are $\\delta^0$-maderian, then $\\mathrm{mader}_{\\delta^+}(TT_k) \\leq \\mathrm{mader}_{\\delta^0}(TT_{2k})$ for all $k$. It is stated separately to make this equivalence explicit.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1610.00876",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e174",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Given a 1/2-flow-pair (phi_2, phi_4) with |phi_4(e)| >= 2 wherever phi_2(e)=0, the combination (5 phi_2 + phi_4)/2 is a circular 5-flow, hence a nowhere-zero 5-flow exists; the paper states this implication explicitly."
+  ],
+  "source": {
+   "id": "arxiv:2511.02892__06",
+   "name": "½-flow-pair existence in bridgeless graphs",
+   "kind": "Conjecture",
+   "statement": "Each bridgeless graph admits a $2$-flow $\\varphi_{2}$ and a $4$-flow $\\varphi_{4}$ such that for any edge $e$, if $\\varphi_{2}(e)=0$, then $|\\varphi_{4}(e)|\\geq 2$.",
+   "context": "The conjecture implies the 5-flow conjecture since $(5\\varphi_{2}+\\varphi_{4})/2$ is a circular 5-flow, and generalises Seymour's approach in the proof of the 6-flow theorem. The resulting pair is called a $1/2$-flow-pair, and the conjecture has been verified computationally for all cyclically 4-edge-connected snarks up to 34 vertices.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2511.02892",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e175",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "A chi-bounding function polynomial in the clique number is in particular a chi-bounding function, so the polynomial Gyarfas-Sumner conjecture implies the Gyarfas-Sumner conjecture for every fixed tree T."
+  ],
+  "source": {
+   "id": "arxiv:2302.08922__01",
+   "name": "Polynomial χ-bounding in Gyárfás-Sumner",
+   "kind": "Informal",
+   "statement": "It is possible that the Gy\\'{a}rf\\'{a}s-Sumner conjecture holds with polynomial bounds; that is, 1.1 holds with a bound on the chromatic number that is polynomial in $t$.",
+   "context": "The authors note that polynomial bounds on the $\\chi$-bounding function have recently been established for trees not containing $P_5$ as an induced subgraph, and suggest that the full Gyárfás-Sumner conjecture may admit a polynomial $\\chi$-bounding function in $t$ for every fixed tree $T$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2302.08922",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "name": "Graphs with a forbidden induced tree are chi-bounded",
+   "kind": "Conjecture",
+   "statement": "Say that a family $ {\\mathcal F} $ of graphs is $ \\chi $ - bounded if there exists a function $ f: {\\mathbb N} \\rightarrow {\\mathbb N} $ so that every $ G \\in {\\mathcal F} $ satisfies $ \\chi(G) \\le f (\\omega(G)) $ . Conjecture For every fixed tree $ T $ , the family of graphs with no induced subgraph isomorphic to $ T $ is $ \\chi $ -bounded.",
+   "context": "This deep conjecture remains open despite considerable effort. Note that the conjecture would be false were the graph $ T $ to be permitted to contain a cycle, since then the class would admit graphs of high girth (where $ \\omega = 2 $ ) and high chromatic number. It is an easy exercise to prove this conjecture in the special case when $ T $ is either a path or a star, but things get difficult from here. Kierstead and Penrice solved the special case when $ T $ has radius 2, and Kierstead and Zhu solved the special case when $ T $ has radius 3 and has the property that every vertex incident with the center vertex has degree 2. Scott proved that the class of graphs which exclude all subdivisions of a fixed tree $ T $ as induced subgraphs are $ \\chi $ -bounded. It follows from this that Gyarfas's conjecture also holds for subdivisions of stars.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "attributed_to": "Gyarfas, Andras"
+  }
+ }
+]

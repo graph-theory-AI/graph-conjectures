@@ -1,0 +1,132 @@
+[
+ {
+  "edge_id": "e060",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Both record the same open problem: find a combinatorial polynomial-time algorithm for maximum independent set on perfect graphs (avoiding the Grotschel-Lovasz-Schrijver ellipsoid method).",
+   "Both records pose the identical well-known open problem: find a combinatorial (non-ellipsoid) polynomial-time algorithm for maximum independent set in perfect graphs (1903.04761 additionally lists the equivalent-by-complementation clique/weighted variants)."
+  ],
+  "source": {
+   "id": "arxiv:1903.04761__00",
+   "name": "Combinatorial MIS algorithm for perfect graphs",
+   "kind": "Problem",
+   "statement": "No combinatorial polynomial-time algorithm is known for any of MIS, MWIS, MC, and MWC in perfect graphs; finding one is a major open problem in the field. At the moment we do not even have a polynomial-time combinatorial algorithm to solve MIS in perfect graphs with no hole of length four.",
+   "context": "The Grötschel–Lovász–Schrijver algorithm solves MWIS on perfect graphs via the ellipsoid method, which the authors distinguish from combinatorial algorithms (roughly, algorithms not using division and operating directly on vertices and edges). Even the restricted case of MIS in perfect graphs with no $C_4$ (hole of length four) lacks a combinatorial polynomial-time algorithm.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1903.04761",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1907.01083__00",
+   "name": "Combinatorial MIS algorithm on perfect graphs",
+   "kind": "Informal",
+   "statement": "It remains an open question to find a combinatorial algorithm for the maximum independent set problem on perfect graphs. In fact, we do not even have a combinatorial FPT algorithm for the maximum independent set problem on perfect graphs.",
+   "context": "The maximum independent set problem on perfect graphs is solvable in polynomial time via the ellipsoid method, but a combinatorial algorithm (i.e., one not relying on the ellipsoid method) is unknown. This is mentioned as a side remark motivating the study of related graph classes.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1907.01083",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e061",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 5,
+  "sketches": [
+   "The target is a conjunction of three bounds on the hat guessing number; its item (ii), HG(G) <= f_2(d) for d-degenerate G, is verbatim the source statement. So the target implies the source.",
+   "Node 1812.09752__00 bundles three questions; its part (ii) — existence of f2 with HG(G) ≤ f2(d) for d-degenerate G — is exactly node 2107.05995__00. If the bundle is true, the degeneracy bound holds (and it in turn implies part (i), since degeneracy ≤ Δ).",
+   "Part (ii) of the compound question in 1812.09752 asks for exactly the statement conjectured in 2107.05995: a function f2 with HG(G) ≤ f2(d) for every d-degenerate G. A positive answer to the full three-part question therefore yields the degeneracy conjecture verbatim (the two records coincide on this conjunct; 1812.09752 additionally asks for a max-degree bound, known via LLL, and a min-degree lower bound).",
+   "The source ('there is f with HG(G) <= f(d) for every d-degenerate G') is verbatim part (ii) of the target's three-part Problem 1.4 (whose part (i), the max-degree bound, is already known via the local lemma); the two records pose the same degeneracy-bound question, the target bundling it with a min-degree lower-bound variant.",
+   "Part (ii) of the three-part question of 1812.09752 (existence of f_2 with HG(G) <= f_2(d) for d-degenerate G) is verbatim the statement of 2107.05995__00, so the bundled conjecture implies it."
+  ],
+  "source": {
+   "id": "arxiv:1812.09752__00",
+   "name": "Hat guessing number graph parameter bounds",
+   "kind": "Problem",
+   "statement": "Do there exist functions $f_i : \\mathbb{N} \\to \\mathbb{N}$, $1 \\leq i \\leq 3$ such that (i) if the maximum degree of $G$ is $\\Delta$, then $HG(G) \\leq f_1(\\Delta)$; (ii) if $G$ is $d$-degenerate, then $HG(G) \\leq f_2(d)$; (iii) if the minimum degree of $G$ is $\\delta$, then $HG(G) \\geq f_3(\\delta)$, and $f_3(\\delta)$ tends to infinity when $\\delta$ tends to infinity.",
+   "context": "The authors seek to understand how basic graph parameters control the hat guessing number. The existence of $f_1$ is already known via the Lovász Local Lemma ($HG(G) < e^\\Delta$), but whether $f_2$ (degeneracy bound) or $f_3$ (minimum-degree lower bound) exist is unclear. Theorems 1.6 and 1.8 provide partial progress toward part (ii).",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1812.09752",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2107.05995__00",
+   "name": "Hat guessing number bounded by degeneracy",
+   "kind": "Informal",
+   "statement": "It seems plausible that there exists a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that for every $d$-degenerate graph $G$, $\\mathrm{HG}(G) \\leq f(d)$.",
+   "context": "The authors remark in the open problems section that such a bounding function seems plausible, noting that it would imply absolute constant bounds on the hat guessing number of planar graphs (which are $5$-degenerate) and a Hadwiger-number bound via degeneracy results.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2107.05995",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e062",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "The source asks for a poly-time test for an induced s-t path of length >= d(s,t)+3, which is exactly the k = 3 instance of the target's question for general fixed k > 1.",
+   "Detecting an induced s-t path of length at least d(s,t)+3 is exactly the k = 3 instance of the fixed-k induced detour question (induced uv-path of length >= d(u,v)+k for fixed k > 1).",
+   "The source is exactly the k=3 instance of the target (poly-time detection of an induced u-v path of length >= d(u,v)+k for fixed k); the target's paper notes the question is open even for k=3."
+  ],
+  "source": {
+   "id": "arxiv:2005.12861__00",
+   "name": "Polynomial algorithm for fixed-k induced detours",
+   "kind": "Question",
+   "statement": "For fixed $k > 1$, is there a polynomial-time algorithm that, given a graph $G$ and $u, v \\in V(G)$, decides whether there is an induced $uv$-path $P$ in $G$ of length at least $d(u, v) + k$?",
+   "context": "The paper's main result (Theorem 1.1) gives a polynomial-time algorithm for the case $k = 1$ (detecting any induced non-shortest path), and the authors note the algorithm can be adjusted for $k = 2$. The question remains open even for $k = 3$. Fixing $k$ is necessary, since Theorem 1.6 shows the problem is NP-hard when $k$ is part of the input (e.g., deciding whether there exists a $uv$-NSP of length at least $2d_G(u,v)$).",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2005.12861",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1904.12273__00",
+   "name": "Poly-time excess-3 induced st-path detection",
+   "kind": "Problem",
+   "statement": "Is there a polynomial-time algorithm to test whether a graph contains an induced path between specified vertices $s, t$ of length at least three more than the shortest $st$-path?",
+   "context": "Berger, Spirkl, and Seymour (including a co-author of the present paper) have a poly-time algorithm to detect an induced $st$-path longer than the shortest $st$-path. Whether a poly-time algorithm exists to detect one that is at least three longer remains open, as noted in the introduction.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1904.12273",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e063",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "Graphs of girth >= g_0 >= 4 are triangle-free, so the source gives an induced bipartite subgraph of minimum degree >= C log d; choosing d_0 with C log d_0 >= 3 yields the target (girth-g_0, min-degree-d_0 graphs contain an induced bipartite subgraph of min degree 3), even with g_0 = 4.",
+   "Take g0=4 (girth ≥ 4 = triangle-free) and d0 with C·log d0 ≥ 3. Then any graph of girth ≥ g0 and min degree ≥ d0 is triangle-free with min degree ≥ d0, so by the triangle-free conjecture it contains an induced bipartite subgraph of min degree ≥ C log d0 ≥ 3.",
+   "Girth ≥ 4 means triangle-free, so Conjecture 1.5 applied with g_0 = 4 and d_0 chosen so that C·log d_0 ≥ 3 yields a bipartite induced subgraph of minimum degree ≥ 3, which is exactly Conjecture 1.6's conclusion. (Both from the same paper; 1.5 is now solved.)",
+   "Girth >= 4 implies triangle-free. Apply the C log d statement with d0 chosen so C log d0 >= 3: any graph of girth >= 4 and min degree >= d0 contains an induced bipartite subgraph of min degree >= 3, which is the target with g0=4."
+  ],
+  "source": {
+   "id": "arxiv:1802.03727__02",
+   "name": "Dense bipartite subgraph in triangle-free graphs",
+   "kind": "Conjecture",
+   "statement": "There is a constant $C > 0$ such that any triangle-free graph with minimum degree at least $d$ contains a bipartite induced subgraph of minimum degree at least $C \\log d$.",
+   "context": "This is a quantitative sharpening of Conjecture 1.4 restricted to triangle-free graphs; the logarithmic bound would be sharp up to the choice of $C$ (Theorem 3.7). The second part of the paper offers partial progress through Theorem 1.7 and several subcases proved in Section 3.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/1802.03727",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1802.03727__03",
+   "name": "Large Girth Dense Bipartite Induced Subgraph",
+   "kind": "Conjecture",
+   "statement": "There exist $d_0$ and $g_0$ such that any graph of girth at least $g_0$ with minimum degree at least $d_0$ contains a bipartite induced subgraph of minimum degree at least $3$.",
+   "context": "This is a further variation on Conjecture 1.4 using large girth instead of triangle-freeness. The weaker statement with 3 replaced by 2 (i.e., containing an even hole) is true with $g_0 = 4$ and $d_0 = 3$ by Radovanović–Vušković; detecting bipartite induced subgraphs of minimum degree at least 3 is NP-complete.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1802.03727",
+   "attributed_to": "paper authors"
+  }
+ }
+]

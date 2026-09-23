@@ -1,6 +1,7 @@
 {
  "generated_from": "relations pipeline (see data/relations_work/)",
- "verification_note": "Relations were confirmed by adversarial AI review of the full statements and literature (refute-by-default referees + re-attack pass). They are NOT formally verified: no argument has been machine-checked in a proof assistant such as Rocq or Lean.",
+ "verification_note": "Relations were confirmed by adversarial AI review of the full statements and literature (refute-by-default referees + re-attack pass). They are NOT formally verified: no argument has been machine-checked in a proof assistant such as Rocq or Lean. 2026-09-06 revision: four duplicate pairs missed by the phase-B dedup were merged (190 -> 186 edges; see provenance.merged_edge_ids). Status consistency is no longer baked into this file: scraper/relations_layout.py:status_flag() recomputes it from the live review statuses at build time, marking edges vacuous (target solved / source disproved) or inconsistent. 2026-09-23 extension: the Bondy–Murty Appendix A corpus (bm:*) and the 'others' corpus (others:*) were added by an incremental pass — 33 candidates seeded from the Bondy–Murty cross-check notes plus 9 from 2 finder agents, checked by 6 refute-by-default referees (no re-attack pass); 39 of 42 kept (34 confirmed, 5 plausible), 3 judged no relation; a follow-up referee then confirmed e246 (orientable 5-CDC ⇒ 5-flow, Oum Lemma 22). Provenance in data/relations_work/bm/. 2026-09-23 removal: e040 (arxiv:1802.04179__00 same_conjecture arxiv:1802.04179__01) was dropped: __01 (the informal '11/3 is not best possible') is settled by the 7/2 bound, while __00 (determine the infimum) stays open, so they are not the same statement.",
+ "last_revised": "2026-09-23",
  "semantics": {
   "implies": "truth of source forces truth of target",
   "equivalent_to": "each implies the other",
@@ -190,9 +191,14 @@
    "provenance": {
     "edge_id": "e010",
     "origin": "finder",
-    "n_finders": 1,
+    "n_finders": 2,
     "reattacked": false,
-    "upheld": null
+    "upheld": null,
+    "merged_edge_ids": [
+     "e010",
+     "e037"
+    ],
+    "merge_note": "e037 was the same relation found independently; merged 2026-09-06 (citations unioned, finder counts summed, e037's argument dropped as redundant)."
    }
   },
   {
@@ -464,9 +470,14 @@
    "provenance": {
     "edge_id": "e027",
     "origin": "finder",
-    "n_finders": 2,
+    "n_finders": 3,
     "reattacked": false,
-    "upheld": null
+    "upheld": null,
+    "merged_edge_ids": [
+     "e027",
+     "e122"
+    ],
+    "merge_note": "e122 was the same relation found independently; merged 2026-09-06 (citations unioned, finder counts summed, e122's argument dropped as redundant)."
    }
   },
   {
@@ -608,24 +619,6 @@
    }
   },
   {
-   "source": "arxiv:1605.07411__00",
-   "target": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
-   "relation": "equivalent_to",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "The source's own context explicitly states that an easy argument shows the biconditional 'Forb(H) is chi-bounded iff H is a forest' is equivalent to the Gyarfas-Sumner conjecture (the target). Verification: (target => source) the 'only if' half of the source is Erdos's girth theorem (if H contains a cycle, graphs of girth > |H| and huge chromatic number are H-free with omega = 2), and the 'if' half for a forest H follows from the tree case by a standard easy induction on components (this closure under disjoint union is known for ordinary chi-boundedness, unlike the polynomial version). (source => target) trivial restriction: a tree is a forest. So the two are genuinely equivalent, as claimed.",
-   "citations": [
-    "https://arxiv.org/abs/1605.07411"
-   ],
-   "provenance": {
-    "edge_id": "e037",
-    "origin": "finder",
-    "n_finders": 1,
-    "reattacked": false,
-    "upheld": null
-   }
-  },
-  {
    "source": "arxiv:1608.03040__00",
    "target": "arxiv:1608.03040__02",
    "relation": "implies",
@@ -655,22 +648,6 @@
     "edge_id": "e039",
     "origin": "restriction",
     "n_finders": 1,
-    "reattacked": false,
-    "upheld": null
-   }
-  },
-  {
-   "source": "arxiv:1802.04179__00",
-   "target": "arxiv:1802.04179__01",
-   "relation": "same_conjecture",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "Both entries come from the same passage of arXiv:1802.04179 and concern the single constant c* = sup{chi_f(G) : G planar with no C4 or C5} (the 'infimum' in __00 is the infimum of valid upper-bound constants, i.e. the same quantity), for which the paper proves c* <= 11/3. __00 (Problem 1.3) asks to determine c*; __01 is the authors' remark immediately following it, conjecturing that 11/3 is not the optimal value of that same constant. Determining c* resolves __01, and __01 has no content beyond the tightness of the bound in __00. They are one open determination problem stated twice and should be merged; the only nuance is that __01 additionally guesses the direction (c* < 11/3), which does not make it a different problem.",
-   "citations": [],
-   "provenance": {
-    "edge_id": "e040",
-    "origin": "finder",
-    "n_finders": 2,
     "reattacked": false,
     "upheld": null
    }
@@ -1997,24 +1974,6 @@
    }
   },
   {
-   "source": "arxiv:2407.18800__00",
-   "target": "arxiv:2407.18800__01",
-   "relation": "equivalent_to",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "The paper (arXiv:2407.18800, p.3) states Conjecture 2 and then verbatim: 'This is equivalent to the following claim. Conjecture 3. A toroidal graph is 5-choosable if and only if it is 5-colorable.' The equivalence is also easy to re-derive from Thomassen's classification of 6-critical toroidal graphs. (2 => 3): 5-choosable always implies 5-colorable; if G is 5-colorable but not 5-choosable it contains a subgraph critical for 5-choosability, which by Conj 2 is 6-critical, contradicting chi(G) <= 5. (3 => 2): a graph critical for 5-choosability has all proper subgraphs 5-choosable hence 5-colorable, and is itself not 5-choosable, hence by Conj 3 not 5-colorable, so 6-critical; conversely a 6-critical toroidal graph is not 5-colorable (so not 5-choosable) while every proper subgraph is 5-colorable and, by Conj 3, 5-choosable.",
-   "citations": [
-    "https://arxiv.org/abs/2407.18800"
-   ],
-   "provenance": {
-    "edge_id": "e122",
-    "origin": "finder",
-    "n_finders": 1,
-    "reattacked": false,
-    "upheld": null
-   }
-  },
-  {
    "source": "arxiv:2407.18800__01",
    "target": "arxiv:2407.18800__02",
    "relation": "implies",
@@ -3063,7 +3022,12 @@
     "origin": "opg_mention",
     "n_finders": 0,
     "reattacked": false,
-    "upheld": null
+    "upheld": null,
+    "merged_edge_ids": [
+     "e187",
+     "e190"
+    ],
+    "merge_note": "e190 was the same relation found independently; merged 2026-09-06 (citations unioned, finder counts summed, e190's argument dropped as redundant)."
    }
   },
   {
@@ -3100,25 +3064,12 @@
     "origin": "opg_mention",
     "n_finders": 0,
     "reattacked": false,
-    "upheld": null
-   }
-  },
-  {
-   "source": "opg:decomposing_eulerian_graphs",
-   "target": "opg:cycle_double_cover_conjecture",
-   "relation": "implies",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "Explicitly stated in the source context with a valid reduction: given a 3-edge-connected G, replace each edge by two parallel edges to obtain G', which is Eulerian and 6-edge-connected, with the 2-transition system P pairing the parallel copies at each endpoint; a compatible decomposition of (G',P) uses at most one of each parallel pair per cycle at each vertex, so it projects to a list of cycles of G covering every edge exactly twice, i.e. a CDC of G. Since the CDC conjecture reduces (by standard vertex-splitting/cut arguments) to 3-edge-connected graphs, the Eulerian decomposition conjecture implies CDC. Hypothesis class checks out: 6-edge-connectivity of G' follows from 3-edge-connectivity of G because doubling edges doubles every edge cut.",
-   "citations": [
-    "http://www.openproblemgarden.org/op/decomposing_eulerian_graphs"
-   ],
-   "provenance": {
-    "edge_id": "e190",
-    "origin": "opg_mention",
-    "n_finders": 0,
-    "reattacked": false,
-    "upheld": null
+    "upheld": null,
+    "merged_edge_ids": [
+     "e189",
+     "e202"
+    ],
+    "merge_note": "e202 was the same relation found independently; merged 2026-09-06 (citations unioned, finder counts summed, e202's argument dropped as redundant)."
    }
   },
   {
@@ -3302,25 +3253,6 @@
    }
   },
   {
-   "source": "opg:three_4_flows_conjecture",
-   "target": "opg:cycle_double_cover_conjecture",
-   "relation": "related_only",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "The mention is the same analogy sentence (both reduce to non-3-edge-colorable cubic graphs). The genuine implication stated in the context goes from three-4-flows to the Orientable cycle FOUR cover conjecture, not to CDC: each G\\A_i has a nowhere-zero 4-flow, hence an orientable cycle double cover, and since each edge lies in exactly two of the three subgraphs G\\A_i, the union covers every edge exactly four times. A cycle 4-cover is already known unconditionally (Bermond-Jackson-Jaeger via Jaeger's 8-flow theorem), so this route does not give a double cover, and no implication between three-4-flows and CDC is stated or standard in either direction. Hence related_only.",
-   "citations": [
-    "http://www.openproblemgarden.org/op/three_4_flows_conjecture",
-    "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture"
-   ],
-   "provenance": {
-    "edge_id": "e202",
-    "origin": "opg_mention",
-    "n_finders": 0,
-    "reattacked": false,
-    "upheld": null
-   }
-  },
-  {
    "source": "opg:weak_pentagon_problem",
    "target": "opg:pentagon_problem",
    "relation": "related_only",
@@ -3336,6 +3268,693 @@
     "n_finders": 0,
     "reattacked": false,
     "upheld": null
+   }
+  },
+  {
+   "source": "bm:bm-003",
+   "target": "opg:reconstruction_conjecture",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Halin's conjecture is about infinite graphs; the Reconstruction Conjecture is about finite graphs with at least 3 vertices. Their hypothesis classes do not overlap, so neither statement implies the other. The link itself is real: bm-003's context says Halin's conjecture is the natural weakening, for infinite graphs, of the finite Reconstruction Conjecture (hypomorphic implies isomorphic), which fails for infinite graphs. Halin's conjecture being disproved has no bearing on the finite problem.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e207",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b000"
+   }
+  },
+  {
+   "source": "arxiv:1507.08208__00",
+   "target": "bm:bm-011",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Direction reversed from the seed: the refinement implies Barát–Thomassen. Assume the refinement holds with function f. For a tree T, set k(T) = max(f(Delta_T), f(|E(T)|)). A k-edge-connected graph is f(Delta_T)-edge-connected and has minimum degree at least k >= f(|E(T)|). So when e(G) is divisible by e(T), G is T-decomposable, and this holds for simple graphs in particular. That is exactly Barát–Thomassen. The refinement's own context calls it a refinement of Conjecture 1.1 (Barát–Thomassen). The implication is valid as a logical relation even though the refinement is recorded as disproved and Barát–Thomassen as solved.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e208",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b001"
+   }
+  },
+  {
+   "source": "bm:bm-013",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "A cycle double cover with at most n-1 cycles is, in particular, a cycle double cover, so Bondy's conjecture gives CDC for simple bridgeless graphs. CDC for general bridgeless graphs reduces to the simple case by standard steps. A loop is a cycle and can be used twice. Degree-2 vertices can be suppressed, and vertex splitting reduces the problem to simple cubic (indeed 3-connected cubic) graphs, as the target's own context notes. bm-013's context also says it explicitly: 'This strengthens the Cycle Double Cover Conjecture'.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e209",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b002"
+   }
+  },
+  {
+   "source": "opg:strong_5_cycle_double_cover_conjecture",
+   "target": "bm:bm-014",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Direction: the strong form implies the plain form. Every bridgeless cubic graph contains a circuit, so the strong 5-CDC conjecture yields a double cover of every bridgeless cubic graph by five 2-regular subgraphs. In a cubic graph these are exactly the nonempty even subgraphs. The general 5-CDC conjecture reduces to bridgeless cubic graphs by the standard steps: suppress degree-2 vertices, split higher-degree vertices while keeping 2-edge-connectivity (Fleischner's splitting lemma), and pull the even-subgraph covers back. The target's context states explicitly that it strengthens the 5-cycle double cover conjecture.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e210",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b003"
+   }
+  },
+  {
+   "source": "bm:bm-014",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Each even subgraph is an edge-disjoint union of cycles. Take a double cover by at most five even subgraphs and decompose each subgraph into its cycles. The resulting list of cycles covers every edge exactly twice, which is a CDC. A 2-edge-connected graph and a bridgeless graph are the same notion here: for disconnected graphs, apply the conjecture to each component. The target's context also lists the 5-CDC conjecture as a strengthening of CDC.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e211",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b004"
+   }
+  },
+  {
+   "source": "opg:petersen_coloring_conjecture",
+   "target": "bm:bm-014",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Direction: the Petersen coloring conjecture implies 5-CDC. The target node's own context says so explicitly ('would imply both Berge–Fulkerson and the five cycle double cover conjecture'). Proof sketch: the Petersen graph P has a double cover by five even subgraphs. A Petersen coloring (a cycle-continuous map G -> P) pulls each of these back to an even subgraph of G, and each edge of G still lies in exactly two of them. This proves 5-CDC for bridgeless cubic graphs, and the standard reduction extends it to all bridgeless graphs. The equivalent form stated in the context, a cycle-continuous map from every bridgeless graph, covers general graphs directly.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e212",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b005"
+   }
+  },
+  {
+   "source": "bm:bm-014",
+   "target": "opg:m_n_cycle_covers",
+   "relation": "same_conjecture",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "The target defines a binary cycle as an edge set in which every vertex has even degree, which is an even subgraph. A (5,2)-cycle-cover is a list of 5 such sets covering each edge exactly twice. 'At most five' and 'exactly five' coincide because the empty set is a binary cycle and can pad the list. The bridgeless and 2-edge-connected hypotheses match componentwise. So the node's stated conjecture 'every bridgeless graph has a (5,2)-cycle-cover' is literally the 5-CDC conjecture; the page's chart even labels the (5,2) entry '5CDC conj'. The page also discusses a wider (m,n) framework, but the stated conjecture is the same statement.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e213",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b006"
+   }
+  },
+  {
+   "source": "arxiv:2302.13312__00",
+   "target": "bm:bm-016",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "For odd Delta, the LAC bound is ceil((Delta+1)/2) = (Delta+1)/2 linear forests. The target's partition into (Delta-1)/2 linear forests plus one matching is at least that strong, because a matching is a linear forest. So the arXiv conjecture implies LAC only for planar graphs of odd Delta >= 7, not LAC in general, and LAC does not give the matching refinement. Also, LAC is already known for planar graphs. The node's own context calls it a refinement of the planar linear arboricity bound, so the link is real, but neither statement implies the other.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e214",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b007"
+   }
+  },
+  {
+   "source": "bm:bm-021",
+   "target": "opg:4_connected_graphs_are_not_uniquely_hamiltonian",
+   "relation": "related_only",
+   "verdict": "plausible",
+   "confidence": "medium",
+   "argument": "bm-021 asks about the complexity of finding a second Hamilton cycle in cubic graphs, where the cycle is known to exist by Smith's theorem. The target claims a second Hamilton cycle exists in 4-connected graphs. Cubic graphs are never 4-connected, so the two hypothesis classes are disjoint, and an existence claim cannot settle a complexity question or the reverse. The only link is thematic (both concern uniquely hamiltonian graphs and second Hamilton cycles), so this is related_only at most.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e215",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b008"
+   }
+  },
+  {
+   "source": "bm:bm-021",
+   "target": "opg:uniquely_hamiltonian_graphs",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "The target's r=3 case is Smith's theorem, which bm-021's context cites as the reason a second Hamilton cycle always exists in cubic graphs. Thomason proved it for all odd r. bm-021 asks whether that cycle can be found in polynomial time, which is a complexity question that neither implies nor is implied by the existence statement for other r. The dependency is documented but it is not an implication.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e216",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b009"
+   }
+  },
+  {
+   "source": "bm:bm-026",
+   "target": "opg:the_circular_embedding_conjecture",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "medium",
+   "argument": "The plain circular embedding conjecture gives a cycle double cover by face boundaries, but that cover is neither orientable nor limited to 5 even subgraphs, so it does not imply bm-026. Conversely, an orientable 5-even-subgraph double cover does not give a surface embedding whose faces are all cycles, because pinch points can occur for non-cubic graphs. The target's context names two strengthenings, one with a 5-colourable dual and one orientable, which imply the 5-CDC and the oriented CDC respectively. Only a combined orientable strengthening with a 5-colourable dual would imply bm-026, and that combined form is not the target node's statement.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e217",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b010"
+   }
+  },
+  {
+   "source": "bm:bm-026",
+   "target": "opg:cycle_double_cover_conjecture",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "2-edge-connected is the same as having no bridge. Each even subgraph in a double cover decomposes into edge-disjoint cycles. So an (orientable) double cover by five even subgraphs yields a list of cycles in which every edge appears exactly twice, which is the CDC. bm-026's context also says it strengthens the 5-CDC, which itself implies the CDC.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e218",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b011"
+   }
+  },
+  {
+   "source": "bm:bm-026",
+   "target": "opg:grunbaums_conjecture",
+   "relation": "related_only",
+   "verdict": "plausible",
+   "confidence": "medium",
+   "argument": "Grünbaum's conjecture (disproved by Kochol) says embeddings of snarks in orientable surfaces must have a dual with a loop or parallel edges. The OPG context contrasts it with the orientable CDC, which bm-026 strengthens. Neither statement implies the other: one is about duals of simple triangulations, the other about even-subgraph covers. The connection is indirect, running through the orientable CDC rather than bm-026 itself, so it is only a documented thematic relation.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e219",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b012"
+   }
+  },
+  {
+   "source": "bm:bm-026",
+   "target": "opg:three_4_flows_conjecture",
+   "relation": "related_only",
+   "verdict": "plausible",
+   "confidence": "medium",
+   "argument": "Both statements imply the orientable cycle 4-cover conjecture. For bm-026, take the orientable double cover twice. For the three 4-flows conjecture, each G\\A_i has an orientable CDC because it has a nowhere-zero 4-flow, and every edge lies in exactly two of the G\\A_i. So they share a consequence. I know of no reduction in either direction between an orientable 5-even-subgraph double cover and a 3-part decomposition into 4-flow complements, so the relation is related_only.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e220",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b013"
+   }
+  },
+  {
+   "source": "bm:bm-034",
+   "target": "opg:turan_number_of_a_finite_family",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "medium",
+   "argument": "The target's own context discusses the even-cycle family case: the Turán number of a family of even cycles should be governed (up to constants) by its longest cycle. Neither statement implies the other. bm-034 is a lower bound for one forbidden cycle. The family conjecture only compares ex(n,F) with ex(n,family), so it gives no lower bound of order n^{1+1/k}. Conversely, a lower bound for ex(n,C_{2k}) says nothing about arbitrary finite families. The link is real, but it is not an implication.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e221",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b014"
+   }
+  },
+  {
+   "source": "bm:bm-041",
+   "target": "opg:list_hadwiger_conjecture",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "The target's context presents List Hadwiger as the list-colouring analogue of Hadwiger's conjecture. Hadwiger does not imply it, because list chromatic number can exceed chromatic number; Voigt's example shows that K_5-minor-free graphs need not be 4-list-colourable. List Hadwiger does not imply Hadwiger either, because a ct-list-colouring with c>=1 (and c>=4/3 is necessary by Barát–Joret–Wood) is weaker than a (t-1)-colouring. So the two are related, but neither implies the other.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e222",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b015"
+   }
+  },
+  {
+   "source": "bm:bm-041",
+   "target": "opg:fractional_hadwiger",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Hadwiger's conjecture is equivalent to chi(G) <= had(G) for all G. The standard inequalities are chi_f <= chi and had <= had_f. Hadwiger therefore gives (a) chi_f <= chi <= had, (b) chi <= had <= had_f, and (c) chi_f <= had_f. The target's context says explicitly that these conjectures are weaker than Hadwiger's conjecture.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e223",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b016"
+   }
+  },
+  {
+   "source": "bm:bm-041",
+   "target": "opg:seagull_problem",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Take an n-vertex graph with independence number at most 2. Every colour class has at most 2 vertices, so chi >= n/2, and Hadwiger then gives a K_{ceil(n/2)} minor. The target's own context proves this implication and calls the Seagull problem an unproved consequence of Hadwiger's conjecture.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e224",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b017"
+   }
+  },
+  {
+   "source": "bm:bm-041",
+   "target": "opg:coloring_and_immersion",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "The target (Abu-Khzam–Langston) is the immersion analogue of Hadwiger's conjecture, and its context explicitly compares it with Hadwiger's and Hajós' conjectures. Minor containment and immersion containment are incomparable in general: a K_t minor does not yield a K_t immersion, and a K_t immersion does not yield a K_t minor. So neither conjecture implies the other. The connection is documented, but there is no implication.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e225",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b018"
+   }
+  },
+  {
+   "source": "bm:bm-041",
+   "target": "opg:jorgensens_conjecture",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "The target's context names Hadwiger's conjecture as motivation. The Robertson–Seymour–Thomas proof for K_6-minor-free graphs shows that a minimal counterexample is apex, which comes close to Jørgensen's statement. Still, Jørgensen's conjecture is a structural claim about 6-connected K_6-minor-free graphs. It does not follow from any colouring statement, and it does not imply Hadwiger for general k. So they are related, but neither implies the other.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e226",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b019"
+   }
+  },
+  {
+   "source": "bm:bm-042",
+   "target": "opg:coloring_and_immersion",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "A subdivision of K_t yields an immersion of K_t: its branch paths are edge-disjoint and can be split off into edges. So Hajós' conjecture at k=t implies the immersion conjecture at t. However, bm-042 asks only about k=5,6. It would give only the t=5,6 cases of the target, which the target's context says are already proved (DeVos–Kawarabayashi–Mohar–Okamura, t<=7). There is therefore no implication to the full all-t conjecture, only a documented analogy (the target's context names Hajós explicitly).",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e227",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b020"
+   }
+  },
+  {
+   "source": "bm:bm-045",
+   "target": "opg:double_critical_graph_conjecture",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Let G be a connected double-critical k-chromatic graph. For any vertex v with a neighbour u, chi(G-v) <= chi(G-u-v)+1 = k-1, so G is vertex-critical. A vertex-critical k-chromatic graph that contains K_k equals K_k, so if G is not K_k then it has no k-clique. Apply Erdős–Lovász Tihany with k1=2, k2=k-1: we get disjoint G1 (2-chromatic, so it contains an edge xy) and G2 with chi = k-1 lying inside G-x-y. This contradicts chi(G-x-y)=k-2. So the k1=2 case of the source implies the target, and the target's context says it is a special case of the Erdős–Lovász problem.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e228",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b021"
+   }
+  },
+  {
+   "source": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "target": "bm:bm-050",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "The direction is reversed from the seed: Gyárfás–Sumner implies the triangle-free tree statement. If a triangle-free graph G omitted some finite tree T as an induced subgraph, then every finite subgraph of G would be triangle-free and T-free. It would therefore have chromatic number at most f_T(2). By de Bruijn–Erdős compactness, chi(G) <= f_T(2) is finite, a contradiction. The source node's context states this derivation explicitly. The converse (from omega=2 to all omega) is not a known reduction, so the relation is implies, not equivalent_to.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e229",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b022"
+   }
+  },
+  {
+   "source": "bm:bm-054",
+   "target": "opg:coloring_the_odd_distance_graph",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "The unit-distance graph is a spanning subgraph of the odd-distance graph, so chi(R^2) <= chi(O). This gives only an inequality between the two unknowns; neither open question settles the other. Determining chi(R^2) (known to lie in 5..7) says nothing about whether chi(O) is infinite, and chi(O) = infinity says nothing about chi(R^2). The target's context explicitly calls the question a relative of the unit-distance colouring problem. So the link is documented but there is no implication.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e230",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b023"
+   }
+  },
+  {
+   "source": "bm:bm-064",
+   "target": "opg:do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common",
+   "relation": "related_only",
+   "verdict": "plausible",
+   "confidence": "medium",
+   "argument": "Both are Gallai-type questions about the intersection of longest cycles and paths, and they are treated side by side in that literature (e.g. the Shabbir–Zamfirescu–Zamfirescu survey on intersecting longest paths and cycles; not fetched here). Neither implies the other. One is about pairs of longest cycles in k-connected graphs meeting in >= k vertices; the other is about triples of longest paths in connected graphs sharing one vertex. The connection is real as an analogy but was not verified by a citation I fetched, hence plausible.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e231",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b026"
+   }
+  },
+  {
+   "source": "bm:bm-066",
+   "target": "opg:erdos_posa_property_for_long_directed_cycles",
+   "relation": "related_only",
+   "verdict": "plausible",
+   "confidence": "medium",
+   "argument": "Birmelé's conjecture is the sharp n=2 case (hitting-set bound exactly k) of the undirected Erdős–Pósa property for cycles of length >= k. The target is the directed analogue with an unspecified bound t_n(l). Replacing each edge by two opposite arcs (for l >= 3) shows the directed statement gives an undirected Erdős–Pósa bound, but only some t_2, not the sharp value k. So the target does not imply the source, and the source (undirected) does not imply the directed statement. The target's context cites the Birmelé–Bondy–Reed undirected result, which makes the thematic link real, but there is no implication.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e232",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b027"
+   }
+  },
+  {
+   "source": "bm:bm-070",
+   "target": "opg:caccetta_haggkvist_conjecture",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "The OPG context for Caccetta-Häggkvist explicitly calls the Bollobás-Scott statement a 'weighted version' and discusses it, so the link is documented. Neither implies the other. The weighted statement asks for a LONG cycle (weight >= 1). With uniform weights 1/r it only gives a cycle of length >= r, which is the easy long-cycle fact, not a short cycle of length <= ceil(n/r). Conversely, CH says nothing about weighted long cycles. The hypotheses also differ: BM requires strong connectivity and positive weights, while the OPG version uses weights in [0,1].",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e233",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b028"
+   }
+  },
+  {
+   "source": "bm:bm-079",
+   "target": "opg:hamiltonian_cycles_in_line_graphs",
+   "relation": "equivalent_to",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Line graphs are claw-free, so Matthews-Sumner implies Thomassen's conjecture by hypothesis-class containment. For the converse, Ryjáček's closure cl(G) of a claw-free graph G is the line graph of a triangle-free graph. It keeps connectivity (it only adds edges) and preserves the circumference, so G is Hamiltonian iff cl(G) is (Ryjáček, JCTB 70 (1997)). Hence Thomassen's conjecture implies Matthews-Sumner. Both nodes' contexts state this equivalence explicitly.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e234",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b029"
+   }
+  },
+  {
+   "source": "bm:bm-088",
+   "target": "opg:hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Thomassen's conjecture allows finitely many non-Hamiltonian connected vertex-transitive graphs. Nothing forces these exceptions to have Hamiltonian paths, so it does not imply Lovász's 'every connected VT graph has a Hamiltonian path'. Conversely, having a Hamiltonian path does not give Hamiltonian cycles in all but finitely many cases. The OPG context documents the connection explicitly: it lists the same five known non-Hamiltonian VT graphs and the same Hamiltonian-cycle question.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e235",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b031"
+   }
+  },
+  {
+   "source": "bm:bm-088",
+   "target": "opg:hamiltonicity_of_cayley_graphs",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Connected Cayley graphs are vertex-transitive, so Thomassen's conjecture gives 'all but finitely many connected Cayley graphs are Hamiltonian'. That is weaker than the question 'is every Cayley graph Hamiltonian?', since finitely many Cayley exceptions are not ruled out (K2 = Cay(Z2) is already a degenerate one). So there is no implication in either direction. The link is documented: the OPG context cites the vertex-transitive generalisation, and the BM sketch calls Cayley graphs a special case.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e236",
+    "origin": "bm_hint",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b032"
+   }
+  },
+  {
+   "source": "arxiv:1907.11600__00",
+   "target": "bm:bm-011",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Given f from the source conjecture and a tree T with m leaves, set k(T) = max(f(m), f(e(T))). A k(T)-edge-connected graph is f(m)-edge-connected, because edge-connectivity thresholds are monotone. It also has minimum degree >= k(T) >= f(e(T)), since min degree >= edge-connectivity. If e(G) is divisible by e(T), the source then gives a T-decomposition. The target's restriction to simple graphs only shrinks the class. This is exactly Barát-Thomassen. (The target is also already proved, so the implication holds trivially as well.)",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e237",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b033"
+   }
+  },
+  {
+   "source": "bm:bm-026",
+   "target": "bm:bm-014",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "An orientable double cover by five even subgraphs is, after forgetting the orientations, a double cover by at most five even subgraphs, and both statements have the same hypothesis (2-edge-connected graphs). So the orientable version implies the plain 5-CDC. The source node's context says explicitly that it strengthens the five cycle double cover conjecture.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e238",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b034"
+   }
+  },
+  {
+   "source": "bm:bm-033",
+   "target": "bm:bm-039",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Let T be a tree on n>=2 vertices, so k=n-1 edges. In a 2-colouring of K_N with N=2n-2, one colour class has at least (n-1)(2n-3)/2 edges, and (n-1)(2n-3)/2 > (n-1)(n-2) = N(k-1)/2 because n-3/2 > n-2. Erdős–Sós then says that colour class contains every tree with k edges, T included, so r(T,T) <= 2n-2. This is the standard remark that Erdős–Sós implies the Burr–Erdős tree Ramsey bound.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e239",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b035"
+   }
+  },
+  {
+   "source": "bm:bm-041",
+   "target": "arxiv:1907.12999__00",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Hadwiger's conjecture is equivalent to: every K_{t+1}-minor-free graph has chi <= t (if chi >= t+1, then some (t+1)-chromatic subgraph would have a K_{t+1} minor). A proper t-colouring of an n-vertex graph has a colour class of size >= n/t, so alpha(G) >= n/t. The target node's own context states exactly this implication.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e240",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b036"
+   }
+  },
+  {
+   "source": "bm:bm-042",
+   "target": "opg:crossing_numbers_and_coloring",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "A subdivision of K_t has crossing number >= cr(K_t), so Hajós for a given k implies Albertson's conjecture for t=k. The source covers only k=5,6, so at most it yields Albertson for t=5,6, which is already known (Albertson's conjecture is known for t <= 16). It gives nothing for general t. In the other direction, Albertson does not force a topological K_k. The target's context documents the link: it calls Albertson's conjecture a weakening of Hajós's conjecture. So the connection is real, but it is not an implication between these nodes.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e241",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b037"
+   }
+  },
+  {
+   "source": "bm:bm-042",
+   "target": "bm:bm-041",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "A K_k-subdivision is a K_k-minor, so Hajós for k implies Hadwiger for the same k. The source node covers only k=5,6, and those cases of Hadwiger are already theorems (Wagner + 4CT; Robertson–Seymour–Thomas). So the source does not imply the general Hadwiger node. Hadwiger also does not imply the existence of subdivisions. The relation is related_only: specialization at shared values of k.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e242",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b038"
+   }
+  },
+  {
+   "source": "arxiv:2307.15512__00",
+   "target": "others:meyniels-conjecture",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "In the hypergraph game, players move along hyperedges instead of edges. A connected 2-uniform hypergraph is a connected graph, and there the game is the usual Cops and Robbers game. The conjectured bound c(H)=O(sqrt(n/k)) uses an absolute implied constant. At k=2 it gives c(G) <= C sqrt(n/2) = O(sqrt n) for every connected graph, which is Meyniel's conjecture. The paper itself presents its conjecture as a generalization of Meyniel's.",
+   "citations": [
+    "https://arxiv.org/abs/2307.15512"
+   ],
+   "provenance": {
+    "edge_id": "e243",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b039"
+   }
+  },
+  {
+   "source": "bm:bm-079",
+   "target": "bm:bm-065",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "medium",
+   "argument": "The Matthews–Sumner conjecture is known to be equivalent (Ryjáček closure; Fleischner–Jackson 1989; Kochol) to Thomassen's conjecture and to Fleischner's dominating cycle conjecture: every cyclically 4-edge-connected cubic graph has a dominating cycle C, meaning every edge has an end on C. Given such a C in a cubic graph, the vertices off C form an independent set, and each of them has all 3 of its neighbours on C. Each vertex of C has 2 cycle-neighbours, so at most one neighbour off C. Counting edges between C and V-C gives 3(n-|C|) <= |C|, so |C| >= 3n/4, which proves Bondy's conjecture with c=3/4. The converse does not follow.",
+   "citations": [
+    "https://research.utwente.nl/en/publications/contractible-subgraphs-thomassens-conjecture-and-the-dominating-c-2/"
+   ],
+   "provenance": {
+    "edge_id": "e244",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b040"
+   }
+  },
+  {
+   "source": "bm:bm-080",
+   "target": "opg:decomposing_the_prism_of_a_3_connected_cubic_planar_graphs_in_hamilton_cycles",
+   "relation": "related_only",
+   "verdict": "confirmed",
+   "confidence": "medium",
+   "argument": "By Steinitz, a 3-connected cubic planar graph G is the graph of a simple 3-polytope P. P x [0,1] is a simple 4-polytope, and its graph is G□K_2. So Barnette's 4-polytope conjecture, restricted to prisms, says G□K_2 is Hamiltonian. The Hamilton-decomposition conjecture also implies that statement. That shared special case is already a theorem (Rosenfeld–Barnette via 4CT, cited in the target's context). Barnette gives only one Hamilton cycle, not a decomposition. The target covers only prisms, not all simple 4-polytopes. So neither node implies the other.",
+   "citations": [],
+   "provenance": {
+    "edge_id": "e245",
+    "origin": "bm_finder",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b041"
+   }
+  },
+  {
+   "source": "bm:bm-026",
+   "target": "opg:5_flow_conjecture",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Oum (arXiv:2607.16356v3, Sec. 9.3) states Conjecture 21 (Archdeacon; Jaeger: every bridgeless graph has an orientable 5-CDC, i.e. at most 5 Eulerian=even subgraphs, each with an Eulerian orientation, every edge used once in each direction), remarks it implies Tutte's 5-flow conjecture, and proves Lemma 22 (= Lemma 13.1.5 in Zhang's book): an orientable k-CDC gives a nowhere-zero Z_k-flow. Proof re-derived: pad to exactly k subgraphs C_1..C_k (so 'at most five' vs 'exactly five' is immaterial), fix a reference orientation, let chi_i be the signed characteristic vector of the directed Eulerian C_i (an integer circulation), and set phi = sum_i i*chi_i mod k. Each edge e lies in exactly two distinct C_i, C_j (an even subgraph contains an edge at most once) traversed in opposite directions, so phi(e) = ±(i-j) with 1 <= |i-j| <= 4, nonzero mod 5. Tutte's theorem (Z_k-flow iff integer k-flow) turns this into a nowhere-zero 5-flow. The BM hypothesis ('2-edge-connected') vs the target ('bridgeless') is bridged by working componentwise (flows are local to components; loops take any nonzero value and can be removed first), so the node statement exactly matches the lemma's hypothesis.",
+   "citations": [
+    "arXiv:2607.16356v3 (S. Oum, A proof of the cycle double cover conjecture by OpenAI: an exposition), Section 9.3, Conjecture 21 and Lemma 22",
+    "C.-Q. Zhang, Integer Flows and Cycle Covers of Graphs, Lemma 13.1.5 (cited by Oum; not read directly)"
+   ],
+   "provenance": {
+    "edge_id": "e246",
+    "origin": "bm_followup",
+    "n_finders": 0,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b042"
    }
   }
  ]

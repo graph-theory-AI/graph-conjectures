@@ -1,0 +1,124 @@
+[
+ {
+  "edge_id": "e104",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "The paper states Conjecture 4.4 ({K2-digon, K_k, F} heroic for every oriented forest F) is equivalent to the special case H = TT_k of Conjecture 4.2, since forbidding the edgeless K_k in a digon-free digraph is interchangeable with forbidding TT_k (every tournament on 2^k vertices contains TT_k)."
+  ],
+  "source": {
+   "id": "arxiv:2009.13319__01",
+   "name": "Heroic triple characterization via transitive tournaments",
+   "kind": "Conjecture",
+   "statement": "Let $H$ be a hero and let $F$ be an oriented forest. The set $\\{\\overleftrightarrow{K_2}, H, F\\}$ is heroic if and only if: either $F$ is the disjoint union of oriented stars, or $H$ is a transitive tournament.",
+   "context": "This is the main conjecture of the paper, a digraph analog of the Gyárfás-Sumner conjecture for oriented graphs. The 'only if' direction is proved in Section 6.1. The case where both conditions hold simultaneously (H a transitive tournament and F a disjoint union of oriented stars) is already settled by Chudnovsky, Scott and Seymour [6].",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2009.13319",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2009.13319__02",
+   "name": "Heroic triple with oriented forest and K_k",
+   "kind": "Conjecture",
+   "statement": "Given an oriented forest $F$ and for every integer $k$, $\\{\\overleftrightarrow{K_2}, K_k, F\\}$ is heroic.",
+   "context": "This conjecture is equivalent to the special case of Conjecture 4.2 where $H = TT_k$ is a transitive tournament, since every tournament on at least $2k$ vertices contains $TT_k$ as an induced subdigraph. It generalises the heroic-set result for $\\{\\overleftrightarrow{K_2}, K_k, P^+(3)\\}$ proved in Theorem 4.3, where $K_k$ denotes the digraph on $k$ vertices with no arc.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2009.13319",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e105",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 3,
+  "sketches": [
+   "Oriented complete multipartite graphs contain no induced K1 + P-vec2 (an isolated vertex forces its non-neighbours into its own part, contradicting adjacency inside the path), so they form a subclass of {K1+P-vec2}-free digraphs. Hence if Delta(1,2,2) were a hero in {K1+P-vec2}-free digraphs it would be a hero in oriented complete multipartite graphs; the disproof of the latter (arXiv:2202.13306 v2) settles the former negatively.",
+   "Oriented complete multipartite digraphs contain no induced K_1 + P->_2 (disjoint union): a vertex nonadjacent to every vertex of the path must share a part with two adjacent path vertices, which lie in different parts. So oriented complete multipartite graphs form a subclass of {K_1+P->_2}-free digraphs, and 'Delta(1,2,2) is a hero' in the larger class restricts to the same statement on the subclass.",
+   "A digraph has no induced K_1 + P->_2 (arc plus isolated vertex) iff its underlying graph has no induced K_2 cup K_1, i.e. is complete multipartite. Oriented complete multipartite graphs are thus exactly the digon-free members of the {K_1+P->_2}-free digraphs, so heroism of Delta(1,2,2) in the larger class restricts to the oriented question."
+  ],
+  "source": {
+   "id": "arxiv:2306.04710__02",
+   "name": "Δ(1,2,2) hero status in {K₁+P⃗₂}-free digraphs",
+   "kind": "Informal",
+   "statement": "Determine whether $\\Delta(1,2,2)$ is a hero in $\\{K_1 + \\vec{P}_2\\}$-free digraphs, i.e., whether $\\{\\Delta(1,2,2),\\, K_1 + \\vec{P}_2\\}$ is $\\vec{\\chi}$-finite.",
+   "context": "Theorem 1.11 (Aboulker, Aubian, Charbit) almost completely characterizes heroes in $\\{K_1+\\vec{P}_2\\}$-free digraphs, and Theorem 1.12 of this paper extends the same structural characterization to $\\{H, rK_1+\\vec{P}_3\\}$-free digraphs; in both settings the sole unresolved case is $H = \\Delta(1,2,2)$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2306.04710",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2202.13306__00",
+   "name": "Δ(1,2,2) hero in oriented complete multipartite graphs",
+   "kind": "Question",
+   "statement": "Is $\\Delta(1,2,2)$ a hero in oriented complete multipartite graphs?",
+   "context": "The paper characterizes heroes in oriented complete multipartite graphs up to the status of $\\Delta(1,2,2)$. If the answer is no, heroes in oriented complete multipartite graphs are precisely those described in Theorem 1.3; if the answer is yes, a different complete characterization involving $\\Delta(1,2,2)$ holds.",
+   "status": "disproved",
+   "url": "https://arxiv.org/abs/2202.13306",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e106",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "A k-extension adds k vertices one at a time; Conjecture 9 (unvd(D) <= C * unvd(D-v) for acyclic D) applied k times multiplies the unavoidability number by at most C^k, keeping it linear in |V| for each fixed k. The paper states Conjecture 11 'would follow from Conjecture 9'."
+  ],
+  "source": {
+   "id": "arxiv:2410.23566__03",
+   "name": "Bounded unvd ratio under vertex deletion",
+   "kind": "Conjecture",
+   "statement": "There exists a constant $C$ such that $\\operatorname{unvd}(D)\\leqslant C\\cdot\\operatorname{unvd}(D-v)$ for every acyclic digraph $D$ and for every vertex $v$ of $D$.",
+   "context": "This conjecture generalizes Proposition 1, which gives $\\operatorname{unvd}(D)\\leqslant 2\\operatorname{unvd}(D-x)$ only when $x$ is a source or sink of $D$, to arbitrary vertices. Together with Sumner's Conjecture 4, it implies Conjecture 10 about $k$-extensions of oriented trees.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2410.23566",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2410.23566__05",
+   "name": "k-extensions preserve linear unavoidability",
+   "kind": "Conjecture",
+   "statement": "If $\\cal F$ is linearly unavoidable, then the family of $k$-extensions of digraphs in $\\cal F$ is also linearly unavoidable.",
+   "context": "This conjecture, which would follow from Conjecture 9, asserts that the $k$-extension operation preserves linear unavoidability in general. The paper proves this for the specific family of oriented trees (and oriented forests) in Corollary 25.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2410.23566",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e107",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "low",
+  "n_finders": 1,
+  "sketches": [
+   "Paper-stated conditional implication: Conjecture 9 (unvd(D) <= C*unvd(D-v)) applied to the k added vertices, TOGETHER with Sumner's conjecture (oriented trees of order n are (2n-2)-unavoidable), gives C^k(2n-2)-unavoidability of k-extensions of trees. Not standalone: it additionally needs Sumner's conjecture, which is outside this pair."
+  ],
+  "source": {
+   "id": "arxiv:2410.23566__03",
+   "name": "Bounded unvd ratio under vertex deletion",
+   "kind": "Conjecture",
+   "statement": "There exists a constant $C$ such that $\\operatorname{unvd}(D)\\leqslant C\\cdot\\operatorname{unvd}(D-v)$ for every acyclic digraph $D$ and for every vertex $v$ of $D$.",
+   "context": "This conjecture generalizes Proposition 1, which gives $\\operatorname{unvd}(D)\\leqslant 2\\operatorname{unvd}(D-x)$ only when $x$ is a source or sink of $D$, to arbitrary vertices. Together with Sumner's Conjecture 4, it implies Conjecture 10 about $k$-extensions of oriented trees.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2410.23566",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2410.23566__04",
+   "name": "Exponential unavoidability of tree k-extensions",
+   "kind": "Conjecture",
+   "statement": "There is an absolute constant $C$ such that for every integer $k$, every $k$-extension of an oriented tree of order $n$ is $C^{k}(2n-2)$-unavoidable.",
+   "context": "This conjecture is implied by Conjecture 9 (multiplicative stability under vertex addition) together with Sumner's Conjecture 4 (that oriented trees are $(2n-2)$-unavoidable). The paper proves a weaker result in Corollary 25, establishing $(2\\cdot 3^{\\binom{2k+2}{2}}\\cdot|V(F)|)$-unavoidability for $k$-extensions of sufficiently large oriented trees.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2410.23566",
+   "attributed_to": "paper authors"
+  }
+ }
+]

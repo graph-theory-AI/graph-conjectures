@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e168",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "H-minor-free graphs are H-odd-minor-free, so chi_star(M_H) <= chi_star(G_H^odd) = td-bar(H)-1 under the source conjecture; combined with the inequality td-bar(H) <= 2 td(H)-1 relating connected treedepth to treedepth, this yields chi_star(M_H) <= 2 td(H)-2, which is the target (Norin-Scott-Seymour-Wood) conjecture."
+  ],
+  "source": {
+   "id": "arxiv:2308.15721__00",
+   "name": "Clustered chromatic number for odd-H-minor-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every graph $H$, $\\chi_{\\_{\\Delta}}(\\mathcal{G}_{\\_{H}}^{\\text{odd}}) = \\chi_{\\_{\\star}}(\\mathcal{G}_{\\_{H}}^{\\text{odd}}) = \\overline{\\operatorname{td}}(H)-1$.",
+   "context": "Theorem 1 establishes the chain $\\overline{\\operatorname{td}}(H)-1=\\chi_{\\_{\\Delta}}(\\mathcal{G}_{\\_{H}})\\leqslant\\chi_{\\_{\\Delta}}(\\mathcal{G}_{\\_{H}}^{\\text{odd}})\\leqslant\\chi_{\\_{\\star}}(\\mathcal{G}_{\\_{H}}^{\\text{odd}})\\leqslant 3\\cdot 2^{\\overline{\\operatorname{td}}(H)}-4$. Conjecture 2 posits that both the defective and clustered chromatic numbers of $H$-odd-minor-free graphs equal the lower bound $\\overline{\\operatorname{td}}(H)-1$, closing the exponential gap left by the main theorem.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2308.15721",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1708.02370__00",
+   "name": "Clustered chromatic number via treedepth bound",
+   "kind": "Conjecture",
+   "statement": "For every graph $H$, $\\chi^*(\\mathcal{M}_H) \\leq 2\\,\\mathrm{td}(H) - 2$.",
+   "context": "Theorem 3 establishes the matching lower bound $\\chi^*(\\mathcal{M}_{H_k}) \\geq 2k-2$ for graphs $H_k$ with $\\mathrm{td}(H_k) = k$, showing that defective and clustered chromatic numbers can differ. The authors conjecture this lower bound is tight, and note the conjecture is proved in Section 4 for the special case $\\mathrm{td}(H) = 3$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1708.02370",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e169",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Theorem of Jamshy and Tarsi (1992): if every bridgeless graph has a nowhere-zero 5-flow then every bridgeless graph has a cycle double cover (via shortest cycle covers of length 7m/5)."
+  ],
+  "source": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  }
+ },
+ {
+  "edge_id": "e170",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "If every forest H gives a polynomially chi-bounded class of H-free graphs, then in particular Forb(H) is chi-bounded for every forest, which is the Gyarfas-Sumner conjecture; the 'only if' direction of the target is a known theorem (Erdos girth construction), and the paper states its Conjecture 2 is equivalent to Gyarfas-Sumner."
+  ],
+  "source": {
+   "id": "arxiv:2202.10412__00",
+   "name": "Polynomial χ-boundedness for H-free forest classes",
+   "kind": "Informal",
+   "statement": "Perhaps every forest is good (i.e., for every forest $H$, the class of $H$-free graphs is polynomially $\\chi$-bounded).",
+   "context": "After recalling that Esperet's conjecture that every $\\chi$-bounded hereditary class is polynomially $\\chi$-bounded was disproved, the authors ask which hereditary classes are polynomially $\\chi$-bounded and raise in particular whether the Gyárfás-Sumner conjecture can be strengthened to polynomial $\\chi$-boundedness. They note that among trees, only those not containing $P_5$ are currently known to be good, and that it is not even known whether $P_5$ is good.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.10412",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1605.07411__00",
+   "name": "Forb(H) χ-bounded iff H is forest",
+   "kind": "Conjecture",
+   "statement": "$\\mathrm{Forb}(H)$ is $\\chi$-bounded if and only if $H$ is a forest.",
+   "context": "The paper notes that an easy argument shows this conjecture is equivalent to the Gyárfás–Sumner Conjecture (Conjecture 1). It generalises the 'only if' direction (which follows from Erdős's girth theorem) to a complete characterisation.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1605.07411",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e171",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "If H-free graphs satisfy chi <= poly(omega) for every forest H, then for K_d(t)-subgraph-free graphs omega < dt, so chi <= poly(dt), polynomial in t for fixed d — exactly multibounding. The 2303.11766 paper states that any forest satisfying the polynomial chi-boundedness conjecture is multibounding."
+  ],
+  "source": {
+   "id": "arxiv:2202.10412__00",
+   "name": "Polynomial χ-boundedness for H-free forest classes",
+   "kind": "Informal",
+   "statement": "Perhaps every forest is good (i.e., for every forest $H$, the class of $H$-free graphs is polynomially $\\chi$-bounded).",
+   "context": "After recalling that Esperet's conjecture that every $\\chi$-bounded hereditary class is polynomially $\\chi$-bounded was disproved, the authors ask which hereditary classes are polynomially $\\chi$-bounded and raise in particular whether the Gyárfás-Sumner conjecture can be strengthened to polynomial $\\chi$-boundedness. They note that among trees, only those not containing $P_5$ are currently known to be good, and that it is not even known whether $P_5$ is good.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.10412",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2303.11766__00",
+   "name": "Forests are multibounding chromatic bound",
+   "kind": "Conjecture",
+   "statement": "Every forest is multibounding.",
+   "context": "A graph $H$ is multibounding if for every $d \\geq 1$ there is a polynomial $f(t)$ such that, for all $t \\geq 1$, every $H$-free graph with no $K_d(t)$ subgraph satisfies $\\chi(G) \\leq f(t)$. Every multibounding graph must be a forest satisfying the Gyárfás-Sumner conjecture, and any forest satisfying the polynomial-bound Conjecture 1.2 is multibounding. The paper establishes that paths, brooms, and disjoint unions of multibounding forests are multibounding, motivating the general conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2303.11766",
+   "attributed_to": "paper authors"
+  }
+ }
+]

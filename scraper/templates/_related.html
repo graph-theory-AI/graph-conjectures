@@ -9,6 +9,7 @@
     <a href="{{ root }}{{ r.other.url }}">{{ r.other.name }}</a>
     <span class="status-badge status-{{ r.other.status }}">{{ r.other.status }}</span>
     {% if r.verdict != 'confirmed' %}<em>({{ r.verdict }})</em>{% endif %}
+    {% if r.flag %}<span class="rel-flag rel-flag-{{ r.flag.kind }}">{{ r.flag.label }}</span>{% endif %}
     <span class="rel-argument">{{ r.argument }}</span>
   </li>
 {% endfor %}

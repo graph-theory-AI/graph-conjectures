@@ -1,0 +1,131 @@
+[
+ {
+  "edge_id": "e020",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 5,
+  "sketches": [
+   "A graph contains a cycle iff its degeneracy is ≥ 2, so 'some out-neighbourhood contains a cycle' is exactly the d=2 instance of 'some out-neighbourhood has degeneracy ≥ d' for graphs of sufficiently large chromatic number.",
+   "A graph contains a cycle iff it has degeneracy ≥ 2, so the cycle-in-out-neighbourhood conjecture is exactly the d=2 case of the question whether high χ forces an out-neighbourhood of degeneracy ≥ d (the paper says it is the case d=2 of Question 10).",
+   "A graph contains a cycle iff it has degeneracy >= 2, so the cycle-in-out-neighbourhood conjecture is exactly the d=2 case of the degeneracy question; the paper explicitly presents Conjecture 11 as the case d=2 of Question 10.",
+   "The d=2 instance: a graph of degeneracy >= 2 contains a subgraph of minimum degree 2 and hence a cycle (graphs of degeneracy <= 1 are exactly forests). So forcing out-neighbourhood degeneracy >= 2 at some vertex forces a cycle in G[N+_T(v)].",
+   "A graph has degeneracy >= 2 iff it contains a cycle, so the cycle-in-out-neighbourhood statement is exactly the d=2 instance of the degeneracy question; the authors present it as such."
+  ],
+  "source": {
+   "id": "arxiv:2305.15585__00",
+   "name": "High chromatic number forcing high degeneracy out-neighbourhood",
+   "kind": "Question",
+   "statement": "Does there exist, for each integer $d$, an integer $\\chi$ such that for every graph $G$ with $\\chi(G)\\geqslant\\chi$ and every tournament $T$ on the same vertex set, there is a vertex $v$ for which $G[N^{+}_{T}(v)]$ has degeneracy at least $d$?",
+   "context": "In the closing remarks the authors note they have been unable to determine whether high chromatic number forces an out-neighbourhood with high degeneracy. The paper's disproof of Conjecture 1 shows chromatic number is not preserved, but degeneracy is a weaker measure and may behave differently.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2305.15585",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2305.15585__01",
+   "name": "Cycle in out-neighbourhood for high-χ graphs",
+   "kind": "Conjecture",
+   "statement": "For every graph $G$ with sufficiently large chromatic number, and every tournament $T$ on the same vertex set, there exists a vertex $v$ such that $G[N^{+}_{T}(v)]$ contains a cycle.",
+   "context": "The authors suspect that the case $d=2$ of Question 10 is true, i.e., high chromatic number should force some out-neighbourhood to contain a cycle. This is the weakest non-trivial instance of the degeneracy question, since bipartite graphs (which arise in their counterexamples) are acyclic-free but 1-degenerate.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2305.15585",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e021",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Both records ask whether 4-colorability of graphs embedded in a fixed surface (other than the sphere) can be decided in polynomial time.",
+   "Both ask whether 4-colorability of graphs embedded in a fixed surface can be tested in polynomial time; the sphere case is trivial by the Four Color Theorem, so 'fixed surface' and 'fixed surface other than the sphere' state the same open problem."
+  ],
+  "source": {
+   "id": "arxiv:1010.2472__00",
+   "name": "4-colorability on fixed surfaces complexity",
+   "kind": "Problem",
+   "statement": "Is there a polynomial-time algorithm for testing 4-colorability of graphs drawn in $\\Sigma$ when $\\Sigma$ is a fixed surface other than the sphere?",
+   "context": "The authors note that while 5-colorability on any fixed surface can be decided in polynomial (even linear) time using the finiteness of 6-critical graphs (Theorem 1), the analogous question for 4-colorability is open, and the techniques currently available do not give much hope for a positive resolution in the near future.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1010.2472",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1404.6356__00",
+   "name": "Polynomial-time 4-colorability on fixed surfaces",
+   "kind": "Informal",
+   "statement": "Whether 4-colorability of graphs embedded in a fixed surface can be tested in polynomial time remains open; the authors remark that prospects for its resolution in the near future are not very bright.",
+   "context": "After announcing that Theorem 1.3 completes one of two missing steps in Thomassen's polynomial-time colorability program, the authors identify the remaining open step as the analogous question for 4-coloring graphs on a fixed surface.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1404.6356",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e022",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 3,
+  "sketches": [
+   "Both ask for the complexity of 3-colouring on P_t-free graphs: whether it is polynomial-time solvable for every fixed t (the cases t ≤ 7 being known, both records target the remaining t ≥ 8).",
+   "Both pose the open complexity of 3-colourability on P_t-free graphs (known polytime for t ≤ 7): one asks to determine the complexity for t ≥ 8, the other asks whether it is polynomial for every fixed t; the open content is identical.",
+   "Both ask the complexity of 3-colourability on P_t-free graphs for large t: 1803.05396__00 asks to determine it for t >= 8 (smaller t known polynomial), 1806.11196__00 conjectures polynomial for every fixed t; the open content is identical."
+  ],
+  "source": {
+   "id": "arxiv:1803.05396__00",
+   "name": "3-colourability complexity of P_t-free graphs",
+   "kind": "Problem",
+   "statement": "Determine the complexity of $3$-colourability of $P_t$-free graphs for $t \\geq 8$.",
+   "context": "Polynomial-time algorithms for 3-colourability of $P_t$-free graphs are known for $t \\leq 7$ (combining results for $t \\leq 5$, $(k,t)=(3,7)$, and hardness for $P_7$-free graphs). The paper notes this problem remains open for $t \\geq 8$, and provides a subexponential-time algorithm as partial progress.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1803.05396",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1806.11196__00",
+   "name": "Polynomial 3-coloring for P_t-free graphs",
+   "kind": "Question",
+   "statement": "Is it true that for every (fixed) integer $t > 0$, the 3-coloring problem can be solved in polynomial time when restricted to the class of $P_t$-free graphs?",
+   "context": "Theorem 1.1 (from the literature) states that if the $k$-coloring problem is polynomial on $H$-free graphs then every connected component of $H$ must be a path. For $k=3$ the converse may hold — it is known to fail for $k>4$ — so the question of whether $P_t$-free graphs always admit a polynomial-time 3-coloring algorithm remains open. The present paper contributes a positive result for the subclass of $(P_6+rP_3)$-free graphs.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1806.11196",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e023",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "A path P_t is a linear forest with one component; polynomial-time 3-Coloring on H-free graphs for every H whose components are paths restricts, at H=P_t, to polynomial-time 3-coloring of P_t-free graphs.",
+   "P_t is a graph all of whose components are paths, so 'if every component of H is a path then 3-Coloring on H-free graphs is polytime' yields, for H=P_t, a polynomial-time 3-coloring algorithm on P_t-free graphs for every t.",
+   "A single path P_t is a linear forest (every component a path), so polynomial 3-Coloring on H-free graphs for all path-component H restricted to H = P_t gives exactly the P_t-free 3-coloring question."
+  ],
+  "source": {
+   "id": "arxiv:2311.05713__00",
+   "name": "Polynomial 3-coloring for path-component-free graphs",
+   "kind": "Informal",
+   "statement": "If every component of $H$ is a path, then the $3$-Coloring Problem restricted to $H$-free graphs can be solved in polynomial time.",
+   "context": "Theorem 1.1 (Holyer; Kamiński and Lozin) establishes that if $H$ has at least one component which is not a path then the $3$-Coloring Problem on $H$-free graphs is NP-hard. Immediately after stating this theorem the paper notes: 'The converse to Theorem 1.1 is wide open.'",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2311.05713",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1806.11196__00",
+   "name": "Polynomial 3-coloring for P_t-free graphs",
+   "kind": "Question",
+   "statement": "Is it true that for every (fixed) integer $t > 0$, the 3-coloring problem can be solved in polynomial time when restricted to the class of $P_t$-free graphs?",
+   "context": "Theorem 1.1 (from the literature) states that if the $k$-coloring problem is polynomial on $H$-free graphs then every connected component of $H$ must be a path. For $k=3$ the converse may hold — it is known to fail for $k>4$ — so the question of whether $P_t$-free graphs always admit a polynomial-time 3-coloring algorithm remains open. The present paper contributes a positive result for the subclass of $(P_6+rP_3)$-free graphs.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1806.11196",
+   "attributed_to": "paper authors"
+  }
+ }
+]

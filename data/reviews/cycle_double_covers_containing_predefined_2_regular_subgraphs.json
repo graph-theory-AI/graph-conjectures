@@ -1,7 +1,7 @@
 {
   "slug": "cycle_double_covers_containing_predefined_2_regular_subgraphs",
-  "reviewed_at": "2026-05-08",
-  "model": "claude-sonnet (subagent)",
+  "reviewed_at": "2026-09-06",
+  "model": "claude-opus-5 (manual update, 2607.16356v3 read in full)",
   "search_enabled": true,
   "status": "partial",
   "confidence": "medium",
@@ -37,12 +37,13 @@
     "\"Non-separating cycles and 5-cycle double covers\" Discrete Mathematics 2025 DOI authors"
   ],
   "verified_urls": [
-    "https://arxiv.org/abs/1711.10614",
     "https://arxiv.org/abs/1706.05595",
-    "https://www.sciencedirect.com/science/article/abs/pii/S0012365X25001232",
+    "https://arxiv.org/abs/1711.10614",
+    "https://arxiv.org/abs/2607.16356",
     "https://dblp.org/pid/61/2676.html",
     "https://doi.org/10.1016/j.disc.2025.114479",
-    "https://doi.org/10.1137/22M1472425"
+    "https://doi.org/10.1137/22M1472425",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0012365X25001232"
   ],
-  "notes": "The OPG conjecture is for 2-regular subgraphs $S$ that may consist of multiple disjoint cycles (with $G-E(S)$ connected, not necessarily a tree). The 2019 paper (already cited in the OPG entry) covers $S$ with at most 3 components when $G-E(S)$ is a spanning tree. The 2025 Li-Hao-Luo-Zhang paper handles the single-cycle (k=1) non-separating case more strongly (5-CDC/6-CDC); ScienceDirect abstract page returned 403 so confirmation relied on indexed search snippets. No WebFetch-verified post-2017 source establishes the full conjecture for arbitrary k or refutes it, so the original conjecture is treated as open with meaningful partial progress."
+  "notes": "The OPG conjecture is for 2-regular subgraphs $S$ that may consist of multiple disjoint cycles (with $G-E(S)$ connected, not necessarily a tree). The 2019 paper (already cited in the OPG entry) covers $S$ with at most 3 components when $G-E(S)$ is a spanning tree. The 2025 Li-Hao-Luo-Zhang paper handles the single-cycle (k=1) non-separating case more strongly (5-CDC/6-CDC); ScienceDirect abstract page returned 403 so confirmation relied on indexed search snippets. No WebFetch-verified post-2017 source establishes the full conjecture for arbitrary k or refutes it, so the original conjecture is treated as open with meaningful partial progress. 2026-09-06 update: the cycle double cover conjecture itself is now a theorem (OpenAI/GPT-5.6, July 2026; exposition arXiv:2607.16356). This page asks for a cycle double cover *containing a prescribed 2-regular subgraph* $S$; the new proof constructs a cover from the supports of $\\mathbb{F}_2^3$ labels with no way to force prescribed cycles into it, so the conjecture stands."
 }

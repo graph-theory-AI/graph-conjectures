@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e164",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "The lamination conjecture together with the already-proved lower bound n(2,d) > (1−o(1))d²/2 yields lim n(2,d)/d² = 1/2 (as stated in the record); in particular the limit exists, answering the open question affirmatively."
+  ],
+  "source": {
+   "id": "arxiv:2212.05133__00",
+   "name": "n(2,d) asymptotic limit ½",
+   "kind": "Informal",
+   "statement": "A general conjecture is posed in the final section which, together with the lower bound $n(2,d) > (1-o(1))\\frac{d^2}{2}$, would imply that $\\lim_{d\\to\\infty} \\frac{n(2,d)}{d^2} = \\frac{1}{2}$.",
+   "context": "The authors establish the lower bound $n(2,d) > (1-o(1))\\frac{d^2}{2}$, improving the previous bound $n(2,d) > \\frac{d^2}{4}$. They remark that determining the precise asymptotic order of $n(2,d)$ seems to be a hard task (as noted earlier by Alon and by Huang–Sudakov), and refer to a formal conjecture in the final section concerning lamination-based constructions.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2212.05133",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2212.05133__01",
+   "name": "Existence of limit n(2,d)/d²",
+   "kind": "Question",
+   "statement": "Does $\\lim_{d\\to\\infty} \\frac{n(2,d)}{d^2}$ exist?",
+   "context": "The authors conjecture that if the limit exists it equals $\\frac{1}{2}$, but explicitly remark that even the existence of the limit is currently unknown. The paper provides the lower bound $n(2,d) > (1-o(1))\\frac{d^2}{2}$ via Theorem 2.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2212.05133",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e165",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "If T(G) = Θ̃(√|G|) uniformly over all finite groups G, then T(p) = Θ̃(√p) for primes p (far below the current O(p^{3/4+ε}) upper bound, which relies on subgroups), and T(G) depends on the structure of G beyond its order only up to polylogarithmic factors — settling both parts of the question."
+  ],
+  "source": {
+   "id": "arxiv:2006.00534__00",
+   "name": "Minimal complement count T(n) square-root growth",
+   "kind": "Conjecture",
+   "statement": "We have that $T(n) = \\widetilde{\\Theta}(\\sqrt{n})$. More generally, we have that $T(G) = \\widetilde{\\Theta}(\\sqrt{|G|})$.",
+   "context": "The paper defines $\\widetilde{\\Theta}(g(n))$ to mean $f = \\Omega(g(n)(\\log n)^a)$ and $f(n) = O(g(n)(\\log n)^b)$ for some integers $a,b$ (i.e., equality up to polylogarithmic factors). Theorem 1 gives a lower bound $T(n) \\geq n^{1/3}/(2(\\log n/\\log 2)^{2/3})$ and Theorem 3 gives $T(n) = O(n^{3/4+\\varepsilon})$; the conjecture proposes the true growth rate is $\\widetilde{\\Theta}(\\sqrt{n})$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2006.00534",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2006.00534__01",
+   "name": "T(p) upper bound for prime groups",
+   "kind": "Question",
+   "statement": "Is the behavior of $T(n)$ different when $n$ is prime? How much does $T(G)$ depend on the structure of $G$ in addition to the order of $G$?",
+   "context": "The best upper bound constructions for $T(n)$ rely on the existence of subgroups of certain orders, so the best known upper bound for $T(p)$ when $p$ is prime is only $O(p^{3/4+\\varepsilon})$, which may not be tight.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2006.00534",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e166",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "low",
+  "n_finders": 1,
+  "sketches": [
+   "A closed Riemannian surface with cut locus (hence systole) bounded below by 1 and area at most α has genus bounded in terms of α by the systolic inequality for surfaces (area ≥ c·g/log²g when sys ≥ 1). So if the cop number of Riemannian surfaces is bounded by a function of the genus (positive answer to the first question), the supremum over the class in the second question is finite."
+  ],
+  "source": {
+   "id": "arxiv:1710.11281__01",
+   "name": "Cop number of Riemannian surfaces by genus",
+   "kind": "Question",
+   "statement": "Is the cop number of surfaces bounded in terms of the genus?",
+   "context": "In Section 3 the author introduces a continuous Cops and Robbers game on Riemannian surfaces and poses several basic open questions. The first asks whether the cop number of a Riemannian surface, defined via players moving at unit velocity, is a finite function of the topological genus.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/1710.11281",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1710.11281__04",
+   "name": "Cop number finiteness on bounded Riemannian surfaces",
+   "kind": "Question",
+   "statement": "What is the supremum of the cop numbers taken over all surfaces whose cut locus is at least $1$ and whose area is at most $\\alpha$? Is it bounded?",
+   "context": "The author asks whether restricting to Riemannian surfaces with a positive lower bound on the injectivity radius and an upper bound on total area is enough to guarantee a finite supremum for the cop number.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1710.11281",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e167",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Jaeger showed that the k=2 case of his modular orientation conjecture (every 8-edge-connected graph has a modular 5-orientation) implies Tutte's 5-flow conjecture; the OPG page records this implication.",
+   "Jaeger showed the k=2 case (every 8-edge-connected graph has a modular 5-orientation, i.e. a 5/2-flow) implies that every bridgeless graph has a nowhere-zero 5-flow; stated in the OPG entry."
+  ],
+  "source": {
+   "id": "opg:jaegers_modular_orientation_conjecture",
+   "name": "Jaeger's modular orientation conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ 4k $ - edge-connected graph can be oriented so that $ {\\mathit indegree}(v) - {\\mathit outdegree}(v) \\cong 0 $ (mod $ 2k+1 $ ) for every vertex $ v $ .",
+   "context": "Jaeger called an orientation with the above property a modular $ (2k+1) $ - orientation , and observed that a graph has a modular $ (2k+1) $ -orientation if and only if it has a $ (2+\\frac{1}{k}) $ -flow. Thus, this conjecture may be seen as a sharp form of the 2+epsilon flow conjecture . For k=1, this problem is precisely the 3-flow conjecture , and for k=2, Jaeger showed that this conjecture (if true) would imply the 5-flow conjecture . If true, this conjecture would be best possible for every value of k. The restriction of this conjecture to planar graphs is open, and has a dual formulation. See Mapping planar graphs to odd cycles .",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/jaegers_modular_orientation_conjecture",
+   "attributed_to": "Jaeger, Francois"
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ }
+]

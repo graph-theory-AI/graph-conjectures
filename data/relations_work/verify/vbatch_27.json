@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e108",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 2,
+  "sketches": [
+   "Reversing a single arc is a locally finite perturbation, and for tournaments an induced copy of T is a subtournament copy. So Conjecture 24 supplies, for every non-transitive finite tournament H, a countable H-free tournament in which any single arc reversal creates H, answering Problem 23 for all non-transitive H (the transitive cases are handled by known finite examples noted in the paper).",
+   "Reversing a single arc is a locally finite perturbation, and for tournaments subtournament containment equals induced containment; so the source's S_T witnesses that every non-transitive T belongs to the class the target asks to characterize (transitive T are excluded in the infinite setting by Ramsey)."
+  ],
+  "source": {
+   "id": "arxiv:2506.08810__03",
+   "name": "Induced-saturated infinite tournament existence",
+   "kind": "Conjecture",
+   "statement": "Let $T$ be a finite tournament. If $T$ is not transitive, then there exists a countably infinite $T$-free tournament $S_{T}$ such that every locally finite perturbation of $S_{T}$ has an induced copy of $T$.",
+   "context": "This is proposed as the tournament analogue of the paper's main Theorem 1. The non-transitivity condition is necessary because any tournament on $2^n$ elements contains a transitive subtournament on $n$ elements, so a transitive $T$ cannot be avoided in an infinite structure under locally finite perturbations.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2506.08810",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2506.08810__02",
+   "name": "Arc-reversal induced saturation in tournaments",
+   "kind": "Problem",
+   "statement": "For which finite tournaments $H$, does there exist a countable tournament $G$ that does not contain $H$ as subtournament, yet any tournament obtained from $G$ by changing the direction of a single arc does contain $H$?",
+   "context": "The authors ask for a tournament analogue of induced saturation, where the natural perturbation operation is reversing arcs. They note that when $H$ is a directed triangle there is no finite $G$ but an infinite one exists (the rationals ordered by $<$), and that for the transitive tournament on 3 elements a finite example exists.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2506.08810",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e109",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Forcing implies Sidorenko (standard, also in the directed setting: the forcing property is defined via the Sidorenko-type inequality with equality only for quasirandom targets). Bipartite oriented B with a homomorphism to K-vec2 either has a cycle in its underlying graph (then Conjecture 1.7 gives forcing, hence Sidorenko) or is a forest, for which the directed Sidorenko property is easy/known."
+  ],
+  "source": {
+   "id": "arxiv:2210.16971__01",
+   "name": "Directed forcing characterization via homomorphism",
+   "kind": "Conjecture",
+   "statement": "If $B$ is an oriented graph with a homomorphism to an edge and whose underlying undirected graph has a cycle, then $B$ has the directed forcing property.",
+   "context": "Theorem 1.6 establishes that admitting a homomorphism to a directed edge and having a cycle in the underlying undirected graph are both necessary conditions for the directed forcing property. The authors conjecture these two conditions together are also sufficient, providing a directed analogue of the Skokan–Thoma forcing conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2210.16971",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2210.16971__00",
+   "name": "Directed Sidorenko property for K₂-homomorphic bipartite",
+   "kind": "Conjecture",
+   "statement": "If $B$ is a bipartite oriented graph with a homomorphism $B \\to \\vec{K}_2$, then $B$ has the directed Sidorenko property.",
+   "context": "Observation 3.1 establishes that having a homomorphism to a directed edge is a necessary condition for the directed Sidorenko property. The authors conjecture this condition is also sufficient for bipartite oriented graphs, giving a directed analogue of Sidorenko's conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2210.16971",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e110",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Problem 2.15 asks for the full complexity classification of circular F-colourability over all fixed F; Conjecture 2.16 is the assertion resolving the cyclic-F half of that dichotomy (NP-completeness whenever F contains a directed cycle; acyclic F are trivially polynomial). Solving the classification problem settles the conjecture."
+  ],
+  "source": {
+   "id": "arxiv:1812.02420__00",
+   "name": "Circular F-colourability complexity dichotomy",
+   "kind": "Problem",
+   "statement": "Let $F$ be a fixed (multi-)digraph. Instance: A (multi-)digraph $D$. Decide whether $D$ is circularly $F$-colourable.",
+   "context": "A digraph $D$ is circularly $F$-colourable if there exists a circular homomorphism from $D$ to $F$. This problem generalises Problem 1 and serves as a directed analogue of the $H$-colouring problem for graphs. Conjecture 2.16 asserts that NP-completeness holds whenever $F$ contains a directed cycle, and Theorem 2.17 establishes this for almost all such cases.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1812.02420",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1812.02420__01",
+   "name": "NP-completeness of circular F-coloring",
+   "kind": "Conjecture",
+   "statement": "Let $F$ be a digraph which contains a directed cycle. Then the circular $F$-colouring problem is NP-complete.",
+   "context": "The authors conjecture that, under the assumption $\\mathsf{P}\\neq\\mathsf{NP}$, the only polynomially solvable instances of Problem 2.15 are those where $F$ is acyclic (for which only acyclic digraphs map circularly to $F$). Theorem 2.17 confirms this conjecture for almost all cases.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1812.02420",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e111",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "The question whether every orientation of C4 is Eulerian-avoidable is the instance of the general characterization problem 'which digraphs are Eulerian-avoidable' restricted to the four orientations of the 4-cycle; a full characterization answers it."
+  ],
+  "source": {
+   "id": "arxiv:2510.11311__03",
+   "name": "Characterization of Eulerian-avoidable digraphs",
+   "kind": "Problem",
+   "statement": "Which digraphs are Eulerian-avoidable?",
+   "context": "A digraph $F$ is Eulerian-avoidable if there exists $d_F:\\mathbb{N}\\rightarrow\\mathbb{N}$ such that every Eulerian digraph (where each vertex has equal out- and in-degree) with minimum out-degree at least $d_F(k)$ contains an $F$-free subdigraph with minimum out-degree at least $k$. This setting is highlighted as potentially yielding new insights complementing the regular digraph characterization proved in the paper.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2510.11311",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2510.11311__04",
+   "name": "C₄ Eulerian-avoidability in orientations",
+   "kind": "Question",
+   "statement": "Is every orientation of $C_{4}$ Eulerian-avoidable?",
+   "context": "Restricting to Eulerian digraphs (where each vertex has equal out- and in-degree) may make avoidability questions more tractable. The authors ask whether the specific case of $C_4$, which is open in the general setting, becomes resolvable in the Eulerian host digraph setting.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2510.11311",
+   "attributed_to": "paper authors"
+  }
+ }
+]

@@ -156,14 +156,33 @@ def _years_from_text(s: str | None) -> list[int]:
     return [int(y) for y in re.findall(r"\b(18\d{2}|19\d{2}|20\d{2})\b", s)]
 
 
+def _review_claim_year(item: dict) -> int | None:
+    """A start year stated explicitly by the literature review, if any.
+
+    The heuristics below read years out of the bibliography, which misfires when
+    a problem cites results older than the conjecture itself. A reviewer who
+    knows the real date can pin it with a `claim_year` field in the review JSON.
+    """
+    year = (item.get("_review") or {}).get("claim_year")
+    if isinstance(year, int):
+        return year
+    if isinstance(year, str) and year.isdigit():
+        return int(year)
+    return None
+
+
 def _claim_year_for_problem(problem: dict) -> tuple[int | None, str]:
     """Best available start year for a timeline bar.
 
-    Prefer years from references marked as original. If those are absent, use
-    the earliest bibliographic year we can extract, then finally the OPG posting
-    year. The label explains the provenance so the rendered chart is honest
-    about fallbacks.
+    Prefer a year pinned by the review, then years from references marked as
+    original. If those are absent, use the earliest bibliographic year we can
+    extract, then finally the OPG posting year. The label explains the
+    provenance so the rendered chart is honest about fallbacks.
     """
+    pinned = _review_claim_year(problem)
+    if pinned is not None:
+        return pinned, "review"
+
     original_years: list[int] = []
     all_reference_years: list[int] = []
     for ref in problem.get("references", []):
@@ -184,6 +203,10 @@ def _claim_year_for_problem(problem: dict) -> tuple[int | None, str]:
 
 
 def _claim_year_for_arxiv(row: dict) -> tuple[int | None, str]:
+    pinned = _review_claim_year(row)
+    if pinned is not None:
+        return pinned, "review"
+
     attributed_year = row.get("attributed_year")
     if isinstance(attributed_year, int):
         return attributed_year, "attribution"
@@ -705,10 +728,10 @@ def main(argv: list[str] | None = None) -> int:
                 log.warning("could not load 'others' review %s: %s", rp.name, e)
     log.info("loaded %d 'others' record(s), %d with a review", len(others_records), n_others_reviews)
 
-    # Manually-curated set of confirmed cross-refs to erdosproblems.com.
+    # Only manually confirmed cross-refs to erdosproblems.com are surfaced;
+    # the other rows of intersection.json are unverified fuzzy matches.
     confirmed_intersection_slugs = {
-        "erdos_faber_lovasz_conjecture",
-        "the_erdos_hajnal_conjecture",
+        slug for slug, row in intersection.items() if row.get("confirmed")
     }
 
     # ── decorate OPG problems ──────────────────────────────────────────────────

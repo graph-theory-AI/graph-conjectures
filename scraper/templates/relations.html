@@ -15,6 +15,21 @@
         <strong>not</strong> formally verified (no Rocq/Lean) &mdash; see
         <a href="https://github.com/lviennot/graph-conjectures/blob/main/RELATIONS.md">RELATIONS.md</a>.
       </p>
+      <p class="rel-audit">
+        Cross-checking every edge against the two endpoints' review statuses:
+        <strong>{{ graph.flag_counts.vacuous }}</strong> implications are
+        <span class="rel-flag rel-flag-vacuous">vacuous</span> (the target is
+        already a theorem, or the source is already disproved),
+        <strong>{{ graph.flag_counts.to_verify }}</strong> implications are
+        <span class="rel-flag rel-flag-to_verify">to verify</span> (a solved
+        source or a disproved target would settle the other endpoint, but the
+        implication is only AI-checked and must be formally verified or peer
+        reviewed first) and
+        <strong>{{ graph.flag_counts.inconsistent }}</strong> are
+        <span class="rel-flag rel-flag-inconsistent">inconsistent</span>
+        (an equivalence or duplicate whose endpoints have different statuses).
+        Flagged edges are drawn faintly; click one for the details.
+      </p>
     </div>
   </header>
 
@@ -35,7 +50,7 @@
       <span class="status-badge status-ai-proved">ai-proved</span>
       <span class="status-badge status-ai-disproved">ai-disproved</span>
       <span class="status-badge status-unclear">unclear</span>
-      &nbsp;&middot;&nbsp; circle = OPG, square = arXiv
+      &nbsp;&middot;&nbsp; circle = OPG, square = arXiv, triangle = Bondy &amp; Murty
     </span>
   </div>
 
@@ -78,7 +93,8 @@
   GRAPH.edges.forEach((e, i) => {
     const line = document.createElementNS(NS, "line");
     line.setAttribute("class",
-      "rel-edge rel-" + e.relation + (e.verdict === "plausible" ? " rel-plausible" : ""));
+      "rel-edge rel-" + e.relation + (e.verdict === "plausible" ? " rel-plausible" : "") +
+      (e.flag ? " rel-flagged rel-flagged-" + e.flag.kind : ""));
     if (e.relation === "implies") line.setAttribute("marker-end", "url(#arrow)");
     line.addEventListener("click", ev => { ev.stopPropagation(); showEdge(e); });
     edgeLayer.appendChild(line);
@@ -87,7 +103,7 @@
 
   GRAPH.nodes.forEach(n => {
     const el = document.createElementNS(NS,
-      n.source === "opg" ? "circle" : "rect");
+      n.source === "opg" ? "circle" : n.source === "bm" ? "polygon" : "rect");
     el.setAttribute("class", "rel-node status-fill-" + n.status);
     el.addEventListener("click", ev => { ev.stopPropagation(); showNode(n); });
     el.addEventListener("mousedown", ev => startDragNode(n, ev));
@@ -117,6 +133,13 @@
       const el = nodeEls[i];
       if (n.source === "opg") {
         el.setAttribute("cx", n.x); el.setAttribute("cy", n.y); el.setAttribute("r", R);
+      } else if (n.source === "bm") {
+        // upward triangle centred on the node, slightly larger to match the area
+        const T = R * 1.25;
+        el.setAttribute("points",
+          n.x + "," + (n.y - T) + " " +
+          (n.x + T * 0.866) + "," + (n.y + T / 2) + " " +
+          (n.x - T * 0.866) + "," + (n.y + T / 2));
       } else {
         el.setAttribute("x", n.x - R); el.setAttribute("y", n.y - R);
         el.setAttribute("width", 2 * R); el.setAttribute("height", 2 * R);
@@ -237,7 +260,7 @@
     });
     panel.innerHTML =
       "<h2>" + nodeLink(n) + "</h2>" +
-      '<p class="rel-meta">' + (n.source === "opg" ? "Open Problem Garden" : "arXiv") +
+      '<p class="rel-meta">' + ({ opg: "Open Problem Garden", arxiv: "arXiv", bm: "Bondy &amp; Murty" }[n.source] || n.source) +
       (n.kind ? " &middot; " + esc(n.kind) : "") + "</p>" +
       (n.statement
         ? '<div class="rel-statement"><strong>' + esc(n.kind || "Statement") +
@@ -257,6 +280,9 @@
       ' <span class="rel-verb">' + e.relation.replace(/_/g, " ") + "</span> " +
       nodeLink(nodeById[e.target]) + "</h2>" +
       '<p class="rel-meta">verdict: ' + e.verdict + " &middot; confidence: " + e.confidence + "</p>" +
+      (e.flag
+        ? '<p class="rel-flag rel-flag-' + e.flag.kind + '">' + esc(e.flag.label) + "</p>"
+        : "") +
       "<p>" + esc(e.argument) + "</p>" +
       (e.citations.length
         ? "<ul>" + e.citations.map(c =>

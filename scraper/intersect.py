@@ -176,6 +176,13 @@ def main(argv: list[str] | None = None) -> int:
         if cur is None or r["score"] > cur["score"]:
             best_per_slug[r["opg_slug"]] = r
     out = args.data_dir / "intersection.json"
+    # Keep manual verdicts across re-runs: a `confirmed` flag carries over only
+    # while the row still pairs the same OPG slug with the same erdős id.
+    # Fresh rows start unconfirmed; build.py surfaces only confirmed ones.
+    previous = json.loads(out.read_text(encoding="utf-8")) if out.exists() else {}
+    for slug, r in best_per_slug.items():
+        old = previous.get(slug, {})
+        r["confirmed"] = bool(old.get("confirmed")) and old.get("erdos_id") == r["erdos_id"]
     out.write_text(json.dumps(best_per_slug, indent=2, ensure_ascii=False), encoding="utf-8")
     log.info("wrote %s (%d slug(s))", out, len(best_per_slug))
 

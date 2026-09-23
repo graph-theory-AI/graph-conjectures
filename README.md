@@ -4,7 +4,7 @@
 
 Resolved-conjecture timeline: the illustration predates the Bondy–Murty corpus
 and later literature-status corrections; the site's `/timeline/` page currently
-shows 129 dated solved or disproved entries. Editable SVG:
+shows 130 dated solved or disproved entries. Editable SVG:
 [`scraper/static/resolved-conjectures-timeline.svg`](scraper/static/resolved-conjectures-timeline.svg).
 
 A browseable, status-annotated mirror of the **graph-theory category** of
@@ -46,12 +46,23 @@ Reviewed status counts:
 | status        | OPG  | arXiv | Bondy–Murty | meaning                                                 |
 |---------------|-----:|------:|------------:|----------------------------------------------------------|
 | open          |   51 |   518 |          13 | no significant progress found in literature search       |
-| partial       |  136 |   118 |          21 | progress since posting                                   |
+| partial       |  135 |   118 |          21 | progress since posting                                   |
 | ai-proved     |    1 |    10 |           0 | confirmed model-generated proof artifact                 |
 | ai-disproved  |    3 |     8 |           0 | confirmed model-generated counterexample/disproof        |
-| solved        |   22 |    83 |           3 | fully proved in the literature                            |
+| solved        |   23 |    83 |           3 | fully proved in the literature                            |
 | disproved     |   13 |    22 |           1 | counterexample in the literature                          |
 | unclear       |    1 |     3 |           0 | insufficient information to decide                       |
+
+One OPG problem (`ptas_for_feedback_arc_set_in_tournaments`) counts as
+`solved` although it was already solved before it was posted on OPG
+(Kenyon-Mathieu–Schudy, STOC 2007). Its review has
+`solved_before_posting: true`, and its page says so.
+
+The most recent status change is the **cycle double cover conjecture**
+(`/op/cycle_double_cover_conjecture/`), moved `partial` → `solved` in September
+2026 after the July 2026 OpenAI proof and Sang-il Oum's exposition
+([arXiv:2607.16356](https://arxiv.org/abs/2607.16356)); see
+[Recently resolved](#recently-resolved-the-cycle-double-cover-conjecture).
 
 **44 of the arXiv-extracted records** were also identified as direct progress
 on existing OPG problems and attached as citations on those OPG pages (e.g. on
@@ -64,21 +75,69 @@ excellent companion source.
 ## Relations between conjectures
 
 The corpus also carries a **verified relation graph**,
-[`data/relations.json`](data/relations.json): 190 adversarially verified
-relations between conjectures across both corpora — 143 implications
-("if A is true then B is true"), 9 equivalences, 16 cross-corpus duplicates,
-and 22 documented non-implication links. Each edge records its verified
+[`data/relations.json`](data/relations.json): 225 adversarially verified
+relations between conjectures across the corpora — 159 implications
+("if A is true then B is true"), 8 equivalences, 16 cross-corpus duplicates,
+and 42 documented non-implication links. Each edge records its verified
 direction, a checkable referee argument, and citations where the confirmation
 is literature-based. It was produced by a multi-agent find-and-refute
 pipeline (17 finder agents, then 59 refute-by-default verifiers; 17 of 207
 candidates were refuted, including two false fuzzy matches and a
-conjecture-name collision). "Verified" means checked by adversarial AI
-referees, **not** formally verified — no argument has been machine-checked
-in a proof assistant such as Rocq or Lean. Propagating review statuses along confirmed
-implications also exposed 4 inconsistencies in the review dataset (flagged
-in [`RELATIONS.md`](RELATIONS.md), not yet fixed). See
+conjecture-name collision); 190 edges survived, and 4 duplicate pairs the
+phase-B dedup had missed were merged in September 2026. An incremental pass
+then connected the Bondy–Murty and `others` corpora, adding 39 edges (34
+confirmed, 5 plausible) out of 42 candidates, plus one follow-up edge
+(orientable 5-CDC ⇒ 5-flow). "Verified" means
+checked by adversarial AI referees, **not** formally verified — no argument
+has been machine-checked in a proof assistant such as Rocq or Lean.
+Confronting each edge with the review statuses of its two endpoints is now
+done at build time and shown on the site: 42 implications are **vacuous**
+(target already a theorem, or source already disproved — 10 of them because
+the cycle double cover conjecture was proved), 4 implications are **to
+verify** (a solved source or a disproved target would settle the other
+endpoint, but the implication is only AI-checked, so it must be formally
+verified or peer reviewed before that status can change), and 1 duplicate
+edge is **inconsistent** (its endpoints have different statuses). See
 [`RELATIONS.md`](RELATIONS.md) for the design, findings, and caveats;
 pipeline provenance lives in `data/relations_work/`.
+
+## Recently resolved: the cycle double cover conjecture
+
+On 11 July 2026 OpenAI announced a proof, produced by GPT-5.6 Sol Ultra, that
+**every bridgeless graph has a cycle double cover**, settling the conjecture of
+Seymour and Szekeres. Sang-il Oum's exposition,
+[arXiv:2607.16356](https://arxiv.org/abs/2607.16356), presents it in a
+self-contained ten pages assuming only Fleischner's splitting lemma and the
+Nash-Williams–Tutte tree-packing theorem: reduce to cubic 3-edge-connected
+graphs, take a nowhere-zero $\mathbb{Z}_2^3$-flow $\phi$, and use an
+$\mathbb{F}_2$ consistency criterion to choose vertex labels $t_v$ making the
+two-element edge label $P_e = t_u + \phi(f_u) + \langle\phi(e)\rangle$ well
+defined; the supports of the seven nonzero labels are Eulerian subgraphs
+covering every edge exactly twice.
+
+What this repository changed as a result (September 2026):
+
+| page | before | after |
+|---|---|---|
+| `cycle_double_cover_conjecture` | partial | **solved** |
+| `the_circular_embedding_conjecture` | partial | partial — but the **cubic case is now settled** |
+| `m_n_cycle_covers` | partial | partial — the **(8,2) box of the chart is now a theorem** |
+| `strong_5_cycle_double_cover_conjecture`, `faithful_cycle_covers`, `cycle_double_covers_containing_predefined_2_regular_subgraphs`, `decomposing_eulerian_graphs`, `petersen_coloring_conjecture` | partial/open | unchanged; their implication *into* CDC is now flagged vacuous |
+| `the_berge_fulkerson_conjecture` | partial | unchanged; the `related_only` reading is confirmed — CDC transfers nothing to it |
+
+Explicitly **not** settled by the proof, and still open on the site: the 5-cycle
+double cover conjecture (Celmins, Preissmann — the `(5,2)` case of
+`m_n_cycle_covers`), the orientable 5-CDC conjecture (Archdeacon, Jaeger), which
+would imply the 5-flow conjecture, the oriented cycle double cover conjecture,
+Bondy's $n-1$ small cycle double cover conjecture for simple 2-edge-connected
+graphs, the strong embedding conjecture for non-cubic graphs, and
+Berge–Fulkerson. Bondy's *cubic* small CDC conjecture does become unconditional,
+via Lai–Yu–Zhang, and the Jamshy–Tarsi matroid equivalence upgrades to a theorem
+about coloop-free binary matroids with no $F_7^*$-minor.
+
+The proof has not been peer-reviewed or journal-published, and CDC has a history
+of flawed arXiv proofs; the `solved` status is recorded with that caveat spelled
+out in the reviewer notes on the page.
 
 ## Quick start
 
@@ -197,7 +256,7 @@ OPG branch:
   crawl.py        →  cache/op/<slug>.html     polite crawl, 12s/req
   parse.py        →  data/problems.json       227 OPG problems
   erdos_index.py  →  data/erdos_graph.json    277 erdosproblems records
-  intersect.py    →  data/intersection.json   confirmed OPG ↔ erdos crosslinks
+  intersect.py    →  data/intersection.json   fuzzy OPG ↔ erdos matches (only `confirmed: true` rows used)
   review run      →  data/reviews/<slug>.json 227 status reviews
 
 arXiv branch:
@@ -276,7 +335,7 @@ graph-conjectures/
 │   ├── problems.json                 # 227 OPG problems
 │   ├── reviews/                      # 227 per-slug OPG review JSONs
 │   ├── erdos_graph.json              # erdosproblems.com index, 277 problems
-│   ├── intersection.json             # confirmed OPG↔erdos cross-refs
+│   ├── intersection.json             # fuzzy OPG↔erdos matches; `confirmed` flag per row
 │   ├── arxiv_authors.json            # the 12 curated arxiv authors
 │   ├── arxiv_conjectures.json        # 768 deduped new conjectures
 │   ├── arxiv_extracted/              # 857 raw per-paper extraction outputs
@@ -287,7 +346,7 @@ graph-conjectures/
 │   ├── bondy_murty_reviews/          # 38 per-item status reviews
 │   ├── others_conjectures.json       # hand-written workstream conjectures (Meyniel, …)
 │   ├── others_reviews/               # their status reviews
-│   ├── relations.json                # 190 verified conjecture-to-conjecture relations
+│   ├── relations.json                # 225 verified conjecture-to-conjecture relations
 │   ├── relations_work/               # relation-pipeline provenance (tags, candidates, verdicts)
 │   ├── categories.json
 │   └── authors.json

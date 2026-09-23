@@ -42,6 +42,16 @@
   </h2>
   <p class="summary">{{ p._review.summary }}</p>
 
+  {% if p._review.solved_before_posting %}
+  {% set ref = p._review.pre_posting_resolution %}
+  <p class="notes"><strong>Solved before OPG posting.</strong>
+    {% if ref %}{{ ref.authors }},
+    {% if ref.url %}<a href="{{ ref.url }}">{{ ref.title }}</a>{% else %}{{ ref.title }}{% endif %}
+    ({% if ref.venue %}<em>{{ ref.venue }}</em>{% else %}{{ ref.year }}{% endif %})
+    {%- if ref.doi %} · <a href="https://doi.org/{{ ref.doi }}">doi:{{ ref.doi }}</a>{% endif %}.
+    {% endif %}The status is <code>solved</code>, but the resolution predates the posting.</p>
+  {% endif %}
+
   {% if p._review.since_posted %}
   <h3>Cited literature ({{ p._review.since_posted|length }})</h3>
   <ul class="since-posted">

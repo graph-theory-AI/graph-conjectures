@@ -1,0 +1,124 @@
+[
+ {
+  "edge_id": "e080",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "(even hole, K4)-free graphs are a subclass of even-hole-free graphs, so a polynomial-time MWIS algorithm for even-hole-free graphs would settle the (even hole, K4)-free half of node 2001.01607__03 in P. Caveat: that node also asks about (theta, triangle)-free graphs, which is not covered by the target."
+  ],
+  "source": {
+   "id": "arxiv:2407.08927__00",
+   "name": "MWIS polynomial-time on even-hole-free graphs",
+   "kind": "Problem",
+   "statement": "Does there exist a polynomial-time algorithm for the Maximum Weight Independent Set problem on even-hole-free graphs?",
+   "context": "On even-hole-free graphs, Maximum Weight Clique is known to be polynomial-time solvable, but the question of whether a polynomial-time algorithm exists for Maximum Weight Independent Set remains open. This is in stark contrast to perfect graphs, for which polynomial-time algorithms have been known since 1981. The present paper gives a quasi-polynomial-time algorithm via a polylogarithmic tree independence number bound, but the polynomial-time question is not resolved.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.08927",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2001.01607__03",
+   "name": "MIS complexity for (even hole, K₄)-free graphs",
+   "kind": "Problem",
+   "statement": "Determine the computational complexity of the Maximum Independent Set problem for (even hole, $K_4$)-free graphs and for (theta, triangle)-free graphs.",
+   "context": "Maximum Independent Set is polynomial for (even hole, triangle)-free and (even hole, pyramid)-free graphs. The paper gives polynomial algorithms for (theta, triangle, $S_{i,j,k}$)-free and (even hole, pyramid, $K_t$, $S_{i,j,k}$)-free graphs via bounded treewidth, but the complexity for the larger classes (even hole, $K_4$)-free and (theta, triangle)-free is stated as unknown.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2001.01607",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e081",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Both ask to characterize graph classes with γ(G) ≤ c·(2-packing number) uniformly: 2503.05562 writes the packing number ρ(G), while 2601.15082 writes α_2(G); its remark that the fractional relaxations of γ and α_2 coincide (LP duality of domination and closed-neighborhood packing) indicates α_2 there is the 2-packing number ρ. Same characterization problem up to notation."
+  ],
+  "source": {
+   "id": "arxiv:2503.05562__01",
+   "name": "Characterization of bounded γ/ρ graph classes",
+   "kind": "Question",
+   "statement": "Characterize those graph classes $\\mathcal{G}$ for which there is a constant $c_{\\mathcal{G}}$ such that $\\dfrac{\\gamma(G)}{\\rho(G)}\\leqslant c_{\\mathcal{G}}$ for each $G\\in\\mathcal{G}$.",
+   "context": "In the conclusion, after extending both the list of graph classes with bounded $\\gamma/\\rho$ ratio and those with unbounded ratio (notably showing 2-degenerate graphs have bounded ratio), the authors note that Theorem 6.1 on 2-degenerate graphs rules out any characterization purely in terms of sparse graph classes.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2503.05562",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2601.15082__00",
+   "name": "Bounded domination-to-2-independence ratio characterization",
+   "kind": "Problem",
+   "statement": "Which graph classes have bounded domination-to-2-independence ratio?",
+   "context": "The domination-to-2-independence ratio of a graph class $\\mathcal{G}$ is defined as $\\sup_{G\\in\\mathcal{G}}\\tfrac{\\gamma(G)}{\\alpha_{2}(G)}$. Since the fractional relaxations of domination number and $2$-independence number coincide, a bounded ratio would allow both parameters to be approximated via their common fractional relaxation, computable in polynomial time. The problem has been studied for trees, strongly chordal graphs, dually chordal graphs, outerplanar graphs, and other sparse graph classes.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2601.15082",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e082",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Same class (triangle-free planar) and same property (induced 2-degenerate subgraph) with monotone bound: 7/8 of the vertices ≥ 5/6 of the vertices, so the 7/8 conjecture implies the 5/6 statement.",
+   "Same hypothesis class (triangle-free planar) and same conclusion type; 7/8 >= 5/6, so an induced 2-degenerate subgraph on 7/8 of the vertices is in particular one on 5/6 of the vertices."
+  ],
+  "source": {
+   "id": "arxiv:1709.04036__00",
+   "name": "Induced 2-degenerate ⅞ subgraph triangle-free planar",
+   "kind": "Conjecture",
+   "statement": "Every triangle-free planar graph contains an induced 2-degenerate subgraph on at least $\\frac{7}{8}$ of its vertices.",
+   "context": "The authors introduce this as the central open problem motivating the paper, noting it would be tight for the cube (the unique 3-regular triangle-free planar graph on 8 vertices). The paper's main theorems (Theorems 1.2 and 1.3) prove weaker bounds of $\\frac{4}{5}$ and $\\frac{7}{8}n - 18n_3$ respectively as partial progress.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1709.04036",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1709.04036__01",
+   "name": "5/6 bound induced 2-degenerate triangle-free planar",
+   "kind": "Informal",
+   "statement": "We believe the argument we use can be strengthened to give a bound $\\frac{5}{6}$, however the technical issues are substantial and since we do not see this as a viable way to prove Conjecture 1.1 in full, we prefer to present the easier argument giving the bound $\\frac{4}{5}$.",
+   "context": "Immediately after stating Theorem 1.2 (the $\\frac{4}{5}$ bound), the authors remark that their method is likely improvable to $\\frac{5}{6}$ but that pursuing this is not a practical route to proving the full $\\frac{7}{8}$ conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1709.04036",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e083",
+  "claimed_relation": "equivalent_to",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 2,
+  "sketches": [
+   "Here c_r is the extremal directed tree-width guarantee for r-regular digraphs; determining lim c_r/r (source) is the same as determining the best asymptotic constant ε with dtw ≥ εr for all r-regular digraphs (target), modulo uniform-vs-asymptotic constant. Both are posed from Theorem 7 of the same paper about the same sequence.",
+   "With c_r the optimal directed tree-width lower bound over r-regular digraphs, the paper proves c_r/r converges to a limit L in [3/22,1]; the best asymptotic constant epsilon with dtw >= epsilon*r is exactly this limit, so determining lim c_r/r and determining the optimal epsilon are the same question asymptotically."
+  ],
+  "source": {
+   "id": "arxiv:2604.13700__00",
+   "name": "Limit of c_r/r in regular digraphs",
+   "kind": "Problem",
+   "statement": "Determine $\\lim_{r\\rightarrow\\infty}\\frac{c_{r}}{r}$.",
+   "context": "The paper proves that the sequence $(c_r/r)_{r\\in\\mathbb{N}}$ converges to some limit $L\\in[\\frac{3}{22},1]$; Problem 2 asks for the exact value of this limit. The problem is stated immediately after the proof of convergence.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2604.13700",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2604.13700__01",
+   "name": "Directed tree-width linear constant in regular digraphs",
+   "kind": "Informal",
+   "statement": "What is the best-possible constant $\\varepsilon>0$ such that every $r$-regular digraph $D$ has directed tree-width at least $\\varepsilon r$?",
+   "context": "Motivated by Theorem 7 of the paper, which establishes that every $r$-regular digraph has directed tree-width growing with $r$, the authors pose this question about the optimal linear constant in such a lower bound.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2604.13700",
+   "attributed_to": "paper authors"
+  }
+ }
+]

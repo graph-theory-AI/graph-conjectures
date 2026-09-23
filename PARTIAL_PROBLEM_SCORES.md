@@ -1,6 +1,6 @@
 # Partial-status problem triage
 
-Generated on 2026-05-08 from `data/reviews/*.json` and `data/problems.json`.
+Generated on 2026-09-06 from `data/reviews/*.json` and `data/problems.json`.
 
 This report selects every review whose `status` is `partial`. In this repository's literature-review taxonomy, `partial` means that meaningful progress is recorded but the original problem, a stated generalization, or a residual component remains open. The open check below is therefore a local check against the dated review record, not a fresh item-by-item web review.
 
@@ -15,10 +15,10 @@ Scores are triage labels, not probabilities. They combine OPG importance, review
 
 ## Summary
 
-- Partial-status problems: 137
-- Review confidence: high: 108, medium: 29
-- Reviewed dates: 2026-05-07, 2026-05-08
-- Still open: all 137 have an open residual question according to their `partial` review status.
+- Partial-status problems: 136
+- Review confidence: high: 107, medium: 29
+- Reviewed dates: 2026-05-07, 2026-05-08, 2026-09-06
+- Still open: all 136 have an open residual question according to their `partial` review status.
 
 ## Counterexample-first shortlist
 
@@ -114,7 +114,7 @@ This is the curated ranking to try first if the goal is to disprove something ra
 
 | Problem | Lean | Proof | Disproof | Difficulty | Confidence | Open check | Note |
 |---|---:|---:|---:|---:|---|---|---|
-| [(m,n)-cycle covers](http://www.openproblemgarden.org/op/m_n_cycle_covers) | balanced | 2 | 1 | 5 | high | mixed: important cases solved; full problem open | The (5,2)-cycle cover conjecture — that every bridgeless graph has a 5-cycle double cover — remains open as of 2026. |
+| [(m,n)-cycle covers](http://www.openproblemgarden.org/op/m_n_cycle_covers) | balanced | 2 | 1 | 5 | high | yes: full/general case open | The (5,2)-cycle cover conjecture -- that every bridgeless graph has a 5-cycle double cover -- remains open as of September 2026, but the chart on this page moved: the July 2026 proof of the cycle double cover conjecture… |
 | [2-colouring a graph without a monochromatic maximum clique](http://www.openproblemgarden.org/op/2_colouring_a_graph_without_a_monochromatic_maximum_clique) | prove | 4 | 1 | 2 | high | mixed: important cases solved; full problem open | The Hoàng–McDiarmid conjecture that every odd-hole-free graph admits a 2-division (a vertex partition into two parts each missing a maximum clique) remains open in full generality. |
 | [3-Colourability of Arrangements of Great Circles](http://www.openproblemgarden.org/op/3_colourability_of_arrangements_of_great_circles) | balanced | 2 | 1 | 3 | high | mixed: important cases solved; full problem open | The conjecture that every arrangement graph of great circles is $3$-colourable remains open. |
 | [3-Decomposition Conjecture](http://www.openproblemgarden.org/op/3_decomposition_conjecture) | prove | 5 | 1 | 3 | high | mixed: important cases solved; full problem open | The 3-Decomposition Conjecture remains open for general connected cubic graphs. |
@@ -148,7 +148,6 @@ This is the curated ranking to try first if the goal is to disprove something ra
 | [Cores of Cayley graphs](http://www.openproblemgarden.org/op/cores_of_cayley_graphs) | prove | 3 | 1 | 3 | high | mixed: important cases solved; full problem open | The original conjecture (and even the special case $M=\mathbb{Z}_2$, the cubelike core question of Nešetřil and Šámal) remains open in general, but substantial partial results have appeared since 2007. |
 | [Crossing numbers and coloring](http://www.openproblemgarden.org/op/crossing_numbers_and_coloring) | balanced | 3 | 4 | 4 | high | mixed: related claim/variant false; residual problem open | Albertson's conjecture remains open in general, but substantial progress has been made since it was posted in 2009. |
 | [Crossing sequences](http://www.openproblemgarden.org/op/crossing_sequences) | prove | 3 | 1 | 3 | medium | mixed: important cases solved; full problem open | The conjecture asks whether every strictly decreasing sequence of nonneg integers ending in 0 is realizable as a crossing sequence of some graph. |
-| [Cycle double cover conjecture](http://www.openproblemgarden.org/op/cycle_double_cover_conjecture) | balanced | 2 | 2 | 5 | high | yes: full/general case open | The Cycle Double Cover Conjecture remains open; no complete proof has been accepted by the mathematical community, and several claimed arXiv proofs (2012, 2015, 2018) were later found to contain errors. |
 | [Cycle Double Covers Containing Predefined 2-Regular Subgraphs](http://www.openproblemgarden.org/op/cycle_double_covers_containing_predefined_2_regular_subgraphs) | balanced | 1 | 1 | 5 | medium | yes: classified partial, so a residual original question is open | The conjecture of Arthur and Hoffmann-Ostenhof asks whether every 2-connected cubic graph $G$ with a 2-regular subgraph $S$ such that $G-E(S)$ is connected has a cycle double cover containing all cycles of $S$. |
 | [Cycles in Graphs of Large Chromatic Number](http://www.openproblemgarden.org/op/cycles_in_graphs_of_large_chromatic_number) | balanced | 2 | 1 | 3 | high | mixed: important cases solved; full problem open | The $k=3$ case of the conjecture — every graph with $\chi(G)>3$ contains at least $4$ cycles of length $0\bmod 3$ — was fully resolved by Kim and Picollelli (2024), who proved that every 4-critical graph contains at lea… |
 | [Decomposing a connected graph into paths.](http://www.openproblemgarden.org/op/decomposing_a_connected_graph_into_paths) | prove | 4 | 1 | 3 | high | mixed: important cases solved; full problem open | Gallai's 1968 conjecture — that every connected graph on $n$ vertices decomposes into at most $\lceil n/2 \rceil$ paths — remains open in general. |
@@ -234,7 +233,7 @@ This is the curated ranking to try first if the goal is to disprove something ra
 | [The Bermond-Thomassen Conjecture](http://www.openproblemgarden.org/op/the_bermond_thomassen_conjecture) | balanced | 3 | 3 | 3 | high | mixed: related claim/variant false; residual problem open | The Bermond-Thomassen conjecture ($\delta^+(D) \geq 2k-1 \Rightarrow k$ disjoint cycles) remains open for general digraphs with $k \geq 4$. |
 | [The Bollobás-Eldridge-Catlin Conjecture on graph packing](http://www.openproblemgarden.org/op/the_bollobas_eldridge_catlin_conjecture_on_graph_packing) | balanced | 2 | 1 | 4 | high | mixed: important cases solved; full problem open | The BEC conjecture remains open in general. |
 | [The Borodin-Kostochka Conjecture](http://www.openproblemgarden.org/op/the_borodin_kostochka_conjecture) | prove | 4 | 1 | 2 | high | yes: full/general case open | The Borodin–Kostochka conjecture remains open for general graphs with $\Delta \ge 9$. |
-| [The circular embedding conjecture](http://www.openproblemgarden.org/op/the_circular_embedding_conjecture) | balanced | 1 | 1 | 5 | high | mixed: important cases solved; full problem open | The circular embedding conjecture (equivalently, the strong embedding conjecture) remains open for general 2-connected graphs. |
+| [The circular embedding conjecture](http://www.openproblemgarden.org/op/the_circular_embedding_conjecture) | balanced | 2 | 1 | 5 | high | mixed: important cases solved; full problem open | The circular embedding conjecture (equivalently, the strong embedding conjecture) is now settled for cubic graphs and remains open for general 2-connected graphs. |
 | [The Crossing Number of the Complete Bipartite Graph](http://www.openproblemgarden.org/op/the_crossing_number_of_the_complete_bipartite_graph) | balanced | 2 | 2 | 5 | high | yes: full/general case open | The Zarankiewicz conjecture that $\mathrm{cr}(K_{m,n}) = \lfloor m/2 \rfloor \lfloor (m-1)/2 \rfloor \lfloor n/2 \rfloor \lfloor (n-1)/2 \rfloor$ remains open in general; it has been verified for $\min\{m,n\} \le 6$ and… |
 | [The Crossing Number of the Complete Graph](http://www.openproblemgarden.org/op/the_crossing_number_of_the_complete_graph) | prove | 4 | 2 | 3 | high | mixed: important cases solved; full problem open | Hill's conjecture that $\mathrm{cr}(K_n) = \frac{1}{4}\lfloor n/2\rfloor\lfloor(n-1)/2\rfloor\lfloor(n-2)/2\rfloor\lfloor(n-3)/2\rfloor$ remains open in general. |
 | [The Crossing Number of the Hypercube](http://www.openproblemgarden.org/op/the_crossing_number_of_the_hypercube) | disprove | 2 | 4 | 4 | high | mixed: related claim/variant false; residual problem open | Yang, Wang, Wang, and Zhou (arXiv 2012, published J. |

@@ -1,0 +1,127 @@
+[
+ {
+  "edge_id": "e088",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "CDC is exactly the case p≡2 of the faithful cover conjecture: for bridgeless G, p≡2 is admissible (p(S)=2|S| is even, and p(e)=2≤p(S)/2=|S| for every cut S since |S|≥2), and a faithful cover of (G,2) is a cycle double cover. The OPG page states this equivalence explicitly."
+  ],
+  "source": {
+   "id": "opg:faithful_cycle_covers",
+   "name": "Faithful cycle covers",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G = (V,E) $ is a graph, $ p : E \\rightarrow {\\mathbb Z} $ is admissable, and $ p(e) $ is even for every $ e \\in E(G) $ , then $ (G,p) $ has a faithful cover.",
+   "context": "Definition: Let $ G=(V,E) $ be a graph and let $ p:E \\rightarrow {\\mathbb Z} $ . A list $ L $ of cycles of $ G $ is a faithful (cycle) cover of $ (G,p) $ if every edge $ e $ of $ G $ occurs in exactly $ p(e) $ cycles of $ L $ . Thus, the cycle double cover conjecture is equivalent to the statement that $ (G,2) $ has a faithful cover for every graph $ G $ with no bridge . We define the map $ p $ to be admissable if $ p(e) $ satisfies the following properties: i $ p $ is nonnegative. ii $ p(S) $ is even for every edge-cut $ S $ . iii $ p(e) \\le p(S)/2 $ for every edge-cut $ S $ and edge $ e \\in S $ . It is easy to see that $ G $ has a faithful cover only if $ p $ is admissable. However, the converse is false. A counterexample is obtained by taking the Petersen graph, putting weight $ 2 $ on the edges of a perfect matching, and $ 1 $ elsewhere. More generally, for a graph G=(V,E), one may consider the vector space of real numbers indexed by E. We associate every circuit C with its incidence vector. Most of the basic questions about this space are solved. Seymour [S] has shown that a vector p can be written as a nonnegative rational combination of cycles if and only if it satisfies conditions (i) and (iii) in the definition of admissable. It is an easy exercise to show that for a 3-edge-connected graph G, a vector p can be written as an integer combination of cycles if and only if p satisfies (ii) in the definition of admissable. Seymour's conjecture is equivalent to the statemen…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/faithful_cycle_covers",
+   "attributed_to": "Seymour, Paul D."
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  }
+ },
+ {
+  "edge_id": "e089",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Classical (Jaeger): a Petersen coloring of a bridgeless cubic graph G pulls back the six perfect matchings of the Petersen graph (each edge of P in exactly two) to six perfect matchings of G covering each edge exactly twice.",
+   "A Petersen coloring is a cycle-continuous map G -> Petersen; pulling back the Petersen graph's six perfect matchings, which cover each of its edges exactly twice, yields six perfect matchings of the bridgeless cubic graph G covering every edge exactly twice. Classical implication of Jaeger, stated on the OPG page.",
+   "Classical (Jaeger): a Petersen coloring transfers the Petersen graph's six perfect matchings covering each edge twice back to G, yielding a Berge-Fulkerson cover. Stated explicitly in the OPG entry."
+  ],
+  "source": {
+   "id": "opg:petersen_coloring_conjecture",
+   "name": "Petersen coloring conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a cubic graph with no bridge . Then there is a coloring of the edges of $ G $ using the edges of the Petersen graph so that any three mutually adjacent edges of $ G $ map to three mutually adjancent edges in the Petersen graph.",
+   "context": "This extrordainary conjecture asserts that in a very strong sense, every bridgeless cubic graph has all of the cycle-space properties posessed by the Petersen graph. If true, this conjecture would imply both The Berge-Fulkerson conjecture and The five cycle double cover conjecture . If $ G $ is a graph and $ C \\subseteq E(G) $ we say that $ C $ is a binary cycle if every vertex in the graph $ (V(G),C) $ has even degree. If $ H $ is a graph and $ f : E(G) \\rightarrow E(H) $ is a map, we say that $ f $ is cycle-continuous if the pre-image of every binary cycle is a binary cycle. The following conjecture is an equivalent reformulation of the Petersen coloring conjecture. Conjecture (Petersen coloring conjecture (2)) Every bridgeless graph has a cycle-continuous mapping to the Petersen graph.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/petersen_coloring_conjecture",
+   "attributed_to": "Jaeger, Francois"
+  },
+  "target": {
+   "id": "opg:the_berge_fulkerson_conjecture",
+   "name": "The Berge-Fulkerson conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a bridgeless cubic graph, then there exist 6 perfect matchings $ M_1,\\ldots,M_6 $ of $ G $ with the property that every edge of $ G $ is contained in exactly two of $ M_1,\\ldots,M_6 $ .",
+   "context": "This conjecture is due to Berge and Fulkerson, and appears first in [F] (see [S79b]). If $ G $ is 3- edge-colorable , then we may choose three perfect matchings $ M_1,M_2,M_3 $ so that every edge is in exactly one. Taking each of these twice gives us 6 perfect matchings with the properties described above. Thus, the above conjecture holds trivially for 3-edge-colorable graphs. There do exist bridgeless cubic graphs which are not 3-edge-colorable (for instance the Petersen graph ), but the above conjecture asserts that every such graph is close to being 3-edge-colorable. Definition: An $ r $ -graph is an $ r $ - regular graph $ G $ on an even number of vertices with the property that every edge-cut which separates $ V(G) $ into two sets of odd cardinality has size at least $ r $ . Observe that a cubic graph is a 3-graph if and only if it has no bridge. If G is an $ r $ -regular graph which has an $ r $ -edge-coloring, then every color class is a perfect matching, so $ |V(G)| $ must be even, and every color must appear in every edge-cut which separates $ V(G) $ into two sets of odd size, so every edge-cut of this form must have size at least $ r $ . Thus, every $ r $ -edge-colorable $ r $ -regular graph is an $ r $ -graph. In a sense, we may view the $ r $ -graphs as the $ r $ -regular graphs which have the obvious necessary conditions to be $ r $ -edge-colorable. Seymour [S79b] defined $ r $ -graphs and offered the following generalization of the Berge-Fulkerson conjecture. Co…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/the_berge_fulkerson_conjecture",
+   "attributed_to": "Berge, Claude, Fulkerson, Delbert R."
+  }
+ },
+ {
+  "edge_id": "e090",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Classical (Jaeger): a Petersen coloring is a cycle-continuous map G→Petersen, and preimages of even subgraphs are even; pulling back a 5-even-subgraph double cover of the Petersen graph gives a (5,2)-cycle-cover of every bridgeless cubic G. The general case reduces to cubic graphs by vertex splitting.",
+   "A (5,2)-cycle cover is a 5-even-subgraph double cover. The Petersen graph has a 5-CDC, and preimages of binary cycles under a cycle-continuous map are binary cycles, so a Petersen coloring pulls back Petersen's 5-CDC to a (5,2)-cover of G; the general bridgeless case reduces to cubic graphs by the standard vertex expansion. OPG lists the 5-CDC as a consequence of Petersen coloring.",
+   "Jaeger: a Petersen coloring pulls back the Petersen graph's 5-even-subgraph double cover to a (5,2)-cycle-cover of the cubic graph G; the general bridgeless case of the (5,2)-cover conjecture reduces to cubic graphs by the standard reduction. OPG states Petersen coloring implies the five cycle double cover conjecture."
+  ],
+  "source": {
+   "id": "opg:petersen_coloring_conjecture",
+   "name": "Petersen coloring conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a cubic graph with no bridge . Then there is a coloring of the edges of $ G $ using the edges of the Petersen graph so that any three mutually adjacent edges of $ G $ map to three mutually adjancent edges in the Petersen graph.",
+   "context": "This extrordainary conjecture asserts that in a very strong sense, every bridgeless cubic graph has all of the cycle-space properties posessed by the Petersen graph. If true, this conjecture would imply both The Berge-Fulkerson conjecture and The five cycle double cover conjecture . If $ G $ is a graph and $ C \\subseteq E(G) $ we say that $ C $ is a binary cycle if every vertex in the graph $ (V(G),C) $ has even degree. If $ H $ is a graph and $ f : E(G) \\rightarrow E(H) $ is a map, we say that $ f $ is cycle-continuous if the pre-image of every binary cycle is a binary cycle. The following conjecture is an equivalent reformulation of the Petersen coloring conjecture. Conjecture (Petersen coloring conjecture (2)) Every bridgeless graph has a cycle-continuous mapping to the Petersen graph.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/petersen_coloring_conjecture",
+   "attributed_to": "Jaeger, Francois"
+  },
+  "target": {
+   "id": "opg:m_n_cycle_covers",
+   "name": "(m,n)-cycle covers",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a (5,2)-cycle-cover.",
+   "context": "Definition: If $ G=(V,E) $ is a graph, a binary cycle of $ G $ is a set $ C \\subseteq E $ such that every vertex of the graph $ (V,C) $ has even degree. An $ (m,n) $ - cycle-cover of $ G $ is a list $ L $ consisting of $ m $ cycles so that every edge of $ G $ is contained in exactly $ n $ of these cycles. Since every binary cycle can be written as a disjoint union of edge sets of ordinary cycles, the above conjecture is a strengthening of the cycle double cover conjecture. For positive integers $ m,n $ it is natural to ask what family of graphs have $ (m,n) $ -cycle-covers. The following chart gives some information about this question for small values of $ m $ and $ n $ . A \"yes\" in the $ (m,n) $ box indicates that every graph with no cut-edge has an $ (m,n) $ -cycle-cover. A \"no\" indicates that no graph has an $ (m,n) $ -cycle-cover. A more detailed explanation of the entries in this chart appears below it. m n 2 3 4 5 6 7 8 9 10 11 2 Eulerian NZ 4-flow NZ 4-flow 5CDC conj open 4 no Eulerian 5 post. sets B-F conj yes [BJJ] yes 6 no Eulerian 7 post. sets ? ? yes [F] yes We did not include odd values of n, since any graph with an $ (m,n) $ -cycle-cover for an odd integer $ n $ must be Eulerian . The entry \"NZ 4-flow\" is short for nowhere-zero 4-flow. Thus, our chart indicates that ( $ G $ has a nowhere-zero 4-flow) if and only if ( $ G $ has a $ (3,2) $ -cycle-cover) if and only if ( $ G $ has a $ (4,2) $ -cycle-cover). These equivalences were discovered by Tutte [Tu]. Two of…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/m_n_cycle_covers",
+   "attributed_to": "Celmins, Uldis A., Preissmann, Myriam"
+  }
+ },
+ {
+  "edge_id": "e091",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Classical (Jaeger): Petersen coloring pulls back a cycle double cover of the Petersen graph (it even yields a 5-CDC) to any bridgeless cubic graph, and CDC reduces to cubic graphs.",
+   "Petersen coloring implies the 5-cycle double cover of every bridgeless graph (pull back Petersen's 5-CDC through the cycle-continuous map, reducing to cubic graphs), and any 5-CDC is in particular a cycle double cover. Stated on the OPG page."
+  ],
+  "source": {
+   "id": "opg:petersen_coloring_conjecture",
+   "name": "Petersen coloring conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a cubic graph with no bridge . Then there is a coloring of the edges of $ G $ using the edges of the Petersen graph so that any three mutually adjacent edges of $ G $ map to three mutually adjancent edges in the Petersen graph.",
+   "context": "This extrordainary conjecture asserts that in a very strong sense, every bridgeless cubic graph has all of the cycle-space properties posessed by the Petersen graph. If true, this conjecture would imply both The Berge-Fulkerson conjecture and The five cycle double cover conjecture . If $ G $ is a graph and $ C \\subseteq E(G) $ we say that $ C $ is a binary cycle if every vertex in the graph $ (V(G),C) $ has even degree. If $ H $ is a graph and $ f : E(G) \\rightarrow E(H) $ is a map, we say that $ f $ is cycle-continuous if the pre-image of every binary cycle is a binary cycle. The following conjecture is an equivalent reformulation of the Petersen coloring conjecture. Conjecture (Petersen coloring conjecture (2)) Every bridgeless graph has a cycle-continuous mapping to the Petersen graph.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/petersen_coloring_conjecture",
+   "attributed_to": "Jaeger, Francois"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  }
+ }
+]

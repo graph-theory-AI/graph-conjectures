@@ -1,0 +1,129 @@
+[
+ {
+  "edge_id": "e012",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "P_t is a forest, so η-boundedness of P_t-free graphs (t≥6) is the restriction of the η-boundedness conjecture for all forests H to H=P_t.",
+   "Paths P_t are forests, so the η-boundedness conjecture for P_t-free graphs (t ≥ 6) is Conjecture 1.8 restricted to H = P_t; the paper notes the cases t ≤ 5 are already proved.",
+   "P_t is a forest, so the conjecture that H-free graphs are eta-bounded for every forest H specializes to the class of P_t-free graphs (t>=6)."
+  ],
+  "source": {
+   "id": "arxiv:2302.04986__00",
+   "name": "η-boundedness for H-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every forest $H$, there exists a function $f:\\mathbb{N}\\rightarrow\\mathbb{N}$ such that every $H$-free graph $G$ satisfies $\\eta(G)\\leq f(\\omega(G))$.",
+   "context": "Proposed as an analogue of the Gyárfás–Sumner conjecture ($\\chi$-boundedness) for $\\eta$-boundedness: just as $H$-free graphs are conjectured to be $\\chi$-bounded for every forest $H$, the authors conjecture the same for $\\eta$-boundedness. The paper proves this conjecture for an assortment of special forests, including stars and paths $P_t$ with $t\\leq 5$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2302.04986",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2302.04986__01",
+   "name": "η-boundedness of Pₜ-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every integer $t\\geq 6$, the class of $P_{t}$-free graphs is $\\eta$-bounded.",
+   "context": "After proving $\\eta$-boundedness for $P_5$-free graphs (Theorem 1.12), the authors note that it remains open whether $P_t$-free graphs are $\\eta$-bounded for $t\\geq 6$, and state this as a conjecture paralleling the known $\\chi$-boundedness of $P_t$-free graphs for all $t$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2302.04986",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e013",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "A disjoint union of two stars S_a∪S_b is a forest; the record itself asks whether this family satisfies the general forest conjecture (their Conjecture 1.8), so it is the H=S_a∪S_b instance.",
+   "The disjoint union of two stars S_a ∪ S_b is a forest; the record explicitly poses this as the instance of Conjecture 1.8 (η-boundedness of H-free graphs for every forest H) with H = S_a ∪ S_b.",
+   "The disjoint union of two stars S_a cup S_b is a forest, so eta-boundedness of (S_a cup S_b)-free graphs is the instance H = S_a cup S_b of the forest conjecture (the paper poses it as the open case of its Conjecture 1.8)."
+  ],
+  "source": {
+   "id": "arxiv:2302.04986__00",
+   "name": "η-boundedness for H-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every forest $H$, there exists a function $f:\\mathbb{N}\\rightarrow\\mathbb{N}$ such that every $H$-free graph $G$ satisfies $\\eta(G)\\leq f(\\omega(G))$.",
+   "context": "Proposed as an analogue of the Gyárfás–Sumner conjecture ($\\chi$-boundedness) for $\\eta$-boundedness: just as $H$-free graphs are conjectured to be $\\chi$-bounded for every forest $H$, the authors conjecture the same for $\\eta$-boundedness. The paper proves this conjecture for an assortment of special forests, including stars and paths $P_t$ with $t\\leq 5$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2302.04986",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2302.04986__04",
+   "name": "η-boundedness for two-star unions",
+   "kind": "Informal",
+   "statement": "It remains open whether the disjoint union of two stars satisfies Conjecture 1.8, i.e., whether the class of $(S_{a}\\cup S_{b})$-free graphs is $\\eta$-bounded for all $a,b\\geq 1$.",
+   "context": "For the Gyárfás–Sumner conjecture, $\\chi$-boundedness of an $H$-free class reduces to $\\chi$-boundedness of the component-free classes. The authors do not know whether the analogous reduction holds for Conjecture 1.8, and in particular whether the disjoint union of two stars satisfies $\\eta$-boundedness.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2302.04986",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e014",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Both assert: for all k (clique bound) and ℓ, graphs with ω<k and sufficiently large χ contain holes of ℓ consecutive lengths; the formulations 'contains K_κ or ℓ consecutive holes' and 'ω<k and χ≥n forces ν consecutive holes' are the same statement.",
+   "Both state: for all κ (clique bound) and ℓ/ν there exists c such that every graph with no K_κ and χ > c has holes of ℓ (resp. ν) consecutive lengths; 'no K_κ subgraph' matches 'no clique of cardinality k'. Same Scott–Seymour consecutive-holes conjecture in two papers of the series."
+  ],
+  "source": {
+   "id": "arxiv:1509.06563__00",
+   "name": "Consecutive holes in bounded clique number graphs",
+   "kind": "Informal",
+   "statement": "The corresponding result to 1.3 is true for graphs with bounded clique number rather than just triangle-free graphs: for all integers $\\nu > 0$ and $k \\geq 3$ there exists $n$ such that if $G$ has no clique of cardinality $k$ and has chromatic number at least $n$, then for some $t$, $G$ has a hole of length $t+i$ for $1 \\leq i \\leq \\nu$.",
+   "context": "Immediately after the statement of the main result (1.3), which establishes $\\nu$ consecutive hole lengths for triangle-free graphs, the authors conjecture the same conclusion holds under the weaker assumption that $G$ has bounded clique number. They note they have made no progress in proving this.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1509.06563",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1705.04609__00",
+   "name": "Consecutive hole lengths for bounded clique number",
+   "kind": "Conjecture",
+   "statement": "For all integers $\\kappa, \\ell \\geq 0$, there exists $c \\geq 0$ such that every graph with chromatic number greater than $c$ contains either a complete subgraph on $\\kappa$ vertices or holes of $\\ell$ consecutive lengths.",
+   "context": "The authors proved in [14] (a prior paper in this series) that every triangle-free graph with sufficiently large chromatic number contains holes of $\\ell$ consecutive lengths (result 1.7 of the present paper). Conjecture 1.8 extends this to graphs with clique number bounded by any $\\kappa$. The conjecture remains open; this paper makes a partial step by proving 1.9, which guarantees holes of two consecutive lengths both greater than $\\ell$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1705.04609",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e015",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Planar duality: G planar with girth ≥ 4k iff its dual G* is 4k-edge-connected, and a modular (2k+1)-orientation of G* is equivalent (Tutte flow/coloring duality) to a circular (2+1/k)-coloring of G, i.e. a homomorphism to C_{2k+1}. So the mapping conjecture is Jaeger's conjecture restricted to duals of planar graphs.",
+   "Restrict Jaeger's conjecture to planar graphs and dualize: girth ≥ 4k of G means the planar dual G* is 4k-edge-connected; a modular (2k+1)-orientation of G* is a (2+1/k)-flow, which dualizes to a (2+1/k)-coloring of G, i.e. a homomorphism to C_{2k+1}. The OPG entry states this duality explicitly.",
+   "This is Jaeger's modular orientation conjecture restricted to planar graphs and dualized: for planar dual pairs, girth(G) = edge-connectivity(G*), a modular (2k+1)-orientation of G* is a (2+1/k)-flow, and a (2+1/k)-flow of G* corresponds to a (2+1/k)-circular-coloring of G, i.e. a homomorphism G -> C_{2k+1}. The OPG page states this duality explicitly."
+  ],
+  "source": {
+   "id": "opg:jaegers_modular_orientation_conjecture",
+   "name": "Jaeger's modular orientation conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ 4k $ - edge-connected graph can be oriented so that $ {\\mathit indegree}(v) - {\\mathit outdegree}(v) \\cong 0 $ (mod $ 2k+1 $ ) for every vertex $ v $ .",
+   "context": "Jaeger called an orientation with the above property a modular $ (2k+1) $ - orientation , and observed that a graph has a modular $ (2k+1) $ -orientation if and only if it has a $ (2+\\frac{1}{k}) $ -flow. Thus, this conjecture may be seen as a sharp form of the 2+epsilon flow conjecture . For k=1, this problem is precisely the 3-flow conjecture , and for k=2, Jaeger showed that this conjecture (if true) would imply the 5-flow conjecture . If true, this conjecture would be best possible for every value of k. The restriction of this conjecture to planar graphs is open, and has a dual formulation. See Mapping planar graphs to odd cycles .",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/jaegers_modular_orientation_conjecture",
+   "attributed_to": "Jaeger, Francois"
+  },
+  "target": {
+   "id": "opg:mapping_planar_graphs_to_odd_cycles",
+   "name": "Mapping planar graphs to odd cycles",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every planar graph of girth $ \\ge 4k $ has a homomorphism to $ C_{2k+1} $ .",
+   "context": "This conjecture is Jaeger's modular orientation conjecture restricted to planar graphs and then dualized. To see this duality, first note that circular coloring and circular flows are dual for planar graphs, and then observe that $ (2k+1) $ -orientations are equivalent to $ 2 + \\frac{1}{k} $ -flows and $ 2 + \\frac{1}{k} $ -colorings are equivalent to homomorphisms to $ C_{2k+1} $ . So if $ G $ and $ G^* $ are dual planar graphs, then we have the following equivalences. \\item $ G $ has a $ (2k+1) $ -orientation. \\item $ G $ has a $ 2 + \\frac{1}{k} $ -flow. \\item $ G^* $ has a $ 2 + \\frac{1}{k} $ -coloring. \\item $ G^* $ has a homomorphism to $ C_{2k+1} $ . There is an easy family of graphs which show that the above conjecture (if true) is best possible. Let $ H_k $ be the graph obtained from an odd circuit of length $ 4k-1 $ by adding a new vertex $ u $ joined to every existing vertex by a path of length $ 2k-1 $ . Now, $ H_k $ is a planar graph of girth $ 4k-1 $ , but there is no homomorphism from $ H_k $ to $ C_{2k+1} $ . To see the latter claim, suppose (for a contradiction) that such a homomorphsim $ f $ exists, let $ C $ be the unique circuit of $ H_k \\setminus u $ and let $ a=f(u) $ . Now, no vertex in $ C $ can map to $ a $ since every such vertex is distance $ 2k-1 $ from $ u $ . However we must then have a homomorphism from $ C $ to $ C_{2k+1} \\setminus a $ , which is impossible since $ C $ is an odd circuit and $ C_{2k+1} \\setminus u $ is bipartite. The k=1 case of t…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/mapping_planar_graphs_to_odd_cycles",
+   "attributed_to": "Jaeger, Francois"
+  }
+ }
+]

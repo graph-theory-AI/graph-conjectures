@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e192",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "ent that every admissable map may be realized as a half-integer combination of circuits. Note the similarity of this to The Berge-Fulkerson conjecture . The most interesting result about faithful covers is a theorem of Alspach, Goddyn, and Zhang which resolved a conject"
+  ],
+  "source": {
+   "id": "opg:faithful_cycle_covers",
+   "name": "Faithful cycle covers",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G = (V,E) $ is a graph, $ p : E \\rightarrow {\\mathbb Z} $ is admissable, and $ p(e) $ is even for every $ e \\in E(G) $ , then $ (G,p) $ has a faithful cover.",
+   "context": "Definition: Let $ G=(V,E) $ be a graph and let $ p:E \\rightarrow {\\mathbb Z} $ . A list $ L $ of cycles of $ G $ is a faithful (cycle) cover of $ (G,p) $ if every edge $ e $ of $ G $ occurs in exactly $ p(e) $ cycles of $ L $ . Thus, the cycle double cover conjecture is equivalent to the statement that $ (G,2) $ has a faithful cover for every graph $ G $ with no bridge . We define the map $ p $ to be admissable if $ p(e) $ satisfies the following properties: i $ p $ is nonnegative. ii $ p(S) $ is even for every edge-cut $ S $ . iii $ p(e) \\le p(S)/2 $ for every edge-cut $ S $ and edge $ e \\in S $ . It is easy to see that $ G $ has a faithful cover only if $ p $ is admissable. However, the converse is false. A counterexample is obtained by taking the Petersen graph, putting weight $ 2 $ on the edges of a perfect matching, and $ 1 $ elsewhere. More generally, for a graph G=(V,E), one may consider the vector space of real numbers indexed by E. We associate every circuit C with its incidence vector. Most of the basic questions about this space are solved. Seymour [S] has shown that a vector p can be written as a nonnegative rational combination of cycles if and only if it satisfies conditions (i) and (iii) in the definition of admissable. It is an easy exercise to show that for a 3-edge-connected graph G, a vector p can be written as an integer combination of cycles if and only if p satisfies (ii) in the definition of admissable. Seymour's conjecture is equivalent to the statemen…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/faithful_cycle_covers",
+   "attributed_to": "Seymour, Paul D."
+  },
+  "target": {
+   "id": "opg:the_berge_fulkerson_conjecture",
+   "name": "The Berge-Fulkerson conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a bridgeless cubic graph, then there exist 6 perfect matchings $ M_1,\\ldots,M_6 $ of $ G $ with the property that every edge of $ G $ is contained in exactly two of $ M_1,\\ldots,M_6 $ .",
+   "context": "This conjecture is due to Berge and Fulkerson, and appears first in [F] (see [S79b]). If $ G $ is 3- edge-colorable , then we may choose three perfect matchings $ M_1,M_2,M_3 $ so that every edge is in exactly one. Taking each of these twice gives us 6 perfect matchings with the properties described above. Thus, the above conjecture holds trivially for 3-edge-colorable graphs. There do exist bridgeless cubic graphs which are not 3-edge-colorable (for instance the Petersen graph ), but the above conjecture asserts that every such graph is close to being 3-edge-colorable. Definition: An $ r $ -graph is an $ r $ - regular graph $ G $ on an even number of vertices with the property that every edge-cut which separates $ V(G) $ into two sets of odd cardinality has size at least $ r $ . Observe that a cubic graph is a 3-graph if and only if it has no bridge. If G is an $ r $ -regular graph which has an $ r $ -edge-coloring, then every color class is a perfect matching, so $ |V(G)| $ must be even, and every color must appear in every edge-cut which separates $ V(G) $ into two sets of odd size, so every edge-cut of this form must have size at least $ r $ . Thus, every $ r $ -edge-colorable $ r $ -regular graph is an $ r $ -graph. In a sense, we may view the $ r $ -graphs as the $ r $ -regular graphs which have the obvious necessary conditions to be $ r $ -edge-colorable. Seymour [S79b] defined $ r $ -graphs and offered the following generalization of the Berge-Fulkerson conjecture. Co…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/the_berge_fulkerson_conjecture",
+   "attributed_to": "Berge, Claude, Fulkerson, Delbert R."
+  }
+ },
+ {
+  "edge_id": "e193",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "riendly partitions appears to be considerably more difficult. Perhaps one reason why is that there exist graphs without unfriendly partitions. For instance, $ K_{2n} $ and $ K_{2n+1,2n+1} $ have no unfriendly partitions. However, it appears possible that the on"
+  ],
+  "source": {
+   "id": "opg:friendly_partitions",
+   "name": "Friendly partitions",
+   "kind": "Conjecture",
+   "statement": "A friendly partition of a graph is a partition of the vertices into two sets so that every vertex has at least as many neighbours in its own class as in the other. Problem Is it true that for every $ r $ , all but finitely many $ r $ -regular graphs have friendly partitions?",
+   "context": "Let me say at the start, that I (M. DeVos) suspect this problem has been considered previously, so I await a more correct attribution. An unfriendly partition of a graph is a partition of the vertices into two sets so that every vertex has at least as many neighbours in the opposite class as its own. It is an easy fact that every (finite) graph has an unfriendly partition; for instance, any maximum size edge-cut gives a partition with this property. Finding friendly partitions appears to be considerably more difficult. Perhaps one reason why is that there exist graphs without unfriendly partitions. For instance, $ K_{2n} $ and $ K_{2n+1,2n+1} $ have no unfriendly partitions. However, it appears possible that the only graphs which fail to have friendly partitions are fairly dense. When $ r=3 $ , the above problem is fairly easy to solve, as it reduces to the problem of finding two vertex disjoint cycles. Every cubic graph other than $ K_4 $ or $ K_{3,3} $ has two disjoint cycles, and thus has a friendly partition. The case when $ r=4 $ is also not terribly complicated. However, the next step up, $ r=5 $ looks like a tricky problem which requires something new.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/friendly_partitions",
+   "attributed_to": "DeVos, Matt"
+  },
+  "target": {
+   "id": "opg:unfriendly_partitions",
+   "name": "Unfriendly partitions",
+   "kind": "Conjecture",
+   "statement": "If $ G $ is a graph, we say that a partition of $ V(G) $ is unfriendly if every vertex has at least as many neighbors in the other classes as in its own. Problem Does every countably infinite graph have an unfriendly partition into two sets?",
+   "context": "It is a simple property that every finite graph $ G $ has an unfriendly partition into two sets - just choose a partition of $ V(G) $ into two sets so that the number of edges with one end in each is maximum. Cowan and Emerson [CE] conjectured that the same property should hold true of infinite graphs. A counterexample to this was constructed by Milner and Shelah [MS], but their construction uses uncountably many vertices, leaving the countable case (highlighted above) still open. In the same article by Milner and Shelah [MS], they show that every graph does have an unfriendly partition into three sets. Curiously, it is quite easy to see that the answer to the above question is yes in the case when all vertices have finite degree, and also in the case when all vertices have infinite degree. The former follows from the unfriendly partition property for finite graphs together with a standard compactness argument. The latter can be achieved with a \"back and forth\" construction. Thus, the difficult case is the mixed one. Aharoni, Milner, and Prikry [AMP] showed that every graph with only finitely many vertices of infinite degree has an unfriendly partition into two sets, but this seems the extent of our knowledge. It does not appear that there is any consensus among experts as to whether this conjecture should be true or false.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/unfriendly_partitions",
+   "attributed_to": "Cowan, Robert H., Emerson, William R."
+  }
+ },
+ {
+  "edge_id": "e194",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "give rise to either loops or parallel edges in the dual. It is striking to compare this conjecture with the Orientable cycle double cover conjecture . Both conjectures may be stated in terms of embedding snarks in orientable surfaces as follows: Conjecture (Grunbaum's"
+  ],
+  "source": {
+   "id": "opg:grunbaums_conjecture",
+   "name": "Grunbaum's Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a simple loopless triangulation of an orientable surface , then the dual of $ G $ is 3-edge-colorable.",
+   "context": "The Four Color Theorem is equivalent to the statement that every cubic planar graph with no bridge is 3- edge-colorable . This is precisely equivalent to Grunbaum's conjecture restricted to the plane. Thus, Grunbaum's conjecture, if true, would imply the Four Color Theorem. Indeed, this conjecture suggests a deep generalization of the 4-color theorem. Definition: A cubic graph $ G $ is a snark if $ G $ is internally 4-edge-connected and $ G $ is not 3-edge-colorable. Grunbaum's conjecture states that no snark is the dual of a simple loopless triangulation of an orientable surface. In this light, the conjecture looks to be almost obviously false. To find a counterexample, it suffices to embed a snark in an orientable surface so that the dual has no loops or parallel edges. Of course, the difficulty is in satisfying this last constraint. All known embeddings of snarks in orientable surfaces give rise to either loops or parallel edges in the dual. It is striking to compare this conjecture with the Orientable cycle double cover conjecture . Both conjectures may be stated in terms of embedding snarks in orientable surfaces as follows: Conjecture (Grunbaum's conjecture (version 2)) Every embedding of a snark in an orientable surface has a cycle of length 1 or 2 (a loop or parallel edges) in the dual. Conjecture (Orientable cycle double cover conjecture) Every snark may be embedded in an orientable surface so that the dual graph has no cycle of length 1 (no loop). In this light it m…",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/grunbaums_conjecture",
+   "attributed_to": "Grunbaum, Branko"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  }
+ },
+ {
+  "edge_id": "e195",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "\\chi(G) \\le C \\frac{\\Delta}{\\log \\Delta} $ for some fixed constant $ C $ . Neverless, some interesting smaller cases of Grunbaum's conjecture, such as the one highlighted above, might still be true. There are only a few 4-regular 4-chromatic graphs of girth $ \\"
+  ],
+  "source": {
+   "id": "opg:high_girth_low_degree_4_chromatic_graphs",
+   "name": "4-regular 4-chromatic graphs of high girth",
+   "kind": "Conjecture",
+   "statement": "Problem Do there exist 4-regular 4-chromatic graphs of arbitrarily high girth?",
+   "context": "Grunbaum conjectured that for every $ m $ , there exist $ m $ -regular $ m $ -chromatic graphs of arbitrarily high girth. However, this was shown dramatically false by Johansson, who proved that every triangle free graph $ G $ with maximum degree $ \\Delta $ satisfies $ \\chi(G) \\le C \\frac{\\Delta}{\\log \\Delta} $ for some fixed constant $ C $ . Neverless, some interesting smaller cases of Grunbaum's conjecture, such as the one highlighted above, might still be true. There are only a few 4-regular 4-chromatic graphs of girth $ \\ge 4 $ which are known. These include the Chvatal graph , Brinkmann graph (discovered independently by Kostochka), and Grunbaum graph . To the best of my (M. DeVos') knowledge, this might be the full list of such graphs. There do exist 4-chromatic graphs of minimum degree $ \\le 6 $ and arbitrarily high girth, but it is open wether there exist 4-chromatic graphs of minimum degree 5 and arbitrary girth.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/high_girth_low_degree_4_chromatic_graphs",
+   "attributed_to": "Grunbaum, Branko"
+  },
+  "target": {
+   "id": "opg:grunbaums_conjecture",
+   "name": "Grunbaum's Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a simple loopless triangulation of an orientable surface , then the dual of $ G $ is 3-edge-colorable.",
+   "context": "The Four Color Theorem is equivalent to the statement that every cubic planar graph with no bridge is 3- edge-colorable . This is precisely equivalent to Grunbaum's conjecture restricted to the plane. Thus, Grunbaum's conjecture, if true, would imply the Four Color Theorem. Indeed, this conjecture suggests a deep generalization of the 4-color theorem. Definition: A cubic graph $ G $ is a snark if $ G $ is internally 4-edge-connected and $ G $ is not 3-edge-colorable. Grunbaum's conjecture states that no snark is the dual of a simple loopless triangulation of an orientable surface. In this light, the conjecture looks to be almost obviously false. To find a counterexample, it suffices to embed a snark in an orientable surface so that the dual has no loops or parallel edges. Of course, the difficulty is in satisfying this last constraint. All known embeddings of snarks in orientable surfaces give rise to either loops or parallel edges in the dual. It is striking to compare this conjecture with the Orientable cycle double cover conjecture . Both conjectures may be stated in terms of embedding snarks in orientable surfaces as follows: Conjecture (Grunbaum's conjecture (version 2)) Every embedding of a snark in an orientable surface has a cycle of length 1 or 2 (a loop or parallel edges) in the dual. Conjecture (Orientable cycle double cover conjecture) Every snark may be embedded in an orientable surface so that the dual graph has no cycle of length 1 (no loop). In this light it m…",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/grunbaums_conjecture",
+   "attributed_to": "Grunbaum, Branko"
+  }
+ }
+]

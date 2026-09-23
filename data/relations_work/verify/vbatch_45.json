@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e180",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "$ , then $ G $ contains every tree of order $ k $ . Addario-Berry et al. Conjecture also implies Burr's conjecture (see Oriented trees in n-chromatic digraphs ) for antidirected trees, since every digraph with chromatic number $ 2k-2 $ contains a colour-critical digraph has min"
+  ],
+  "source": {
+   "id": "opg:antidirected_trees_in_digraphs",
+   "name": "Antidirected trees in digraphs",
+   "kind": "Conjecture",
+   "statement": "An antidirected tree is an orientation of a tree in which every vertex has either indegree 0 or outdergree 0. Conjecture Let $ D $ be a digraph. If $ |A(D)| > (k-2) |V(D)| $ , then $ D $ contains every antidirected tree of order $ k $ .",
+   "context": "The value $ k-2 $ would be best possible, since the oriented tree consisting of a vertex dominating $ k-1 $ other vertices is not contained in any digraph in which every vertex has outdegree $ k-2 $ . The condition on the trees be antidirected cannot be suppressed. In a bipartite digraph $ D $ with bipartition $ (A,B) $ such that all arcs are directed from $ A $ to $ B $ , all the trees contained in $ D $ are antidirected. This conjecture for symmetric digraphs is equivalent to the celebrated Erdös-Sos conjecture for undirected graphs. (see [E]). Conjecture Let $ G $ be a graph. If $ |E(G)| > \\frac{1}{2} (k-2) |V(G)| $ , then $ G $ contains every tree of order $ k $ . Addario-Berry et al. Conjecture also implies Burr's conjecture (see Oriented trees in n-chromatic digraphs ) for antidirected trees, since every digraph with chromatic number $ 2k-2 $ contains a colour-critical digraph has minimum degree at least $ 2k-3 $ , and so whose number of vertices is at least $ \\frac{2k-3}{2}|V(D)| $ , which exceeds $ (k-2) |V(D)| $ . This conjecture has only been proved [AHL+] for antidirected trees of diameter at most $ 3 $ .",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/antidirected_trees_in_digraphs",
+   "attributed_to": "Addario-Berry, Louigi, Havet, Frédéric, Linhares Sales, Claudia, Reed, Bruce A., Thomassé, Stéphan"
+  },
+  "target": {
+   "id": "opg:oriented_trees_in_n_chromatic_digraphs",
+   "name": "Oriented trees in n-chromatic digraphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every digraph with chromatic number at least $ 2k-2 $ contains every oriented tree of order $ k $ as a subdigraph.",
+   "context": "The conjectured bound is best possible, because a regular tournament of order $ 2k-3 $ does not contain the oriented tree consisting of a vertex dominating $ k-1 $ leaves. Let $ f $ be the function $ f $ such that every oriented tree of order $ k $ is $ f(k) $ -universal, that is contained in every digraph with chromatic number at least $ f(k) $ . Burr proved that $ f(k) \\leq (k-1)^2 $ . This was slightly improved by Addario-Berry et al. [AHL+] who proved $ f(k)\\leq k^2/2-k/2+1 $ . Burr's conjecture has been proved only in few particular cases of digraphs: tournaments, and acyclic digraphs. Kühn, Mycroft, and Osthus [KMS] showed that every oriented tree of order $ k $ is contained in every tournament of order $ 2k-2 $ for all sufficiently large $ k $ (so proving a Conjecture of Sumner); Addario-Berry et al. [AHL+] proved that every acyclic digraph with chromatic number $ k $ contains every oriented tree of order $ k $ . Burr's conjecture or some approximation have been also proved for special classes of trees. Gallai-Roy's celebrated theorem states that every directed path of order $ k $ is $ k $ -universal; El-Sahili [E] proved that every oriented path of order $ 4 $ is $ 4 $ -universal and that the antidirected path of order $ 5 $ is $ 5 $ -universal; Addario-Berry, Havet, and Thomassé [AHT] showed that every oriented path of order $ k $ whose vertex set can be partioned into two directed paths is $ k $ -universal; Addario-Berry et al. [AHL+] showed that antidirected trees …",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/oriented_trees_in_n_chromatic_digraphs",
+   "attributed_to": "Burr, S. A."
+  }
+ },
+ {
+  "edge_id": "e181",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "Reed [MR] showed that there exists a constant $ C $ such that $ \\chi''(G)\\leq Delta(G)+C $ for every graph $ G $ . The Edge list coloring conjecture would imply that $ \\chi''(G)\\leq \\Delta(G)+3 $ . The Total Colouring Conjecture was proved for $ \\Delta(G)=3 $ by Rosen"
+  ],
+  "source": {
+   "id": "opg:behzads_conjecture",
+   "name": "Total Colouring Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture A total coloring of a graph $ G = (V,E) $ is an assignment of colors to the vertices and the edges of $ G $ such that every pair of adjacent vertices, every pair of adjacent edges and every vertex and incident edge pair, receive different colors. The total chromatic number of a graph $ G $ , $ \\chi''(G) $ , equals the minimum number of colors needed in a total coloring of $ G $ . It is an old conjecture of Behzad that for every graph $ G $ , the total chromatic number equals the maximum degree of a vertex in $ G $ , $ \\Delta(G) $ plus one or two. In other words, \\[\\chi''(G)=\\Delta(G)+1\\ \\ or \\ \\ \\Delta(G)+2.\\]",
+   "context": "The lower bound $ \\Delta(G)+1 $ is trivial by looking at the number of colours required on a vertex of maximum degree and its incident edges. It is easy to prove $ \\chi''(G)\\leq 2\\Delta(G)+2 $ . Molloy and Reed [MR] showed that there exists a constant $ C $ such that $ \\chi''(G)\\leq Delta(G)+C $ for every graph $ G $ . The Edge list coloring conjecture would imply that $ \\chi''(G)\\leq \\Delta(G)+3 $ . The Total Colouring Conjecture was proved for $ \\Delta(G)=3 $ by Rosenfeld [R] and also by Vijayaditya [V], and for $ \\Delta(G)\\in\\{4,5\\} $ by Kostochka [K1,K2,K3]; in fact the proof for $ \\Delta(G)=5 $ holds for multigraphs. The Conjecture has also been established for many graph classes. For every planar graph G with $ \\Delta(G) \\geq 7 $ , the following clever argument proves it. By the 4 Color Theorem, we can color the vertices with the colors 1, 2, 3, 4. By a result of Sanders and Zhao [SZ], we can color the edges of the graph with the colors $ 3, 4, \\ldots, \\Delta(G) + 1, \\Delta(G) + 2 $ . Uncolor each edge that was colored 3 or 4. Note that each uncolored edge has exactly two colors from $ \\{1,2,3,4\\} $ forbidden. Hence, each uncolored edge has at least two colors available. Note that the uncolored edges induce a disjoint union of paths and even cycles. Thus, by a special case of a theorem of Erdos, Rubin, and Taylor [ERT], we can color the edges from their lists of two available colors each.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/behzads_conjecture",
+   "attributed_to": "Behzad, M."
+  },
+  "target": {
+   "id": "opg:edge_list_coloring_conjecture",
+   "name": "Edge list coloring conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a loopless multigraph. Then the edge chromatic number of $ G $ equals the list edge chromatic number of $ G $ .",
+   "context": "The list edge chromatic number of $ G $ is also known as the list chromatic index , the edge choosability , or the edge choice number of $ G $ . It is the list chromatic number of the line graph of $ G $ . Similarly, the edge chromatic number of $ G $ is also known as the edge chromatic index , and it is the chromatic number of the line graph of $ G $ . The chromatic number of a graph is always less than or equal to the list chromatic number; the two quantities differ in general, but the conjecture says that they coincide for line graphs. Sometime the conjecture is simply referred to as the list coloring conjecture , although this is perhaps poor terminology since there exist other conjectures about list coloring. Perhaps the most famous partial result is Galvin's theorem [G] that the conjecture holds for bipartite multigraphs. Galvin's result settled the well-known Dinitz conjecture in the affirmative. The conjecture has been attributed to many different people. See [JT, Problem 12.20] for a history of the problem up to 1995.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/edge_list_coloring_conjecture",
+   "attributed_to": ""
+  }
+ },
+ {
+  "edge_id": "e182",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "oreover, can the constant $ c_k $ be made independent of $ k $ ? These questions are also related to the so-called List Total Colouring Conjecture of Borodin, Kostochka and Woodall [BKW], which says that the total graph of a multigraph always satisfies $ \\text{ch}=\\"
+  ],
+  "source": {
+   "id": "opg:choosability_of_graph_powers",
+   "name": "Choosability of Graph Powers",
+   "kind": "Conjecture",
+   "statement": "Question (Noel, 2013) Does there exist a function $ f(k)=o(k^2) $ such that for every graph $ G $ , \\[\\text{ch}\\left(G^2\\right)\\leq f\\left(\\chi\\left(G^2\\right)\\right)?\\]",
+   "context": "For a survey of choosability, including relevant definitions, see [Noe] or click here . The List Square Colouring Conjecture, due to Kostochka and Woodall [KW], states that $ \\text{ch}\\left(G^2\\right) = \\chi\\left(G^2\\right) $ for every graph $ G $ . This was disproved by Kim and Park [KP], who proved that there is a sequence $ \\{G_n\\}_n $ of graphs and a constant $ c_1 $ such that $ \\chi\\left(G^2_n\\right)\\to\\infty $ and $ \\text{ch}\\left(G_n^2\\right) \\geq c_1 \\chi\\left(G_n^2\\right)\\log\\left(\\chi\\left(G_n^2\\right)\\right) $ for all $ n $ . To obtain this lower bound from the construction of Kim and Park, one can apply the well-known result of Alon [Alo]. It may be the case that the correct upper bound for all graphs is of the same order of magnitude as the example in the result of Kim and Park. Question (Noel, 2013) Does there exist a positive constant $ c_2 $ such that every graph $ G $ satisfies $ \\text{ch}\\left(G^2\\right) \\leq c_2\\chi\\left(G^2\\right)\\log{\\chi\\left(G^2\\right)} $ ? By calculating the clique number and maximum degree of $ G^2 $ , one can easily show that $ \\text{ch}\\left(G^2\\right)\\leq\\chi\\left(G^2\\right)^2 $ (this observation is due to Young Soo Kwon), but it seems that no significantly better bound is known. Proposition If $ G $ contains an edge, then \\[\\text{ch}\\left(G^2\\right)< \\chi\\left(G^2\\right)^2.\\] Proof We observe the following bounds: \\[\\chi\\left(G^2\\right) \\geq \\omega\\left(G^2\\right) \\geq \\Delta(G)+1,\\] \\[\\text{ch}\\left(G^2\\right) \\leq \\Delta\\left(G^…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/choosability_of_graph_powers",
+   "attributed_to": "Noel, Jonathan A."
+  },
+  "target": {
+   "id": "opg:behzads_conjecture",
+   "name": "Total Colouring Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture A total coloring of a graph $ G = (V,E) $ is an assignment of colors to the vertices and the edges of $ G $ such that every pair of adjacent vertices, every pair of adjacent edges and every vertex and incident edge pair, receive different colors. The total chromatic number of a graph $ G $ , $ \\chi''(G) $ , equals the minimum number of colors needed in a total coloring of $ G $ . It is an old conjecture of Behzad that for every graph $ G $ , the total chromatic number equals the maximum degree of a vertex in $ G $ , $ \\Delta(G) $ plus one or two. In other words, \\[\\chi''(G)=\\Delta(G)+1\\ \\ or \\ \\ \\Delta(G)+2.\\]",
+   "context": "The lower bound $ \\Delta(G)+1 $ is trivial by looking at the number of colours required on a vertex of maximum degree and its incident edges. It is easy to prove $ \\chi''(G)\\leq 2\\Delta(G)+2 $ . Molloy and Reed [MR] showed that there exists a constant $ C $ such that $ \\chi''(G)\\leq Delta(G)+C $ for every graph $ G $ . The Edge list coloring conjecture would imply that $ \\chi''(G)\\leq \\Delta(G)+3 $ . The Total Colouring Conjecture was proved for $ \\Delta(G)=3 $ by Rosenfeld [R] and also by Vijayaditya [V], and for $ \\Delta(G)\\in\\{4,5\\} $ by Kostochka [K1,K2,K3]; in fact the proof for $ \\Delta(G)=5 $ holds for multigraphs. The Conjecture has also been established for many graph classes. For every planar graph G with $ \\Delta(G) \\geq 7 $ , the following clever argument proves it. By the 4 Color Theorem, we can color the vertices with the colors 1, 2, 3, 4. By a result of Sanders and Zhao [SZ], we can color the edges of the graph with the colors $ 3, 4, \\ldots, \\Delta(G) + 1, \\Delta(G) + 2 $ . Uncolor each edge that was colored 3 or 4. Note that each uncolored edge has exactly two colors from $ \\{1,2,3,4\\} $ forbidden. Hence, each uncolored edge has at least two colors available. Note that the uncolored edges induce a disjoint union of paths and even cycles. Thus, by a special case of a theorem of Erdos, Rubin, and Taylor [ERT], we can color the edges from their lists of two available colors each.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/behzads_conjecture",
+   "attributed_to": "Behzad, M."
+  }
+ },
+ {
+  "edge_id": "e183",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "$ ? Moreover, can the constant $ c_k $ be made independent of $ k $ ? These questions are also related to the so-called List Total Colouring Conjecture of Borodin, Kostochka and Woodall [BKW], which says that the total graph of a multigraph always satisfies $ \\text{ch}=\\"
+  ],
+  "source": {
+   "id": "opg:choosability_of_graph_powers",
+   "name": "Choosability of Graph Powers",
+   "kind": "Conjecture",
+   "statement": "Question (Noel, 2013) Does there exist a function $ f(k)=o(k^2) $ such that for every graph $ G $ , \\[\\text{ch}\\left(G^2\\right)\\leq f\\left(\\chi\\left(G^2\\right)\\right)?\\]",
+   "context": "For a survey of choosability, including relevant definitions, see [Noe] or click here . The List Square Colouring Conjecture, due to Kostochka and Woodall [KW], states that $ \\text{ch}\\left(G^2\\right) = \\chi\\left(G^2\\right) $ for every graph $ G $ . This was disproved by Kim and Park [KP], who proved that there is a sequence $ \\{G_n\\}_n $ of graphs and a constant $ c_1 $ such that $ \\chi\\left(G^2_n\\right)\\to\\infty $ and $ \\text{ch}\\left(G_n^2\\right) \\geq c_1 \\chi\\left(G_n^2\\right)\\log\\left(\\chi\\left(G_n^2\\right)\\right) $ for all $ n $ . To obtain this lower bound from the construction of Kim and Park, one can apply the well-known result of Alon [Alo]. It may be the case that the correct upper bound for all graphs is of the same order of magnitude as the example in the result of Kim and Park. Question (Noel, 2013) Does there exist a positive constant $ c_2 $ such that every graph $ G $ satisfies $ \\text{ch}\\left(G^2\\right) \\leq c_2\\chi\\left(G^2\\right)\\log{\\chi\\left(G^2\\right)} $ ? By calculating the clique number and maximum degree of $ G^2 $ , one can easily show that $ \\text{ch}\\left(G^2\\right)\\leq\\chi\\left(G^2\\right)^2 $ (this observation is due to Young Soo Kwon), but it seems that no significantly better bound is known. Proposition If $ G $ contains an edge, then \\[\\text{ch}\\left(G^2\\right)< \\chi\\left(G^2\\right)^2.\\] Proof We observe the following bounds: \\[\\chi\\left(G^2\\right) \\geq \\omega\\left(G^2\\right) \\geq \\Delta(G)+1,\\] \\[\\text{ch}\\left(G^2\\right) \\leq \\Delta\\left(G^…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/choosability_of_graph_powers",
+   "attributed_to": "Noel, Jonathan A."
+  },
+  "target": {
+   "id": "opg:list_total_colouring_conjecture",
+   "name": "List Total Colouring Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is the total graph of a multigraph, then $ \\chi_\\ell(G)=\\chi(G) $ .",
+   "context": "The list chromatic number of a graph $ G $ , denoted $ \\chi_\\ell(G) $ , is defined here . Given a multigraph $ H $ , the total graph $ T(H) $ of $ H $ is a graph on vertex set $ V(T(H)):=V(H)\\cup E(H) $ where \\item two elements of $ V(H) $ are adjacent in $ T(H) $ if and only if they are adjacent in $ H $ ; \\item two elements of $ E(H) $ are adjacent in $ T(H) $ if and only if they share an endpoint; \\item an element of $ V(H) $ is adjacent to an element of $ E(H) $ in $ T(H) $ if it is incident with it. This problem is related to the List (Edge) Colouring Conjecture as well as the Total Colouring Conjecture. Kostochka and Woodall [KW] conjectured that $ \\chi_\\ell(G^2)=\\chi(G^2) $ for every graph $ G $ ; this was known as the List Square Colouring Conjecture. It is stronger than the List Total Colouring Conjecture since, given a multigraph $ H $ , the total graph of $ H $ can be obtained by subdividing each edge of $ H $ and taking the square. Moreover, the graph obtained from $ H $ by subdividing each edge is bipartite and one part of the bipartition consists of vertices of degree $ 2 $ . Thus, the List Total Colouring Conjecture corresponds to this (very) special case of the List Square Colouring Conjecture. However, the List Square Colouring Conjecture is not true in general. For a family of counterexamples, see the paper of Kim and Park [KP].",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/list_total_colouring_conjecture",
+   "attributed_to": "Borodin, Oleg V., Kostochka, Alexandr V., Woodall, Douglas R."
+  }
+ }
+]

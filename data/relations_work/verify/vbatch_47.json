@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e188",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "onsidered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which app"
+  ],
+  "source": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  },
+  "target": {
+   "id": "opg:the_berge_fulkerson_conjecture",
+   "name": "The Berge-Fulkerson conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a bridgeless cubic graph, then there exist 6 perfect matchings $ M_1,\\ldots,M_6 $ of $ G $ with the property that every edge of $ G $ is contained in exactly two of $ M_1,\\ldots,M_6 $ .",
+   "context": "This conjecture is due to Berge and Fulkerson, and appears first in [F] (see [S79b]). If $ G $ is 3- edge-colorable , then we may choose three perfect matchings $ M_1,M_2,M_3 $ so that every edge is in exactly one. Taking each of these twice gives us 6 perfect matchings with the properties described above. Thus, the above conjecture holds trivially for 3-edge-colorable graphs. There do exist bridgeless cubic graphs which are not 3-edge-colorable (for instance the Petersen graph ), but the above conjecture asserts that every such graph is close to being 3-edge-colorable. Definition: An $ r $ -graph is an $ r $ - regular graph $ G $ on an even number of vertices with the property that every edge-cut which separates $ V(G) $ into two sets of odd cardinality has size at least $ r $ . Observe that a cubic graph is a 3-graph if and only if it has no bridge. If G is an $ r $ -regular graph which has an $ r $ -edge-coloring, then every color class is a perfect matching, so $ |V(G)| $ must be even, and every color must appear in every edge-cut which separates $ V(G) $ into two sets of odd size, so every edge-cut of this form must have size at least $ r $ . Thus, every $ r $ -edge-colorable $ r $ -regular graph is an $ r $ -graph. In a sense, we may view the $ r $ -graphs as the $ r $ -regular graphs which have the obvious necessary conditions to be $ r $ -edge-colorable. Seymour [S79b] defined $ r $ -graphs and offered the following generalization of the Berge-Fulkerson conjecture. Co…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/the_berge_fulkerson_conjecture",
+   "attributed_to": "Berge, Claude, Fulkerson, Delbert R."
+  }
+ },
+ {
+  "edge_id": "e189",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "ircuits with directions traversing every edge forward and backward exactly once, the above conjecture would follow from The three 4-flows conjecture."
+  ],
+  "source": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  },
+  "target": {
+   "id": "opg:three_4_flows_conjecture",
+   "name": "The three 4-flows conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ with no bridge , there exist three disjoint sets $ A_1,A_2,A_3 \\subseteq E(G) $ with $ A_1 \\cup A_2 \\cup A_3 = E(G) $ so that $ G \\setminus A_i $ has a nowhere-zero 4-flow for $ 1 \\le i \\le 3 $ .",
+   "context": "A graph $ G $ has a nowhere-zero 4-flow if and only if there exist disjoint sets $ A_1,A_2,A_3 \\subseteq E(G) $ with $ A_1 \\cup A_2 \\cup A_3 = E(G) $ so that $ G\\A_i $ has a nowhere-zero 2-flow for $ 1 \\le i \\le 3 $ . Thus, the above conjecture is true with room to spare for such graphs. Since every 4-edge-connected graph and every 3- edge-colorable cubic graph has a nowhere-zero 4-flow, this conjecture is automatically true for these families. As with the 5-flow conjecture or the cycle double cover conjecture , establishing this conjecture comes down to proving it for cubic graphs which are not 3-edge-colorable. This conjecture is a consequence of the Petersen coloring conjecture , and it implies the Orientable cycle four cover conjecture . The latter implication follows immediately from the fact that every graph with a nowhere-zero 4-flow has an orientable cycle double cover. Actually, it is possible that for every graph $ G $ with no cut-edge, there exist disjoint sets $ A_B_1,B_2 \\subseteq E(G) $ with $ A \\cup B_1 \\cup B_2 = E(G) $ and so that $ G\\B_1 $ and $ G\\B_2 $ have nowhere-zero 3-flows and $ G\\A $ has a nowhere-zero 2-flow. The Petersen graph has such a decomposition ( $ B_1 $ and $ B_2 $ should be alternate edges of some 8-circuit) and so does every graph with a nowhere-zero 4-flow. If this stronger statement is true, then it would imply the oriented eight cycle four cover conjecture.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/three_4_flows_conjecture",
+   "attributed_to": "DeVos, Matt"
+  }
+ },
+ {
+  "edge_id": "e190",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "$ is an Eulerian graph and every compatible decomposition of $ (G',P) $ gives a cycle double cover of $ G $ . Since the cycle double cover conjecture can be reduced to graphs which are 3-edge-connected, the above conjecture would imply the cycle double cover conjecture"
+  ],
+  "source": {
+   "id": "opg:decomposing_eulerian_graphs",
+   "name": "Decomposing eulerian graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a 6- edge-connected Eulerian graph and $ P $ is a 2-transition system for $ G $ , then $ (G,P) $ has a compaible decomposition.",
+   "context": "Definition: Let $ G $ be an Eulerian graph and for every vertex $ v $ , let $ P(v) $ be a partition of the edges incident with $ v $ . We call $ P $ a transition system . If every member of $ P(v) $ has size at most $ k $ (for every $ v $ ), then we call $ P $ a $ k $ - transition sytem . A compatible decomposition of $ (G,P) $ is a list of edge-disjoint cycles $ C_1,\\ldots,C_n $ with union $ G $ so that every $ C_i $ contains at most one edge from every member of $ P(v) $ . Let $ G $ be a graph and let $ G' $ be the graph obtained from $ G $ by replacing each edge $ e $ of G by two edges $ e',e'' $ in parallel. Let $ P $ be the 2-transition system of $ G $ with $ {e',e''} \\in P(v) $ whenever $ e' $ and $ e'' $ are incident with $ v $ . Now, $ G' $ is an Eulerian graph and every compatible decomposition of $ (G',P) $ gives a cycle double cover of $ G $ . Since the cycle double cover conjecture can be reduced to graphs which are 3-edge-connected, the above conjecture would imply the cycle double cover conjecture. We define a transition system $ P $ to be admissable if every member of $ P(v) $ contains no more than half of the edges in any edge-cut. It is easy to see that if there is a compatible decomposition of $ (G,P) $ , then $ P $ must be admissable. The converse of this is not true; There is an admissable 2-transition system of the graph $ K_5 $ which does not admit a compatible decomposition. Recently, G. Fan and C.Q. Zhang [FZ] have proved that $ (G,P) $ does have a com…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/decomposing_eulerian_graphs",
+   "attributed_to": ""
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  }
+ },
+ {
+  "edge_id": "e191",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "Sigma $ has the property that $ G_1 $ and $ G_2 $ are disjoint? We insist on the usual restrictions for drawings (as in The Crossing Number of the Complete Graph ). Although both crossing numbers and embeddings of graphs on general surfaces are rich and well-studied subjects, thei"
+  ],
+  "source": {
+   "id": "opg:drawing_disconnected_graphs_on_surfaces",
+   "name": "Drawing disconnected graphs on surfaces",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be the disjoint union of the graphs $ G_1 $ and $ G_2 $ and let $ \\Sigma $ be a surface. Is it true that every optimal drawing of $ G $ on $ \\Sigma $ has the property that $ G_1 $ and $ G_2 $ are disjoint?",
+   "context": "We insist on the usual restrictions for drawings (as in The Crossing Number of the Complete Graph ). Although both crossing numbers and embeddings of graphs on general surfaces are rich and well-studied subjects, their common generalization - drawing graphs on general surfaces has received very little attention. The question highlighted here appears to be quite basic in nature, but due to the combined difficulties of crossings and general surfaces, it may be quite difficult to resolve. This conjecture is trivially true when $ \\Sigma $ is the plane, and DeVos, Mohar, and Samal have proved that it also holds when $ \\Sigma $ is the projective plane. It is open for all other surfaces to the best of my (M. DeVos) knowledge.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/drawing_disconnected_graphs_on_surfaces",
+   "attributed_to": "DeVos, Matt, Mohar, Bojan, Samal, Robert"
+  },
+  "target": {
+   "id": "opg:the_crossing_number_of_the_complete_graph",
+   "name": "The Crossing Number of the Complete Graph",
+   "kind": "Conjecture",
+   "statement": "The crossing number $ cr(G) $ of $ G $ is the minimum number of crossings in all drawings of $ G $ in the plane. Conjecture $ \\displaystyle cr(K_n) = \\frac 14 \\floor{\\frac n2} \\floor{\\frac{n-1}2} \\floor{\\frac{n-2}2} \\floor{\\frac{n-3}2} $",
+   "context": "(This discussion appears as [M].) A drawing of a graph $ G $ in the plane has the vertices represented by distinct points and the edges represented by polygonal lines joining their endpoints such that: \\item no edge contains a vertex other than its endpoints, \\item no two adjacent edges share a point other than their common endpoint, \\item two nonadjacent edges share at most one point at which they cross transversally, and \\item no three edges cross at the same point. The conjectured value for the crossing number of $ K_n $ is known to be an upper bound. This is shown by exhibiting a drawing with that number of crossings. If $ n = 2m $ , place $ m $ vertices regularly spaced along two circles of radii 1 and 2, respectively. Two vertices on the inner circle are connected by a straight line; two vertices on the outer circle are connected by a polygonal line outside the circle. A vertex on the inner circle is connected to one on the outer circle with a polygonal line segment of minimum possible positive winding angle around the cylinder. A simple count shows that the number of crossings in such a drawing achieves the conjectured minimum. For $ n = 2m-1 $ we delete one vertex from the drawing described and achieve the conjectured minimum. The conjecture is known to be true for $ n $ at most 10 [G]. If the conjecture is true for $ n = 2m $ , then it is also true for $ n-1 $ . This follows from an argument counting the number of crossings in drawings of all $ K_{n-1} $ 's contained…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/the_crossing_number_of_the_complete_graph",
+   "attributed_to": ""
+  }
+ }
+]

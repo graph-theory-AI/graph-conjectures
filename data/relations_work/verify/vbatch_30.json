@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e120",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "By definition m(n,k) = min over n-vertex graphs G of e(G) − u(G,k), so a full answer to Question 2.1 (determine u(G,k) for every G) determines the exact value of m(n,k) by minimizing over G."
+  ],
+  "source": {
+   "id": "arxiv:2102.10220__02",
+   "name": "Edges covered by k vertex neighborhoods",
+   "kind": "Question",
+   "statement": "Given a graph $G$, how many edges of $G$ can we cover by the union of $k$ neighborhoods of vertices of $G$?",
+   "context": "The authors define $u(G,k)$ as the maximum number of edges covered by the union of $k$ vertex neighborhoods and study $m(n,k) = \\min_G(e(G) - u(G,k))$. Bounds on this quantity are the main tool for proving upper bounds on $h(n,k,H)$ when $H$ is a clique or an odd wheel.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2102.10220",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2102.10220__03",
+   "name": "Exact m(n,k) for H-free k-colorability",
+   "kind": "Informal",
+   "statement": "What is the exact or asymptotic value of $m(n,k)$ for any fixed $k \\geq 2$?",
+   "context": "The authors prove $m(n,k) \\leq n^2/(ek)$ (Corollary 2.6) and derive a lower bound from an Erdős–Rényi random graph heuristic that is within 20% of this upper bound for large $k$. They state explicitly: 'We have no idea what the exact or asymptotic value of $m(n,k)$ is for any fixed $k \\geq 2$.'",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2102.10220",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e121",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Standard fractional-covering bound: |V(G)|/a(G) <= va_f(G), where a(G) is the maximum size of an induced forest. So va_f(G) <= 2 for planar G forces an induced forest on >= n/2 vertices, which is exactly the Albertson-Berman conjecture. The paper's own context states this implication.",
+   "If va_f(G) <= 2, an optimal fractional cover by induced forests has total weight <= 2 while covering all n vertices, so n <= sum_F w_F|F| <= 2 max_F |F|, giving an induced forest on >= n/2 vertices. This is the Albertson-Berman conjecture; the paper states the implication (|V|/a(G) <= va_f(G))."
+  ],
+  "source": {
+   "id": "arxiv:2009.12189__00",
+   "name": "Fractional vertex-arboricity ≤ 2 planar graphs",
+   "kind": "Conjecture",
+   "statement": "Every planar graph has fractional vertex-arboricity at most two.",
+   "context": "This is the fractional generalization of the Albertson-Berman Conjecture: since $|V(G)|/a(G) \\leq \\mathrm{va}_f(G)$, the conjecture implies $a(G) \\geq |V(G)|/2$. If true, it would also imply that every planar graph has fractional chromatic number at most four.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2009.12189",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:large_induced_forest_in_a_planar_graph",
+   "name": "Large induced forest in a planar graph.",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every planar graph on $ n $ verices has an induced forest with at least $ n/2 $ vertices.",
+   "context": "This conjecture is best possible. (See [AW]). It follows from Borodin's theorem stating that every planar graph has an acyclic $ 5 $ -colouring that every planar graph on $ n $ verices has an induced forest with at least $ 2n/5 $ vertices. The conjecture holds for planar graph with girth at least $ 5 $ , because they can be partitionned into a stable set and a forest [BG] (see also [KT]). Akiyama-Watanabe [AW] conjectured an even larger induced forest for bipartite planar graphs. Conjecture Every bipartite planar graph on $ n $ verices has an induced forest with at least $ 5n/8 $ vertices. This conjecture is also best possible. (See [AW]).",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/large_induced_forest_in_a_planar_graph",
+   "attributed_to": "Abertson, Michael O., Berman, David M."
+  }
+ },
+ {
+  "edge_id": "e122",
+  "claimed_relation": "equivalent_to",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "If the graphs critical for 5-choosability on the torus are exactly the 6-critical ones, then a toroidal G fails 5-choosability iff it contains a 6-critical subgraph iff chi(G)>=6, i.e. iff G is not 5-colorable; conversely 5-colorability always follows from 5-choosability, and the paper states Conjectures 2 and 3 are equivalent (via Thomassen's classification of 6-critical toroidal graphs)."
+  ],
+  "source": {
+   "id": "arxiv:2407.18800__00",
+   "name": "5-choosability equals 6-criticality on torus",
+   "kind": "Conjecture",
+   "statement": "A graph drawn on the torus is critical for 5-choosability if and only if it is $6$-critical.",
+   "context": "Theorem 1 establishes this result under the additional assumption that there exists a cyclic system of non-contractible triangles around the torus with consecutive triangles at distance at most four. The authors verified that $K_7$ is the only graph critical for 5-list coloring but not for 5-choosability satisfying the assumptions of Theorem 1, and believe the cyclic system assumption can be dropped entirely.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.18800",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2407.18800__01",
+   "name": "5-choosability equals 5-colorability on torus",
+   "kind": "Conjecture",
+   "statement": "A toroidal graph is $5$-choosable if and only if it is $5$-colorable.",
+   "context": "This conjecture is stated as equivalent to Conjecture 2 and represents the central goal of the paper: a complete choosability analogue of Thomassen's characterization of 5-colorability on the torus. The computational results of the paper, enumerating minimal obstructions under a cyclic-triangle-system condition, provide supporting evidence.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.18800",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e123",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Thomassen's classification shows the 6-critical toroidal graphs (K6, C3+C5, K2+H7, T11) cannot occur in a torus drawing of edge-width >= 4, so such graphs are 5-colorable; under Conjecture 3 (5-choosable iff 5-colorable) they are then 5-choosable. The paper presents Conjecture 4 as an intermediate step towards Conjecture 3."
+  ],
+  "source": {
+   "id": "arxiv:2407.18800__01",
+   "name": "5-choosability equals 5-colorability on torus",
+   "kind": "Conjecture",
+   "statement": "A toroidal graph is $5$-choosable if and only if it is $5$-colorable.",
+   "context": "This conjecture is stated as equivalent to Conjecture 2 and represents the central goal of the paper: a complete choosability analogue of Thomassen's characterization of 5-colorability on the torus. The computational results of the paper, enumerating minimal obstructions under a cyclic-triangle-system condition, provide supporting evidence.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.18800",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2407.18800__02",
+   "name": "Edge-width four torus 5-choosability",
+   "kind": "Conjecture",
+   "statement": "Every graph drawn on the torus with edge-width at least four is 5-choosable.",
+   "context": "This is proposed as an important intermediate step towards Conjecture 3, focusing on toroidal graphs with no non-contractible cycle of length less than four. Postle proved that the edge-width of a graph critical for 5-list coloring is at most logarithmic in its genus, so the conjecture holds when four is replaced by a sufficiently large constant.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.18800",
+   "attributed_to": "paper authors"
+  }
+ }
+]

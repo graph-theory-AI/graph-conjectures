@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e128",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Setting t=0 gives M_{n,0}=K_n and the conjectured formula reads cr(K_n)=H(n), the Harary-Hill value (1/4)*floor(n/2)*floor((n-1)/2)*floor((n-2)/2)*floor((n-3)/2). So the Harary-Hill conjecture is the t=0 instance of the K_n-minus-t-matching conjecture (the paper is explicitly a generalization of Hill's conjecture); if the paper requires t>=1, it is the boundary case of the common generalization."
+  ],
+  "source": {
+   "id": "arxiv:2009.03418__00",
+   "name": "Crossing number of Kₙ minus t-matching",
+   "kind": "Conjecture",
+   "statement": "The crossing number of $M_{n,t}$ is equal to $$H(n) - \\frac{1}{2}\\,t(k-1)(k-2),$$ where $k = \\lfloor n/2 \\rfloor$.",
+   "context": "Here $M_{n,t}$ denotes the graph obtained from $K_n$ by removing a matching of size $t$, and $k = \\lfloor n/2 \\rfloor$. Corollary 4 shows that geodesic drawings of $M_{n,t}$ built from sets of strength $0$ achieve this crossing count; the existence of many such sets of strength $0$ motivates the conjecture that this value is optimal.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2009.03418",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:the_crossing_number_of_the_complete_graph",
+   "name": "The Crossing Number of the Complete Graph",
+   "kind": "Conjecture",
+   "statement": "The crossing number $ cr(G) $ of $ G $ is the minimum number of crossings in all drawings of $ G $ in the plane. Conjecture $ \\displaystyle cr(K_n) = \\frac 14 \\floor{\\frac n2} \\floor{\\frac{n-1}2} \\floor{\\frac{n-2}2} \\floor{\\frac{n-3}2} $",
+   "context": "(This discussion appears as [M].) A drawing of a graph $ G $ in the plane has the vertices represented by distinct points and the edges represented by polygonal lines joining their endpoints such that: \\item no edge contains a vertex other than its endpoints, \\item no two adjacent edges share a point other than their common endpoint, \\item two nonadjacent edges share at most one point at which they cross transversally, and \\item no three edges cross at the same point. The conjectured value for the crossing number of $ K_n $ is known to be an upper bound. This is shown by exhibiting a drawing with that number of crossings. If $ n = 2m $ , place $ m $ vertices regularly spaced along two circles of radii 1 and 2, respectively. Two vertices on the inner circle are connected by a straight line; two vertices on the outer circle are connected by a polygonal line outside the circle. A vertex on the inner circle is connected to one on the outer circle with a polygonal line segment of minimum possible positive winding angle around the cylinder. A simple count shows that the number of crossings in such a drawing achieves the conjectured minimum. For $ n = 2m-1 $ we delete one vertex from the drawing described and achieve the conjectured minimum. The conjecture is known to be true for $ n $ at most 10 [G]. If the conjecture is true for $ n = 2m $ , then it is also true for $ n-1 $ . This follows from an argument counting the number of crossings in drawings of all $ K_{n-1} $ 's contained…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/the_crossing_number_of_the_complete_graph",
+   "attributed_to": ""
+  }
+ },
+ {
+  "edge_id": "e129",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Outerplanar graphs are planar, and their cop number is at most 2 (Theorem 3 of the same paper), so classifying planar graphs by cop number i in {1,2,3} restricted to the subclass of outerplanar graphs is exactly the 1-cop-win vs 2-cop-win dichotomy asked in __01."
+  ],
+  "source": {
+   "id": "arxiv:1709.09050__00",
+   "name": "Cop number partition of planar graphs",
+   "kind": "Problem",
+   "statement": "Classify which planar graphs have cop number $i$, for $1 \\leq i \\leq 3$.",
+   "context": "By Theorem 1, every connected planar graph has cop number 1, 2, or 3. Cop-win graphs are precisely the dismantlable ones, which may eventually aid in classifying planar cop-win graphs, but a complete classification for all three cop number values remains open.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1709.09050",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1709.09050__01",
+   "name": "Cop number dichotomy for outerplanar graphs",
+   "kind": "Problem",
+   "statement": "Classify which outerplanar graphs are $1$-cop-win and which are $2$-cop-win.",
+   "context": "By Theorem 3, every outerplanar graph has cop number at most 2. The smallest outerplanar graph with cop number 2 is the four cycle, but a full classification of outerplanar graphs by cop number remains open.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1709.09050",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e130",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "MWIS with unit weights is MIS, so a combinatorial polynomial-time algorithm for Maximum Weight Independent Set in perfect graphs is in particular a combinatorial polynomial-time algorithm for MIS in perfect graphs.",
+   "A combinatorial poly-time algorithm for Maximum Weight Independent Set on perfect graphs solves the unweighted MIS case by setting all weights to 1; both are the Grotschel-Lovasz-Schrijver problem."
+  ],
+  "source": {
+   "id": "arxiv:2003.05185__00",
+   "name": "Combinatorial MWIS algorithm for perfect graphs",
+   "kind": "Problem",
+   "statement": "Design a combinatorial polynomial-time algorithm for the Maximum Weight Independent Set problem in perfect graphs.",
+   "context": "The polynomial-time algorithm of Grötschel, Lovász, and Schrijver for MWIS in perfect graphs relies on the ellipsoid method. The authors explicitly note that designing a combinatorial polynomial-time algorithm for this problem remains an important open problem.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2003.05185",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1907.01083__00",
+   "name": "Combinatorial MIS algorithm on perfect graphs",
+   "kind": "Informal",
+   "statement": "It remains an open question to find a combinatorial algorithm for the maximum independent set problem on perfect graphs. In fact, we do not even have a combinatorial FPT algorithm for the maximum independent set problem on perfect graphs.",
+   "context": "The maximum independent set problem on perfect graphs is solvable in polynomial time via the ellipsoid method, but a combinatorial algorithm (i.e., one not relying on the ellipsoid method) is unknown. This is mentioned as a side remark motivating the study of related graph classes.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1907.01083",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e131",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "A polynomial-time algorithm for Maximum Weight Independent Set on even-hole-free graphs solves the unweighted maximum independent set problem on even-hole-free graphs (unit weights), settling the open complexity question in 1912.11246__01."
+  ],
+  "source": {
+   "id": "arxiv:2407.08927__00",
+   "name": "MWIS polynomial-time on even-hole-free graphs",
+   "kind": "Problem",
+   "statement": "Does there exist a polynomial-time algorithm for the Maximum Weight Independent Set problem on even-hole-free graphs?",
+   "context": "On even-hole-free graphs, Maximum Weight Clique is known to be polynomial-time solvable, but the question of whether a polynomial-time algorithm exists for Maximum Weight Independent Set remains open. This is in stark contrast to perfect graphs, for which polynomial-time algorithms have been known since 1981. The present paper gives a quasi-polynomial-time algorithm via a polylogarithmic tree independence number bound, but the polynomial-time question is not resolved.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.08927",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1912.11246__01",
+   "name": "MIS complexity in even-hole-free graphs",
+   "kind": "Informal",
+   "statement": "The complexity of computing a maximum independent set in an even-hole-free graph is not known.",
+   "context": "Stated in the introduction as motivation for the paper's approach. The paper proves a polynomial-time algorithm for the strictly smaller class of (even hole, pyramid)-free graphs, with the hope that understanding the pyramid-free case may shed light on the full even-hole-free class.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1912.11246",
+   "attributed_to": "paper authors"
+  }
+ }
+]

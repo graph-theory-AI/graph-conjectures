@@ -1,0 +1,130 @@
+[
+ {
+  "edge_id": "e048",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "K_{t-1,t-1} has a K_t minor (contract t-2 disjoint edges of a perfect matching; the two leftover vertices from opposite sides are adjacent and complete to the contracted clique). Hence K_t-minor-free graphs are K_{t-1,t-1}-minor-free, and the target of Question 2 with s = t' = t-1 gives chi_l(G) <= 2(t-1)+(t-1) = 3t-3, i.e. List Hadwiger with c = 3."
+  ],
+  "source": {
+   "id": "arxiv:2201.09115__01",
+   "name": "List chromatic number bound for K_{s,t}-minor-free graphs",
+   "kind": "Question",
+   "statement": "Is it true that for all integers $1 \\leq s \\leq t$, every graph $G$ with $G \\not\\succeq K_{s,t}$ satisfies $\\chi_{\\ell}(G) \\leq 2s + t$?",
+   "context": "Theorem 1 shows that the bound $s+t-1$ in Woodall's conjecture is false for large comparable $s$ and $t$, and that the list chromatic number can exceed $(1-\\varepsilon)(2s+t)$; the authors ask whether the matching upper bound $2s+t$ holds universally as the correct asymptotic threshold.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2201.09115",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:list_hadwiger_conjecture",
+   "name": "List Hadwiger Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ K_t $ -minor-free graph is $ c t $ -list-colourable for some constant $ c\\geq1 $ .",
+   "context": "Hadwiger's conjecture asserts that every $ K_t $ - minor -free graph is $ (t − 1) $ -colourable. Robertson, Seymour and Thomas [RST] proved Hadwiger's conjecture for $ t \\leq 6 $ . It remains open for $ t \\geq 7 $ . In fact, it is open whether every $ K_t $ -minor-free graph is $ ct $ -colourable for some constant $ c\\geq 1 $ . It is natural to consider analogous problems for list colourings . First, consider planar graphs. While every planar graph is 4-colourable, Erdös, Rubin and Taylor. [ERT] conjectured that some planar graph is not 4-list-colourable, and that every planar graph is 5-list-colourable. The first conjecture was verified by Voigt [V] and the second by Thomassen [T]. More generally, Borowiecki [B] asked whether every $ K_t $ -minor-free graph is $ (t − 1) $ -list-colourable, which is true for $ t \\leq 4 $ but false for $ t = 5 $ by Voigt’s example. Kawarabayashi and Mohar [KM] proposed the stated conjecture, and suggested it might be true with $ c=\\frac{3}{2} $ . Barát, Joret and Wood [BJW] proved that $ c\\geq\\frac{4}{3} $ . In particular, they constructed a $ K_{3t+2} $ -minor-free graph that is not $ 4t $ -list-colourable.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/list_hadwiger_conjecture",
+   "attributed_to": "Kawarabayashi, Ken-ichi, Mohar, Bojan"
+  }
+ },
+ {
+  "edge_id": "e049",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "The t = 3 instance of h(t) = ceil(3(t-1)/2) gives h(3) = 3, i.e. every K_3-minor-free hypergraph is 3-colorable, which is exactly the source problem.",
+   "Setting t=3 in Conjecture 2 gives h(3)=⌈3·2/2⌉=3, i.e. every K3-minor-free hypergraph is 3-colorable, which is precisely Problem 1. The paper states Problem 1 'isolates the smallest open case of Conjecture 2'.",
+   "Conjecture 2 asserts every K_t-minor-free hypergraph is ⌈3(t−1)/2⌉-colorable for all t≥2; setting t=3 gives ⌈3·2/2⌉=3, i.e. every K_3-minor-free hypergraph is 3-colorable, which is exactly Problem 1. The paper itself states Problem 1 isolates the smallest open case of Conjecture 2.",
+   "Setting t=3 in h(t)=ceil(3(t-1)/2) gives h(3)=3, i.e. every K_3-minor-free hypergraph is 3-colorable; the target conjecture thus contains the K_3 question as its t=3 instance."
+  ],
+  "source": {
+   "id": "arxiv:2206.13635__00",
+   "name": "Chromatic number of Kₜ-minor-free hypergraphs",
+   "kind": "Conjecture",
+   "statement": "For every integer $t\\geq 2$ we have $h(t)=\\left\\lceil\\frac{3}{2}(t-1)\\right\\rceil$. In other words, if a hypergraph $H$ does not contain $K_{t}$ as a minor, then $\\chi(H)\\leq\\left\\lceil\\frac{3}{2}(t-1)\\right\\rceil$.",
+   "context": "The function $h(t)$ is the smallest integer such that every $K_t$-minor-free hypergraph is $h(t)$-colorable. The paper proves the lower bound $h(t)\\geq\\left\\lceil\\frac{3}{2}(t-1)\\right\\rceil$ by an explicit construction, and conjectures this lower bound is tight. The conjecture remains open even for $t=3$, where the best known upper bound is $4$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2206.13635",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2206.13635__01",
+   "name": "3-colorability of K₃-minor-free hypergraphs",
+   "kind": "Problem",
+   "statement": "Is every $K_{3}$-minor-free hypergraph $3$-colorable?",
+   "context": "Conjecture 2 predicts $h(3)=3$, but the best known upper bound for the chromatic number of $K_3$-minor-free hypergraphs is $4$ (from Corollary 2 of the paper). Problem 1 isolates the smallest open case of Conjecture 2.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2206.13635",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e050",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "If (even hole, diamond)-free graphs have tree-alpha <= a, take a tree decomposition witnessing it for an (even hole, K_4, diamond)-free graph: each bag has independence number <= a and clique number <= 3, so by Ramsey each bag has at most R(a+1,4) vertices, giving bounded treewidth — the target's question.",
+   "(even hole, K4, diamond)-free graphs are (even hole, diamond)-free, so bounded tree-α applies. In a tree-decomposition with bags of independence number ≤ a, K4-freeness bounds each bag by Ramsey R(a+1,4), giving bounded treewidth, hence a positive answer to the (even hole, K4, diamond)-free treewidth question.",
+   "(even hole, K_4, diamond)-free graphs form a subclass of (even hole, diamond)-free graphs with omega <= 3. If tree-independence number is bounded by t, each bag of the decomposition has independence <= t and clique < 4, hence size < R(4,t+1) by Ramsey, so treewidth is bounded (and bounded treewidth implies bounded cliquewidth)."
+  ],
+  "source": {
+   "id": "arxiv:2305.16258__00",
+   "name": "Bounded tree-α in (even hole, diamond)-free graphs",
+   "kind": "Conjecture",
+   "statement": "The class of (even hole, diamond)-free graph has bounded tree-$\\alpha$.",
+   "context": "The paper's main result handles (even hole, diamond, pyramid)-free graphs; extending to (even hole, diamond)-free graphs (dropping the pyramid-free condition) is posed as the next natural step. No polynomial-time algorithm for MWIS is yet known for the larger (even hole, diamond)-free class, and the authors suggest that the methods developed here might be extendable to settle this conjecture.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2305.16258",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2001.01607__00",
+   "name": "Bounded treewidth for even-hole K₄ diamond-free graphs",
+   "kind": "Question",
+   "statement": "Is it true that (even hole, $K_4$, diamond)-free graphs have bounded treewidth (or cliquewidth)?",
+   "context": "The paper proves bounded treewidth for (theta, triangle, $S_{i,j,k}$)-free and (even hole, pyramid, $K_t$, $S_{i,j,k}$)-free graphs. The analogous question for graphs excluding the diamond ($K_4$ minus one edge) instead of a subdivided claw is explicitly listed as open.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2001.01607",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e051",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "Every C_4, theta, prism and even wheel contains an even hole (C_4 is one; for theta/prism, two of the three connecting paths share parity, giving an even hole; an even wheel has a sector cycle of even length). Hence (even hole, K_4, diamond)-free graphs form a subclass of the (C_4, diamond, theta, prism, even wheel, K_4)-free class C*_4, so the t = 4 case of the target answers the source.",
+   "C4, thetas, prisms and even wheels all contain even holes (C4 itself; two same-parity paths of a theta; an induced square of the prism; an even sector of an even wheel), so (even hole, K4, diamond)-free graphs form a subclass of C*_4 = (C4, diamond, theta, prism, even wheel, K4)-free graphs. Bounded treewidth for C*_t (t=4) thus answers the source question.",
+   "Even-hole-free graphs contain no C_4, theta, prism or even wheel: C_4 is an even hole; in a theta/prism two of the three paths share parity giving an even induced cycle; in an even wheel either some sector plus two spokes or the rim itself is an even hole. So (even hole, K_4, diamond)-free is contained in (C_4,diamond,theta,prism,even wheel,K_4)-free, and the t=4 case of the source bounds its treewidth.",
+   "Even-hole-free graphs contain no C4, theta, prism, or even wheel (each contains an even hole), so (even hole, K4, diamond)-free graphs lie in the class C*_4 = (C4, diamond, theta, prism, even wheel, K4)-free; bounded treewidth for C*_t at t=4 gives the source (and bounded cliquewidth follows)."
+  ],
+  "source": {
+   "id": "arxiv:2203.06775__00",
+   "name": "Bounded treewidth for (C₄, diamond, theta, prism)-free graphs",
+   "kind": "Conjecture",
+   "statement": "For all $t > 0$ there exists $c_t \\geq 0$ such that $\\mathrm{tw}(G) \\leq c_t$ for every $G \\in \\mathcal{C}^*_t$.",
+   "context": "Here $\\mathcal{C}^*_t$ denotes the class of $(C_4, \\text{diamond}, \\text{theta}, \\text{prism}, \\text{even wheel}, K_t)$-free graphs — a relaxation of $\\mathcal{C}_t$ in which pyramids are no longer excluded. The authors pose this as a slight generalization of Sintiari–Trotignon's Conjecture 1.5, noting that Theorem 1.4 (the main result of the paper) would serve as the base case if the conjecture could be proved by the same techniques.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2203.06775",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2001.01607__00",
+   "name": "Bounded treewidth for even-hole K₄ diamond-free graphs",
+   "kind": "Question",
+   "statement": "Is it true that (even hole, $K_4$, diamond)-free graphs have bounded treewidth (or cliquewidth)?",
+   "context": "The paper proves bounded treewidth for (theta, triangle, $S_{i,j,k}$)-free and (even hole, pyramid, $K_t$, $S_{i,j,k}$)-free graphs. The analogous question for graphs excluding the diamond ($K_4$ minus one edge) instead of a subdivided claw is explicitly listed as open.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2001.01607",
+   "attributed_to": "paper authors"
+  }
+ }
+]

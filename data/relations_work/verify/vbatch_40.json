@@ -1,0 +1,124 @@
+[
+ {
+  "edge_id": "e160",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "If every finite family F containing a forest is k-nice for all k ≥ k0(F) (Question 1.1), then in particular it is k-nice for infinitely many k. The paper itself poses the conjecture as 'a weaker version of Question 1.1'.",
+   "If F is k-nice for all k >= k0(F), then it is k-nice for infinitely many k; the paper poses the target as the weaker version of the source question."
+  ],
+  "source": {
+   "id": "arxiv:1708.07369__00",
+   "name": "Forest families eventually k-nice",
+   "kind": "Question",
+   "statement": "Is it true that for any finite family of graphs $\\mathcal{F}$ that contains at least one forest, there exists a constant $k_0 = k_0(\\mathcal{F})$ such that $\\mathcal{F}$ is $k$-nice for all $k \\geq k_0$?",
+   "context": "It is easy to see that if $\\mathcal{F}$ contains no forest then it is not $k$-nice for any $k$. The question asks whether a converse holds: every family containing at least one forest is eventually $k$-nice. The paper proves this for all families containing a graph with at most 2 edges and for several two-graph families of 3-edge connected graphs.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1708.07369",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1708.07369__01",
+   "name": "Forest-containing families are infinitely k-nice",
+   "kind": "Conjecture",
+   "statement": "Any finite family of graphs $\\mathcal{F}$ that contains at least one forest is $k$-nice for infinitely many integers $k$.",
+   "context": "This is posed as a weaker version of Question 1.1. Theorem 1.4 shows that $\\mathcal{F}_7 = \\{K_3, P_4, S_3\\}$ is $k$-nice for infinitely many $k$, and Theorem 1.6 gives further support for families containing a star $K_{1,r+1}$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1708.07369",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e161",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Graphs embeddable in a fixed surface of genus g form a proper minor-closed family (genus is minor-monotone and some graph has larger genus). So the linear bound xc(P_sp.trees(G))=O(|V|) for all proper minor-closed families restricts to the bounded-genus conjecture; the paper introduces Conjecture 2 as the generalization of Conjecture 1.",
+   "Graphs embeddable in a fixed surface form a proper minor-closed family, so the O(|V|) spanning-tree-polytope extension-complexity conjecture for minor-closed families contains the fixed-surface version as a special case."
+  ],
+  "source": {
+   "id": "arxiv:1604.07976__01",
+   "name": "Linear extension complexity for minor-closed families",
+   "kind": "Conjecture",
+   "statement": "If $\\mathcal{C}$ is a proper minor-closed family of graphs and $G = (V, E)$ is a connected graph in $\\mathcal{C}$, then $\\mathrm{xc}(P_{\\mathrm{sp.trees}}(G)) = O(|V|)$.",
+   "context": "Following Conjecture 1, the authors suggest the linear bound may hold even more generally for all proper minor-closed families. They note the conjecture is known to hold when graphs in $\\mathcal{C}$ have bounded treewidth, and they prove it for $k$-apex graphs (Theorem 4) as additional supporting evidence.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1604.07976",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1604.07976__00",
+   "name": "Linear xc bound for bounded-genus spanning trees",
+   "kind": "Conjecture",
+   "statement": "If $G = (V, E)$ is a connected graph embedded in a fixed surface, then $\\mathrm{xc}(P_{\\mathrm{sp.trees}}(G)) = O(|V|)$.",
+   "context": "The authors prove an $O(g^{1/2}|V|^{3/2} + g^{3/2}|V|^{1/2})$ upper bound for graphs embedded in a surface of genus $g$ (Theorem 3). They conjecture that this can be improved to match the linear bound known for planar graphs (Theorem 2, due to Williams).",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1604.07976",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e162",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "The conjecture that the induced arithmetic removal lemma (Theorem 1.14) holds for arbitrary Z-coefficient patterns over arbitrary abelian groups is precisely the proposed resolution of the open problem of extending the lemma beyond complexity-1 patterns over F_q to higher complexity and general abelian groups (including Z); its truth settles both extensions asked for."
+  ],
+  "source": {
+   "id": "arxiv:1911.03427__01",
+   "name": "Induced arithmetic removal over abelian groups",
+   "kind": "Informal",
+   "statement": "A statement analogous to Theorem 1.14 holds for arbitrary patterns with coefficients in $\\mathbb{Z}$ over arbitrary abelian groups, subject to appropriate caveats concerning infinite complexity patterns and trivial solutions.",
+   "context": "Immediately following the statement of the main theorem (Theorem 1.14) and its remark on tower-type bounds, the authors write: 'We conjecture that a similar statement holds for arbitrary patterns (with coefficients in $\\mathbb{Z}$) in arbitrary abelian groups.' They decline to give a precise formulation due to unresolved issues with infinite complexity and trivial solutions.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1911.03427",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1911.03427__00",
+   "name": "Induced arithmetic removal for higher complexity patterns",
+   "kind": "Problem",
+   "statement": "Extend the induced arithmetic removal lemma beyond complexity 1 patterns over finite fields to higher complexity patterns and to general abelian groups (even the case of $\\mathbb{Z}$ is open).",
+   "context": "After establishing Theorem 1.14 for complexity 1 patterns over $\\mathbb{F}_q$, the authors note that extending to higher complexity and to general groups remains open. They observe that for affine-invariant patterns (which avoid a regularisation difficulty near the origin), the problem for bounded complexity patterns over finite fields has been solved, but the general induced setting is still unresolved.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1911.03427",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e163",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Problem 1.10 (is f(d)/f_{≤2}(d) subexponential in n=2^{d-1}?) is exactly part (iii) of Problem 1.2, which asks for the order of magnitude of the four ratios and which of them is exponential in n; the paper's own context says Problem 1.10 'addresses Problem 1.2 (iii)'. Determining the order of magnitude of ratio (iii) answers the subexponentiality question."
+  ],
+  "source": {
+   "id": "arxiv:2401.00299__01",
+   "name": "Hypercube partition ratio growth rates",
+   "kind": "Problem",
+   "statement": "What is the order of magnitude of the\nfollowing ratios? In particular, which one of them is an\nexponential function of $n$? \n(i) $m^{\\prime}(d)/m(d)$,   (ii) $f_{\\leq 2}(d)/m^{\\prime}(d)$,\n  (iii) $f(d)/f_{\\leq 2}(d),$    (iv) $f(d)/m(d)$.",
+   "context": "The hierarchy $m(d) \\leq m^{\\prime}(d) \\leq f_{\\leq 2}(d) \\leq f(d)$ holds by definition, where $n = 2^{d-1}$. The paper proves that $f(d)/m(d)$ (part iv) is exponential in $n$, and shows part (i) is subexponential; parts (ii) and (iii) remain open.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2401.00299",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2401.00299__04",
+   "name": "Subexponential gap for dimension-2 subcube partitions",
+   "kind": "Question",
+   "statement": "Is it true that\n$f(d)/f_{\\leq 2}(d)$ is subexponential in $n$?",
+   "context": "This addresses Problem 1.2 (iii), asking whether the gap between counting all subcube partitions and counting those restricted to subcubes of dimension at most 2 grows at most subexponentially in $n = 2^{d-1}$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2401.00299",
+   "attributed_to": "paper authors"
+  }
+ }
+]

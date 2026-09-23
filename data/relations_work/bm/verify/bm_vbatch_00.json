@@ -1,0 +1,191 @@
+[
+ {
+  "edge_id": "b000",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-003: opg:reconstruction_conjecture — finite analogue"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-003",
+   "name": "Halin's conjecture on hypomorphic infinite graphs",
+   "kind": "Conjecture",
+   "statement": "If two infinite graphs are hypomorphic, then each is isomorphic to a subgraph of the other.",
+   "context": "Two graphs $G$ and $H$ are hypomorphic if there is a bijection $\\varphi\\colon V(G)\\to V(H)$ with $G - v \\cong H - \\varphi(v)$ for every vertex $v$. For finite graphs the Reconstruction Conjecture asserts that hypomorphic graphs are isomorphic; this fails for infinite graphs, and Halin's conjecture is the natural weakening.",
+   "status": "disproved"
+  },
+  "target": {
+   "id": "opg:reconstruction_conjecture",
+   "name": "Reconstruction conjecture",
+   "kind": "Conjecture",
+   "statement": "The deck of a graph $ G $ is the multiset consisting of all unlabelled subgraphs obtained from $ G $ by deleting a vertex in all possible ways (counted according to multiplicity). Conjecture If two graphs on $ \\ge 3 $ vertices have the same deck, then they are isomorphic.",
+   "context": "See Wikipedia's Reconstruction Conjecture for more on this problem.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b001",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-011: arxiv:1507.08208__00 — Bensmail, Harutyunyan, Le and Thomassé propose a refinement of this conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-011",
+   "name": "Barát–Thomassen conjecture",
+   "kind": "Conjecture",
+   "statement": "For every tree $T$ there exists a natural number $k := k(T)$ such that every simple $k$-edge-connected graph whose number of edges is divisible by $e(T)$ admits a decomposition into copies of $T$.",
+   "context": "",
+   "status": "solved"
+  },
+  "target": {
+   "id": "arxiv:1507.08208__00",
+   "name": "Tree T-decomposition via maximum degree connectivity",
+   "kind": "Conjecture",
+   "statement": "There is a function $f$ such that, for any fixed tree $T$ with maximum degree $\\Delta_T$, every $f(\\Delta_T)$-edge-connected graph with its number of edges divisible by $|E(T)|$ and minimum degree at least $f(|E(T)|)$ can be $T$-decomposed.",
+   "context": "The authors propose this as a refinement of the Barát-Thomassen Conjecture (Conjecture 1.1), arguing that the large edge-connectivity required in Conjecture 1.1 can be replaced by a constant depending only on the maximum degree of $T$, provided the host graph has sufficiently large minimum degree. The present paper proves Conjecture 1.2 in the case $\\Delta_T \\leq 2$, i.e., when $T$ is a path.",
+   "status": "disproved"
+  }
+ },
+ {
+  "edge_id": "b002",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-013: opg:cycle_double_cover_conjecture — implied by this conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-013",
+   "name": "Bondy's small cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every simple graph on $n$ vertices without cut edges has a cycle double cover consisting of at most $n - 1$ cycles.",
+   "context": "A cycle double cover is a family of cycles covering every edge exactly twice. This strengthens the Cycle Double Cover Conjecture (Appendix A, item 12).",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b003",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-014: opg:strong_5_cycle_double_cover_conjecture — stronger form (prescribed cycle in the cover)"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:strong_5_cycle_double_cover_conjecture",
+   "name": "Strong 5-cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ C $ be a circuit in a bridgeless cubic graph $ G $ . Then there is a five cycle double cover of $ G $ such that $ C $ is a subgraph of one of these five cycles.",
+   "context": "A cycle in $ G $ is meant to be a $ 2 $ -regular subgraph of $ G $ . A five cycle double cover of $ G $ is a set of five cycles of $ G $ such that every edge of $ G $ is contained in exactly two of these cycles. This conjecture is a combination and thus strengthening of the $ 5 $ -cycle double cover conjecture and the strong cycle double cover conjecture.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b004",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-014: opg:cycle_double_cover_conjecture — weaker: no bound on the number of even subgraphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b005",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-014: opg:petersen_coloring_conjecture — implies the 5-cycle double cover conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:petersen_coloring_conjecture",
+   "name": "Petersen coloring conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a cubic graph with no bridge . Then there is a coloring of the edges of $ G $ using the edges of the Petersen graph so that any three mutually adjacent edges of $ G $ map to three mutually adjancent edges in the Petersen graph.",
+   "context": "This extrordainary conjecture asserts that in a very strong sense, every bridgeless cubic graph has all of the cycle-space properties posessed by the Petersen graph. If true, this conjecture would imply both The Berge-Fulkerson conjecture and The five cycle double cover conjecture . If $ G $ is a graph and $ C \\subseteq E(G) $ we say that $ C $ is a binary cycle if every vertex in the graph $ (V(G),C) $ has even degree. If $ H $ is a graph and $ f : E(G) \\rightarrow E(H) $ is a map, we say that $ f $ is cycle-continuous if the pre-image of every binary cycle is a binary cycle. The following conjecture is an equivalent reformulation of the Petersen coloring conjecture. Conjecture (Petersen coloring conjecture (2)) Every bridgeless graph has a cycle-continuous mapping to the Petersen graph.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b006",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-014: opg:m_n_cycle_covers — general (m,n)-cycle cover framework"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:m_n_cycle_covers",
+   "name": "(m,n)-cycle covers",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a (5,2)-cycle-cover.",
+   "context": "Definition: If $ G=(V,E) $ is a graph, a binary cycle of $ G $ is a set $ C \\subseteq E $ such that every vertex of the graph $ (V,C) $ has even degree. An $ (m,n) $ - cycle-cover of $ G $ is a list $ L $ consisting of $ m $ cycles so that every edge of $ G $ is contained in exactly $ n $ of these cycles. Since every binary cycle can be written as a disjoint union of edge sets of ordinary cycles, the above conjecture is a strengthening of the cycle double cover conjecture. For positive integers $ m,n $ it is natural to ask what family of graphs have $ (m,n) $ -cycle-covers. The following chart gives some information about this question for small values of $ m $ and $ n $ . A \"yes\" in the $ (m,n) $ box indicates that every graph with no cut-edge has an $ (m,n) $ -cycle-cover. A \"no\" indicates that no graph has an $ (m,n) $ -cycle-cover. A more detailed explanation of the entries in this chart appears below it. m n 2 3 4 5 6 7 8 9 10 11 2 Eulerian NZ 4-flow NZ 4-flow 5CDC conj open 4 no Eulerian 5 post. sets B-F conj yes [BJJ] yes 6 no Eulerian 7 post. sets ? ? yes [F] yes We did not include odd values of n, since any graph with an $ (m,n) $ -cycle-cover for an odd integer $ n $ must be Eulerian . The entry \"NZ 4-flow\" is short for nowhere-zero 4-flow. Thus, our chart indicates that ( $ G $ has a nowhere-zero 4-flow) if and only if ( $ G $ has a $ (3,2) $ -cycle-cover) if and only if ( $ G $ has a $ (4,2) $ -cycle-cover). These equivalences were discovered by Tutte [Tu]. Two of…",
+   "status": "partial"
+  }
+ }
+]

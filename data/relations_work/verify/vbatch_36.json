@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e144",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Induction on ν: for an r-partite r-uniform H, Conjecture 4.3 gives k(r−1) vertices whose deletion drops the matching number by ≥k; by induction the remainder has a cover of size (r−1)(ν−k), so adding the deleted vertices yields a cover of size ≤ (r−1)ν, i.e. τ ≤ (r−1)ν. The authors explicitly propose it as a weakening of Lovász's conjecture that still implies Ryser's conjecture.",
+   "Iterate: each round deletes k_i(r-1) vertices lowering nu by >= k_i, and the hypergraph stays r-partite r-uniform. When nu reaches 0 every edge meets the deleted set, a cover of size <= (r-1) * sum k_i <= (r-1)nu, i.e. tau <= (r-1)nu. The paper states it is a weakening of Lovasz's conjecture that still implies Ryser."
+  ],
+  "source": {
+   "id": "arxiv:2505.05339__02",
+   "name": "Matching number drop by k(r−1) deletions",
+   "kind": "Conjecture",
+   "statement": "For every $r$-partite $r$-uniform hypergraph $\\mathcal{H}$ there exists some $k$ with $1\\leq k\\leq r-1$ such that $\\mathcal{H}$ contains $k(r-1)$ vertices whose deletion reduces the matching number by at least $k$.",
+   "context": "Proposed as a weakening of Lovász's (now disproved) conjecture that still implies Ryser's conjecture. The authors verified it holds for the line hypergraph of the Biggs-Smith graph, and note that only two counterexamples to Lovász's original conjecture are known, suggesting a slightly weaker statement may be true.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2505.05339",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:rysers_conjecture",
+   "name": "Ryser's conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ H $ be an $ r $ - uniform $ r $ -partite hypergraph. If $ \\nu $ is the maximum number of pairwise disjoint edges in $ H $ , and $ \\tau $ is the size of the smallest set of vertices which meets every edge, then $ \\tau \\le (r-1) \\nu $ .",
+   "context": "Definitions: A (vertex) cover is a set of vertices which meets (has nonempty intersection with) every edge, and we let $ \\tau(H) $ denote the size of the smallest vertex cover of $ H $ . A matching is a collection of pairwise disjoint edges, and we let $ \\nu(H) $ denote the size of the largest matching in $ H $ . When the hypergraph is clear from context, we just write $ \\tau $ or $ \\nu $ . It is immediate that $ \\nu \\le \\tau $ , since every cover must contain at least one point from each edge in any matching. For $ r $ -uniform hypergraphs, $ \\tau \\le r \\nu $ , since the union of the edges from any maximal matching is a set of at most $ r \\nu $ vertices that which meets every edge. Ryser's conjecture is that this second bound can be improved if $ H $ is $ r $ -uniform and $ r $ -partite (the vertices may be partitioned into $ r $ sets $ V_1,V_2,\\ldots,V_r $ so that every edge contains exactly one element of each $ V_i $ ). In the special case when $ r=2 $ our trivial inequality yields $ \\nu \\le \\tau $ and the conjecture implies $ \\tau \\le \\nu $ , so we should have $ \\nu = \\tau $ . In fact this is true, it is König's theorem on bipartite graphs [K]. Indeed, Ryser's conjecture is probably easiest to view as a high dimensional generalization of this early result of König. Recently, Aharoni [A] has applied the \"Hall's theorem for hypergraphs\" result of Aharoni and Haxell [AH] to prove this conjecture for $ r=3 $ . However the case $ r=4 $ is still wide open. Some other interesti…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/rysers_conjecture",
+   "attributed_to": "Ryser, Herbert J."
+  }
+ },
+ {
+  "edge_id": "e145",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Conjecture 6.2 asserts the Turán exponent of a k-partite k-uniform H is controlled as k−Θ(1/d_max(H)); for the 3-partite Latin-square hypergraph H_L one has d_max(H_L)=Θ(d), so 6.2 yields ex(n,H_L)=n^{3−Θ(1/d)}, which is Conjecture 6.4. The paper states 6.4's prediction matches d_max(H_L)=Θ(d) 'via Conjecture 6.2'. (6.2's statement is truncated in the record, hence medium confidence.)"
+  ],
+  "source": {
+   "id": "arxiv:2401.00359__01",
+   "name": "Turán Exponent via d_max for k-partite Hypergraphs",
+   "kind": "Conjecture",
+   "statement": "There is a constant $c_{k}>0$ such that for every $k$-uniform $k$-partite hypergraph $H$, [statement truncated in source]",
+   "context": "Theorem 1.4 gives $\\Omega_{k}(n^{k-C_{k}/d_{1}(H)})\\leq\\operatorname{ex}(n,H)\\leq O_{H}(n^{k-c_{k}/d_{1}(H)^{k-1}})$. The complete $k$-partite hypergraph $K^{(k)}_{d,\\ldots,d}$ shows the upper bound is tight in $d_{1}$, while the bipartite hedgehog $H_{d}^{(k)}$ shows the lower bound is tight in $d_{1}$. This gap motivates replacing $d_{1}(H)$ by the finer quantity $d_{\\mathsf{max}}(H)=\\max_{1\\leq i<k}d_{i}(H)$, and Conjecture 6.2 asserts that the Turán exponent is controlled by $d_{\\mathsf{max}}(H)$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2401.00359",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2401.00359__02",
+   "name": "Turán exponent of Latin square hypergraphs",
+   "kind": "Conjecture",
+   "statement": "Let $L$ be a $d\\times d$ Latin square. Define $H_{L}$ to be the 3-uniform 3-partite hypergraph on vertex set $[d]\\sqcup[d]\\sqcup[d]$ where $(i,j,k)\\in E(H_{L})$ if and only if $L(i,j)=k$. Then $\\mathrm{ex}(n,H_{L})=n^{3-\\Theta(1/d)}$.",
+   "context": "For every $d\\times d$ Latin square one has $d_{1}(H_{L}),d_{2}(H_{L})=\\Theta(d)$, so $d_{\\mathsf{max}}(H_{L})=\\Theta(d)$, yet Theorem 1.4 only yields $\\mathrm{ex}(n,H_{L})\\leq O(n^{3-c/d^{2}})$. The 1-skeleton of $H_{L}$ is $K_{d,d,d}$, the same as that of the complete 3-partite hypergraph $K^{(3)}_{d,d,d}$, so current techniques cannot distinguish $H_{L}$ from $K^{(3)}_{d,d,d}$ at the level of the Turán exponent. Conjecture 6.4 predicts that the exponent is $3-\\Theta(1/d)$, matching $d_{\\mathsf{max}}(H_{L})=\\Theta(d)$ via Conjecture 6.2.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2401.00359",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e146",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "low",
+  "n_finders": 1,
+  "sketches": [
+   "If the extremal symmetric intersecting A ⊂ [k]^n are set-intersecting, they are generated by a symmetric intersecting set family B ⊂ P([n]); the orbit-averaging bound Σ_γ|B∩γB| = |B|²|Γ|/n forces every B∈B to have |B| ≥ √n, which plausibly caps |A| at k^{n−cn^{1/2}}, giving the polynomial gain with δ=1/2. The final counting step (bounding over all generators B) is not verified."
+  ],
+  "source": {
+   "id": "arxiv:1909.11578__01",
+   "name": "Largest symmetric intersecting families set-intersecting",
+   "kind": "Informal",
+   "statement": "It seems possible (but maybe impossible to prove) that the largest symmetric intersecting families in $[k]^n$ are set-intersecting.",
+   "context": "A family $A \\subset [k]^n$ is set-intersecting if there exists a symmetric intersecting family $\\mathcal{B}$ of subsets of $[n]$ and $\\ell \\in [k]$ such that $x \\in A$ if and only if there is some $B \\in \\mathcal{B}$ with $x_i = \\ell$ for all $i \\in B$. The authors note that all their best constructions have this form, motivating the conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1909.11578",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1909.11578__02",
+   "name": "Polynomial gain on symmetric intersecting vector families",
+   "kind": "Problem",
+   "statement": "Show that there exist constants $c, \\delta > 0$ (possibly depending on $k$) such that for any symmetric intersecting $A \\subset [k]^n$, we have $\\log_k |A| \\leq n - cn^{\\delta}$.",
+   "context": "This is posed in Section 4 as a concrete and more modest goal, falling short of identifying the exact extremal size: even a polynomial gain over the $o(k^n)$ bound of Theorem 1.1, expressed as $\\log_k |A| \\leq n - cn^\\delta$, would be a significant advance.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1909.11578",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e147",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "A 57-regular Moore graph of diameter 2 and girth 5 is a (3250,57,0,1) strongly regular graph; girth 5 forces lambda=0, so it is triangle-free and distinct from the seven known triangle-free SRGs (C5, Petersen, Clebsch, Hoffman-Singleton, Gewirtz, the (77,16,0,4) graph, Higman-Sims). Its existence would therefore provide an eighth triangle-free strongly regular graph. The OPG page for the target states this implication explicitly."
+  ],
+  "source": {
+   "id": "opg:57_regular_moore_graph",
+   "name": "57-regular Moore graph?",
+   "kind": "Conjecture",
+   "statement": "Question Does there exist a 57- regular graph with diameter 2 and girth 5?",
+   "context": "A Moore graph is a graph with diameter $ d $ and girth $ 2d+1 $ . It is known that every Moore graph is regular [S] (even distance-regular), and two (rather trivial) families of such graphs are provided by complete graphs and odd cycles. In one of the founding papers in the subject of algebraic graph theory, Hoffman and Singleton [HS] proved that every $ r $ -regular Moore graph with diameter 2 must have $ r \\in \\{2,3,7,57\\} $ . For $ r=2 $ and $ r=3 $ such graphs exist, are unique, and are familiar: the pentagon, and the Petersen graph . For $ r=7 $ Hoffman and Singleton constructed such a graph - now known as the Hoffman-Singleton graph , but for $ r=57 $ we are still uncertain whether such a graph exists. The pentagon, the Petersen graph, and the Hoffman-Singleton graph are all very highly symmetric graphs, and much of the interest in these objects is related to exceptional phenomena in small finite groups. In contrast to this, Higman proved that a 57-regular Moore graph cannot be vertex transitive (see [C]). In some sense, this is indication that even if a 57-regular Moore graph exists, it will be of less interest than its younger siblings. Nevertheless, as a lingering problem left by one of the first papers in algebraic graph theory, this is viewed as an important question. There are some easily established properties of a 57-regular Moore graph. For instance it must have 3250 vertices and independence number at most 400. However it seems not nearly enough is known to na…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/57_regular_moore_graph",
+   "attributed_to": "Hoffman, Alan J., Singleton, Robert R."
+  },
+  "target": {
+   "id": "opg:triangle_free_strongly_regular_graphs",
+   "name": "Triangle free strongly regular graphs",
+   "kind": "Conjecture",
+   "statement": "Problem Is there an eighth triangle free strongly regular graph?",
+   "context": "A regular graph $ G $ is strongly regular if there exist integers $ \\lambda, \\mu $ so that every pair of adjacent vertices have exactly $ \\lambda $ common neighbors, and every pair of nonadjacent vertices have exactly $ \\mu $ common neighbors. To eliminate degeneracies, we shall further assume that $ \\mu \\ge 1 $ . If $ G $ is $ k $ -regular and $ |V(G)| = n $ , then we say that $ G $ is a $ (n,k,\\lambda,\\mu) $ strongly regular graph. There are exactly seven triangle-free strongly regular graphs known: The five cycle, the Petersen Graph , The Clebsch Graph, the Hoffman-Singleton Graph , The Gewirtz Graph, the Higman-Sims Graph, and a $ (77,16,0,4) $ strongly regular subgraph of the Higman-Sims graph. Every Moore Graph of diameter 2 is a triangle-free strongly regular graph, so if there is a 57-regular Moore Graph of diameter 2, this would add another to the list. See Andries Brouwer's graph descriptions for more on these graphs.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/triangle_free_strongly_regular_graphs",
+   "attributed_to": ""
+  }
+ }
+]

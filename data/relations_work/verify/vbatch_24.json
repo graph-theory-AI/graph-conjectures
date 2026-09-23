@@ -1,0 +1,126 @@
+[
+ {
+  "edge_id": "e096",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "A class-1 (2t+1)-regular graph decomposes into 2t+1 perfect matchings; every odd vertex set X meets each matching's cut ∂(X) at least once, so |∂(X)|≥2t+1, i.e., the graph is a (2t+1)-graph. Hence for t>1 the class-1 conjecture (F_c≤2+2/t) is the restriction of the r-graph conjecture; the remaining t=1 case is Tutte's theorem (3-edge-colorable cubic ⟹ F_c≤4). Both statements are now disproved, consistently with this containment.",
+   "A (2t+1)-regular class-1 graph decomposes into 2t+1 perfect matchings, each meeting every odd vertex cut, so every odd cut has size at least 2t+1, i.e. the graph is a (2t+1)-graph. Hence the r-graph conjecture F_c <= 2+2/t restricts to the class-1 conjecture; the OPG page states this containment (the leftover t=1 case of the source is a known theorem for cubic graphs).",
+   "Every (2t+1)-regular class-1 graph is a (2t+1)-graph: its 2t+1 disjoint perfect matchings each meet every odd cut, so odd cuts have size >= 2t+1. Hence the r-graph conjecture (F_c <= 2+2/t) restricted to class-1 regular graphs gives the class-1 conjecture (the t=1 case is classical via 3-edge-coloring => 4-flow). OPG states the containment explicitly."
+  ],
+  "source": {
+   "id": "opg:circular_flow_numbers_of_r_graphs",
+   "name": "Circular flow numbers of $r$-graphs",
+   "kind": "Conjecture",
+   "statement": "A nowhere-zero $ r $ -flow $ (D(G),\\phi) $ on $ G $ is an orientation $ D $ of $ G $ together with a function $ \\phi $ from the edge set of $ G $ into the real numbers such that $ 1 \\leq |\\phi(e)| \\leq r-1 $ , for all $ e \\in E(G) $ , and $ \\sum_{e \\in E^+(v)}\\phi(e) = \\sum_{e \\in E^-(v)}\\phi(e), \\textrm{ for all } v \\in V(G) $ . A $ (2t+1) $ -regular graph $ G $ is a $ (2t+1) $ -graph if $ |\\partial_G(X)| \\geq 2t+1 $ for every $ X \\subseteq V(G) $ with $ |X| $ odd. Conjecture Let $ t > 1 $ be an integer. If $ G $ is a $ (2t+1) $ -graph, then $ F_c(G) \\leq 2 + \\frac{2}{t} $ .",
+   "context": "Since every $ (2t+1) $ -regular class 1 graph is a $ (2t+1) $ -graph, the truth of this conjecture would imply the truth of the conjecture on the circular flow number of regular class 1 graphs. If it is true for even $ t $ , say $ t=2t' $ , then Jaeger's modular orientation conjecture is true for $ (4t'+1) $ -regular graphs and hence, by a result of Jaeger, it would imply the truth of Tutte's 5-flow conjecture. For $ t=2 $ it is Tutte's 3-flow conjecture.",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/circular_flow_numbers_of_r_graphs",
+   "attributed_to": "Steffen, Eckhard"
+  },
+  "target": {
+   "id": "opg:circular_flow_number_of_regular_class_1_graphs",
+   "name": "Circular flow number of regular class 1 graphs",
+   "kind": "Conjecture",
+   "statement": "A nowhere-zero $ r $ -flow $ (D(G),\\phi) $ on $ G $ is an orientation $ D $ of $ G $ together with a function $ \\phi $ from the edge set of $ G $ into the real numbers such that $ 1 \\leq |\\phi(e)| \\leq r-1 $ , for all $ e \\in E(G) $ , and $ \\sum_{e \\in E^+(v)}\\phi(e) = \\sum_{e \\in E^-(v)}\\phi(e), \\textrm{ for all } v \\in V(G) $ . The circular flow number of $ G $ is inf $ \\{ r | G $ has a nowhere-zero $ r $ -flow $ \\} $ , and it is denoted by $ F_c(G) $ . A graph with maximum vertex degree $ k $ is a class 1 graph if its edge chromatic number is $ k $ . Conjecture Let $ t \\geq 1 $ be an integer and $ G $ a $ (2t+1) $ -regular graph. If $ G $ is a class 1 graph, then $ F_c(G) \\leq 2 + \\frac{2}{t} $ .",
+   "context": "The conjecture is true for $ t=1 $ , i.e. for cubic graphs. It says, that the circular flow number of $ (2t+1) $ -regular class 1 graphs is bounded by the circular flow number of the complete graph on $ 2t+2 $ vertices.",
+   "status": "disproved",
+   "url": "http://www.openproblemgarden.org/op/circular_flow_number_of_regular_class_1_graphs",
+   "attributed_to": "Steffen, Eckhard"
+  }
+ },
+ {
+  "edge_id": "e097",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "The entry's two conjectures together imply the 5-flow conjecture (stated on the OPG page): for bridgeless cubic G, the three unit vectors of an S²-flow at a vertex sum to zero, hence lie equidistant on a great circle, so composing with the map q gives a nowhere-zero 5-flow; the 5-flow conjecture reduces to bridgeless cubic graphs.",
+   "The 5-flow conjecture reduces to bridgeless cubic graphs; composing an S^2-valued flow phi with the antipodal map q: S^2 -> {-4,...,4} of the node's second conjecture yields a nowhere-zero 5-flow. The OPG page notes the two conjectures together imply Tutte's 5-flow conjecture."
+  ],
+  "source": {
+   "id": "opg:unit_vector_flows",
+   "name": "Unit vector flows",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ without a bridge , there is a flow $ \\phi : E(G) \\rightarrow S^2 = \\{ x \\in {\\mathbb R}^3 : |x| = 1 \\} $ . Conjecture There exists a map $ q:S^2 \\rightarrow \\{-4,-3,-2,-1,1,2,3,4\\} $ so that antipodal points of $ S^2 $ receive opposite values, and so that any three points which are equidistant on a great circle have values which sum to zero.",
+   "context": "The main interest in these two conjectures is that together they imply Tutte's 5-flow conjecture . This follows easily from the fact that the 5-flow conjecture can be reduced to cubic graphs without bridges, and for such a graph $ G $ , the composition of the maps $ \\phi $ and $ q $ (given by the above conjectures) is a nowhere-zero 5-flow. There are a couple of easy partial results toward the first conjecture which follow from well-known flow/cycle-cover results. First, Tutte showed that every graph with a nowhere-zero 4-flow has a list of three 2-flows $ f_1,f_2,f_3 : E(G) \\to \\{-1,0,1\\} $ so that every edge is in the support of exactly two of these flows. Combining these flows and normalizing appropriately gives an $ S^2 $ -flow. Bermond, Jackson, and Jaeger [BJJ] showed that every graph with no bridge has a list of seven 2-flows so that every edge is in the support of exactly four of these flows. Combining these and normalizing appropriately gives an $ S^6 $ -flow. It seems likely that a graph has an $ S^1 $ -flow if and only if it has a nowhere-zero 3-flow. The \"if\" direction of this implication isn't hard to show and the \"only if\" direction looks quite possible. A dual concept to that of a flow is that of a tension. Observe that a graph $ G $ has a $ S^n $ tension if and only if can be embedded in $ {\\mathbb R}^{n+1} $ so that all edges are unit length line segments. Such embeddings have received some attention over the years. In particular, there is considerable intere…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/unit_vector_flows",
+   "attributed_to": "Jain, Kamal"
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e098",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "A minimal counterexample to CDC is a 3-connected cubic graph G. By Tutte's theorem G has an induced nonseparating circuit C; in cubic G this makes G−E(C) connected (if C is Hamiltonian, G is 3-edge-colorable and has a CDC anyway), so the conjecture applied to S=C yields a CDC of G."
+  ],
+  "source": {
+   "id": "opg:cycle_double_covers_containing_predefined_2_regular_subgraphs",
+   "name": "Cycle Double Covers Containing Predefined 2-Regular Subgraphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a $ 2 $ -connected cubic graph and let $ S $ be a $ 2 $ -regular subgraph such that $ G-E(S) $ is connected. Then $ G $ has a cycle double cover which contains $ S $ (i.e all cycles of $ S $ ).",
+   "context": "Used definitions in the above conjecture: a \"cycle\" is a connected 2-regular subgraph, a \"cycle double cover\" of a graph $ G $ is a set of cycles of $ G $ such that every edge of $ G $ is contained in precisely two cycles of the set. This conjecture has been motivated by Theorem 3, respectively, Theorem 4 in www.arxiv.org/abs/1711.10614. A weaker conjecture (Conjecture 14) has been stated in \"Snarks with special spanning trees\" (see www.arxiv.org/abs/1706.05595).",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_covers_containing_predefined_2_regular_subgraphs",
+   "attributed_to": "Arthur, Hoffmann-Ostenhof"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  }
+ },
+ {
+  "edge_id": "e099",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Given a simple digraph D with min out-degree r, colour the underlying edges so that the colour class of vertex v consists of the underlying edges of v's out-arcs (n colours, each class of size >= r). A cycle of length <= ceil(n/r) with no two incident edges of the same colour orients into a directed cycle of D of the same length. The source paper proves exactly this: Conjecture 4 implies Caccetta-Haggkvist.",
+   "Given a digraph D with min out-degree r, color each edge of its underlying graph by its tail: n color classes of size >= r. In a cycle of length <= ceil(n/r) with no two incident edges sharing a color, each edge is 'claimed' by one endpoint and no vertex claims two incident cycle edges, so by counting each cycle vertex claims exactly one, making the cycle directed of length <= ceil(n/r). The paper proves this implication explicitly."
+  ],
+  "source": {
+   "id": "arxiv:1806.00825__00",
+   "name": "Proper-incident short rainbow cycle bound",
+   "kind": "Conjecture",
+   "statement": "Let $G$ be a simple $n$-vertex graph and $c$ be a colouring of $E(G)$ with $n$ colours, where each colour class has size at least $r$. Then $(G, c)$ contains a cycle $C$ of length at most $\\lceil n/r \\rceil$ such that no two incident edges of $C$ are the same colour.",
+   "context": "Introduced by the authors as a weakening of Aharoni's Conjecture 3 (the rainbow condition on the whole cycle is replaced by a proper-edge-colouring condition on incident pairs). The authors prove that Conjecture 4 implies the Caccetta-Häggkvist conjecture via a direct colouring construction on the underlying undirected graph of a digraph.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1806.00825",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:caccetta_haggkvist_conjecture",
+   "name": "Caccetta-Häggkvist Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ \\lceil n/r\\rceil $",
+   "context": "It is one of the most famous conjectures in graph theory. It has many alternative formulations and lots of work have been done around it. Many interesting conjectures are related to it. See [Sul]. It is in particular implied by a conjecture of Thomassé and Hoàng-Reed Conjecture . The Caccetta-Häggkvist Conjecture is a generalization of an earlier conjecture of Behzad, Chartrand, and Wall, who conjectured it only for diregular digraphs. Caccetta-H äggkvist Conjecture has been proved for $ r\\leq \\sqrt{n/2} $ by Shen [She1]. For $ r\\geq n/2 $ it is trivial. But already for $ r=n/3 $ , it is still open as well as Behzad-Chartrand-Wall Conjecture Conjecture Every simple $ n $ -vertex digraph with minimum outdegree at least $ r/3 $ and minimum indegree at least $ r/3 $ has a cycle with length at most $ 3 $ . This conjecture would be implied by Seymour's Second Neighbourhood Conjecure . Shen [She2] also proved the following approximate version. Theorem Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ n/r + 73 $ . Bollobás and Scott [BS] proposed a weighted version of the Caccetta-Häggkvist Conjecture. Conjecture Let $ w:E(D) \\rightarrow [0,1] $ be a weight function on the arcs of a digraph $ D $ . If $ \\sum_{u\\in N^-(v)} w(uv) \\geq 1 $ and $ \\sum_{u\\in N^+(v)} w(vu) \\geq 1 $ for all $ v\\in V(D) $ , then there is a directed cycle in $ D $ of total weight at least 1. They gave a nice proof that there is a directed path of tota…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/caccetta_haggkvist_conjecture",
+   "attributed_to": "Caccetta, L., Häggkvist, Roland"
+  }
+ }
+]

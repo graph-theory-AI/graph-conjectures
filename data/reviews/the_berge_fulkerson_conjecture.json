@@ -46,15 +46,16 @@
   ],
   "verified_urls": [
     "https://arxiv.org/abs/2204.10021",
-    "https://arxiv.org/abs/2501.05348",
-    "https://arxiv.org/html/2508.04507",
-    "https://arxiv.org/html/2210.13234",
     "https://arxiv.org/abs/2210.13234",
-    "https://arxiv.org/abs/2508.15602"
+    "https://arxiv.org/abs/2501.05348",
+    "https://arxiv.org/abs/2508.15602",
+    "https://arxiv.org/abs/2607.16356",
+    "https://arxiv.org/html/2210.13234",
+    "https://arxiv.org/html/2508.04507"
   ],
-  "notes": "Several ScienceDirect and Wiley journal pages returned HTTP 403 (including papers on rotation snarks by Máčajová–Škoviera, superposition snarks, and C(12)-linked permutation graphs by Liu et al., J. Graph Theory 2021); these could not be verified and are therefore excluded from since_posted. The Karabáš et al. preprint (2210.13234) was revised as recently as January 2025 but no peer-reviewed journal publication was confirmed. The full Berge-Fulkerson conjecture remains open.",
+  "notes": "Several ScienceDirect and Wiley journal pages returned HTTP 403 (including papers on rotation snarks by Máčajová–Škoviera, superposition snarks, and C(12)-linked permutation graphs by Liu et al., J. Graph Theory 2021); these could not be verified and are therefore excluded from since_posted. The Karabáš et al. preprint (2210.13234) was revised as recently as January 2025 but no peer-reviewed journal publication was confirmed. The full Berge-Fulkerson conjecture remains open. 2026-09-06 update: the cycle double cover conjecture itself is now a theorem (OpenAI/GPT-5.6, July 2026; exposition arXiv:2607.16356). Berge-Fulkerson is not settled by it. In cycle-cover language (Oum, arXiv:2607.16356, Section 9.4) the conjecture is equivalent to every bridgeless cubic graph having a 6-cycle 4-cover; the best unconditional results remain the 7-cycle 4-cover of Bermond, Jackson and Jaeger and Fan's 10-cycle 6-cover, both of which predate and are independent of the new proof. The recorded relation to CDC was 'related_only', and that reading is confirmed: the CDC proof transfers nothing to Berge-Fulkerson.",
   "slug": "the_berge_fulkerson_conjecture",
-  "reviewed_at": "2026-05-08",
-  "model": "claude-sonnet-4-6 (worker 06)",
+  "reviewed_at": "2026-09-06",
+  "model": "claude-opus-5 (manual update, 2607.16356v3 read in full)",
   "search_enabled": true
 }

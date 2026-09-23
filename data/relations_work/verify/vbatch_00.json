@@ -1,0 +1,129 @@
+[
+ {
+  "edge_id": "e000",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Taking s=χ_ℓ in the monotonicity λ_r/r ≥ λ_s/s and using λ_{χ_ℓ}=n yields λ_t ≥ tn/χ_ℓ, which is exactly the first conjecture; so it is the s=χ_ℓ instance of the second.",
+   "Taking s=χ_ℓ in the Iradmusa conjecture λ_r/r ≥ λ_s/s, and using λ_{χ_ℓ}=n, gives λ_t ≥ tn/χ_ℓ, exactly the Albertson–Grossman–Haas conjecture; the OPG entry notes this specialization explicitly.",
+   "Take s = chi_l in lambda_r/r >= lambda_s/s; since lambda_{chi_l} = n this gives lambda_t >= tn/chi_l, the Albertson-Grossman-Haas conjecture. The OPG page states this explicitly."
+  ],
+  "source": {
+   "id": "opg:partial_list_coloring_0",
+   "name": "Partial List Coloring",
+   "kind": "Conjecture",
+   "statement": "Let $ G $ be a simple graph, and for every list assignment $ \\mathcal{L} $ let $ \\lambda_{\\mathcal{L}} $ be the maximum number of vertices of $ G $ which are colorable with respect to $ \\mathcal{L} $ . Define $ \\lambda_t = \\min{ \\lambda_{\\mathcal{L}} } $ , where the minimum is taken over all list assignments $ \\mathcal{L} $ with $ |\\mathcal{L}| = t $ for all $ v \\in V(G) $ . Conjecture [2] Let $ G $ be a graph with list chromatic number $ \\chi_\\ell $ and $ 1\\leq r\\leq s\\leq \\chi_\\ell $ . Then \\[\\frac{\\lambda_r}{r}\\geq\\frac{\\lambda_s}{s}.\\]",
+   "context": "As you see this conjecture in the special case $ s=\\chi_\\ell $ , is the conjecture of Albertson, Grossman and Haas [1]: $ \\lambda_t\\geq\\frac{tn}{\\chi_\\ell} $ for any $ 0\\leq t\\leq \\chi_\\ell $ .",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/partial_list_coloring_0",
+   "attributed_to": "Iradmusa, Moharram"
+  },
+  "target": {
+   "id": "opg:partial_list_coloring",
+   "name": "Partial List Coloring",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a simple graph with $ n $ vertices and list chromatic number $ \\chi_\\ell(G) $ . Suppose that $ 0\\leq t\\leq \\chi_\\ell $ and each vertex of $ G $ is assigned a list of $ t $ colors. Then at least $ \\frac{tn}{\\chi_\\ell(G)} $ vertices of $ G $ can be colored from these lists.",
+   "context": "Albertson, Grossman, and Haas introduce this interesting question in [AGH], and prove some partial results. For instance, they show that under the above assumptions, at least $ (1 - (\\frac{ \\chi(G) - 1}{\\chi(G)} )^t) \\cdot n $ vertices of $ G $ can be colored from the lists.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/partial_list_coloring",
+   "attributed_to": "Albertson, Michael O., Grossman, Sara, Haas, Ruth"
+  }
+ },
+ {
+  "edge_id": "e001",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "In an r-graph, every H⊆G with |V(H)|=2k+1 has at least r edges leaving, so |E(H)| ≤ rk, and |V(H)|=2k gives |E(H)| ≤ rk; hence the overfull parameter w(G) ≤ r. Goldberg then gives χ' ≤ max{Δ+1, w} = r+1, which is Seymour's r-graph conjecture.",
+   "For an r-graph G, Δ(G)=r, and for any H⊆G with |V(H)| odd the cut condition gives |E(H)| ≤ (r|V(H)|−r)/2, so ⌈|E(H)|/⌊|V(H)|/2⌋⌉ ≤ r; for even |V(H)| the ratio is ≤ r by regularity. Hence w(G) ≤ r+1 and Goldberg's bound χ' ≤ max{Δ+1, w} yields χ' ≤ r+1.",
+   "For an r-graph, Delta = r and every H on an odd vertex set S has |E(H)| <= (r|S|-r)/2 since at least r edges leave S, so the overfull parameter w(G) <= r. Goldberg's bound chi' <= max(Delta+1, w) then gives chi' <= r+1, which is Seymour's r-graph conjecture (the classical Goldberg-Seymour link)."
+  ],
+  "source": {
+   "id": "opg:goldbergs_conjecture",
+   "name": "Goldberg's conjecture",
+   "kind": "Conjecture",
+   "statement": "The overfull parameter is defined as follows: \\[ w(G) = \\max_{H \\subseteq G} \\left\\lceil \\frac{ |E(H)| }{ \\lfloor \\tfrac{1}{2} |V(H)| \\rfloor} \\right\\rceil. \\] Conjecture Every graph $ G $ satisfies $ \\chi'(G) \\le \\max\\{ \\Delta(G) + 1, w(G) \\} $ .",
+   "context": "This important problem remains open despite considerable attention. The same conjecture was independently discovered by Andersen and Seymour. Vizing's Theorem, one of the cornerstones of graph colouring, shows that $ \\chi'(G) \\le \\Delta(G) + 1 $ for every simple graph $ G $ . So, in particular, every simple graph satisfies Goldberg's conjecture. Graphs with parallel edges need not satisfy Vizing's bound. For instance, if $ G $ is the graph obtained from a triangle by adding an extra $ k-1 $ edges in parallel with each existing one, then $ \\Delta(G) = 2k $ but $ \\chi'(G) = 3k $ . More generally, if $ H $ is a subgraph of $ G $ , then every colour can appear on at most $ \\lfloor \\frac{1}{2}|V(H)| \\rfloor $ edges of $ H $ , so $ \\chi'(G) \\ge |E(H)| / \\lfloor \\tfrac{1}{2} |V(H)| \\rfloor $ . Thus, $ w(G) $ , our overfull parameter, is a natural lower bound on $ \\chi'(G) $ , and Goldberg's conjecture asserts that whenever $ \\chi'(G) $ exceeds $ \\Delta(G)+1 $ , then it is equal to this lower bound. Although the statement of the conjecture may appear to be the most natural formulation, there are a couple of related conjectures with similar lower bounds. For instance, Seymour's r-graph conjecture is equivalent to the statement that $ \\chi'(G) \\le \\max \\{\\Delta(G), w(G) \\} + 1 $ . Goldberg also conjectured that $ \\chi'(G) \\le \\max\\{ \\Delta(G), w(G) + 1\\} $ . In addition to simple graphs, Goldberg's Conjecture is known to hold for any graph $ G $ which satisfies one of the following \\it…",
+   "status": "solved",
+   "url": "http://www.openproblemgarden.org/op/goldbergs_conjecture",
+   "attributed_to": "Goldberg, Mark K."
+  },
+  "target": {
+   "id": "opg:seymours_r_graph_conjecture",
+   "name": "Seymour's r-graph conjecture",
+   "kind": "Conjecture",
+   "statement": "An $ r $ - graph is an $ r $ -regular graph $ G $ with the property that $ |\\delta(X)| \\ge r $ for every $ X \\subseteq V(G) $ with odd size. Conjecture $ \\chi'(G) \\le r+1 $ for every $ r $ -graph $ G $ .",
+   "context": "This conjecture is among the most important unsolved problems in edge coloring. It is very close in nature to Goldberg's Conjecture , and is also closely related to Rizzi's packing postman sets conjecture (see packing T-joins ). If $ G $ is an $ r $ -regular graph and there exists $ X \\subseteq V(G) $ with $ |X| $ odd and $ |\\delta(X)| < r $ , then it is immediate that $ G $ is not $ r $ -edge-colourable, since every perfect matching must use at least one edge from $ \\delta(X) $ . This is in some sense the only obvious obstruction to $ r $ -edge-colorability that we know of. So, $ r $ -graphs are the $ r $ -regular graphs which do not fail to be $ r $ -edge-colorable for this obvious reason. Not every $ r $ -graph is $ r $ -edge-colorable, for instance Petersen's graph is a 3-graph which is not 3-edge-colorable. However, this conjecture asserts that all such graphs are still $ (r+1) $ -edge-colorable. This conjecture has been proved for $ r \\le 11 $ by Nishizeki and Kashiwagi [NK].",
+   "status": "solved",
+   "url": "http://www.openproblemgarden.org/op/seymours_r_graph_conjecture",
+   "attributed_to": "Seymour, Paul D."
+  }
+ },
+ {
+  "edge_id": "e002",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "χ''(G) ≤ χ''_ℓ(G) always; so χ''_ℓ ≤ Δ+2 for all simple graphs gives χ'' ≤ Δ+2, i.e. the Total Colouring Conjecture.",
+   "χ''(G) ≤ χ''_ℓ(G) always, so χ''_ℓ(G) ≤ Δ+2 for every simple graph gives χ''(G) ≤ Δ+2, which is the Total Colouring Conjecture (the paper itself presents it as the list analogue of TCC)."
+  ],
+  "source": {
+   "id": "arxiv:1904.12060__00",
+   "name": "List Total Coloring χ″ℓ ≤ Δ+2",
+   "kind": "Conjecture",
+   "statement": "Every simple graph $G$ satisfies $\\chi''_\\ell(G) \\leq \\Delta(G) + 2$.",
+   "context": "This is the list coloring analogue of the Total Coloring Conjecture (Conjecture 4), asserting that the list total chromatic number never exceeds $\\Delta + 2$. It is stated without a bibliographic citation in the paper, appearing as a natural companion to Conjecture 4. The paper's main result (Corollary 1) proves Conjecture 5 for all planar graphs with $\\Delta \\geq 8$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1904.12060",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:behzads_conjecture",
+   "name": "Total Colouring Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture A total coloring of a graph $ G = (V,E) $ is an assignment of colors to the vertices and the edges of $ G $ such that every pair of adjacent vertices, every pair of adjacent edges and every vertex and incident edge pair, receive different colors. The total chromatic number of a graph $ G $ , $ \\chi''(G) $ , equals the minimum number of colors needed in a total coloring of $ G $ . It is an old conjecture of Behzad that for every graph $ G $ , the total chromatic number equals the maximum degree of a vertex in $ G $ , $ \\Delta(G) $ plus one or two. In other words, \\[\\chi''(G)=\\Delta(G)+1\\ \\ or \\ \\ \\Delta(G)+2.\\]",
+   "context": "The lower bound $ \\Delta(G)+1 $ is trivial by looking at the number of colours required on a vertex of maximum degree and its incident edges. It is easy to prove $ \\chi''(G)\\leq 2\\Delta(G)+2 $ . Molloy and Reed [MR] showed that there exists a constant $ C $ such that $ \\chi''(G)\\leq Delta(G)+C $ for every graph $ G $ . The Edge list coloring conjecture would imply that $ \\chi''(G)\\leq \\Delta(G)+3 $ . The Total Colouring Conjecture was proved for $ \\Delta(G)=3 $ by Rosenfeld [R] and also by Vijayaditya [V], and for $ \\Delta(G)\\in\\{4,5\\} $ by Kostochka [K1,K2,K3]; in fact the proof for $ \\Delta(G)=5 $ holds for multigraphs. The Conjecture has also been established for many graph classes. For every planar graph G with $ \\Delta(G) \\geq 7 $ , the following clever argument proves it. By the 4 Color Theorem, we can color the vertices with the colors 1, 2, 3, 4. By a result of Sanders and Zhao [SZ], we can color the edges of the graph with the colors $ 3, 4, \\ldots, \\Delta(G) + 1, \\Delta(G) + 2 $ . Uncolor each edge that was colored 3 or 4. Note that each uncolored edge has exactly two colors from $ \\{1,2,3,4\\} $ forbidden. Hence, each uncolored edge has at least two colors available. Note that the uncolored edges induce a disjoint union of paths and even cycles. Thus, by a special case of a theorem of Erdos, Rubin, and Taylor [ERT], we can color the edges from their lists of two available colors each.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/behzads_conjecture",
+   "attributed_to": "Behzad, M."
+  }
+ },
+ {
+  "edge_id": "e003",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Part (a) says χ_f(G) ≤ had(G). If G is K_{t+1}-minor-free then had(G) ≤ t, so χ_f(G) ≤ t; since α(G)·χ_f(G) ≥ n, we get α(G) ≥ n/t.",
+   "If G has no K_{t+1} minor then had(G) <= t, so part (a) chi_f(G) <= had(G) gives chi_f(G) <= t; fractional colouring always yields alpha(G) >= n/chi_f(G) >= n/t, which is the conjectured independence-number bound.",
+   "Part (a) of Fractional Hadwiger says χ_f(G) ≤ had(G). If G is K_{t+1}-minor-free then had(G) ≤ t, so χ_f(G) ≤ t; since χ_f(G) ≥ n/α(G) always, α(G) ≥ n/t, which is exactly the independence-number conjecture."
+  ],
+  "source": {
+   "id": "opg:fractional_hadwiger",
+   "name": "Fractional Hadwiger",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ , (a) $ \\chi_f(G)\\leq\\text{had}(G) $ (b) $ \\chi(G)\\leq\\text{had}_f(G) $ (c) $ \\chi_f(G)\\leq\\text{had}_f(G) $ .",
+   "context": "Here $ \\chi $ is the chromatic number, $ \\chi_f $ is the fractional chromatic number, $ \\text{had} $ is the Hadwiger number, and $ \\text{had}_f $ is the fractional Hadwiger number (which was recently introduced independently by Fox [F] and Pedersen [P]). It is well known and easily proved (see [HW]) that $ \\chi_f(G)\\leq\\chi(G)\\text{ and }\\text{had}(G)\\leq\\text{had}_f(G)\\leq\\text{tw}(G)+1, $ where $ \\text{tw}(G) $ is the treewidth of $ G $ . Hadwiger's famous conjecture, $ \\chi(G)\\leq\\text{had}(G) $ , bridges the gap in the above inequalities. The above conjectures therefore are weaker than Hadwiger's conjecture. Note that Conjecture (a) implies Conjecture (c), and Conjecture (b) implies Conjecture (c). Note that Reed and Seymour [RS] proved that $ \\chi_f(G)\\leq2\\,\\text{had}(G) $ . Conjecture (a) is due to Reed and Seymour [RS]. Conjecture (b) is due to Harvey and Wood [HW]. Conjecture (c) is independently due to Harvey and Wood [HW] and Pedersen [P]. Pedersen [P] presents a natural equivalent formulation of Conjecture (c).",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/fractional_hadwiger",
+   "attributed_to": "Harvey, Daniel J., Reed, Bruce A., Seymour, Paul D., Wood, David R."
+  },
+  "target": {
+   "id": "arxiv:1907.12999__00",
+   "name": "Independence number lower bound in K_{t+1}-minor-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every positive integer $t$, if an $n$-vertex graph $G$ does not contain $K_{t+1}$ as a minor then $\\alpha(G) \\geq n/t$.",
+   "context": "This conjecture is a natural weakening of Hadwiger's conjecture: since Hadwiger's conjecture would imply every $n$-vertex $K_{t+1}$-minor-free graph has chromatic number at most $t$ and thus an independent set of size at least $n/t$, this bound has attracted considerable attention (see Seymour's survey [31]). Duchet and Meyniel proved the bound holds within a factor of 2 in 1982, and subsequent improvements have been made by Fox, Balogh–Kostochka, and others. The present paper studies this conjecture restricted to triangle-free graphs.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1907.12999",
+   "attributed_to": "paper authors"
+  }
+ }
+]
