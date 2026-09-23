@@ -45,7 +45,7 @@
       <span class="status-badge status-ai-proved">ai-proved</span>
       <span class="status-badge status-ai-disproved">ai-disproved</span>
       <span class="status-badge status-unclear">unclear</span>
-      &nbsp;&middot;&nbsp; circle = OPG, square = arXiv
+      &nbsp;&middot;&nbsp; circle = OPG, square = arXiv, triangle = Bondy &amp; Murty
     </span>
   </div>
 
@@ -98,7 +98,7 @@
 
   GRAPH.nodes.forEach(n => {
     const el = document.createElementNS(NS,
-      n.source === "opg" ? "circle" : "rect");
+      n.source === "opg" ? "circle" : n.source === "bm" ? "polygon" : "rect");
     el.setAttribute("class", "rel-node status-fill-" + n.status);
     el.addEventListener("click", ev => { ev.stopPropagation(); showNode(n); });
     el.addEventListener("mousedown", ev => startDragNode(n, ev));
@@ -128,6 +128,13 @@
       const el = nodeEls[i];
       if (n.source === "opg") {
         el.setAttribute("cx", n.x); el.setAttribute("cy", n.y); el.setAttribute("r", R);
+      } else if (n.source === "bm") {
+        // upward triangle centred on the node, slightly larger to match the area
+        const T = R * 1.25;
+        el.setAttribute("points",
+          n.x + "," + (n.y - T) + " " +
+          (n.x + T * 0.866) + "," + (n.y + T / 2) + " " +
+          (n.x - T * 0.866) + "," + (n.y + T / 2));
       } else {
         el.setAttribute("x", n.x - R); el.setAttribute("y", n.y - R);
         el.setAttribute("width", 2 * R); el.setAttribute("height", 2 * R);
@@ -248,7 +255,7 @@
     });
     panel.innerHTML =
       "<h2>" + nodeLink(n) + "</h2>" +
-      '<p class="rel-meta">' + (n.source === "opg" ? "Open Problem Garden" : "arXiv") +
+      '<p class="rel-meta">' + ({ opg: "Open Problem Garden", arxiv: "arXiv", bm: "Bondy &amp; Murty" }[n.source] || n.source) +
       (n.kind ? " &middot; " + esc(n.kind) : "") + "</p>" +
       (n.statement
         ? '<div class="rel-statement"><strong>' + esc(n.kind || "Statement") +
