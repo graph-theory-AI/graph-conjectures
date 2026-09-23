@@ -1,0 +1,200 @@
+[
+ {
+  "a": "bm:bm-003",
+  "b": "opg:reconstruction_conjecture",
+  "hint": "finite analogue",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-011",
+  "b": "arxiv:1507.08208__00",
+  "hint": "Bensmail, Harutyunyan, Le and Thomassé propose a refinement of this conjecture",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-013",
+  "b": "opg:cycle_double_cover_conjecture",
+  "hint": "implied by this conjecture",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-014",
+  "b": "opg:strong_5_cycle_double_cover_conjecture",
+  "hint": "stronger form (prescribed cycle in the cover)",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-014",
+  "b": "opg:cycle_double_cover_conjecture",
+  "hint": "weaker: no bound on the number of even subgraphs",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-014",
+  "b": "opg:petersen_coloring_conjecture",
+  "hint": "implies the 5-cycle double cover conjecture",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-014",
+  "b": "opg:m_n_cycle_covers",
+  "hint": "general (m,n)-cycle cover framework",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-016",
+  "b": "arxiv:2302.13312__00",
+  "hint": "refinement for planar graphs",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-021",
+  "b": "opg:4_connected_graphs_are_not_uniquely_hamiltonian",
+  "hint": "existence question for 4-connected graphs",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-021",
+  "b": "opg:uniquely_hamiltonian_graphs",
+  "hint": "existence of a second Hamilton cycle in regular graphs",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-026",
+  "b": "opg:the_circular_embedding_conjecture",
+  "hint": "its discussion lists this as a consequence of the strong form",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-026",
+  "b": "opg:cycle_double_cover_conjecture",
+  "hint": "weaker",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-026",
+  "b": "opg:grunbaums_conjecture",
+  "hint": "compared with the orientable cycle double cover conjecture",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-026",
+  "b": "opg:three_4_flows_conjecture",
+  "hint": "implies the orientable 4-cover conjecture",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-034",
+  "b": "opg:turan_number_of_a_finite_family",
+  "hint": "discusses the even-cycle case",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-041",
+  "b": "opg:list_hadwiger_conjecture",
+  "hint": "list-colouring variant",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-041",
+  "b": "opg:fractional_hadwiger",
+  "hint": "fractional variant",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-041",
+  "b": "opg:seagull_problem",
+  "hint": "an unproved consequence",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-041",
+  "b": "opg:coloring_and_immersion",
+  "hint": "immersion analogue",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-041",
+  "b": "opg:jorgensens_conjecture",
+  "hint": "structure of $K_6$-minor-free graphs",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-042",
+  "b": "opg:coloring_and_immersion",
+  "hint": "immersion analogue of Hajós' conjecture",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-045",
+  "b": "opg:double_critical_graph_conjecture",
+  "hint": "the special case $k_1 = 2$",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-050",
+  "b": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+  "hint": "Gyárfás–Sumner conjecture, which implies this",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-054",
+  "b": "opg:coloring_the_odd_distance_graph",
+  "hint": "odd-distance analogue",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-057",
+  "b": "opg:goldbergs_conjecture",
+  "hint": "overfull parameter and chromatic index",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-064",
+  "b": "opg:chords_of_longest_cycles",
+  "hint": "longest cycles in 3-connected graphs",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-064",
+  "b": "opg:do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common",
+  "hint": "analogous question for longest paths",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-066",
+  "b": "opg:erdos_posa_property_for_long_directed_cycles",
+  "hint": "Erdős–Pósa property for long cycles (directed version)",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-070",
+  "b": "opg:caccetta_haggkvist_conjecture",
+  "hint": "the unweighted case; this statement appears in its discussion",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-079",
+  "b": "opg:hamiltonian_cycles_in_line_graphs",
+  "hint": "equivalent (Ryjáček 1997)",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-080",
+  "b": "opg:barnettes_conjecture",
+  "hint": "Barnette's better-known conjecture on cubic bipartite planar graphs",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-088",
+  "b": "opg:hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
+  "hint": "Lovász's Hamilton-path problem; discusses the known exceptions",
+  "in_nodes": true
+ },
+ {
+  "a": "bm:bm-088",
+  "b": "opg:hamiltonicity_of_cayley_graphs",
+  "hint": "special case: Cayley graphs",
+  "in_nodes": true
+ }
+]

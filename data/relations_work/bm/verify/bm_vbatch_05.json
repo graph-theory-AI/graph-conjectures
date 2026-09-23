@@ -1,0 +1,191 @@
+[
+ {
+  "edge_id": "b035",
+  "claimed_relation": "implies",
+  "via": "reduction",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "In a 2-colouring of K_{2n-2}, some colour class has at least (n-1)(2n-3)/2 > (n-1)(n-2) = N(k-1)/2 edges with N=2n-2, k=n-1. Erdős–Sós then gives every tree with n-1 edges (n vertices) in that colour, so r(T,T) <= 2n-2."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-033",
+   "name": "Erdős–Sós conjecture",
+   "kind": "Conjecture",
+   "statement": "If $G$ is a simple graph on $n$ vertices with $m > n(k-1)/2$ edges, then $G$ contains every tree with $k$ edges.",
+   "context": "",
+   "status": "partial"
+  },
+  "target": {
+   "id": "bm:bm-039",
+   "name": "Burr–Erdős tree Ramsey conjecture",
+   "kind": "Conjecture",
+   "statement": "For every tree $T$ on $n$ vertices, $r(T,T) \\le 2n - 2$.",
+   "context": "",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b036",
+  "claimed_relation": "implies",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "If G has no K_{t+1} minor, Hadwiger gives chi(G) <= t, so some colour class is an independent set of size >= n/t. The arXiv node's own context calls this the standard weakening of Hadwiger's conjecture."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "arxiv:1907.12999__00",
+   "name": "Independence number lower bound in K_{t+1}-minor-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every positive integer $t$, if an $n$-vertex graph $G$ does not contain $K_{t+1}$ as a minor then $\\alpha(G) \\geq n/t$.",
+   "context": "This conjecture is a natural weakening of Hadwiger's conjecture: since Hadwiger's conjecture would imply every $n$-vertex $K_{t+1}$-minor-free graph has chromatic number at most $t$ and thus an independent set of size at least $n/t$, this bound has attracted considerable attention (see Seymour's survey [31]). Duchet and Meyniel proved the bound holds within a factor of 2 in 1982, and subsequent improvements have been made by Fox, Balogh–Kostochka, and others. The present paper studies this conjecture restricted to triangle-free graphs.",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b037",
+  "claimed_relation": "related_only",
+  "via": "literature",
+  "origin": "bm_finder",
+  "finder_confidence": "medium",
+  "sketches": [
+   "Albertson's conjecture (chi>=t implies cr(G)>=cr(K_t)) weakens Hajós: a K_t-subdivision has crossing number >= cr(K_t). So Hajós for k=5,6 implies Albertson's conjecture for t=5,6. Only those instances follow, not the general statement, and those instances are already known."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-042",
+   "name": "Hajós conjecture for $k = 5$ and $k = 6$",
+   "kind": "Problem",
+   "statement": "Does every $k$-chromatic graph contain a subdivision of $K_k$ when $k = 5$ and when $k = 6$?",
+   "context": "Hajós conjectured this for all $k$; it holds for $k \\le 4$ (Dirac 1952) and Catlin (1979) disproved it for every $k \\ge 7$.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:crossing_numbers_and_coloring",
+   "name": "Crossing numbers and coloring",
+   "kind": "Conjecture",
+   "statement": "We let $ cr(G) $ denote the crossing number of a graph $ G $ . Conjecture Every graph $ G $ with $ \\chi(G) \\ge t $ satisfies $ cr(G) \\ge cr(K_t) $ .",
+   "context": "This conjecture is an interesting weakening of the disproved Hajos Conjecture which asserted that $ \\chi(G) \\ge t $ implies that $ G $ contains a subdivision of $ K_t $ . A minimal counterexample to Albertson's conjecture is critical, with minimum degree $ \\ge t $ . Using this and the crossing lemma, Albertson, Cranston and Fox showed that a minimum counterexample has at most $ 4t $ vertices. They then analyzed small cases to show that the conjecture holds for $ t \\le 12 $ . More recently, Barat and Toth [BT] sharpened these arguments to show that the conjecture holds for $ t \\le 16 $ .",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b038",
+  "claimed_relation": "related_only",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "medium",
+  "sketches": [
+   "A K_k-subdivision is a K_k-minor, so Hajós for k implies Hadwiger for the same k. Here only the cases k=5,6 are involved, which are already known for Hadwiger (Wagner+4CT, Robertson–Seymour–Thomas), so the general Hadwiger node is not implied."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-042",
+   "name": "Hajós conjecture for $k = 5$ and $k = 6$",
+   "kind": "Problem",
+   "statement": "Does every $k$-chromatic graph contain a subdivision of $K_k$ when $k = 5$ and when $k = 6$?",
+   "context": "Hajós conjectured this for all $k$; it holds for $k \\le 4$ (Dirac 1952) and Catlin (1979) disproved it for every $k \\ge 7$.",
+   "status": "open"
+  },
+  "target": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b039",
+  "claimed_relation": "implies",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "The hypergraph conjecture c(H)=O(sqrt(n/k)) for connected k-uniform hypergraphs specializes at k=2 to c(G)=O(sqrt(n)) for connected graphs, which is Meyniel's conjecture (cops-and-robbers on a 2-graph is the usual game). The paper itself notes it implies Meyniel even for k=n^alpha, alpha<1."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "arxiv:2307.15512__00",
+   "name": "Cop number √(n/k) bound for k-uniform hypergraphs",
+   "kind": "Conjecture",
+   "statement": "Let $H$ be a connected $k$-graph on $n$ vertices. Then $c(H) = O\\!\\left(\\sqrt{\\dfrac{n}{k}}\\right)$.",
+   "context": "The authors introduce this as a generalisation of Meyniel's conjecture to $k$-uniform hypergraphs, motivated by a blow-up construction that shows $c(H) = \\Omega\\!\\left(\\sqrt{n/k}\\right)$ is achievable. They further observe that for any polynomial $k = n^\\alpha$ with $\\alpha < 1$, Conjecture 1.4 implies Meyniel's conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "others:meyniels-conjecture",
+   "name": "Meyniel's conjecture on the cop number",
+   "kind": "Conjecture",
+   "statement": "There is an absolute constant $C$ such that every connected graph $G$ on $n$ vertices has cop number $c(G) \\le C\\sqrt{n}$.",
+   "context": "In the game of Cops and Robbers, $k$ cops choose vertices, then the robber chooses a vertex, and the two sides alternate moves (cops first), each piece moving to a vertex at distance at most one; the cops win if a cop occupies the robber's vertex. The cop number $c(G)$ is the least $k$ for which the cops have a winning strategy. Writing $c(n)$ for the maximum of $c(G)$ over connected graphs of order $n$, the conjecture says $c(n) = O(\\sqrt{n})$; it is equivalent to $M_k = \\Omega(k^2)$, where $M_k$ is the minimum order of a connected graph with cop number $k$ (Baird et al. 2014). The bound would be tight up to the constant: incidence graphs of projective planes give $c(n) \\ge \\sqrt{n/2} - o(\\sqrt n)$.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b040",
+  "claimed_relation": "implies",
+  "via": "reduction",
+  "origin": "bm_finder",
+  "finder_confidence": "medium",
+  "sketches": [
+   "Fleischner and Jackson (1989) showed Thomassen's line-graph conjecture (equivalent to Matthews-Sumner by Ryjacek's closure) is equivalent to: every cyclically 4-edge-connected cubic graph has a dominating cycle C (every edge meets C). In a cubic graph, vertices off such C form an independent set each with 3 neighbours on C, while each vertex of C has at most one neighbour off C, so |C| >= 3(n-|C|), i.e. |C| >= 3n/4, giving Bondy's linear-cycle conjecture with c=3/4."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-079",
+   "name": "Matthews–Sumner conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 4-connected claw-free graph is Hamiltonian.",
+   "context": "Equivalent, via Ryjáček's closure, to Thomassen's conjecture that every 4-connected line graph is Hamiltonian.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "bm:bm-065",
+   "name": "Bondy's linear-length cycle conjecture for cyclically 4-edge-connected cubic graphs",
+   "kind": "Conjecture",
+   "statement": "There is a positive constant $c$ such that every 3-connected, cyclically 4-edge-connected cubic graph on $n$ vertices contains a cycle of length at least $cn$.",
+   "context": "Attributed to J.A. Bondy; see Fleischner and Jackson (1989).",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b041",
+  "claimed_relation": "related_only",
+  "via": "shared_special_case",
+  "origin": "bm_finder",
+  "finder_confidence": "low",
+  "sketches": [
+   "For a 3-connected cubic planar graph G, the prism G x K_2 is the graph of a simple 4-polytope (prism over a simple 3-polytope), so Barnette's 4-polytope conjecture restricted to prisms says G x K_2 is Hamiltonian, which is also a consequence of the Hamilton-decomposition conjecture for such prisms. Neither statement implies the other in general."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-080",
+   "name": "Barnette's conjecture on 4-regular 4-polytopes",
+   "kind": "Conjecture",
+   "statement": "The graph of every 4-regular 4-polytope (every simple 4-dimensional convex polytope) is Hamiltonian.",
+   "context": "Attributed to D.W. Barnette; see Grünbaum (1970), p. 1145.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:decomposing_the_prism_of_a_3_connected_cubic_planar_graphs_in_hamilton_cycles",
+   "name": "Hamilton decomposition of prisms over 3-connected cubic planar graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every prism over a $ 3 $ -connected cubic planar graph can be decomposed into two Hamilton cycles.",
+   "context": "The prism over a graph $ G $ is the Cartesian product $ G\\square K_2 $ . Rosenfeld and Barnette [RB] deduced from the Four-Colour Theorem that the prism over cubic planar 3-connected $ G $ has a Hamilton cycle $ C $ . The graph $ G\\setminus E(C) $ is cycle factor (spanning union of cycles). The conjecture says that one can choses $ C $ so that the cycle factor $ G\\setminus E(C) $ has a unique cycle, that is a Hamilton cycle.",
+   "status": "partial"
+  }
+ }
+]

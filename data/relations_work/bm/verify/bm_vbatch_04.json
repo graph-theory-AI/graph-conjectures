@@ -1,0 +1,191 @@
+[
+ {
+  "edge_id": "b028",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-070: opg:caccetta_haggkvist_conjecture — the unweighted case; this statement appears in its discussion"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-070",
+   "name": "Weighted Caccetta–Häggkvist conjecture",
+   "kind": "Conjecture",
+   "statement": "Let $D$ be a strongly connected digraph with a positive weight function $w$ on its arcs such that $w^-(v) \\ge 1$ and $w^+(v) \\ge 1$ for every vertex $v$. Then $D$ contains a directed cycle of weight at least $1$.",
+   "context": "$w^-(v)$ and $w^+(v)$ denote the total weight of the arcs entering and leaving $v$. Bollobás and Scott proved the analogous statement for directed paths.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:caccetta_haggkvist_conjecture",
+   "name": "Caccetta-Häggkvist Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ \\lceil n/r\\rceil $",
+   "context": "It is one of the most famous conjectures in graph theory. It has many alternative formulations and lots of work have been done around it. Many interesting conjectures are related to it. See [Sul]. It is in particular implied by a conjecture of Thomassé and Hoàng-Reed Conjecture . The Caccetta-Häggkvist Conjecture is a generalization of an earlier conjecture of Behzad, Chartrand, and Wall, who conjectured it only for diregular digraphs. Caccetta-H äggkvist Conjecture has been proved for $ r\\leq \\sqrt{n/2} $ by Shen [She1]. For $ r\\geq n/2 $ it is trivial. But already for $ r=n/3 $ , it is still open as well as Behzad-Chartrand-Wall Conjecture Conjecture Every simple $ n $ -vertex digraph with minimum outdegree at least $ r/3 $ and minimum indegree at least $ r/3 $ has a cycle with length at most $ 3 $ . This conjecture would be implied by Seymour's Second Neighbourhood Conjecure . Shen [She2] also proved the following approximate version. Theorem Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ n/r + 73 $ . Bollobás and Scott [BS] proposed a weighted version of the Caccetta-Häggkvist Conjecture. Conjecture Let $ w:E(D) \\rightarrow [0,1] $ be a weight function on the arcs of a digraph $ D $ . If $ \\sum_{u\\in N^-(v)} w(uv) \\geq 1 $ and $ \\sum_{u\\in N^+(v)} w(vu) \\geq 1 $ for all $ v\\in V(D) $ , then there is a directed cycle in $ D $ of total weight at least 1. They gave a nice proof that there is a directed path of tota…",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b029",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-079: opg:hamiltonian_cycles_in_line_graphs — equivalent (Ryjáček 1997)"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-079",
+   "name": "Matthews–Sumner conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 4-connected claw-free graph is Hamiltonian.",
+   "context": "Equivalent, via Ryjáček's closure, to Thomassen's conjecture that every 4-connected line graph is Hamiltonian.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:hamiltonian_cycles_in_line_graphs",
+   "name": "Hamiltonian cycles in line graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 4-connected line graph is hamiltonian .",
+   "context": "\\item It is known that if $ G $ is 4-edge-connected, then its line graph $ L(G) $ is hamiltonian. \\item Thomassen's is a special case of a conjecture due to Matthews and Sumner: every 4-connected claw-free graph is hamiltonian. \\item However, by a result of Ryjacek [R] conjectures of Thomassen and of Matthews and Sumner are equivalent. \\item Moreover [R], one may restrict to 4-connected line graphs of triangle-free graphs.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b030",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-080: opg:barnettes_conjecture — Barnette's better-known conjecture on cubic bipartite planar graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-080",
+   "name": "Barnette's conjecture on 4-regular 4-polytopes",
+   "kind": "Conjecture",
+   "statement": "The graph of every 4-regular 4-polytope (every simple 4-dimensional convex polytope) is Hamiltonian.",
+   "context": "Attributed to D.W. Barnette; see Grünbaum (1970), p. 1145.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:barnettes_conjecture",
+   "name": "Barnette's Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 3-connected cubic planar bipartite graph is Hamiltonian.",
+   "context": "(Originally appeared in [B], this discussion appears as [M].) \\item It is known that this is not true if you remove the \"bipartite\" condition, but the smallest 3-connected cubic planar graph which is not Hamiltonian has 38 vertices. \\item Holton, Manvel, and McKay [HMM] proved (using computers) that all graphs having fewer than 66 vertices satisfy the conjecture. \\item [A communication by Robert Aldred, Gunnar Brinkmann, and Brendan McKay (December 2002):] A paper of Holton, Manvel and McKay [HMM] proved Barnette's conjecture for up to 64 vertices, inclusive. This is to announce that the conjecture remains true up to 84 vertices, inclusive. The method used was the same as in the 1985 paper, but took advantage of two developments. One was the new program plantri (Brinkmann and McKay, to be published) which can generate the required graphs without isomorphs at more than $ 100\\,000 $ per second. The other was the advance in computers. Total cpu time was about 3 years, almost all of it taken in finding hamiltonian cycles. Specifically, for all 3-connected cubic planar bipartite graphs up to 60 vertices, and those up to 64 vertices not having a 4-face adjacent to two others, we found a hamiltonian cycle using $ x $ and avoiding $ y $ for each pair of edges $ x $ and $ y $ . There are over $ 10^{10} $ such graphs. By a theorem of Kelman's, one can build a counterexample to Barnette's conjecture when one has a 3-connected cubic planar bipartite graph with this property: for some two…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b031",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-088: opg:hamiltonian_paths_and_cycles_in_vertex_transitive_graphs — Lovász's Hamilton-path problem; discusses the known exceptions"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-088",
+   "name": "Thomassen's conjecture on Hamiltonian vertex-transitive graphs",
+   "kind": "Conjecture",
+   "statement": "All but finitely many connected vertex-transitive graphs are Hamiltonian.",
+   "context": "Only five connected vertex-transitive graphs without a Hamilton cycle are known: $K_2$, the Petersen graph, the Coxeter graph, and the truncations of the last two.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
+   "name": "Hamiltonian paths and cycles in vertex transitive graphs",
+   "kind": "Conjecture",
+   "statement": "Problem Does every connected vertex-transitive graph have a Hamiltonian path ?",
+   "context": "The question posed here is due to Lovasz [L], but the general problem of finding Hamiltonian paths and cycles in highly symmetric graphs is much older. Knuth has traced it back to bell ringing , and it appears again in gray codes and in the knight's tour of a chessboard. Vertex-transitive graphs are, of course, very special, very well-behaved graphs, and it seems unsurprising that many of them have Hamiltonian cycles. What is surprising is that there are only five connected ones known which do not have Hamiltonian cycles. This list consists of the complete graph on 2 vertices, the Petersen graph , Coxeter's graph , and the graphs obtained from Petersen and Coxeter by truncating every vertex (inflate each vertex to a triangle). In particular, we do not know of a vertex transitive graph without a Hamiltonian path. Interestingly, there seems to be considerable disagreement among experts as to what the answer will be. On one hand, there does not appear to be any particular reason why vertex-transitive graphs should almost always have Hamiltonian cycles. On the other hand, such graphs have been studied and searched for at great length, and so far every one investigated with the exception of the five listed above has proved to have a Hamiltonian cycle. Babai formulated the following conjecture which is in quite sharp contrast to the problem above. Conjecture (Babai [B96]) There exists $ \\epsilon > 0 $ so that there are infinitely many connected vertex-transitive graphs $ G $ with l…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b032",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-088: opg:hamiltonicity_of_cayley_graphs — special case: Cayley graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-088",
+   "name": "Thomassen's conjecture on Hamiltonian vertex-transitive graphs",
+   "kind": "Conjecture",
+   "statement": "All but finitely many connected vertex-transitive graphs are Hamiltonian.",
+   "context": "Only five connected vertex-transitive graphs without a Hamilton cycle are known: $K_2$, the Petersen graph, the Coxeter graph, and the truncations of the last two.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:hamiltonicity_of_cayley_graphs",
+   "name": "Hamiltonicity of Cayley graphs",
+   "kind": "Conjecture",
+   "statement": "Question Is every Cayley graph Hamiltonian?",
+   "context": "This problem seems to have been first considered by Rapaport-Strasser [R]. Lovasz [L] conjectured more generally that every vertex-transitive graph is Hamiltonian. For a survey of results up to 1996, see [CG]. Although many specific Cayley graphs have been shown to be Hamiltonian, there are few general results. One exception is the theorem by Pak and Radoičić [PR] that every finite group $ G $ with at least three elements has a generating set $ S $ of size $ |S| \\le \\log_2|G| $ , such that the corresponding Cayley graph is Hamiltonian.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b033",
+  "claimed_relation": "implies",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "Given a tree T with m leaves, take k(T)=max(f(m), f(|E(T)|)). A k(T)-edge-connected graph is f(m)-edge-connected and has minimum degree >= k(T) >= f(|E(T)|), so the leaf-count conjecture yields a T-decomposition whenever e(T) divides e(G), which is exactly Barát–Thomassen."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "arxiv:1907.11600__00",
+   "name": "T-decomposition by leaf count of trees",
+   "kind": "Conjecture",
+   "statement": "There is a function $f$ such that, for any fixed tree $T$ with $m$ leaves, every $f(m)$-edge-connected graph with minimum degree at least $f(|E(T)|)$ and number of edges divisible by $|E(T)|$ has a $T$-decomposition.",
+   "context": "This conjecture is posed by the paper's authors as an alternative to Conjecture 2 (which fails for trees of maximum degree three), bounding the required edge-connectivity in terms of the number of leaves of $T$ rather than its maximum degree. The paper's main result implies $f(2) = 3$ is achievable, and the authors note that establishing the existence of $f(3)$ would already contain the claw case.",
+   "status": "open"
+  },
+  "target": {
+   "id": "bm:bm-011",
+   "name": "Barát–Thomassen conjecture",
+   "kind": "Conjecture",
+   "statement": "For every tree $T$ there exists a natural number $k := k(T)$ such that every simple $k$-edge-connected graph whose number of edges is divisible by $e(T)$ admits a decomposition into copies of $T$.",
+   "context": "",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b034",
+  "claimed_relation": "implies",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "An orientable double cover by five even subgraphs is in particular a double cover by at most five even subgraphs (forget the orientation), so the orientable 5-cycle double cover conjecture implies the 5-cycle double cover conjecture."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-026",
+   "name": "Orientable five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has an orientable double cover by five even subgraphs.",
+   "context": "A double cover by even subgraphs is orientable if each even subgraph can be oriented so that every edge of the graph is traversed once in each direction. Strengthens both the five cycle double cover conjecture (item 14) and the orientable cycle double cover conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  }
+ }
+]

@@ -1,20 +1,24 @@
 # Relations between conjectures
 
 `data/relations.json` is a directed relation graph over the full conjecture
-corpus: the 227 Open Problem Garden problems (`opg:<slug>`) and the 762
-arXiv-mined conjectures/problems/questions (`arxiv:<safe_id>__NN`). It records
-which conjecture **implies** which, which pairs are **equivalent**, and which
-entries are **duplicates** of each other across the two corpora.
+corpus: the 227 Open Problem Garden problems (`opg:<slug>`), the 762
+arXiv-mined conjectures/problems/questions (`arxiv:<safe_id>__NN`), the 38
+Bondy–Murty Appendix A items (`bm:bm-NNN`) and the `others` corpus
+(`others:<id>`). It records which conjecture **implies** which, which pairs are
+**equivalent**, and which entries are **duplicates** of each other across
+corpora.
 
 **190 relations** survived adversarial verification, out of 207 candidates;
-4 duplicate pairs were merged in September 2026, leaving **186 edges**:
+4 duplicate pairs were merged in September 2026, leaving 186 edges. An
+incremental pass over the Bondy–Murty and `others` corpora then added 39
+(see [below](#bondymurty-extension-september-2026)), for **225 edges**:
 
 | relation       | confirmed | plausible | meaning                                            |
 |----------------|----------:|----------:|----------------------------------------------------|
-| implies        |       138 |         4 | truth of `source` forces truth of `target`         |
-| equivalent_to  |         6 |         1 | each implies the other                             |
-| same_conjecture|        15 |         1 | same statement appearing in both corpora           |
-| related_only   |        21 |         0 | documented connection, but no implication          |
+| implies        |       154 |         4 | truth of `source` forces truth of `target`         |
+| equivalent_to  |         7 |         1 | each implies the other                             |
+| same_conjecture|        16 |         1 | same statement appearing in two corpora            |
+| related_only   |        37 |         5 | documented connection, but no implication          |
 
 Every edge carries the verified direction, a referee argument precise enough
 to check by hand, citations when the confirmation is literature-based, and
@@ -90,11 +94,11 @@ out:
   by hand in August 2026. The other three appeared when the `already_resolved`
   results of Graph-Theory-LLM-Proofs were imported (September 2026) and settled
   one endpoint without touching the other.
-- **vacuous** (37 edges) — the implication is logically fine but carries no
+- **vacuous** (42 edges) — the implication is logically fine but carries no
   information any more, because its target is already a theorem or its source
   is already disproved. Vacuous edges are drawn faintly on the graph. Seven of
   them appeared at once when the cycle double cover conjecture was proved
-  (see below); most of the rest hang off `jaegers_modular_orientation_conjecture`,
+  (see below), and three more point into it from Bondy–Murty nodes; most of the rest hang off `jaegers_modular_orientation_conjecture`,
   `circular_flow_numbers_of_r_graphs` and `real_roots_of_the_flow_polynomial`,
   all disproved.
 
@@ -153,14 +157,42 @@ the reason each of those pages was interesting — but they are now flagged
 whatever it says *beyond* CDC, and the reviewer notes on the seven pages now say
 what that is.
 
-Two relations from the paper could not be added, for lack of a node to attach
-them to: the orientable 5-cycle double cover conjecture (Archdeacon, Jaeger)
-implies the 5-flow conjecture (Oum, Lemma 22), and the 5-CDC conjecture is
-equivalent to its graphic-matroid form (Conjecture 28); the orientable CDC lives
-inside the discussion text of the CDC page rather than on a page of its own, and
-the corpus has no matroid nodes. The `related_only` verdict on
+The Bondy–Murty extension added three more edges into CDC, all vacuous as
+well: Bondy's small CDC conjecture (`bm:bm-013`), the 5-cycle double cover
+conjecture (`bm:bm-014`, the same statement as `opg:m_n_cycle_covers`) and the
+orientable 5-CDC conjecture (`bm:bm-026`, which also implies `bm:bm-014`).
+
+Two relations from the paper are still missing. The orientable 5-CDC
+conjecture implies the 5-flow conjecture (Oum, Lemma 22). Its node `bm:bm-026`
+now exists, but the edge to `opg:5_flow_conjecture` has not been through a
+referee yet. The 5-CDC conjecture is also equivalent to its graphic-matroid
+form (Conjecture 28), but the corpus has no matroid nodes. The `related_only` verdict on
 `cycle_double_cover_conjecture` ↔ `the_berge_fulkerson_conjecture` (`e188`) is
 confirmed by the proof: Berge–Fulkerson is untouched by it.
+
+## Bondy–Murty extension (September 2026)
+
+The original pipeline predates the Bondy–Murty corpus, so a smaller
+incremental pass connected its 38 items and Meyniel's conjecture (the one
+`others` entry) to the existing graph. Provenance is in
+`data/relations_work/bm/`:
+
+```
+seeds      33 pairs from the Bondy–Murty cross-check notes (`related` field of
+           data/bondy_murty_conjectures.json; erdosproblems links skipped)
+finders    2 agents over the gist table of tags.json → 9 more candidates
+verify     6 refute-by-default referees, 7 candidates each; direction
+           re-derived from the statements; no re-attack pass
+           → 34 confirmed, 5 plausible, 3 no relation → edges e207–e245
+```
+
+The 3 rejections: the 1-factorization conjecture ↔ Goldberg (no implication
+between the simple-graph and multigraph statements), Smith's conjecture ↔
+chords of longest cycles, and a name collision between Barnette's conjecture on
+4-regular 4-polytopes and his better-known conjecture on cubic bipartite planar
+graphs. Unlike the original edges, these 39 were not re-attacked by a second
+skeptic, and most rest on an argument alone, with no citation. They are
+correspondingly less vetted.
 
 ## Duplicate edges merged (September 2026)
 
@@ -180,10 +212,10 @@ edge's `provenance.merged_edge_ids` / `provenance.merge_note`:
 ## Structure of the graph
 
 Biggest hubs by confirmed implication/equivalence degree: the **cycle double
-cover conjecture** (7 after the duplicate merge, now solved — see above),
-**Gyárfás–Sumner** (5), the **5-flow conjecture** (5), **Petersen coloring** (4),
-**Caccetta–Häggkvist** (4), and the majority 3-coloring conjecture for digraphs
-(4). No implication 2-cycles
+cover conjecture** (10, now solved — see above), **Gyárfás–Sumner** (5), the
+**5-flow conjecture** (5), **Petersen coloring** (5), **Caccetta–Häggkvist** (4),
+the majority 3-coloring conjecture for digraphs (4), and the Bondy–Murty
+**5-cycle double cover conjecture** (4). No implication 2-cycles
 appeared, so there are no hidden equivalences beyond the declared ones.
 
 ## Reproducibility and limitations
@@ -193,7 +225,8 @@ appeared, so there are no hidden equivalences beyond the declared ones.
 checked-in data), `tags.json` (phase A output), `candidates.json` (phase B
 output incl. finder sketches), `verdicts.json` (all 207 referee verdicts,
 including the refutations with reasons). Reviews were generated with Claude
-(Sonnet for tagging, Fable for finding/verification) in August 2026.
+(Sonnet for tagging, Fable for finding/verification) in August 2026. The
+Bondy–Murty extension keeps its own provenance in `data/relations_work/bm/`.
 
 Caveats:
 
@@ -201,7 +234,7 @@ Caveats:
   argument has been checked in Rocq, Lean, or any other proof assistant.
 - Recall is bounded by the finders: an unproposed edge is an unfound edge.
   Within-cluster coverage is double for the two biggest clusters only.
-- The 6 `plausible` edges and 21 `related_only` links are kept but labeled —
+- The 11 `plausible` edges and 42 `related_only` links are kept but labeled —
   they need literature follow-up before being treated as implications.
 - Like the literature reviews, the graph is advisory and should be
   spot-checked before being relied on for research decisions.

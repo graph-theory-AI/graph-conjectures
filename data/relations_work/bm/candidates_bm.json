@@ -1,0 +1,1136 @@
+[
+ {
+  "edge_id": "b000",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-003: opg:reconstruction_conjecture — finite analogue"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-003",
+   "name": "Halin's conjecture on hypomorphic infinite graphs",
+   "kind": "Conjecture",
+   "statement": "If two infinite graphs are hypomorphic, then each is isomorphic to a subgraph of the other.",
+   "context": "Two graphs $G$ and $H$ are hypomorphic if there is a bijection $\\varphi\\colon V(G)\\to V(H)$ with $G - v \\cong H - \\varphi(v)$ for every vertex $v$. For finite graphs the Reconstruction Conjecture asserts that hypomorphic graphs are isomorphic; this fails for infinite graphs, and Halin's conjecture is the natural weakening.",
+   "status": "disproved"
+  },
+  "target": {
+   "id": "opg:reconstruction_conjecture",
+   "name": "Reconstruction conjecture",
+   "kind": "Conjecture",
+   "statement": "The deck of a graph $ G $ is the multiset consisting of all unlabelled subgraphs obtained from $ G $ by deleting a vertex in all possible ways (counted according to multiplicity). Conjecture If two graphs on $ \\ge 3 $ vertices have the same deck, then they are isomorphic.",
+   "context": "See Wikipedia's Reconstruction Conjecture for more on this problem.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b001",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-011: arxiv:1507.08208__00 — Bensmail, Harutyunyan, Le and Thomassé propose a refinement of this conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-011",
+   "name": "Barát–Thomassen conjecture",
+   "kind": "Conjecture",
+   "statement": "For every tree $T$ there exists a natural number $k := k(T)$ such that every simple $k$-edge-connected graph whose number of edges is divisible by $e(T)$ admits a decomposition into copies of $T$.",
+   "context": "",
+   "status": "solved"
+  },
+  "target": {
+   "id": "arxiv:1507.08208__00",
+   "name": "Tree T-decomposition via maximum degree connectivity",
+   "kind": "Conjecture",
+   "statement": "There is a function $f$ such that, for any fixed tree $T$ with maximum degree $\\Delta_T$, every $f(\\Delta_T)$-edge-connected graph with its number of edges divisible by $|E(T)|$ and minimum degree at least $f(|E(T)|)$ can be $T$-decomposed.",
+   "context": "The authors propose this as a refinement of the Barát-Thomassen Conjecture (Conjecture 1.1), arguing that the large edge-connectivity required in Conjecture 1.1 can be replaced by a constant depending only on the maximum degree of $T$, provided the host graph has sufficiently large minimum degree. The present paper proves Conjecture 1.2 in the case $\\Delta_T \\leq 2$, i.e., when $T$ is a path.",
+   "status": "disproved"
+  }
+ },
+ {
+  "edge_id": "b002",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-013: opg:cycle_double_cover_conjecture — implied by this conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-013",
+   "name": "Bondy's small cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every simple graph on $n$ vertices without cut edges has a cycle double cover consisting of at most $n - 1$ cycles.",
+   "context": "A cycle double cover is a family of cycles covering every edge exactly twice. This strengthens the Cycle Double Cover Conjecture (Appendix A, item 12).",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b003",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-014: opg:strong_5_cycle_double_cover_conjecture — stronger form (prescribed cycle in the cover)"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:strong_5_cycle_double_cover_conjecture",
+   "name": "Strong 5-cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ C $ be a circuit in a bridgeless cubic graph $ G $ . Then there is a five cycle double cover of $ G $ such that $ C $ is a subgraph of one of these five cycles.",
+   "context": "A cycle in $ G $ is meant to be a $ 2 $ -regular subgraph of $ G $ . A five cycle double cover of $ G $ is a set of five cycles of $ G $ such that every edge of $ G $ is contained in exactly two of these cycles. This conjecture is a combination and thus strengthening of the $ 5 $ -cycle double cover conjecture and the strong cycle double cover conjecture.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b004",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-014: opg:cycle_double_cover_conjecture — weaker: no bound on the number of even subgraphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b005",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-014: opg:petersen_coloring_conjecture — implies the 5-cycle double cover conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:petersen_coloring_conjecture",
+   "name": "Petersen coloring conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a cubic graph with no bridge . Then there is a coloring of the edges of $ G $ using the edges of the Petersen graph so that any three mutually adjacent edges of $ G $ map to three mutually adjancent edges in the Petersen graph.",
+   "context": "This extrordainary conjecture asserts that in a very strong sense, every bridgeless cubic graph has all of the cycle-space properties posessed by the Petersen graph. If true, this conjecture would imply both The Berge-Fulkerson conjecture and The five cycle double cover conjecture . If $ G $ is a graph and $ C \\subseteq E(G) $ we say that $ C $ is a binary cycle if every vertex in the graph $ (V(G),C) $ has even degree. If $ H $ is a graph and $ f : E(G) \\rightarrow E(H) $ is a map, we say that $ f $ is cycle-continuous if the pre-image of every binary cycle is a binary cycle. The following conjecture is an equivalent reformulation of the Petersen coloring conjecture. Conjecture (Petersen coloring conjecture (2)) Every bridgeless graph has a cycle-continuous mapping to the Petersen graph.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b006",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-014: opg:m_n_cycle_covers — general (m,n)-cycle cover framework"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:m_n_cycle_covers",
+   "name": "(m,n)-cycle covers",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a (5,2)-cycle-cover.",
+   "context": "Definition: If $ G=(V,E) $ is a graph, a binary cycle of $ G $ is a set $ C \\subseteq E $ such that every vertex of the graph $ (V,C) $ has even degree. An $ (m,n) $ - cycle-cover of $ G $ is a list $ L $ consisting of $ m $ cycles so that every edge of $ G $ is contained in exactly $ n $ of these cycles. Since every binary cycle can be written as a disjoint union of edge sets of ordinary cycles, the above conjecture is a strengthening of the cycle double cover conjecture. For positive integers $ m,n $ it is natural to ask what family of graphs have $ (m,n) $ -cycle-covers. The following chart gives some information about this question for small values of $ m $ and $ n $ . A \"yes\" in the $ (m,n) $ box indicates that every graph with no cut-edge has an $ (m,n) $ -cycle-cover. A \"no\" indicates that no graph has an $ (m,n) $ -cycle-cover. A more detailed explanation of the entries in this chart appears below it. m n 2 3 4 5 6 7 8 9 10 11 2 Eulerian NZ 4-flow NZ 4-flow 5CDC conj open 4 no Eulerian 5 post. sets B-F conj yes [BJJ] yes 6 no Eulerian 7 post. sets ? ? yes [F] yes We did not include odd values of n, since any graph with an $ (m,n) $ -cycle-cover for an odd integer $ n $ must be Eulerian . The entry \"NZ 4-flow\" is short for nowhere-zero 4-flow. Thus, our chart indicates that ( $ G $ has a nowhere-zero 4-flow) if and only if ( $ G $ has a $ (3,2) $ -cycle-cover) if and only if ( $ G $ has a $ (4,2) $ -cycle-cover). These equivalences were discovered by Tutte [Tu]. Two of…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b007",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-016: arxiv:2302.13312__00 — refinement for planar graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-016",
+   "name": "Linear arboricity conjecture",
+   "kind": "Conjecture",
+   "statement": "Every simple $k$-regular graph has linear arboricity $\\lceil (k+1)/2 \\rceil$.",
+   "context": "The linear arboricity $\\mathrm{la}(G)$ is the least number of linear forests (forests whose components are paths) whose union is $G$. Equivalently: every simple graph of maximum degree $\\Delta$ satisfies $\\mathrm{la}(G) \\le \\lceil (\\Delta+1)/2 \\rceil$.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "arxiv:2302.13312__00",
+   "name": "Odd-Δ planar linear arboricity with matching",
+   "kind": "Conjecture",
+   "statement": "For every planar graph $G$ of odd maximum degree $\\Delta \\geq 7$ the edges of $G$ can be partitioned into $\\frac{\\Delta-1}{2}$ linear forests and one matching.",
+   "context": "This conjecture refines the known linear arboricity bound for planar graphs with odd maximum degree by replacing one linear forest with the weaker structure of a matching. The case $\\Delta \\geq 11$ follows from existing results; the paper resolves $\\Delta = 9$ (Theorem 2), leaving $\\Delta = 7$ as the sole remaining open case.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b008",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-021: opg:4_connected_graphs_are_not_uniquely_hamiltonian — existence question for 4-connected graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-021",
+   "name": "Finding a second Hamilton cycle in a cubic graph",
+   "kind": "Problem",
+   "statement": "Is the following problem in $\\mathsf{P}$? Given a cubic graph $G$ and a Hamilton cycle in $G$, find a second Hamilton cycle in $G$.",
+   "context": "By Smith's theorem every edge of a cubic graph lies in an even number of Hamilton cycles, so a second Hamilton cycle always exists; the question is whether one can be found in polynomial time.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:4_connected_graphs_are_not_uniquely_hamiltonian",
+   "name": "4-connected graphs are not uniquely hamiltonian",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ 4 $ -connected graph with a Hamilton cycle has a second Hamilton cycle.",
+   "context": "",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b009",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-021: opg:uniquely_hamiltonian_graphs — existence of a second Hamilton cycle in regular graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-021",
+   "name": "Finding a second Hamilton cycle in a cubic graph",
+   "kind": "Problem",
+   "statement": "Is the following problem in $\\mathsf{P}$? Given a cubic graph $G$ and a Hamilton cycle in $G$, find a second Hamilton cycle in $G$.",
+   "context": "By Smith's theorem every edge of a cubic graph lies in an even number of Hamilton cycles, so a second Hamilton cycle always exists; the question is whether one can be found in polynomial time.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:uniquely_hamiltonian_graphs",
+   "name": "r-regular graphs are not uniquely hamiltonian.",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a finite $ r $ -regular graph, where $ r > 2 $ , then $ G $ is not uniquely hamiltonian.",
+   "context": "(Reproduced from [M].) A graph $ G $ is said to be uniquely hamiltonian if it contains precisely one Hamiltonian cycle . This conjecture has been proved for all odd values of $ r $ [T] and for all even values of $ r > 23 $ [H]. By Petersen's theorem, it would suffice to prove it for $ r = 4 $ .",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b010",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-026: opg:the_circular_embedding_conjecture — its discussion lists this as a consequence of the strong form"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-026",
+   "name": "Orientable five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has an orientable double cover by five even subgraphs.",
+   "context": "A double cover by even subgraphs is orientable if each even subgraph can be oriented so that every edge of the graph is traversed once in each direction. Strengthens both the five cycle double cover conjecture (item 14) and the orientable cycle double cover conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:the_circular_embedding_conjecture",
+   "name": "The circular embedding conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 2- connected graph may be embedded in a surface so that the boundary of each face is a cycle.",
+   "context": "This conjecture implies the cycle double cover conjecture , since the list of cycles which bound faces covers each edge exactly twice. Let $ G $ be a cubic graph, let $ L $ be a list of cycles covering every edge of $ G $ exactly two times, and form a topological space by gluing a disc to each circuit in $ L $ . This space is a surface, and every face is bounded by a cycle. Thus, the circular embedding conjecture and the cycle double cover conjecture are equivalent for cubic graphs. For general graphs, this construction may fail since the neighborhood of a vertex may not be a disc (it could be a pinchpoint). A stronger variant of this conjecture asserts that it is possible to find an embedding as above with the added condition that the dual graph is 5-colorable. This variant implies The five cycle double cover conjecture since the circuits bounding faces of a given color class may be grouped into a cycle. Next we state a different strengthening which asserts that we may find an embedding as above into an orientable surface. Conjecture (The oriented circular embedding conjecture) Every 2-connected graph may be embedded in an orientable surface so that the boundary of each face is a circuit. If this conjecture is true, then the oriented cycle double cover conjecture (see cycle double cover ) is also true, since the list of circuits bounding faces all traversed in the clockwise direction cover each edge exactly once in each direction (since the surface is orientable, we may spec…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b011",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-026: opg:cycle_double_cover_conjecture — weaker"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-026",
+   "name": "Orientable five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has an orientable double cover by five even subgraphs.",
+   "context": "A double cover by even subgraphs is orientable if each even subgraph can be oriented so that every edge of the graph is traversed once in each direction. Strengthens both the five cycle double cover conjecture (item 14) and the orientable cycle double cover conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b012",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-026: opg:grunbaums_conjecture — compared with the orientable cycle double cover conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-026",
+   "name": "Orientable five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has an orientable double cover by five even subgraphs.",
+   "context": "A double cover by even subgraphs is orientable if each even subgraph can be oriented so that every edge of the graph is traversed once in each direction. Strengthens both the five cycle double cover conjecture (item 14) and the orientable cycle double cover conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:grunbaums_conjecture",
+   "name": "Grunbaum's Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a simple loopless triangulation of an orientable surface , then the dual of $ G $ is 3-edge-colorable.",
+   "context": "The Four Color Theorem is equivalent to the statement that every cubic planar graph with no bridge is 3- edge-colorable . This is precisely equivalent to Grunbaum's conjecture restricted to the plane. Thus, Grunbaum's conjecture, if true, would imply the Four Color Theorem. Indeed, this conjecture suggests a deep generalization of the 4-color theorem. Definition: A cubic graph $ G $ is a snark if $ G $ is internally 4-edge-connected and $ G $ is not 3-edge-colorable. Grunbaum's conjecture states that no snark is the dual of a simple loopless triangulation of an orientable surface. In this light, the conjecture looks to be almost obviously false. To find a counterexample, it suffices to embed a snark in an orientable surface so that the dual has no loops or parallel edges. Of course, the difficulty is in satisfying this last constraint. All known embeddings of snarks in orientable surfaces give rise to either loops or parallel edges in the dual. It is striking to compare this conjecture with the Orientable cycle double cover conjecture . Both conjectures may be stated in terms of embedding snarks in orientable surfaces as follows: Conjecture (Grunbaum's conjecture (version 2)) Every embedding of a snark in an orientable surface has a cycle of length 1 or 2 (a loop or parallel edges) in the dual. Conjecture (Orientable cycle double cover conjecture) Every snark may be embedded in an orientable surface so that the dual graph has no cycle of length 1 (no loop). In this light it m…",
+   "status": "disproved"
+  }
+ },
+ {
+  "edge_id": "b013",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-026: opg:three_4_flows_conjecture — implies the orientable 4-cover conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-026",
+   "name": "Orientable five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has an orientable double cover by five even subgraphs.",
+   "context": "A double cover by even subgraphs is orientable if each even subgraph can be oriented so that every edge of the graph is traversed once in each direction. Strengthens both the five cycle double cover conjecture (item 14) and the orientable cycle double cover conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:three_4_flows_conjecture",
+   "name": "The three 4-flows conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ with no bridge , there exist three disjoint sets $ A_1,A_2,A_3 \\subseteq E(G) $ with $ A_1 \\cup A_2 \\cup A_3 = E(G) $ so that $ G \\setminus A_i $ has a nowhere-zero 4-flow for $ 1 \\le i \\le 3 $ .",
+   "context": "A graph $ G $ has a nowhere-zero 4-flow if and only if there exist disjoint sets $ A_1,A_2,A_3 \\subseteq E(G) $ with $ A_1 \\cup A_2 \\cup A_3 = E(G) $ so that $ G\\A_i $ has a nowhere-zero 2-flow for $ 1 \\le i \\le 3 $ . Thus, the above conjecture is true with room to spare for such graphs. Since every 4-edge-connected graph and every 3- edge-colorable cubic graph has a nowhere-zero 4-flow, this conjecture is automatically true for these families. As with the 5-flow conjecture or the cycle double cover conjecture , establishing this conjecture comes down to proving it for cubic graphs which are not 3-edge-colorable. This conjecture is a consequence of the Petersen coloring conjecture , and it implies the Orientable cycle four cover conjecture . The latter implication follows immediately from the fact that every graph with a nowhere-zero 4-flow has an orientable cycle double cover. Actually, it is possible that for every graph $ G $ with no cut-edge, there exist disjoint sets $ A_B_1,B_2 \\subseteq E(G) $ with $ A \\cup B_1 \\cup B_2 = E(G) $ and so that $ G\\B_1 $ and $ G\\B_2 $ have nowhere-zero 3-flows and $ G\\A $ has a nowhere-zero 2-flow. The Petersen graph has such a decomposition ( $ B_1 $ and $ B_2 $ should be alternate edges of some 8-circuit) and so does every graph with a nowhere-zero 4-flow. If this stronger statement is true, then it would imply the oriented eight cycle four cover conjecture.",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b014",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-034: opg:turan_number_of_a_finite_family — discusses the even-cycle case"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-034",
+   "name": "Even-cycle Turán number",
+   "kind": "Conjecture",
+   "statement": "For every $k \\ge 2$ there is a positive constant $c$ such that $\\mathrm{ex}(n, C_{2k}) \\ge c\\, n^{1+1/k}$.",
+   "context": "$\\mathrm{ex}(n, C_{2k})$ is the maximum number of edges of a simple graph on $n$ vertices with no cycle of length $2k$; the Bondy–Simonovits theorem gives the matching upper bound $O(n^{1+1/k})$. Known for $k = 2, 3, 5$.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:turan_number_of_a_finite_family",
+   "name": "Turán number of a finite family.",
+   "kind": "Conjecture",
+   "statement": "Given a finite family $ {\\cal F} $ of graphs and an integer $ n $ , the Turán number $ ex(n,{\\cal F}) $ of $ {\\cal F} $ is the largest integer $ m $ such that there exists a graph on $ n $ vertices with $ m $ edges which contains no member of $ {\\cal F} $ as a subgraph. Conjecture For every finite family $ {\\cal F} $ of graphs there exists an $ F\\in {\\cal F} $ such that $ ex(n, F ) = O(ex(n, {\\cal F})) $ .",
+   "context": "For the case when $ {\\cal F} $ consists of even cycles, this would mean that (up to constants) the Turán number of $ {\\cal F} $ is given by that of the longest cycle in $ {\\cal F} $ . Verstraëte (see [KO]) conjectured something stronger: Conjecture For all integers $ k < \\ell $ there exists a positive c = c(\\ell) such that every $ C_{2\\ell} $ -free graph $ G $ has a $ C_{2k} $ -free subgraph $ H $ with $ e(H) ≥ e(G)/c $ . This conjecture was motivated by a result of Györi [G] who showed that every bipartite $ C_6 $ -free graph $ G $ has a $ C_4 $ -free subgraph which contains at least half of the edges of $ G $ . The case $ k=2 $ was proved in [KO].",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b015",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:list_hadwiger_conjecture — list-colouring variant"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:list_hadwiger_conjecture",
+   "name": "List Hadwiger Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ K_t $ -minor-free graph is $ c t $ -list-colourable for some constant $ c\\geq1 $ .",
+   "context": "Hadwiger's conjecture asserts that every $ K_t $ - minor -free graph is $ (t − 1) $ -colourable. Robertson, Seymour and Thomas [RST] proved Hadwiger's conjecture for $ t \\leq 6 $ . It remains open for $ t \\geq 7 $ . In fact, it is open whether every $ K_t $ -minor-free graph is $ ct $ -colourable for some constant $ c\\geq 1 $ . It is natural to consider analogous problems for list colourings . First, consider planar graphs. While every planar graph is 4-colourable, Erdös, Rubin and Taylor. [ERT] conjectured that some planar graph is not 4-list-colourable, and that every planar graph is 5-list-colourable. The first conjecture was verified by Voigt [V] and the second by Thomassen [T]. More generally, Borowiecki [B] asked whether every $ K_t $ -minor-free graph is $ (t − 1) $ -list-colourable, which is true for $ t \\leq 4 $ but false for $ t = 5 $ by Voigt’s example. Kawarabayashi and Mohar [KM] proposed the stated conjecture, and suggested it might be true with $ c=\\frac{3}{2} $ . Barát, Joret and Wood [BJW] proved that $ c\\geq\\frac{4}{3} $ . In particular, they constructed a $ K_{3t+2} $ -minor-free graph that is not $ 4t $ -list-colourable.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b016",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:fractional_hadwiger — fractional variant"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:fractional_hadwiger",
+   "name": "Fractional Hadwiger",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ , (a) $ \\chi_f(G)\\leq\\text{had}(G) $ (b) $ \\chi(G)\\leq\\text{had}_f(G) $ (c) $ \\chi_f(G)\\leq\\text{had}_f(G) $ .",
+   "context": "Here $ \\chi $ is the chromatic number, $ \\chi_f $ is the fractional chromatic number, $ \\text{had} $ is the Hadwiger number, and $ \\text{had}_f $ is the fractional Hadwiger number (which was recently introduced independently by Fox [F] and Pedersen [P]). It is well known and easily proved (see [HW]) that $ \\chi_f(G)\\leq\\chi(G)\\text{ and }\\text{had}(G)\\leq\\text{had}_f(G)\\leq\\text{tw}(G)+1, $ where $ \\text{tw}(G) $ is the treewidth of $ G $ . Hadwiger's famous conjecture, $ \\chi(G)\\leq\\text{had}(G) $ , bridges the gap in the above inequalities. The above conjectures therefore are weaker than Hadwiger's conjecture. Note that Conjecture (a) implies Conjecture (c), and Conjecture (b) implies Conjecture (c). Note that Reed and Seymour [RS] proved that $ \\chi_f(G)\\leq2\\,\\text{had}(G) $ . Conjecture (a) is due to Reed and Seymour [RS]. Conjecture (b) is due to Harvey and Wood [HW]. Conjecture (c) is independently due to Harvey and Wood [HW] and Pedersen [P]. Pedersen [P] presents a natural equivalent formulation of Conjecture (c).",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b017",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:seagull_problem — an unproved consequence"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:seagull_problem",
+   "name": "Seagull problem",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every $ n $ vertex graph with no independent set of size $ 3 $ has a complete graph on $ \\ge \\frac{n}{2} $ vertices as a minor.",
+   "context": "This conjecture is significant because it is an interesting unproved consequence of Hadwiger's conjecture (this implication is proved next). In fact, some experts have suggested that this problem might hold the key to finding a counterexample to Hadwiger. I (M. DeVos) have attributed this conjecture to Seymour, but I believe that it may have been independently suggested by Mader and by others. Its curious title will be explained later in this discussion. Hadwiger's conjecture (every loopless graph with chromatic number $ \\ge n $ has $ K_n $ as a minor) is one of the outstanding problems in graph theory. This conjecture has been resolved for small values of $ n $ ; when $ n \\le 4 $ it is relatively easy, for $ n=5,6 $ it has been proven to be equivalent to the Four color theorem. The Seagull problem concerns the other extreme - when the size of the chromatic number is close to the order of the graph. If $ G $ is an $ n $ vertex graph with no independent set of size 3, then $ \\chi(G) \\ge \\frac{n}{2} $ since each color class has size $ \\le 2 $ . If Hadwiger's conjecture holds for $ G $ , it must then have a minor which is a complete graph on $ \\ge \\frac{n}{2} $ vertices. This is precisely the statement of the Seagull problem. The (essentially) best known bound for the conjecture is that every $ n $ vertex graph $ G $ with no independent set of size 3 has a complete graph on $ \\ge \\frac{n}{3} $ vertices as a minor. This argument is where the name of this conjecture arises. Let us…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b018",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:coloring_and_immersion — immersion analogue"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:coloring_and_immersion",
+   "name": "Coloring and immersion",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every positive integer $ t $ , every (loopless) graph $ G $ with $ \\chi(G) \\ge t $ immerses $ K_t $ .",
+   "context": "Let $ G $ be a graph and let $ uv, vw \\in E(G) $ . The operation of deleting the edges $ uv $ and $ vw $ and then adding a new edge between $ v $ and $ w $ is called a split . We say that a graph $ G $ immerses a graph $ H $ if a graph isomorphic to $ H $ may be obtained from $ G $ by repeatedly making splits and deleting vertices and edges. The graph containment relations of minor and topological minor have been thoroughly studied with respect to graph coloring. In particular, there are two famous conjectures: Hajos conjectured that every graph with chromatic number $ \\ge t $ contains a subdivision of the complete graph $ K_t $ as a subgraph. Hadwiger conjectured that every graph with chromatic number $ \\ge t $ contains $ K_t $ as a minor. While Hajos' Conjecture is false for $ t \\ge 8 $ (indeed it is actually false on average), Hadwiger's Conjecture remains open, and is one of the outstanding problems in Graph Theory. On the other hand, the relationship between graph coloring and immersions seems to have been largely ignored until Abu-Khzam and Langston made the above conjecture. In addition to formulating this conjecture, they proved it for $ t \\le 4 $ and showed that a minimal counterexample to it must be 4-connected and $ t $ -edge-connected. Recently, DeVos, Kawarabayashi, Mohar, and Okamura have resolved the conjecture for $ t \\le 7 $ .",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b019",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-041: opg:jorgensens_conjecture — structure of $K_6$-minor-free graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:jorgensens_conjecture",
+   "name": "Jorgensen's Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 6- connected graph without a $ K_6 $ minor is apex (planar plus one vertex).",
+   "context": "For $ n \\le 5 $ , the class of graphs with no $ K_n $ minor is very well understood. Simple graphs without $ K_3 $ minors are forests. Graphs without $ K_4 $ minors are called series-parallel graphs , and have a simple construction. Finally, Wagner [W] obtained a construction for all graphs without $ K_5 $ minors. For $ n \\ge 6 $ , an explicit characterization of those graphs without $ K_n $ minors appears hopeless. The graph minors project of Robertson and Seymour give a rough structure theorem for such classes, but much remains unknown. In particular, this conjecture and Thomas' conjecture highly connected graphs with no $ K_n $ -minor suggest interesting properties of highly connected graphs without $ K_n $ minors which appear quite difficult to resolve. Part of the interest in graphs without $ K_n $ minors stems from Hadwiger's conjecture (every loopless graph without a $ K_{n+1} $ minor is $ n $ -colorable). Indeed, Wagner's work on graphs with no $ K_5 $ minor was done while studying the $ n=4 $ case of Hadwiger. More recently, Robertson, Seymour, and Thomas [RST] proved Hadwiger's conjecture for $ n=5 $ , and in doing so came somewhat close to proving Jorgensoen's conjecture. The thrust of their argument is to prove that any minimal counterexample to Hadwiger for $ n=5 $ is apex. However, in doing so, they exploit both connectivity and coloring properties of a minimal counterexample. It would appear to be difficult to modify their argument to prove Jorgensen's conjectu…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b020",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-042: opg:coloring_and_immersion — immersion analogue of Hajós' conjecture"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-042",
+   "name": "Hajós conjecture for $k = 5$ and $k = 6$",
+   "kind": "Problem",
+   "statement": "Does every $k$-chromatic graph contain a subdivision of $K_k$ when $k = 5$ and when $k = 6$?",
+   "context": "Hajós conjectured this for all $k$; it holds for $k \\le 4$ (Dirac 1952) and Catlin (1979) disproved it for every $k \\ge 7$.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:coloring_and_immersion",
+   "name": "Coloring and immersion",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every positive integer $ t $ , every (loopless) graph $ G $ with $ \\chi(G) \\ge t $ immerses $ K_t $ .",
+   "context": "Let $ G $ be a graph and let $ uv, vw \\in E(G) $ . The operation of deleting the edges $ uv $ and $ vw $ and then adding a new edge between $ v $ and $ w $ is called a split . We say that a graph $ G $ immerses a graph $ H $ if a graph isomorphic to $ H $ may be obtained from $ G $ by repeatedly making splits and deleting vertices and edges. The graph containment relations of minor and topological minor have been thoroughly studied with respect to graph coloring. In particular, there are two famous conjectures: Hajos conjectured that every graph with chromatic number $ \\ge t $ contains a subdivision of the complete graph $ K_t $ as a subgraph. Hadwiger conjectured that every graph with chromatic number $ \\ge t $ contains $ K_t $ as a minor. While Hajos' Conjecture is false for $ t \\ge 8 $ (indeed it is actually false on average), Hadwiger's Conjecture remains open, and is one of the outstanding problems in Graph Theory. On the other hand, the relationship between graph coloring and immersions seems to have been largely ignored until Abu-Khzam and Langston made the above conjecture. In addition to formulating this conjecture, they proved it for $ t \\le 4 $ and showed that a minimal counterexample to it must be 4-connected and $ t $ -edge-connected. Recently, DeVos, Kawarabayashi, Mohar, and Okamura have resolved the conjecture for $ t \\le 7 $ .",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b021",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-045: opg:double_critical_graph_conjecture — the special case $k_1 = 2$"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-045",
+   "name": "Erdős–Lovász Tihany conjecture",
+   "kind": "Conjecture",
+   "statement": "Let $G$ be a $k$-chromatic graph containing no $k$-clique, and let $k + 1 = k_1 + k_2$ with $k_1, k_2 \\ge 2$. Then $G$ has vertex-disjoint subgraphs $G_1$ and $G_2$ such that $G_i$ is $k_i$-chromatic, $i = 1, 2$.",
+   "context": "",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:double_critical_graph_conjecture",
+   "name": "Double-critical graph conjecture",
+   "kind": "Conjecture",
+   "statement": "A connected simple graph $ G $ is called double-critical, if removing any pair of adjacent vertexes lowers the chromatic number by two. Conjecture $ K_n $ is the only $ n $ -chromatic double-critical graph",
+   "context": "This conjecture is a special case of a more general problem by Erdos and Lovasz proposed in 1966. It has been independently proven for the case where $ \\chi(G) = 5 $ by Mozhan [3] and Stiebitz [4].",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b022",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-050: opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded — Gyárfás–Sumner conjecture, which implies this"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-050",
+   "name": "Gyárfás's tree conjecture for triangle-free graphs",
+   "kind": "Conjecture",
+   "statement": "Every triangle-free graph of infinite chromatic number contains every finite tree as an induced subgraph.",
+   "context": "Follows from the Gyárfás–Sumner conjecture (Appendix A, item 49): if $T$-free graphs are $\\chi$-bounded, a triangle-free $T$-free graph has bounded chromatic number.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "name": "Graphs with a forbidden induced tree are chi-bounded",
+   "kind": "Conjecture",
+   "statement": "Say that a family $ {\\mathcal F} $ of graphs is $ \\chi $ - bounded if there exists a function $ f: {\\mathbb N} \\rightarrow {\\mathbb N} $ so that every $ G \\in {\\mathcal F} $ satisfies $ \\chi(G) \\le f (\\omega(G)) $ . Conjecture For every fixed tree $ T $ , the family of graphs with no induced subgraph isomorphic to $ T $ is $ \\chi $ -bounded.",
+   "context": "This deep conjecture remains open despite considerable effort. Note that the conjecture would be false were the graph $ T $ to be permitted to contain a cycle, since then the class would admit graphs of high girth (where $ \\omega = 2 $ ) and high chromatic number. It is an easy exercise to prove this conjecture in the special case when $ T $ is either a path or a star, but things get difficult from here. Kierstead and Penrice solved the special case when $ T $ has radius 2, and Kierstead and Zhu solved the special case when $ T $ has radius 3 and has the property that every vertex incident with the center vertex has degree 2. Scott proved that the class of graphs which exclude all subdivisions of a fixed tree $ T $ as induced subgraphs are $ \\chi $ -bounded. It follows from this that Gyarfas's conjecture also holds for subdivisions of stars.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b023",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-054: opg:coloring_the_odd_distance_graph — odd-distance analogue"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-054",
+   "name": "Chromatic number of the plane (Hadwiger–Nelson problem)",
+   "kind": "Problem",
+   "statement": "Determine the chromatic number of the unit-distance graph of the plane, i.e. the least number of colours needed to colour the points of $\\mathbb{R}^2$ so that no two points at distance $1$ receive the same colour.",
+   "context": "At the time of the book, $4 \\le \\chi(\\mathbb{R}^2) \\le 7$.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:coloring_the_odd_distance_graph",
+   "name": "Coloring the Odd Distance Graph",
+   "kind": "Conjecture",
+   "statement": "The Odd Distance Graph , denoted $ {\\mathcal O} $ , is the graph with vertex set $ {\\mathbb R}^2 $ and two points adjacent if the distance between them is an odd integer. Question Is $ \\chi({\\mathcal O}) = \\infty $ ?",
+   "context": "This question is a relative of the famous problem about coloring the Unit Distance Graph (the graph on $ {\\mathbb R}^2 $ where two points are adjacent if the distance between them is 1). See Moshe's online lecture Famous and lesser known problems in “elementary” combinatorial geometry and number theory at time 15:20 for a nice introduction. Perhaps the first property of $ {\\mathcal O} $ to determine is the size of the largest complete subgraph (were $ {\\mathcal O} $ to contain arbitrarily large complete subgraphs, its chromatic number would be $ \\infty $ ). It is obvious that $ {\\mathcal O} $ contains triangles, but perhaps surprisingly, it does not contain a complete subgraph on four vertices. In other words, there do not exist four points in $ {\\mathbb R}^2 $ so that all pairwise distances are odd. This was a problem on the Putnam Exam in 1993, and is proved by Rosenfeld in [R1] and [R2]. A natural strengthening of the above question is to ask if there exists a proper $ n $ -coloring $ f: V({\\mathcal O}) \\rightarrow \\{1,2,\\ldots,n\\} $ so that $ f^{-1}(\\{i\\}) $ is a measurable set for every $ i $ . Such colorings are called measurable colorings , and interestingly, the Odd Distance Graph has no finite measurable coloring. This follows from immediately from a theorem of Furstenberg, Katznelson and Weiss [FKW] which asserts that for every measurable subset $ A \\subseteq {\\mathbb R}^2 $ with positive upper density, there exists a number $ r $ so that $ A $ contains a pair of po…",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b024",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-057: opg:goldbergs_conjecture — overfull parameter and chromatic index"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-057",
+   "name": "1-factorization conjecture",
+   "kind": "Conjecture",
+   "statement": "Every simple $d$-regular graph on $n$ vertices with $n$ even and $d \\ge n/2$ is $d$-edge-colourable.",
+   "context": "Equivalently, such graphs have a 1-factorization. Usually stated (Chetwynd and Hilton 1985) with the sharper threshold $d \\ge 2\\lceil n/4 \\rceil - 1$.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:goldbergs_conjecture",
+   "name": "Goldberg's conjecture",
+   "kind": "Conjecture",
+   "statement": "The overfull parameter is defined as follows: \\[ w(G) = \\max_{H \\subseteq G} \\left\\lceil \\frac{ |E(H)| }{ \\lfloor \\tfrac{1}{2} |V(H)| \\rfloor} \\right\\rceil. \\] Conjecture Every graph $ G $ satisfies $ \\chi'(G) \\le \\max\\{ \\Delta(G) + 1, w(G) \\} $ .",
+   "context": "This important problem remains open despite considerable attention. The same conjecture was independently discovered by Andersen and Seymour. Vizing's Theorem, one of the cornerstones of graph colouring, shows that $ \\chi'(G) \\le \\Delta(G) + 1 $ for every simple graph $ G $ . So, in particular, every simple graph satisfies Goldberg's conjecture. Graphs with parallel edges need not satisfy Vizing's bound. For instance, if $ G $ is the graph obtained from a triangle by adding an extra $ k-1 $ edges in parallel with each existing one, then $ \\Delta(G) = 2k $ but $ \\chi'(G) = 3k $ . More generally, if $ H $ is a subgraph of $ G $ , then every colour can appear on at most $ \\lfloor \\frac{1}{2}|V(H)| \\rfloor $ edges of $ H $ , so $ \\chi'(G) \\ge |E(H)| / \\lfloor \\tfrac{1}{2} |V(H)| \\rfloor $ . Thus, $ w(G) $ , our overfull parameter, is a natural lower bound on $ \\chi'(G) $ , and Goldberg's conjecture asserts that whenever $ \\chi'(G) $ exceeds $ \\Delta(G)+1 $ , then it is equal to this lower bound. Although the statement of the conjecture may appear to be the most natural formulation, there are a couple of related conjectures with similar lower bounds. For instance, Seymour's r-graph conjecture is equivalent to the statement that $ \\chi'(G) \\le \\max \\{\\Delta(G), w(G) \\} + 1 $ . Goldberg also conjectured that $ \\chi'(G) \\le \\max\\{ \\Delta(G), w(G) + 1\\} $ . In addition to simple graphs, Goldberg's Conjecture is known to hold for any graph $ G $ which satisfies one of the following \\it…",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b025",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-064: opg:chords_of_longest_cycles — longest cycles in 3-connected graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-064",
+   "name": "Smith's conjecture on longest cycles",
+   "kind": "Conjecture",
+   "statement": "In a $k$-connected graph, $k \\ge 2$, any two longest cycles have at least $k$ vertices in common.",
+   "context": "Attributed to S. Smith; see Grötschel (1984).",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:chords_of_longest_cycles",
+   "name": "Chords of longest cycles",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a 3-connected graph, every longest cycle in $ G $ has a chord.",
+   "context": "A chord of a cycle $ C $ is an edge $ e $ so that $ e \\not\\in E(C) $ , but both ends of $ e $ are in $ V(C) $ . Longest cycles are of great interest in basic graph theory, and this appealing conjecture suggests a very simple property they should share - at least in 3-connected graphs. In dense graphs, this conjecture is easy to verify - for instance, if $ G $ is Hamiltonian, it is trivially true. More interestingly, Thomassen [T] proved that his conjecture is true for cubic graphs using a clever sufficient condition for Hamiltonicity (based on Thomason's lollipop method) combined with a pretty theorem of Fleischner and Steibitz (cycle plus triangles graphs are 3-colorable). Other work on this conjecture has focused on graphs embedded in surfaces. Zhang [Z] has proved the conjecture for planar graphs of minimum degree four, Li and Zhang have proved the conjecture for graphs in the projective plane of minimum degree four [LZ1] and for 4-connected graphs in the klein bottle or torus [LZ2]. Finally, Kawarabayashi, Niu, and Zhang [KNZ] have shown the conjecture for 4-connected graphs on a fixed surface with sufficiently high face-width.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b026",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-064: opg:do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common — analogous question for longest paths"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-064",
+   "name": "Smith's conjecture on longest cycles",
+   "kind": "Conjecture",
+   "statement": "In a $k$-connected graph, $k \\ge 2$, any two longest cycles have at least $k$ vertices in common.",
+   "context": "Attributed to S. Smith; see Grötschel (1984).",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common",
+   "name": "Do any three longest paths in a connected graph have a vertex in common?",
+   "kind": "Conjecture",
+   "statement": "Conjecture Do any three longest paths in a connected graph have a vertex in common?",
+   "context": "It is a well-known exercise that every two longest paths in a connected graph have a common vertex. Skupien [S] showed connected graphs where 7 longest paths do not share a common vertex.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b027",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-066: opg:erdos_posa_property_for_long_directed_cycles — Erdős–Pósa property for long cycles (directed version)"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-066",
+   "name": "Birmelé's conjecture on long cycles",
+   "kind": "Conjecture",
+   "statement": "If any two cycles of length at least $k$ in a graph intersect, then the graph has a set of $k$ vertices meeting every cycle of length at least $k$.",
+   "context": "",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:erdos_posa_property_for_long_directed_cycles",
+   "name": "Erdős-Posa property for long directed cycles",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ \\ell \\geq 2 $ be an integer. For every integer $ n\\geq 0 $ , there exists an integer $ t_n=t_n(\\ell) $ such that for every digraph $ D $ , either $ D $ has a $ n $ pairwise-disjoint directed cycles of length at least $ \\ell $ , or there exists a set $ T $ of at most $ t_n $ vertices such that $ D-T $ has no directed cycles of length at least $ \\ell $ .",
+   "context": "The case $ \\ell=2 $ has been proved by Reed et al. [RRST], hence solving a conjecture of Gallai [G] and Younger [Y]. The case $ \\ell=2 $ and $ n=2 $ has previously been solved by McCuaig [M], who proved that $ t_2(2)=3 $ . Havet and Maia [HM] proved the case $ \\ell=3 $ . The analogous statement for undirected graph has been proved by Birmelé, Bondy and Reed [BBR], hence generalizing Erdős-Posa [EP] result for $ \\ell =3 $ .",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b028",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-070: opg:caccetta_haggkvist_conjecture — the unweighted case; this statement appears in its discussion"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-070",
+   "name": "Weighted Caccetta–Häggkvist conjecture",
+   "kind": "Conjecture",
+   "statement": "Let $D$ be a strongly connected digraph with a positive weight function $w$ on its arcs such that $w^-(v) \\ge 1$ and $w^+(v) \\ge 1$ for every vertex $v$. Then $D$ contains a directed cycle of weight at least $1$.",
+   "context": "$w^-(v)$ and $w^+(v)$ denote the total weight of the arcs entering and leaving $v$. Bollobás and Scott proved the analogous statement for directed paths.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:caccetta_haggkvist_conjecture",
+   "name": "Caccetta-Häggkvist Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ \\lceil n/r\\rceil $",
+   "context": "It is one of the most famous conjectures in graph theory. It has many alternative formulations and lots of work have been done around it. Many interesting conjectures are related to it. See [Sul]. It is in particular implied by a conjecture of Thomassé and Hoàng-Reed Conjecture . The Caccetta-Häggkvist Conjecture is a generalization of an earlier conjecture of Behzad, Chartrand, and Wall, who conjectured it only for diregular digraphs. Caccetta-H äggkvist Conjecture has been proved for $ r\\leq \\sqrt{n/2} $ by Shen [She1]. For $ r\\geq n/2 $ it is trivial. But already for $ r=n/3 $ , it is still open as well as Behzad-Chartrand-Wall Conjecture Conjecture Every simple $ n $ -vertex digraph with minimum outdegree at least $ r/3 $ and minimum indegree at least $ r/3 $ has a cycle with length at most $ 3 $ . This conjecture would be implied by Seymour's Second Neighbourhood Conjecure . Shen [She2] also proved the following approximate version. Theorem Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ n/r + 73 $ . Bollobás and Scott [BS] proposed a weighted version of the Caccetta-Häggkvist Conjecture. Conjecture Let $ w:E(D) \\rightarrow [0,1] $ be a weight function on the arcs of a digraph $ D $ . If $ \\sum_{u\\in N^-(v)} w(uv) \\geq 1 $ and $ \\sum_{u\\in N^+(v)} w(vu) \\geq 1 $ for all $ v\\in V(D) $ , then there is a directed cycle in $ D $ of total weight at least 1. They gave a nice proof that there is a directed path of tota…",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b029",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-079: opg:hamiltonian_cycles_in_line_graphs — equivalent (Ryjáček 1997)"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-079",
+   "name": "Matthews–Sumner conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 4-connected claw-free graph is Hamiltonian.",
+   "context": "Equivalent, via Ryjáček's closure, to Thomassen's conjecture that every 4-connected line graph is Hamiltonian.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:hamiltonian_cycles_in_line_graphs",
+   "name": "Hamiltonian cycles in line graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 4-connected line graph is hamiltonian .",
+   "context": "\\item It is known that if $ G $ is 4-edge-connected, then its line graph $ L(G) $ is hamiltonian. \\item Thomassen's is a special case of a conjecture due to Matthews and Sumner: every 4-connected claw-free graph is hamiltonian. \\item However, by a result of Ryjacek [R] conjectures of Thomassen and of Matthews and Sumner are equivalent. \\item Moreover [R], one may restrict to 4-connected line graphs of triangle-free graphs.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b030",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-080: opg:barnettes_conjecture — Barnette's better-known conjecture on cubic bipartite planar graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-080",
+   "name": "Barnette's conjecture on 4-regular 4-polytopes",
+   "kind": "Conjecture",
+   "statement": "The graph of every 4-regular 4-polytope (every simple 4-dimensional convex polytope) is Hamiltonian.",
+   "context": "Attributed to D.W. Barnette; see Grünbaum (1970), p. 1145.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:barnettes_conjecture",
+   "name": "Barnette's Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 3-connected cubic planar bipartite graph is Hamiltonian.",
+   "context": "(Originally appeared in [B], this discussion appears as [M].) \\item It is known that this is not true if you remove the \"bipartite\" condition, but the smallest 3-connected cubic planar graph which is not Hamiltonian has 38 vertices. \\item Holton, Manvel, and McKay [HMM] proved (using computers) that all graphs having fewer than 66 vertices satisfy the conjecture. \\item [A communication by Robert Aldred, Gunnar Brinkmann, and Brendan McKay (December 2002):] A paper of Holton, Manvel and McKay [HMM] proved Barnette's conjecture for up to 64 vertices, inclusive. This is to announce that the conjecture remains true up to 84 vertices, inclusive. The method used was the same as in the 1985 paper, but took advantage of two developments. One was the new program plantri (Brinkmann and McKay, to be published) which can generate the required graphs without isomorphs at more than $ 100\\,000 $ per second. The other was the advance in computers. Total cpu time was about 3 years, almost all of it taken in finding hamiltonian cycles. Specifically, for all 3-connected cubic planar bipartite graphs up to 60 vertices, and those up to 64 vertices not having a 4-face adjacent to two others, we found a hamiltonian cycle using $ x $ and avoiding $ y $ for each pair of edges $ x $ and $ y $ . There are over $ 10^{10} $ such graphs. By a theorem of Kelman's, one can build a counterexample to Barnette's conjecture when one has a 3-connected cubic planar bipartite graph with this property: for some two…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b031",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-088: opg:hamiltonian_paths_and_cycles_in_vertex_transitive_graphs — Lovász's Hamilton-path problem; discusses the known exceptions"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-088",
+   "name": "Thomassen's conjecture on Hamiltonian vertex-transitive graphs",
+   "kind": "Conjecture",
+   "statement": "All but finitely many connected vertex-transitive graphs are Hamiltonian.",
+   "context": "Only five connected vertex-transitive graphs without a Hamilton cycle are known: $K_2$, the Petersen graph, the Coxeter graph, and the truncations of the last two.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
+   "name": "Hamiltonian paths and cycles in vertex transitive graphs",
+   "kind": "Conjecture",
+   "statement": "Problem Does every connected vertex-transitive graph have a Hamiltonian path ?",
+   "context": "The question posed here is due to Lovasz [L], but the general problem of finding Hamiltonian paths and cycles in highly symmetric graphs is much older. Knuth has traced it back to bell ringing , and it appears again in gray codes and in the knight's tour of a chessboard. Vertex-transitive graphs are, of course, very special, very well-behaved graphs, and it seems unsurprising that many of them have Hamiltonian cycles. What is surprising is that there are only five connected ones known which do not have Hamiltonian cycles. This list consists of the complete graph on 2 vertices, the Petersen graph , Coxeter's graph , and the graphs obtained from Petersen and Coxeter by truncating every vertex (inflate each vertex to a triangle). In particular, we do not know of a vertex transitive graph without a Hamiltonian path. Interestingly, there seems to be considerable disagreement among experts as to what the answer will be. On one hand, there does not appear to be any particular reason why vertex-transitive graphs should almost always have Hamiltonian cycles. On the other hand, such graphs have been studied and searched for at great length, and so far every one investigated with the exception of the five listed above has proved to have a Hamiltonian cycle. Babai formulated the following conjecture which is in quite sharp contrast to the problem above. Conjecture (Babai [B96]) There exists $ \\epsilon > 0 $ so that there are infinitely many connected vertex-transitive graphs $ G $ with l…",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b032",
+  "claimed_relation": "unspecified (seed hint)",
+  "via": "bm_hint",
+  "origin": "bm_hint",
+  "finder_confidence": null,
+  "sketches": [
+   "Bondy–Murty cross-check note on bm:bm-088: opg:hamiltonicity_of_cayley_graphs — special case: Cayley graphs"
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-088",
+   "name": "Thomassen's conjecture on Hamiltonian vertex-transitive graphs",
+   "kind": "Conjecture",
+   "statement": "All but finitely many connected vertex-transitive graphs are Hamiltonian.",
+   "context": "Only five connected vertex-transitive graphs without a Hamilton cycle are known: $K_2$, the Petersen graph, the Coxeter graph, and the truncations of the last two.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "opg:hamiltonicity_of_cayley_graphs",
+   "name": "Hamiltonicity of Cayley graphs",
+   "kind": "Conjecture",
+   "statement": "Question Is every Cayley graph Hamiltonian?",
+   "context": "This problem seems to have been first considered by Rapaport-Strasser [R]. Lovasz [L] conjectured more generally that every vertex-transitive graph is Hamiltonian. For a survey of results up to 1996, see [CG]. Although many specific Cayley graphs have been shown to be Hamiltonian, there are few general results. One exception is the theorem by Pak and Radoičić [PR] that every finite group $ G $ with at least three elements has a generating set $ S $ of size $ |S| \\le \\log_2|G| $ , such that the corresponding Cayley graph is Hamiltonian.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b033",
+  "claimed_relation": "implies",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "Given a tree T with m leaves, take k(T)=max(f(m), f(|E(T)|)). A k(T)-edge-connected graph is f(m)-edge-connected and has minimum degree >= k(T) >= f(|E(T)|), so the leaf-count conjecture yields a T-decomposition whenever e(T) divides e(G), which is exactly Barát–Thomassen."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "arxiv:1907.11600__00",
+   "name": "T-decomposition by leaf count of trees",
+   "kind": "Conjecture",
+   "statement": "There is a function $f$ such that, for any fixed tree $T$ with $m$ leaves, every $f(m)$-edge-connected graph with minimum degree at least $f(|E(T)|)$ and number of edges divisible by $|E(T)|$ has a $T$-decomposition.",
+   "context": "This conjecture is posed by the paper's authors as an alternative to Conjecture 2 (which fails for trees of maximum degree three), bounding the required edge-connectivity in terms of the number of leaves of $T$ rather than its maximum degree. The paper's main result implies $f(2) = 3$ is achievable, and the authors note that establishing the existence of $f(3)$ would already contain the claw case.",
+   "status": "open"
+  },
+  "target": {
+   "id": "bm:bm-011",
+   "name": "Barát–Thomassen conjecture",
+   "kind": "Conjecture",
+   "statement": "For every tree $T$ there exists a natural number $k := k(T)$ such that every simple $k$-edge-connected graph whose number of edges is divisible by $e(T)$ admits a decomposition into copies of $T$.",
+   "context": "",
+   "status": "solved"
+  }
+ },
+ {
+  "edge_id": "b034",
+  "claimed_relation": "implies",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "An orientable double cover by five even subgraphs is in particular a double cover by at most five even subgraphs (forget the orientation), so the orientable 5-cycle double cover conjecture implies the 5-cycle double cover conjecture."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-026",
+   "name": "Orientable five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has an orientable double cover by five even subgraphs.",
+   "context": "A double cover by even subgraphs is orientable if each even subgraph can be oriented so that every edge of the graph is traversed once in each direction. Strengthens both the five cycle double cover conjecture (item 14) and the orientable cycle double cover conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "bm:bm-014",
+   "name": "Five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has a double cover by at most five even subgraphs.",
+   "context": "An even subgraph is a spanning subgraph in which every vertex has even degree, i.e. an edge-disjoint union of cycles; a double cover uses every edge exactly twice. Also attributed to Celmins (1984).",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b035",
+  "claimed_relation": "implies",
+  "via": "reduction",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "In a 2-colouring of K_{2n-2}, some colour class has at least (n-1)(2n-3)/2 > (n-1)(n-2) = N(k-1)/2 edges with N=2n-2, k=n-1. Erdős–Sós then gives every tree with n-1 edges (n vertices) in that colour, so r(T,T) <= 2n-2."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-033",
+   "name": "Erdős–Sós conjecture",
+   "kind": "Conjecture",
+   "statement": "If $G$ is a simple graph on $n$ vertices with $m > n(k-1)/2$ edges, then $G$ contains every tree with $k$ edges.",
+   "context": "",
+   "status": "partial"
+  },
+  "target": {
+   "id": "bm:bm-039",
+   "name": "Burr–Erdős tree Ramsey conjecture",
+   "kind": "Conjecture",
+   "statement": "For every tree $T$ on $n$ vertices, $r(T,T) \\le 2n - 2$.",
+   "context": "",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b036",
+  "claimed_relation": "implies",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "If G has no K_{t+1} minor, Hadwiger gives chi(G) <= t, so some colour class is an independent set of size >= n/t. The arXiv node's own context calls this the standard weakening of Hadwiger's conjecture."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  },
+  "target": {
+   "id": "arxiv:1907.12999__00",
+   "name": "Independence number lower bound in K_{t+1}-minor-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every positive integer $t$, if an $n$-vertex graph $G$ does not contain $K_{t+1}$ as a minor then $\\alpha(G) \\geq n/t$.",
+   "context": "This conjecture is a natural weakening of Hadwiger's conjecture: since Hadwiger's conjecture would imply every $n$-vertex $K_{t+1}$-minor-free graph has chromatic number at most $t$ and thus an independent set of size at least $n/t$, this bound has attracted considerable attention (see Seymour's survey [31]). Duchet and Meyniel proved the bound holds within a factor of 2 in 1982, and subsequent improvements have been made by Fox, Balogh–Kostochka, and others. The present paper studies this conjecture restricted to triangle-free graphs.",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b037",
+  "claimed_relation": "related_only",
+  "via": "literature",
+  "origin": "bm_finder",
+  "finder_confidence": "medium",
+  "sketches": [
+   "Albertson's conjecture (chi>=t implies cr(G)>=cr(K_t)) weakens Hajós: a K_t-subdivision has crossing number >= cr(K_t). So Hajós for k=5,6 implies Albertson's conjecture for t=5,6. Only those instances follow, not the general statement, and those instances are already known."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-042",
+   "name": "Hajós conjecture for $k = 5$ and $k = 6$",
+   "kind": "Problem",
+   "statement": "Does every $k$-chromatic graph contain a subdivision of $K_k$ when $k = 5$ and when $k = 6$?",
+   "context": "Hajós conjectured this for all $k$; it holds for $k \\le 4$ (Dirac 1952) and Catlin (1979) disproved it for every $k \\ge 7$.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:crossing_numbers_and_coloring",
+   "name": "Crossing numbers and coloring",
+   "kind": "Conjecture",
+   "statement": "We let $ cr(G) $ denote the crossing number of a graph $ G $ . Conjecture Every graph $ G $ with $ \\chi(G) \\ge t $ satisfies $ cr(G) \\ge cr(K_t) $ .",
+   "context": "This conjecture is an interesting weakening of the disproved Hajos Conjecture which asserted that $ \\chi(G) \\ge t $ implies that $ G $ contains a subdivision of $ K_t $ . A minimal counterexample to Albertson's conjecture is critical, with minimum degree $ \\ge t $ . Using this and the crossing lemma, Albertson, Cranston and Fox showed that a minimum counterexample has at most $ 4t $ vertices. They then analyzed small cases to show that the conjecture holds for $ t \\le 12 $ . More recently, Barat and Toth [BT] sharpened these arguments to show that the conjecture holds for $ t \\le 16 $ .",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b038",
+  "claimed_relation": "related_only",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "medium",
+  "sketches": [
+   "A K_k-subdivision is a K_k-minor, so Hajós for k implies Hadwiger for the same k. Here only the cases k=5,6 are involved, which are already known for Hadwiger (Wagner+4CT, Robertson–Seymour–Thomas), so the general Hadwiger node is not implied."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-042",
+   "name": "Hajós conjecture for $k = 5$ and $k = 6$",
+   "kind": "Problem",
+   "statement": "Does every $k$-chromatic graph contain a subdivision of $K_k$ when $k = 5$ and when $k = 6$?",
+   "context": "Hajós conjectured this for all $k$; it holds for $k \\le 4$ (Dirac 1952) and Catlin (1979) disproved it for every $k \\ge 7$.",
+   "status": "open"
+  },
+  "target": {
+   "id": "bm:bm-041",
+   "name": "Hadwiger's conjecture",
+   "kind": "Conjecture",
+   "statement": "Every $k$-chromatic graph has a $K_k$-minor.",
+   "context": "Known for $k \\le 6$: the case $k = 5$ is equivalent to the Four Colour Theorem (Wagner 1937) and $k = 6$ was settled by Robertson, Seymour and Thomas (1993).",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b039",
+  "claimed_relation": "implies",
+  "via": "specialization",
+  "origin": "bm_finder",
+  "finder_confidence": "high",
+  "sketches": [
+   "The hypergraph conjecture c(H)=O(sqrt(n/k)) for connected k-uniform hypergraphs specializes at k=2 to c(G)=O(sqrt(n)) for connected graphs, which is Meyniel's conjecture (cops-and-robbers on a 2-graph is the usual game). The paper itself notes it implies Meyniel even for k=n^alpha, alpha<1."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "arxiv:2307.15512__00",
+   "name": "Cop number √(n/k) bound for k-uniform hypergraphs",
+   "kind": "Conjecture",
+   "statement": "Let $H$ be a connected $k$-graph on $n$ vertices. Then $c(H) = O\\!\\left(\\sqrt{\\dfrac{n}{k}}\\right)$.",
+   "context": "The authors introduce this as a generalisation of Meyniel's conjecture to $k$-uniform hypergraphs, motivated by a blow-up construction that shows $c(H) = \\Omega\\!\\left(\\sqrt{n/k}\\right)$ is achievable. They further observe that for any polynomial $k = n^\\alpha$ with $\\alpha < 1$, Conjecture 1.4 implies Meyniel's conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "others:meyniels-conjecture",
+   "name": "Meyniel's conjecture on the cop number",
+   "kind": "Conjecture",
+   "statement": "There is an absolute constant $C$ such that every connected graph $G$ on $n$ vertices has cop number $c(G) \\le C\\sqrt{n}$.",
+   "context": "In the game of Cops and Robbers, $k$ cops choose vertices, then the robber chooses a vertex, and the two sides alternate moves (cops first), each piece moving to a vertex at distance at most one; the cops win if a cop occupies the robber's vertex. The cop number $c(G)$ is the least $k$ for which the cops have a winning strategy. Writing $c(n)$ for the maximum of $c(G)$ over connected graphs of order $n$, the conjecture says $c(n) = O(\\sqrt{n})$; it is equivalent to $M_k = \\Omega(k^2)$, where $M_k$ is the minimum order of a connected graph with cop number $k$ (Baird et al. 2014). The bound would be tight up to the constant: incidence graphs of projective planes give $c(n) \\ge \\sqrt{n/2} - o(\\sqrt n)$.",
+   "status": "partial"
+  }
+ },
+ {
+  "edge_id": "b040",
+  "claimed_relation": "implies",
+  "via": "reduction",
+  "origin": "bm_finder",
+  "finder_confidence": "medium",
+  "sketches": [
+   "Fleischner and Jackson (1989) showed Thomassen's line-graph conjecture (equivalent to Matthews-Sumner by Ryjacek's closure) is equivalent to: every cyclically 4-edge-connected cubic graph has a dominating cycle C (every edge meets C). In a cubic graph, vertices off such C form an independent set each with 3 neighbours on C, while each vertex of C has at most one neighbour off C, so |C| >= 3(n-|C|), i.e. |C| >= 3n/4, giving Bondy's linear-cycle conjecture with c=3/4."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-079",
+   "name": "Matthews–Sumner conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 4-connected claw-free graph is Hamiltonian.",
+   "context": "Equivalent, via Ryjáček's closure, to Thomassen's conjecture that every 4-connected line graph is Hamiltonian.",
+   "status": "partial"
+  },
+  "target": {
+   "id": "bm:bm-065",
+   "name": "Bondy's linear-length cycle conjecture for cyclically 4-edge-connected cubic graphs",
+   "kind": "Conjecture",
+   "statement": "There is a positive constant $c$ such that every 3-connected, cyclically 4-edge-connected cubic graph on $n$ vertices contains a cycle of length at least $cn$.",
+   "context": "Attributed to J.A. Bondy; see Fleischner and Jackson (1989).",
+   "status": "open"
+  }
+ },
+ {
+  "edge_id": "b041",
+  "claimed_relation": "related_only",
+  "via": "shared_special_case",
+  "origin": "bm_finder",
+  "finder_confidence": "low",
+  "sketches": [
+   "For a 3-connected cubic planar graph G, the prism G x K_2 is the graph of a simple 4-polytope (prism over a simple 3-polytope), so Barnette's 4-polytope conjecture restricted to prisms says G x K_2 is Hamiltonian, which is also a consequence of the Hamilton-decomposition conjecture for such prisms. Neither statement implies the other in general."
+  ],
+  "n_finders": 1,
+  "source": {
+   "id": "bm:bm-080",
+   "name": "Barnette's conjecture on 4-regular 4-polytopes",
+   "kind": "Conjecture",
+   "statement": "The graph of every 4-regular 4-polytope (every simple 4-dimensional convex polytope) is Hamiltonian.",
+   "context": "Attributed to D.W. Barnette; see Grünbaum (1970), p. 1145.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:decomposing_the_prism_of_a_3_connected_cubic_planar_graphs_in_hamilton_cycles",
+   "name": "Hamilton decomposition of prisms over 3-connected cubic planar graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every prism over a $ 3 $ -connected cubic planar graph can be decomposed into two Hamilton cycles.",
+   "context": "The prism over a graph $ G $ is the Cartesian product $ G\\square K_2 $ . Rosenfeld and Barnette [RB] deduced from the Four-Colour Theorem that the prism over cubic planar 3-connected $ G $ has a Hamilton cycle $ C $ . The graph $ G\\setminus E(C) $ is cycle factor (spanning union of cycles). The conjecture says that one can choses $ C $ so that the cycle factor $ G\\setminus E(C) $ has a unique cycle, that is a Hamilton cycle.",
+   "status": "partial"
+  }
+ }
+]
