@@ -53,6 +53,11 @@ Reviewed status counts:
 | disproved     |   13 |    22 |           1 | counterexample in the literature                          |
 | unclear       |    1 |     3 |           0 | insufficient information to decide                       |
 
+One OPG problem (`ptas_for_feedback_arc_set_in_tournaments`) counts as
+`solved` although it was already solved before it was posted on OPG
+(Kenyon-Mathieu–Schudy, STOC 2007). Its review has
+`solved_before_posting: true`, and its page says so.
+
 The most recent status change is the **cycle double cover conjecture**
 (`/op/cycle_double_cover_conjecture/`), moved `partial` → `solved` in September
 2026 after the July 2026 OpenAI proof and Sang-il Oum's exposition
@@ -248,7 +253,7 @@ OPG branch:
   crawl.py        →  cache/op/<slug>.html     polite crawl, 12s/req
   parse.py        →  data/problems.json       227 OPG problems
   erdos_index.py  →  data/erdos_graph.json    277 erdosproblems records
-  intersect.py    →  data/intersection.json   confirmed OPG ↔ erdos crosslinks
+  intersect.py    →  data/intersection.json   fuzzy OPG ↔ erdos matches (only `confirmed: true` rows used)
   review run      →  data/reviews/<slug>.json 227 status reviews
 
 arXiv branch:
@@ -327,7 +332,7 @@ graph-conjectures/
 │   ├── problems.json                 # 227 OPG problems
 │   ├── reviews/                      # 227 per-slug OPG review JSONs
 │   ├── erdos_graph.json              # erdosproblems.com index, 277 problems
-│   ├── intersection.json             # confirmed OPG↔erdos cross-refs
+│   ├── intersection.json             # fuzzy OPG↔erdos matches; `confirmed` flag per row
 │   ├── arxiv_authors.json            # the 12 curated arxiv authors
 │   ├── arxiv_conjectures.json        # 768 deduped new conjectures
 │   ├── arxiv_extracted/              # 857 raw per-paper extraction outputs

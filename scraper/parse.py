@@ -186,6 +186,11 @@ def _statements(prob_div: Tag) -> list[dict]:
         body = _clean(env_clone.get_text(" ", strip=True))
         body = re.sub(r"^" + re.escape(kind) + r"[:\.\s]*", "", body, count=1, flags=re.IGNORECASE)
         out.append({"kind": kind, "html": str(env), "text": body})
+    if not out:
+        # A few pages phrase the problem as plain paragraphs, outside any
+        # envtheorem div: fall back to the whole problem block.
+        out.append({"kind": "Problem", "html": str(prob_div),
+                    "text": _text_with_math(prob_div)})
     return out
 
 
@@ -311,7 +316,7 @@ def main(argv: list[str] | None = None) -> int:
             log.warning("%s: missing title", slug)
             warnings += 1
         if not rec["statements"]:
-            log.warning("%s: no envtheorem blocks", slug)
+            log.warning("%s: no problem statement", slug)
             warnings += 1
 
         (out_dir / f"{slug}.json").write_text(

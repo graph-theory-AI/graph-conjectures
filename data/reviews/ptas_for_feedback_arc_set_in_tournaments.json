@@ -32,5 +32,17 @@
   "slug": "ptas_for_feedback_arc_set_in_tournaments",
   "reviewed_at": "2026-05-08",
   "model": "claude-sonnet-4-6 (worker 01)",
-  "search_enabled": true
+  "search_enabled": true,
+  "solved_before_posting": true,
+  "pre_posting_resolution": {
+    "title": "How to rank with few errors",
+    "authors": "Claire Kenyon-Mathieu, Warren Schudy",
+    "year": 2007,
+    "venue": "STOC 2007",
+    "url": "https://dblp.uni-trier.de/rec/conf/stoc/Kenyon-MathieuS07.html",
+    "doi": "10.1145/1250790.1250806",
+    "arxiv_id": null,
+    "kind": "proof",
+    "claim": "Gives a PTAS for (weighted) feedback arc set in tournaments, answering the question affirmatively before it was posted on OPG."
+  }
 }

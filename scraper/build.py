@@ -728,10 +728,10 @@ def main(argv: list[str] | None = None) -> int:
                 log.warning("could not load 'others' review %s: %s", rp.name, e)
     log.info("loaded %d 'others' record(s), %d with a review", len(others_records), n_others_reviews)
 
-    # Manually-curated set of confirmed cross-refs to erdosproblems.com.
+    # Only manually confirmed cross-refs to erdosproblems.com are surfaced;
+    # the other rows of intersection.json are unverified fuzzy matches.
     confirmed_intersection_slugs = {
-        "erdos_faber_lovasz_conjecture",
-        "the_erdos_hajnal_conjecture",
+        slug for slug, row in intersection.items() if row.get("confirmed")
     }
 
     # ── decorate OPG problems ──────────────────────────────────────────────────
