@@ -70,8 +70,8 @@ excellent companion source.
 ## Relations between conjectures
 
 The corpus also carries a **verified relation graph**,
-[`data/relations.json`](data/relations.json): 225 adversarially verified
-relations between conjectures across the corpora — 158 implications
+[`data/relations.json`](data/relations.json): 226 adversarially verified
+relations between conjectures across the corpora — 159 implications
 ("if A is true then B is true"), 8 equivalences, 17 cross-corpus duplicates,
 and 42 documented non-implication links. Each edge records its verified
 direction, a checkable referee argument, and citations where the confirmation
@@ -81,7 +81,8 @@ candidates were refuted, including two false fuzzy matches and a
 conjecture-name collision); 190 edges survived, and 4 duplicate pairs the
 phase-B dedup had missed were merged in September 2026. An incremental pass
 then connected the Bondy–Murty and `others` corpora, adding 39 edges (34
-confirmed, 5 plausible) out of 42 candidates. "Verified" means
+confirmed, 5 plausible) out of 42 candidates, plus one follow-up edge
+(orientable 5-CDC ⇒ 5-flow). "Verified" means
 checked by adversarial AI referees, **not** formally verified — no argument
 has been machine-checked in a proof assistant such as Rocq or Lean.
 Confronting each edge with the review statuses of its two endpoints is now
@@ -337,7 +338,7 @@ graph-conjectures/
 │   ├── bondy_murty_reviews/          # 38 per-item status reviews
 │   ├── others_conjectures.json       # hand-written workstream conjectures (Meyniel, …)
 │   ├── others_reviews/               # their status reviews
-│   ├── relations.json                # 225 verified conjecture-to-conjecture relations
+│   ├── relations.json                # 226 verified conjecture-to-conjecture relations
 │   ├── relations_work/               # relation-pipeline provenance (tags, candidates, verdicts)
 │   ├── categories.json
 │   └── authors.json

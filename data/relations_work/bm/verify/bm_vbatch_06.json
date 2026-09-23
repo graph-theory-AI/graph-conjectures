@@ -1,0 +1,29 @@
+[
+ {
+  "edge_id": "b042",
+  "claimed_relation": "implies",
+  "via": "literature",
+  "origin": "bm_followup",
+  "finder_confidence": "medium",
+  "n_finders": 0,
+  "sketches": [
+   "Oum's exposition of the CDC proof (arXiv:2607.16356, Lemma 22) states that the orientable 5-cycle double cover conjecture (Archdeacon; Jaeger) implies the 5-flow conjecture. Classical route: an oriented k-CDC yields a nowhere-zero Z_2^? / integer flow via the cover's cycles (Jaeger / Archdeacon 1984)."
+  ],
+  "source": {
+   "id": "bm:bm-026",
+   "name": "Orientable five cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Every 2-edge-connected graph has an orientable double cover by five even subgraphs.",
+   "context": "A double cover by even subgraphs is orientable if each even subgraph can be oriented so that every edge of the graph is traversed once in each direction. Strengthens both the five cycle double cover conjecture (item 14) and the orientable cycle double cover conjecture.",
+   "status": "open"
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial"
+  }
+ }
+]

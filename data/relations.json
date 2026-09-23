@@ -1,6 +1,6 @@
 {
  "generated_from": "relations pipeline (see data/relations_work/)",
- "verification_note": "Relations were confirmed by adversarial AI review of the full statements and literature (refute-by-default referees + re-attack pass). They are NOT formally verified: no argument has been machine-checked in a proof assistant such as Rocq or Lean. 2026-09-06 revision: four duplicate pairs missed by the phase-B dedup were merged (190 -> 186 edges; see provenance.merged_edge_ids). Status consistency is no longer baked into this file: scraper/relations_layout.py:status_flag() recomputes it from the live review statuses at build time, marking edges vacuous (target solved / source disproved) or inconsistent. 2026-09-23 extension: the Bondy–Murty Appendix A corpus (bm:*) and the 'others' corpus (others:*) were added by an incremental pass — 33 candidates seeded from the Bondy–Murty cross-check notes plus 9 from 2 finder agents, checked by 6 refute-by-default referees (no re-attack pass); 39 of 42 kept (34 confirmed, 5 plausible), 3 judged no relation. Provenance in data/relations_work/bm/.",
+ "verification_note": "Relations were confirmed by adversarial AI review of the full statements and literature (refute-by-default referees + re-attack pass). They are NOT formally verified: no argument has been machine-checked in a proof assistant such as Rocq or Lean. 2026-09-06 revision: four duplicate pairs missed by the phase-B dedup were merged (190 -> 186 edges; see provenance.merged_edge_ids). Status consistency is no longer baked into this file: scraper/relations_layout.py:status_flag() recomputes it from the live review statuses at build time, marking edges vacuous (target solved / source disproved) or inconsistent. 2026-09-23 extension: the Bondy–Murty Appendix A corpus (bm:*) and the 'others' corpus (others:*) were added by an incremental pass — 33 candidates seeded from the Bondy–Murty cross-check notes plus 9 from 2 finder agents, checked by 6 refute-by-default referees (no re-attack pass); 39 of 42 kept (34 confirmed, 5 plausible), 3 judged no relation; a follow-up referee then confirmed e246 (orientable 5-CDC ⇒ 5-flow, Oum Lemma 22). Provenance in data/relations_work/bm/.",
  "last_revised": "2026-09-23",
  "semantics": {
   "implies": "truth of source forces truth of target",
@@ -3951,6 +3951,26 @@
     "reattacked": false,
     "upheld": null,
     "bm_candidate_id": "b041"
+   }
+  },
+  {
+   "source": "bm:bm-026",
+   "target": "opg:5_flow_conjecture",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Oum (arXiv:2607.16356v3, Sec. 9.3) states Conjecture 21 (Archdeacon; Jaeger: every bridgeless graph has an orientable 5-CDC, i.e. at most 5 Eulerian=even subgraphs, each with an Eulerian orientation, every edge used once in each direction), remarks it implies Tutte's 5-flow conjecture, and proves Lemma 22 (= Lemma 13.1.5 in Zhang's book): an orientable k-CDC gives a nowhere-zero Z_k-flow. Proof re-derived: pad to exactly k subgraphs C_1..C_k (so 'at most five' vs 'exactly five' is immaterial), fix a reference orientation, let chi_i be the signed characteristic vector of the directed Eulerian C_i (an integer circulation), and set phi = sum_i i*chi_i mod k. Each edge e lies in exactly two distinct C_i, C_j (an even subgraph contains an edge at most once) traversed in opposite directions, so phi(e) = ±(i-j) with 1 <= |i-j| <= 4, nonzero mod 5. Tutte's theorem (Z_k-flow iff integer k-flow) turns this into a nowhere-zero 5-flow. The BM hypothesis ('2-edge-connected') vs the target ('bridgeless') is bridged by working componentwise (flows are local to components; loops take any nonzero value and can be removed first), so the node statement exactly matches the lemma's hypothesis.",
+   "citations": [
+    "arXiv:2607.16356v3 (S. Oum, A proof of the cycle double cover conjecture by OpenAI: an exposition), Section 9.3, Conjecture 21 and Lemma 22",
+    "C.-Q. Zhang, Integer Flows and Cycle Covers of Graphs, Lemma 13.1.5 (cited by Oum; not read directly)"
+   ],
+   "provenance": {
+    "edge_id": "e246",
+    "origin": "bm_followup",
+    "n_finders": 0,
+    "reattacked": false,
+    "upheld": null,
+    "bm_candidate_id": "b042"
    }
   }
  ]

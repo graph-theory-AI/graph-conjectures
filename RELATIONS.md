@@ -10,12 +10,12 @@ corpora.
 
 **190 relations** survived adversarial verification, out of 207 candidates;
 4 duplicate pairs were merged in September 2026, leaving 186 edges. An
-incremental pass over the Bondy–Murty and `others` corpora then added 39
-(see [below](#bondymurty-extension-september-2026)), for **225 edges**:
+incremental pass over the Bondy–Murty and `others` corpora then added 40
+(see [below](#bondymurty-extension-september-2026)), for **226 edges**:
 
 | relation       | confirmed | plausible | meaning                                            |
 |----------------|----------:|----------:|----------------------------------------------------|
-| implies        |       154 |         4 | truth of `source` forces truth of `target`         |
+| implies        |       155 |         4 | truth of `source` forces truth of `target`         |
 | equivalent_to  |         7 |         1 | each implies the other                             |
 | same_conjecture|        16 |         1 | same statement appearing in two corpora            |
 | related_only   |        37 |         5 | documented connection, but no implication          |
@@ -162,11 +162,13 @@ well: Bondy's small CDC conjecture (`bm:bm-013`), the 5-cycle double cover
 conjecture (`bm:bm-014`, the same statement as `opg:m_n_cycle_covers`) and the
 orientable 5-CDC conjecture (`bm:bm-026`, which also implies `bm:bm-014`).
 
-Two relations from the paper are still missing. The orientable 5-CDC
-conjecture implies the 5-flow conjecture (Oum, Lemma 22). Its node `bm:bm-026`
-now exists, but the edge to `opg:5_flow_conjecture` has not been through a
-referee yet. The 5-CDC conjecture is also equivalent to its graphic-matroid
-form (Conjecture 28), but the corpus has no matroid nodes. The `related_only` verdict on
+The orientable 5-CDC conjecture also implies the 5-flow conjecture (Oum,
+Section 9.3 and Lemma 22: an orientable k-CDC with directed even subgraphs
+C_1..C_k gives the nowhere-zero Z_k-flow Σ i·χ_{C_i}). It is now edge `e246`,
+`bm:bm-026` ⇒ `opg:5_flow_conjecture`, confirmed by a referee who read the
+paper. One relation from the paper is still missing: the 5-CDC conjecture is
+equivalent to its graphic-matroid form (Conjecture 28), but the corpus has no
+matroid nodes. The `related_only` verdict on
 `cycle_double_cover_conjecture` ↔ `the_berge_fulkerson_conjecture` (`e188`) is
 confirmed by the proof: Berge–Fulkerson is untouched by it.
 
@@ -184,13 +186,15 @@ finders    2 agents over the gist table of tags.json → 9 more candidates
 verify     6 refute-by-default referees, 7 candidates each; direction
            re-derived from the statements; no re-attack pass
            → 34 confirmed, 5 plausible, 3 no relation → edges e207–e245
+follow-up  1 referee on orientable 5-CDC ⇒ 5-flow (Oum, Lemma 22)
+           → confirmed → e246
 ```
 
 The 3 rejections: the 1-factorization conjecture ↔ Goldberg (no implication
 between the simple-graph and multigraph statements), Smith's conjecture ↔
 chords of longest cycles, and a name collision between Barnette's conjecture on
 4-regular 4-polytopes and his better-known conjecture on cubic bipartite planar
-graphs. Unlike the original edges, these 39 were not re-attacked by a second
+graphs. Unlike the original edges, these 40 were not re-attacked by a second
 skeptic, and most rest on an argument alone, with no citation. They are
 correspondingly less vetted.
 
@@ -212,8 +216,8 @@ edge's `provenance.merged_edge_ids` / `provenance.merge_note`:
 ## Structure of the graph
 
 Biggest hubs by confirmed implication/equivalence degree: the **cycle double
-cover conjecture** (10, now solved — see above), **Gyárfás–Sumner** (5), the
-**5-flow conjecture** (5), **Petersen coloring** (5), **Caccetta–Häggkvist** (4),
+cover conjecture** (10, now solved — see above), the **5-flow conjecture** (6),
+**Gyárfás–Sumner** (5), **Petersen coloring** (5), **Caccetta–Häggkvist** (4),
 the majority 3-coloring conjecture for digraphs (4), and the Bondy–Murty
 **5-cycle double cover conjecture** (4). No implication 2-cycles
 appeared, so there are no hidden equivalences beyond the declared ones.
