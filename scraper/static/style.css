@@ -609,6 +609,7 @@ article.prose code { background: var(--code-bg); padding: 0.05rem 0.3rem; border
 .rel-edge.rel-flagged { stroke-opacity: 0.22; }
 .rel-edge.rel-flagged:hover { stroke-opacity: 1; }
 .rel-edge.rel-flagged-inconsistent { stroke: #b3261e; stroke-dasharray: 4 2; }
+.rel-edge.rel-flagged-to_verify { stroke: #b06f00; stroke-dasharray: 4 2; }
 .rel-node { stroke: #333; stroke-width: 1; cursor: pointer; }
 .rel-node:hover { stroke-width: 2.5; }
 .status-fill-open      { fill: #f4c430; }
@@ -656,4 +657,5 @@ article.prose code { background: var(--code-bg); padding: 0.05rem 0.3rem; border
 }
 .rel-flag-vacuous { color: #6b6b6b; border-color: #cfcfcf; background: #f4f4f4; }
 .rel-flag-inconsistent { color: #8c1d16; border-color: #e2b3af; background: #fdeceb; }
+.rel-flag-to_verify { color: #7a4d00; border-color: #e8c98f; background: #fdf4e3; }
 .relations-header .rel-audit { margin-top: 0.4rem; }

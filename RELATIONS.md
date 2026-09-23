@@ -11,13 +11,14 @@ corpora.
 **190 relations** survived adversarial verification, out of 207 candidates;
 4 duplicate pairs were merged in September 2026, leaving 186 edges. An
 incremental pass over the Bondy–Murty and `others` corpora then added 40
-(see [below](#bondymurty-extension-september-2026)), for **226 edges**:
+(see [below](#bondymurty-extension-september-2026)), for 226 edges. One
+wrong duplicate (e040, see below) was then removed, leaving **225 edges**:
 
 | relation       | confirmed | plausible | meaning                                            |
 |----------------|----------:|----------:|----------------------------------------------------|
 | implies        |       155 |         4 | truth of `source` forces truth of `target`         |
 | equivalent_to  |         7 |         1 | each implies the other                             |
-| same_conjecture|        16 |         1 | same statement appearing in two corpora            |
+| same_conjecture|        15 |         1 | same statement appearing in two corpora            |
 | related_only   |        37 |         5 | documented connection, but no implication          |
 
 Every edge carries the verified direction, a referee argument precise enough
@@ -86,14 +87,17 @@ solved; if B is disproved, so is A. **This audit now runs at build time**
 (`status_flag()` in `scraper/relations_layout.py`), so it cannot go stale: every
 edge is confronted with the review statuses of its two endpoints, and the
 verdict is rendered on the relation page, in the per-problem "Related
-conjectures" box, and as a count in the relation page header. Two kinds come
+conjectures" box, and as a count in the relation page header. Three kinds come
 out:
 
-- **inconsistent** (6 edges) — the graph and the reviews contradict each other,
-  so one of the two reviews is stale. Three are left over from the four found
-  by hand in August 2026. The other three appeared when the `already_resolved`
-  results of Graph-Theory-LLM-Proofs were imported (September 2026) and settled
-  one endpoint without touching the other.
+- **to verify** (4 implications) — the source is solved or the target is
+  disproved, while the reviews leave the other endpoint unresolved. If the
+  implication holds, it settles that endpoint too; but the implication is only
+  checked by AI referees, so it is flagged as *to be formally verified or peer
+  reviewed* rather than used to change a status. Two are "source solved"
+  (e026, e166) and two "target disproved" (e105, e111).
+- **inconsistent** (1 edge) — an equivalence or duplicate whose endpoints have
+  different resolved statuses, so the edge or one of the reviews is wrong.
 - **vacuous** (42 edges) — the implication is logically fine but carries no
   information any more, because its target is already a theorem or its source
   is already disproved. Vacuous edges are drawn faintly on the graph. Seven of
@@ -102,31 +106,38 @@ out:
   `circular_flow_numbers_of_r_graphs` and `real_roots_of_the_flow_polynomial`,
   all disproved.
 
-The six inconsistencies, still flagged rather than fixed:
+The six edges first flagged inconsistent were re-examined in September 2026:
 
 1. `arxiv:2509.07174__00` (coarse Menger, surface-embedded, **partial**) is the
    same conjecture as `arxiv:2509.08762__00` (coarse Menger, bounded genus,
-   **solved**) — one of the two reviews is stale.
+   **solved**) — one of the two reviews is stale. Still flagged
+   **inconsistent**.
 2. `arxiv:2306.04710__02` (Δ(1,2,2) hero in {K₁+P⃗₂}-free digraphs, **open**)
    ⇒ `arxiv:2202.13306__00` (Δ(1,2,2) hero in oriented complete multipartite
    graphs, **disproved**) — oriented complete multipartite digraphs are
-   {K₁+P⃗₂}-free, so the counterexample disproves the source conjecture too.
+   {K₁+P⃗₂}-free, so the counterexample would disprove the source conjecture
+   too. Now flagged **to verify**.
 3. `arxiv:1710.11281__01` (cop number bounded by genus, **solved**) ⇒
    `arxiv:1710.11281__04` (cop number finiteness on bounded surfaces,
    **partial**) — medium confidence (the argument uses Gromov's systolic
-   inequality).
+   inequality). Now flagged **to verify**.
 4. `arxiv:1802.03727__01` (clique or dense bipartite subgraph in high-degree
    graphs, **solved** by the import via Kwan–Sudakov–Tran) ⇒
    `arxiv:1802.03727__00` (separation choosability grows with minimum degree,
-   **open**).
-5. `arxiv:1802.04179__01` (11/3 is not tight for {C₄,C₅}-free planar graphs,
-   **solved** by the import via Xu–Zhu's 7/2 bound) is the same conjecture as
-   `arxiv:1802.04179__00` (determine that constant, **partial**). The edge
-   probably overstates the match: the import settles only the non-tightness,
-   and the exact constant stays open.
+   **open**). Now flagged **to verify**.
+5. `arxiv:1802.04179__01` (the informal conjecture that 11/3 is not tight for
+   {C₄,C₅}-free planar graphs, **solved** via Xu–Zhu's 7/2 bound) was marked
+   the same conjecture as `arxiv:1802.04179__00` (determine that constant,
+   still open: **partial**, infimum in [3, 7/2]). They are not the same
+   statement, so the edge (e040) was **removed**; `__01` keeps its corpus page
+   but no longer appears in the relation graph.
 6. `arxiv:2510.11311__03` (characterize Eulerian-avoidable digraphs, **open**)
    ⇒ `arxiv:2510.11311__04` (every orientation of C₄ is Eulerian-avoidable,
-   **disproved** by the import via Lei–Wang–Xu–Yang).
+   **disproved** by the import via Lei–Wang–Xu–Yang). Now flagged
+   **to verify**.
+
+The "to verify" edges are not used to change any status: the implications are
+AI-checked only, and must be formally verified or peer reviewed first.
 
 The fourth August inconsistency, `arxiv:1802.03727__02` ⇒ `arxiv:1802.03727__03`,
 was cleared by the same import, which marked `__03` solved.

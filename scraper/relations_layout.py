@@ -137,19 +137,29 @@ def status_flag(relation: str, src_status: str | None, tgt_status: str | None) -
     """Confront one edge with the review statuses of its two endpoints.
 
     Returns None when the edge says nothing about the statuses, otherwise
-    {"code", "kind", "label"} where kind is "inconsistent" (the graph and the
-    review dataset disagree and one of them is wrong) or "vacuous" (the edge is
-    logically fine but no longer carries information, because its target is
-    proved or its source is disproved).
+    {"code", "kind", "label"} where kind is one of
+      "to_verify"    an implication whose solved source (or disproved target)
+                     would settle the other endpoint, which the reviews leave
+                     unresolved; the implication is only AI-checked, so it is
+                     to be formally verified or peer reviewed before the
+                     other endpoint's status can change;
+      "inconsistent" an equivalence/duplicate whose endpoints have different
+                     resolved statuses, so the edge or one review is wrong;
+      "vacuous"      the edge is logically fine but no longer carries
+                     information (its target is proved or its source disproved).
     """
     if relation == "implies":
         # A ⇒ B: B disproved forces A disproved, A solved forces B solved.
         if tgt_status == "disproved" and src_status != "disproved":
-            return {"code": "inconsistent_target_disproved", "kind": "inconsistent",
-                    "label": "target is disproved, so the source must be too"}
+            return {"code": "to_verify_target_disproved", "kind": "to_verify",
+                    "label": "target is disproved: if this implication holds, the source "
+                             "is disproved too (implication to be formally verified "
+                             "or peer reviewed)"}
         if src_status == "solved" and tgt_status != "solved":
-            return {"code": "inconsistent_source_solved", "kind": "inconsistent",
-                    "label": "source is solved, so the target must be too"}
+            return {"code": "to_verify_source_solved", "kind": "to_verify",
+                    "label": "source is solved: if this implication holds, the target "
+                             "is solved too (implication to be formally verified "
+                             "or peer reviewed)"}
         if src_status == "disproved":
             return {"code": "vacuous_source_disproved", "kind": "vacuous",
                     "label": "vacuous: the source is disproved"}
@@ -203,7 +213,7 @@ def build_relations_graph(relations: dict, node_meta: dict[str, dict]) -> dict |
             "context": _clip(m.get("context"), 1500),
         })
     edges = []
-    flag_counts: dict[str, int] = {"inconsistent": 0, "vacuous": 0}
+    flag_counts: dict[str, int] = {"to_verify": 0, "inconsistent": 0, "vacuous": 0}
     for r in rels:
         flag = status_flag(r["relation"],
                            node_meta[r["source"]].get("status"),

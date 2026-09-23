@@ -75,9 +75,9 @@ excellent companion source.
 ## Relations between conjectures
 
 The corpus also carries a **verified relation graph**,
-[`data/relations.json`](data/relations.json): 226 adversarially verified
+[`data/relations.json`](data/relations.json): 225 adversarially verified
 relations between conjectures across the corpora — 159 implications
-("if A is true then B is true"), 8 equivalences, 17 cross-corpus duplicates,
+("if A is true then B is true"), 8 equivalences, 16 cross-corpus duplicates,
 and 42 documented non-implication links. Each edge records its verified
 direction, a checkable referee argument, and citations where the confirmation
 is literature-based. It was produced by a multi-agent find-and-refute
@@ -93,8 +93,11 @@ has been machine-checked in a proof assistant such as Rocq or Lean.
 Confronting each edge with the review statuses of its two endpoints is now
 done at build time and shown on the site: 42 implications are **vacuous**
 (target already a theorem, or source already disproved — 10 of them because
-the cycle double cover conjecture was proved) and 6 edges are **inconsistent**
-with the reviews, meaning one of the two reviews is stale. See
+the cycle double cover conjecture was proved), 4 implications are **to
+verify** (a solved source or a disproved target would settle the other
+endpoint, but the implication is only AI-checked, so it must be formally
+verified or peer reviewed before that status can change), and 1 duplicate
+edge is **inconsistent** (its endpoints have different statuses). See
 [`RELATIONS.md`](RELATIONS.md) for the design, findings, and caveats;
 pipeline provenance lives in `data/relations_work/`.
 
@@ -343,7 +346,7 @@ graph-conjectures/
 │   ├── bondy_murty_reviews/          # 38 per-item status reviews
 │   ├── others_conjectures.json       # hand-written workstream conjectures (Meyniel, …)
 │   ├── others_reviews/               # their status reviews
-│   ├── relations.json                # 226 verified conjecture-to-conjecture relations
+│   ├── relations.json                # 225 verified conjecture-to-conjecture relations
 │   ├── relations_work/               # relation-pipeline provenance (tags, candidates, verdicts)
 │   ├── categories.json
 │   └── authors.json

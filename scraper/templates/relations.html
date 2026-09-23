@@ -19,11 +19,16 @@
         Cross-checking every edge against the two endpoints' review statuses:
         <strong>{{ graph.flag_counts.vacuous }}</strong> implications are
         <span class="rel-flag rel-flag-vacuous">vacuous</span> (the target is
-        already a theorem, or the source is already disproved) and
+        already a theorem, or the source is already disproved),
+        <strong>{{ graph.flag_counts.to_verify }}</strong> implications are
+        <span class="rel-flag rel-flag-to_verify">to verify</span> (a solved
+        source or a disproved target would settle the other endpoint, but the
+        implication is only AI-checked and must be formally verified or peer
+        reviewed first) and
         <strong>{{ graph.flag_counts.inconsistent }}</strong> are
-        <span class="rel-flag rel-flag-inconsistent">inconsistent</span> with the
-        statuses (one of the two reviews must be stale). Flagged edges are drawn
-        faintly; click one for the details.
+        <span class="rel-flag rel-flag-inconsistent">inconsistent</span>
+        (an equivalence or duplicate whose endpoints have different statuses).
+        Flagged edges are drawn faintly; click one for the details.
       </p>
     </div>
   </header>
