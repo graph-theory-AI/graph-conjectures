@@ -15,6 +15,16 @@
         <strong>not</strong> formally verified (no Rocq/Lean) &mdash; see
         <a href="https://github.com/lviennot/graph-conjectures/blob/main/RELATIONS.md">RELATIONS.md</a>.
       </p>
+      <p class="rel-audit">
+        Cross-checking every edge against the two endpoints' review statuses:
+        <strong>{{ graph.flag_counts.vacuous }}</strong> implications are
+        <span class="rel-flag rel-flag-vacuous">vacuous</span> (the target is
+        already a theorem, or the source is already disproved) and
+        <strong>{{ graph.flag_counts.inconsistent }}</strong> are
+        <span class="rel-flag rel-flag-inconsistent">inconsistent</span> with the
+        statuses (one of the two reviews must be stale). Flagged edges are drawn
+        faintly; click one for the details.
+      </p>
     </div>
   </header>
 
@@ -78,7 +88,8 @@
   GRAPH.edges.forEach((e, i) => {
     const line = document.createElementNS(NS, "line");
     line.setAttribute("class",
-      "rel-edge rel-" + e.relation + (e.verdict === "plausible" ? " rel-plausible" : ""));
+      "rel-edge rel-" + e.relation + (e.verdict === "plausible" ? " rel-plausible" : "") +
+      (e.flag ? " rel-flagged rel-flagged-" + e.flag.kind : ""));
     if (e.relation === "implies") line.setAttribute("marker-end", "url(#arrow)");
     line.addEventListener("click", ev => { ev.stopPropagation(); showEdge(e); });
     edgeLayer.appendChild(line);
@@ -257,6 +268,9 @@
       ' <span class="rel-verb">' + e.relation.replace(/_/g, " ") + "</span> " +
       nodeLink(nodeById[e.target]) + "</h2>" +
       '<p class="rel-meta">verdict: ' + e.verdict + " &middot; confidence: " + e.confidence + "</p>" +
+      (e.flag
+        ? '<p class="rel-flag rel-flag-' + e.flag.kind + '">' + esc(e.flag.label) + "</p>"
+        : "") +
       "<p>" + esc(e.argument) + "</p>" +
       (e.citations.length
         ? "<ul>" + e.citations.map(c =>

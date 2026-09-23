@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e116",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "A graph of VC-dimension ≤ d contains no induced copy of the shattering bipartite pattern B_{d+1} (d+1 vertices plus a witness vertex for each subset), since an induced copy would shatter d+1 vertices by neighbourhood traces. So VC-dim ≤ d graphs form a hereditary subclass of B_{d+1}-free graphs, and EH applied to H=B_{d+1} gives the n^{ε(d)} clique/stable set. The source paper itself calls Conjecture 4.1 the VC-dimension specialisation of Erdős–Hajnal."
+  ],
+  "source": {
+   "id": "opg:the_erdos_hajnal_conjecture",
+   "name": "The Erdös-Hajnal Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every fixed graph $ H $ , there exists a constant $ \\delta(H) $ , so that every graph $ G $ without an induced subgraph isomorphic to $ H $ contains either a clique or an independent set of size $ |V(G)|^{\\delta(H)} $ .",
+   "context": "There are numerous interesting classes of graphs which are based upon forbidding one or more induced subgraphs. For instance: chordal graphs , split graphs , and claw-free graphs. Numerous other natural classes of graphs have been proved to have such characterizations, most famously perfect graphs , but also line graphs and comparability graphs . All of these classes are very well structured (far from random) and their members all either have large cliques or independent sets. On the flip side of this are random graphs . It is well known that a random graph on $ n $ vertices has both clique and independence number highly concentrated around $ 2 \\log_2 n $ . The Erdos-Hajnal conjecture suggests a fundamental separation between these two worlds in terms of independence/clique sizes. Erdös and Hajnal proved that this conjecture is true for the recursive class of graphs $ {\\mathcal C} $ defined as follows. The one vertex graph is in $ {\\mathcal C} $ , and if $ G_1 $ and $ G_2 $ lie in $ {\\mathcal C} $ , then the disjoint union of $ G_1 $ and $ G_2 $ lies in $ {\\mathcal C} $ , as does the graph obtained from the disjoint union by adding an edge between $ v_1 $ and $ v_2 $ for every $ v_1 \\in V(G_1) $ and $ v_2 \\in V(G_2) $ . More generally, Alon, Pach, and Solymosi proved that if $ F $ is a graph with $ V(F) = \\{v_1,v_2,\\ldots,v_n\\} $ for which the Erdös-Hajnal conjecture holds, and $ H_1,\\ldots,H_n $ are graphs for which the Erdos-Hajnal conjecture holds, then the graph obtained …",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/the_erdos_hajnal_conjecture",
+   "attributed_to": "Erdos, Paul, Hajnal, Andras"
+  },
+  "target": {
+   "id": "arxiv:1912.02342__00",
+   "name": "Polynomial clique/independent set in bounded VC-dimension graphs",
+   "kind": "Conjecture",
+   "statement": "For $d \\geq 2$, there exists a constant $\\varepsilon(d)$ such that every graph on $n$ vertices with VC-dimension at most $d$ contains a clique or an independent set of size $n^{\\varepsilon(d)}$.",
+   "context": "This is the VC-dimension specialisation of the Erdős-Hajnal conjecture proposed by the paper's authors. The best known bound for graphs of bounded VC-dimension is $e^{(\\log n)^{1-o(1)}}$, established in a companion paper by the same authors; Conjecture 4.1 asks for the much stronger polynomial bound.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/1912.02342",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e117",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "If χ(G) ≥ c then G contains a subgraph of minimum degree ≥ c−1, hence average degree ≥ c−1; applying Thomassen's conjecture with average degree d(k,g) yields a subgraph of girth > g and average degree ≥ k, so c(k,g)=d(k,g)+1 works. The 1808.01605 paper states its Conjecture 6 is a weakening of Thomassen's conjecture.",
+   "If chi(G) >= d+2 then G has a subgraph of minimum (hence average) degree >= d+1 (take a critical subgraph). Choosing d = d(k,g) from Thomassen's conjecture yields a subgraph of average degree >= k and girth > g, exactly the chromatic version with c(k,g)=d+2."
+  ],
+  "source": {
+   "id": "opg:subgraph_of_large_average_degree_and_large_average_degree",
+   "name": "Subgraph of large average degree and large girth.",
+   "kind": "Conjecture",
+   "statement": "Conjecture For all positive integers $ g $ and $ k $ , there exists an integer $ d $ such that every graph of average degree at least $ d $ contains a subgraph of average degree at least $ k $ and girth greater than $ g $ .",
+   "context": "This conjecture is true for regular graphs as observed by Alon (see [KO]). The case $ g\\leq 4 $ was proved in [KO].",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/subgraph_of_large_average_degree_and_large_average_degree",
+   "attributed_to": "Thomassen, Carsten"
+  },
+  "target": {
+   "id": "arxiv:1808.01605__01",
+   "name": "High-chromatic subgraph with large average degree",
+   "kind": "Conjecture",
+   "statement": "For every positive integers $k$ and $g \\geq 3$, there exists a positive number $c(k,g)$ such that every graph with chromatic number at least $c(k,g)$ contains a subgraph of girth at least $g$ and with average degree at least $k$.",
+   "context": "Proposed by the authors as a weakening of both the Erdős–Hajnal conjecture and Thomassen's conjecture: the hypothesis uses chromatic number (rather than average degree) and the conclusion asks only for large average degree (rather than large chromatic number) in the subgraph.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1808.01605",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e118",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Conjecture 6.1 is the instance of Problem 1.1 with P = P_{C_{2ℓ}} (induced-C_{2ℓ}-free graphs), a hereditary property missing the bipartite graph C_{2ℓ}; a full determination of ex(Γ,P) over (c,t)-sparse Γ decides the conjectured C·t^{1−1/ℓ}n^{1+1/ℓ} bound."
+  ],
+  "source": {
+   "id": "arxiv:2405.05902__00",
+   "name": "Hereditary Turán theory in (c,t)-sparse graphs",
+   "kind": "Problem",
+   "statement": "Given a hereditary property $\\mathcal{P}$ which misses a bipartite graph and a $(c,t)$-sparse graph $\\Gamma$, determine $\\mathrm{ex}(\\Gamma,\\mathcal{P})$.",
+   "context": "The authors introduce the notion of a $(c,t)$-sparse graph $\\Gamma$ (one where the edge density between any two vertex subsets of size at least $t$ is at most $1-c$), which generalizes both dense random graphs and $K_{t,t}$-free graphs. This problem asks for a unified Turán-type theory covering both settings, extending a question of Alon, Krivelevich, and Samotij on hereditary properties in random graphs.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2405.05902",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2405.05902__01",
+   "name": "Induced Turán number for C_{2ℓ} in sparse graphs",
+   "kind": "Conjecture",
+   "statement": "For every $c>0$ and integer $\\ell$ there exists $C>1$, such that if $\\Gamma$ is a $(c,t)$-sparse graph then $\\mathrm{ex}(\\Gamma,\\mathcal{P}_{C_{2\\ell}})\\leq Ct^{1-1/\\ell}n^{1+1/\\ell}$.",
+   "context": "The conjecture concerns the induced Turán number for even cycles $C_{2\\ell}$ in $(c,t)$-sparse graphs. It is motivated by the fact that the family $\\mathcal{F}_{C_{2\\ell}}$ of clique quotients consists of all cycles of length between $\\ell$ and $2\\ell$, and that graphs of girth larger than $2\\ell$ on $n$ vertices have at most $O(n^{1+1/\\ell})$ edges.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/2405.05902",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e119",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Dense random graphs G(n,p) are whp (c,t)-sparse (edge density between any two linear-size sets is ≤ 1−c), and 2405.05902 explicitly introduces Problem 1.1 as the deterministic generalization of this Alon–Krivelevich–Samotij random-graph question; determining ex(Γ,P) for all (c,t)-sparse Γ and bipartite-missing hereditary P gives the precise order of ex(G(n,p),P)."
+  ],
+  "source": {
+   "id": "arxiv:2405.05902__00",
+   "name": "Hereditary Turán theory in (c,t)-sparse graphs",
+   "kind": "Problem",
+   "statement": "Given a hereditary property $\\mathcal{P}$ which misses a bipartite graph and a $(c,t)$-sparse graph $\\Gamma$, determine $\\mathrm{ex}(\\Gamma,\\mathcal{P})$.",
+   "context": "The authors introduce the notion of a $(c,t)$-sparse graph $\\Gamma$ (one where the edge density between any two vertex subsets of size at least $t$ is at most $1-c$), which generalizes both dense random graphs and $K_{t,t}$-free graphs. This problem asks for a unified Turán-type theory covering both settings, extending a question of Alon, Krivelevich, and Samotij on hereditary properties in random graphs.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2405.05902",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2210.12754__01",
+   "name": "Bipartite-missing hereditary ex(G(n,p), P) sharp asymptotics",
+   "kind": "Problem",
+   "statement": "Provide a more accurate estimate for $\\mathrm{ex}(G, \\mathcal{P})$ when $\\mathcal{P}$ misses a bipartite graph (i.e., when Theorem 1.1 gives only $\\mathrm{ex}(G(n,p),\\mathcal{P}) = o(n^2)$ whp).",
+   "context": "When the minimum chromatic number $k$ of a graph not in $\\mathcal{P}$ equals 2, Theorem 1.1 yields $\\mathrm{ex}(G(n,p),\\mathcal{P}) = o(n^2)$ whp but does not determine the precise order of magnitude. The authors ask for a sharper asymptotic in this regime.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2210.12754",
+   "attributed_to": "paper authors"
+  }
+ }
+]

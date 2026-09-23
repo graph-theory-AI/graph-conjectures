@@ -1,0 +1,124 @@
+[
+ {
+  "edge_id": "e028",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Both ask to characterize the finite families F of digraphs such that digraphs with no induced member of F have bounded dichromatic number ('heroic sets' = 'χ⃗-finite families').",
+   "Both ask to characterize the finite sets F of digraphs such that F-free (induced) digraphs have bounded dichromatic number: 'chi-vec-finite families' (Question 1.1 of arXiv:2306.04710) and 'heroic sets' (Problem 1.2 of arXiv:2009.13319) are the same notion by definition."
+  ],
+  "source": {
+   "id": "arxiv:2009.13319__00",
+   "name": "Heroic sets for bounded dichromatic number",
+   "kind": "Problem",
+   "statement": "What are the finite sets $\\mathcal{F}$ of digraphs for which the class $\\mathrm{Forb}_{\\mathrm{ind}}(\\mathcal{F})$ has bounded dichromatic number?",
+   "context": "This is the central problem of the paper, extending the Gyárfás-Sumner interrogation to directed graphs via the dichromatic number $\\vec{\\chi}$. A finite set $\\mathcal{F}$ of digraphs is called heroic if $\\mathrm{Forb}_{\\mathrm{ind}}(\\mathcal{F})$ has bounded dichromatic number. The paper focuses primarily on characterizing heroic sets of size three.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2009.13319",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2306.04710__00",
+   "name": "χ-finite families characterizing dichromatic boundedness",
+   "kind": "Question",
+   "statement": "Which finite families $F$ of digraphs are $\\vec{\\chi}$-finite?",
+   "context": "A family $F$ is $\\vec{\\chi}$-finite if there is a constant $c$ such that all $F$-free digraphs have dichromatic number at most $c$. This is the overarching open question motivating the study of heroes in hereditary classes of digraphs, and all main results of the paper contribute to it.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2306.04710",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e029",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "The conjectured characterization of heroic triples {K2↔, H, F} (H a hero, F an oriented forest) is the restriction of the general problem of characterizing heroic finite sets to sets of this special form."
+  ],
+  "source": {
+   "id": "arxiv:2009.13319__00",
+   "name": "Heroic sets for bounded dichromatic number",
+   "kind": "Problem",
+   "statement": "What are the finite sets $\\mathcal{F}$ of digraphs for which the class $\\mathrm{Forb}_{\\mathrm{ind}}(\\mathcal{F})$ has bounded dichromatic number?",
+   "context": "This is the central problem of the paper, extending the Gyárfás-Sumner interrogation to directed graphs via the dichromatic number $\\vec{\\chi}$. A finite set $\\mathcal{F}$ of digraphs is called heroic if $\\mathrm{Forb}_{\\mathrm{ind}}(\\mathcal{F})$ has bounded dichromatic number. The paper focuses primarily on characterizing heroic sets of size three.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2009.13319",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2009.13319__01",
+   "name": "Heroic triple characterization via transitive tournaments",
+   "kind": "Conjecture",
+   "statement": "Let $H$ be a hero and let $F$ be an oriented forest. The set $\\{\\overleftrightarrow{K_2}, H, F\\}$ is heroic if and only if: either $F$ is the disjoint union of oriented stars, or $H$ is a transitive tournament.",
+   "context": "This is the main conjecture of the paper, a digraph analog of the Gyárfás-Sumner conjecture for oriented graphs. The 'only if' direction is proved in Section 6.1. The case where both conditions hold simultaneously (H a transitive tournament and F a disjoint union of oriented stars) is already settled by Chudnovsky, Scott and Seymour [6].",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2009.13319",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e030",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "low",
+  "n_finders": 1,
+  "sketches": [
+   "If η denotes the Hadwiger number, then by Kostochka–Thomason every graph satisfies η(G) ≥ cχ(G)/√log χ(G), so η(G) ≤ f(ω) forces χ(G) ≤ g(ω) for some g; hence η-boundedness of H-free graphs for every forest H implies Gyárfás–Sumner. Depends on η being the Hadwiger number in this record."
+  ],
+  "source": {
+   "id": "arxiv:2302.04986__00",
+   "name": "η-boundedness for H-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every forest $H$, there exists a function $f:\\mathbb{N}\\rightarrow\\mathbb{N}$ such that every $H$-free graph $G$ satisfies $\\eta(G)\\leq f(\\omega(G))$.",
+   "context": "Proposed as an analogue of the Gyárfás–Sumner conjecture ($\\chi$-boundedness) for $\\eta$-boundedness: just as $H$-free graphs are conjectured to be $\\chi$-bounded for every forest $H$, the authors conjecture the same for $\\eta$-boundedness. The paper proves this conjecture for an assortment of special forests, including stars and paths $P_t$ with $t\\leq 5$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2302.04986",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "name": "Graphs with a forbidden induced tree are chi-bounded",
+   "kind": "Conjecture",
+   "statement": "Say that a family $ {\\mathcal F} $ of graphs is $ \\chi $ - bounded if there exists a function $ f: {\\mathbb N} \\rightarrow {\\mathbb N} $ so that every $ G \\in {\\mathcal F} $ satisfies $ \\chi(G) \\le f (\\omega(G)) $ . Conjecture For every fixed tree $ T $ , the family of graphs with no induced subgraph isomorphic to $ T $ is $ \\chi $ -bounded.",
+   "context": "This deep conjecture remains open despite considerable effort. Note that the conjecture would be false were the graph $ T $ to be permitted to contain a cycle, since then the class would admit graphs of high girth (where $ \\omega = 2 $ ) and high chromatic number. It is an easy exercise to prove this conjecture in the special case when $ T $ is either a path or a star, but things get difficult from here. Kierstead and Penrice solved the special case when $ T $ has radius 2, and Kierstead and Zhu solved the special case when $ T $ has radius 3 and has the property that every vertex incident with the center vertex has degree 2. Scott proved that the class of graphs which exclude all subdivisions of a fixed tree $ T $ as induced subgraphs are $ \\chi $ -bounded. It follows from this that Gyarfas's conjecture also holds for subdivisions of stars.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "attributed_to": "Gyarfas, Andras"
+  }
+ },
+ {
+  "edge_id": "e031",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 2,
+  "sketches": [
+   "Problem __00 asks the maximum fractional chromatic number of d-degenerate K_r-free graphs; __04 is the specific assertion that this maximum is o_r(d) for each r ≥ 4, so determining the value in __00 resolves __04.",
+   "Both problems concern the same extremal quantity: Problem 4.1 asks to determine the maximum fractional chromatic number of K_r-free d-degenerate graphs, and Problem 6.4 asks only whether this maximum is o_r(d) for r ≥ 4; a full determination resolves the yes/no question."
+  ],
+  "source": {
+   "id": "arxiv:2601.15245__00",
+   "name": "Fractional chromatic number of K_r-free d-degenerate graphs",
+   "kind": "Problem",
+   "statement": "What is the maximum fractional chromatic number of a $d$-degenerate, $K_{r}$-free graph?",
+   "context": "Given the main theorem of Martinsson [26] on triangle-free $d$-degenerate graphs and its many applications, the authors seek a generalization of Harris' conjecture for $K_{r}$-free graphs. One might guess the answer is $O_{r}\\left(\\frac{d\\log\\log d}{\\log d}\\right)$ by analogy with Johansson's bound for $K_r$-free graphs of maximum degree $\\Delta$, but Theorem 1.6 shows this is not the case.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2601.15245",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2601.15245__04",
+   "name": "Sub-linear χ_f for K_r-free degenerate graphs",
+   "kind": "Problem",
+   "statement": "Let $r\\geq 4$. Is it true that the maximum fractional chromatic number of $K_{r}$-free $d$-degenerate graphs is $o_{r}(d)$?",
+   "context": "Theorem 1.6 gives a lower bound of $\\Omega(d/\\log^{(r-2)}d)$ on the fractional chromatic number of $K_r$-free $d$-degenerate graphs, which approaches linear in $d$ as $r$ increases, leaving open whether the maximum is truly sub-linear for each fixed $r\\geq 4$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2601.15245",
+   "attributed_to": "paper authors"
+  }
+ }
+]

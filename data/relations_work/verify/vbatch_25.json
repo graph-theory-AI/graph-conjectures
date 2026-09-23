@@ -1,0 +1,125 @@
+[
+ {
+  "edge_id": "e100",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Stated explicitly in arXiv:1809.08324: the bipartite short-cycle conjecture (out-degree > n/(k+1) in each part forces girth <= 2k) is implied by the Caccetta-Haggkvist conjecture, via applying CH to an auxiliary digraph built from the bipartite digraph."
+  ],
+  "source": {
+   "id": "opg:caccetta_haggkvist_conjecture",
+   "name": "Caccetta-Häggkvist Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ \\lceil n/r\\rceil $",
+   "context": "It is one of the most famous conjectures in graph theory. It has many alternative formulations and lots of work have been done around it. Many interesting conjectures are related to it. See [Sul]. It is in particular implied by a conjecture of Thomassé and Hoàng-Reed Conjecture . The Caccetta-Häggkvist Conjecture is a generalization of an earlier conjecture of Behzad, Chartrand, and Wall, who conjectured it only for diregular digraphs. Caccetta-H äggkvist Conjecture has been proved for $ r\\leq \\sqrt{n/2} $ by Shen [She1]. For $ r\\geq n/2 $ it is trivial. But already for $ r=n/3 $ , it is still open as well as Behzad-Chartrand-Wall Conjecture Conjecture Every simple $ n $ -vertex digraph with minimum outdegree at least $ r/3 $ and minimum indegree at least $ r/3 $ has a cycle with length at most $ 3 $ . This conjecture would be implied by Seymour's Second Neighbourhood Conjecure . Shen [She2] also proved the following approximate version. Theorem Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ n/r + 73 $ . Bollobás and Scott [BS] proposed a weighted version of the Caccetta-Häggkvist Conjecture. Conjecture Let $ w:E(D) \\rightarrow [0,1] $ be a weight function on the arcs of a digraph $ D $ . If $ \\sum_{u\\in N^-(v)} w(uv) \\geq 1 $ and $ \\sum_{u\\in N^+(v)} w(vu) \\geq 1 $ for all $ v\\in V(D) $ , then there is a directed cycle in $ D $ of total weight at least 1. They gave a nice proof that there is a directed path of tota…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/caccetta_haggkvist_conjecture",
+   "attributed_to": "Caccetta, L., Häggkvist, Roland"
+  },
+  "target": {
+   "id": "arxiv:1809.08324__00",
+   "name": "Bipartite Caccetta–Häggkvist short cycle",
+   "kind": "Conjecture",
+   "statement": "For every integer $k \\geq 1$, if $G$ is a bipartite digraph, with $n > 0$ vertices in each part, and every vertex has out-degree more than $n/(k+1)$, then $G$ has girth at most $2k$.",
+   "context": "The central bipartite analogue of the Caccetta-Häggkvist conjecture, motivated by an extremal construction with bipartition into parts of cardinality $(k+1)t$ in which every vertex has out-degree exactly $n/(k+1)$ and no directed cycle of length at most $2k$ exists. The conjecture is implied by the Caccetta-Häggkvist conjecture.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1809.08324",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e101",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Stated in arXiv:1809.08324: the asymmetric bipartite conjecture (k*alpha + beta > 1 forces girth <= 2k) implies Caccetta-Haggkvist by letting beta tend to 0 in a bipartite encoding of a digraph with min out-degree r."
+  ],
+  "source": {
+   "id": "arxiv:1809.08324__01",
+   "name": "Asymmetric out-degree girth bound for bipartite digraphs",
+   "kind": "Conjecture",
+   "statement": "For every integer $k \\geq 1$, and every pair of reals $\\alpha, \\beta > 0$ with $k\\alpha + \\beta > 1$, if $G$ is a non-null bipartite digraph with bipartition $(A, B)$, where every vertex in $A$ has out-degree at least $\\beta|B|$, and every vertex in $B$ has out-degree at least $\\alpha|A|$, then $G$ has girth at most $2k$.",
+   "context": "A conjecture stronger than Conjecture 1.2 (the case $\\alpha = \\beta$) that also implies the Caccetta-Häggkvist conjecture (via $\\beta \\to 0$). It is best possible for infinitely many pairs $(\\alpha, \\beta)$, as witnessed by an explicit circulant-type extremal construction; the maximal bad pairs all lie on the lines $\\alpha + k\\beta = 1$ or $k\\alpha + \\beta = 1$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1809.08324",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:caccetta_haggkvist_conjecture",
+   "name": "Caccetta-Häggkvist Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ \\lceil n/r\\rceil $",
+   "context": "It is one of the most famous conjectures in graph theory. It has many alternative formulations and lots of work have been done around it. Many interesting conjectures are related to it. See [Sul]. It is in particular implied by a conjecture of Thomassé and Hoàng-Reed Conjecture . The Caccetta-Häggkvist Conjecture is a generalization of an earlier conjecture of Behzad, Chartrand, and Wall, who conjectured it only for diregular digraphs. Caccetta-H äggkvist Conjecture has been proved for $ r\\leq \\sqrt{n/2} $ by Shen [She1]. For $ r\\geq n/2 $ it is trivial. But already for $ r=n/3 $ , it is still open as well as Behzad-Chartrand-Wall Conjecture Conjecture Every simple $ n $ -vertex digraph with minimum outdegree at least $ r/3 $ and minimum indegree at least $ r/3 $ has a cycle with length at most $ 3 $ . This conjecture would be implied by Seymour's Second Neighbourhood Conjecure . Shen [She2] also proved the following approximate version. Theorem Every simple digraph of order $ n $ with minimum outdegree at least $ r $ has a cycle with length at most $ n/r + 73 $ . Bollobás and Scott [BS] proposed a weighted version of the Caccetta-Häggkvist Conjecture. Conjecture Let $ w:E(D) \\rightarrow [0,1] $ be a weight function on the arcs of a digraph $ D $ . If $ \\sum_{u\\in N^-(v)} w(uv) \\geq 1 $ and $ \\sum_{u\\in N^+(v)} w(vu) \\geq 1 $ for all $ v\\in V(D) $ , then there is a directed cycle in $ D $ of total weight at least 1. They gave a nice proof that there is a directed path of tota…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/caccetta_haggkvist_conjecture",
+   "attributed_to": "Caccetta, L., Häggkvist, Roland"
+  }
+ },
+ {
+  "edge_id": "e102",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "Setting alpha = beta > 1/(k+1) in the asymmetric conjecture (then k*alpha + beta > 1) recovers exactly the symmetric bipartite conjecture with out-degree > n/(k+1) in both parts. The source paper states Conjecture 1.5 is stronger than Conjecture 1.2 as the case alpha = beta.",
+   "Set α = β in Conjecture 1.5: out-degree > n/(k+1) in both parts of equal size n means α = β > 1/(k+1), so kα+β > 1, and the conclusion girth ≤ 2k is identical. The paper states Conjecture 1.5 is stronger than Conjecture 1.2 (the α=β case).",
+   "Take |A|=|B|=n and alpha=beta=(floor(n/(k+1))+1)/n. Out-degree > n/(k+1) means out-degree >= alpha n = beta n in both parts, and k·alpha+beta = (k+1)(floor(n/(k+1))+1)/n > 1, so the asymmetric conjecture yields girth <= 2k, which is the symmetric bipartite Caccetta-Haggkvist statement.",
+   "Setting alpha = beta (slightly above 1/(k+1), so that k alpha + beta > 1) in the asymmetric bipartite Caccetta-Haggkvist conjecture recovers the symmetric out-degree > n/(k+1) version; the paper states Conjecture 1.5 is stronger and includes 1.2 as the alpha=beta case."
+  ],
+  "source": {
+   "id": "arxiv:1809.08324__01",
+   "name": "Asymmetric out-degree girth bound for bipartite digraphs",
+   "kind": "Conjecture",
+   "statement": "For every integer $k \\geq 1$, and every pair of reals $\\alpha, \\beta > 0$ with $k\\alpha + \\beta > 1$, if $G$ is a non-null bipartite digraph with bipartition $(A, B)$, where every vertex in $A$ has out-degree at least $\\beta|B|$, and every vertex in $B$ has out-degree at least $\\alpha|A|$, then $G$ has girth at most $2k$.",
+   "context": "A conjecture stronger than Conjecture 1.2 (the case $\\alpha = \\beta$) that also implies the Caccetta-Häggkvist conjecture (via $\\beta \\to 0$). It is best possible for infinitely many pairs $(\\alpha, \\beta)$, as witnessed by an explicit circulant-type extremal construction; the maximal bad pairs all lie on the lines $\\alpha + k\\beta = 1$ or $k\\alpha + \\beta = 1$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1809.08324",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1809.08324__00",
+   "name": "Bipartite Caccetta–Häggkvist short cycle",
+   "kind": "Conjecture",
+   "statement": "For every integer $k \\geq 1$, if $G$ is a bipartite digraph, with $n > 0$ vertices in each part, and every vertex has out-degree more than $n/(k+1)$, then $G$ has girth at most $2k$.",
+   "context": "The central bipartite analogue of the Caccetta-Häggkvist conjecture, motivated by an extremal construction with bipartition into parts of cardinality $(k+1)t$ in which every vertex has out-degree exactly $n/(k+1)$ and no directed cycle of length at most $2k$ exists. The conjecture is implied by the Caccetta-Häggkvist conjecture.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1809.08324",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e103",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "With the same constant k: if a k-arc-strong digraph D has two arc-disjoint strongly connected spanning subdigraphs D1, D2, then D1 contains an out-branching rooted at u and D2 an in-branching rooted at v (any strong spanning subdigraph contains branchings from/to every root), and these are arc-disjoint."
+  ],
+  "source": {
+   "id": "opg:arc_disjoint_strongly_connected_spanning_subdigraphs",
+   "name": "Arc-disjoint strongly connected spanning subdigraphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture There exists an ineteger $ k $ so that every $ k $ -arc-connected digraph contains a pair of arc-disjoint strongly connected spanning subdigraphs?",
+   "context": "Bang-Jensen and Yeo [BY] proved the conjecture for several classes like tournaments. There is stronger conjecture for tournaments . Yeo (See [BG, Theorem 13.10.1]) showed that it is NP-complete to decide whether a 2-regular digraph has two arc-disjoint strongly connected spanning subdigraphs. A similar question can be asked about arc-disjoint out-branching and in-branching . Several related problems are mentioned in the survey of Bang-Jensen and Kriesell [BK].",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/arc_disjoint_strongly_connected_spanning_subdigraphs",
+   "attributed_to": "Bang-Jensen, Joergen, Yeo, Anders"
+  },
+  "target": {
+   "id": "opg:arc_disjoint_out_branching_and_in_branching",
+   "name": "Arc-disjoint out-branching and in-branching",
+   "kind": "Conjecture",
+   "statement": "Conjecture There exists an integer $ k $ such that every $ k $ -arc-strong digraph $ D $ with specified vertices $ u $ and $ v $ contains an out-branching rooted at $ u $ and an in-branching rooted at $ v $ which are arc-disjoint.",
+   "context": "Thomassen [T] showed that, given a digraph $ D $ and two vertices $ u $ and $ v $ , deciding whether there are an out-branching rooted at $ u $ and an in-branching rooted at $ v $ which are arc-disjoint is NP-complete. In contrast, one can decide in polynomial time whether there are $ k $ arc-disjoint out-branchings with specified roots $ s_1, \\dots , s_k $ (some of which may be identical). This is a consequence of Edmonds’ well known branching theorem [E] states that a digraph $ D $ has $ k $ arc-disjoint out-branchings rooted at some fixed vertex $ s $ if and only if there are $ k $ arc-disjoint paths from $ s $ to every other vertex of $ D $ . Bang-Jensen [B] proved this conjecture for tournaments. A similar question can be asked about arc-disjoint strongly connected spanning subdigraphs . Several related problems are mentioned in the survey of Bang-Jensen and Kriesell [BK].",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/arc_disjoint_out_branching_and_in_branching",
+   "attributed_to": "Thomassen, Carsten"
+  }
+ }
+]

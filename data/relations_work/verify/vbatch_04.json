@@ -1,0 +1,135 @@
+[
+ {
+  "edge_id": "e016",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "Tournaments are digraphs, so majority 3-colourability of every tournament is the restriction of the majority 3-colouring conjecture for all digraphs.",
+   "Majority 3-colourability of tournaments is the restriction of the majority 3-colouring conjecture for all digraphs to the subclass of tournaments.",
+   "Tournaments are digraphs, so the conjecture that every digraph has a majority 3-colouring immediately yields a majority 3-colouring of every tournament; the tournament question is the restriction of Conjecture (every digraph) to the class of tournaments.",
+   "Tournaments are digraphs, so 'every digraph has a majority 3-colouring' restricted to tournaments is exactly the source question."
+  ],
+  "source": {
+   "id": "arxiv:1608.03040__00",
+   "name": "Majority 3-coloring of digraphs",
+   "kind": "Conjecture",
+   "statement": "Every digraph has a majority 3-colouring.",
+   "context": "This conjecture naturally arises from Theorem 1, which shows every digraph has a majority 4-colouring. It would be best possible: odd directed cycles require 3 colours (since each vertex has outdegree 1, a majority colouring is a proper colouring), and circulant digraphs with large odd outdegree also witness this lower bound.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1608.03040",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1608.03040__03",
+   "name": "Majority 3-coloring of tournaments",
+   "kind": "Problem",
+   "statement": "Does every tournament have a majority 3-colouring?",
+   "context": "Ilya Bogdanov proved (in response to the original MathOverflow question [7]) that tournaments admit a majority colouring with a bounded number of colours, but whether 3 colours suffice for all tournaments is open.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1608.03040",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e017",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 5,
+  "sketches": [
+   "Eulerian digraphs are digraphs, so majority 3-colourability of Eulerian digraphs is a restriction of the conjecture that every digraph has a majority 3-colouring.",
+   "Majority 3-colourability of Eulerian digraphs is the restriction of the majority 3-colouring conjecture for all digraphs to the subclass of Eulerian digraphs.",
+   "Eulerian digraphs are digraphs, so the majority 3-colouring conjecture for all digraphs restricted to the class of Eulerian digraphs is exactly this problem.",
+   "Eulerian digraphs are a subclass of all digraphs, so the conjecture that every digraph has a majority 3-colouring immediately yields the Eulerian case.",
+   "Eulerian digraphs are digraphs, so the majority-3-colouring conjecture for all digraphs restricted to Eulerian digraphs is exactly the source question."
+  ],
+  "source": {
+   "id": "arxiv:1608.03040__00",
+   "name": "Majority 3-coloring of digraphs",
+   "kind": "Conjecture",
+   "statement": "Every digraph has a majority 3-colouring.",
+   "context": "This conjecture naturally arises from Theorem 1, which shows every digraph has a majority 4-colouring. It would be best possible: odd directed cycles require 3 colours (since each vertex has outdegree 1, a majority colouring is a proper colouring), and circulant digraphs with large odd outdegree also witness this lower bound.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1608.03040",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1608.03040__04",
+   "name": "Majority 3-coloring of Eulerian digraphs",
+   "kind": "Problem",
+   "statement": "Does every Eulerian digraph have a majority 3-colouring?",
+   "context": "For Eulerian digraphs $G$ where every vertex $v$ has equal in- and out-degree $\\deg(v)$, Lovász's result for undirected graphs gives a majority 4-colouring, and an analogous argument yields a 3-colouring in which each vertex $v$ has at most $\\frac{2}{3}\\deg(v)$ same-colour in-or-out-neighbours, proving a special case of Open Problem 1. Whether a full majority 3-colouring (with $\\frac{1}{2}\\deg^+(v)$) exists for all Eulerian digraphs is open.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1608.03040",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e018",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "The k=2 case of the 1/k-conjecture is a 3-colouring in which each vertex has at most half of its out-neighbours in its own colour, which is exactly a majority 3-colouring. (The general 1/k statement was disproved for some k, but the k=2 instance is the majority 3-colouring conjecture.)",
+   "Setting k=2 in the generalized conjecture ((k+1)-colouring with at most (1/k)deg⁺(v) same-coloured out-neighbours) gives exactly a majority 3-colouring (3 colours, at most half of out-neighbours same-coloured).",
+   "The k=2 instance of 'every digraph has a (k+1)-colouring with at most deg+(v)/k same-coloured out-neighbours' is precisely a majority 3-colouring; the paper states Conjecture 9 as the natural generalisation of Conjecture 2."
+  ],
+  "source": {
+   "id": "arxiv:1608.03040__01",
+   "name": "Majority 1/k out-neighbour colouring digraphs",
+   "kind": "Conjecture",
+   "statement": "For $k \\geq 2$, every digraph has a vertex $(k+1)$-colouring such that for each vertex $v$, at most $\\frac{1}{k}\\deg^+(v)$ out-neighbours of $v$ receive the same colour as $v$.",
+   "context": "This is the natural generalisation of Conjecture 2 to arbitrary $k$. The proof of Theorem 1 generalises to give an upper bound of $k^2$ colours; whether $O(k)$ colours suffice is explicitly stated as open. The conjecture is best possible, as shown by the $k$-th power of a directed $n$-cycle with $n \\not\\equiv 0 \\pmod{k+1}$.",
+   "status": "disproved",
+   "url": "https://arxiv.org/abs/1608.03040",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1608.03040__00",
+   "name": "Majority 3-coloring of digraphs",
+   "kind": "Conjecture",
+   "statement": "Every digraph has a majority 3-colouring.",
+   "context": "This conjecture naturally arises from Theorem 1, which shows every digraph has a majority 4-colouring. It would be best possible: odd directed cycles require 3 colours (since each vertex has outdegree 1, a majority colouring is a proper colouring), and circulant digraphs with large odd outdegree also witness this lower bound.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1608.03040",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e019",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 5,
+  "sketches": [
+   "Burr's conjecture gives: every digraph with chromatic number ≥ 2k-2 contains every oriented tree T of order k as a subdigraph; a copy of T is in particular a subdivision of T, so mader_χ(T) ≤ 2k-2. (Both statements use the chromatic number of the underlying graph.)",
+   "If every digraph with χ ≥ 2k−2 contains every oriented tree T of order k as a subdigraph (Burr's conjecture), then in particular it contains T itself, which is a subdivision of T, so mader_χ(T) ≤ 2k−2; the paper states Conjecture __03 is a direct consequence of Burr's conjecture.",
+   "Burr's conjecture: (dichromatic/chromatic) number >= 2k-2 forces every oriented tree of order k as a subdigraph. A copy of T is itself a (trivial) subdivision of T, hence mader_chi(T) <= 2k-2. Since chi >= dichromatic chi-vec, the implication holds under either reading of the colouring parameter.",
+   "Burr's conjecture: every digraph with chromatic number >= 2k-2 contains every oriented tree T of order k as a subdigraph. Since T is a subdivision of itself (and chi >= dichromatic number, covering either reading of the mader parameter), any such digraph contains a subdivision of T, so mader_chi(T) <= 2k-2.",
+   "Burr's conjecture gives every oriented tree T of order k as a subdigraph of any digraph with chi >= 2k-2; T is a trivial subdivision of itself, so mader_chi(T) <= 2k-2. The paper states this as a direct consequence of Burr's conjecture."
+  ],
+  "source": {
+   "id": "opg:oriented_trees_in_n_chromatic_digraphs",
+   "name": "Oriented trees in n-chromatic digraphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every digraph with chromatic number at least $ 2k-2 $ contains every oriented tree of order $ k $ as a subdigraph.",
+   "context": "The conjectured bound is best possible, because a regular tournament of order $ 2k-3 $ does not contain the oriented tree consisting of a vertex dominating $ k-1 $ leaves. Let $ f $ be the function $ f $ such that every oriented tree of order $ k $ is $ f(k) $ -universal, that is contained in every digraph with chromatic number at least $ f(k) $ . Burr proved that $ f(k) \\leq (k-1)^2 $ . This was slightly improved by Addario-Berry et al. [AHL+] who proved $ f(k)\\leq k^2/2-k/2+1 $ . Burr's conjecture has been proved only in few particular cases of digraphs: tournaments, and acyclic digraphs. Kühn, Mycroft, and Osthus [KMS] showed that every oriented tree of order $ k $ is contained in every tournament of order $ 2k-2 $ for all sufficiently large $ k $ (so proving a Conjecture of Sumner); Addario-Berry et al. [AHL+] proved that every acyclic digraph with chromatic number $ k $ contains every oriented tree of order $ k $ . Burr's conjecture or some approximation have been also proved for special classes of trees. Gallai-Roy's celebrated theorem states that every directed path of order $ k $ is $ k $ -universal; El-Sahili [E] proved that every oriented path of order $ 4 $ is $ 4 $ -universal and that the antidirected path of order $ 5 $ is $ 5 $ -universal; Addario-Berry, Havet, and Thomassé [AHT] showed that every oriented path of order $ k $ whose vertex set can be partioned into two directed paths is $ k $ -universal; Addario-Berry et al. [AHL+] showed that antidirected trees …",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/oriented_trees_in_n_chromatic_digraphs",
+   "attributed_to": "Burr, S. A."
+  },
+  "target": {
+   "id": "arxiv:1610.00876__03",
+   "name": "χ-Mader bound for oriented trees",
+   "kind": "Conjecture",
+   "statement": "If $T$ is an oriented tree of order $k$, then $\\mathrm{mader}_{\\chi}(T) \\leq 2k-2$.",
+   "context": "Stated as an interesting step towards Burr's Conjecture 10, of which it is a direct consequence. The $\\chi$-maderian digraphs are exactly the oriented forests, but determining $\\mathrm{mader}_{\\chi}$ precisely for each oriented tree is still open.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/1610.00876",
+   "attributed_to": "paper authors"
+  }
+ }
+]

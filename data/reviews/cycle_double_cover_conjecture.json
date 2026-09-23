@@ -1,8 +1,31 @@
 {
-  "status": "partial",
+  "status": "solved",
   "confidence": "high",
-  "summary": "The Cycle Double Cover Conjecture remains open; no complete proof has been accepted by the mathematical community, and several claimed arXiv proofs (2012, 2015, 2018) were later found to contain errors. Post-2007 progress includes a proof of Jaeger's directed version for lean fork-graphs, exponential lower bounds for the counting version for planar cubic graphs, and approximate results giving nontrivial upper bounds on singular edges in cubic graph embeddings.",
+  "claim_year": 1973,
+  "summary": "Solved in July 2026. OpenAI announced a proof, produced by GPT-5.6 Sol Ultra, that every bridgeless graph has a cycle double cover; Sang-il Oum's arXiv exposition (arXiv:2607.16356) presents it in a self-contained form suitable for advanced undergraduates, assuming only Fleischner's splitting lemma and the Nash-Williams--Tutte tree-packing theorem. The proof reduces to cubic 3-edge-connected graphs, takes a nowhere-zero $\\mathbb{Z}_2^3$-flow $\\phi$ (Jaeger, Kilpatrick), and shows via an $\\mathbb{F}_2$ consistency criterion (solvability of $At=b$, checked through $C(A)=\\ker(A^{T})^{\\perp}$) that vertex labels $t_v$ exist for which the two-element edge label $P_e = t_u+\\phi(f_u)+\\langle\\phi(e)\\rangle$ is well defined; the supports of the seven nonzero labels are Eulerian and cover every edge exactly twice. The argument yields an 8-cycle double cover. The 5-cycle double cover conjecture, the orientable/directed cycle double cover conjecture, the general strong embedding conjecture and the Berge-Fulkerson conjecture all remain open.",
   "since_posted": [
+    {
+      "title": "A proof of the cycle double cover conjecture",
+      "authors": "OpenAI (proof produced by GPT-5.6 Sol Ultra)",
+      "year": 2026,
+      "venue": "OpenAI announcement (technical note)",
+      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+      "doi": null,
+      "arxiv_id": null,
+      "kind": "proof",
+      "claim": "Announced (11 July 2026) a complete proof that every bridgeless graph has a cycle double cover, settling the conjecture of Seymour and Szekeres. The argument reduces to cubic 3-edge-connected graphs, starts from a nowhere-zero $\\mathbb{Z}_2^3$-flow, and uses an $\\mathbb{F}_2$ linear-algebra consistency criterion to choose a two-element label set for every edge; the supports of the labels form the cover."
+    },
+    {
+      "title": "A proof of the cycle double cover conjecture by OpenAI: An exposition",
+      "authors": "Sang-il Oum",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2607.16356",
+      "doi": null,
+      "arxiv_id": "2607.16356",
+      "kind": "proof",
+      "claim": "Self-contained ~10-page exposition of the OpenAI proof, assuming only Fleischner's splitting lemma and the Nash-Williams--Tutte tree-packing theorem. Symmetrises the choice of the two edge labels and replaces the dual-space argument by the identity $C(A)=\\ker(A^{T})^{\\perp}$. Also records the consequences: an 8-cycle double cover for every bridgeless graph, the strong (circular) embedding conjecture for cubic graphs, Bondy's small cycle double cover conjecture for simple 2-connected cubic graphs $\\ne K_4$ (via Lai--Yu--Zhang), and the Jamshy--Tarsi matroid form."
+    },
     {
       "title": "Directed Cycle Double Cover Conjecture: Fork Graphs",
       "authors": "Andrea Jiménez, Martin Loebl",
@@ -52,21 +75,25 @@
     "cycle double cover conjecture progress 2010 2020 2025 graph theory",
     "Seymour Szekeres cycle double cover conjecture solved proved arXiv",
     "cycle double cover conjecture bridgeless graph recent results survey",
-    "arXiv cycle double cover conjecture 2015 2020 2024 2025"
+    "arXiv cycle double cover conjecture 2015 2020 2024 2025",
+    "cycle double cover conjecture proof OpenAI GPT 2026 Oum"
   ],
   "verified_urls": [
+    "https://arxiv.org/abs/1310.5539",
     "https://arxiv.org/abs/1510.02075",
-    "https://arxiv.org/abs/2511.07285",
-    "https://arxiv.org/abs/2307.06649",
-    "https://arxiv.org/abs/2605.01410",
-    "https://en.wikipedia.org/wiki/Cycle_double_cover",
-    "https://arxiv.org/abs/2303.10615",
     "https://arxiv.org/abs/1811.08719",
-    "https://arxiv.org/abs/1310.5539"
+    "https://arxiv.org/abs/2303.10615",
+    "https://arxiv.org/abs/2307.06649",
+    "https://arxiv.org/abs/2511.07285",
+    "https://arxiv.org/abs/2605.01410",
+    "https://arxiv.org/abs/2607.16356",
+    "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+    "https://en.wikipedia.org/wiki/Cycle_double_cover",
+    "https://sangil.dimag.kr/2026/cdc/"
   ],
-  "notes": "Three arXiv preprints claim to prove the CDC conjecture (1202.0569, 1510.02075, 1811.08719); the 2015 paper (Radcliffe, arXiv:1510.02075) has a confirmed error noted on its own arXiv page. The Fischer 2023 paper (arXiv:2307.06649) claims to prove CDC for simple bridgeless triangle-free cubic graphs using percolation theory, but remains an unreviewed preprint as of March 2025. Wikipedia and the mathematical community confirm the conjecture is still open. Any minimal counterexample is known to have girth at least 12.",
+  "notes": "Status changed partial -> solved on 2026-09-06 on the strength of arXiv:2607.16356v3 (Oum, 1 Aug 2026), an exposition of the proof announced by OpenAI on 11 July 2026. Caveat: neither the announcement nor the exposition has been peer-reviewed or journal-published yet, and the earlier arXiv claims (1202.0569, 1510.02075, 1811.08719) are a reminder that CDC attracts flawed proofs. What is different here is that the write-up is short, elementary and checkable by hand -- it cites only Fleischner's splitting lemma and the Nash-Williams--Tutte tree-packing theorem -- and that the exposition is by a recognised expert (Sang-il Oum, IBS Discrete Mathematics Group), who states it as Theorem 1 and derives further consequences from it. Downstream consequences recorded in the exposition: (i) Theorem 18, every bridgeless graph has an 8-cycle double cover, which fills the (8,2) box of the (m,n)-cycle-cover chart; (ii) the strong/circular embedding conjecture now holds for cubic graphs (Jaeger's survey reduction), though it stays open in general; (iii) Corollary 17, Bondy's small cycle double cover conjecture for simple 2-connected cubic graphs other than $K_4$ becomes unconditional via Lai-Yu-Zhang; (iv) Theorem 27, the Jamshy-Tarsi equivalence upgrades to a theorem: every binary matroid with no coloop and no $F_7^{*}$-minor has a cycle double cover, hence so does every coloop-free regular matroid. Explicitly NOT settled: Bondy's $n-1$ small CDC conjecture for simple 2-edge-connected graphs, the 5-cycle double cover conjecture (Celmins, Preissmann), the orientable 5-CDC conjecture (Archdeacon, Jaeger) which would imply the 5-flow conjecture, the oriented cycle double cover conjecture stated further down this OPG page, and Berge-Fulkerson. The timeline start year is pinned to 1973 (Szekeres, Polyhedral decompositions of cubic graphs, for bridgeless cubic graphs; Seymour stated the general bridgeless form in 1979) via the review's `claim_year` field: the bibliography heuristic would otherwise date the bar from Tutte 1954, a cited antecedent rather than the conjecture.",
   "slug": "cycle_double_cover_conjecture",
-  "reviewed_at": "2026-05-08",
-  "model": "claude-sonnet-4-6 (worker 08)",
+  "reviewed_at": "2026-09-06",
+  "model": "claude-opus-5 (manual update, 2607.16356v3 read in full)",
   "search_enabled": true
 }

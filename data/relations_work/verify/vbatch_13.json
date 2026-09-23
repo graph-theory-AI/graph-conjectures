@@ -1,0 +1,128 @@
+[
+ {
+  "edge_id": "e052",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "(Even hole, K_t)-free graphs contain no induced K_{t,t} (it contains C_4), no induced subdivision of a wall and no line graph of one (both contain even holes, via the parity argument on theta/prism subconfigurations), so the four-family conjecture yields tw(G) = O(log n) for (even hole, K_t)-free graphs. This motivation is stated in the source paper."
+  ],
+  "source": {
+   "id": "arxiv:2109.01310__00",
+   "name": "Logarithmic treewidth via four forbidden families",
+   "kind": "Conjecture",
+   "statement": "For all $t \\geq 0$ there exists $c = c(t)$ such that if $G$ is a graph with no $K_t$, no $K_{t,t}$, no subdivision of $W_{t \\times t}$ and no line graph of a subdivision of $W_{t \\times t}$ as induced subgraphs, then $\\mathrm{tw}(G) \\leq c \\log(|V(G)|)$.",
+   "context": "The authors propose this as a natural extension of the main results and describe it as a variant of a conjecture of Sintiari and Trotignon [17]. It posits that excluding the four known families responsible for large treewidth (complete graphs, complete bipartite graphs, subdivided walls, line graphs of subdivided walls) as induced subgraphs forces treewidth to be at most logarithmic in the number of vertices.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2109.01310",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2305.16258__01",
+   "name": "Logarithmic treewidth of (even hole, Kₜ)-free graphs",
+   "kind": "Conjecture",
+   "statement": "The class of (even hole, $K_{t}$)-free graph has logarithmic treewidth.",
+   "context": "It is known that (even hole, $K_3$)-free graphs have treewidth at most 5, while (even hole, $K_4$)-free graphs do not have bounded treewidth due to layered-wheel constructions. Removing diamonds from the (even hole, $K_4$)-free class restores bounded treewidth; this conjecture posits that for general $t$ the (even hole, $K_t$)-free class has logarithmic treewidth, in line with an upcoming preprint of some of the same authors.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/2305.16258",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e053",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "An even-hole-free graph contains no induced k-wall and no line graph of a k-wall for k >= 3 (both contain even holes), so if max-degree-d graphs of treewidth >= f_d(k) must contain one of these, even-hole-free graphs of degree <= d have treewidth < f_d(3). This is the derivation used in the paper itself.",
+   "If bounded-degree graphs of huge treewidth must contain an induced k×k wall or the line graph of one, then a bounded-degree even-hole-free graph has bounded treewidth, since walls (whose bricks are 6-holes) and line graphs of walls contain even holes. The paper states the wall conjecture 'formally implies Conjecture 2' (the even-hole-free degree/treewidth statement)."
+  ],
+  "source": {
+   "id": "arxiv:2008.05504__01",
+   "name": "Induced wall in bounded-degree high tree-width graphs",
+   "kind": "Conjecture",
+   "statement": "For every $d \\in \\mathbb{N}$ there is a function $f_d : \\mathbb{N} \\to \\mathbb{N}$ such that every graph with degree at most $d$ and tree-width at least $f_d(k)$ contains a $(k \\times k)$-wall or the line graph of a $(k \\times k)$-wall as an induced subgraph.",
+   "context": "This is an induced grid theorem analogue for bounded-degree graphs, motivated by the construction of (even hole, $K_4$)-free graphs of unbounded tree-width that requires vertices of large degree and large clique minors. The conjecture is described as 'wide open' and formally implies Conjecture 2. The paper's Theorem 1.1 (the induced grid theorem for minor-free graphs) can be seen as a step in the direction of its proof.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/2008.05504",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2008.05504__00",
+   "name": "Bounded-degree even-hole-free tree-width",
+   "kind": "Conjecture",
+   "statement": "There is a function $f : \\mathbb{N} \\to \\mathbb{N}$ such that every even-hole-free graph of degree at most $d$ has tree-width at most $f(d)$.",
+   "context": "The class of even-hole-free graphs has unbounded tree-width in general (e.g., complete graphs and chordal graphs). Bounded degree is conjectured to be a sufficient structural restriction. If true, it would imply that even-hole-freeness is testable with constant query complexity and polylogarithmic running time in the bounded-degree graph model, via CMSO testability on bounded tree-width graphs. The paper proves the conjecture for $d \\leq 3$ (subcubic graphs) and proves a weakening for $d = 4$.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/2008.05504",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e054",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "A K_t minor of G yields a K_t subdivision only in the other direction, but the containment needed here holds: any graph containing a K_t-subdivision contains a K_t-minor, so K_t-minor-free graphs are K_t-subdivision-free. The conjectured bound 3^{2t/3+o(t)} n for the latter class then gives c^t n cliques for K_t-minor-free graphs, answering the target.",
+   "A graph with no K_t minor has no K_t subdivision (a subdivision yields a minor), so K_t-minor-free graphs lie in the K_t-subdivision-free class. The conjectured bound 3^{2t/3+o(t)}·n for subdivision-free graphs is of the form c^t·n, answering the OPG question (already answered affirmatively by Lee–Oum per the OPG update, consistent with this route).",
+   "A K_t-subdivision yields a K_t-minor, so K_t-minor-free graphs contain no K_t-subdivision; the conjectured bound 3^{2t/3+o(t)}n on cliques in K_t-subdivision-free graphs therefore gives c^t·n (c = 3^{2/3}+o(1)) for K_t-minor-free graphs, answering the OPG question affirmatively (the target is already solved by Lee–Oum and Fox–Wei).",
+   "A K_t-subdivision would give a K_t-minor, so K_t-minor-free graphs are K_t-subdivision-free. The conjectured bound 3^{2t/3+o(t)}·n on cliques in K_t-subdivision-free graphs is <= c^t·n for a fixed c (absorbing the 3^{o(t)} factor), answering the OPG question affirmatively."
+  ],
+  "source": {
+   "id": "arxiv:1606.06810__01",
+   "name": "Optimal clique count exponent for K_t-subdivisions",
+   "kind": "Conjecture",
+   "statement": "The maximum number of cliques in an $n$-vertex graph with no $K_t$-subdivision is $3^{2t/3+o(t)}n$, i.e., the optimal exponential constant in the exponent is $\\frac{2}{3}\\log_2 3 \\approx 1.06$.",
+   "context": "Theorem 1.2 establishes an upper bound of $2^{1.817t+o(t)}n$, improving on Lee and Oum. Wood's lower bound construction (which also forbids clique subdivisions) shows the constant cannot be reduced below $\\frac{2}{3}\\log_2 3 \\approx 1.06$. The authors proved $c(t) = 3^{2t/3+o(t)}$ for $K_t$-minors in earlier work [10] and conjecture the same bound holds for $K_t$-subdivisions.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1606.06810",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:number_of_cliques_in_minor_closed_classes",
+   "name": "Number of Cliques in Minor-Closed Classes",
+   "kind": "Conjecture",
+   "statement": "Question Is there a constant $ c $ such that every $ n $ -vertex $ K_t $ -minor-free graph has at most $ c^tn $ cliques?",
+   "context": "Here a clique is a (not neccessarily maximal) set of pairwise adjacent vertices in a graph. See [RW, NSTW] for early bounds on the number of cliques. Wood [W] proved that the number of cliques in an $ n $ -vertex $ K_t $ -minor-free graph is at most $ c^{t\\sqrt{\\log t}}n\\enspace. $ Fomin et al. [FOT] improved this bound to $ c^{t\\log\\log t}n\\enspace. $ These results are based on the fact that every $ n $ -vertex $ K_t $ -minor-free graph has at most $ ct\\sqrt{\\log t}n $ edges. This bound is tight for certain random graphs. So it is reasonable to expect that random graphs might also provide good lower bounds on the number of cliques. Update 2014: Choongbum Lee and Sang-il Oum [LO] recently answered this question in the affirmative, and even proved it for excluded subdivisions. In particular, they proved that every $ n $ -vertex graph with no $ K_t $ -subdivision has at most $ 2^{474t}n $ cliques and also at most $ 2^{14t+o(t)}n $ cliques. The question now is to determine the minimum constant. Wood [W] proved a lower bound of $ 3^{2t/3-o(t)}n $ using an appropriate sized complete graph minus a perfect matching. The same graph gives a lower bound of $ 3^{s-o(s)}n $ on the number of cliques in a graph with no $ K_s $ subdivision. Update (2019): Fox and Wei [FW] have proved that every graph on $ n $ vertices with no $ K_t $ -minor has at most $ 3^{2t/3+o(t)}n $ cliques. This bound is tight for $ n \\geq 4t/3 $ .",
+   "status": "solved",
+   "url": "http://www.openproblemgarden.org/op/number_of_cliques_in_minor_closed_classes",
+   "attributed_to": "Wood, David R."
+  }
+ },
+ {
+  "edge_id": "e055",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Classical implication (Greenwell 1971): a reconstructible graph with at least four edges is edge-reconstructible, since the vertex deck can be computed from the edge deck's information via counting arguments; hence the Reconstruction Conjecture implies the Edge Reconstruction Conjecture.",
+   "Classical result (Greenwell): every vertex-reconstructible graph with at least 4 edges is edge-reconstructible; the OPG edge-reconstruction page states 'if a graph is vertex reconstructible then it is edge reconstructible'. So the Reconstruction Conjecture implies the Edge Reconstruction Conjecture.",
+   "Greenwell (1971): every vertex-reconstructible graph without isolated vertices is edge-reconstructible, and isolated vertices are trivially handled from the edge deck's order data; hence the Reconstruction Conjecture implies the Edge Reconstruction Conjecture for graphs with at least 4 edges."
+  ],
+  "source": {
+   "id": "opg:reconstruction_conjecture",
+   "name": "Reconstruction conjecture",
+   "kind": "Conjecture",
+   "statement": "The deck of a graph $ G $ is the multiset consisting of all unlabelled subgraphs obtained from $ G $ by deleting a vertex in all possible ways (counted according to multiplicity). Conjecture If two graphs on $ \\ge 3 $ vertices have the same deck, then they are isomorphic.",
+   "context": "See Wikipedia's Reconstruction Conjecture for more on this problem.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/reconstruction_conjecture",
+   "attributed_to": "Kelly, Paul J., Ulam, Stanislaw M."
+  },
+  "target": {
+   "id": "opg:edge_reconstruction_conjecture",
+   "name": "Edge Reconstruction Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every simple graph with at least 4 edges is reconstructible from it's edge deleted subgraphs",
+   "context": "It is known that if a graph is vertex reconstructible then it is edge reconstructible.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/edge_reconstruction_conjecture",
+   "attributed_to": "Harary, Frank"
+  }
+ }
+]

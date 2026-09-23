@@ -5,8 +5,8 @@
 <rect x="90" y="250" width="1740" height="708" rx="26" fill="#fff" stroke="#dfe8e2" stroke-width="2"/>
 <text x="112" y="145" font-family="Arial, sans-serif" font-size="74" font-weight="700" fill="#152326">Resolved graph conjectures</text>
 <text x="112" y="204" font-family="Arial, sans-serif" font-size="32" fill="#667174">From first claim to proof or counterexample, across OPG and arXiv.</text>
-<text x="1284" y="130" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#152326">96</text>
-<text x="1455" y="130" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#15806e">74</text>
+<text x="1284" y="130" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#152326">97</text>
+<text x="1455" y="130" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#15806e">75</text>
 <text x="1624" y="130" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#c84d50">22</text>
 <text x="1284" y="180" font-family="Arial, sans-serif" font-size="21" fill="#667174">RESOLVED</text>
 <text x="1455" y="180" font-family="Arial, sans-serif" font-size="21" fill="#667174">PROVED</text>
@@ -30,36 +30,37 @@
 <text x="1780.0" y="935" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#667174">2030</text>
 <text x="184" y="301" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#152326">OPG literature reviews</text>
 <line x1="582.6" y1="308.0" x2="1653.0" y2="308.0" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Ádám's Conjecture: 1964 to 2023</title></line>
-<line x1="673.3" y1="315.9" x2="1399.0" y2="315.9" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Grunbaum's Conjecture: 1969 to 2009</title></line>
-<line x1="745.9" y1="323.7" x2="1671.1" y2="323.7" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Goldberg's conjecture: 1973 to 2024</title></line>
-<line x1="854.7" y1="331.6" x2="1689.3" y2="331.6" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Seymour's r-graph conjecture: 1979 to 2025</title></line>
-<line x1="891.0" y1="339.5" x2="1471.6" y2="339.5" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Real roots of the flow polynomial: 1981 to 2013</title></line>
-<line x1="891.0" y1="347.4" x2="1562.3" y2="347.4" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Jaeger's modular orientation conjecture: 1981 to 2018</title></line>
-<line x1="909.1" y1="355.2" x2="1489.7" y2="355.2" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Edge-disjoint Hamilton cycles in highly strongly connected tournaments.: 1982 to 2014</title></line>
-<line x1="981.7" y1="363.1" x2="1671.1" y2="363.1" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Coloring the Odd Distance Graph: 1986 to 2024</title></line>
-<line x1="1036.1" y1="371.0" x2="1526.0" y2="371.0" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Partitionning a tournament into k-strongly connected subtournaments.: 1989 to 2016</title></line>
-<line x1="1036.1" y1="378.8" x2="1707.4" y2="378.8" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Strong matchings and covers: 1989 to 2026</title></line>
-<line x1="1108.7" y1="386.7" x2="1489.7" y2="386.7" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Highly arc transitive two ended digraphs: 1993 to 2014</title></line>
-<line x1="1108.7" y1="394.6" x2="1489.7" y2="394.6" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Universal highly arc transitive digraphs: 1993 to 2014</title></line>
-<line x1="1217.6" y1="402.5" x2="1634.9" y2="402.5" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Book Thickness of Subdivisions: 1999 to 2022</title></line>
-<line x1="1253.9" y1="410.3" x2="1653.0" y2="410.3" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>What is the largest graph of positive curvature?: 2001 to 2023</title></line>
-<line x1="1362.7" y1="418.2" x2="1380.9" y2="418.2" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Laplacian Degrees of a Graph: 2007 to 2008</title></line>
-<line x1="1362.7" y1="426.1" x2="1435.3" y2="426.1" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>¿Are critical k-forests tight?: 2007 to 2011</title></line>
-<line x1="1362.7" y1="433.9" x2="1544.1" y2="433.9" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Antichains in the cycle continuous order: 2007 to 2017</title></line>
-<line x1="1362.7" y1="441.8" x2="1544.1" y2="441.8" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Number of Cliques in Minor-Closed Classes: 2007 to 2017</title></line>
-<line x1="1362.7" y1="449.7" x2="1580.4" y2="449.7" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Every prism over a 3-connected planar graph is hamiltonian.: 2007 to 2019</title></line>
-<line x1="1362.7" y1="457.5" x2="1634.9" y2="457.5" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>PTAS for feedback arc set in tournaments: 2007 to 2022</title></line>
-<line x1="1380.9" y1="465.4" x2="1562.3" y2="465.4" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>End-Devouring Rays: 2008 to 2018</title></line>
-<line x1="1380.9" y1="473.3" x2="1580.4" y2="473.3" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Cores of strongly regular graphs: 2008 to 2019</title></line>
-<line x1="1380.9" y1="481.2" x2="1580.4" y2="481.2" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Hedetniemi's Conjecture: 2008 to 2019</title></line>
-<line x1="1399.0" y1="489.0" x2="1526.0" y2="489.0" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Bounding the on-line choice number in terms of the choice number: 2009 to 2016</title></line>
-<line x1="1417.1" y1="496.9" x2="1453.4" y2="496.9" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Vertex Coloring of graph fractional powers: 2010 to 2012</title></line>
-<line x1="1435.3" y1="504.8" x2="1471.6" y2="504.8" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Extremal problem on the number of tree endomorphism: 2011 to 2013</title></line>
-<line x1="1453.4" y1="512.6" x2="1634.9" y2="512.6" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Are vertex minor closed classes chi-bounded?: 2012 to 2022</title></line>
-<line x1="1453.4" y1="520.5" x2="1689.3" y2="520.5" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Chromatic Number of Common Graphs: 2012 to 2025</title></line>
-<line x1="1471.6" y1="528.4" x2="1507.9" y2="528.4" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Erdős-Posa property for long directed cycles: 2013 to 2015</title></line>
-<line x1="1471.6" y1="536.3" x2="1507.9" y2="536.3" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Forcing a 2-regular minor: 2013 to 2015</title></line>
-<line x1="1507.9" y1="544.1" x2="1634.9" y2="544.1" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Circular flow number of regular class 1 graphs: 2015 to 2022</title></line>
+<line x1="673.3" y1="315.6" x2="1399.0" y2="315.6" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Grunbaum's Conjecture: 1969 to 2009</title></line>
+<line x1="745.8" y1="323.2" x2="1707.2" y2="323.2" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Cycle double cover conjecture: 1973 to 2026</title></line>
+<line x1="745.9" y1="330.9" x2="1671.1" y2="330.9" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Goldberg's conjecture: 1973 to 2024</title></line>
+<line x1="854.7" y1="338.5" x2="1689.3" y2="338.5" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Seymour's r-graph conjecture: 1979 to 2025</title></line>
+<line x1="891.0" y1="346.1" x2="1471.6" y2="346.1" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Real roots of the flow polynomial: 1981 to 2013</title></line>
+<line x1="891.0" y1="353.8" x2="1562.3" y2="353.8" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Jaeger's modular orientation conjecture: 1981 to 2018</title></line>
+<line x1="909.1" y1="361.4" x2="1489.7" y2="361.4" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Edge-disjoint Hamilton cycles in highly strongly connected tournaments.: 1982 to 2014</title></line>
+<line x1="981.7" y1="369.0" x2="1671.1" y2="369.0" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Coloring the Odd Distance Graph: 1986 to 2024</title></line>
+<line x1="1036.1" y1="376.6" x2="1526.0" y2="376.6" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Partitionning a tournament into k-strongly connected subtournaments.: 1989 to 2016</title></line>
+<line x1="1036.1" y1="384.2" x2="1707.4" y2="384.2" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Strong matchings and covers: 1989 to 2026</title></line>
+<line x1="1108.7" y1="391.9" x2="1489.7" y2="391.9" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Universal highly arc transitive digraphs: 1993 to 2014</title></line>
+<line x1="1108.7" y1="399.5" x2="1489.7" y2="399.5" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Highly arc transitive two ended digraphs: 1993 to 2014</title></line>
+<line x1="1217.6" y1="407.1" x2="1634.9" y2="407.1" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Book Thickness of Subdivisions: 1999 to 2022</title></line>
+<line x1="1253.9" y1="414.8" x2="1653.0" y2="414.8" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>What is the largest graph of positive curvature?: 2001 to 2023</title></line>
+<line x1="1362.7" y1="422.4" x2="1380.9" y2="422.4" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Laplacian Degrees of a Graph: 2007 to 2008</title></line>
+<line x1="1362.7" y1="430.0" x2="1435.3" y2="430.0" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>¿Are critical k-forests tight?: 2007 to 2011</title></line>
+<line x1="1362.7" y1="437.6" x2="1544.1" y2="437.6" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Antichains in the cycle continuous order: 2007 to 2017</title></line>
+<line x1="1362.7" y1="445.2" x2="1544.1" y2="445.2" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Number of Cliques in Minor-Closed Classes: 2007 to 2017</title></line>
+<line x1="1362.7" y1="452.9" x2="1580.4" y2="452.9" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Every prism over a 3-connected planar graph is hamiltonian.: 2007 to 2019</title></line>
+<line x1="1362.7" y1="460.5" x2="1634.9" y2="460.5" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>PTAS for feedback arc set in tournaments: 2007 to 2022</title></line>
+<line x1="1380.9" y1="468.1" x2="1562.3" y2="468.1" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>End-Devouring Rays: 2008 to 2018</title></line>
+<line x1="1380.9" y1="475.8" x2="1580.4" y2="475.8" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Cores of strongly regular graphs: 2008 to 2019</title></line>
+<line x1="1380.9" y1="483.4" x2="1580.4" y2="483.4" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Hedetniemi's Conjecture: 2008 to 2019</title></line>
+<line x1="1399.0" y1="491.0" x2="1526.0" y2="491.0" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Bounding the on-line choice number in terms of the choice number: 2009 to 2016</title></line>
+<line x1="1417.1" y1="498.6" x2="1453.4" y2="498.6" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Vertex Coloring of graph fractional powers: 2010 to 2012</title></line>
+<line x1="1435.3" y1="506.2" x2="1471.6" y2="506.2" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Extremal problem on the number of tree endomorphism: 2011 to 2013</title></line>
+<line x1="1453.4" y1="513.9" x2="1634.9" y2="513.9" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Are vertex minor closed classes chi-bounded?: 2012 to 2022</title></line>
+<line x1="1453.4" y1="521.5" x2="1689.3" y2="521.5" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Chromatic Number of Common Graphs: 2012 to 2025</title></line>
+<line x1="1471.6" y1="529.1" x2="1507.9" y2="529.1" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Erdős-Posa property for long directed cycles: 2013 to 2015</title></line>
+<line x1="1471.6" y1="536.8" x2="1507.9" y2="536.8" stroke="#15806e" stroke-width="5" stroke-linecap="round"><title>Forcing a 2-regular minor: 2013 to 2015</title></line>
+<line x1="1507.9" y1="544.4" x2="1634.9" y2="544.4" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Circular flow number of regular class 1 graphs: 2015 to 2022</title></line>
 <line x1="1507.9" y1="552.0" x2="1634.9" y2="552.0" stroke="#c84d50" stroke-width="5" stroke-linecap="round"><title>Circular flow numbers of $r$-graphs: 2015 to 2022</title></line>
 <text x="184" y="645" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#152326">arXiv-extracted conjectures</text>
 <line x1="1526.0" y1="652.0" x2="1544.1" y2="652.0" stroke="#e49a9a" stroke-width="3" stroke-linecap="round"><title>Conjecture 9: 2016 to 2017</title></line>

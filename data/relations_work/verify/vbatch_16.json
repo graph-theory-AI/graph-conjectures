@@ -1,0 +1,128 @@
+[
+ {
+  "edge_id": "e064",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Forests of lanterns are (multi)graphs, and widespread means pervasive (in particular in the ideal of all graphs). If every multigraph is widespread then every forest of lanterns is pervasive, which is the source conjecture. Restriction of the universally quantified class."
+  ],
+  "source": {
+   "id": "arxiv:1701.05597__00",
+   "name": "Widespread multigraph conjecture",
+   "kind": "Conjecture",
+   "statement": "Every multigraph is widespread.",
+   "context": "Scott [6] conjectured that every multigraph is pervasive in the ideal of all graphs, but this was disproved by a construction in [5]. The authors introduce the notion of 'widespread' and present Conjecture 1.8 as a resuscitated version of Scott's conjecture. They note they are very far from proving it, cannot verify it even for every chandelier, and that all multigraphs proved widespread so far are subdivisions of outerplanar graphs.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1701.05597",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1609.00314__00",
+   "name": "Pervasiveness of forests of lanterns",
+   "kind": "Informal",
+   "statement": "Every forest of lanterns $H$ is pervasive; that is, for all $\\nu, \\ell \\geq 0$ there exists $c$ such that every graph $G$ with $\\omega(G) \\leq \\nu$ and $\\chi(G) > c$ contains an induced subgraph isomorphic to an $(\\geq \\ell)$-subdivision of $H$.",
+   "context": "Results of Chalopin, Esperet, Li and Ossona de Mendez (via the Burling/Pawlik graphs) show that every pervasive graph must be a forest of lanterns. The authors state 'perhaps the converse is true, that every forest of lanterns is pervasive', and the abstract notes 'it is not known whether every forest of lanterns is pervasive in the class of all graphs.' The paper proves pervasiveness of all forests of lanterns in every $\\rho$-controlled ideal ($\\rho \\geq 2$) and in the class of string graphs, but the question for the ideal of all graphs remains open.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1609.00314",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e065",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "The conjecture 'H is unavoidable iff H is a minor of a graph from Kelly's construction' is a proposed complete characterization; if true it resolves the problem of fully characterizing unavoidable graphs in cover graphs of high-dimensional posets."
+  ],
+  "source": {
+   "id": "arxiv:2002.00496__02",
+   "name": "Unavoidability characterization via Kelly minors",
+   "kind": "Conjecture",
+   "statement": "A graph $H$ is unavoidable if and only if $H$ is a minor of some graph from Kelly's construction.",
+   "context": "Kelly's construction gives posets with unbounded dimension whose cover graphs are planar and have pathwidth 3, implying every unavoidable graph must be a minor of some graph in this family. The authors conjecture this necessary condition is also sufficient, and note an equivalent reformulation: $H$ is unavoidable if and only if $H$ is a minor of some graph obtained by gluing copies of $K_4$ along edges in a path-like way and subdividing all horizontal edges once.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2002.00496",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2002.00496__01",
+   "name": "Unavoidable minor characterization for poset covers",
+   "kind": "Problem",
+   "statement": "Obtain a full characterization of unavoidable graphs, where a graph $H$ is unavoidable if the cover graph of every poset with large enough dimension contains $H$ as a minor.",
+   "context": "The known positive results are that every ladder and $K_4$ are unavoidable. Kelly's construction shows that every unavoidable graph must be a minor of some graph from that construction, providing a necessary condition. The paper's Conjecture 6 proposes that this necessary condition is also sufficient.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2002.00496",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e066",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "For a tree T, the max degree Delta_T is at most the number m of leaves, so (taking f nondecreasing) an f(m)-edge-connected graph is f(Delta_T)-edge-connected. Hence the (now disproved) Delta-version implies the leaf-count version, which was proposed as the surviving weakening.",
+   "For any tree T, Δ_T ≤ m (max degree of a tree is at most its number of leaves). If f(Δ_T)-edge-connectivity plus min degree f(|E(T)|) suffices for T-decomposition, then taking f monotone, f(m)-edge-connectivity plus the same min-degree condition also suffices, which is the leaf-count conjecture of 1907.11600 with the same f.",
+   "A tree with m leaves has maximum degree Delta_T <= m. Taking f'(m) = max_{x<=m} f(x) (wlog f monotone), every f'(m)-edge-connected graph is f(Delta_T)-edge-connected, so the Delta_T-parameterized decomposition conjecture implies the leaf-parameterized one (identical divisibility and min-degree side conditions).",
+   "A tree with m leaves has maximum degree Delta_T <= m, so (taking f monotone) f(Delta_T)-edge-connectivity is implied by f(m)-edge-connectivity: any graph satisfying the leaf-version hypotheses satisfies the Delta-version hypotheses and is T-decomposable. (The Delta-version was disproved; the leaf-version is posed as its repair.)"
+  ],
+  "source": {
+   "id": "arxiv:1507.08208__00",
+   "name": "Tree T-decomposition via maximum degree connectivity",
+   "kind": "Conjecture",
+   "statement": "There is a function $f$ such that, for any fixed tree $T$ with maximum degree $\\Delta_T$, every $f(\\Delta_T)$-edge-connected graph with its number of edges divisible by $|E(T)|$ and minimum degree at least $f(|E(T)|)$ can be $T$-decomposed.",
+   "context": "The authors propose this as a refinement of the Barát-Thomassen Conjecture (Conjecture 1.1), arguing that the large edge-connectivity required in Conjecture 1.1 can be replaced by a constant depending only on the maximum degree of $T$, provided the host graph has sufficiently large minimum degree. The present paper proves Conjecture 1.2 in the case $\\Delta_T \\leq 2$, i.e., when $T$ is a path.",
+   "status": "disproved",
+   "url": "https://arxiv.org/abs/1507.08208",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1907.11600__00",
+   "name": "T-decomposition by leaf count of trees",
+   "kind": "Conjecture",
+   "statement": "There is a function $f$ such that, for any fixed tree $T$ with $m$ leaves, every $f(m)$-edge-connected graph with minimum degree at least $f(|E(T)|)$ and number of edges divisible by $|E(T)|$ has a $T$-decomposition.",
+   "context": "This conjecture is posed by the paper's authors as an alternative to Conjecture 2 (which fails for trees of maximum degree three), bounding the required edge-connectivity in terms of the number of leaves of $T$ rather than its maximum degree. The paper's main result implies $f(2) = 3$ is achievable, and the authors note that establishing the existence of $f(3)$ would already contain the claw case.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1907.11600",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e067",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "Both assert the coarse Menger property for graphs embeddable in a fixed surface: k+1 pairwise c-distant S-T paths or a set of <= k vertices whose l-balls cover all S-T paths. One entry is the informal 'holds for bounded genus' phrasing of the other's Conjecture 1.2.",
+   "Both assert the coarse Menger conjecture for graphs embeddable on a fixed surface: 2509.07174 gives the precise form (k+1 pairwise c-distant S–T paths or ≤k vertices whose ℓ-balls cover all S–T paths), and 2509.08762 informally proposes the identical restriction 'coarse Menger holds for graphs of bounded genus'. Bounded genus = embeddable on a fixed surface.",
+   "Bounded genus means embeddable in some fixed surface S, and the coarse Menger conjecture is exactly the dichotomy stated in 2509.07174__00: k+1 pairwise c-distant S-T paths, or a set X of size <= k whose distance-ell balls meet all S-T paths. Both entries assert this dichotomy for graphs of bounded genus.",
+   "Both assert the (weak, l-covering form of the) coarse Menger conjecture for graphs embeddable in a fixed surface: k+1 pairwise c-distant S-T paths or a set X of <= k vertices whose distance-l neighbourhood meets all S-T paths. 'Bounded genus' = embeddable in a fixed surface. Possible mismatch only in which variant (l dependence) each paper intends."
+  ],
+  "source": {
+   "id": "arxiv:2509.07174__00",
+   "name": "Coarse Menger for surface-embedded graphs",
+   "kind": "Conjecture",
+   "statement": "Let $\\mathcal{S}$ be a fixed surface. For all integers $k,c\\geq 0$ there exists $\\ell>0$ with the following property. Let $G$ be a graph that embeds on $\\mathcal{S}$ and let $S,T\\subseteq V(G)$. Then either\n\n$\\bullet$ there are $k+1$ paths between $S,T$, pairwise $c$-distant; or\n\n$\\bullet$ there is a set $X\\subseteq V(G)$ with $|X|\\leq k$ such that every path between $S,T$ contains a vertex with distance at most $\\ell$ from some member of $X$.",
+   "context": "The original Coarse Menger conjecture (attributed to Albrechtsen, Huynh, Jacobs, Knappe and Wollan, and independently to Georgakopoulos and Papasoglu) was shown to be false for general graphs by the same authors (Nguyen–Scott–Seymour) in [11], with counterexamples that are highly non-planar (unbounded genus). Since the counterexamples rely on non-planarity, the authors propose that a surface-restricted version may still hold.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2509.07174",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2509.08762__00",
+   "name": "Coarse Menger conjecture for bounded genus",
+   "kind": "Informal",
+   "statement": "It might be true that the coarse Menger conjecture holds for graphs of bounded genus.",
+   "context": "The counterexamples to the coarse Menger conjecture constructed in the authors' earlier paper have unbounded genus. The present paper proves the conjecture for bounded path-width; the authors note that the bounded-genus case is open and mention [13] for some progress in that direction.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/2509.08762",
+   "attributed_to": "paper authors"
+  }
+ }
+]

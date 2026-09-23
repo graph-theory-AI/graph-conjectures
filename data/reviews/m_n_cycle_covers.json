@@ -1,8 +1,19 @@
 {
   "status": "partial",
   "confidence": "high",
-  "summary": "The (5,2)-cycle cover conjecture — that every bridgeless graph has a 5-cycle double cover — remains open as of 2026. Since it was posted, partial progress includes a characterisation of when a 2-regular subgraph of a bridgeless cubic graph can be extended to a 5-cycle double cover, and verification of the 5-CDC conjecture for several families of snarks via nowhere-zero 4-flow methods; the full conjecture, which strictly strengthens the still-open cycle double cover conjecture, is unresolved.",
+  "summary": "The (5,2)-cycle cover conjecture -- that every bridgeless graph has a 5-cycle double cover -- remains open as of September 2026, but the chart on this page moved: the July 2026 proof of the cycle double cover conjecture (OpenAI/GPT-5.6; exposition arXiv:2607.16356) gives every bridgeless graph an (8,2)-cycle-cover (Theorem 18), and hence an (m,2)-cycle-cover for every $m \\ge 8$. Between 5 and 8 the question is open. Earlier partial progress on the (5,2) case includes Hoffmann-Ostenhof's characterisation of when a 2-regular subgraph of a bridgeless cubic graph extends to a 5-cycle double cover, and verification for several snark families via nowhere-zero 4-flow methods.",
   "since_posted": [
+    {
+      "title": "A proof of the cycle double cover conjecture by OpenAI: An exposition",
+      "authors": "Sang-il Oum",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2607.16356",
+      "doi": null,
+      "arxiv_id": "2607.16356",
+      "kind": "partial",
+      "claim": "Theorem 18: every bridgeless graph has an 8-cycle double cover, i.e. an (8,2)-cycle-cover, obtained directly from the new proof of the cycle double cover conjecture (the construction uses the seven nonzero elements of $\\mathbb{F}_2^3$ plus padding). This fills a previously unresolved box of the (m,n) chart on this OPG page. The conjecture asked on this page -- the (5,2) case, i.e. the 5-cycle double cover conjecture of Celmins and Preissmann -- is explicitly restated as open (Conjecture 20)."
+    },
     {
       "title": "A note on 5-cycle double covers",
       "authors": "Arthur Hoffmann-Ostenhof",
@@ -26,13 +37,14 @@
   ],
   "verified_urls": [
     "https://arxiv.org/abs/1209.0096",
-    "https://arxiv.org/abs/2511.07285",
     "https://arxiv.org/abs/2303.10615",
+    "https://arxiv.org/abs/2511.07285",
+    "https://arxiv.org/abs/2607.16356",
     "https://en.wikipedia.org/wiki/Cycle_double_cover"
   ],
-  "notes": "Two further post-2007 papers were found in search results but could not be accessed via WebFetch (journal paywalls/redirects): (1) Liu, Hao, Luo, Zhang, '5-Cycle Double Covers, 4-Flows, and Catlin Reduction', SIAM J. Discrete Math. 37(1):253–267, 2023, DOI:10.1137/22M1472425 — verifies 5-CDC for several snark families using Catlin reduction; (2) Zhang, 'Five-cycle double cover and shortest cycle cover', J. Graph Theory 108:39–49, 2025, DOI:10.1002/jgt.23164 — studies 5-CDC for weak-oddness-2 cubic graphs. arXiv:2511.07285 (approximate CDC, 2025) addresses general CDC but not specifically the (5,2)-cover. The (5,2)-cover conjecture is strictly stronger than the CDC conjecture, which is itself still open.",
+  "notes": "Two further post-2007 papers were found in search results but could not be accessed via WebFetch (journal paywalls/redirects): (1) Liu, Hao, Luo, Zhang, '5-Cycle Double Covers, 4-Flows, and Catlin Reduction', SIAM J. Discrete Math. 37(1):253–267, 2023, DOI:10.1137/22M1472425 — verifies 5-CDC for several snark families using Catlin reduction; (2) Zhang, 'Five-cycle double cover and shortest cycle cover', J. Graph Theory 108:39–49, 2025, DOI:10.1002/jgt.23164 — studies 5-CDC for weak-oddness-2 cubic graphs. arXiv:2511.07285 (approximate CDC, 2025) addresses general CDC but not specifically the (5,2)-cover. The (5,2)-cover conjecture is strictly stronger than the CDC conjecture, which is itself still open. 2026-09-06 update: the cycle double cover conjecture itself is now a theorem (OpenAI/GPT-5.6, July 2026; exposition arXiv:2607.16356). Consequently the confirmed implication (5,2)-cycle-cover => CDC recorded in data/relations.json is now vacuous, and the honest statement of what this page still asks is: close the gap between the (8,2)-cover that is now a theorem and the conjectured (5,2)-cover.",
   "slug": "m_n_cycle_covers",
-  "reviewed_at": "2026-05-08",
-  "model": "claude-sonnet-4-6 (worker 02)",
+  "reviewed_at": "2026-09-06",
+  "model": "claude-opus-5 (manual update, 2607.16356v3 read in full)",
   "search_enabled": true
 }

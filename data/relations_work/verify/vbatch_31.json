@@ -1,0 +1,128 @@
+[
+ {
+  "edge_id": "e124",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 2,
+  "sketches": [
+   "Apply E[F^-] <= E[F] to G = K_n and combine with the paper's theorem that the expected face count of a uniformly random orientable embedding of K_n is ln(n)+O(1); this yields the conjectured ln(n)+O(1) bound for non-orientable random embeddings of K_n.",
+   "The same paper establishes that the orientable random embedding of K_n has expected face count ln(n) + O(1); combining this with the general comparison E[F⁻] <= E[F] (Conjecture 9.6) applied to G = K_n gives the non-orientable bound E[F⁻(K_n)] <= ln(n) + O(1), i.e. Conjecture 9.5."
+  ],
+  "source": {
+   "id": "arxiv:2211.01032__04",
+   "name": "Non-orientable embedding faces below orientable",
+   "kind": "Conjecture",
+   "statement": "Let $F^{-}$ be the random variable for the average number of faces in a non-orientable random embedding of some graph $G$. Then $\\mathbb{E}[F^{-}] \\leq \\mathbb{E}[F]$.",
+   "context": "The authors conjecture that the expected face count in a non-orientable random embedding is always at most that of the orientable random embedding, for any graph $G$. The inequality is verified for toy models (including the dipole and chains of triangles joined by cut edges), and an analysis of Random Process A gives the bound $\\mathbb{E}[F^{-}] \\leq \\frac{1}{2}\\mathbb{E}[F] + 1$ for the dipole.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2211.01032",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2211.01032__03",
+   "name": "Non-orientable random embedding faces of Kₙ",
+   "kind": "Conjecture",
+   "statement": "The expected number of faces in a non-orientable random embedding of the complete graph $K_{n}$ is at most $\\ln(n) + O(1)$.",
+   "context": "The authors extend their investigation to non-orientable surfaces, where a random embedding is defined by choosing a random rotation system together with a random signature assigning each edge a sign independently with probability $1/2$. Computer simulations support a logarithmic behaviour analogous to the orientable case.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2211.01032",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e125",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "Parameter monotonicity: the conjectured bound E[F] <= n/3 + 1 for every simple n-vertex graph is a concrete linear bound, hence immediately gives E[F] = O(n) for uniformly random orientable embeddings.",
+   "Both concern the expected number of faces E[F] of a uniformly random orientable embedding of an arbitrary n-vertex simple graph; the explicit bound E[F] <= n/3 + 1 is O(n), so Conjecture 4 of 2202.07746 immediately yields Conjecture 1 of 2103.05036 (which that later paper in fact proved with constant π²/6).",
+   "Both concern the expected number of faces of a uniformly random orientable embedding of an arbitrary simple n-vertex graph; the quantitative bound E[F] <= n/3 + 1 immediately gives E[F] = O(n).",
+   "The bound E[F] <= n/3 + 1 for every simple n-vertex graph is in particular O(n), the target's statement for uniformly random orientable embeddings."
+  ],
+  "source": {
+   "id": "arxiv:2202.07746__00",
+   "name": "Linear face bound in random graph embeddings",
+   "kind": "Conjecture",
+   "statement": "For any simple graph $G$ of order $n$, $E[F] \\leq \\frac{1}{3}n + 1$.",
+   "context": "The paper proves $E[F] \\leq \\frac{\\pi^2}{6}n$ for simple graphs (Theorem 8), but no examples approaching this constant are known. A chain of triangles connected by cut edges achieves $E[F] = \\frac{1}{3}n+1$, which the authors conjecture is the true optimal bound.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2202.07746",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2103.05036__00",
+   "name": "Linear expected faces in random orientable embeddings",
+   "kind": "Conjecture",
+   "statement": "For every $n$-vertex simple graph $G$, the expected number of faces when selecting an orientable embedding of $G$ uniformly at random is $O(n)$.",
+   "context": "The authors exhibit a general construction of graph families achieving a linear number of expected faces but were unable to find any family with a superlinear number of expected faces. Results for $d$-regular and $d$-degenerate graphs (Theorem 11 and Corollary 12) are presented as supporting evidence.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/2103.05036",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e126",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Planar graphs have layered treewidth at most 3 (Dujmovic-Morin-Wood), so if every class of bounded layered treewidth has bounded queue-number, planar graphs have constant queue number. (Both statements are now resolved; the implication was the known route.)",
+   "Planar graphs have layered treewidth at most 3 (Dujmovic-Morin-Wood), so if graphs of bounded layered treewidth have bounded queue-number, then planar graphs have constant queue-number."
+  ],
+  "source": {
+   "id": "arxiv:1810.08314__00",
+   "name": "Bounded queue-number for layered treewidth graphs",
+   "kind": "Informal",
+   "statement": "It is open whether graphs of bounded layered treewidth have bounded queue-number.",
+   "context": "Dujmović et al. proved that every $n$-vertex graph with layered treewidth $k$ has queue-number $O(k \\log n)$. Subsequent to the submission of this paper, improved bounds on queue-number were obtained, but the question of whether a constant bound holds for graphs of bounded layered treewidth remains open.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1810.08314",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1507.01120__00",
+   "name": "Bounded queue number of planar graphs",
+   "kind": "Problem",
+   "statement": "A challenging open problem in the area of queue layouts is to decide whether planar graphs have constant queue number.",
+   "context": "Mentioned in the applications section where the authors note that graphs with bounded queue number form a class with bounded expansion (Dujmović and Wood), so Theorem 1 implies that posets whose cover graphs have bounded queue number have dimension bounded by a function of the queue number and the height. The queue-number problem for planar graphs is cited as independently interesting.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/1507.01120",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e127",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "An n^{2-o(1)} lower bound (no O(n^{2-eps}) algorithm for any eps>0) for map isomorphism is in particular a truly superlinear omega(n polylog n) lower bound for map isomorphism, which is what the subproblem asks to establish (conditionally).",
+   "If no O(n^{2-eps}) algorithm exists for map isomorphism for any eps > 0, then in particular no O(n polylog n) algorithm exists (n polylog n = O(n^{1.5})), which is an (even unconditional) truly-superlinear lower bound as sought in 2008.01616__01."
+  ],
+  "source": {
+   "id": "arxiv:2008.01616__00",
+   "name": "Quadratic lower bound for map isomorphism",
+   "kind": "Conjecture",
+   "statement": "There is no $\\varepsilon > 0$ for which there is an algorithm for testing isomorphism of maps of unrestricted genus in time $O(n^{2-\\varepsilon})$.",
+   "context": "The best known algorithm for the simultaneous conjugation problem runs in time $O(n^2 \\log d / \\log n + dn \\log n)$, yielding an $O(n^2/\\log n)$ algorithm for map isomorphism and automorphism problems of unrestricted genus. In complexity theory this is not considered 'truly subquadratic', which motivates the conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2008.01616",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2008.01616__01",
+   "name": "Superlinear lower bound for map isomorphism",
+   "kind": "Informal",
+   "statement": "An interesting open subproblem is to prove a conditional ``truly superlinear'' lower bound for any of the mentioned problems (map isomorphism, simultaneous conjugation).",
+   "context": "Some progress has been made: the communication complexity of the simultaneous conjugation problem is $\\Omega(dn\\log n)$ for $d>1$, and under the decision tree model the search version has lower bound $\\Omega(n\\log n)$. A conditional lower bound ruling out, e.g., $O(n\\,\\mathrm{polylog}\\,n)$ algorithms remains open.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2008.01616",
+   "attributed_to": "paper authors"
+  }
+ }
+]

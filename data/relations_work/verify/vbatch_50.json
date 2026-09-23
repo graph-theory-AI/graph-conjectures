@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e200",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "[T] proved the conjecture when $ d=1 $ and showed $ f(1)=3 $ . In fact, this case is equivalent to the case $ k=2 $ of the Bermond-Thomassen Conjecture . The existence of the corresponding function $ f $ for the undirected analogue is easy and has been observed by many a"
+  ],
+  "source": {
+   "id": "opg:splitting_a_digraph_with_minimum_outdegree_constraints",
+   "name": "Splitting a digraph with minimum outdegree constraints",
+   "kind": "Conjecture",
+   "statement": "Problem Is there a minimum integer $ f(d) $ such that the vertices of any digraph with minimum outdegree $ d $ can be partitioned into two classes so that the minimum outdegree of the subgraph induced by each class is at least $ d $ ?",
+   "context": "Thomassen [T] proved the conjecture when $ d=1 $ and showed $ f(1)=3 $ . In fact, this case is equivalent to the case $ k=2 $ of the Bermond-Thomassen Conjecture . The existence of the corresponding function $ f $ for the undirected analogue is easy and has been observed by many authors. Stiebitz [S] even proved the following tight result: if the minimum degree of an undirected graph $ G $ is $ d_1+d_2+ \\cdots + d_k $ , where each $ d_i $ is a non-negative integer, then the vertex set of $ G $ can be partitioned into $ k $ pairwise disjoint sets $ V_1,\\dots , V_k $ , so that for all $ i $ , the induced subgraph on $ V_i $ has minimum degree at least $ d_i $ . This is clearly tight, as shown by an appropriate complete graph.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/splitting_a_digraph_with_minimum_outdegree_constraints",
+   "attributed_to": "Alon, Noga"
+  },
+  "target": {
+   "id": "opg:the_bermond_thomassen_conjecture",
+   "name": "The Bermond-Thomassen Conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every positive integer $ k $ , every digraph with minimum out-degree at least $ 2k-1 $ contains $ k $ disjoint cycles.",
+   "context": "This conjecture is a simple observation when $ k=1 $ . It was proved by Thomassen~[Tho83] in 1983 when $ k=2 $ , and more recently the case $ k=3 $ was settled~[LPS07]. The bound offered would be optimal — just consider a symmetric complete graph on $ 2k-1 $ vertices. In 1996, Alon~[Alo96] proved that the statement is true with $ 2k-1 $ replaced by $ 64k $ . The conjecture was also verified for tournaments of minimum in-degree at least $ 2k-1 $ ~[BLS07]. Bang-Jensen et al. [BBT] made a stronger conjecture for digraph with sufficiently large girth. Conjecture For every integer $ g >1 $ , every digraph $ D $ with girth at least $ g $ and with minimum out-degree at least $ \\frac{g}{g-1}k $ contains $ k $ disjoint cycles. The constant $ \\frac{g}{g-1} $ is best possible. Indeed, for every integers $ p $ and $ g $ , consider the digraph $ D(g,p) $ on $ n = p(g − 1) + 1 $ vertices with vertex set $ \\{x_1, \\dots , x_n\\} $ and arc set $ \\{x_ix_j : j − i \\mod n \\in \\{1,\\dots p\\}\\} $ . It has girth $ g $ and out-degree $ p = \\left \\lfloor \\frac{g}{g−1} k \\right \\rfloor $ . Moreover, for $ n = 0 \\mod g $ , the digraph $ D(g,p) $ admits a partition into $ k $ vertex disjoint 3-cycles and no more. For g = 3, the first case of this conjecture which differs from Bermond-Thomassen Conjecture and which is not already known corresponds to the following question: Question Does every digraph D without 2-cycles and out-degree at least 6 admit four vertex disjoint cycles?",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/the_bermond_thomassen_conjecture",
+   "attributed_to": "Bermond, Jean-Claude, Thomassen, Carsten"
+  }
+ },
+ {
+  "edge_id": "e201",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "-colorable cubic graph has a nowhere-zero 4-flow, this conjecture is automatically true for these families. As with the 5-flow conjecture or the cycle double cover conjecture , establishing this conjecture comes down to proving it for cubic graphs which are"
+  ],
+  "source": {
+   "id": "opg:three_4_flows_conjecture",
+   "name": "The three 4-flows conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ with no bridge , there exist three disjoint sets $ A_1,A_2,A_3 \\subseteq E(G) $ with $ A_1 \\cup A_2 \\cup A_3 = E(G) $ so that $ G \\setminus A_i $ has a nowhere-zero 4-flow for $ 1 \\le i \\le 3 $ .",
+   "context": "A graph $ G $ has a nowhere-zero 4-flow if and only if there exist disjoint sets $ A_1,A_2,A_3 \\subseteq E(G) $ with $ A_1 \\cup A_2 \\cup A_3 = E(G) $ so that $ G\\A_i $ has a nowhere-zero 2-flow for $ 1 \\le i \\le 3 $ . Thus, the above conjecture is true with room to spare for such graphs. Since every 4-edge-connected graph and every 3- edge-colorable cubic graph has a nowhere-zero 4-flow, this conjecture is automatically true for these families. As with the 5-flow conjecture or the cycle double cover conjecture , establishing this conjecture comes down to proving it for cubic graphs which are not 3-edge-colorable. This conjecture is a consequence of the Petersen coloring conjecture , and it implies the Orientable cycle four cover conjecture . The latter implication follows immediately from the fact that every graph with a nowhere-zero 4-flow has an orientable cycle double cover. Actually, it is possible that for every graph $ G $ with no cut-edge, there exist disjoint sets $ A_B_1,B_2 \\subseteq E(G) $ with $ A \\cup B_1 \\cup B_2 = E(G) $ and so that $ G\\B_1 $ and $ G\\B_2 $ have nowhere-zero 3-flows and $ G\\A $ has a nowhere-zero 2-flow. The Petersen graph has such a decomposition ( $ B_1 $ and $ B_2 $ should be alternate edges of some 8-circuit) and so does every graph with a nowhere-zero 4-flow. If this stronger statement is true, then it would imply the oriented eight cycle four cover conjecture.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/three_4_flows_conjecture",
+   "attributed_to": "DeVos, Matt"
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e202",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "s a nowhere-zero 4-flow, this conjecture is automatically true for these families. As with the 5-flow conjecture or the cycle double cover conjecture , establishing this conjecture comes down to proving it for cubic graphs which are not 3-edge-colorable. This conjectur"
+  ],
+  "source": {
+   "id": "opg:three_4_flows_conjecture",
+   "name": "The three 4-flows conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph $ G $ with no bridge , there exist three disjoint sets $ A_1,A_2,A_3 \\subseteq E(G) $ with $ A_1 \\cup A_2 \\cup A_3 = E(G) $ so that $ G \\setminus A_i $ has a nowhere-zero 4-flow for $ 1 \\le i \\le 3 $ .",
+   "context": "A graph $ G $ has a nowhere-zero 4-flow if and only if there exist disjoint sets $ A_1,A_2,A_3 \\subseteq E(G) $ with $ A_1 \\cup A_2 \\cup A_3 = E(G) $ so that $ G\\A_i $ has a nowhere-zero 2-flow for $ 1 \\le i \\le 3 $ . Thus, the above conjecture is true with room to spare for such graphs. Since every 4-edge-connected graph and every 3- edge-colorable cubic graph has a nowhere-zero 4-flow, this conjecture is automatically true for these families. As with the 5-flow conjecture or the cycle double cover conjecture , establishing this conjecture comes down to proving it for cubic graphs which are not 3-edge-colorable. This conjecture is a consequence of the Petersen coloring conjecture , and it implies the Orientable cycle four cover conjecture . The latter implication follows immediately from the fact that every graph with a nowhere-zero 4-flow has an orientable cycle double cover. Actually, it is possible that for every graph $ G $ with no cut-edge, there exist disjoint sets $ A_B_1,B_2 \\subseteq E(G) $ with $ A \\cup B_1 \\cup B_2 = E(G) $ and so that $ G\\B_1 $ and $ G\\B_2 $ have nowhere-zero 3-flows and $ G\\A $ has a nowhere-zero 2-flow. The Petersen graph has such a decomposition ( $ B_1 $ and $ B_2 $ should be alternate edges of some 8-circuit) and so does every graph with a nowhere-zero 4-flow. If this stronger statement is true, then it would imply the oriented eight cycle four cover conjecture.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/three_4_flows_conjecture",
+   "attributed_to": "DeVos, Matt"
+  },
+  "target": {
+   "id": "opg:cycle_double_cover_conjecture",
+   "name": "Cycle double cover conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture For every graph with no bridge , there is a list of cycles so that every edge is contained in exactly two.",
+   "context": "This beautiful conjecture was made independently by Szekeres and Seymour in the 70's and is now widely considered to be among the most important open problems in graph theory. Note the similarity between this conjecture and the Berge-Fulkerson conjecture on perfect matchings. Attempts to prove this conjecture have lead to a variety of conjectured strengthenings, which appear on other pages. See: The circular embedding conjecture , The five cycle double cover conjecture , The faithful cover conjecture , and Decomposing Eulerian graphs . If a graph $ G $ has a nowhere-zero 4-flow then it follows from a result of Tutte that $ G $ satisfies the above conjecture. Thus, by Jaeger's 4-flow theorem [J], the above conjecture is true for every 4-edge-connected graph. A cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable , so the above conjecture is also true for 3-edge-colorable cubic graphs. In general, it follows from vertex splitting arguments that problem may be reduced to cubic graphs which are not 3-edge-colorable. For a general graph $ G $ with no cut-edge, Bermond, Jackson and Jaeger [BJJ] used Jaeger's 8-flow theorem [J] to prove that $ G $ has a list of circuits so that every edge is contained in exactly four. Fan [F] used Seymour's 6-flow theorem [S81] to prove that G has a list of circuits so that every edge is contained in exactly six. Let $ G $ be a directed graph and let $ C $ be a circuit (not necessarily a directed circuit) of $ G $ . If we cho…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture",
+   "attributed_to": "Seymour, Paul D., Szekeres, George"
+  }
+ },
+ {
+  "edge_id": "e203",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "uous mapping from~ $ G $ to~ $ H $ ; thus, the presented conjecture can be thought of as a weaker version of Nesetril's Pentagon problem . We mention a generalization of the conjecture, that deals with longer cycles/larger number of colors. The $ n $ -dime"
+  ],
+  "source": {
+   "id": "opg:weak_pentagon_problem",
+   "name": "Weak pentagon problem",
+   "kind": "Conjecture",
+   "statement": "Conjecture If $ G $ is a cubic graph not containing a triangle, then it is possible to color the edges of $ G $ by five colors, so that the complement of every color class is a bipartite graph.",
+   "context": "This conjecture has several reformulations: the conclusion of the conjecture can be replaced by either of the following: \\item $ G $ has a homomorphism to the Clebsch graph . \\item there is a cut-continuous mapping from $ G $ to $ C_5 $ . For the latter variant, few definitions are in place. A cut-continuous mapping from a graph~ $ G $ to a graph~ $ H $ is a mapping $ f : E(G) \\to E(H) $ such that the preimage of every cut in~ $ H $ is a cut in~ $ G $ . Here, by a cut in~ $ H $ we mean the edge-set of a spanning bipartite subgraph of~ $ H $ ---less succinctly, it is the set of all edges leaving some subset of vertices of~ $ H $ . Cut-continuous mappings are closely related with graph homomorphisms (see [DNR], [S]). In particular, every homomorphism from~ $ G $ to~ $ H $ naturally induces a cut-continuous mapping from~ $ G $ to~ $ H $ ; thus, the presented conjecture can be thought of as a weaker version of Nesetril's Pentagon problem . We mention a generalization of the conjecture, that deals with longer cycles/larger number of colors. The $ n $ -dimensional projective cube , denoted $ PQ_n $ , is the simple graph obtained from the $ (n+1) $ -dimensional cube~ $ Q_{n+1} $ by identifying pairs of antipodal vertices (vertices that differ in all coordinates). Note that $ PQ_4 $ is the Clebsch graph . Question What is the largest integer $ k $ with the property that all cubic graphs of sufficiently high girth have a homomorphism to $ PQ_{2k} $ ? Again, the question has several re…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/weak_pentagon_problem",
+   "attributed_to": "Samal, Robert"
+  },
+  "target": {
+   "id": "opg:pentagon_problem",
+   "name": "Pentagon problem",
+   "kind": "Conjecture",
+   "statement": "Question Let $ G $ be a 3-regular graph that contains no cycle of length shorter than $ g $ . Is it true that for large enough~ $ g $ there is a homomorphism $ G \\to C_5 $ ?",
+   "context": "This question was asked by Nesetril at numerous problem sessions (and also appears as [N]). By Brook's theorem any triangle-free cubic graph is 3-colorable. Does a stronger assumption on girth of the graph imply stronger coloring properties? This problem is motivated by complexity considerations [GHN] and also by exploration of density of the homomorphism order: We write $ G \\prec H $ if there is a homomorphism $ G \\to H $ but there is no homomorphism $ H \\to G $ . It is known that whenever $ G \\prec H $ holds and $ H $ ~is not bipartite, there is a graph~ $ K $ satisfying $ G \\prec K \\prec H $ . A negative solution to the Pentagon problem would have the following density consequence: for each cubic graph~ $ H $ for which~ $ C_5 \\prec H $ holds, there exists a cubic graph~ $ K $ satisfying $ C_5 \\prec K \\prec H $ (see [N]). If we replaced $ C_5 $ in the statement of the problem by a longer odd cycle, we would get a stronger statement. It is known that no such strenghthening is true. This was proved by Kostochka, Nesetril, and Smolikova [KNS] for $ C_{11} $ (hence for all $ C_l $ with $ l \\ge 11 $ ), by Wanless and Wormald [WW] for $ C_9 $ , and recently by Hatami [H] for $ C_7 $ . Each of these results uses probabilistic arguments (random regular graphs), no constructive proof is known. Haggkvist and Hell [HH] proved that for every integer~ $ g $ there is a graph~ $ U_g $ with odd girth at least~ $ g $ (that is, $ U_g $ does not contain odd cycle of length less than~ $ g $ ) …",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/pentagon_problem",
+   "attributed_to": "Nesetril, Jaroslav"
+  }
+ }
+]

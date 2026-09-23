@@ -25,19 +25,20 @@
     "Fleischner Genest Jackson \"compatible circuit decompositions\" Eulerian graphs journal 2009 2010 2011"
   ],
   "verified_urls": [
-    "https://mathanddata.wvu.edu/directory/emeritus/cun-quan-zhang",
-    "https://math.wvu.edu/~cqzhang/Publication-files/my-paper/JCTB-2019-CC-III.pdf",
-    "https://webspace.maths.qmul.ac.uk/b.jackson/conjSUBMIT.pdf",
-    "https://scholar.google.com/scholar?q=compatible+circuit+decompositions+eulerian+graphs+Jackson",
-    "https://dblp.org/pid/45/210.html",
+    "https://arxiv.org/abs/2607.16356",
     "https://arxiv.org/search/?searchtype=all&query=compatible+circuit+decomposition+eulerian+transition+system&start=0",
     "https://arxiv.org/search/?searchtype=all&query=compatible+decomposition+eulerian+transition&start=0",
+    "https://dblp.org/pid/45/210.html",
+    "https://math.wvu.edu/~cqzhang/Publication-files/my-paper/JCTB-2019-CC-III.pdf",
+    "https://mathanddata.wvu.edu/directory/emeritus/cun-quan-zhang",
+    "https://scholar.google.com/scholar?q=compatible+circuit+decompositions+eulerian+graphs+Jackson",
     "https://web.math.princeton.edu/~pds/papers/cutcolouring/paper.pdf",
-    "https://webspace.maths.qmul.ac.uk/b.jackson/"
+    "https://webspace.maths.qmul.ac.uk/b.jackson/",
+    "https://webspace.maths.qmul.ac.uk/b.jackson/conjSUBMIT.pdf"
   ],
-  "notes": "The Fleischner–Genest–Jackson preprint 'Compatible Circuit Decompositions of Eulerian Graphs' (September 2006 manuscript visible on Jackson's QMUL page) predates the OPG posting and was not found to have been published as a journal article after 2007-03-07; it was not cited. The 2019 JCTB paper (Cycle Covers III) was confirmed via the WVU directory of C.-Q. Zhang, listing it as JCTB 137 (2019): 25-54. The ScienceDirect full-text page and ResearchGate abstract both returned 403, so detailed abstract text could not be read directly; the characterisation of the paper's result relies on the search-engine AI summaries and the WVU author page listing, which are consistent. No evidence was found that the 80-edge-connectivity general bound has been improved in the post-2007 period. The main 6-edge-connected conjecture appears to remain open.",
+  "notes": "The Fleischner–Genest–Jackson preprint 'Compatible Circuit Decompositions of Eulerian Graphs' (September 2006 manuscript visible on Jackson's QMUL page) predates the OPG posting and was not found to have been published as a journal article after 2007-03-07; it was not cited. The 2019 JCTB paper (Cycle Covers III) was confirmed via the WVU directory of C.-Q. Zhang, listing it as JCTB 137 (2019): 25-54. The ScienceDirect full-text page and ResearchGate abstract both returned 403, so detailed abstract text could not be read directly; the characterisation of the paper's result relies on the search-engine AI summaries and the WVU author page listing, which are consistent. No evidence was found that the 80-edge-connectivity general bound has been improved in the post-2007 period. The main 6-edge-connected conjecture appears to remain open. 2026-09-06 update: the cycle double cover conjecture itself is now a theorem (OpenAI/GPT-5.6, July 2026; exposition arXiv:2607.16356). Compatible decomposition with respect to a 2-transition system is strictly stronger and is untouched by the new proof; only the CDC consequence of this page is now redundant.",
   "slug": "decomposing_eulerian_graphs",
-  "reviewed_at": "2026-05-08",
-  "model": "claude-sonnet-4-6 (worker 05)",
+  "reviewed_at": "2026-09-06",
+  "model": "claude-opus-5 (manual update, 2607.16356v3 read in full)",
   "search_enabled": true
 }

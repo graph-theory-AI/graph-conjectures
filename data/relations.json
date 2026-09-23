@@ -1,6 +1,7 @@
 {
  "generated_from": "relations pipeline (see data/relations_work/)",
- "verification_note": "Relations were confirmed by adversarial AI review of the full statements and literature (refute-by-default referees + re-attack pass). They are NOT formally verified: no argument has been machine-checked in a proof assistant such as Rocq or Lean.",
+ "verification_note": "Relations were confirmed by adversarial AI review of the full statements and literature (refute-by-default referees + re-attack pass). They are NOT formally verified: no argument has been machine-checked in a proof assistant such as Rocq or Lean. 2026-09-06 revision: four duplicate pairs missed by the phase-B dedup were merged (190 -> 186 edges; see provenance.merged_edge_ids). Status consistency is no longer baked into this file: scraper/relations_layout.py:status_flag() recomputes it from the live review statuses at build time, marking edges vacuous (target solved / source disproved) or inconsistent.",
+ "last_revised": "2026-09-06",
  "semantics": {
   "implies": "truth of source forces truth of target",
   "equivalent_to": "each implies the other",
@@ -190,9 +191,14 @@
    "provenance": {
     "edge_id": "e010",
     "origin": "finder",
-    "n_finders": 1,
+    "n_finders": 2,
     "reattacked": false,
-    "upheld": null
+    "upheld": null,
+    "merged_edge_ids": [
+     "e010",
+     "e037"
+    ],
+    "merge_note": "e037 was the same relation found independently; merged 2026-09-06 (citations unioned, finder counts summed, e037's argument dropped as redundant)."
    }
   },
   {
@@ -464,9 +470,14 @@
    "provenance": {
     "edge_id": "e027",
     "origin": "finder",
-    "n_finders": 2,
+    "n_finders": 3,
     "reattacked": false,
-    "upheld": null
+    "upheld": null,
+    "merged_edge_ids": [
+     "e027",
+     "e122"
+    ],
+    "merge_note": "e122 was the same relation found independently; merged 2026-09-06 (citations unioned, finder counts summed, e122's argument dropped as redundant)."
    }
   },
   {
@@ -605,24 +616,6 @@
     "n_finders": 1,
     "reattacked": true,
     "upheld": true
-   }
-  },
-  {
-   "source": "arxiv:1605.07411__00",
-   "target": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
-   "relation": "equivalent_to",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "The source's own context explicitly states that an easy argument shows the biconditional 'Forb(H) is chi-bounded iff H is a forest' is equivalent to the Gyarfas-Sumner conjecture (the target). Verification: (target => source) the 'only if' half of the source is Erdos's girth theorem (if H contains a cycle, graphs of girth > |H| and huge chromatic number are H-free with omega = 2), and the 'if' half for a forest H follows from the tree case by a standard easy induction on components (this closure under disjoint union is known for ordinary chi-boundedness, unlike the polynomial version). (source => target) trivial restriction: a tree is a forest. So the two are genuinely equivalent, as claimed.",
-   "citations": [
-    "https://arxiv.org/abs/1605.07411"
-   ],
-   "provenance": {
-    "edge_id": "e037",
-    "origin": "finder",
-    "n_finders": 1,
-    "reattacked": false,
-    "upheld": null
    }
   },
   {
@@ -1997,24 +1990,6 @@
    }
   },
   {
-   "source": "arxiv:2407.18800__00",
-   "target": "arxiv:2407.18800__01",
-   "relation": "equivalent_to",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "The paper (arXiv:2407.18800, p.3) states Conjecture 2 and then verbatim: 'This is equivalent to the following claim. Conjecture 3. A toroidal graph is 5-choosable if and only if it is 5-colorable.' The equivalence is also easy to re-derive from Thomassen's classification of 6-critical toroidal graphs. (2 => 3): 5-choosable always implies 5-colorable; if G is 5-colorable but not 5-choosable it contains a subgraph critical for 5-choosability, which by Conj 2 is 6-critical, contradicting chi(G) <= 5. (3 => 2): a graph critical for 5-choosability has all proper subgraphs 5-choosable hence 5-colorable, and is itself not 5-choosable, hence by Conj 3 not 5-colorable, so 6-critical; conversely a 6-critical toroidal graph is not 5-colorable (so not 5-choosable) while every proper subgraph is 5-colorable and, by Conj 3, 5-choosable.",
-   "citations": [
-    "https://arxiv.org/abs/2407.18800"
-   ],
-   "provenance": {
-    "edge_id": "e122",
-    "origin": "finder",
-    "n_finders": 1,
-    "reattacked": false,
-    "upheld": null
-   }
-  },
-  {
    "source": "arxiv:2407.18800__01",
    "target": "arxiv:2407.18800__02",
    "relation": "implies",
@@ -3063,7 +3038,12 @@
     "origin": "opg_mention",
     "n_finders": 0,
     "reattacked": false,
-    "upheld": null
+    "upheld": null,
+    "merged_edge_ids": [
+     "e187",
+     "e190"
+    ],
+    "merge_note": "e190 was the same relation found independently; merged 2026-09-06 (citations unioned, finder counts summed, e190's argument dropped as redundant)."
    }
   },
   {
@@ -3100,25 +3080,12 @@
     "origin": "opg_mention",
     "n_finders": 0,
     "reattacked": false,
-    "upheld": null
-   }
-  },
-  {
-   "source": "opg:decomposing_eulerian_graphs",
-   "target": "opg:cycle_double_cover_conjecture",
-   "relation": "implies",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "Explicitly stated in the source context with a valid reduction: given a 3-edge-connected G, replace each edge by two parallel edges to obtain G', which is Eulerian and 6-edge-connected, with the 2-transition system P pairing the parallel copies at each endpoint; a compatible decomposition of (G',P) uses at most one of each parallel pair per cycle at each vertex, so it projects to a list of cycles of G covering every edge exactly twice, i.e. a CDC of G. Since the CDC conjecture reduces (by standard vertex-splitting/cut arguments) to 3-edge-connected graphs, the Eulerian decomposition conjecture implies CDC. Hypothesis class checks out: 6-edge-connectivity of G' follows from 3-edge-connectivity of G because doubling edges doubles every edge cut.",
-   "citations": [
-    "http://www.openproblemgarden.org/op/decomposing_eulerian_graphs"
-   ],
-   "provenance": {
-    "edge_id": "e190",
-    "origin": "opg_mention",
-    "n_finders": 0,
-    "reattacked": false,
-    "upheld": null
+    "upheld": null,
+    "merged_edge_ids": [
+     "e189",
+     "e202"
+    ],
+    "merge_note": "e202 was the same relation found independently; merged 2026-09-06 (citations unioned, finder counts summed, e202's argument dropped as redundant)."
    }
   },
   {
@@ -3295,25 +3262,6 @@
    ],
    "provenance": {
     "edge_id": "e201",
-    "origin": "opg_mention",
-    "n_finders": 0,
-    "reattacked": false,
-    "upheld": null
-   }
-  },
-  {
-   "source": "opg:three_4_flows_conjecture",
-   "target": "opg:cycle_double_cover_conjecture",
-   "relation": "related_only",
-   "verdict": "confirmed",
-   "confidence": "high",
-   "argument": "The mention is the same analogy sentence (both reduce to non-3-edge-colorable cubic graphs). The genuine implication stated in the context goes from three-4-flows to the Orientable cycle FOUR cover conjecture, not to CDC: each G\\A_i has a nowhere-zero 4-flow, hence an orientable cycle double cover, and since each edge lies in exactly two of the three subgraphs G\\A_i, the union covers every edge exactly four times. A cycle 4-cover is already known unconditionally (Bermond-Jackson-Jaeger via Jaeger's 8-flow theorem), so this route does not give a double cover, and no implication between three-4-flows and CDC is stated or standard in either direction. Hence related_only.",
-   "citations": [
-    "http://www.openproblemgarden.org/op/three_4_flows_conjecture",
-    "http://www.openproblemgarden.org/op/cycle_double_cover_conjecture"
-   ],
-   "provenance": {
-    "edge_id": "e202",
     "origin": "opg_mention",
     "n_finders": 0,
     "reattacked": false,

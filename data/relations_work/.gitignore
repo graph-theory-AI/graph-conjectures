@@ -2,7 +2,6 @@
 # (committed provenance: build_phase0.py, tags.json, candidates.json, verdicts.json)
 batches/
 finders/
-verify/
 nodes.json
 edges_indexed.json
 seeds.json

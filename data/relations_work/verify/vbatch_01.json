@@ -1,0 +1,125 @@
+[
+ {
+  "edge_id": "e004",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "χ(G) ≤ χ_ℓ(G), so the list version χ_ℓ ≤ ⌈(Δ+1+ω)/2⌉ immediately implies Reed's conjecture for the chromatic number.",
+   "χ(G) ≤ χ_ℓ(G) for every graph, so the list-chromatic version χ_ℓ(G) ≤ ⌈(Δ+1+ω)/2⌉ immediately yields Reed's conjecture χ(G) ≤ ⌈(Δ+1+ω)/2⌉."
+  ],
+  "source": {
+   "id": "arxiv:1803.01051__01",
+   "name": "List-chromatic Reed bound",
+   "kind": "Informal",
+   "statement": "It is possible that Conjecture 1.3 is also true for the list-chromatic number, i.e., $\\chi_\\ell(G) \\leq \\left\\lceil \\frac{1}{2}(\\Delta + 1 + \\omega) \\right\\rceil$ for every graph $G$ of maximum degree at most $\\Delta$ with no clique of size greater than $\\omega$.",
+   "context": "After stating Reed's Conjecture 1.3 for the ordinary chromatic number and noting Reed's partial result as evidence, the authors remark that the same bound may extend to the list-chromatic number. The correspondence chromatic number is always at least as large as the list-chromatic number, so such an extension would be nontrivial.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1803.01051",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:reeds_omega_delta_and_chi_conjecture",
+   "name": "Reed's omega, delta, and chi conjecture",
+   "kind": "Conjecture",
+   "statement": "For a graph $ G $ , we define $ \\Delta(G) $ to be the maximum degree, $ \\omega(G) $ to be the size of the largest clique subgraph, and $ \\chi(G) $ to be the chromatic number of $ G $ . Conjecture $ \\chi(G) \\le \\ceil{\\frac{1}{2}(\\Delta(G)+1) + \\frac{1}{2}\\omega(G)} $ for every graph $ G $ .",
+   "context": "Perhaps the two most trivial bounds on $ \\chi(G) $ are $ \\chi(G) \\ge \\omega(G) $ and $ \\chi(G) \\le \\Delta(G) + 1 $ . The above conjecture roughly asserts that the (rounded-up) average of $ \\Delta(G)+1 $ and $ \\omega(G) $ should again be an upper bound on $ \\chi(G) $ . The conjecture is easy to verify when $ \\omega(G) $ is very large. It is trivial when $ \\omega(G) \\ge \\Delta(G) $ , and it follows from Brook's theorem if $ \\omega(G) = \\Delta(G)-1 $ . On the other hand, if $ \\omega(G) = 2 $ , so $ G $ is triangle free, then the conjecture is also true for $ \\Delta $ sufficiently large. Indeed, Johannsen proved the much stronger fact that there exists a fixed constant $ c $ so that $ \\chi(G) \\le \\frac{c \\Delta(G)}{\\log \\Delta(G)} $ for every triangle free graph $ G $ . Reed showed that the conjecture holds when $ \\Delta(G) = |V(G)| - 1 $ by way of matching theory. More interestingly, he proved (using probabilistc methods) that the conjecture is true provided that $ \\Delta $ is sufficiently large, and $ \\omega $ is sufficiently close to $ \\Delta $ . More precisely, he proves the following: Theorem There exists a fixed constant $ \\Delta_0 $ such that for every $ \\Delta \\ge \\Delta_0 $ , if $ G $ is a graph of maximum degree $ \\Delta $ with no clique of size $ >k $ for some $ k \\ge (1 - \\frac{1}{70000000}) \\Delta $ then $ \\chi(G) \\le \\frac{\\Delta + 1 + k}{2} $ . It is known that the conjecture is true fractionally (that is with $ \\chi(G) $ replaced by $ \\chi_f(G) $ , the fractional …",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/reeds_omega_delta_and_chi_conjecture",
+   "attributed_to": "Reed, Bruce A."
+  }
+ },
+ {
+  "edge_id": "e005",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "For triangle-free G, ω ≤ 2 and Reed's bound gives χ ≤ ⌈(Δ+3)/2⌉, which equals ⌈Δ/2⌉+2 for even Δ and ⌈Δ/2⌉+1 for odd Δ; hence Reed's conjecture implies χ ≤ ⌈Δ/2⌉+2 for triangle-free graphs, exactly the ω≤2 instance."
+  ],
+  "source": {
+   "id": "opg:reeds_omega_delta_and_chi_conjecture",
+   "name": "Reed's omega, delta, and chi conjecture",
+   "kind": "Conjecture",
+   "statement": "For a graph $ G $ , we define $ \\Delta(G) $ to be the maximum degree, $ \\omega(G) $ to be the size of the largest clique subgraph, and $ \\chi(G) $ to be the chromatic number of $ G $ . Conjecture $ \\chi(G) \\le \\ceil{\\frac{1}{2}(\\Delta(G)+1) + \\frac{1}{2}\\omega(G)} $ for every graph $ G $ .",
+   "context": "Perhaps the two most trivial bounds on $ \\chi(G) $ are $ \\chi(G) \\ge \\omega(G) $ and $ \\chi(G) \\le \\Delta(G) + 1 $ . The above conjecture roughly asserts that the (rounded-up) average of $ \\Delta(G)+1 $ and $ \\omega(G) $ should again be an upper bound on $ \\chi(G) $ . The conjecture is easy to verify when $ \\omega(G) $ is very large. It is trivial when $ \\omega(G) \\ge \\Delta(G) $ , and it follows from Brook's theorem if $ \\omega(G) = \\Delta(G)-1 $ . On the other hand, if $ \\omega(G) = 2 $ , so $ G $ is triangle free, then the conjecture is also true for $ \\Delta $ sufficiently large. Indeed, Johannsen proved the much stronger fact that there exists a fixed constant $ c $ so that $ \\chi(G) \\le \\frac{c \\Delta(G)}{\\log \\Delta(G)} $ for every triangle free graph $ G $ . Reed showed that the conjecture holds when $ \\Delta(G) = |V(G)| - 1 $ by way of matching theory. More interestingly, he proved (using probabilistc methods) that the conjecture is true provided that $ \\Delta $ is sufficiently large, and $ \\omega $ is sufficiently close to $ \\Delta $ . More precisely, he proves the following: Theorem There exists a fixed constant $ \\Delta_0 $ such that for every $ \\Delta \\ge \\Delta_0 $ , if $ G $ is a graph of maximum degree $ \\Delta $ with no clique of size $ >k $ for some $ k \\ge (1 - \\frac{1}{70000000}) \\Delta $ then $ \\chi(G) \\le \\frac{\\Delta + 1 + k}{2} $ . It is known that the conjecture is true fractionally (that is with $ \\chi(G) $ replaced by $ \\chi_f(G) $ , the fractional …",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/reeds_omega_delta_and_chi_conjecture",
+   "attributed_to": "Reed, Bruce A."
+  },
+  "target": {
+   "id": "opg:bounding_the_chromatic_number_of_triangle_free_graphs_with_fixed_maximum_degree",
+   "name": "Bounding the chromatic number of triangle-free graphs with fixed maximum degree",
+   "kind": "Conjecture",
+   "statement": "Conjecture A triangle-free graph with maximum degree $ \\Delta $ has chromatic number at most $ \\ceil{\\frac{\\Delta}{2}}+2 $ .",
+   "context": "This conjecture is a special case of Reed's $ \\omega $ , $ \\Delta $ , and $ \\chi $ conjecture, which posits that for any graph, $ \\chi \\leq \\lceil\\frac 12(\\Delta+1+\\omega)\\rceil $ , where $ \\omega $ , $ \\Delta $ , and $ \\chi $ are the clique number, maximum degree, and chromatic number of the graph respectively. Reed's conjecture is very easy to prove for complements of triangle-free graphs, but the triangle-free case seems challenging and interesting in its own right. This conjecture is very much true for large values of $ \\Delta $ ; Johansson proved that triangle-free graphs have chromatic number at most $ \\frac{9\\Delta}{\\ln \\Delta} $ . Surprisingly, the question appears to be open for every value of $ \\Delta $ greater than four, up until Johansson's result implies the conjecture. Kostochka previously proved that the chromatic number of a triangle-free graph is at most $ \\frac{2\\Delta}{3}+2 $ , and he proved that for every $ \\Delta \\geq 5 $ there is a $ g $ for which a graph of girth $ g $ has chromatic number at most $ \\frac{\\Delta}2+2 $ . Specifically, he showed that $ g \\geq 4(\\Delta+2)\\ln \\Delta $ is sufficient. In [K] he posed the general problem: \"To find the best upper estimate for the chromatic number of the graph in terms of the maximal degree and density or girth.\" The conjecture is implied by Brooks' Theorem for $ \\Delta\\leq 5 $ . The three smallest open values of $ \\Delta $ offer natural entry points to this problem. The easiest seems to be: Problem Does there e…",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/bounding_the_chromatic_number_of_triangle_free_graphs_with_fixed_maximum_degree",
+   "attributed_to": "Kostochka, Alexandr V., Reed, Bruce A."
+  }
+ },
+ {
+  "edge_id": "e006",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Both state the polynomial strengthening of Gyárfás–Sumner: for every forest H the class of H-free graphs is polynomially χ-bounded.",
+   "Both are the polynomial strengthening of Gyárfás–Sumner: for every forest H, the class of H-free graphs is polynomially χ-bounded."
+  ],
+  "source": {
+   "id": "arxiv:2202.05557__00",
+   "name": "Polynomial χ-boundedness for forest-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every forest $H$, there is a polynomial $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every $H$-free graph $G$.",
+   "context": "This conjecture is presented as what the Gyárfás-Sumner conjecture (1.1) and Esperet's conjecture (that every $\\chi$-bounded hereditary class has a polynomial bounding function) would jointly imply for forest-free graph classes. Esperet's conjecture has been disproved in full generality but remains open for classes excluding a forest, and Conjecture 1.3 is known only for a few special families of trees.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.05557",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2202.09118__02",
+   "name": "Polynomial χ-boundedness for H-free forests",
+   "kind": "Informal",
+   "statement": "It might be true that every forest $H$ is good, i.e., the class of $H$-free graphs is polynomially $\\chi$-bounded (strengthening the Gyárfás–Sumner conjecture from $\\chi$-boundedness to polynomial $\\chi$-boundedness).",
+   "context": "Say a forest $H$ is good if the class of $H$-free graphs is polynomially $\\chi$-bounded. This has been proved only for a few simple kinds of tree and some of their disjoint unions; the polynomial strengthening of Gyárfás–Sumner is fully open.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.09118",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e007",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Both state: for every forest H, H-free graphs satisfy χ ≤ f(ω) with f a polynomial (polynomial Gyárfás–Sumner).",
+   "Both state the polynomial Gyárfás–Sumner conjecture verbatim: for every forest H there is a polynomial f with χ(G) ≤ f(ω(G)) for every H-free graph G ('every forest is good')."
+  ],
+  "source": {
+   "id": "arxiv:2202.05557__00",
+   "name": "Polynomial χ-boundedness for forest-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every forest $H$, there is a polynomial $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every $H$-free graph $G$.",
+   "context": "This conjecture is presented as what the Gyárfás-Sumner conjecture (1.1) and Esperet's conjecture (that every $\\chi$-bounded hereditary class has a polynomial bounding function) would jointly imply for forest-free graph classes. Esperet's conjecture has been disproved in full generality but remains open for classes excluding a forest, and Conjecture 1.3 is known only for a few special families of trees.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.05557",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2202.10412__00",
+   "name": "Polynomial χ-boundedness for H-free forest classes",
+   "kind": "Informal",
+   "statement": "Perhaps every forest is good (i.e., for every forest $H$, the class of $H$-free graphs is polynomially $\\chi$-bounded).",
+   "context": "After recalling that Esperet's conjecture that every $\\chi$-bounded hereditary class is polynomially $\\chi$-bounded was disproved, the authors ask which hereditary classes are polynomially $\\chi$-bounded and raise in particular whether the Gyárfás-Sumner conjecture can be strengthened to polynomial $\\chi$-boundedness. They note that among trees, only those not containing $P_5$ are currently known to be good, and that it is not even known whether $P_5$ is good.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.10412",
+   "attributed_to": "paper authors"
+  }
+ }
+]

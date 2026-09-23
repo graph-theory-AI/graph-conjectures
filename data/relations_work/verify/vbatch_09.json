@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e036",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "If every forest is good (H-free class polynomially χ-bounded), then in particular the disjoint union of any two good trees, being a forest, is good."
+  ],
+  "source": {
+   "id": "arxiv:2202.10412__00",
+   "name": "Polynomial χ-boundedness for H-free forest classes",
+   "kind": "Informal",
+   "statement": "Perhaps every forest is good (i.e., for every forest $H$, the class of $H$-free graphs is polynomially $\\chi$-bounded).",
+   "context": "After recalling that Esperet's conjecture that every $\\chi$-bounded hereditary class is polynomially $\\chi$-bounded was disproved, the authors ask which hereditary classes are polynomially $\\chi$-bounded and raise in particular whether the Gyárfás-Sumner conjecture can be strengthened to polynomial $\\chi$-boundedness. They note that among trees, only those not containing $P_5$ are currently known to be good, and that it is not even known whether $P_5$ is good.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.10412",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2202.09118__03",
+   "name": "Closure of good trees under disjoint union",
+   "kind": "Problem",
+   "statement": "It is not known that if trees $H_1$, $H_2$ are good (i.e., the class of $H_i$-free graphs is polynomially $\\chi$-bounded for $i=1,2$), then the disjoint union of $H_1$ and $H_2$ is also good.",
+   "context": "Trees of diameter three are good [14], but whether disjoint unions of diameter-three trees are good is unknown. Self-isolation provides a sufficient condition: if $H_1$ and $H_2$ are good forests and one of them is self-isolating, their disjoint union is good.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.09118",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e037",
+  "claimed_relation": "equivalent_to",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "The paper states that an easy argument shows 'Forb(H) is χ-bounded iff H is a forest' is equivalent to the Gyárfás–Sumner conjecture: the 'only if' direction is Erdős's girth theorem, and the 'if' direction for forests follows from the tree case."
+  ],
+  "source": {
+   "id": "arxiv:1605.07411__00",
+   "name": "Forb(H) χ-bounded iff H is forest",
+   "kind": "Conjecture",
+   "statement": "$\\mathrm{Forb}(H)$ is $\\chi$-bounded if and only if $H$ is a forest.",
+   "context": "The paper notes that an easy argument shows this conjecture is equivalent to the Gyárfás–Sumner Conjecture (Conjecture 1). It generalises the 'only if' direction (which follows from Erdős's girth theorem) to a complete characterisation.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1605.07411",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "name": "Graphs with a forbidden induced tree are chi-bounded",
+   "kind": "Conjecture",
+   "statement": "Say that a family $ {\\mathcal F} $ of graphs is $ \\chi $ - bounded if there exists a function $ f: {\\mathbb N} \\rightarrow {\\mathbb N} $ so that every $ G \\in {\\mathcal F} $ satisfies $ \\chi(G) \\le f (\\omega(G)) $ . Conjecture For every fixed tree $ T $ , the family of graphs with no induced subgraph isomorphic to $ T $ is $ \\chi $ -bounded.",
+   "context": "This deep conjecture remains open despite considerable effort. Note that the conjecture would be false were the graph $ T $ to be permitted to contain a cycle, since then the class would admit graphs of high girth (where $ \\omega = 2 $ ) and high chromatic number. It is an easy exercise to prove this conjecture in the special case when $ T $ is either a path or a star, but things get difficult from here. Kierstead and Penrice solved the special case when $ T $ has radius 2, and Kierstead and Zhu solved the special case when $ T $ has radius 3 and has the property that every vertex incident with the center vertex has degree 2. Scott proved that the class of graphs which exclude all subdivisions of a fixed tree $ T $ as induced subgraphs are $ \\chi $ -bounded. It follows from this that Gyarfas's conjecture also holds for subdivisions of stars.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "attributed_to": "Gyarfas, Andras"
+  }
+ },
+ {
+  "edge_id": "e038",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "A majority 3-colouring has at most (1/2)deg⁺(v) same-coloured out-neighbours at every vertex, so its existence for every digraph answers affirmatively the question of whether some β < 1 works for 3 colours (with β = 1/2).",
+   "A majority 3-colouring is a 3-colouring with at most (1/2)deg+(v) same-coloured out-neighbours, so beta=1/2 < 1 answers the sublinear question affirmatively."
+  ],
+  "source": {
+   "id": "arxiv:1608.03040__00",
+   "name": "Majority 3-coloring of digraphs",
+   "kind": "Conjecture",
+   "statement": "Every digraph has a majority 3-colouring.",
+   "context": "This conjecture naturally arises from Theorem 1, which shows every digraph has a majority 4-colouring. It would be best possible: odd directed cycles require 3 colours (since each vertex has outdegree 1, a majority colouring is a proper colouring), and circulant digraphs with large odd outdegree also witness this lower bound.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1608.03040",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1608.03040__02",
+   "name": "Sublinear majority 3-coloring of digraphs",
+   "kind": "Problem",
+   "statement": "Is there a constant $\\beta < 1$ for which every digraph has a 3-colouring such that for every vertex $v$, at most $\\beta \\deg^+(v)$ out-neighbours receive the same colour as $v$?",
+   "context": "Theorems 3 and 4 establish majority 3-colourings (i.e., $\\beta = \\frac{1}{2}$) under extra degree assumptions (logarithmic minimum outdegree, or bounded minimum/maximum degree ratio). Whether any $\\beta < 1$ holds universally for 3-colourings without degree conditions is open.",
+   "status": "solved",
+   "url": "https://arxiv.org/abs/1608.03040",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e039",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "The paper states the odd-k case of determining R_ℓ(K_{1,2},k) is equivalent to the List Colouring Conjecture for cliques of even order (whether χ'_ℓ(K_n)=χ'(K_n)=n−1 for even n); the full LCC for multigraphs thus settles it as its restriction to even complete graphs."
+  ],
+  "source": {
+   "id": "opg:edge_list_coloring_conjecture",
+   "name": "Edge list coloring conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a loopless multigraph. Then the edge chromatic number of $ G $ equals the list edge chromatic number of $ G $ .",
+   "context": "The list edge chromatic number of $ G $ is also known as the list chromatic index , the edge choosability , or the edge choice number of $ G $ . It is the list chromatic number of the line graph of $ G $ . Similarly, the edge chromatic number of $ G $ is also known as the edge chromatic index , and it is the chromatic number of the line graph of $ G $ . The chromatic number of a graph is always less than or equal to the list chromatic number; the two quantities differ in general, but the conjecture says that they coincide for line graphs. Sometime the conjecture is simply referred to as the list coloring conjecture , although this is perhaps poor terminology since there exist other conjectures about list coloring. Perhaps the most famous partial result is Galvin's theorem [G] that the conjecture holds for bipartite multigraphs. Galvin's result settled the well-known Dinitz conjecture in the affirmative. The conjecture has been attributed to many different people. See [JT, Problem 12.20] for a history of the problem up to 1995.",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/edge_list_coloring_conjecture",
+   "attributed_to": ""
+  },
+  "target": {
+   "id": "arxiv:1902.07018__00",
+   "name": "List Ramsey R_ℓ(K_{1,2}, k) parity gap",
+   "kind": "Informal",
+   "statement": "We do not know whether $R_\\ell(K_{1,2}, k)$ is $k + 1$ or $k + 2$ when $k$ is odd.",
+   "context": "For even $k$, the paper establishes $R_\\ell(K_{1,2}, k) = k+1 = R(K_{1,2}, k)$ using the result of Häggkvist and Janssen that $\\chi'_\\ell(K_n) = \\chi'(K_n)$ for odd $n$. The case of odd $k$ is equivalent to the List Colouring Conjecture for cliques of even order, which asks whether $\\chi'_\\ell(K_n)$ equals $n$ or $n-1$ for even $n$.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1902.07018",
+   "attributed_to": "paper authors"
+  }
+ }
+]

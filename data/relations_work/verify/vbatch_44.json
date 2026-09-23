@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e176",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "$ v_2 $ (sometimes the edge $ v_1 v_2 $ is also added). For instance, this technique can be used to reduce the general 5-flow conjecture down to the special case of cubic graphs. Unfortunately, that technique does not apply here, since splitting a vertex m"
+  ],
+  "source": {
+   "id": "opg:4_flow_conjecture",
+   "name": "4-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph with no Petersen minor has a nowhere-zero 4-flow.",
+   "context": "It is a consequence of a theorem of Tutte that a cubic graph has a nowhere-zero 4-flow if and only if it is 3- edge-colorable . Thus, the 4-flow conjecture implies that every bridgeless cubic graph with no Petersen minor is 3-edge-colorable (another conjecture of Tutte). Note that the Four Color Theorem is equivalent to the assertion that planar cubic graphs without bridges are 3-edge-colorable, so even this weaker conjecture is a strengthening of the Four Color Theorem. This weaker conjecture was recently proved by Robertson, Seymour, and Thomas [RST]. Their proof involves a reduction to the case of nearly planar graphs, and then an application of 4-color-theorem type techniques (computer assisted) to color these graphs. Most conjectures about flows can be easily reduced to the case of cubic graphs by splitting arguments. The idea is to take a vertex $ v $ incident with edges $ e_1,\\ldots,e_k $ and \"split\" $ v $ , that is, replace $ v $ by two new vertices $ v_1 $ and $ v_2 $ , and for every edge $ e_i $ join it to either $ v_1 $ or $ v_2 $ (sometimes the edge $ v_1 v_2 $ is also added). For instance, this technique can be used to reduce the general 5-flow conjecture down to the special case of cubic graphs. Unfortunately, that technique does not apply here, since splitting a vertex may introduce a Petersen minor. Petersen's graph is not an apex graph (deleting any vertex still leaves a nonplanar graph). It follows that no apex graph can have a Petersen minor, so the above c…",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/4_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e177",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "-flows in a bidirected $ G^* $ . Based on this duality we have a couple of conjectures. The first follows from Tutte's 5-flow conjecture , the second from Bouchet's 6-flow conjecture . Conjecture (Tutte) Every loopless graph embedded in an orientable surfa"
+  ],
+  "source": {
+   "id": "opg:5_local_tensions",
+   "name": "5-local-tensions",
+   "kind": "Conjecture",
+   "statement": "Conjecture There exists a fixed constant $ c $ (probably $ c=4 $ suffices) so that every embedded (loopless) graph with edge-width $ \\ge c $ has a 5-local-tension.",
+   "context": "The edge-width of an embedded graph is the length of the shortest non-contractible cycle. Definition Let $ G $ be a directed graph, let $ \\Gamma $ be an abelian group, and let $ \\phi : E(G) \\rightarrow \\Gamma $ . Define the height of a walk $ W $ to be the sum of $ \\phi $ on the forward edges of $ W $ minus the sum of $ \\phi $ on the backward edges of $ W $ (edges are counted according to multiplicity). We call $ \\phi $ a tension if the height of every closed walk is zero, and if $ G $ is an embedded graph, we call $ \\phi $ a local-tension if the height of every closed walk which forms a contractible curve is zero. If in addition, $ \\Gamma = {\\mathbb Z} $ and $ 0 < \\phi(e) < k $ for some $ k \\in {\\mathbb Z} $ , we say that $ \\phi $ is a $ k $ - tension or a $ k $ - local-tension . If we reverse an edge $ e $ and replace $ \\phi(e) $ by $ -\\phi(e) $ , this preserves the properties of tension or local-tension. Accordingly, we say that an undirected graph (embedded graph) $ G $ has a $ k $ -tension ( $ k $ -local-tension) if some and thus every orientation of it admits such a map. Proposition A graph has a $ k $ -tension if and only if it is $ k $ -colorable. Proof To see the \"if\" direction, let $ f : V(G) \\rightarrow \\{0,\\ldots,k-1\\} $ be a coloring, orient the edges of $ G $ arbitrarily, and defining $ \\phi : E(G) \\rightarrow {\\mathbb Z} $ by the rule $ \\phi(uv) = f(v) - f(u) $ . It is straightforward to check that $ \\phi $ is a $ k $ -tension. For the \"only if\" direction, let …",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/5_local_tensions",
+   "attributed_to": "DeVos, Matt"
+  },
+  "target": {
+   "id": "opg:5_flow_conjecture",
+   "name": "5-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bridgeless graph has a nowhere-zero 5-flow.",
+   "context": "For planar graphs , this theorem follows from flow/coloring duality , and the Five color theorem (every loopless planar graph is 5-colorable). In light of this, we may view this conjecture as a widesweeping generalization of the 5-color-theorem. The Petersen graph does not have a nowhere-zero 4-flow, which shows that this conjecture (if true) is best possible. It is far from obvious that there should exist a fixed number $ k $ so that every bridgeless graph has a nowhere-zero $ k $ -flow. Indeed, this weaker conjecture was also made by Tutte, but was resolved by Kilpatrick [K] and independently Jaeger [J], who both proved that bridgeless graphs have nowhere-zero 8-flows. Seymour [S] improved upon this result by showing that bridgeless graphs have nowhere-zero 6-flows.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/5_flow_conjecture",
+   "attributed_to": "Tutte, William T."
+  }
+ },
+ {
+  "edge_id": "e178",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "sed on this duality we have a couple of conjectures. The first follows from Tutte's 5-flow conjecture , the second from Bouchet's 6-flow conjecture . Conjecture (Tutte) Every loopless graph embedded in an orientable surface has a 5-local-tension. Conjecture (Bouchet)"
+  ],
+  "source": {
+   "id": "opg:5_local_tensions",
+   "name": "5-local-tensions",
+   "kind": "Conjecture",
+   "statement": "Conjecture There exists a fixed constant $ c $ (probably $ c=4 $ suffices) so that every embedded (loopless) graph with edge-width $ \\ge c $ has a 5-local-tension.",
+   "context": "The edge-width of an embedded graph is the length of the shortest non-contractible cycle. Definition Let $ G $ be a directed graph, let $ \\Gamma $ be an abelian group, and let $ \\phi : E(G) \\rightarrow \\Gamma $ . Define the height of a walk $ W $ to be the sum of $ \\phi $ on the forward edges of $ W $ minus the sum of $ \\phi $ on the backward edges of $ W $ (edges are counted according to multiplicity). We call $ \\phi $ a tension if the height of every closed walk is zero, and if $ G $ is an embedded graph, we call $ \\phi $ a local-tension if the height of every closed walk which forms a contractible curve is zero. If in addition, $ \\Gamma = {\\mathbb Z} $ and $ 0 < \\phi(e) < k $ for some $ k \\in {\\mathbb Z} $ , we say that $ \\phi $ is a $ k $ - tension or a $ k $ - local-tension . If we reverse an edge $ e $ and replace $ \\phi(e) $ by $ -\\phi(e) $ , this preserves the properties of tension or local-tension. Accordingly, we say that an undirected graph (embedded graph) $ G $ has a $ k $ -tension ( $ k $ -local-tension) if some and thus every orientation of it admits such a map. Proposition A graph has a $ k $ -tension if and only if it is $ k $ -colorable. Proof To see the \"if\" direction, let $ f : V(G) \\rightarrow \\{0,\\ldots,k-1\\} $ be a coloring, orient the edges of $ G $ arbitrarily, and defining $ \\phi : E(G) \\rightarrow {\\mathbb Z} $ by the rule $ \\phi(uv) = f(v) - f(u) $ . It is straightforward to check that $ \\phi $ is a $ k $ -tension. For the \"only if\" direction, let …",
+   "status": "open",
+   "url": "http://www.openproblemgarden.org/op/5_local_tensions",
+   "attributed_to": "DeVos, Matt"
+  },
+  "target": {
+   "id": "opg:bouchets_6_flow_conjecture",
+   "name": "Bouchet's 6-flow conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every bidirected graph with a nowhere-zero $ k $ -flow for some $ k $ , has a nowhere-zero $ 6 $ -flow.",
+   "context": "Definition: A bidirected graph is a graph in which every edge has two arrowheads, one next to each endpoint. If the edge $ e $ has ends $ u $ and $ v $ , then the arrowheads nearest $ u $ and $ v $ may point either toward $ u $ or toward $ v $ (giving four possibilities in all). If $ G $ is a bidirected graph, a $ k $ -flow of G is a map $ \\phi:E(G)\\to \\{-(k-1),...,-1,0,1,...,k-1\\} $ with the property that at every vertex, the sum of $ \\phi $ on the edges whose ends at $ v $ are directed into $ v $ is equal to the sum of $ \\phi $ on the edges whose ends at $ v $ are directed out of $ v $ . We say that $ \\phi $ is nowhere-zero if $ \\phi(e) \\neq 0 $ for every $ e \\in E(G) $ (see nowhere-zero flows ). Flows on bidirected graphs arise naturally as duals of local-tensions on a non-orientable surface. For more on this relationship, see [B]. Bouchet proved that the above conjecture is true with 6 replaced by 216, and exhibited a bidirected Petersen graph as above which shows that 6 is the best value possible. Zyka [Z] and independently Fouquet improved upon this result proving that the above conjecture is true with 6 replaced by 30. Khelladi [K] proved that for 4-connected graphs, the above conjecture is true with 6 replaced by 18. DeVos [D] proved that the above conjecture holds with 6 replaced by 12, and showed that every 4-edge-connected bidirected graph with a nowhere-zero integer flow also has a nowhere-zero 4-flow.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/bouchets_6_flow_conjecture",
+   "attributed_to": "Bouchet, Andre"
+  }
+ },
+ {
+  "edge_id": "e179",
+  "claimed_relation": "unknown",
+  "via": "opg_mention",
+  "finder_confidence": "seed",
+  "n_finders": 0,
+  "sketches": [
+   "uous mapping is based on some work of Jaeger, and the most interesting question on this subject is undoubtedly Jaeger's Petersen coloring conjecture . Let us define a relation on the set of all finite graphs with at least one edge by the rule $ G>H $ if there is a cyc"
+  ],
+  "source": {
+   "id": "opg:antichains_in_the_cycle_continuous_order",
+   "name": "Antichains in the cycle continuous order",
+   "kind": "Conjecture",
+   "statement": "If $ G $ , $ H $ are graphs, a function $ f : E(G) \\rightarrow E(H) $ is called cycle-continuous if the pre-image of every element of the (binary) cycle space of $ H $ is a member of the cycle space of $ G $ . Problem Does there exist an infinite set of graphs $ \\{G_1,G_2,\\ldots \\} $ so that there is no cycle continuous mapping between $ G_i $ and $ G_j $ whenever $ i \\neq j $ ?",
+   "context": "The definition of a cycle-continuous mapping is based on some work of Jaeger, and the most interesting question on this subject is undoubtedly Jaeger's Petersen coloring conjecture . Let us define a relation on the set of all finite graphs with at least one edge by the rule $ G>H $ if there is a cycle-continuous mapping from $ G $ to $ H $ . It is not difficult to verify that $ > $ is a quasi order (reflexive and transitive). In this order, every Eulerian graph dominates every other graph, and every graph with a cut edge is dominated by every other graph. Let $ A_i $ be the graph on two vertices with $ i $ parallel edges. Then $ A_3 < A_5 < A_7 < ... $ with all the inequalities strict, so this sequence is an infinite chain. Very little else seems to be known about this order. In particular, the problem highlighted above - does there exist an infinite antichain? remains open.",
+   "status": "solved",
+   "url": "http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order",
+   "attributed_to": "DeVos, Matt"
+  },
+  "target": {
+   "id": "opg:petersen_coloring_conjecture",
+   "name": "Petersen coloring conjecture",
+   "kind": "Conjecture",
+   "statement": "Conjecture Let $ G $ be a cubic graph with no bridge . Then there is a coloring of the edges of $ G $ using the edges of the Petersen graph so that any three mutually adjacent edges of $ G $ map to three mutually adjancent edges in the Petersen graph.",
+   "context": "This extrordainary conjecture asserts that in a very strong sense, every bridgeless cubic graph has all of the cycle-space properties posessed by the Petersen graph. If true, this conjecture would imply both The Berge-Fulkerson conjecture and The five cycle double cover conjecture . If $ G $ is a graph and $ C \\subseteq E(G) $ we say that $ C $ is a binary cycle if every vertex in the graph $ (V(G),C) $ has even degree. If $ H $ is a graph and $ f : E(G) \\rightarrow E(H) $ is a map, we say that $ f $ is cycle-continuous if the pre-image of every binary cycle is a binary cycle. The following conjecture is an equivalent reformulation of the Petersen coloring conjecture. Conjecture (Petersen coloring conjecture (2)) Every bridgeless graph has a cycle-continuous mapping to the Petersen graph.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/petersen_coloring_conjecture",
+   "attributed_to": "Jaeger, Francois"
+  }
+ }
+]

@@ -1,0 +1,125 @@
+[
+ {
+  "edge_id": "e076",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Node __01 is literally the instance H=K3 of Conjecture 1.4 (= node __00): does every triangle-free ε-bounded graph contain a linear anticomplete pair. The paper proves 1.4 for almost-bipartite H and notes K3 is the simplest open case.",
+   "The H = K_3 instance of Conjecture 1.4 (linear anticomplete pairs in H-free ε-bounded graphs); the paper proves the conjecture for almost-bipartite H and states the triangle is the open remaining case.",
+   "The question is precisely whether H=K_3 satisfies the paper's anticomplete-pair conjecture (Conjecture 1.4) for epsilon-bounded H-free graphs, i.e. the instance H=K_3 of the universally quantified statement."
+  ],
+  "source": {
+   "id": "arxiv:1810.00058__00",
+   "name": "Linear anticomplete pairs in sparse H-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every graph $H$ there exists $\\varepsilon > 0$ such that in every $H$-free $\\varepsilon$-bounded graph $G$ with $|G| > 1$ vertices, there is an anticomplete $(\\varepsilon|G|, \\varepsilon|G|)$-pair.",
+   "context": "A graph $G$ is $\\varepsilon$-bounded if its maximum degree is less than $\\varepsilon|G|$. By a theorem of Rödl, $H$ satisfies Conjecture 1.3 if and only if both $H$ and $\\bar{H}$ satisfy Conjecture 1.4, so the two conjectures are equivalent over all $H$. For certain graphs $H$, however, 1.4 is more tractable than 1.3.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1810.00058",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1810.00058__01",
+   "name": "K₃ polynomial anticomplete pair property",
+   "kind": "Informal",
+   "statement": "It remains open whether $H = K_3$ (the triangle) satisfies Conjecture 1.4.",
+   "context": "The paper's main result establishes Conjecture 1.4 for all almost-bipartite graphs $H$; almost-bipartite graphs are triangle-free, so $K_3$ is the simplest graph not covered. This gap is noted both in the abstract and in the body of the paper.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1810.00058",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e077",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "The paper states the implications 3.3 ⇒ 3.4 ⇒ 1.4, where Conjecture 3.4 is node __02 (c-sparse pairs in H-free ε-bounded graphs, for all c∈[0,1]) and Conjecture 1.4 is node __00 (anticomplete linear pairs). So the sparse-pair conjecture implies the anticomplete-pair conjecture."
+  ],
+  "source": {
+   "id": "arxiv:1810.00058__02",
+   "name": "Sparse pairs in H-free ε-bounded graphs",
+   "kind": "Conjecture",
+   "statement": "For every graph $H$ there exist $\\varepsilon, s > 0$ such that for every $H$-free $\\varepsilon$-bounded graph $G$ with $|G| > 1$, and every $c$ with $0 \\leq c \\leq 1$, there is a $c$-sparse $(\\varepsilon c^s |G|,\\, \\varepsilon|G|)$-pair in $G$.",
+   "context": "This is the $\\varepsilon$-bounded specialization of Conjecture 3.3; for $\\varepsilon$-bounded graphs the dense outcome is excluded. The implications $3.3 \\Rightarrow 3.4 \\Rightarrow 1.4$ hold. By analogy with 1.3 and 1.4, a theorem of Rödl implies that $H$ satisfies 3.3 if and only if both $H$ and $\\bar{H}$ satisfy 3.4.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1810.00058",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1810.00058__00",
+   "name": "Linear anticomplete pairs in sparse H-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every graph $H$ there exists $\\varepsilon > 0$ such that in every $H$-free $\\varepsilon$-bounded graph $G$ with $|G| > 1$ vertices, there is an anticomplete $(\\varepsilon|G|, \\varepsilon|G|)$-pair.",
+   "context": "A graph $G$ is $\\varepsilon$-bounded if its maximum degree is less than $\\varepsilon|G|$. By a theorem of Rödl, $H$ satisfies Conjecture 1.3 if and only if both $H$ and $\\bar{H}$ satisfy Conjecture 1.4, so the two conjectures are equivalent over all $H$. For certain graphs $H$, however, 1.4 is more tractable than 1.3.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1810.00058",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e078",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Classes of polynomial expansion are small and may be taken hereditary (subgraphs preserve polynomial expansion), as the paper itself notes ('since classes with polynomial expansion are small'). Hence the small conjecture (every small hereditary class has bounded twin-width) implies bounded twin-width for polynomial-expansion classes.",
+   "Polynomial expansion implies bounded expansion, and such (subgraph-closed, hence hereditary) classes are small; the paper itself notes polynomial-expansion classes are small, so the small conjecture implies they have bounded twin-width. (The small conjecture was later disproved, leaving the target open.)"
+  ],
+  "source": {
+   "id": "arxiv:2006.09877__00",
+   "name": "Small hereditary class twin-width converse",
+   "kind": "Conjecture",
+   "statement": "Every small hereditary class has bounded twin-width.",
+   "context": "The paper proves that every bounded twin-width class is small (has at most $n! c^n$ labeled $n$-vertex graphs for some constant $c$), unifying results for bounded treewidth, proper subclasses of permutation graphs, and proper minor-closed classes. The small conjecture posits the converse. The authors explore it by verifying bounded twin-width for many natural small hereditary classes that could serve as counterexamples, including subdivisions of $K_n$, graphs of bounded stack or queue number, and cubic expanders from iterated random 2-lifts.",
+   "status": "disproved",
+   "url": "https://arxiv.org/abs/2006.09877",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2006.09877__01",
+   "name": "Bounded twin-width for polynomial expansion classes",
+   "kind": "Question",
+   "statement": "Do classes with polynomial expansion have bounded twin-width?",
+   "context": "Towards the small conjecture, the authors identify showing that small sparse classes have bounded (sparse) twin-width as a first, challenging step. Since classes with polynomial expansion are small, confirming bounded twin-width for them would constitute meaningful progress.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2006.09877",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e079",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Both restate the identical open problem of a combinatorial polynomial-time algorithm for maximum (weight) independent set on perfect graphs, avoiding the ellipsoid method."
+  ],
+  "source": {
+   "id": "arxiv:1907.01083__00",
+   "name": "Combinatorial MIS algorithm on perfect graphs",
+   "kind": "Informal",
+   "statement": "It remains an open question to find a combinatorial algorithm for the maximum independent set problem on perfect graphs. In fact, we do not even have a combinatorial FPT algorithm for the maximum independent set problem on perfect graphs.",
+   "context": "The maximum independent set problem on perfect graphs is solvable in polynomial time via the ellipsoid method, but a combinatorial algorithm (i.e., one not relying on the ellipsoid method) is unknown. This is mentioned as a side remark motivating the study of related graph classes.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1907.01083",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2003.05185__00",
+   "name": "Combinatorial MWIS algorithm for perfect graphs",
+   "kind": "Problem",
+   "statement": "Design a combinatorial polynomial-time algorithm for the Maximum Weight Independent Set problem in perfect graphs.",
+   "context": "The polynomial-time algorithm of Grötschel, Lovász, and Schrijver for MWIS in perfect graphs relies on the ellipsoid method. The authors explicitly note that designing a combinatorial polynomial-time algorithm for this problem remains an important open problem.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2003.05185",
+   "attributed_to": "paper authors"
+  }
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "edge_id": "e148",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "The paper proves that non-semisimple finite rings R give non-prime X_R, and that for semisimple R = prod F_{q_i} the Cayley graph satisfies X_R ≅ prod K_{q_i} (tensor product of complete graphs). Hence the open content of 'when is X_R prime?' (Q4.28) is exactly the primeness question for tensor products of complete graphs restricted to prime-power orders, i.e. a special case of Q4.31, which asks it for arbitrary positive integers n_i."
+  ],
+  "source": {
+   "id": "arxiv:2401.06062__02",
+   "name": "Primeness of tensor products of complete graphs",
+   "kind": "Question",
+   "statement": "Let $n_{1},\\ldots,n_{d}$ be positive integers. When is $\\prod_{i=1}^{d}K_{n_{i}}$ prime?",
+   "context": "For a semisimple ring $R = \\prod_{i=1}^d k_i$ (a product of finite fields of sizes $q_i$), the associated Cayley graph satisfies $X_R \\cong \\prod_{i=1}^d K_{q_i}$, reducing Question 4.28 for the semisimple case to this combinatorial question about tensor products (Kronecker products) of complete graphs. The vertex set of $\\prod_{i=1}^d K_{n_i}$ consists of $d$-tuples $(s_1,\\ldots,s_d)$ with two vertices adjacent iff they differ in every coordinate.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2401.06062",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2401.06062__01",
+   "name": "Primeness of Cayley graphs over finite rings",
+   "kind": "Question",
+   "statement": "When is $X_{R}$ prime?",
+   "context": "$X_R$ denotes the Cayley graph constructed from a finite ring $R$ using its group of units and a connection set derived from the ring structure. This question is the central driving question of Section 4, and is reduced first to the semisimple case (showing non-semisimple $R$ gives non-prime $X_R$) and then to a combinatorial question about tensor products of complete graphs.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2401.06062",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e149",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Intersecting winning families are among the balanced monotone families considered, so p_monotone(t) >= p_intersecting(t); hence p_monotone(t) -> 0 forces p_intersecting(t) -> 0. The paper states the chain p_monotone >= p_intersecting >= p_dict and calls Conjecture 2.2 'progressively stronger' than 2.1."
+  ],
+  "source": {
+   "id": "arxiv:2208.06858__01",
+   "name": "Vanishing success probability for monotone hat strategies",
+   "kind": "Conjecture",
+   "statement": "$p_{\\mathrm{monotone}}(t)$ tends to $0$ as $t$ grows.",
+   "context": "This is progressively stronger than Conjecture 2.1, as $p_{\\mathrm{monotone}}(t) \\geq p_{\\mathrm{intersecting}}(t) \\geq p_{\\mathrm{dict}}(t)$, where winning sets are all balanced monotone families on $\\{0,1\\}^n$. The authors describe these two conjectures as 'progressively stronger than Conjecture 1.1'.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2208.06858",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2208.06858__00",
+   "name": "Vanishing hat-success probability for intersecting families",
+   "kind": "Conjecture",
+   "statement": "$p_{\\mathrm{intersecting}}(t)$ tends to $0$ as $t$ grows.",
+   "context": "This is a strengthening of Levine's Conjecture 1.1 in the setting where winning sets are intersecting families on $\\{0,1\\}^n$ rather than dictatorships. Since $p_{\\mathrm{intersecting}}(t,n) \\geq p_{\\mathrm{dict}}(t,n)$, this conjecture is strictly stronger than Conjecture 1.1.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2208.06858",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e150",
+  "claimed_relation": "equivalent_to",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "By the identity p_intersecting(t,n) = fractional-independence ᾱ(K(n)^{□t}) (K(n) the Kneser graph on {0,1}^n, □ the Hamming product), Conjecture 2.6 is an exact graph-theoretic restatement of Conjecture 2.1: the double limit tending to 0 is the same statement as p_intersecting(t) -> 0."
+  ],
+  "source": {
+   "id": "arxiv:2208.06858__00",
+   "name": "Vanishing hat-success probability for intersecting families",
+   "kind": "Conjecture",
+   "statement": "$p_{\\mathrm{intersecting}}(t)$ tends to $0$ as $t$ grows.",
+   "context": "This is a strengthening of Levine's Conjecture 1.1 in the setting where winning sets are intersecting families on $\\{0,1\\}^n$ rather than dictatorships. Since $p_{\\mathrm{intersecting}}(t,n) \\geq p_{\\mathrm{dict}}(t,n)$, this conjecture is strictly stronger than Conjecture 1.1.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2208.06858",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2208.06858__02",
+   "name": "Fractional independence in Kneser Hamming powers",
+   "kind": "Conjecture",
+   "statement": "$$\\lim_{t \\to \\infty} \\lim_{n \\to \\infty} \\bar{\\alpha}\\!\\left(K(n)^{\\square t}\\right) = 0.$$",
+   "context": "This is a graph-theoretic restatement of Conjecture 2.1, using the observation that $p_{\\mathrm{intersecting}}(t,n) = \\bar{\\alpha}(K(n)^{\\square t})$, where $K(n)$ is the Kneser graph on $\\{0,1\\}^n$ (edge between $x$ and $y$ if their supports are disjoint) and $\\square$ denotes the Hamming product of graphs.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2208.06858",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e151",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "ε*(α) > 0 gives a uniform gap ᾱ(G) - α*(G) over all G with ᾱ(G) >= α; applied along the Hamming powers K(n)^{□t} this drives ᾱ(K(n)^{□t}) down at each power, forcing the double limit to 0. The paper states explicitly that Conjecture 2.8 would imply Conjecture 2.6 (and hence Levine's conjecture)."
+  ],
+  "source": {
+   "id": "arxiv:2208.06858__03",
+   "name": "Positive gap in hat-problem success probability",
+   "kind": "Conjecture",
+   "statement": "$\\varepsilon^*(\\alpha) > 0$ for all $\\alpha \\in (0, 1/2)$.",
+   "context": "Here $\\varepsilon^*(\\alpha) = \\inf_{G:\\,\\bar{\\alpha}(G)\\geq\\alpha}(\\bar{\\alpha}(G) - \\alpha^*(G))$, where $\\alpha^*(G)$ is defined via an optimal partition of $V(G)^r$ and a positively-correlated random-subset distribution with Bernoulli$(1/2)$ marginals. This conjecture would imply Conjecture 2.6 and hence Levine's conjecture.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2208.06858",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2208.06858__02",
+   "name": "Fractional independence in Kneser Hamming powers",
+   "kind": "Conjecture",
+   "statement": "$$\\lim_{t \\to \\infty} \\lim_{n \\to \\infty} \\bar{\\alpha}\\!\\left(K(n)^{\\square t}\\right) = 0.$$",
+   "context": "This is a graph-theoretic restatement of Conjecture 2.1, using the observation that $p_{\\mathrm{intersecting}}(t,n) = \\bar{\\alpha}(K(n)^{\\square t})$, where $K(n)$ is the Kneser graph on $\\{0,1\\}^n$ (edge between $x$ and $y$ if their supports are disjoint) and $\\square$ denotes the Hamming product of graphs.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2208.06858",
+   "attributed_to": "paper authors"
+  }
+ }
+]

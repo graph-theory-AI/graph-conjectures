@@ -1,0 +1,128 @@
+[
+ {
+  "edge_id": "e068",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 5,
+  "sketches": [
+   "Item 2 of the target states: if L(G) of a locally finite graph is 4-connected then L(G) is hamiltonian. Finite graphs are locally finite and Hamilton circles coincide with Hamilton cycles there, so the finite Thomassen conjecture (the source) is its finite special case; the OPG page itself notes item 2 restricted to finite graphs is Thomassen's conjecture.",
+   "The second part of the infinite conjecture asserts: for every locally finite graph G with L(G) 4-connected, L(G) is hamiltonian. Finite graphs are locally finite (Hamilton circle = Hamilton cycle), and the OPG page itself notes 'the second part is widely open even in the finite case, where it was proposed by Thomassen'. So Thomassen's conjecture is the finite restriction.",
+   "Finite graphs are locally finite, and for a finite graph a Hamilton circle in the Freudenthal compactification is exactly a Hamilton cycle; so the second part of the infinite conjecture (L(G) 4-connected implies L(G) hamiltonian for locally finite G) restricted to finite graphs is precisely Thomassen's conjecture that 4-connected line graphs are hamiltonian.",
+   "Finite graphs are locally finite, and every line graph is L(G) for some graph G; so the second bullet of the infinite conjecture ('if L(G) of a locally finite G is 4-connected then L(G) is hamiltonian') restricted to finite G is exactly Thomassen's conjecture. Hinges on reading 'locally finite' as including finite graphs, as intended in this Georgakopoulos-style extension.",
+   "Finite graphs are locally finite and a Hamilton circle of a finite graph is a Hamilton cycle, so the infinite conjecture's second clause (L(G) 4-connected implies Hamiltonian for locally finite G) restricted to finite G is exactly Thomassen's conjecture."
+  ],
+  "source": {
+   "id": "opg:hamiltonian_cycles_in_line_graphs_of_infinite_graphs",
+   "name": "Hamiltonian cycles in line graphs of infinite graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture \\item If $ G $ is a 4-edge-connected locally finite graph, then its line graph is hamiltonian. \\item If the line graph $ L(G) $ of a locally finite graph $ G $ is 4-connected, then $ L(G) $ is hamiltonian.",
+   "context": "(Reproduced from [M].) A locally finite graph is hamiltonian, if its Freudenthal compactification (also called the end compactification, see [D]) contains a hamilton circle, i.e. a homeomorphic copy of $ S^1 $ containing all vertices. The first part is known for finite graphs. The proof uses the existence of two edge-disjoint spanning trees in 4-edge-connected graphs. In the infinite case, it would be enough to prove that a 4-edge-connected locally finite graph $ G $ has two edge-disjoint topological spanning trees (see [D]), one of which is connected as a subgraph of $ G $ . The problem is open even for the 1-ended case (where hamilton circles correspond to 2-way-infinite paths). The second part is widely open even in the finite case, where it was proposed by Thomassen [T].",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/hamiltonian_cycles_in_line_graphs_of_infinite_graphs",
+   "attributed_to": "Georgakopoulos, Agelos"
+  },
+  "target": {
+   "id": "opg:hamiltonian_cycles_in_line_graphs",
+   "name": "Hamiltonian cycles in line graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture Every 4-connected line graph is hamiltonian .",
+   "context": "\\item It is known that if $ G $ is 4-edge-connected, then its line graph $ L(G) $ is hamiltonian. \\item Thomassen's is a special case of a conjecture due to Matthews and Sumner: every 4-connected claw-free graph is hamiltonian. \\item However, by a result of Ryjacek [R] conjectures of Thomassen and of Matthews and Sumner are equivalent. \\item Moreover [R], one may restrict to 4-connected line graphs of triangle-free graphs.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/hamiltonian_cycles_in_line_graphs",
+   "attributed_to": "Thomassen, Carsten"
+  }
+ },
+ {
+  "edge_id": "e069",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Both state the same open question: do all graph classes of polynomial expansion have bounded twin-width? One is phrased as an informal claim, the other as a question, by the same line of work.",
+   "Both nodes state verbatim the question whether every graph class of polynomial expansion has bounded twin-width (posed independently in the two twin-width papers).",
+   "Both nodes state verbatim the question whether every graph class of polynomial expansion has bounded twin-width."
+  ],
+  "source": {
+   "id": "arxiv:2004.14789__00",
+   "name": "Polynomial expansion implies bounded twin-width",
+   "kind": "Informal",
+   "statement": "All classes of polynomial expansion may also have bounded twin-width.",
+   "context": "The authors note that proper minor-closed classes have bounded twin-width, and observe that bounded twin-width is incomparable with bounded degree, bounded expansion, and nowhere denseness. They remark 'As far as we know, all classes of polynomial expansion may also have bounded twin-width,' suggesting this as an open direction. Figure 3 depicts this with a dash-dotted edge indicating possible inclusion.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2004.14789",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2006.09877__01",
+   "name": "Bounded twin-width for polynomial expansion classes",
+   "kind": "Question",
+   "statement": "Do classes with polynomial expansion have bounded twin-width?",
+   "context": "Towards the small conjecture, the authors identify showing that small sparse classes have bounded (sparse) twin-width as a first, challenging step. Since classes with polynomial expansion are small, confirming bounded twin-width for them would constitute meaningful progress.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2006.09877",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e070",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "c_r is the optimal constant with directed tree-width >= c_r for r-regular digraphs, so determining lim c_r/r is the same question as determining the best epsilon with dtw(D) >= epsilon r; both entries are alternative phrasings from the same paper."
+  ],
+  "source": {
+   "id": "arxiv:2604.13700__00",
+   "name": "Limit of c_r/r in regular digraphs",
+   "kind": "Problem",
+   "statement": "Determine $\\lim_{r\\rightarrow\\infty}\\frac{c_{r}}{r}$.",
+   "context": "The paper proves that the sequence $(c_r/r)_{r\\in\\mathbb{N}}$ converges to some limit $L\\in[\\frac{3}{22},1]$; Problem 2 asks for the exact value of this limit. The problem is stated immediately after the proof of convergence.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2604.13700",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2604.13700__01",
+   "name": "Directed tree-width linear constant in regular digraphs",
+   "kind": "Informal",
+   "statement": "What is the best-possible constant $\\varepsilon>0$ such that every $r$-regular digraph $D$ has directed tree-width at least $\\varepsilon r$?",
+   "context": "Motivated by Theorem 7 of the paper, which establishes that every $r$-regular digraph has directed tree-width growing with $r$, the authors pose this question about the optimal linear constant in such a lower bound.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2604.13700",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e071",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "Both pose the domination-to-packing ratio problem: the first asks, per class G, whether a constant c_G with gamma/rho <= c_G exists; the second asks to characterize exactly those classes. Same underlying open problem stated at two levels of generality."
+  ],
+  "source": {
+   "id": "arxiv:2503.05562__00",
+   "name": "Constant domination-packing ratio per graph class",
+   "kind": "Question",
+   "statement": "Given a graph class $\\mathcal{G}$, is there a constant $c_{\\mathcal{G}}$ such that $$\\frac{\\gamma(G)}{\\rho(G)}\\leqslant c_{\\mathcal{G}}\\quad\\text{ for each }\\quad G\\in\\mathcal{G}~{}~{}?$$",
+   "context": "The paper studies the ratio between the dominating number $\\gamma(G)$ and the packing number $\\rho(G)$ of a graph $G$. A positive answer immediately gives the bound $c_{\\mathcal{G}}$ on the integrality gap of both the dominating and the packing integer programs for any $G\\in\\mathcal{G}$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2503.05562",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2503.05562__01",
+   "name": "Characterization of bounded γ/ρ graph classes",
+   "kind": "Question",
+   "statement": "Characterize those graph classes $\\mathcal{G}$ for which there is a constant $c_{\\mathcal{G}}$ such that $\\dfrac{\\gamma(G)}{\\rho(G)}\\leqslant c_{\\mathcal{G}}$ for each $G\\in\\mathcal{G}$.",
+   "context": "In the conclusion, after extending both the list of graph classes with bounded $\\gamma/\\rho$ ratio and those with unbounded ratio (notably showing 2-degenerate graphs have bounded ratio), the authors note that Theorem 6.1 on 2-degenerate graphs rules out any characterization purely in terms of sparse graph classes.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2503.05562",
+   "attributed_to": "paper authors"
+  }
+ }
+]

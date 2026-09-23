@@ -1,0 +1,129 @@
+[
+ {
+  "edge_id": "e072",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 2,
+  "sketches": [
+   "A K_{t,t}-free graph (as subgraph or induced) has induced biclique number < t; so if tree-alpha is polynomial in the induced biclique number on classes of bounded induced matching treewidth (target of source), then K_{t,t}-free graphs with tree-mu <= mu satisfy tree-alpha <= p_mu(t), answering the other question.",
+   "Graphs with tree-mu <= mu form a class of bounded induced matching treewidth, and K_{t,t}-free graphs have induced biclique number < t; so a polynomial bound of tree-alpha in the induced biclique number on bounded tree-mu classes yields tree-alpha <= p_mu(t) for K_{t,t}-free graphs with tree-mu <= mu."
+  ],
+  "source": {
+   "id": "arxiv:2511.03864__01",
+   "name": "Tree-independence number via induced biclique number",
+   "kind": "Question",
+   "statement": "Is it true that for classes of graphs with bounded induced matching treewidth, tree-independence number is bounded from above by a polynomial function of the induced biclique number?",
+   "context": "The induced biclique number of $G$ is the largest nonnegative integer $t$ such that $G$ contains an induced subgraph isomorphic to $K_{t,t}$. This question is an equivalent restatement of Question 5.2 using the induced biclique number, and is noted as closely related to recent work bounding tree-independence number in terms of clique-like parameters.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2511.03864",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2511.03864__00",
+   "name": "Polynomial tree-α bound in K_{t,t}-free graphs",
+   "kind": "Question",
+   "statement": "Is is true that for every positive integer $\\mu$ there exists a polynomial $\\mathsf{p}_{\\mu}$ such that every $K_{t,t}$-free graph $G$ with $\\operatorname{tree\\textnormal{-}\\mu}(G)\\leqslant\\mu$ satisfies $\\operatorname{tree\\textnormal{-}\\alpha}(G)\\leqslant\\mathsf{p}_{\\mu}(t)$?",
+   "context": "Lemma 5.1 shows that the smallest integer $\\mathsf{N}(s,s,2)$ appearing in the bound from Abrishami et al. is not bounded by any polynomial in both parameters, motivating the question of whether a polynomial bound in $t$ alone (for fixed $\\mu$) is achievable. The question asks specifically whether tree-independence number can be bounded polynomially in the induced biclique exclusion parameter $t$ for graphs of bounded induced matching treewidth.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2511.03864",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e073",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 5,
+  "sketches": [
+   "Weighted Minimum Vertex Cover is a monotone distance-1 minimization problem expressible in FO, so a PTAS for all monotone FO minimization problems on (efficiently) fractionally treewidth-fragile classes would give the asked PTAS for weighted MVC; the target's own context names weighted vertex cover as its simplest unresolved case.",
+   "Weighted Minimum Vertex Cover is a monotone FO-definable minimization problem, so a PTAS for all such problems on efficiently fractionally treewidth-fragile classes (target) yields the PTAS asked for in the source; 2103.08698 itself names weighted vertex cover in fragile classes as 'a concrete simplest case' of its question.",
+   "Weighted Minimum Vertex Cover is a monotone minimization problem expressible in first-order logic (distance-1 domination of edges), so the PTAS clause of 2103.08698__01 for fractionally treewidth-fragile classes restricted to this one problem is exactly 2105.01780__00 (same author's framing).",
+   "Weighted Minimum Vertex Cover is a monotone distance-1 minimization problem expressible in first-order logic, so a PTAS for all FO monotone minimization problems on fractionally treewidth-fragile classes covers it; the sublinear-separator variant follows additionally if such classes are (efficiently) fractionally treewidth-fragile (open companion question 2103.08698__00). Caveats: 'efficiently' fragile and weight handling.",
+   "Weighted Minimum Vertex Cover is a monotone FO-definable minimization problem, so a PTAS for all such problems on fractionally treewidth-fragile classes settles the concrete fragile-class case the target asks about (2103.08698 names weighted vertex cover as its simplest open instance)."
+  ],
+  "source": {
+   "id": "arxiv:2103.08698__01",
+   "name": "FO minimization PTAS in treewidth-fragile classes",
+   "kind": "Problem",
+   "statement": "Do monotone minimization problems expressible in the first order logic admit constant factor approximation in all classes with bounded expansion? And PTASes in all efficiently fractionally treewidth-fragile graph classes?",
+   "context": "The paper's techniques apply to minimization problems only with error bounded by a fraction of the total vertex weight rather than the optimal, so constant-factor approximation in bounded-expansion classes and PTASes in fractionally treewidth-fragile classes for minimization remain open. As a concrete simplest case, it is unknown whether a PTAS exists for weighted vertex cover in fractionally treewidth-fragile graph classes.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2103.08698",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2105.01780__00",
+   "name": "PTAS for weighted Minimum Vertex Cover in fragile classes",
+   "kind": "Problem",
+   "statement": "For the minimization problems, we do not know whether fractional treewidth-fragility is sufficient even for the distance-1 problems. In particular, consider the Minimum Vertex Cover problem in fractionally treewidth-fragile graphs, or more generally in hereditary classes with sublinear separators: while the unweighted version can be dealt with by the local search method, we do not know whether there exists a PTAS for the weighted version of this problem.",
+   "context": "The paper's main results (Theorem 2 and its corollaries) apply exclusively to maximization problems; the authors extend fractional treewidth-fragility techniques to handle bounded-distance dependencies for near-monotone maximization. For minimization problems the analogous question is left open, with weighted Minimum Vertex Cover in fractionally treewidth-fragile (or sublinear-separator) classes offered as a concrete test case.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2105.01780",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e074",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Every oriented tree T on k vertices is a DAG, hence a subgraph of TT_k (extend an acyclic ordering to a linear order). A subdivision of TT_k contains a subdivision of every subgraph of TT_k, so δ+(D)≥f(k) forcing a TT_k-subdivision forces a subdivision of T; thus every oriented tree is δ+-maderian. The paper poses Conjecture 4 as exactly this weaker step toward Mader's conjecture.",
+   "Every oriented tree of order k is a subdigraph of TT_k (embed along a topological order; TT_k has all forward arcs), and a subdivision of TT_k contains a subdivision of each of its subdigraphs. So min out-degree >= f(k) forcing a TT_k-subdivision forces a subdivision of every oriented tree of order k, i.e. all oriented trees are delta+-maderian."
+  ],
+  "source": {
+   "id": "opg:subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+   "name": "Subdivision of a transitive tournament in digraphs with large outdegree.",
+   "kind": "Conjecture",
+   "statement": "Conjecture For all $ k $ there is an integer \u000e $ f(k) $ such that every digraph of minimum outdegree at least \u000e $ f(k) $ contains a subdivision of a transitive tournament of order $ k $ .",
+   "context": "A fundamental result of Mader [M1] states that for every integer $ k $ there is a smallest $ g(k) $ so that every graph of average degree at least $ g(k) $ contains a subdivision of a complete graph on $ k $ vertices. Bollobás and Thomason [BT] as well as Komlós and Szemerédi [KS] showed that $ g $ is quadratic in $ k $ . The above conjecture is a digraph analogue of this result. However one cannot replace the minimum outdegree in this conjecture by the average degree as in Mader's analogue for graphs: consider the complete bipartite graph $ K_{n,n} $ and orient all edges from the first to the second class. The resulting digraph has average degree $ n $ but not even a transitive tournament on 3 vertices. One might be tempted to conjecture that large minimum outdegree would even force the existence of a subdivision of a large complete digraph. However, for all $ n $ Thomassen [T] constructed a digraph on $ n $ vertices whose minimum outdegree is at least $ \\frac{1}{2} \\log_2 n $ but which does not contain an even directed cycle (and thus no complete digraph on 3 vertices). A simpler construction was found by DeVos et al. [DMMS]. It is easy to see that \u000e $ f(1)=0 $ and $ f(2)=1 $ . Mader [M3] showed that $ f(4) = 3 $ . Even the existence of \u000e $ f(5) $ is not known.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/subdivision_of_a_transitive_tournament_in_digraphs_with_large_outdegree",
+   "attributed_to": "Mader, W."
+  },
+  "target": {
+   "id": "arxiv:1610.00876__01",
+   "name": "δ⁺-Maderian property for oriented trees",
+   "kind": "Conjecture",
+   "statement": "Every oriented tree is $\\delta^+$-maderian.",
+   "context": "Oriented trees are known to be $\\delta^0$-maderian with $\\mathrm{mader}_{\\delta^0}(T) = |T|-1$ via a greedy procedure, but whether they are $\\delta^+$-maderian is open. This is posed as a natural weaker step towards Mader's Conjecture 2. The paper provides evidence by proving in-arborescences are $\\delta^+$-maderian (Theorem 23) and all oriented paths are $\\delta^+$-maderian (Corollary 20).",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1610.00876",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e075",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Choose d0 with x2(d0) ≥ 3 and x3(d0) ≥ 3, and g0=4. A graph of girth ≥ 4 has no K3, hence no K_{x2(d0)}, so the second outcome of Conjecture 1.4 holds: an induced bipartite subgraph of min degree x3(d0) ≥ 3.",
+   "A graph of girth >= 4 has no K_3, hence no K_{x2(d)} once x2(d) >= 3. Choosing d0 with x2(d0)>=3 and x3(d0)>=3, the source's dichotomy forces an induced bipartite subgraph of min degree >= 3, giving the target with g0=4."
+  ],
+  "source": {
+   "id": "arxiv:1802.03727__01",
+   "name": "Clique or dense bipartite subgraph in high-degree graphs",
+   "kind": "Conjecture",
+   "statement": "There are functions $x_2(d)$ and $x_3(d)$ satisfying $x_2(d) \\to \\infty$ and $x_3(d) \\to \\infty$ as $d \\to \\infty$ such that any graph with minimum degree at least $d$ contains a complete subgraph on $x_2(d)$ vertices or a bipartite induced subgraph with minimum degree at least $x_3(d)$.",
+   "context": "This conjecture, if true, would imply Conjecture 1.3: since $\\mathrm{ch}_{\\mathrm{sep}}(K_{d+1}) \\sim \\sqrt{d}$ (Kratochvíl–Tuza–Voigt) and Theorem 1.2 handles the dense bipartite induced subgraph case, the two alternatives together would give a separation-choosability lower bound tending to infinity for any graph of large minimum degree.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1802.03727",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1802.03727__03",
+   "name": "Large Girth Dense Bipartite Induced Subgraph",
+   "kind": "Conjecture",
+   "statement": "There exist $d_0$ and $g_0$ such that any graph of girth at least $g_0$ with minimum degree at least $d_0$ contains a bipartite induced subgraph of minimum degree at least $3$.",
+   "context": "This is a further variation on Conjecture 1.4 using large girth instead of triangle-freeness. The weaker statement with 3 replaced by 2 (i.e., containing an even hole) is true with $g_0 = 4$ and $d_0 = 3$ by Radovanović–Vušković; detecting bipartite induced subgraphs of minimum degree at least 3 is NP-complete.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1802.03727",
+   "attributed_to": "paper authors"
+  }
+ }
+]

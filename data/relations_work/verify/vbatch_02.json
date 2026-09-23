@@ -1,0 +1,123 @@
+[
+ {
+  "edge_id": "e008",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Both state that the Gyárfás–Sumner conjecture holds with a χ-bounding function polynomial in the clique number, i.e. polynomial χ-boundedness of T-free classes for every forest/tree T."
+  ],
+  "source": {
+   "id": "arxiv:2202.05557__00",
+   "name": "Polynomial χ-boundedness for forest-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every forest $H$, there is a polynomial $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every $H$-free graph $G$.",
+   "context": "This conjecture is presented as what the Gyárfás-Sumner conjecture (1.1) and Esperet's conjecture (that every $\\chi$-bounded hereditary class has a polynomial bounding function) would jointly imply for forest-free graph classes. Esperet's conjecture has been disproved in full generality but remains open for classes excluding a forest, and Conjecture 1.3 is known only for a few special families of trees.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.05557",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2302.08922__01",
+   "name": "Polynomial χ-bounding in Gyárfás-Sumner",
+   "kind": "Informal",
+   "statement": "It is possible that the Gy\\'{a}rf\\'{a}s-Sumner conjecture holds with polynomial bounds; that is, 1.1 holds with a bound on the chromatic number that is polynomial in $t$.",
+   "context": "The authors note that polynomial bounds on the $\\chi$-bounding function have recently been established for trees not containing $P_5$ as an induced subgraph, and suggest that the full Gyárfás-Sumner conjecture may admit a polynomial $\\chi$-bounding function in $t$ for every fixed tree $T$.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2302.08922",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e009",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Polynomial χ-boundedness of H-free graphs for every forest H in particular provides some χ-bounding function for every tree T, which is exactly the Gyárfás–Sumner conjecture.",
+   "A polynomial χ-bounding function is in particular a χ-bounding function, and every tree is a forest, so polynomial χ-boundedness of H-free classes for all forests H implies the Gyárfás–Sumner conjecture."
+  ],
+  "source": {
+   "id": "arxiv:2202.05557__00",
+   "name": "Polynomial χ-boundedness for forest-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every forest $H$, there is a polynomial $f$ such that $\\chi(G) \\leq f(\\omega(G))$ for every $H$-free graph $G$.",
+   "context": "This conjecture is presented as what the Gyárfás-Sumner conjecture (1.1) and Esperet's conjecture (that every $\\chi$-bounded hereditary class has a polynomial bounding function) would jointly imply for forest-free graph classes. Esperet's conjecture has been disproved in full generality but remains open for classes excluding a forest, and Conjecture 1.3 is known only for a few special families of trees.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2202.05557",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "name": "Graphs with a forbidden induced tree are chi-bounded",
+   "kind": "Conjecture",
+   "statement": "Say that a family $ {\\mathcal F} $ of graphs is $ \\chi $ - bounded if there exists a function $ f: {\\mathbb N} \\rightarrow {\\mathbb N} $ so that every $ G \\in {\\mathcal F} $ satisfies $ \\chi(G) \\le f (\\omega(G)) $ . Conjecture For every fixed tree $ T $ , the family of graphs with no induced subgraph isomorphic to $ T $ is $ \\chi $ -bounded.",
+   "context": "This deep conjecture remains open despite considerable effort. Note that the conjecture would be false were the graph $ T $ to be permitted to contain a cycle, since then the class would admit graphs of high girth (where $ \\omega = 2 $ ) and high chromatic number. It is an easy exercise to prove this conjecture in the special case when $ T $ is either a path or a star, but things get difficult from here. Kierstead and Penrice solved the special case when $ T $ has radius 2, and Kierstead and Zhu solved the special case when $ T $ has radius 3 and has the property that every vertex incident with the center vertex has degree 2. Scott proved that the class of graphs which exclude all subdivisions of a fixed tree $ T $ as induced subgraphs are $ \\chi $ -bounded. It follows from this that Gyarfas's conjecture also holds for subdivisions of stars.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "attributed_to": "Gyarfas, Andras"
+  }
+ },
+ {
+  "edge_id": "e010",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "medium",
+  "n_finders": 1,
+  "sketches": [
+   "The 'if' direction for oriented forests implies Gyárfás–Sumner: given a tree T, fix any orientation H; an undirected T-free graph G, arbitrarily oriented, contains no induced copy of H, so χ-boundedness of Forb(H) bounds χ(G) by f(ω). Aboulker et al. state this generalization explicitly."
+  ],
+  "source": {
+   "id": "arxiv:1605.07411__00",
+   "name": "Forb(H) χ-bounded iff H is forest",
+   "kind": "Conjecture",
+   "statement": "$\\mathrm{Forb}(H)$ is $\\chi$-bounded if and only if $H$ is a forest.",
+   "context": "The paper notes that an easy argument shows this conjecture is equivalent to the Gyárfás–Sumner Conjecture (Conjecture 1). It generalises the 'only if' direction (which follows from Erdős's girth theorem) to a complete characterisation.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1605.07411",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "name": "Graphs with a forbidden induced tree are chi-bounded",
+   "kind": "Conjecture",
+   "statement": "Say that a family $ {\\mathcal F} $ of graphs is $ \\chi $ - bounded if there exists a function $ f: {\\mathbb N} \\rightarrow {\\mathbb N} $ so that every $ G \\in {\\mathcal F} $ satisfies $ \\chi(G) \\le f (\\omega(G)) $ . Conjecture For every fixed tree $ T $ , the family of graphs with no induced subgraph isomorphic to $ T $ is $ \\chi $ -bounded.",
+   "context": "This deep conjecture remains open despite considerable effort. Note that the conjecture would be false were the graph $ T $ to be permitted to contain a cycle, since then the class would admit graphs of high girth (where $ \\omega = 2 $ ) and high chromatic number. It is an easy exercise to prove this conjecture in the special case when $ T $ is either a path or a star, but things get difficult from here. Kierstead and Penrice solved the special case when $ T $ has radius 2, and Kierstead and Zhu solved the special case when $ T $ has radius 3 and has the property that every vertex incident with the center vertex has degree 2. Scott proved that the class of graphs which exclude all subdivisions of a fixed tree $ T $ as induced subgraphs are $ \\chi $ -bounded. It follows from this that Gyarfas's conjecture also holds for subdivisions of stars.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/graphs_with_a_forbidden_induced_tree_are_chi_bounded",
+   "attributed_to": "Gyarfas, Andras"
+  }
+ },
+ {
+  "edge_id": "e011",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 1,
+  "sketches": [
+   "Oriented stars are oriented forests, so χ-boundedness of Forb(S) for every oriented star S is the restriction of the 'if' direction of the general forest conjecture to stars."
+  ],
+  "source": {
+   "id": "arxiv:1605.07411__00",
+   "name": "Forb(H) χ-bounded iff H is forest",
+   "kind": "Conjecture",
+   "statement": "$\\mathrm{Forb}(H)$ is $\\chi$-bounded if and only if $H$ is a forest.",
+   "context": "The paper notes that an easy argument shows this conjecture is equivalent to the Gyárfás–Sumner Conjecture (Conjecture 1). It generalises the 'only if' direction (which follows from Erdős's girth theorem) to a complete characterisation.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1605.07411",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1605.07411__01",
+   "name": "χ-boundedness of oriented-star-free classes",
+   "kind": "Conjecture",
+   "statement": "For any oriented star $S$, $\\mathrm{Forb}(S)$ is $\\chi$-bounded.",
+   "context": "This is the paper's central new conjecture, extending the Gyárfás–Sumner framework to oriented graphs. The authors note it suffices to prove it for $S_{k,k}$ for all $k$, and prove several special cases: $k=0$, $k=\\ell=1$, and the $TT_3$-free case (Theorem 15).",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1605.07411",
+   "attributed_to": "paper authors"
+  }
+ }
+]

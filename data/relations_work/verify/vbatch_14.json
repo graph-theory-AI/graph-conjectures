@@ -1,0 +1,130 @@
+[
+ {
+  "edge_id": "e056",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "P(t,t,t,t) is exactly P_l(t) with l = 4, so 'MIS is FPT in P(t,t,t,t)-free graphs for all t' is the l = 4 instance of 'MIS is FPT in P_l(t)-free graphs for all t and l'.",
+   "P(t,t,t,t) = P_4(t) is the length-4 instance of the clique-substituted path P_l(t); the conjecture for all t and l restricted to l = 4 is exactly 1909.08426__02.",
+   "P_l(t) with l=4 is precisely P(t,t,t,t), so FPT MIS on P_l(t)-free graphs for all l,t restricted to l=4 gives the source verbatim."
+  ],
+  "source": {
+   "id": "arxiv:1909.08426__03",
+   "name": "MIS FPT in Pℓ(t)-free Graphs",
+   "kind": "Conjecture",
+   "statement": "For any integers $t$ and $\\ell$, MIS is FPT in $P_\\ell(t)$-free graphs, where $P_\\ell(t) = P(t, t, \\ldots, t)$ with the sequence $t, t, \\ldots, t$ of length $\\ell$.",
+   "context": "This is described as a far more distant milestone than Conjecture 1, extending the FPT claim to clique-substituted paths of arbitrary length. The authors remark that even the parameterized complexity of MIS in $P_7$-free graphs (the $t=1$, $\\ell=7$ case) is currently open.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1909.08426",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1909.08426__02",
+   "name": "FPT MIS in P(t,t,t,t)-free graphs",
+   "kind": "Conjecture",
+   "statement": "For any integer $t$, MIS can be solved in FPT time in $P(t,t,t,t)$-free graphs.",
+   "context": "MIS was already shown FPT on $P(t,t,t)$-free graphs; this conjecture proposes the natural next step for four-vertex paths with clique substitutions. The present paper proves the special case $P(1,t,t,t)$-free graphs as partial progress toward Conjecture 1.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1909.08426",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e057",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "The dichotomy conjecture asserts MIS in H-free graphs is in P iff H is a path P_l or a spider S_{i,j,k}; its 'if' direction for H = P_t (t >= 7) answers the source question (poly-time MIS on P_t-free graphs) affirmatively.",
+   "The dichotomy conjecture asserts MIS is in P on H-free graphs precisely when H is a path or subdivided claw; paths P_t are in the tractable list, so its truth gives polynomial-time MIS on P_t-free graphs for every t ≥ 7, resolving 1803.05396__01 affirmatively.",
+   "The dichotomy conjecture asserts MIS is in P for H-free graphs whenever H is a path; taking H = P_t for each t >= 7 gives polynomial-time MIS on P_t-free graphs, exactly the question of 1803.05396__01.",
+   "The dichotomy conjecture puts every path P_l in the polynomial-time list for MIS on H-free graphs, so it implies the affirmative resolution of whether MIS is polynomial on P_t-free graphs for t >= 7 (the target is phrased as a determination question; this settles it positively)."
+  ],
+  "source": {
+   "id": "arxiv:1909.08426__00",
+   "name": "MIS dichotomy for path- and claw-subdivision-free graphs",
+   "kind": "Conjecture",
+   "statement": "For every connected graph $H$, Maximum Independent Set in $H$-free graphs is in $\\mathsf{P}$ if and only if $H \\in \\{P_\\ell\\}_{\\ell} \\cup \\{S_{i,j,k}\\}_{i \\leq j \\leq k}$.",
+   "context": "The polynomial-time complexity of MIS in $H$-free graphs has been studied since the early 1980s. Alekseev showed that if $H$ is neither a path nor a subdivided claw then MIS is NP-complete on $H$-free graphs, motivating this conjecture about the full dichotomy. The authors note that an even stronger conjecture is postulated by Lozin [28].",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1909.08426",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1803.05396__01",
+   "name": "Polynomial-time MIS on Pₜ-free graphs",
+   "kind": "Problem",
+   "statement": "Determine whether maximum independent set is decidable in polynomial time for $P_t$-free graphs for $t \\geq 7$.",
+   "context": "Subexponential-time algorithms for maximum independent set on $P_t$-free graphs were given by Brause and independently by Bascó, Marx and Tuza; the present paper extends the subexponential approach to a broader class of problems including maximum independent set, but polynomial-time decidability for $t \\geq 7$ remains open.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1803.05396",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e058",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Both entries pose the open complexity of maximum (weight) independent set on even-hole-free graphs; one asks for a polynomial algorithm for the weighted version, the other records the unweighted complexity as unknown — the same underlying open problem.",
+   "Both nodes pose the open question of the complexity of maximum (weight) independent set on even-hole-free graphs: 2407.08927 asks whether a polynomial-time algorithm exists for MWIS, 1912.11246 states the complexity of MIS on the same class is unknown."
+  ],
+  "source": {
+   "id": "arxiv:1912.11246__01",
+   "name": "MIS complexity in even-hole-free graphs",
+   "kind": "Informal",
+   "statement": "The complexity of computing a maximum independent set in an even-hole-free graph is not known.",
+   "context": "Stated in the introduction as motivation for the paper's approach. The paper proves a polynomial-time algorithm for the strictly smaller class of (even hole, pyramid)-free graphs, with the hope that understanding the pyramid-free case may shed light on the full even-hole-free class.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1912.11246",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2407.08927__00",
+   "name": "MWIS polynomial-time on even-hole-free graphs",
+   "kind": "Problem",
+   "statement": "Does there exist a polynomial-time algorithm for the Maximum Weight Independent Set problem on even-hole-free graphs?",
+   "context": "On even-hole-free graphs, Maximum Weight Clique is known to be polynomial-time solvable, but the question of whether a polynomial-time algorithm exists for Maximum Weight Independent Set remains open. This is in stark contrast to perfect graphs, for which polynomial-time algorithms have been known since 1981. The present paper gives a quasi-polynomial-time algorithm via a polylogarithmic tree independence number bound, but the polynomial-time question is not resolved.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.08927",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e059",
+  "claimed_relation": "same_conjecture",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 3,
+  "sketches": [
+   "Both ask for a combinatorial (non-ellipsoid) polynomial-time algorithm for maximum weight independent set in perfect graphs; the target additionally lists MC/MWC and the C_4-free restriction, but it is the same well-known open problem.",
+   "Both nodes pose the same well-known open problem: find a combinatorial (non-ellipsoid) polynomial-time algorithm for maximum (weight) independent set in perfect graphs, currently solvable only via Grötschel–Lovász–Schrijver.",
+   "Both restate the Grotschel-Lovasz-Schrijver open problem of a combinatorial (non-ellipsoid) poly-time algorithm for maximum (weight) independent set in perfect graphs; 1903.04761 additionally mentions the clique variants and the C4-free subcase."
+  ],
+  "source": {
+   "id": "arxiv:1903.04761__00",
+   "name": "Combinatorial MIS algorithm for perfect graphs",
+   "kind": "Problem",
+   "statement": "No combinatorial polynomial-time algorithm is known for any of MIS, MWIS, MC, and MWC in perfect graphs; finding one is a major open problem in the field. At the moment we do not even have a polynomial-time combinatorial algorithm to solve MIS in perfect graphs with no hole of length four.",
+   "context": "The Grötschel–Lovász–Schrijver algorithm solves MWIS on perfect graphs via the ellipsoid method, which the authors distinguish from combinatorial algorithms (roughly, algorithms not using division and operating directly on vertices and edges). Even the restricted case of MIS in perfect graphs with no $C_4$ (hole of length four) lacks a combinatorial polynomial-time algorithm.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1903.04761",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2003.05185__00",
+   "name": "Combinatorial MWIS algorithm for perfect graphs",
+   "kind": "Problem",
+   "statement": "Design a combinatorial polynomial-time algorithm for the Maximum Weight Independent Set problem in perfect graphs.",
+   "context": "The polynomial-time algorithm of Grötschel, Lovász, and Schrijver for MWIS in perfect graphs relies on the ellipsoid method. The authors explicitly note that designing a combinatorial polynomial-time algorithm for this problem remains an important open problem.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/2003.05185",
+   "attributed_to": "paper authors"
+  }
+ }
+]

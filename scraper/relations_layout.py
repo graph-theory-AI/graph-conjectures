@@ -129,6 +129,48 @@ def _pack(placed: list[dict[str, tuple[float, float]]]) -> dict[str, tuple[float
     return out
 
 
+# Statuses that mean "the literature review found no resolution".
+UNRESOLVED = {"open", "partial", "unclear", None, ""}
+
+
+def status_flag(relation: str, src_status: str | None, tgt_status: str | None) -> dict | None:
+    """Confront one edge with the review statuses of its two endpoints.
+
+    Returns None when the edge says nothing about the statuses, otherwise
+    {"code", "kind", "label"} where kind is "inconsistent" (the graph and the
+    review dataset disagree and one of them is wrong) or "vacuous" (the edge is
+    logically fine but no longer carries information, because its target is
+    proved or its source is disproved).
+    """
+    if relation == "implies":
+        # A ⇒ B: B disproved forces A disproved, A solved forces B solved.
+        if tgt_status == "disproved" and src_status != "disproved":
+            return {"code": "inconsistent_target_disproved", "kind": "inconsistent",
+                    "label": "target is disproved, so the source must be too"}
+        if src_status == "solved" and tgt_status != "solved":
+            return {"code": "inconsistent_source_solved", "kind": "inconsistent",
+                    "label": "source is solved, so the target must be too"}
+        if src_status == "disproved":
+            return {"code": "vacuous_source_disproved", "kind": "vacuous",
+                    "label": "vacuous: the source is disproved"}
+        if tgt_status == "solved":
+            return {"code": "vacuous_target_solved", "kind": "vacuous",
+                    "label": "vacuous: the target is now a theorem"}
+        return None
+
+    if relation in {"equivalent_to", "same_conjecture"}:
+        if src_status == tgt_status:
+            return None
+        # open vs partial is review granularity, not a contradiction.
+        if src_status in UNRESOLVED and tgt_status in UNRESOLVED:
+            return None
+        return {"code": "inconsistent_symmetric", "kind": "inconsistent",
+                "label": f"{relation.replace('_', ' ')} but statuses differ "
+                         f"({src_status or 'unclear'} vs {tgt_status or 'unclear'})"}
+
+    return None
+
+
 def build_relations_graph(relations: dict, node_meta: dict[str, dict]) -> dict | None:
     """Positioned node/edge lists for the relations page.
 
@@ -161,12 +203,19 @@ def build_relations_graph(relations: dict, node_meta: dict[str, dict]) -> dict |
             "context": _clip(m.get("context"), 1500),
         })
     edges = []
+    flag_counts: dict[str, int] = {"inconsistent": 0, "vacuous": 0}
     for r in rels:
+        flag = status_flag(r["relation"],
+                           node_meta[r["source"]].get("status"),
+                           node_meta[r["target"]].get("status"))
+        if flag:
+            flag_counts[flag["kind"]] += 1
         edges.append({
             "source": r["source"], "target": r["target"],
             "relation": r["relation"], "verdict": r["verdict"],
             "confidence": r["confidence"], "argument": r["argument"],
             "citations": r.get("citations", []),
+            "flag": flag,
         })
     return {
         "nodes": nodes,
@@ -174,6 +223,7 @@ def build_relations_graph(relations: dict, node_meta: dict[str, dict]) -> dict |
         "n_components": len(comps),
         "semantics": relations.get("semantics", {}),
         "verification_note": relations.get("verification_note", ""),
+        "flag_counts": flag_counts,
     }
 
 
@@ -189,7 +239,10 @@ def relations_by_node(relations: dict, node_meta: dict[str, dict]) -> dict[str, 
         if s not in node_meta or t not in node_meta:
             continue
         base = {"relation": r["relation"], "verdict": r["verdict"],
-                "confidence": r["confidence"], "argument": r["argument"]}
+                "confidence": r["confidence"], "argument": r["argument"],
+                "flag": status_flag(r["relation"],
+                                    node_meta[s].get("status"),
+                                    node_meta[t].get("status"))}
         if r["relation"] == "implies":
             out[s].append({**base, "role": "implies", "other": node_meta[t], "other_id": t})
             out[t].append({**base, "role": "implied by", "other": node_meta[s], "other_id": s})

@@ -1,0 +1,128 @@
+[
+ {
+  "edge_id": "e024",
+  "claimed_relation": "implies",
+  "via": "restriction",
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "The k-Coloring dichotomy problem for H-free graphs (all k≥3, all H) contains as the k=3, H=P_t instance the question of the complexity of 3-colourability of P_t-free graphs.",
+   "The full k-Coloring dichotomy for H-free graphs (all k >= 3, all H) instantiated at k = 3 and H = P_t determines the complexity of 3-colourability of P_t-free graphs for every t >= 8."
+  ],
+  "source": {
+   "id": "arxiv:2311.05713__01",
+   "name": "k-Coloring dichotomy for H-free graphs",
+   "kind": "Informal",
+   "statement": "For every integer $k \\geq 3$, characterise the graphs $H$ for which the $k$-Coloring Problem restricted to $H$-free graphs is polynomial-time solvable versus NP-hard.",
+   "context": "The paper observes that, in contrast with the List-$k$-Coloring Problem (now settled for all $k>4$), 'for the $k$-Coloring Problem, no value of $k\\geq 3$ is known for which the \"easy\" choices of $H$ are completely distinguished from the \"hard\" ones.' This identifies a broad open problem motivating the paper's List-$k$-Coloring results.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2311.05713",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1803.05396__00",
+   "name": "3-colourability complexity of P_t-free graphs",
+   "kind": "Problem",
+   "statement": "Determine the complexity of $3$-colourability of $P_t$-free graphs for $t \\geq 8$.",
+   "context": "Polynomial-time algorithms for 3-colourability of $P_t$-free graphs are known for $t \\leq 7$ (combining results for $t \\leq 5$, $(k,t)=(3,7)$, and hardness for $P_7$-free graphs). The paper notes this problem remains open for $t \\geq 8$, and provides a subexponential-time algorithm as partial progress.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1803.05396",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e025",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 4,
+  "sketches": [
+   "Case (ii) with Δ_A=Δ_B=Δ and k_A=k_B=⌈C log Δ⌉ asserts every bipartite graph of maximum degree Δ is (k,k)-choosable, i.e. χ_ℓ(G) = O(log Δ), which is exactly the Alon–Krivelevich conjecture.",
+   "Case (ii) of the asymmetric conjecture with Δ_A=Δ_B=Δ and k_A=k_B=⌈C log Δ⌉ says every bipartite graph of maximum degree Δ is (⌈C log Δ⌉,⌈C log Δ⌉)-choosable, i.e. χ_ℓ(G) ≤ C log Δ + O(1), which is the Alon–Krivelevich conjecture.",
+   "Apply condition (ii) with Delta_A=Delta_B=Delta and k_A=k_B=ceil(C log Delta): the conjecture then says every bipartite graph of max degree Delta is (k_A,k_B)-choosable, i.e. chi_l(G) <= C log Delta + 1, which is the Alon-Krivelevich conjecture.",
+   "Condition (ii) of the source with Delta_A=Delta_B=Delta and k_A=k_B=ceil(C log Delta) asserts every bipartite graph of max degree Delta is (O(log Delta),O(log Delta))-choosable, i.e. chi_l <= c log Delta, the Alon-Krivelevich conjecture."
+  ],
+  "source": {
+   "id": "arxiv:2004.07457__01",
+   "name": "Asymmetric Krivelevich–Alon choosability for bipartite graphs",
+   "kind": "Conjecture",
+   "statement": "Let the positive integers $\\Delta_A, \\Delta_B, k_A, k_B$ satisfy one of the following.\n(i) Given $\\varepsilon > 0$, we have $\\Delta_A, \\Delta_B \\geq \\Delta_0$ for some $\\Delta_0 = \\Delta_0(\\varepsilon)$, and $k_A \\geq \\Delta_A^\\varepsilon$ and $k_B \\geq \\Delta_B^\\varepsilon$.\n(ii) For some absolute constant $C > 1$, $k_A \\geq C \\log \\Delta_B$ and $k_B \\geq C \\log \\Delta_A$.\n(iii) $\\Delta_A = \\Delta_B = \\Delta$, and, for some absolute constant $C > 0$, $k_B \\geq C(\\Delta/\\log\\Delta)^{1/k_A} \\log\\Delta$ or $k_A \\geq C(\\Delta/\\log\\Delta)^{1/k_B} \\log\\Delta$.\nThen any bipartite graph $G = (V = A \\cup B, E)$ with parts $A$ and $B$ having maximum degrees at most $\\Delta_A$ and $\\Delta_B$, respectively, is $(k_A, k_B)$-choosable.",
+   "context": "Motivated by the asymptotic behaviour of $(k_A, k_B)$-choosability for complete bipartite graphs (Theorem 6 and Theorem 16), the authors conjecture three concrete asymmetric analogues of the Krivelevich–Alon conjecture. Condition (i) is weaker than Conjecture 2; conditions (ii) and (iii) are stronger. The paper shows Conjecture 7 holds for complete bipartite graphs (Theorem 15) and provides partial progress in the general case via Theorem 4 and its corollaries.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2004.07457",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "opg:list_chromatic_number_and_maximum_degree_of_bipartite_graphs",
+   "name": "List chromatic number and maximum degree of bipartite graphs",
+   "kind": "Conjecture",
+   "statement": "Conjecture There is a constant $ c $ such that the list chromatic number of any bipartite graph $ G $ of maximum degree $ \\Delta $ is at most $ c \\log \\Delta $ .",
+   "context": "For definitions and an introduction to list colouring, see the related Wikipedia page . Alon [A] showed that the list chromatic number of a graph (not necessarily bipartite) of maximum degree $ \\Delta $ is at least $ \\frac{1}{2}(1-o(1))\\log_2\\Delta $ . Random bipartite graphs show that this is tight up to a multiplicative factor $ (2+o(1)) $ . It is not diffcult to see that the list chromatic number of any bipartite graph $ G $ of maximum degree $ \\Delta $ is at most $ O(\\Delta/\\log \\Delta) $ . It also follows a more general result of Johansson [J] on triangle-free graphs.",
+   "status": "partial",
+   "url": "http://www.openproblemgarden.org/op/list_chromatic_number_and_maximum_degree_of_bipartite_graphs",
+   "attributed_to": "Alon, Noga"
+  }
+ },
+ {
+  "edge_id": "e026",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "Given min degree d, the conjecture yields either K_{x2(d)} (whose separation choosability grows with x2) or an induced bipartite subgraph of min degree x3(d), which by Esperet–Kang–Thomassé's theorem in the same paper has separation choosability Ω(log x3(d)); ch_sep is monotone under induced subgraphs (pad with fresh disjoint colors), so ch_sep(G)→∞ with d.",
+   "Stated in the paper: Conjecture 1.4 (clique K_{x2(d)} or induced bipartite subgraph of min degree x3(d)) implies Conjecture 1.3, since ch_sep(K_{d+1}) ~ √d (Kratochvíl–Tuza–Voigt) handles the clique outcome and Theorem 1.2 gives ch_sep lower bounds from dense induced bipartite subgraphs; both outcomes force ch_sep → ∞ with min degree."
+  ],
+  "source": {
+   "id": "arxiv:1802.03727__01",
+   "name": "Clique or dense bipartite subgraph in high-degree graphs",
+   "kind": "Conjecture",
+   "statement": "There are functions $x_2(d)$ and $x_3(d)$ satisfying $x_2(d) \\to \\infty$ and $x_3(d) \\to \\infty$ as $d \\to \\infty$ such that any graph with minimum degree at least $d$ contains a complete subgraph on $x_2(d)$ vertices or a bipartite induced subgraph with minimum degree at least $x_3(d)$.",
+   "context": "This conjecture, if true, would imply Conjecture 1.3: since $\\mathrm{ch}_{\\mathrm{sep}}(K_{d+1}) \\sim \\sqrt{d}$ (Kratochvíl–Tuza–Voigt) and Theorem 1.2 handles the dense bipartite induced subgraph case, the two alternatives together would give a separation-choosability lower bound tending to infinity for any graph of large minimum degree.",
+   "status": "partial",
+   "url": "https://arxiv.org/abs/1802.03727",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:1802.03727__00",
+   "name": "Separation choosability grows with minimum degree",
+   "kind": "Conjecture",
+   "statement": "There is a function $x_1(d)$ that satisfies $x_1(d) \\to \\infty$ as $d \\to \\infty$ such that $\\mathrm{ch}_{\\mathrm{sep}}(G) \\geq x_1(d)$ for any graph $G$ with minimum degree $d$.",
+   "context": "The authors prove Theorem 1.2 that separation choosability grows logarithmically in minimum degree for bipartite graphs, and ask whether the bipartiteness assumption can be dropped. The difficulty is that a bad list assignment with maximum separation on a graph does not necessarily retain maximum separation when edges are added, so the standard bipartite-subgraph reduction used for ordinary choosability fails.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/1802.03727",
+   "attributed_to": "paper authors"
+  }
+ },
+ {
+  "edge_id": "e027",
+  "claimed_relation": "implies",
+  "via": null,
+  "finder_confidence": "high",
+  "n_finders": 2,
+  "sketches": [
+   "A graph is 5-choosable iff it contains no subgraph critical for 5-choosability, and 5-colorable iff it contains no 6-critical subgraph. If on the torus these two families of critical graphs coincide, then a toroidal graph is 5-choosable iff it is 5-colorable.",
+   "A toroidal graph is not 5-choosable iff it contains a subgraph critical for 5-choosability, and not 5-colorable iff it contains a 6-critical subgraph. If the two families of critical graphs coincide on the torus, the two failure conditions coincide, so 5-choosable iff 5-colorable."
+  ],
+  "source": {
+   "id": "arxiv:2407.18800__00",
+   "name": "5-choosability equals 6-criticality on torus",
+   "kind": "Conjecture",
+   "statement": "A graph drawn on the torus is critical for 5-choosability if and only if it is $6$-critical.",
+   "context": "Theorem 1 establishes this result under the additional assumption that there exists a cyclic system of non-contractible triangles around the torus with consecutive triangles at distance at most four. The authors verified that $K_7$ is the only graph critical for 5-list coloring but not for 5-choosability satisfying the assumptions of Theorem 1, and believe the cyclic system assumption can be dropped entirely.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.18800",
+   "attributed_to": "paper authors"
+  },
+  "target": {
+   "id": "arxiv:2407.18800__01",
+   "name": "5-choosability equals 5-colorability on torus",
+   "kind": "Conjecture",
+   "statement": "A toroidal graph is $5$-choosable if and only if it is $5$-colorable.",
+   "context": "This conjecture is stated as equivalent to Conjecture 2 and represents the central goal of the paper: a complete choosability analogue of Thomassen's characterization of 5-colorability on the torus. The computational results of the paper, enumerating minimal obstructions under a cyclic-triangle-system condition, provide supporting evidence.",
+   "status": "open",
+   "url": "https://arxiv.org/abs/2407.18800",
+   "attributed_to": "paper authors"
+  }
+ }
+]
