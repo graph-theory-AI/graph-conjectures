@@ -1,0 +1,46 @@
+{% if p._openai_result %}
+{% set r = p._openai_result %}
+<section class="ai-result openai-result">
+  <h2>
+    OpenAI manuscript collection
+    {% if r.site_status %}
+    <span class="status-badge status-{{ r.site_status }}">{{ r.site_status }}</span>
+    {% else %}
+    <span class="status-badge status-partial">partial progress</span>
+    {% endif %}
+  </h2>
+  {% if not r.status_promoted %}<p class="summary">{{ r.one_line }}</p>{% endif %}
+  {% if r.derivation %}<p class="notes"><strong>Why it applies.</strong> {{ r.derivation }}</p>{% endif %}
+  <ul class="openai-manuscripts">
+  {% for m in r.manuscripts %}
+    <li>
+      <a href="{{ m.pdf_url }}">{{ m.title }}</a>
+      — {% if m.lean %}main result formalized in Lean by OpenAI{% else %}no Lean formalization{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  <p class="ai-artifact-links">
+    Family {{ r.family }}: <a href="{{ openai_meta.source_repository }}/blob/main/CONTENTS.md">{{ r.family_title }}</a>
+    {%- if r.lean_scope_url %} · <a href="{{ r.lean_scope_url }}">Lean formalization scope</a>{% endif %}
+  </p>
+  {% if r.caveats %}<p class="notes"><strong>Caveat.</strong> {{ r.caveats }}</p>{% endif %}
+  <p class="notes">
+    These manuscripts were produced by an unreleased OpenAI model and released on
+    {{ openai_meta.released }} in <a href="{{ openai_meta.source_repository }}">{{ openai_meta.source_repository | replace('https://', '') }}</a>.
+    They have not been peer reviewed. Lean formalizations are OpenAI's own and cover
+    only the scope stated on their scope page; this project has not run or reviewed them.
+    {% if r.status_promoted %}
+    The status above records the claim; before it, the literature review rated this
+    entry <code>{{ r.status_before or 'unreviewed' }}</code>. Its confidence rates
+    whether the manuscript's theorem settles this entry, not whether the manuscript
+    is correct.
+    {% elif r.relation == 'partial' %}
+    This is partial progress, so the status above is unchanged.
+    {% elif r.status_before in ['solved', 'disproved'] %}
+    The ordinary literature status above takes precedence.
+    {% else %}
+    The status above comes from the earlier AI write-up on this page.
+    {% endif %}
+  </p>
+</section>
+{% endif %}

@@ -24,8 +24,12 @@ Each reviewed item is classified as <code>open</code>, <code>partial</code>, <co
 <code>disproved</code>, or <code>unclear</code>. Separate <code>ai-proved</code> and
 <code>ai-disproved</code> labels identify model-generated arguments listed in the
 Graph-Theory-LLM-Proofs README, rated <code>CONFIRMED</code>, and accompanied by a linked
-PDF. Results rated <code>MINOR_GAPS</code> are excluded; these labels do not claim peer
-review. The <a href="{{ root }}timeline/">timeline</a>
+PDF. Results rated <code>MINOR_GAPS</code> are excluded.
+{% if openai_match_count %}The same labels mark entries whose statement is settled by a
+manuscript of OpenAI's <a href="{{ openai_meta.source_repository }}">collection of
+model-generated mathematics</a> (released {{ openai_meta.released }});
+{{ openai_match_count }} entries link such a manuscript, some only as partial progress.
+{% endif %}These labels do not claim peer review. The <a href="{{ root }}timeline/">timeline</a>
 shows {{ timeline_count }} solved or disproved conjectures as horizontal intervals from
 first claimed year to proof or counterexample year.</p>
 

@@ -202,6 +202,10 @@ section.ai-result h2 {
   flex-wrap: wrap;
 }
 .ai-artifact-links { font-weight: 600; }
+ul.openai-manuscripts {
+  margin: 0.3rem 0 0.6rem;
+  padding-left: 1.2rem;
+}
 
 ul.since-posted {
   list-style: none;

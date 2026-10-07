@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/openai/math",
+  "source_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "released": "2026-10-06",
+  "checked_at": "2026-10-07",
+  "matched_by": "claude-opus-5-5 (manual match against the OpenAI catalogue; TeX sources read)",
+  "disclaimer": "Claims from OpenAI's collection of model-generated manuscripts. They have not been peer reviewed; Lean formalizations, where listed, are OpenAI's own and were neither run nor reviewed by this project.",
+  "results": [
+    {
+      "id": "bm-041",
+      "relation": "resolves",
+      "site_status": "ai-disproved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript constructs arbitrarily large graphs on $m$ vertices with independence number at most 2 and $h(G) < 26m/75 + 2/3 < m/2 \\le \\chi_f(G) \\le \\chi(G)$, where $h(G)$ is the largest order of a clique minor: each is $k$-chromatic for some $k$ (necessarily $k \\ge 7$) without a $K_k$ minor.",
+      "family": "157",
+      "family_title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Hadwiger's conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf",
+          "lean": false
+        }
+      ],
+      "caveats": "This manuscript lies outside the family's Lean formalization, which covers only the companion list-colouring bound."
+    },
+    {
+      "id": "seagull_problem",
+      "relation": "resolves",
+      "site_status": "ai-disproved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's counterexample to Hadwiger's conjecture consists of $m$-vertex graphs with no independent set of size 3 whose largest clique minor has fewer than $26m/75 + 2/3 < m/2$ vertices. The manuscript notes that this is the Plummer–Stiebitz–Toft form of Hadwiger's conjecture for independence number 2.",
+      "family": "157",
+      "family_title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Hadwiger's conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf",
+          "lean": false
+        }
+      ],
+      "caveats": "This manuscript lies outside the family's Lean formalization, which covers only the companion list-colouring bound."
+    },
+    {
+      "id": "1907.12999__00",
+      "relation": "implies",
+      "site_status": "ai-disproved",
+      "match_confidence": "high",
+      "one_line": "Disproved by the graphs of OpenAI's counterexample to Hadwiger's conjecture, which have independence number at most 2 and no clique minor on half of their vertices.",
+      "family": "157",
+      "family_title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Hadwiger's conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf",
+          "lean": false
+        }
+      ],
+      "derivation": "The manuscript's graphs have $n$ vertices, $\\alpha(G) \\le 2$ and largest clique minor $h(G) < 26n/75 + 2/3 < n/2$. With $t = h(G)$ the graph has no $K_{t+1}$ minor, yet the statement would require $\\alpha(G) \\ge n/t > 2$.",
+      "caveats": "This manuscript lies outside the family's Lean formalization, which covers only the companion list-colouring bound."
+    },
+    {
+      "id": "fractional_hadwiger",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "high",
+      "one_line": "OpenAI's counterexample to Hadwiger's conjecture disproves part (a): its graphs satisfy $\\text{had}(G) < m/2 \\le \\chi_f(G)$, and the manuscript says so explicitly. Parts (b) and (c), which use the fractional Hadwiger number $\\text{had}_f$, are not addressed.",
+      "family": "157",
+      "family_title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Hadwiger's conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf",
+          "lean": false
+        }
+      ],
+      "caveats": "This manuscript lies outside the family's Lean formalization, which covers only the companion list-colouring bound."
+    },
+    {
+      "id": "list_hadwiger_conjecture",
+      "relation": "resolves",
+      "site_status": "ai-proved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves $\\chi_\\ell(G) \\le C\\,h(G)$ for an absolute constant $C$, where $h(G)$ is the largest order of a clique minor, so every $K_t$-minor-free graph is $Ct$-list-colourable. The constant is not optimised; Steiner's examples force $C \\ge 2$.",
+      "family": "157",
+      "family_title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+      "manuscripts": [
+        {
+          "title": "A linear list-coloring bound in terms of the Hadwiger number",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/157.md"
+    },
+    {
+      "id": "2110.09403__00",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves the linear bound $\\chi_\\ell(G) \\le C\\,h(G)$, so $K_t$-minor-free graphs have list chromatic number $O(t)$. Its constant is not optimised, so the bound $2t$ remains open.",
+      "family": "157",
+      "family_title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+      "manuscripts": [
+        {
+          "title": "A linear list-coloring bound in terms of the Hadwiger number",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/157.md"
+    },
+    {
+      "id": "2201.09115__01",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "medium",
+      "one_line": "OpenAI's linear bound $\\chi_\\ell(G) \\le C\\,h(G)$ gives $\\chi_\\ell(G) \\le C(s+t-1)$ for $K_{s,t}$-minor-free graphs, linear in $s+t$ even when $s$ and $t$ are comparable. The constant is not optimised, so the bound $2s+t$ remains open.",
+      "family": "157",
+      "family_title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+      "manuscripts": [
+        {
+          "title": "A linear list-coloring bound in terms of the Hadwiger number",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/157.md",
+      "derivation": "$K_{s,t}$ is a subgraph of $K_{s+t}$, so a $K_{s,t}$-minor-free graph has no $K_{s+t}$ minor, i.e. $h(G) \\le s+t-1$."
+    },
+    {
+      "id": "2206.13635__00",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "medium",
+      "one_line": "Combined with the source paper's bound $h(t) \\le 2g(t)$, OpenAI's linear bound for graphs gives $h(t) = O(t)$; the conjectured value $\\lceil\\frac32(t-1)\\rceil$ remains open.",
+      "family": "157",
+      "family_title": "Graph coloring, clique minors, and Colin de Verdière invariants",
+      "manuscripts": [
+        {
+          "title": "A linear list-coloring bound in terms of the Hadwiger number",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/157.md",
+      "derivation": "The source paper proves $h(t) \\le 2g(t)$, where $g(t)$ is the largest chromatic number of a $K_t$-minor-free graph, and the manuscript's corollary $\\chi(G) \\le C\\,h(G)$ gives $g(t) \\le C(t-1)$."
+    },
+    {
+      "id": "sidorenkos_conjecture",
+      "relation": "resolves",
+      "site_status": "ai-disproved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript exhibits a connected bipartite graph $H$ with 35 vertices and 66 edges (the incidence graph of 22 triples on 13 points) and a finite simple graph $G$ with $t(H,G) < t(K_2,G)^{66}$.",
+      "family": "161",
+      "family_title": "Counterexamples to Sidorenko’s conjecture and the forcing conjecture",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Sidorenko's conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/161.md"
+    },
+    {
+      "id": "2210.16971__00",
+      "relation": "implies",
+      "site_status": "ai-disproved",
+      "match_confidence": "high",
+      "one_line": "Disproved via OpenAI's counterexample to Sidorenko's conjecture: the 35-vertex bipartite graph, oriented from one side to the other, lacks the directed Sidorenko property.",
+      "family": "161",
+      "family_title": "Counterexamples to Sidorenko’s conjecture and the forcing conjecture",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Sidorenko's conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/161.md",
+      "derivation": "Orient every edge of the manuscript's graph $H$ from its 13 point vertices to its 22 triple vertices; the result $B$ maps to $\\vec K_2$. By Theorem 1.5 of the source paper, $B$ has the directed Sidorenko property only if $H$ has the asymmetric Sidorenko property, which implies the ordinary one, as that paper notes. $H$ fails the ordinary property."
+    },
+    {
+      "id": "2210.16971__01",
+      "relation": "implies",
+      "site_status": "ai-disproved",
+      "match_confidence": "high",
+      "one_line": "Disproved via OpenAI's counterexample to the forcing conjecture: the same 35-vertex bipartite graph, oriented from one side to the other, has a cycle and a homomorphism to an edge but lacks the directed forcing property.",
+      "family": "161",
+      "family_title": "Counterexamples to Sidorenko’s conjecture and the forcing conjecture",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Sidorenko's conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-counterexample-to-Sidorenkos-conjecture-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/161.md",
+      "derivation": "The manuscript's forcing corollary gives $p \\in (0,1)$ and a nonconstant symmetric graphon $W$ with $t(K_2,W) = p$ and $t(H,W) = p^{66}$. Read as a bipartite graphon, $W$ shows that $H$, with its point/triple bipartition, lacks the asymmetric forcing property. By Theorem 1.8 of the source paper, $H$ oriented from points to triples then lacks the directed forcing property.",
+      "caveats": "The forcing corollary lies outside the family's Lean formalization, which covers only the Sidorenko counterexample."
+    },
+    {
+      "id": "rysers_conjecture",
+      "relation": "resolves",
+      "site_status": "ai-disproved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscripts construct, for every sufficiently large prime $q$, intersecting ($\\nu = 1$) $r$-partite $r$-uniform hypergraphs with $r = q+1$ and covering number $\\tau = r > (r-1)\\nu$; further ranks $r = p^n + 1$ are also covered.",
+      "family": "162",
+      "family_title": "Counterexamples to Ryser’s covering conjecture",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Ryser's covering conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/paper.pdf",
+          "lean": true
+        },
+        {
+          "title": "Balanced counterexamples to Ryser's conjecture at prime orders",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/162.md"
+    },
+    {
+      "id": "2505.05339__02",
+      "relation": "implies",
+      "site_status": "ai-disproved",
+      "match_confidence": "high",
+      "one_line": "Disproved by OpenAI's counterexamples to Ryser's conjecture, which this statement implies.",
+      "family": "162",
+      "family_title": "Counterexamples to Ryser’s covering conjecture",
+      "manuscripts": [
+        {
+          "title": "A counterexample to Ryser's covering conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/paper.pdf",
+          "lean": true
+        },
+        {
+          "title": "Balanced counterexamples to Ryser's conjecture at prime orders",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/162.md",
+      "derivation": "The manuscripts' hypergraphs are intersecting ($\\nu = 1$), $r$-partite and $r$-uniform with covering number $r$. With $\\nu = 1$ the statement forces $k = 1$: $r-1$ vertices whose deletion leaves no edge, i.e. a vertex cover of size $r-1$, which does not exist."
+    },
+    {
+      "id": "the_crossing_number_of_the_complete_graph",
+      "relation": "resolves",
+      "site_status": "ai-proved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves the Harary–Hill formula $\\mathrm{cr}(K_n) = \\frac14\\lfloor\\frac n2\\rfloor\\lfloor\\frac{n-1}2\\rfloor\\lfloor\\frac{n-2}2\\rfloor\\lfloor\\frac{n-3}2\\rfloor$ for every $n$: the classical drawings are optimal.",
+      "family": "165",
+      "family_title": "The Harary–Hill and Zarankiewicz crossing-number formulas",
+      "manuscripts": [
+        {
+          "title": "The crossing number of complete graphs",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/165.md"
+    },
+    {
+      "id": "the_crossing_number_of_the_complete_bipartite_graph",
+      "relation": "resolves",
+      "site_status": "ai-proved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves Zarankiewicz's formula $\\mathrm{cr}(K_{m,n}) = \\lfloor\\frac m2\\rfloor\\lfloor\\frac{m-1}2\\rfloor\\lfloor\\frac n2\\rfloor\\lfloor\\frac{n-1}2\\rfloor$ for all positive $m, n$, settling Turán's brick factory problem.",
+      "family": "165",
+      "family_title": "The Harary–Hill and Zarankiewicz crossing-number formulas",
+      "manuscripts": [
+        {
+          "title": "The crossing number of complete bipartite graphs",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-crossing-number-of-complete-bipartite-graphs-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/165.md"
+    },
+    {
+      "id": "2009.03418__00",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves the $t = 0$ case, Hill's formula $\\mathrm{cr}(K_n) = H(n)$; complete graphs minus a matching are not treated.",
+      "family": "165",
+      "family_title": "The Harary–Hill and Zarankiewicz crossing-number formulas",
+      "manuscripts": [
+        {
+          "title": "The crossing number of complete graphs",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-crossing-number-of-complete-graphs-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/165.md"
+    },
+    {
+      "id": "seymours_second_neighbourhood_conjecture",
+      "relation": "resolves",
+      "site_status": "ai-proved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves that every nonempty finite oriented graph has a vertex $v$ with $|N^+(v)| \\le |N^{++}(v)|$, where $N^{++}(v)$ is the set of vertices at directed distance exactly two from $v$.",
+      "family": "173",
+      "family_title": "Seymour’s second-neighborhood conjecture",
+      "manuscripts": [
+        {
+          "title": "A proof of Seymour’s second-neighborhood conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/173.md"
+    },
+    {
+      "id": "caccetta_haggkvist_conjecture",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "high",
+      "one_line": "OpenAI's proof of Seymour's second-neighbourhood conjecture yields a statement this page lists as open: every $n$-vertex digraph with minimum outdegree and minimum indegree at least $n/3$ has a cycle of length at most 3. It also gives the girth-four case of the Behzad–Chartrand–Wall conjecture: an $r$-regular digraph with no cycle of length at most 3 has at least $3r+1$ vertices. The case $r = n/3$ of the conjecture itself, which bounds only the outdegree, remains open.",
+      "family": "173",
+      "family_title": "Seymour’s second-neighborhood conjecture",
+      "manuscripts": [
+        {
+          "title": "A proof of Seymour’s second-neighborhood conjecture",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/173.md",
+      "derivation": "The manuscript derives both statements for oriented graphs in its closing corollary on directed cycles; a digraph containing a 2-cycle already has a cycle of length at most 3."
+    },
+    {
+      "id": "bm-054",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves that every 5-colouring of the plane, with no measurability assumption, has a monochromatic pair of points at distance 1, so the chromatic number of the plane is 6 or 7.",
+      "family": "158",
+      "family_title": "The Euclidean plane cannot be colored with five colors",
+      "manuscripts": [
+        {
+          "title": "The Euclidean plane is not five-colorable",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/158.md"
+    },
+    {
+      "id": "barnettes_conjecture",
+      "relation": "resolves",
+      "site_status": "ai-proved",
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves that every finite simple cubic bipartite planar 3-connected graph has a Hamiltonian cycle.",
+      "family": "180",
+      "family_title": "Barnette’s Hamiltonian-cycle conjecture",
+      "manuscripts": [
+        {
+          "title": "Paired states and Hamiltonian cycles in cubic bipartite planar graphs",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/180.md"
+    },
+    {
+      "id": "decomposing_an_eulerian_graph_into_cycles",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript proves the Erdős–Gallai conjecture that every $n$-vertex graph splits into $O(n)$ cycles and edges, and deduces that every Eulerian graph splits into at most $Cn$ cycles. Hajós's bound $\\frac12(n-1)$ is not reached: $C$ is not determined.",
+      "family": "181",
+      "family_title": "The Erdős–Gallai cycle-decomposition conjecture",
+      "manuscripts": [
+        {
+          "title": "A linear cycle-and-edge decomposition of every graph",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/A-linear-cycle-and-edge-decomposition-of-every-graph-September-24-2026/main.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/181.md"
+    },
+    {
+      "id": "1704.02367__01",
+      "relation": "partial",
+      "site_status": null,
+      "match_confidence": "high",
+      "one_line": "OpenAI's manuscript, citing this question, constructs a fixed $66\\times66$ binary matrix for which ordered removal has no polynomial bound, ruling out the ideal polynomial dependence. It only forces $\\delta^{-1} \\ge \\exp(\\Omega(\\varepsilon^{-1/2}))$, so exponential dependence remains open.",
+      "family": "190",
+      "family_title": "Polynomial removal fails for ordered binary matrices",
+      "manuscripts": [
+        {
+          "title": "Polynomial removal fails for ordered binary matrices",
+          "pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/paper.pdf",
+          "lean": true
+        }
+      ],
+      "lean_scope_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/190.md"
+    }
+  ]
+}

@@ -62,6 +62,8 @@
 </section>
 {% endif %}
 
+{% include "_openai_result.html" %}
+
 <section class="statements">
 <div class="envtheorem envtheorem-{{ p.kind|lower|replace(' ','-') }}">
 <strong>{{ p.kind }}.</strong> {{ p.statement_text }}

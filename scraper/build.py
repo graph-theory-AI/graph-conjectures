@@ -8,6 +8,7 @@ Inputs:
   data/arxiv_conjectures.json   (optional; produced by scripts/arxiv_aggregate.py)
   data/arxiv_opg_matches.json   (optional; same)
   data/llm_proof_results.json   (optional; produced by scripts/sync_llm_proof_results.py)
+  data/openai_math_results.json (optional; hand-curated matches against github.com/openai/math)
   data/arxiv_authors.json       (optional; used for the author-slug → display-name map)
 
 Outputs:
@@ -142,6 +143,45 @@ def _review_with_ai_result(review: dict | None, result: dict) -> dict:
         "search_enabled": False,
     })
     return merged
+
+
+def _review_with_openai_result(review: dict | None, result: dict, meta: dict) -> dict:
+    """Overlay an OpenAI-claimed status, keeping the literature verdict as a note."""
+    merged = dict(review or {})
+    before = (review or {}).get("status") or "unreviewed"
+    literature = (review or {}).get("summary", "")
+    merged.update({
+        "status": result["site_status"],
+        "confidence": result.get("match_confidence", "medium"),
+        "summary": result.get("one_line", ""),
+        "notes": f"Literature status before this model-generated claim: {before}. {literature}".strip(),
+        "reviewed_at": meta.get("checked_at", ""),
+        "model": meta.get("matched_by", ""),
+        "search_enabled": False,
+    })
+    return merged
+
+
+def _attach_openai_result(row: dict, result: dict, meta: dict) -> None:
+    """Attach an OpenAI manuscript match to a row, promoting its status when the
+    claim settles the statement and neither the literature nor an earlier AI
+    write-up already decides it."""
+    res = dict(result)
+    current = (row.get("_review") or {}).get("status")
+    res["status_before"] = current
+    ai = row.get("_ai_result") or {}
+    if ai.get("status_promoted") and ai.get("site_status") != res.get("site_status"):
+        log.warning("OpenAI claim %s contradicts the AI write-up %s on %s",
+                    res.get("site_status"), ai.get("site_status"), res["id"])
+    res["status_promoted"] = (
+        res.get("relation") in {"resolves", "implies"}
+        and bool(res.get("site_status"))
+        and current not in {"solved", "disproved"}
+        and not ai.get("status_promoted")
+    )
+    row["_openai_result"] = res
+    if res["status_promoted"]:
+        row["_review"] = _review_with_openai_result(row.get("_review"), res, meta)
 
 
 def _year_from_date(s: str | None) -> int | None:
@@ -449,6 +489,7 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "_review":         rec.get("_review"),
         "_known_resolution": rec.get("_known_resolution"),
         "_ai_result":      rec.get("_ai_result"),
+        "_openai_result":  rec.get("_openai_result"),
         "_review_id":      rec.get("_review_id"),
         "_nice_name":      nice_name,
         "_paper_label":    paper_label,
@@ -500,6 +541,7 @@ def _virtual_problem_from_bm(rec: dict, source: str = "bm") -> dict:
         "canonical_url":   src.get("url", ""),
         "_erdos":          None,
         "_review":         rec.get("_review"),
+        "_openai_result":  rec.get("_openai_result"),
         "_review_id":      bm_id,
     }
 
@@ -636,6 +678,17 @@ def main(argv: list[str] | None = None) -> int:
     llm_disclaimer = (
         llm_results_doc.get("disclaimer", "") if isinstance(llm_results_doc, dict) else ""
     )
+    openai_path = args.data_dir / "openai_math_results.json"
+    openai_doc = (
+        json.loads(openai_path.read_text(encoding="utf-8"))
+        if openai_path.exists() else {}
+    )
+    openai_results_by_id = {
+        result["id"]: result for result in openai_doc.get("results", [])
+        if isinstance(result, dict) and result.get("id")
+    }
+    openai_meta = {k: v for k, v in openai_doc.items() if k != "results"}
+    matched_openai_ids: set[str] = set()
     counters: dict[str, int] = {}
     n_reviews_attached = 0
     n_names_attached   = 0
@@ -689,6 +742,9 @@ def main(argv: list[str] | None = None) -> int:
                 )
             n_ai_results_attached += 1
             matched_ai_result_ids.add(s["_review_id"])
+        if s["_review_id"] in openai_results_by_id:
+            _attach_openai_result(s, openai_results_by_id[s["_review_id"]], openai_meta)
+            matched_openai_ids.add(s["_review_id"])
     log.info("attached %d arxiv reviews and %d nice names to states records",
              n_reviews_attached, n_names_attached)
 
@@ -708,6 +764,9 @@ def main(argv: list[str] | None = None) -> int:
                 n_bm_reviews += 1
             except Exception as e:  # noqa: BLE001
                 log.warning("could not load Bondy–Murty review %s: %s", rp.name, e)
+        if rec["bm_id"] in openai_results_by_id:
+            _attach_openai_result(rec, openai_results_by_id[rec["bm_id"]], openai_meta)
+            matched_openai_ids.add(rec["bm_id"])
     log.info("loaded %d Bondy–Murty record(s), %d with a review", len(bm_records), n_bm_reviews)
 
     # ── load hand-written "others" workstream conjectures (optional) ───────────
@@ -726,6 +785,9 @@ def main(argv: list[str] | None = None) -> int:
                 n_others_reviews += 1
             except Exception as e:  # noqa: BLE001
                 log.warning("could not load 'others' review %s: %s", rp.name, e)
+        if rec["id"] in openai_results_by_id:
+            _attach_openai_result(rec, openai_results_by_id[rec["id"]], openai_meta)
+            matched_openai_ids.add(rec["id"])
     log.info("loaded %d 'others' record(s), %d with a review", len(others_records), n_others_reviews)
 
     # Only manually confirmed cross-refs to erdosproblems.com are surfaced;
@@ -763,6 +825,9 @@ def main(argv: list[str] | None = None) -> int:
                 )
             n_ai_results_attached += 1
             matched_ai_result_ids.add(prob["slug"])
+        if prob["slug"] in openai_results_by_id:
+            _attach_openai_result(prob, openai_results_by_id[prob["slug"]], openai_meta)
+            matched_openai_ids.add(prob["slug"])
 
     unmatched_resolutions = set(known_resolutions_by_id) - matched_resolution_ids
     if unmatched_resolutions:
@@ -774,6 +839,11 @@ def main(argv: list[str] | None = None) -> int:
                     sorted(unmatched_ai_results))
     log.info("attached %d known literature resolution(s) and %d AI write-up(s)",
              n_known_resolutions_attached, n_ai_results_attached)
+    unmatched_openai = set(openai_results_by_id) - matched_openai_ids
+    if unmatched_openai:
+        log.warning("OpenAI manuscript matches do not match catalog records: %s",
+                    sorted(unmatched_openai))
+    log.info("attached %d OpenAI manuscript match(es)", len(matched_openai_ids))
 
     n_attached = _attach_arxiv_matches_to_opg(
         problems, arxiv_matches, confirmed_only=args.confirmed_only,
@@ -928,6 +998,8 @@ def main(argv: list[str] | None = None) -> int:
         "timeline_status_counts": timeline_status_counts,
         "timeline_source_counts": timeline_source_counts,
         "timeline_ticks":       timeline_ticks,
+        "openai_meta":          openai_meta,
+        "openai_match_count":   len(matched_openai_ids),
     }
 
     # ── output ─────────────────────────────────────────────────────────────────
