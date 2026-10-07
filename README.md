@@ -42,6 +42,13 @@ exact statement, either directly or through a short argument recorded on the pag
 Partial progress is linked without changing the status. See
 [OpenAI's manuscript collection](#recently-claimed-openais-manuscript-collection-october-2026).
 
+The site also displays a separate `ill-posed` diagnostic on 23 arXiv records
+flagged by the automated attacks in
+[Graph-Theory-LLM-Proofs](https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs).
+These unrefereed model self-reports do not overwrite the literature-review
+status; each affected detail page links to the complete attack artifact and
+includes its reason and caveat.
+
 **Four corpora, one merged index:**
 
 | corpus | count | scope |
