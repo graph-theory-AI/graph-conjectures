@@ -80,6 +80,13 @@ def _build_search_text(p: dict) -> str:
         parts += [k.get("label", "") for k in p.get("keywords", [])]
         if p.get("posted_by"):
             parts.append(p["posted_by"].get("name", ""))
+    attack = p.get("_llm_attack") or {}
+    if attack:
+        parts += [
+            "llm-attack:" + attack.get("verdict", ""),
+            attack.get("one_line", ""),
+            attack.get("caveats", ""),
+        ]
     return " ".join(parts).lower().replace('"', "").replace("'", "")
 
 
@@ -490,6 +497,7 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "_known_resolution": rec.get("_known_resolution"),
         "_ai_result":      rec.get("_ai_result"),
         "_openai_result":  rec.get("_openai_result"),
+        "_llm_attack":     rec.get("_llm_attack"),
         "_review_id":      rec.get("_review_id"),
         "_nice_name":      nice_name,
         "_paper_label":    paper_label,
@@ -678,6 +686,14 @@ def main(argv: list[str] | None = None) -> int:
     llm_disclaimer = (
         llm_results_doc.get("disclaimer", "") if isinstance(llm_results_doc, dict) else ""
     )
+    ill_posed_results = llm_results_doc.get("ill_posed_results", []) if isinstance(llm_results_doc, dict) else []
+    ill_posed_by_id = {
+        result["id"]: result for result in ill_posed_results
+        if isinstance(result, dict) and result.get("id")
+    }
+    ill_posed_disclaimer = (
+        llm_results_doc.get("ill_posed_disclaimer", "") if isinstance(llm_results_doc, dict) else ""
+    )
     openai_path = args.data_dir / "openai_math_results.json"
     openai_doc = (
         json.loads(openai_path.read_text(encoding="utf-8"))
@@ -696,6 +712,8 @@ def main(argv: list[str] | None = None) -> int:
     n_ai_results_attached = 0
     matched_resolution_ids: set[str] = set()
     matched_ai_result_ids: set[str] = set()
+    n_ill_posed_attached = 0
+    matched_ill_posed_ids: set[str] = set()
     for s in arxiv_states:
         sid = s.get("safe_id") or s.get("arxiv_id","").replace("/","_")
         idx = counters.get(sid, 0)
@@ -745,6 +763,11 @@ def main(argv: list[str] | None = None) -> int:
         if s["_review_id"] in openai_results_by_id:
             _attach_openai_result(s, openai_results_by_id[s["_review_id"]], openai_meta)
             matched_openai_ids.add(s["_review_id"])
+        if s["_review_id"] in ill_posed_by_id:
+            # Diagnostic tag only: it never touches the literature-review status.
+            s["_llm_attack"] = ill_posed_by_id[s["_review_id"]]
+            n_ill_posed_attached += 1
+            matched_ill_posed_ids.add(s["_review_id"])
     log.info("attached %d arxiv reviews and %d nice names to states records",
              n_reviews_attached, n_names_attached)
 
@@ -844,6 +867,11 @@ def main(argv: list[str] | None = None) -> int:
         log.warning("OpenAI manuscript matches do not match catalog records: %s",
                     sorted(unmatched_openai))
     log.info("attached %d OpenAI manuscript match(es)", len(matched_openai_ids))
+    unmatched_ill_posed = set(ill_posed_by_id) - matched_ill_posed_ids
+    if unmatched_ill_posed:
+        log.warning("ill-posed diagnostics do not match catalog records: %s",
+                    sorted(unmatched_ill_posed))
+    log.info("attached %d ill-posed diagnostic(s)", n_ill_posed_attached)
 
     n_attached = _attach_arxiv_matches_to_opg(
         problems, arxiv_matches, confirmed_only=args.confirmed_only,
@@ -988,6 +1016,8 @@ def main(argv: list[str] | None = None) -> int:
         "arxiv_count":          len(arxiv_rows),
         "arxiv_review_count":   arxiv_review_count,
         "arxiv_review_status_counts": arxiv_review_status_counts,
+        "llm_ill_posed_count":  n_ill_posed_attached,
+        "ill_posed_disclaimer": ill_posed_disclaimer,
         "bm_count":             len(bm_rows),
         "bm_review_count":      bm_review_count,
         "bm_review_status_counts": bm_review_status_counts,
