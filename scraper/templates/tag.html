@@ -20,11 +20,7 @@
 {% for p in problems %}
 <tr>
   <td>
-    {% if p._source == 'arxiv' %}
-      <a href="{{ root }}arxiv/{{ p._review_id or p.safe_id }}/">{{ p.title }}</a>
-    {% else %}
-      <a href="{{ root }}op/{{ p.slug }}/">{{ p.title }}</a>
-    {% endif %}
+    <a href="{{ root }}{{ page_url(p) }}">{{ p.title }}</a>
   </td>
   <td><span class="badge source source-{{ p._source or 'opg' }}">{{ p._source or 'opg' }}</span></td>
   <td>{% if p._review %}<span class="status-badge status-{{ p._review.status }}">{{ p._review.status }}</span>{% endif %}</td>

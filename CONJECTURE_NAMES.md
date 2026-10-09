@@ -5,7 +5,8 @@ Every conjecture in the corpus now carries a canonical short `name` of the form 
 * `PREFIX` is the corpus: `OPG` (Open Problem Garden), `AX` (arXiv-extracted), `BM` (Bondy–Murty Appendix A), `OTH` (others).
 * `english_name` is a few lowercase words (letters, digits, underscores) conveying the statement: objects, parameter, shape of the claim. No `conjecture`/`problem` words, no paper-local numbering; a classical name under which the conjecture is known (author names such as `hadwiger`, `seymour`, `matthews_sumner`, or a nickname such as `seagull`, `earth_moon`, `two_color`) is kept, usually as the leading word.
 * All 1034 names are distinct. Slight variants of one statement (special cases, directed analogues, duplicates across corpora, sibling questions on one quantity) share a leading stem and differ by a trailing qualifier, e.g. `OPG_bridgeless_cycle_double_cover` / `OPG_bridgeless_cycle_double_cover_strong_5` / `BM_bridgeless_cycle_double_cover_5_cycles`.
-* The old identifier is unchanged and remains the key for review files, site URLs, `relations.json` and the sibling repositories: OPG slug, arXiv review id `<arxiv_id>__<NN>`, Bondy–Murty `bm_id`, others `id`.
+* The old identifier is unchanged and remains the key for review files, `relations.json` and the sibling repositories: OPG slug, arXiv review id `<arxiv_id>__<NN>`, Bondy–Murty `bm_id`, others `id`.
+* Site pages are addressed by the canonical name, e.g. `/bm/BM_cubic_second_hamilton_cycle_polynomial/`; the old address (`/bm/bm-021/`) is kept as a redirect.
 
 Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 

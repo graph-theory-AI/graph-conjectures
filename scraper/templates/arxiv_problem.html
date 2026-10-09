@@ -31,7 +31,7 @@
 {% if opg_match %}
 <aside class="intersection">
   This appears to relate to an OPG problem:
-  <a href="{{ root }}op/{{ opg_match.slug }}/">{{ opg_match.title }}</a>
+  <a href="{{ root }}{{ opg_page_url(opg_match.slug) }}">{{ opg_match.title }}</a>
   (fuzzy-match score {{ opg_match.score }}{% if not opg_match.confirmed %}, not yet manually confirmed{% endif %}).
 </aside>
 {% endif %}

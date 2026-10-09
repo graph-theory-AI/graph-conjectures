@@ -104,8 +104,10 @@ Every record of the four corpora carries a canonical short `name` of the form
 `BM_hypohamiltonian_min_degree_4`, `OTH_meyniel_cop_number_sqrt_n`). The 1034
 names are distinct; slight variants of one statement share a leading stem and
 differ by a trailing qualifier. The old identifiers (OPG slug, arXiv review id,
-`bm_id`, others `id`) are unchanged and remain the keys for files, URLs and
-sibling repositories; the result files `data/llm_proof_results.json` and
+`bm_id`, others `id`) are unchanged and remain the keys for data files and
+sibling repositories. Site pages are addressed by the canonical name
+(`/bm/BM_cubic_second_hamilton_cycle_polynomial/`); the old address (`/bm/bm-021/`)
+redirects there; the result files `data/llm_proof_results.json` and
 `data/openai_math_results.json` are keyed by them and also carry the `name`.
 The correspondence old id → new name is in
 [`CONJECTURE_NAMES.md`](CONJECTURE_NAMES.md) and, machine-readable, in
