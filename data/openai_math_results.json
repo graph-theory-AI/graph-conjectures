@@ -27,7 +27,7 @@
     },
     {
       "id": "seagull_problem",
-      "name": "OPG_independence_2_clique_minor_half_n",
+      "name": "OPG_seagull_independence_2_clique_minor_half_n",
       "relation": "resolves",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -351,7 +351,7 @@
     },
     {
       "id": "bm-054",
-      "name": "BM_plane_unit_distance_chromatic_number",
+      "name": "BM_hadwiger_nelson_plane_unit_distance_chromatic",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "high",

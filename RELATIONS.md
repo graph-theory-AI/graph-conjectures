@@ -169,7 +169,7 @@ whatever it says *beyond* CDC, and the reviewer notes on the seven pages now say
 what that is.
 
 The Bondy–Murty extension added three more edges into CDC, all vacuous as
-well: Bondy's small CDC conjecture (`BM_bridgeless_cycle_double_cover_small`, `bm:bm-013`), the 5-cycle double cover
+well: Bondy's small CDC conjecture (`BM_bridgeless_cycle_double_cover_small_bondy`, `bm:bm-013`), the 5-cycle double cover
 conjecture (`BM_bridgeless_cycle_double_cover_5_cycles` (`bm:bm-014`), the same statement as `OPG_bridgeless_cycle_double_cover_5_cycles` (`opg:m_n_cycle_covers`)) and the
 orientable 5-CDC conjecture (`BM_bridgeless_cycle_double_cover_orientable_5` (`bm:bm-026`), which also implies `BM_bridgeless_cycle_double_cover_5_cycles` (`bm:bm-014`)).
 

@@ -157,7 +157,7 @@ manuscript's TeX source. Status changes:
 | page | before | after | OpenAI manuscript | Lean |
 |---|---|---|---|---|
 | `BM_hadwiger_minor_chromatic` (`bm-041`) Hadwiger's conjecture | open | **ai-disproved** | A counterexample to Hadwiger's conjecture: $\alpha(G)\le2$ and $h(G)<26m/75+2/3<m/2\le\chi(G)$ | no |
-| `OPG_independence_2_clique_minor_half_n` (`seagull_problem`) | partial | **ai-disproved** | same graphs: no clique minor on $m/2$ vertices | no |
+| `OPG_seagull_independence_2_clique_minor_half_n` (`seagull_problem`) | partial | **ai-disproved** | same graphs: no clique minor on $m/2$ vertices | no |
 | `AX_kt_minor_free_independence_n_over_t` (`1907.12999__00`) ($\alpha\ge n/t$ without a $K_{t+1}$ minor) | open | **ai-disproved** | same graphs, with $t=h(G)$ | no |
 | `OPG_hadwiger_list_kt_minor_free_choosable` (`list_hadwiger_conjecture`) | partial | **ai-proved** | A linear list-coloring bound in terms of the Hadwiger number | yes |
 | `OPG_sidorenko_bipartite_homomorphism_density` (`sidorenkos_conjecture`) | partial | **ai-disproved** | A counterexample to Sidorenko's conjecture (35 vertices, 66 edges) | yes |
@@ -172,7 +172,7 @@ manuscript's TeX source. Status changes:
 Nine further entries link a manuscript as partial progress, with their status
 unchanged:
 
-- `BM_plane_unit_distance_chromatic_number` (`bm-054`): the chromatic number of the plane is 6 or 7.
+- `BM_hadwiger_nelson_plane_unit_distance_chromatic` (`bm-054`): the chromatic number of the plane is 6 or 7.
 - `OPG_caccetta_haggkvist_outdegree_short_cycle` (`caccetta_haggkvist_conjecture`): the second-neighbourhood proof gives a
   cycle of length at most 3 when both minimum degrees are at least $n/3$, and
   the girth-four case of Behzad–Chartrand–Wall. Both are listed as open on the
@@ -186,7 +186,7 @@ unchanged:
 - `AX_crossing_number_kn_minus_matching` (`2009.03418__00`): only the $t=0$ case.
 - `AX_ordered_removal_lemma_binary_matrices_polynomial` (`1704.02367__01`): polynomial removal is ruled out; exponential dependence is open.
 
-Some entries are not settled despite overlapping topics. `BM_triangle_free_infinite_chromatic_induced_trees` (`bm-050`)
+Some entries are not settled despite overlapping topics. `BM_gyarfas_triangle_free_infinite_chromatic_induced_trees` (`bm-050`)
 (Gyárfás–Sumner for triangle-free graphs) is a different statement from the
 Gyárfás tree-cover conjecture that family 162 disproves. `BM_hajos_k5_k6_subdivision_chromatic` (`bm-042`) (Hajós for
 $k=5,6$) is untouched.

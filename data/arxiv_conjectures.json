@@ -11530,7 +11530,7 @@
     "also_stated_in": []
   },
   {
-    "name": "AX_hereditary_tau_d_bounded_implies_polynomial",
+    "name": "AX_hereditary_tau_d_bounded_implies_polynomial_esperet",
     "role": "states",
     "kind": "Question",
     "title": "Question: Polynomial bound analogue of Esperet's conjecture for $\\tau_d$",
@@ -13499,7 +13499,7 @@
     "also_stated_in": []
   },
   {
-    "name": "AX_forest_free_polynomial_chi_all_forests",
+    "name": "AX_forest_free_polynomial_chi_gyarfas_sumner_all_forests",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture (polynomial Gyárfás–Sumner)",
@@ -13780,7 +13780,7 @@
     "also_stated_in": []
   },
   {
-    "name": "AX_kst_minor_free_choosable_fixed_s",
+    "name": "AX_kst_minor_free_choosable_woodall_fixed_s",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: Woodall's conjecture for fixed s",
@@ -13810,7 +13810,7 @@
     "also_stated_in": []
   },
   {
-    "name": "AX_kst_minor_free_choosable_smallest_counterexample",
+    "name": "AX_kst_minor_free_choosable_woodall_smallest_counterexample",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: smallest counterexample to Woodall's conjecture",
@@ -22912,7 +22912,7 @@
     "also_stated_in": []
   },
   {
-    "name": "AX_z5_antisymmetric_flow_edge_connected_digraphs",
+    "name": "AX_jaeger_antisymmetric_z5_flow_edge_connected_digraphs",
     "role": "states",
     "kind": "Informal",
     "title": "Antisymmetric variant of Jaeger's weak 3-flow conjecture",

@@ -1,7 +1,7 @@
 [
   {
     "bm_id": "bm-003",
-    "name": "BM_reconstruction_infinite_hypomorphic_mutual_subgraph",
+    "name": "BM_halin_reconstruction_infinite_hypomorphic_mutual_subgraph",
     "appendix_number": 3,
     "section": "Reconstruction",
     "title": "Halin's conjecture on hypomorphic infinite graphs",
@@ -33,7 +33,7 @@
   },
   {
     "bm_id": "bm-011",
-    "name": "BM_edge_connected_graphs_tree_decomposition",
+    "name": "BM_barat_thomassen_tree_decomposition_edge_connected",
     "appendix_number": 11,
     "section": "Covers, decompositions and packings",
     "title": "Barát–Thomassen conjecture",
@@ -67,7 +67,7 @@
   },
   {
     "bm_id": "bm-013",
-    "name": "BM_bridgeless_cycle_double_cover_small",
+    "name": "BM_bridgeless_cycle_double_cover_small_bondy",
     "appendix_number": 13,
     "section": "Covers, decompositions and packings",
     "title": "Bondy's small cycle double cover conjecture",
@@ -240,7 +240,7 @@
   },
   {
     "bm_id": "bm-025",
-    "name": "BM_spanning_k_connected_bipartite_subgraph",
+    "name": "BM_thomassen_spanning_k_connected_bipartite_subgraph",
     "appendix_number": 25,
     "section": "Connectivity",
     "title": "Thomassen's spanning k-connected bipartite subgraph conjecture",
@@ -311,7 +311,7 @@
   },
   {
     "bm_id": "bm-029",
-    "name": "BM_5_connected_nonplanar_k5_subdivision",
+    "name": "BM_kelmans_seymour_5_connected_nonplanar_k5_subdivision",
     "appendix_number": 29,
     "section": "Embeddings",
     "title": "Kelmans–Seymour conjecture",
@@ -337,7 +337,7 @@
   },
   {
     "bm_id": "bm-031",
-    "name": "BM_thrackle_edges_at_most_vertices",
+    "name": "BM_conway_thrackle_edges_at_most_vertices",
     "appendix_number": 31,
     "section": "Embeddings",
     "title": "Conway's thrackle conjecture",
@@ -363,7 +363,7 @@
   },
   {
     "bm_id": "bm-032",
-    "name": "BM_planar_integer_length_straight_line_drawing",
+    "name": "BM_harborth_planar_integer_length_straight_line_drawing",
     "appendix_number": 32,
     "section": "Embeddings",
     "title": "Harborth's conjecture (integral straight-line drawings)",
@@ -512,7 +512,7 @@
   },
   {
     "bm_id": "bm-039",
-    "name": "BM_tree_ramsey_number_2n_minus_2",
+    "name": "BM_burr_erdos_tree_ramsey_2n_minus_2",
     "appendix_number": 39,
     "section": "Ramsey numbers",
     "title": "Burr–Erdős tree Ramsey conjecture",
@@ -682,7 +682,7 @@
   },
   {
     "bm_id": "bm-050",
-    "name": "BM_triangle_free_infinite_chromatic_induced_trees",
+    "name": "BM_gyarfas_triangle_free_infinite_chromatic_induced_trees",
     "appendix_number": 50,
     "section": "Vertex colouring",
     "title": "Gyárfás's tree conjecture for triangle-free graphs",
@@ -712,7 +712,7 @@
   },
   {
     "bm_id": "bm-053",
-    "name": "BM_toroidal_delete_3_vertices_4_colorable",
+    "name": "BM_albertson_toroidal_delete_3_vertices_4_colorable",
     "appendix_number": 53,
     "section": "Colouring graphs embedded in surfaces",
     "title": "Albertson's toroidal colouring conjecture",
@@ -738,7 +738,7 @@
   },
   {
     "bm_id": "bm-054",
-    "name": "BM_plane_unit_distance_chromatic_number",
+    "name": "BM_hadwiger_nelson_plane_unit_distance_chromatic",
     "appendix_number": 54,
     "section": "Colouring graphs embedded in surfaces",
     "title": "Chromatic number of the plane (Hadwiger–Nelson problem)",
@@ -800,7 +800,7 @@
   },
   {
     "bm_id": "bm-060",
-    "name": "BM_edge_coloring_kempe_changes_reach_optimal",
+    "name": "BM_vizing_interchange_kempe_optimal_edge_coloring",
     "appendix_number": 60,
     "section": "Edge colouring",
     "title": "Vizing's interchange conjecture",
@@ -850,7 +850,7 @@
   },
   {
     "bm_id": "bm-064",
-    "name": "BM_longest_cycles_k_connected_intersection",
+    "name": "BM_smith_longest_cycles_k_connected_intersection",
     "appendix_number": 64,
     "section": "Paths and cycles in graphs",
     "title": "Smith's conjecture on longest cycles",
@@ -887,7 +887,7 @@
   },
   {
     "bm_id": "bm-065",
-    "name": "BM_cubic_cyclically_4_connected_long_cycle",
+    "name": "BM_bondy_cubic_cyclically_4_connected_long_cycle",
     "appendix_number": 65,
     "section": "Paths and cycles in graphs",
     "title": "Bondy's linear-length cycle conjecture for cyclically 4-edge-connected cubic graphs",
@@ -911,7 +911,7 @@
   },
   {
     "bm_id": "bm-066",
-    "name": "BM_long_cycles_pairwise_intersecting_hitting_set",
+    "name": "BM_birmele_long_cycles_pairwise_intersecting_hitting_set",
     "appendix_number": 66,
     "section": "Paths and cycles in graphs",
     "title": "Birmelé's conjecture on long cycles",
@@ -973,7 +973,7 @@
   },
   {
     "bm_id": "bm-079",
-    "name": "BM_4_connected_hamiltonian_claw_free",
+    "name": "BM_matthews_sumner_4_connected_claw_free_hamiltonian",
     "appendix_number": 79,
     "section": "Hamilton paths and cycles",
     "title": "Matthews–Sumner conjecture",
@@ -1035,7 +1035,7 @@
   },
   {
     "bm_id": "bm-085",
-    "name": "BM_planar_cubic_three_hamilton_cycles_triangle",
+    "name": "BM_cantoni_planar_cubic_three_hamilton_cycles_triangle",
     "appendix_number": 85,
     "section": "Hamilton paths and cycles",
     "title": "Cantoni's conjecture",
@@ -1059,7 +1059,7 @@
   },
   {
     "bm_id": "bm-088",
-    "name": "BM_vertex_transitive_finitely_many_non_hamiltonian",
+    "name": "BM_thomassen_vertex_transitive_finitely_many_non_hamiltonian",
     "appendix_number": 88,
     "section": "Hamilton paths and cycles",
     "title": "Thomassen's conjecture on Hamiltonian vertex-transitive graphs",
@@ -1096,7 +1096,7 @@
   },
   {
     "bm_id": "bm-089",
-    "name": "BM_k_tough_graphs_hamiltonian",
+    "name": "BM_chvatal_toughness_k_tough_hamiltonian",
     "appendix_number": 89,
     "section": "Hamilton paths and cycles",
     "title": "Chvátal's toughness conjecture",
@@ -1148,7 +1148,7 @@
   },
   {
     "bm_id": "bm-091",
-    "name": "BM_bipartite_hypotraceable_nonexistence",
+    "name": "BM_grotschel_bipartite_hypotraceable_nonexistence",
     "appendix_number": 91,
     "section": "Hamilton paths and cycles",
     "title": "Grötschel's conjecture on bipartite hypotraceable graphs",

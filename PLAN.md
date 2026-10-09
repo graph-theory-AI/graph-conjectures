@@ -123,7 +123,7 @@ Graph_conjectures/
 
 ## Appendix A — Parser spec
 
-Audited against 5 representative pages (`OPG_independence_2_clique_minor_half_n` (`seagull_problem`), `OPG_reconstruction_vertex_deck_isomorphic` (`reconstruction_conjecture`), `OPG_moore_graph_degree_57_existence` (`57_regular_moore_graph`), `OPG_strong_edge_chromatic_delta_squared_bound` (`strong_edge_colouring_conjecture`), `OPG_bermond_thomassen_outdegree_disjoint_cycles` (`the_bermond_thomassen_conjecture`)) plus the listing page. All five share one Drupal/`bluebreeze` template; differences are content-driven.
+Audited against 5 representative pages (`OPG_seagull_independence_2_clique_minor_half_n` (`seagull_problem`), `OPG_reconstruction_vertex_deck_isomorphic` (`reconstruction_conjecture`), `OPG_moore_graph_degree_57_existence` (`57_regular_moore_graph`), `OPG_strong_edge_chromatic_delta_squared_bound` (`strong_edge_colouring_conjecture`), `OPG_bermond_thomassen_outdegree_disjoint_cycles` (`the_bermond_thomassen_conjecture`)) plus the listing page. All five share one Drupal/`bluebreeze` template; differences are content-driven.
 
 ### Field selectors
 

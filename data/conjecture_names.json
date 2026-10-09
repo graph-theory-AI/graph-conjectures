@@ -1,5 +1,5 @@
 {
-  "description": "Canonical short names for every conjecture in the corpus, of the form PREFIX_english_name. PREFIX identifies the corpus (OPG: openproblemgarden.org, AX: arXiv-extracted, BM: Bondy–Murty Appendix A, OTH: others); english_name is a few lowercase words giving the gist of the statement. Names are unique across all corpora. Slight variants of one statement share a leading stem and differ by a trailing qualifier. The `id` column is the pre-existing identifier (OPG slug, arXiv review id <arxiv_id>__<NN>, Bondy–Murty bm_id, or others id), which stays the key for files, URLs and sibling repositories.",
+  "description": "Canonical short names for every conjecture in the corpus, of the form PREFIX_english_name. PREFIX identifies the corpus (OPG: openproblemgarden.org, AX: arXiv-extracted, BM: Bondy–Murty Appendix A, OTH: others); english_name is a few lowercase words giving the gist of the statement, keeping any classical name (author names or a nickname such as seagull) under which the conjecture is known. Names are unique across all corpora. Slight variants of one statement share a leading stem and differ by a trailing qualifier. The `id` column is the pre-existing identifier (OPG slug, arXiv review id <arxiv_id>__<NN>, Bondy–Murty bm_id, or others id), which stays the key for files, URLs and sibling repositories.",
   "generated_at": "2026-10-06",
   "pattern": "^(OPG|AX|BM|OTH)_[a-z0-9]+(_[a-z0-9]+){1,7}$",
   "count": 1034,
@@ -21,7 +21,7 @@
       "site_path": "/op/3_colourability_of_arrangements_of_great_circles/"
     },
     {
-      "name": "OPG_cubic_tree_cycles_matching_decomposition",
+      "name": "OPG_3_decomposition_cubic_tree_cycles_matching",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "3_decomposition_conjecture",
@@ -269,7 +269,7 @@
       "site_path": "/op/book_thickness_of_subdivisions/"
     },
     {
-      "name": "OPG_nowhere_zero_6_flow_bidirected",
+      "name": "OPG_bouchet_nowhere_zero_6_flow_bidirected",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "bouchets_6_flow_conjecture",
@@ -837,7 +837,7 @@
       "site_path": "/op/graceful_tree_conjecture/"
     },
     {
-      "name": "OPG_tree_iterated_line_graph_orders",
+      "name": "OPG_graham_tree_iterated_line_graph_orders",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "grahams_conjecture_on_tree_reconstruction",
@@ -877,7 +877,7 @@
       "site_path": "/op/hamilton_cycle_in_small_d_diregular_graphs/"
     },
     {
-      "name": "OPG_4_connected_hamiltonian_line_graphs",
+      "name": "OPG_thomassen_4_connected_line_graphs_hamiltonian",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "hamiltonian_cycles_in_line_graphs",
@@ -901,7 +901,7 @@
       "site_path": "/op/hamiltonian_cycles_in_powers_of_infinite_graphs/"
     },
     {
-      "name": "OPG_vertex_transitive_hamiltonian_path",
+      "name": "OPG_lovasz_vertex_transitive_hamiltonian_path",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
@@ -997,7 +997,7 @@
       "site_path": "/op/jones_conjecture/"
     },
     {
-      "name": "OPG_highly_connected_no_k6_minor_apex",
+      "name": "OPG_jorgensen_highly_connected_no_k6_minor_apex",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "jorgensens_conjecture",
@@ -1029,7 +1029,7 @@
       "site_path": "/op/large_acyclic_induced_subdigraph_in_a_planar_oriented_graph/"
     },
     {
-      "name": "OPG_planar_induced_forest_half_vertices",
+      "name": "OPG_albertson_berman_planar_induced_forest_half",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "large_induced_forest_in_a_planar_graph",
@@ -1141,7 +1141,7 @@
       "site_path": "/op/matchings_extends_to_hamilton_cycles_in_hypercubes/"
     },
     {
-      "name": "OPG_valency_variety_chromatic_lower_bound",
+      "name": "OPG_melnikov_valency_variety_chromatic_bound",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "melnikovs_valency_variety_problem",
@@ -1317,7 +1317,7 @@
       "site_path": "/op/partitioning_edge_connectivity/"
     },
     {
-      "name": "OPG_planar_oriented_two_acyclic_parts",
+      "name": "OPG_two_color_planar_oriented_acyclic_parts",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "partitioning_planar_digraphs",
@@ -1413,7 +1413,7 @@
       "site_path": "/op/rysers_conjecture/"
     },
     {
-      "name": "OPG_independence_2_clique_minor_half_n",
+      "name": "OPG_seagull_independence_2_clique_minor_half_n",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "seagull_problem",
@@ -1421,7 +1421,7 @@
       "site_path": "/op/seagull_problem/"
     },
     {
-      "name": "OPG_r_graph_edge_chromatic_r_plus_1",
+      "name": "OPG_seymour_r_graph_edge_chromatic_r_plus_1",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "seymours_r_graph_conjecture",
@@ -1437,7 +1437,7 @@
       "site_path": "/op/seymours_second_neighbourhood_conjecture/"
     },
     {
-      "name": "OPG_infinite_graph_proper_self_minor",
+      "name": "OPG_seymour_self_minor_infinite_graph",
       "corpus": "opg",
       "prefix": "OPG",
       "id": "seymours_self_minor_conjecture",
@@ -4557,7 +4557,7 @@
       "site_path": "/arxiv/2202.05557__01/"
     },
     {
-      "name": "AX_hereditary_tau_d_bounded_implies_polynomial",
+      "name": "AX_hereditary_tau_d_bounded_implies_polynomial_esperet",
       "corpus": "arxiv",
       "prefix": "AX",
       "id": "2202.05557__02",
@@ -5021,7 +5021,7 @@
       "site_path": "/arxiv/2202.09118__01/"
     },
     {
-      "name": "AX_forest_free_polynomial_chi_all_forests",
+      "name": "AX_forest_free_polynomial_chi_gyarfas_sumner_all_forests",
       "corpus": "arxiv",
       "prefix": "AX",
       "id": "2202.09118__02",
@@ -5085,7 +5085,7 @@
       "site_path": "/arxiv/2201.09115__01/"
     },
     {
-      "name": "AX_kst_minor_free_choosable_fixed_s",
+      "name": "AX_kst_minor_free_choosable_woodall_fixed_s",
       "corpus": "arxiv",
       "prefix": "AX",
       "id": "2201.09115__02",
@@ -5093,7 +5093,7 @@
       "site_path": "/arxiv/2201.09115__02/"
     },
     {
-      "name": "AX_kst_minor_free_choosable_smallest_counterexample",
+      "name": "AX_kst_minor_free_choosable_woodall_smallest_counterexample",
       "corpus": "arxiv",
       "prefix": "AX",
       "id": "2201.09115__03",
@@ -7285,7 +7285,7 @@
       "site_path": "/arxiv/1710.03117__00/"
     },
     {
-      "name": "AX_z5_antisymmetric_flow_edge_connected_digraphs",
+      "name": "AX_jaeger_antisymmetric_z5_flow_edge_connected_digraphs",
       "corpus": "arxiv",
       "prefix": "AX",
       "id": "1701.03366__00",
@@ -7965,7 +7965,7 @@
       "site_path": "/arxiv/1601.01129__01/"
     },
     {
-      "name": "BM_reconstruction_infinite_hypomorphic_mutual_subgraph",
+      "name": "BM_halin_reconstruction_infinite_hypomorphic_mutual_subgraph",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-003",
@@ -7973,7 +7973,7 @@
       "site_path": "/bm/bm-003/"
     },
     {
-      "name": "BM_edge_connected_graphs_tree_decomposition",
+      "name": "BM_barat_thomassen_tree_decomposition_edge_connected",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-011",
@@ -7981,7 +7981,7 @@
       "site_path": "/bm/bm-011/"
     },
     {
-      "name": "BM_bridgeless_cycle_double_cover_small",
+      "name": "BM_bridgeless_cycle_double_cover_small_bondy",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-013",
@@ -8021,7 +8021,7 @@
       "site_path": "/bm/bm-022/"
     },
     {
-      "name": "BM_spanning_k_connected_bipartite_subgraph",
+      "name": "BM_thomassen_spanning_k_connected_bipartite_subgraph",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-025",
@@ -8037,7 +8037,7 @@
       "site_path": "/bm/bm-026/"
     },
     {
-      "name": "BM_5_connected_nonplanar_k5_subdivision",
+      "name": "BM_kelmans_seymour_5_connected_nonplanar_k5_subdivision",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-029",
@@ -8045,7 +8045,7 @@
       "site_path": "/bm/bm-029/"
     },
     {
-      "name": "BM_thrackle_edges_at_most_vertices",
+      "name": "BM_conway_thrackle_edges_at_most_vertices",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-031",
@@ -8053,7 +8053,7 @@
       "site_path": "/bm/bm-031/"
     },
     {
-      "name": "BM_planar_integer_length_straight_line_drawing",
+      "name": "BM_harborth_planar_integer_length_straight_line_drawing",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-032",
@@ -8093,7 +8093,7 @@
       "site_path": "/bm/bm-038/"
     },
     {
-      "name": "BM_tree_ramsey_number_2n_minus_2",
+      "name": "BM_burr_erdos_tree_ramsey_2n_minus_2",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-039",
@@ -8133,7 +8133,7 @@
       "site_path": "/bm/bm-046/"
     },
     {
-      "name": "BM_triangle_free_infinite_chromatic_induced_trees",
+      "name": "BM_gyarfas_triangle_free_infinite_chromatic_induced_trees",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-050",
@@ -8141,7 +8141,7 @@
       "site_path": "/bm/bm-050/"
     },
     {
-      "name": "BM_toroidal_delete_3_vertices_4_colorable",
+      "name": "BM_albertson_toroidal_delete_3_vertices_4_colorable",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-053",
@@ -8149,7 +8149,7 @@
       "site_path": "/bm/bm-053/"
     },
     {
-      "name": "BM_plane_unit_distance_chromatic_number",
+      "name": "BM_hadwiger_nelson_plane_unit_distance_chromatic",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-054",
@@ -8165,7 +8165,7 @@
       "site_path": "/bm/bm-057/"
     },
     {
-      "name": "BM_edge_coloring_kempe_changes_reach_optimal",
+      "name": "BM_vizing_interchange_kempe_optimal_edge_coloring",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-060",
@@ -8181,7 +8181,7 @@
       "site_path": "/bm/bm-062/"
     },
     {
-      "name": "BM_longest_cycles_k_connected_intersection",
+      "name": "BM_smith_longest_cycles_k_connected_intersection",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-064",
@@ -8189,7 +8189,7 @@
       "site_path": "/bm/bm-064/"
     },
     {
-      "name": "BM_cubic_cyclically_4_connected_long_cycle",
+      "name": "BM_bondy_cubic_cyclically_4_connected_long_cycle",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-065",
@@ -8197,7 +8197,7 @@
       "site_path": "/bm/bm-065/"
     },
     {
-      "name": "BM_long_cycles_pairwise_intersecting_hitting_set",
+      "name": "BM_birmele_long_cycles_pairwise_intersecting_hitting_set",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-066",
@@ -8213,7 +8213,7 @@
       "site_path": "/bm/bm-070/"
     },
     {
-      "name": "BM_4_connected_hamiltonian_claw_free",
+      "name": "BM_matthews_sumner_4_connected_claw_free_hamiltonian",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-079",
@@ -8229,7 +8229,7 @@
       "site_path": "/bm/bm-080/"
     },
     {
-      "name": "BM_planar_cubic_three_hamilton_cycles_triangle",
+      "name": "BM_cantoni_planar_cubic_three_hamilton_cycles_triangle",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-085",
@@ -8237,7 +8237,7 @@
       "site_path": "/bm/bm-085/"
     },
     {
-      "name": "BM_vertex_transitive_finitely_many_non_hamiltonian",
+      "name": "BM_thomassen_vertex_transitive_finitely_many_non_hamiltonian",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-088",
@@ -8245,7 +8245,7 @@
       "site_path": "/bm/bm-088/"
     },
     {
-      "name": "BM_k_tough_graphs_hamiltonian",
+      "name": "BM_chvatal_toughness_k_tough_hamiltonian",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-089",
@@ -8261,7 +8261,7 @@
       "site_path": "/bm/bm-090/"
     },
     {
-      "name": "BM_bipartite_hypotraceable_nonexistence",
+      "name": "BM_grotschel_bipartite_hypotraceable_nonexistence",
       "corpus": "bondy_murty",
       "prefix": "BM",
       "id": "bm-091",

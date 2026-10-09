@@ -206,7 +206,7 @@
   },
   {
     "slug": "3_decomposition_conjecture",
-    "name": "OPG_cubic_tree_cycles_matching_decomposition",
+    "name": "OPG_3_decomposition_cubic_tree_cycles_matching",
     "node_id": 60027,
     "canonical_url": "http://www.openproblemgarden.org/op/3_decomposition_conjecture",
     "title": "3-Decomposition Conjecture",
@@ -2699,7 +2699,7 @@
   },
   {
     "slug": "bouchets_6_flow_conjecture",
-    "name": "OPG_nowhere_zero_6_flow_bidirected",
+    "name": "OPG_bouchet_nowhere_zero_6_flow_bidirected",
     "node_id": 131,
     "canonical_url": "http://www.openproblemgarden.org/op/bouchets_6_flow_conjecture",
     "title": "Bouchet's 6-flow conjecture",
@@ -8671,7 +8671,7 @@
   },
   {
     "slug": "grahams_conjecture_on_tree_reconstruction",
-    "name": "OPG_tree_iterated_line_graph_orders",
+    "name": "OPG_graham_tree_iterated_line_graph_orders",
     "node_id": 164,
     "canonical_url": "http://www.openproblemgarden.org/op/grahams_conjecture_on_tree_reconstruction",
     "title": "Graham's conjecture on tree reconstruction",
@@ -8990,7 +8990,7 @@
   },
   {
     "slug": "hamiltonian_cycles_in_line_graphs",
-    "name": "OPG_4_connected_hamiltonian_line_graphs",
+    "name": "OPG_thomassen_4_connected_line_graphs_hamiltonian",
     "node_id": 485,
     "canonical_url": "http://www.openproblemgarden.org/op/hamiltonian_cycles_in_line_graphs",
     "title": "Hamiltonian cycles in line graphs",
@@ -9253,7 +9253,7 @@
   },
   {
     "slug": "hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
-    "name": "OPG_vertex_transitive_hamiltonian_path",
+    "name": "OPG_lovasz_vertex_transitive_hamiltonian_path",
     "node_id": 161,
     "canonical_url": "http://www.openproblemgarden.org/op/hamiltonian_paths_and_cycles_in_vertex_transitive_graphs",
     "title": "Hamiltonian paths and cycles in vertex transitive graphs",
@@ -10220,7 +10220,7 @@
   },
   {
     "slug": "jorgensens_conjecture",
-    "name": "OPG_highly_connected_no_k6_minor_apex",
+    "name": "OPG_jorgensen_highly_connected_no_k6_minor_apex",
     "node_id": 154,
     "canonical_url": "http://www.openproblemgarden.org/op/jorgensens_conjecture",
     "title": "Jorgensen's Conjecture",
@@ -10551,7 +10551,7 @@
   },
   {
     "slug": "large_induced_forest_in_a_planar_graph",
-    "name": "OPG_planar_induced_forest_half_vertices",
+    "name": "OPG_albertson_berman_planar_induced_forest_half",
     "node_id": 46634,
     "canonical_url": "http://www.openproblemgarden.org/op/large_induced_forest_in_a_planar_graph",
     "title": "Large induced forest in a planar graph.",
@@ -11879,7 +11879,7 @@
   },
   {
     "slug": "melnikovs_valency_variety_problem",
-    "name": "OPG_valency_variety_chromatic_lower_bound",
+    "name": "OPG_melnikov_valency_variety_chromatic_bound",
     "node_id": 46575,
     "canonical_url": "http://www.openproblemgarden.org/op/melnikovs_valency_variety_problem",
     "title": "Melnikov's valency-variety problem",
@@ -13706,7 +13706,7 @@
   },
   {
     "slug": "partitioning_planar_digraphs",
-    "name": "OPG_planar_oriented_two_acyclic_parts",
+    "name": "OPG_two_color_planar_oriented_acyclic_parts",
     "node_id": 169,
     "canonical_url": "http://www.openproblemgarden.org/op/partitioning_planar_digraphs",
     "title": "The Two Color Conjecture",
@@ -14771,7 +14771,7 @@
   },
   {
     "slug": "seagull_problem",
-    "name": "OPG_independence_2_clique_minor_half_n",
+    "name": "OPG_seagull_independence_2_clique_minor_half_n",
     "node_id": 729,
     "canonical_url": "http://www.openproblemgarden.org/op/seagull_problem",
     "title": "Seagull problem",
@@ -14844,7 +14844,7 @@
   },
   {
     "slug": "seymours_r_graph_conjecture",
-    "name": "OPG_r_graph_edge_chromatic_r_plus_1",
+    "name": "OPG_seymour_r_graph_edge_chromatic_r_plus_1",
     "node_id": 2226,
     "canonical_url": "http://www.openproblemgarden.org/op/seymours_r_graph_conjecture",
     "title": "Seymour's r-graph conjecture",
@@ -15017,7 +15017,7 @@
   },
   {
     "slug": "seymours_self_minor_conjecture",
-    "name": "OPG_infinite_graph_proper_self_minor",
+    "name": "OPG_seymour_self_minor_infinite_graph",
     "node_id": 333,
     "canonical_url": "http://www.openproblemgarden.org/op/seymours_self_minor_conjecture",
     "title": "Seymour's self-minor conjecture",

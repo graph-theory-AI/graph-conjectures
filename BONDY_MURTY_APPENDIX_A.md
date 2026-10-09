@@ -76,10 +76,10 @@ the book is well established; blank means "open as far as checked here".
 | 24 | Kriesell's conjecture (2k edge-connected T ⇒ k edge-disjoint T-trees) | Kriesell 2003 | P | `OPG_kriesell_edge_disjoint_steiner_trees` (`kriesells_conjecture`) | |
 | 25 | 2k-connected graph has a spanning k-connected *bipartite* subgraph (French text says "orienté"; English original says bipartite — check) | Thomassen 1989 | M | | f(k)-version proved (Delcourt–Ferber 2015); exact 2k bound open |
 | 26 | Orientable 5-cycle double cover | Archdeacon 1984, Jaeger 1988 | E | listed as a consequence inside `OPG_2_connected_circular_surface_embedding` (`the_circular_embedding_conjecture`); also alluded to in `OPG_grunbaum_triangulation_dual_3_edge_colorable` (`grunbaums_conjecture`) | |
-| 27 | Planar graph has induced forest of order ≥ n/2 | Albertson–Berman 1979 | P | `OPG_planar_induced_forest_half_vertices` (`large_induced_forest_in_a_planar_graph`) | |
-| 28 | Planar oriented graph is 2-dicolourable | Neumann-Lara 1985 | P | `OPG_planar_oriented_two_acyclic_parts` (`partitioning_planar_digraphs`) ("Two Color Conjecture") | |
+| 27 | Planar graph has induced forest of order ≥ n/2 | Albertson–Berman 1979 | P | `OPG_albertson_berman_planar_induced_forest_half` (`large_induced_forest_in_a_planar_graph`) | |
+| 28 | Planar oriented graph is 2-dicolourable | Neumann-Lara 1985 | P | `OPG_two_color_planar_oriented_acyclic_parts` (`partitioning_planar_digraphs`) ("Two Color Conjecture") | |
 | 29 | Kelmans–Seymour: 5-connected nonplanar ⇒ K₅-subdivision | Seymour 1974, Kelmans 1979 | M | | **Proved** (He, Wang, Yu, JCTB 2020, 4 papers) |
-| 30 | Jørgensen: 6-connected K₆-minor-free is apex | Jørgensen 1994 | P | `OPG_highly_connected_no_k6_minor_apex` (`jorgensens_conjecture`) | |
+| 30 | Jørgensen: 6-connected K₆-minor-free is apex | Jørgensen 1994 | P | `OPG_jorgensen_highly_connected_no_k6_minor_apex` (`jorgensens_conjecture`) | |
 | 31 | Thrackle conjecture (m ≤ n) | Conway c.1968 | M | | |
 | 32 | Planar graphs have straight-line drawings with integer edge lengths | Kemnitz–Harborth 2001 | M | | |
 | 33 | Erdős–Sós: m > n(k−1)/2 ⇒ contains every tree with k edges | Erdős–Sós 1963 | M | not in `erdos_graph.json` either | |
@@ -128,14 +128,14 @@ the book is well established; blank means "open as far as checked here".
 | 76 | Seymour's second neighbourhood | Seymour 1995 | P | `OPG_seymour_second_neighborhood_outdegree` (`seymours_second_neighbourhood_conjecture`) | |
 | 77 | Triangle-free oriented graph: feedback arc set of size ½(C(n,2)−m) | Chudnovsky–Seymour–Sullivan 2008 | P | `OPG_digraph_feedback_arcs_vs_non_edges` (`non_edges_vs_feedback_edge_sets_in_digraphs`) | |
 | 78 | Barnette's conjecture | Barnette 1969 | P | `OPG_barnette_cubic_planar_bipartite_hamiltonian` (`barnettes_conjecture`) | |
-| 79 | 4-connected claw-free graphs are Hamiltonian | Matthews–Sumner 1984 | E | equivalent (Ryjáček) to `OPG_4_connected_hamiltonian_line_graphs` (`hamiltonian_cycles_in_line_graphs`), whose discussion states it | |
+| 79 | 4-connected claw-free graphs are Hamiltonian | Matthews–Sumner 1984 | E | equivalent (Ryjáček) to `OPG_thomassen_4_connected_line_graphs_hamiltonian` (`hamiltonian_cycles_in_line_graphs`), whose discussion states it | |
 | 80 | 4-regular 4-polytopes are Hamiltonian | Barnette | M | | |
 | 81 | Prism over a 3-connected planar graph is Hamiltonian | Kaiser et al. 2007 | P | `OPG_prism_planar_3_connected_hamiltonian` (`every_prism_over_a_3_connected_planar_graph_is_hamiltonian`) | |
 | 82 | 4-regular graphs are not uniquely Hamiltonian | Sheehan 1975 | P | `OPG_regular_graphs_not_uniquely_hamiltonian` (`uniquely_hamiltonian_graphs`) | |
 | 83 | 4-connected graphs are not uniquely Hamiltonian | Fleischner 2007 | P | `OPG_4_connected_second_hamilton_cycle` (`4_connected_graphs_are_not_uniquely_hamiltonian`) | |
 | 84 | Prism over cubic 3-connected planar graph has a Hamilton decomposition | Alspach–Rosenfeld 1986 | P | `OPG_prism_planar_cubic_hamilton_decomposition` (`decomposing_the_prism_of_a_3_connected_cubic_planar_graphs_in_hamilton_cycles`) | |
 | 85 | Planar cubic graph with exactly 3 Hamilton cycles has a triangle | Cantoni 1950 | M | | open; verified to order 48 (Goedgebeur, Meersman, Zamfirescu 2020) |
-| 86 | Connected vertex-transitive graphs have Hamilton paths? | Lovász 1970 | P | `OPG_vertex_transitive_hamiltonian_path` (`hamiltonian_paths_and_cycles_in_vertex_transitive_graphs`) | |
+| 86 | Connected vertex-transitive graphs have Hamilton paths? | Lovász 1970 | P | `OPG_lovasz_vertex_transitive_hamiltonian_path` (`hamiltonian_paths_and_cycles_in_vertex_transitive_graphs`) | |
 | 87 | Cayley graphs are Hamiltonian | Parsons | P | `OPG_cayley_graphs_hamiltonian_cycle` (`hamiltonicity_of_cayley_graphs`) | |
 | 88 | All but finitely many connected vertex-transitive graphs are Hamiltonian | Thomassen 1976 | E | discussed (the five known exceptions) in the #86 record, but the conjecture is not a record | |
 | 89 | Chvátal's toughness conjecture (k-tough ⇒ Hamiltonian) | Chvátal 1973 | M | | |

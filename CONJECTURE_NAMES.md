@@ -3,7 +3,7 @@
 Every conjecture in the corpus now carries a canonical short `name` of the form `PREFIX_english_name` (field `name` in `data/problems.json`, `data/arxiv_conjectures.json`, `data/bondy_murty_conjectures.json`, `data/others_conjectures.json`; machine-readable mapping in [`data/conjecture_names.json`](data/conjecture_names.json)).
 
 * `PREFIX` is the corpus: `OPG` (Open Problem Garden), `AX` (arXiv-extracted), `BM` (Bondy–Murty Appendix A), `OTH` (others).
-* `english_name` is a few lowercase words (letters, digits, underscores) conveying the statement: objects, parameter, shape of the claim. No `conjecture`/`problem` words, no paper-local numbering; author names only for conjectures universally known by them.
+* `english_name` is a few lowercase words (letters, digits, underscores) conveying the statement: objects, parameter, shape of the claim. No `conjecture`/`problem` words, no paper-local numbering; a classical name under which the conjecture is known (author names such as `hadwiger`, `seymour`, `matthews_sumner`, or a nickname such as `seagull`, `earth_moon`, `two_color`) is kept, usually as the leading word.
 * All 1034 names are distinct. Slight variants of one statement (special cases, directed analogues, duplicates across corpora, sibling questions on one quantity) share a leading stem and differ by a trailing qualifier, e.g. `OPG_bridgeless_cycle_double_cover` / `OPG_bridgeless_cycle_double_cover_strong_5` / `BM_bridgeless_cycle_double_cover_5_cycles`.
 * The old identifier is unchanged and remains the key for review files, site URLs, `relations.json` and the sibling repositories: OPG slug, arXiv review id `<arxiv_id>__<NN>`, Bondy–Murty `bm_id`, others `id`.
 
@@ -15,7 +15,7 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 |---|---|---|
 | `2_colouring_a_graph_without_a_monochromatic_maximum_clique` | `OPG_odd_hole_free_nonmonochromatic_max_cliques` | 2-colouring a graph without a monochromatic maximum clique |
 | `3_colourability_of_arrangements_of_great_circles` | `OPG_great_circle_arrangements_3_colorable` | 3-Colourability of Arrangements of Great Circles |
-| `3_decomposition_conjecture` | `OPG_cubic_tree_cycles_matching_decomposition` | 3-Decomposition Conjecture |
+| `3_decomposition_conjecture` | `OPG_3_decomposition_cubic_tree_cycles_matching` | 3-Decomposition Conjecture |
 | `3_edge_coloring_conjecture` | `OPG_cubic_3_edge_colorable_edge_removal` | 3-Edge-Coloring Conjecture |
 | `3_flow_conjecture` | `OPG_nowhere_zero_3_flow_4_connected` | 3-flow conjecture |
 | `4_connected_graphs_are_not_uniquely_hamiltonian` | `OPG_4_connected_second_hamilton_cycle` | 4-connected graphs are not uniquely hamiltonian |
@@ -46,7 +46,7 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 | `behzads_conjecture` | `OPG_total_coloring_max_degree_plus_2` | Total Colouring Conjecture |
 | `bene_conjecture_graph_theoretic_form_0` | `OPG_benes_multistage_graph_rearrangeable` | Beneš Conjecture (graph-theoretic form) |
 | `book_thickness_of_subdivisions` | `OPG_book_thickness_subdivision_bounded_function` | Book Thickness of Subdivisions |
-| `bouchets_6_flow_conjecture` | `OPG_nowhere_zero_6_flow_bidirected` | Bouchet's 6-flow conjecture |
+| `bouchets_6_flow_conjecture` | `OPG_bouchet_nowhere_zero_6_flow_bidirected` | Bouchet's 6-flow conjecture |
 | `bounding_the_chromatic_number_of_triangle_free_graphs_with_fixed_maximum_degree` | `OPG_triangle_free_chromatic_half_max_degree` | Bounding the chromatic number of triangle-free graphs with fixed maximum degree |
 | `bounding_the_on_line_choice_number_in_terms_of_the_choice_number` | `OPG_online_choice_number_minus_choice_unbounded` | Bounding the on-line choice number in terms of the choice number |
 | `caccetta_haggkvist_conjecture` | `OPG_caccetta_haggkvist_outdegree_short_cycle` | Caccetta-Häggkvist Conjecture |
@@ -117,15 +117,15 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 | `goldbergs_conjecture` | `OPG_goldberg_edge_chromatic_max_degree_density` | Goldberg's conjecture |
 | `good_edge_labelings` | `OPG_good_edge_labeling_max_density` | Good Edge Labelings |
 | `graceful_tree_conjecture` | `OPG_all_trees_graceful_labeling` | Graceful Tree Conjecture |
-| `grahams_conjecture_on_tree_reconstruction` | `OPG_tree_iterated_line_graph_orders` | Graham's conjecture on tree reconstruction |
+| `grahams_conjecture_on_tree_reconstruction` | `OPG_graham_tree_iterated_line_graph_orders` | Graham's conjecture on tree reconstruction |
 | `graphs_with_a_forbidden_induced_tree_are_chi_bounded` | `OPG_gyarfas_sumner_forbidden_tree_chi_bounded` | Graphs with a forbidden induced tree are chi-bounded |
 | `grunbaums_conjecture` | `OPG_grunbaum_triangulation_dual_3_edge_colorable` | Grunbaum's Conjecture |
 | `half_integral_flow_polynomial_values` | `OPG_flow_polynomial_positive_at_5_5` | Half-integral flow polynomial values |
 | `hamilton_cycle_in_small_d_diregular_graphs` | `OPG_diregular_oriented_small_hamilton_cycle` | Hamilton cycle in small d-diregular graphs |
-| `hamiltonian_cycles_in_line_graphs` | `OPG_4_connected_hamiltonian_line_graphs` | Hamiltonian cycles in line graphs |
+| `hamiltonian_cycles_in_line_graphs` | `OPG_thomassen_4_connected_line_graphs_hamiltonian` | Hamiltonian cycles in line graphs |
 | `hamiltonian_cycles_in_line_graphs_of_infinite_graphs` | `OPG_infinite_line_graph_hamiltonian_4_connected` | Hamiltonian cycles in line graphs of infinite graphs |
 | `hamiltonian_cycles_in_powers_of_infinite_graphs` | `OPG_infinite_graph_powers_hamiltonian` | Hamiltonian cycles in powers of infinite graphs |
-| `hamiltonian_paths_and_cycles_in_vertex_transitive_graphs` | `OPG_vertex_transitive_hamiltonian_path` | Hamiltonian paths and cycles in vertex transitive graphs |
+| `hamiltonian_paths_and_cycles_in_vertex_transitive_graphs` | `OPG_lovasz_vertex_transitive_hamiltonian_path` | Hamiltonian paths and cycles in vertex transitive graphs |
 | `hamiltonicity_of_cayley_graphs` | `OPG_cayley_graphs_hamiltonian_cycle` | Hamiltonicity of Cayley graphs |
 | `hedetniemis_conjecture` | `OPG_hedetniemi_tensor_product_chromatic_min` | Hedetniemi's Conjecture |
 | `high_connectivity_no_k_n` | `OPG_highly_connected_no_kn_minor_planar` | Highly connected graphs with no K_n minor |
@@ -137,11 +137,11 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 | `intersecting_two_perfect_matchings` | `OPG_cubic_two_perfect_matchings_odd_cut` | The intersection of two perfect matchings |
 | `jaegers_modular_orientation_conjecture` | `OPG_jaeger_modular_orientation_4k_edge_connected` | Jaeger's modular orientation conjecture |
 | `jones_conjecture` | `OPG_jones_planar_feedback_vertex_cycle_packing` | Jones' conjecture |
-| `jorgensens_conjecture` | `OPG_highly_connected_no_k6_minor_apex` | Jorgensen's Conjecture |
+| `jorgensens_conjecture` | `OPG_jorgensen_highly_connected_no_k6_minor_apex` | Jorgensen's Conjecture |
 | `kriesells_conjecture` | `OPG_kriesell_edge_disjoint_steiner_trees` | Kriesell's Conjecture |
 | `laplacian_degrees_of_a_graph` | `OPG_laplacian_eigenvalues_vs_degree_sequence` | Laplacian Degrees of a Graph |
 | `large_acyclic_induced_subdigraph_in_a_planar_oriented_graph` | `OPG_planar_oriented_induced_acyclic_3_5` | Large acyclic induced subdigraph in a planar oriented graph. |
-| `large_induced_forest_in_a_planar_graph` | `OPG_planar_induced_forest_half_vertices` | Large induced forest in a planar graph. |
+| `large_induced_forest_in_a_planar_graph` | `OPG_albertson_berman_planar_induced_forest_half` | Large induced forest in a planar graph. |
 | `linear_hypergraphs_with_dimension_3` | `OPG_linear_hypergraph_dimension_3_triangle_intersection` | Linear Hypergraphs with Dimension 3 |
 | `linial_berge_path_partition_duality` | `OPG_linial_digraph_path_partition_k_norm` | Linial-Berge path partition duality |
 | `list_chromatic_number_and_maximum_degree_of_bipartite_graphs` | `OPG_bipartite_list_chromatic_log_max_degree` | List chromatic number and maximum degree of bipartite graphs |
@@ -155,7 +155,7 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 | `mapping_planar_graphs_to_odd_cycles` | `OPG_planar_girth_4k_homomorphism_odd_cycle` | Mapping planar graphs to odd cycles |
 | `matching_cut_and_girth` | `OPG_matching_cut_average_degree_girth` | Matching cut and girth |
 | `matchings_extends_to_hamilton_cycles_in_hypercubes` | `OPG_hypercube_matching_extends_hamiltonian_cycle` | Matchings extend to Hamiltonian cycles in hypercubes |
-| `melnikovs_valency_variety_problem` | `OPG_valency_variety_chromatic_lower_bound` | Melnikov's valency-variety problem |
+| `melnikovs_valency_variety_problem` | `OPG_melnikov_valency_variety_chromatic_bound` | Melnikov's valency-variety problem |
 | `minimal_graphs_with_a_prescribed_number_of_spanning_trees` | `OPG_min_order_given_spanning_tree_count` | Minimal graphs with a prescribed number of spanning trees |
 | `minimum_number_of_transitive_subtournaments_of_order_3_in_a_tournament` | `OPG_tournament_arc_disjoint_transitive_triples` | Minimum number of arc-disjoint transitive subtournaments of order 3 in a tournament |
 | `mixing_circular_colourings_0` | `OPG_circular_coloring_mixing_number_rational` | Mixing Circular Colourings |
@@ -177,7 +177,7 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 | `partial_list_coloring_0` | `OPG_partial_list_coloring_lambda_r_monotone` | Partial List Coloring |
 | `partition_of_a_cubic_3_connected_graphs_into_paths_of_length_2` | `OPG_cubic_3_connected_p3_path_partition` | Partition of a cubic 3-connected graphs into paths of length 2. |
 | `partitioning_edge_connectivity` | `OPG_edge_connectivity_partition_a_plus_b` | Partitioning edge-connectivity |
-| `partitioning_planar_digraphs` | `OPG_planar_oriented_two_acyclic_parts` | The Two Color Conjecture |
+| `partitioning_planar_digraphs` | `OPG_two_color_planar_oriented_acyclic_parts` | The Two Color Conjecture |
 | `partitionning_a_tournament_into_k_strongly_connected_subtournaments` | `OPG_strong_tournament_partition_strong_subtournaments` | Partitionning a tournament into k-strongly connected subtournaments. |
 | `pebbling_a_cartesian_product` | `OPG_graham_pebbling_cartesian_product` | Pebbling a cartesian product |
 | `pentagon_problem` | `OPG_pentagon_cubic_girth_c5_homomorphism` | Pentagon problem |
@@ -189,10 +189,10 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 | `reconstruction_conjecture` | `OPG_reconstruction_vertex_deck_isomorphic` | Reconstruction conjecture |
 | `reeds_omega_delta_and_chi_conjecture` | `OPG_reed_chromatic_omega_delta_average` | Reed's omega, delta, and chi conjecture |
 | `rysers_conjecture` | `OPG_ryser_r_partite_hypergraph_cover_matching` | Ryser's conjecture |
-| `seagull_problem` | `OPG_independence_2_clique_minor_half_n` | Seagull problem |
-| `seymours_r_graph_conjecture` | `OPG_r_graph_edge_chromatic_r_plus_1` | Seymour's r-graph conjecture |
+| `seagull_problem` | `OPG_seagull_independence_2_clique_minor_half_n` | Seagull problem |
+| `seymours_r_graph_conjecture` | `OPG_seymour_r_graph_edge_chromatic_r_plus_1` | Seymour's r-graph conjecture |
 | `seymours_second_neighbourhood_conjecture` | `OPG_seymour_second_neighborhood_outdegree` | Seymour's Second Neighbourhood Conjecture |
-| `seymours_self_minor_conjecture` | `OPG_infinite_graph_proper_self_minor` | Seymour's self-minor conjecture |
+| `seymours_self_minor_conjecture` | `OPG_seymour_self_minor_infinite_graph` | Seymour's self-minor conjecture |
 | `shannon_capacity_of_the_seven_cycle` | `OPG_shannon_capacity_c7` | Shannon capacity of the seven-cycle |
 | `shuffle_exchange_conjecture_graph_theoretic_form` | `OPG_shuffle_exchange_rearrangeable_stages_2n_1` | Shuffle-Exchange Conjecture (graph-theoretic form) |
 | `sidorenkos_conjecture` | `OPG_sidorenko_bipartite_homomorphism_density` | Sidorenko's Conjecture |
@@ -318,7 +318,7 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 | `1612.07540__00` | `AX_planar_cover_graph_poset_dimension_height` | Open problem: dimension of posets with planar cover graphs vs. height |
 | `1612.08698__00` | `AX_degenerate_graphs_flexibility_d_plus_1_lists` | Problem 1 |
 | `1612.09143__00` | `AX_gnp_h_free_clique_count_threshold` | Motivating Question (Introduction) |
-| `1701.03366__00` | `AX_z5_antisymmetric_flow_edge_connected_digraphs` | Antisymmetric variant of Jaeger's weak 3-flow conjecture |
+| `1701.03366__00` | `AX_jaeger_antisymmetric_z5_flow_edge_connected_digraphs` | Antisymmetric variant of Jaeger's weak 3-flow conjecture |
 | `1701.05597__00` | `AX_widespread_multigraph_all` | Conjecture 1.8 |
 | `1701.05597__01` | `AX_widespread_multigraph_chi_2_subdivision_free` | Conjecture 1.10 |
 | `1701.05597__02` | `AX_subdivision_free_chi_bounded_multigraph_characterization` | Open Question: first pervasiveness characterisation |
@@ -642,18 +642,18 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 | `2201.08204__01` | `AX_odd_dicycle_free_digraph_dichromatic_bounded` | Question 3.2 |
 | `2201.09115__00` | `AX_kst_minor_free_choosable_k44_k35` | Question 1 |
 | `2201.09115__01` | `AX_kst_minor_free_choosable_2s_t` | Question 2 |
-| `2201.09115__02` | `AX_kst_minor_free_choosable_fixed_s` | Open problem: Woodall's conjecture for fixed s |
-| `2201.09115__03` | `AX_kst_minor_free_choosable_smallest_counterexample` | Open problem: smallest counterexample to Woodall's conjecture |
+| `2201.09115__02` | `AX_kst_minor_free_choosable_woodall_fixed_s` | Open problem: Woodall's conjecture for fixed s |
+| `2201.09115__03` | `AX_kst_minor_free_choosable_woodall_smallest_counterexample` | Open problem: smallest counterexample to Woodall's conjecture |
 | `2202.01006__00` | `AX_chordal_digraphs_dichromatic_construction_size` | Open problem on construction size |
 | `2202.05557__00` | `AX_forest_free_polynomial_chi_bounded` | Conjecture 1.3 |
 | `2202.05557__01` | `AX_path_free_polynomial_chi_tau_d` | Question: Extending Theorem 1.6 to paths |
-| `2202.05557__02` | `AX_hereditary_tau_d_bounded_implies_polynomial` | Question: Polynomial bound analogue of Esperet's conjecture for $\tau_d$ |
+| `2202.05557__02` | `AX_hereditary_tau_d_bounded_implies_polynomial_esperet` | Question: Polynomial bound analogue of Esperet's conjecture for $\tau_d$ |
 | `2202.06810__00` | `AX_structured_graph_codes_f2c_odd_n` | Open case of Theorem 3 for odd $n$ |
 | `2202.07293__00` | `AX_intersection_graphs_asymptotic_dimension_tight` | Optimal bound question |
 | `2202.07746__00` | `AX_random_embedding_expected_faces_third_n` | Conjecture 4 |
 | `2202.09118__00` | `AX_poly_chi_bounded_hereditary_characterization` | Question (which hereditary classes are poly-χ-bounded?) |
 | `2202.09118__01` | `AX_poly_chi_bounded_odd_multihole_free` | Open problem (poly-χ-bounded for k-multihole with only odd cycles) |
-| `2202.09118__02` | `AX_forest_free_polynomial_chi_all_forests` | Informal conjecture (polynomial Gyárfás–Sumner) |
+| `2202.09118__02` | `AX_forest_free_polynomial_chi_gyarfas_sumner_all_forests` | Informal conjecture (polynomial Gyárfás–Sumner) |
 | `2202.09118__03` | `AX_poly_chi_bounded_trees_disjoint_union` | Open problem (disjoint union of good trees) |
 | `2202.09118__04` | `AX_poly_chi_bounded_self_isolating_all` | Question (are all graphs self-isolating?) |
 | `2202.10412__00` | `AX_forest_free_polynomial_chi_good` | Informal Conjecture (every forest is good) |
@@ -1018,44 +1018,44 @@ Total: 1034 names (OPG 227, AX 768, BM 38, OTH 1).
 
 | old id | new name | title |
 |---|---|---|
-| `bm-003` | `BM_reconstruction_infinite_hypomorphic_mutual_subgraph` | Halin's conjecture on hypomorphic infinite graphs |
-| `bm-011` | `BM_edge_connected_graphs_tree_decomposition` | Barát–Thomassen conjecture |
-| `bm-013` | `BM_bridgeless_cycle_double_cover_small` | Bondy's small cycle double cover conjecture |
+| `bm-003` | `BM_halin_reconstruction_infinite_hypomorphic_mutual_subgraph` | Halin's conjecture on hypomorphic infinite graphs |
+| `bm-011` | `BM_barat_thomassen_tree_decomposition_edge_connected` | Barát–Thomassen conjecture |
+| `bm-013` | `BM_bridgeless_cycle_double_cover_small_bondy` | Bondy's small cycle double cover conjecture |
 | `bm-014` | `BM_bridgeless_cycle_double_cover_5_cycles` | Five cycle double cover conjecture |
 | `bm-016` | `BM_linear_arboricity_regular_graphs` | Linear arboricity conjecture |
 | `bm-021` | `BM_cubic_second_hamilton_cycle_polynomial` | Finding a second Hamilton cycle in a cubic graph |
 | `bm-022` | `BM_k_disjoint_odd_paths_conp` | Internally disjoint odd paths: is it in co-NP? |
-| `bm-025` | `BM_spanning_k_connected_bipartite_subgraph` | Thomassen's spanning k-connected bipartite subgraph conjecture |
+| `bm-025` | `BM_thomassen_spanning_k_connected_bipartite_subgraph` | Thomassen's spanning k-connected bipartite subgraph conjecture |
 | `bm-026` | `BM_bridgeless_cycle_double_cover_orientable_5` | Orientable five cycle double cover conjecture |
-| `bm-029` | `BM_5_connected_nonplanar_k5_subdivision` | Kelmans–Seymour conjecture |
-| `bm-031` | `BM_thrackle_edges_at_most_vertices` | Conway's thrackle conjecture |
-| `bm-032` | `BM_planar_integer_length_straight_line_drawing` | Harborth's conjecture (integral straight-line drawings) |
+| `bm-029` | `BM_kelmans_seymour_5_connected_nonplanar_k5_subdivision` | Kelmans–Seymour conjecture |
+| `bm-031` | `BM_conway_thrackle_edges_at_most_vertices` | Conway's thrackle conjecture |
+| `bm-032` | `BM_harborth_planar_integer_length_straight_line_drawing` | Harborth's conjecture (integral straight-line drawings) |
 | `bm-033` | `BM_erdos_sos_trees_edge_bound` | Erdős–Sós conjecture |
 | `bm-034` | `BM_even_cycle_turan_number_lower_bound` | Even-cycle Turán number |
 | `bm-037` | `BM_diagonal_ramsey_constructive_exponential_lower_bound` | Constructive exponential lower bound for diagonal Ramsey numbers |
 | `bm-038` | `BM_diagonal_ramsey_kth_root_limit` | Limit of $r(k,k)^{1/k}$ |
-| `bm-039` | `BM_tree_ramsey_number_2n_minus_2` | Burr–Erdős tree Ramsey conjecture |
+| `bm-039` | `BM_burr_erdos_tree_ramsey_2n_minus_2` | Burr–Erdős tree Ramsey conjecture |
 | `bm-041` | `BM_hadwiger_minor_chromatic` | Hadwiger's conjecture |
 | `bm-042` | `BM_hajos_k5_k6_subdivision_chromatic` | Hajós conjecture for $k = 5$ and $k = 6$ |
 | `bm-045` | `BM_erdos_lovasz_tihany_disjoint_chromatic_split` | Erdős–Lovász Tihany conjecture |
 | `bm-046` | `BM_el_zahar_erdos_induced_disjoint_union` | El-Zahar–Erdős conjecture |
-| `bm-050` | `BM_triangle_free_infinite_chromatic_induced_trees` | Gyárfás's tree conjecture for triangle-free graphs |
-| `bm-053` | `BM_toroidal_delete_3_vertices_4_colorable` | Albertson's toroidal colouring conjecture |
-| `bm-054` | `BM_plane_unit_distance_chromatic_number` | Chromatic number of the plane (Hadwiger–Nelson problem) |
+| `bm-050` | `BM_gyarfas_triangle_free_infinite_chromatic_induced_trees` | Gyárfás's tree conjecture for triangle-free graphs |
+| `bm-053` | `BM_albertson_toroidal_delete_3_vertices_4_colorable` | Albertson's toroidal colouring conjecture |
+| `bm-054` | `BM_hadwiger_nelson_plane_unit_distance_chromatic` | Chromatic number of the plane (Hadwiger–Nelson problem) |
 | `bm-057` | `BM_1_factorization_dense_regular_graphs` | 1-factorization conjecture |
-| `bm-060` | `BM_edge_coloring_kempe_changes_reach_optimal` | Vizing's interchange conjecture |
+| `bm-060` | `BM_vizing_interchange_kempe_optimal_edge_coloring` | Vizing's interchange conjecture |
 | `bm-062` | `BM_kotzig_unique_k_path_nonexistence` | Kotzig's unique $k$-path conjecture |
-| `bm-064` | `BM_longest_cycles_k_connected_intersection` | Smith's conjecture on longest cycles |
-| `bm-065` | `BM_cubic_cyclically_4_connected_long_cycle` | Bondy's linear-length cycle conjecture for cyclically 4-edge-connected cubic graphs |
-| `bm-066` | `BM_long_cycles_pairwise_intersecting_hitting_set` | Birmelé's conjecture on long cycles |
+| `bm-064` | `BM_smith_longest_cycles_k_connected_intersection` | Smith's conjecture on longest cycles |
+| `bm-065` | `BM_bondy_cubic_cyclically_4_connected_long_cycle` | Bondy's linear-length cycle conjecture for cyclically 4-edge-connected cubic graphs |
+| `bm-066` | `BM_birmele_long_cycles_pairwise_intersecting_hitting_set` | Birmelé's conjecture on long cycles |
 | `bm-070` | `BM_caccetta_haggkvist_weighted_cycle` | Weighted Caccetta–Häggkvist conjecture |
-| `bm-079` | `BM_4_connected_hamiltonian_claw_free` | Matthews–Sumner conjecture |
+| `bm-079` | `BM_matthews_sumner_4_connected_claw_free_hamiltonian` | Matthews–Sumner conjecture |
 | `bm-080` | `BM_barnette_simple_4_polytopes_hamiltonian` | Barnette's conjecture on 4-regular 4-polytopes |
-| `bm-085` | `BM_planar_cubic_three_hamilton_cycles_triangle` | Cantoni's conjecture |
-| `bm-088` | `BM_vertex_transitive_finitely_many_non_hamiltonian` | Thomassen's conjecture on Hamiltonian vertex-transitive graphs |
-| `bm-089` | `BM_k_tough_graphs_hamiltonian` | Chvátal's toughness conjecture |
+| `bm-085` | `BM_cantoni_planar_cubic_three_hamilton_cycles_triangle` | Cantoni's conjecture |
+| `bm-088` | `BM_thomassen_vertex_transitive_finitely_many_non_hamiltonian` | Thomassen's conjecture on Hamiltonian vertex-transitive graphs |
+| `bm-089` | `BM_chvatal_toughness_k_tough_hamiltonian` | Chvátal's toughness conjecture |
 | `bm-090` | `BM_hypohamiltonian_min_degree_4` | Hypohamiltonian graphs of minimum degree at least 4 |
-| `bm-091` | `BM_bipartite_hypotraceable_nonexistence` | Grötschel's conjecture on bipartite hypotraceable graphs |
+| `bm-091` | `BM_grotschel_bipartite_hypotraceable_nonexistence` | Grötschel's conjecture on bipartite hypotraceable graphs |
 
 ## Others (OTH)
 

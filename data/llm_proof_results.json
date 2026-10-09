@@ -44,7 +44,7 @@
     },
     {
       "id": "1701.03366__00",
-      "name": "AX_z5_antisymmetric_flow_edge_connected_digraphs",
+      "name": "AX_jaeger_antisymmetric_z5_flow_edge_connected_digraphs",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Corollary 13(iv) of the source paper proves that every directed 12-edge-connected graph has a $\\mathbb{Z}_5$-antisymmetric flow, directly establishing the requested constant.",
@@ -760,7 +760,7 @@
     },
     {
       "id": "melnikovs_valency_variety_problem",
-      "name": "OPG_valency_variety_chromatic_lower_bound",
+      "name": "OPG_melnikov_valency_variety_chromatic_bound",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
