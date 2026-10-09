@@ -493,6 +493,11 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "posted_by":       None,
         "posted_at":       rec.get("published", ""),
         "canonical_url":   rec.get("abs_url", f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else ""),
+        "_origin":         {
+            "label":  f"arXiv:{arxiv_id}",
+            "url":    rec.get("abs_url", f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else ""),
+            "detail": rec.get("paper_title", ""),
+        },
         "_erdos":          None,
         "_review":         rec.get("_review"),
         "_known_resolution": rec.get("_known_resolution"),
@@ -502,6 +507,25 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "_review_id":      rec.get("_review_id"),
         "_nice_name":      nice_name,
         "_paper_label":    paper_label,
+    }
+
+
+def _bm_origin(rec: dict, source: str) -> dict:
+    """Where a Bondy–Murty / others record comes from: the book page, or the workstream."""
+    src = rec.get("source") or {}
+    if source != "bm":
+        return {"label": "research workstream", "url": src.get("url", ""),
+                "detail": src.get("reference", "")}
+    pdf, page = src.get("pdf_url"), src.get("pdf_page")
+    detail = "Théorie des graphes (French edition, 2025)"
+    if src.get("book_page"):
+        detail += f", p. {src['book_page']}"
+    if src.get("english_edition"):
+        detail += f"; also {src['english_edition']}"
+    return {
+        "label":  f"Bondy–Murty, Appendix A, item {rec.get('appendix_number')}",
+        "url":    f"{pdf}#page={page}" if pdf and page else src.get("url", ""),
+        "detail": detail,
     }
 
 
@@ -548,6 +572,7 @@ def _virtual_problem_from_bm(rec: dict, source: str = "bm") -> dict:
         "posted_by":       None,
         "posted_at":       str(year) if isinstance(year, int) else "",
         "canonical_url":   src.get("url", ""),
+        "_origin":         _bm_origin(rec, source),
         "_erdos":          None,
         "_review":         rec.get("_review"),
         "_openai_result":  rec.get("_openai_result"),
@@ -895,6 +920,10 @@ def main(argv: list[str] | None = None) -> int:
     others_rows = [_virtual_problem_from_bm(r, source="others") for r in others_records]
     log.info("built %d 'others' virtual row(s)", len(others_rows))
 
+    for prob in problems:
+        prob["_origin"] = {"label": "Open Problem Garden",
+                           "url": prob.get("canonical_url", ""), "detail": ""}
+
     # ── compute _search for every row ──────────────────────────────────────────
     for row in problems + arxiv_rows + bm_rows + others_rows:
         row["_search"] = _build_search_text(row)
@@ -915,6 +944,7 @@ def main(argv: list[str] | None = None) -> int:
         rel_node_meta["opg:" + prob["slug"]] = {
             "name":      prob["title"],
             "canonical": canonical_names.get(prob["slug"], ""),
+            "origin":    prob["_origin"],
             "status":    (prob.get("_review") or {}).get("status"),
             "url":       f"op/{prob['slug']}/",
             "source":    "opg",
@@ -930,6 +960,7 @@ def main(argv: list[str] | None = None) -> int:
         rel_node_meta["arxiv:" + rid] = {
             "name":      row["title"],
             "canonical": canonical_names.get(rid, ""),
+            "origin":    row["_origin"],
             "status":    (row.get("_review") or {}).get("status"),
             "url":       f"arxiv/{rid}/",
             "source":    "arxiv",
@@ -942,6 +973,7 @@ def main(argv: list[str] | None = None) -> int:
         rel_node_meta[f"{row['_source']}:" + row["bm_id"]] = {
             "name":      row["title"],
             "canonical": canonical_names.get(row["bm_id"], ""),
+            "origin":    row["_origin"],
             "status":    (row.get("_review") or {}).get("status"),
             "url":       f"{row['_source']}/{row['bm_id']}/",
             "source":    row["_source"],

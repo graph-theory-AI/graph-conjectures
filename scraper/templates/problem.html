@@ -7,6 +7,7 @@
   <h1>{{ p.title }}</h1>
   {% set cname = canonical_names.get(p._review_id or p.slug) %}
   {% if cname %}<p class="canonical-name">{{ cname }}</p>{% endif %}
+  {% if p._origin and p._origin.url %}<p class="origin-link">Source: <a href="{{ p._origin.url }}">{{ p._origin.label }}</a>{% if p._origin.detail %} — {{ p._origin.detail }}{% endif %}</p>{% endif %}
   <div class="meta">
     <span class="importance importance-{{ p.importance.label|lower }}">{{ p.importance.label }} {{ '★' * p.importance.stars }}</span>
     {% if p.subject_path %}

@@ -320,6 +320,7 @@ section.lit-review .review-meta {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   overflow-wrap: anywhere;
 }
+.origin-link { margin: -0.4rem 0 0.6rem; font-size: 0.82rem; color: var(--muted); }
 .relations-panel .canonical-name { margin: -0.2rem 0 0.4rem; font-size: 0.75rem; }
 
 /* ---------- timeline ---------- */

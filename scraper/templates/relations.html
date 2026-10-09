@@ -283,7 +283,10 @@
     });
     panel.innerHTML =
       "<h2>" + nodeLink(n) + "</h2>" + canon(n) +
-      '<p class="rel-meta">' + ({ opg: "Open Problem Garden", arxiv: "arXiv", bm: "Bondy &amp; Murty" }[n.source] || n.source) +
+      '<p class="rel-meta">' +
+      (n.origin && n.origin.url
+        ? 'Source: <a href="' + esc(n.origin.url) + '">' + esc(n.origin.label) + "</a>"
+        : ({ opg: "Open Problem Garden", arxiv: "arXiv", bm: "Bondy &amp; Murty" }[n.source] || n.source)) +
       (n.kind ? " &middot; " + esc(n.kind) : "") + "</p>" +
       (n.statement
         ? '<div class="rel-statement"><strong>' + esc(n.kind || "Statement") +
