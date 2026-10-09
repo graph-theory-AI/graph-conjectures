@@ -921,7 +921,7 @@ def main(argv: list[str] | None = None) -> int:
     log.info("built %d 'others' virtual row(s)", len(others_rows))
 
     for prob in problems:
-        prob["_origin"] = {"label": "Open Problem Garden",
+        prob["_origin"] = {"label": f"Open Problem Garden: {prob['slug']}",
                            "url": prob.get("canonical_url", ""), "detail": ""}
 
     # ── compute _search for every row ──────────────────────────────────────────
