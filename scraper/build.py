@@ -629,6 +629,11 @@ def main(argv: list[str] | None = None) -> int:
     # ── load OPG data ──────────────────────────────────────────────────────────
     problems   = json.loads((args.data_dir / "problems.json").read_text(encoding="utf-8"))
     categories = json.loads((args.data_dir / "categories.json").read_text(encoding="utf-8"))
+    # canonical PREFIX_english_name, keyed by page id (OPG slug, arXiv review id, bm/others id)
+    canonical_names = {
+        e["id"]: e["name"] for e in json.loads(
+            (args.data_dir / "conjecture_names.json").read_text(encoding="utf-8"))["names"]
+    }
 
     intersection_path = args.data_dir / "intersection.json"
     intersection = (
@@ -909,6 +914,7 @@ def main(argv: list[str] | None = None) -> int:
             statement = statement[len(kind):].lstrip(" .: ")
         rel_node_meta["opg:" + prob["slug"]] = {
             "name":      prob["title"],
+            "canonical": canonical_names.get(prob["slug"], ""),
             "status":    (prob.get("_review") or {}).get("status"),
             "url":       f"op/{prob['slug']}/",
             "source":    "opg",
@@ -923,6 +929,7 @@ def main(argv: list[str] | None = None) -> int:
             continue
         rel_node_meta["arxiv:" + rid] = {
             "name":      row["title"],
+            "canonical": canonical_names.get(rid, ""),
             "status":    (row.get("_review") or {}).get("status"),
             "url":       f"arxiv/{rid}/",
             "source":    "arxiv",
@@ -934,6 +941,7 @@ def main(argv: list[str] | None = None) -> int:
     for row in bm_rows + others_rows:
         rel_node_meta[f"{row['_source']}:" + row["bm_id"]] = {
             "name":      row["title"],
+            "canonical": canonical_names.get(row["bm_id"], ""),
             "status":    (row.get("_review") or {}).get("status"),
             "url":       f"{row['_source']}/{row['bm_id']}/",
             "source":    row["_source"],
@@ -1009,6 +1017,7 @@ def main(argv: list[str] | None = None) -> int:
     # cache-busting token so browsers refetch style.css whenever it changes
     env.globals["static_version"] = hashlib.sha1(
         (args.static_dir / "style.css").read_bytes()).hexdigest()[:10]
+    env.globals["canonical_names"] = canonical_names
 
     common = {
         "build_date":           date.today().isoformat(),

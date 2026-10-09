@@ -113,7 +113,7 @@
     el.addEventListener("click", ev => { ev.stopPropagation(); showNode(n); });
     el.addEventListener("mousedown", ev => startDragNode(n, ev));
     const title = document.createElementNS(NS, "title");
-    title.textContent = n.name + " [" + n.status + "]";
+    title.textContent = n.name + (n.canonical ? "\n" + n.canonical : "") + " [" + n.status + "]";
     el.appendChild(title);
     nodeLayer.appendChild(el);
     nodeEls.push(el);
@@ -254,6 +254,13 @@
     return '<a href="' + ROOT + n.url + '">' + esc(n.name) + "</a>" +
            ' <span class="status-badge status-' + n.status + '">' + n.status + "</span>";
   }
+  // normalized PREFIX_english_name, in small under a title
+  function canon(n, tag) {
+    tag = tag || "p";
+    return n.canonical
+      ? "<" + tag + ' class="canonical-name">' + esc(n.canonical) + "</" + tag + ">"
+      : "";
+  }
   function mathify() {
     if (window.renderMathInElement) {
       renderMathInElement(panel, { delimiters: [
@@ -272,10 +279,10 @@
       let verb = e.relation === "implies"
         ? (e.source === n.id ? "implies" : "implied by")
         : e.relation.replace(/_/g, " ");
-      inc.push("<li><em>" + verb + "</em> " + nodeLink(other) + "</li>");
+      inc.push("<li><em>" + verb + "</em> " + nodeLink(other) + canon(other, "div") + "</li>");
     });
     panel.innerHTML =
-      "<h2>" + nodeLink(n) + "</h2>" +
+      "<h2>" + nodeLink(n) + "</h2>" + canon(n) +
       '<p class="rel-meta">' + ({ opg: "Open Problem Garden", arxiv: "arXiv", bm: "Bondy &amp; Murty" }[n.source] || n.source) +
       (n.kind ? " &middot; " + esc(n.kind) : "") + "</p>" +
       (n.statement
@@ -295,6 +302,11 @@
       "<h2>" + nodeLink(nodeById[e.source]) +
       ' <span class="rel-verb">' + e.relation.replace(/_/g, " ") + "</span> " +
       nodeLink(nodeById[e.target]) + "</h2>" +
+      (nodeById[e.source].canonical || nodeById[e.target].canonical
+        ? '<p class="canonical-name">' + esc(nodeById[e.source].canonical || "?") +
+          " " + e.relation.replace(/_/g, " ") + " " +
+          esc(nodeById[e.target].canonical || "?") + "</p>"
+        : "") +
       '<p class="rel-meta">verdict: ' + e.verdict + " &middot; confidence: " + e.confidence + "</p>" +
       (e.flag
         ? '<p class="rel-flag rel-flag-' + e.flag.kind + '">' + esc(e.flag.label) + "</p>"
@@ -319,7 +331,8 @@
   document.getElementById("rel-search").addEventListener("change", ev => {
     const q = ev.target.value.trim().toLowerCase();
     if (!q) return;
-    const hit = GRAPH.nodes.find(n => n.name.toLowerCase().includes(q));
+    const hit = GRAPH.nodes.find(n => n.name.toLowerCase().includes(q) ||
+                                      (n.canonical || "").toLowerCase().includes(q));
     if (hit) focusNode(hit);
   });
   const m = location.hash.match(/^#node=(.+)$/);

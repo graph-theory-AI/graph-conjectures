@@ -5,6 +5,8 @@
 <article class="problem">
 <header>
   <h1>{{ p.title }}</h1>
+  {% set cname = canonical_names.get(p._review_id or p.slug) %}
+  {% if cname %}<p class="canonical-name">{{ cname }}</p>{% endif %}
   <div class="meta">
     <span class="importance importance-{{ p.importance.label|lower }}">{{ p.importance.label }} {{ '★' * p.importance.stars }}</span>
     {% if p.subject_path %}
