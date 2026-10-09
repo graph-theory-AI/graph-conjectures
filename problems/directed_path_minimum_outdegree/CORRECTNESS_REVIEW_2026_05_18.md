@@ -225,7 +225,7 @@ the error path. The dispatch is correct but brittle; a typed
 `@dataclass` would clarify.
 
 **Nt3. The OPG slug
-`directed_cycle_of_length_twice_the_minimum_outdegree` (per
+`OPG_oriented_outdegree_directed_path_2k` (`directed_cycle_of_length_twice_the_minimum_outdegree`) (per
 `docs/plan.md` line 95) suggests a *cycle* conjecture, but the
 project attacks the *path* problem.** This is acknowledged in
 `docs/plan.md` lines 92–106. The project should not be republished

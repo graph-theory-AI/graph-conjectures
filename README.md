@@ -70,7 +70,7 @@ Reviewed status counts:
 | disproved     |   13 |    22 |           1 | counterexample in the literature                          |
 | unclear       |    1 |     3 |           0 | insufficient information to decide                       |
 
-One OPG problem (`ptas_for_feedback_arc_set_in_tournaments`) counts as
+One OPG problem (`OPG_tournament_feedback_arc_set_ptas`, `ptas_for_feedback_arc_set_in_tournaments`) counts as
 `solved` although it was already solved before it was posted on OPG
 (Kenyon-Mathieu–Schudy, STOC 2007). Its review has
 `solved_before_posting: true`, and its page says so.
@@ -82,14 +82,14 @@ second-neighbourhood conjectures, Sidorenko's and Ryser's conjectures
 (counterexamples), and the Harary–Hill and Zarankiewicz crossing-number formulas.
 See [Recently claimed](#recently-claimed-openais-manuscript-collection-october-2026).
 Before that, the **cycle double cover conjecture**
-(`/op/cycle_double_cover_conjecture/`) moved `partial` → `solved` in September
+(`OPG_bridgeless_cycle_double_cover`, `/op/cycle_double_cover_conjecture/`) moved `partial` → `solved` in September
 2026 after the July 2026 OpenAI proof and Sang-il Oum's exposition
 ([arXiv:2607.16356](https://arxiv.org/abs/2607.16356)); see
 [Recently resolved](#recently-resolved-the-cycle-double-cover-conjecture).
 
 **44 of the arXiv-extracted records** were also identified as direct progress
 on existing OPG problems and attached as citations on those OPG pages (e.g. on
-`/op/caccetta_haggkvist_conjecture/` and 20 other pages).
+`OPG_caccetta_haggkvist_outdegree_short_cycle` (`/op/caccetta_haggkvist_conjecture/`) and 20 other pages).
 
 The output site is inspired by
 [erdosproblems.com](https://www.erdosproblems.com/), which itself is an
@@ -216,15 +216,15 @@ What this repository changed as a result (September 2026):
 
 | page | before | after |
 |---|---|---|
-| `cycle_double_cover_conjecture` | partial | **solved** |
-| `the_circular_embedding_conjecture` | partial | partial — but the **cubic case is now settled** |
-| `m_n_cycle_covers` | partial | partial — the **(8,2) box of the chart is now a theorem** |
-| `strong_5_cycle_double_cover_conjecture`, `faithful_cycle_covers`, `cycle_double_covers_containing_predefined_2_regular_subgraphs`, `decomposing_eulerian_graphs`, `petersen_coloring_conjecture` | partial/open | unchanged; their implication *into* CDC is now flagged vacuous |
-| `the_berge_fulkerson_conjecture` | partial | unchanged; the `related_only` reading is confirmed — CDC transfers nothing to it |
+| `OPG_bridgeless_cycle_double_cover` (`cycle_double_cover_conjecture`) | partial | **solved** |
+| `OPG_2_connected_circular_surface_embedding` (`the_circular_embedding_conjecture`) | partial | partial — but the **cubic case is now settled** |
+| `OPG_bridgeless_cycle_double_cover_5_cycles` (`m_n_cycle_covers`) | partial | partial — the **(8,2) box of the chart is now a theorem** |
+| `OPG_bridgeless_cycle_double_cover_strong_5` (`strong_5_cycle_double_cover_conjecture`), `OPG_faithful_cycle_cover_even_weights` (`faithful_cycle_covers`), `OPG_bridgeless_cycle_double_cover_prescribed_2_factor` (`cycle_double_covers_containing_predefined_2_regular_subgraphs`), `OPG_eulerian_cycle_decomposition_compatible_transition_system` (`decomposing_eulerian_graphs`), `OPG_petersen_coloring_bridgeless_cubic` (`petersen_coloring_conjecture`) | partial/open | unchanged; their implication *into* CDC is now flagged vacuous |
+| `OPG_berge_fulkerson_cubic_6_perfect_matchings` (`the_berge_fulkerson_conjecture`) | partial | unchanged; the `related_only` reading is confirmed — CDC transfers nothing to it |
 
 Explicitly **not** settled by the proof, and still open on the site: the 5-cycle
 double cover conjecture (Celmins, Preissmann — the `(5,2)` case of
-`m_n_cycle_covers`), the orientable 5-CDC conjecture (Archdeacon, Jaeger), which
+`OPG_bridgeless_cycle_double_cover_5_cycles` (`m_n_cycle_covers`)), the orientable 5-CDC conjecture (Archdeacon, Jaeger), which
 would imply the 5-flow conjecture, the oriented cycle double cover conjecture,
 Bondy's $n-1$ small cycle double cover conjecture for simple 2-edge-connected
 graphs, the strong embedding conjecture for non-cubic graphs, and

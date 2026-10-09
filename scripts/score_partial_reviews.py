@@ -189,6 +189,7 @@ COUNTEREXAMPLE_TARGETS = [
 @dataclass(frozen=True)
 class ScoredProblem:
     slug: str
+    name: str
     title: str
     url: str
     category: str
@@ -301,6 +302,7 @@ def score_record(problem: dict, review: dict) -> ScoredProblem:
     category = " > ".join(s["label"] for s in problem.get("subject_path", []))
     return ScoredProblem(
         slug=slug,
+        name=problem.get("name", ""),
         title=problem.get("title", slug),
         url=problem.get("canonical_url", ""),
         category=category,
@@ -339,6 +341,7 @@ def write_csv(rows: list[ScoredProblem], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     fields = [
         "slug",
+        "name",
         "title",
         "url",
         "category",
@@ -363,9 +366,8 @@ def write_csv(rows: list[ScoredProblem], path: Path) -> None:
 
 def md_link(row: ScoredProblem) -> str:
     title = row.title.replace("|", "\\|")
-    if row.url:
-        return f"[{title}]({row.url})"
-    return title
+    link = f"[{title}]({row.url})" if row.url else title
+    return f"{link} (`{row.name}`)" if row.name else link
 
 
 def table(rows: list[ScoredProblem]) -> str:

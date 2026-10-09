@@ -92,7 +92,7 @@ directed walk of length $2k$ is not the object.
 
 Naming mismatch (kept here for any future reader):
 
-- OPG slug: `directed_cycle_of_length_twice_the_minimum_outdegree`
+- OPG slug: `OPG_oriented_outdegree_directed_path_2k` (`directed_cycle_of_length_twice_the_minimum_outdegree`)
 - OPG title in the local scrape: `Directed path of length twice the minimum outdegree`
 - OPG statement: every oriented graph with minimum outdegree $k$ contains a
   directed path of length $2k$.
