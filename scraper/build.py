@@ -25,6 +25,7 @@ Outputs:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import logging
 import re
@@ -907,6 +908,9 @@ def main(argv: list[str] | None = None) -> int:
         trim_blocks=True,
         lstrip_blocks=True,
     )
+    # cache-busting token so browsers refetch style.css whenever it changes
+    env.globals["static_version"] = hashlib.sha1(
+        (args.static_dir / "style.css").read_bytes()).hexdigest()[:10]
 
     common = {
         "build_date":           date.today().isoformat(),

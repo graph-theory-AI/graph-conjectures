@@ -35,6 +35,8 @@
 
   <div class="relations-toolbar">
     <input id="rel-search" type="search" placeholder="Find a conjecture&hellip;" autocomplete="off">
+  </div>
+  <div class="relations-toolbar">
     <span class="relations-filters" aria-label="Relation filters">
       <label><input type="checkbox" data-rel="implies" checked> <span class="rel-swatch rel-implies"></span>implies</label>
       <label><input type="checkbox" data-rel="equivalent_to" checked> <span class="rel-swatch rel-equivalent_to"></span>equivalent</label>
@@ -42,6 +44,8 @@
       <label><input type="checkbox" data-rel="related_only"> <span class="rel-swatch rel-related_only"></span>related only</label>
       <label><input type="checkbox" id="rel-plausible"> include <em>plausible</em> verdicts</label>
     </span>
+  </div>
+  <div class="relations-toolbar">
     <span class="relations-legend" aria-label="Status legend">
       <span class="status-badge status-open">open</span>
       <span class="status-badge status-partial">partial</span>
@@ -58,7 +62,7 @@
     <svg id="rel-svg" role="img" aria-label="Conjecture relation graph">
       <defs>
         <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
-                markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                markerWidth="4" markerHeight="4" orient="auto-start-reverse">
           <path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"></path>
         </marker>
       </defs>
@@ -78,7 +82,8 @@
   const vp = document.getElementById("rel-viewport");
   const panel = document.getElementById("rel-panel");
   const NS = "http://www.w3.org/2000/svg";
-  const R = 7;                                   // node radius
+  const R = 7;                                   // node radius at 100% zoom
+  let r = R, labelScale = 1;                     // zoom-adjusted, see setView()
 
   const nodeById = {};
   GRAPH.nodes.forEach(n => { nodeById[n.id] = n; });
@@ -125,27 +130,27 @@
       const s = nodeById[e.source], t = nodeById[e.target];
       const dx = t.x - s.x, dy = t.y - s.y, d = Math.hypot(dx, dy) || 1;
       // stop lines at the node border so arrowheads stay visible
-      const ox = dx / d * (R + 2), oy = dy / d * (R + 2);
+      const ox = dx / d * (r + 2), oy = dy / d * (r + 2);
       edgeEls[i].setAttribute("x1", s.x + ox); edgeEls[i].setAttribute("y1", s.y + oy);
       edgeEls[i].setAttribute("x2", t.x - ox); edgeEls[i].setAttribute("y2", t.y - oy);
     });
     GRAPH.nodes.forEach((n, i) => {
       const el = nodeEls[i];
       if (n.source === "opg") {
-        el.setAttribute("cx", n.x); el.setAttribute("cy", n.y); el.setAttribute("r", R);
+        el.setAttribute("cx", n.x); el.setAttribute("cy", n.y); el.setAttribute("r", r);
       } else if (n.source === "bm") {
         // upward triangle centred on the node, slightly larger to match the area
-        const T = R * 1.25;
+        const T = r * 1.25;
         el.setAttribute("points",
           n.x + "," + (n.y - T) + " " +
           (n.x + T * 0.866) + "," + (n.y + T / 2) + " " +
           (n.x - T * 0.866) + "," + (n.y + T / 2));
       } else {
-        el.setAttribute("x", n.x - R); el.setAttribute("y", n.y - R);
-        el.setAttribute("width", 2 * R); el.setAttribute("height", 2 * R);
+        el.setAttribute("x", n.x - r); el.setAttribute("y", n.y - r);
+        el.setAttribute("width", 2 * r); el.setAttribute("height", 2 * r);
       }
-      labelEls[i].setAttribute("x", n.x + R + 3);
-      labelEls[i].setAttribute("y", n.y + 3);
+      labelEls[i].setAttribute("x", n.x + r + 3 * labelScale);
+      labelEls[i].setAttribute("y", n.y + 3 * labelScale);
     });
   }
   position();
@@ -184,8 +189,19 @@
   let view = { x: bounds.x0, y: bounds.y0, w: bounds.x1 - bounds.x0, h: bounds.y1 - bounds.y0 };
   function setView() {
     svg.setAttribute("viewBox", view.x + " " + view.y + " " + view.w + " " + view.h);
+    // world units per screen pixel: edge widths and dashes are multiplied by it
+    // so they keep a constant on-screen thickness when zoomed out
+    const k = Math.max(view.w / (svg.clientWidth || 1), 1);
+    svg.style.setProperty("--k", k);
+    // nodes and labels grow too, but capped so that they do not overlap
+    // (nearest nodes are ~90 units apart) when the whole graph is shown
+    r = R * Math.min(k, 4.5);
+    labelScale = Math.min(k, 3);
+    svg.style.setProperty("--kl", labelScale);
+    position();
   }
   setView();
+  window.addEventListener("resize", setView);
 
   function clientToWorld(ev) {
     const r = svg.getBoundingClientRect();
