@@ -5,6 +5,7 @@
   "results": [
     {
       "id": "0911.0885__00",
+      "name": "AX_plane_triangle_free_distant_precoloring_extension",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "The final source version records that Dvořák and Lidický proved Conjecture 1.5, while its Theorem 5.1 proves that Conjecture 1.5 implies Conjecture 1.4.",
@@ -17,6 +18,7 @@
     },
     {
       "id": "1302.2158__00",
+      "name": "AX_girth_5_planar_list_critical_bounded",
       "site_status": "solved",
       "confidence": "medium",
       "one_line": "Postle's fixed-surface bound for fixed-list critical girth-five graphs implies the conjecture after singleton lists are replaced by constant-genus three-list forcing gadgets.",
@@ -29,6 +31,7 @@
     },
     {
       "id": "1407.5833__00",
+      "name": "AX_identifying_codes_hereditary_vc_dimension_dichotomy",
       "site_status": "disproved",
       "confidence": "high",
       "one_line": "The intended finite-VC-dimension implication is already refuted by the hereditary class of C4-free bipartite graphs in Theorem 4.3 of the cited source.",
@@ -41,6 +44,7 @@
     },
     {
       "id": "1701.03366__00",
+      "name": "AX_z5_antisymmetric_flow_edge_connected_digraphs",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Corollary 13(iv) of the source paper proves that every directed 12-edge-connected graph has a $\\mathbb{Z}_5$-antisymmetric flow, directly establishing the requested constant.",
@@ -58,6 +62,7 @@
     },
     {
       "id": "1709.09050__03",
+      "name": "AX_capture_time_higher_genus_bounds",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Yes: the finite-state bound gives capt_k(G) <= n^{c(G)+1} for every k >= c(G), and hence Schroeder's conjecture immediately yields capt_k(G) <= n^{g+4}.",
@@ -70,6 +75,7 @@
     },
     {
       "id": "1710.06282__01",
+      "name": "AX_erdos_posa_treewidth_packing_k_log_k",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "A 2019 theorem of Cames van Batenburg, Huynh, Joret, and Raymond gives an O_H(k log(k+1)) vertex Erdős–Pósa bound for every fixed planar H, and taking H to be a grid proves the conjecture.",
@@ -82,6 +88,7 @@
     },
     {
       "id": "1802.03727__01",
+      "name": "AX_dense_bipartite_induced_or_large_clique",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "The quoted fixed-clique-number theorem implies the conjecture by a staircase diagonalization, even with x_2(d)=x_3(d).",
@@ -94,6 +101,7 @@
     },
     {
       "id": "1802.03727__03",
+      "name": "AX_dense_bipartite_induced_large_girth",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "The quoted Kwan–Sudakov–Tran theorem with t=3 immediately implies the conjecture, because girth at least 4 implies triangle-freeness and their lower bound eventually exceeds 3.",
@@ -106,6 +114,7 @@
     },
     {
       "id": "1802.04179__01",
+      "name": "AX_planar_c4_c5_fractional_chromatic_11_3",
       "site_status": "solved",
       "confidence": "medium",
       "one_line": "The Xu–Zhu theorem quoted in the catalog gives the strictly better universal bound χ_f(G)≤7/2=11/3−1/6, thereby confirming the informal conjecture.",
@@ -118,6 +127,7 @@
     },
     {
       "id": "1806.00825__01",
+      "name": "AX_short_rainbow_circuits_matroids",
       "site_status": "disproved",
       "confidence": "high",
       "one_line": "As written, the conjecture is false: the uniformly colored matroid U_{n-1,2n} has no circuit shorter than n.",
@@ -130,6 +140,7 @@
     },
     {
       "id": "1806.09726__02",
+      "name": "AX_online_ramsey_off_diagonal_alteration_bound",
       "site_status": "solved",
       "confidence": "medium",
       "one_line": "For every fixed m≥3, Guo and Warnke proved the natural exponent-level extension r̃(m,n)≥n^{m-o(1)}, although the original remark specified no logarithmic factor.",
@@ -142,6 +153,7 @@
     },
     {
       "id": "1905.12142__00",
+      "name": "AX_gnp_subgraph_count_anticoncentration_bound",
       "site_status": "disproved",
       "confidence": "high",
       "one_line": "The universal conjecture is false: for H = 2K2 there are x_n with Pr(X_H = x_n) = Omega(n^{-5/2}), whereas Var(X_H) = Theta(n^6), so the conjecture would require O(n^{-3}).",
@@ -154,6 +166,7 @@
     },
     {
       "id": "1912.11246__02",
+      "name": "AX_prism_pyramid_theta_wheel_free_separators",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Every turtle contains an induced even wheel, so the cited n^18 bound for (theta, pyramid, prism, turtle)-free graphs applies directly.",
@@ -166,6 +179,7 @@
     },
     {
       "id": "2001.01607__00",
+      "name": "AX_even_hole_k4_diamond_free_treewidth",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Yes: a later theorem states that every even-hole-free graph of sufficiently large treewidth contains an induced diamond or a K4.",
@@ -178,6 +192,7 @@
     },
     {
       "id": "2006.09269__00",
+      "name": "AX_planar_recoloring_girth_5_six_colors",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "The published follow-up arXiv:2112.00631 proves that the 6-recolouring graph of every n-vertex planar graph of girth at least five has diameter O(n), exactly resolving Conjecture 5.",
@@ -190,6 +205,7 @@
     },
     {
       "id": "2103.17094__00",
+      "name": "AX_intersection_graphs_polynomial_weak_coloring_numbers",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "The source paper itself proves polynomial bounds for the homothet and ball-like cases and gives an exponential counterexample for comparable boxes in dimension three.",
@@ -202,6 +218,7 @@
     },
     {
       "id": "2105.07370__00",
+      "name": "AX_rodl_h_free_restricted_union_cover",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "The partition theorem stated in the source paper immediately gives the requested union cover, because every partition is a cover.",
@@ -214,6 +231,7 @@
     },
     {
       "id": "2201.08204__01",
+      "name": "AX_odd_dicycle_free_digraph_dichromatic_bounded",
       "site_status": "disproved",
       "confidence": "high",
       "one_line": "The answer is negative: the t=4 case of the cited fixed-length-cycle theorem gives bounded-clique digraphs with unbounded dichromatic number and no odd induced directed cycle.",
@@ -226,6 +244,7 @@
     },
     {
       "id": "2208.06629__00",
+      "name": "AX_lazy_transpositions_shuffle_t_counters_exact",
       "site_status": "disproved",
       "confidence": "high",
       "one_line": "The proposed identity is false: the source paper's bound for full shuffles already gives strict counterexamples, and these also yield counterexamples with t=n-1<n.",
@@ -238,6 +257,7 @@
     },
     {
       "id": "2208.06630__01",
+      "name": "AX_reachability_network_2_uniformity_lazy_transpositions",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "The conjecture is true: a support-plus-rank potential gives the lower bound 2n-3, matching the stated construction, and the current source note already reports a resolution.",
@@ -250,6 +270,7 @@
     },
     {
       "id": "2212.02737__00",
+      "name": "AX_clean_classes_finite_family_characterization",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "The literal question is answered by the published array criterion: the H-free class is clean exactly when H-free n-arrays exist for only finitely many n.",
@@ -262,6 +283,7 @@
     },
     {
       "id": "2401.06062__00",
+      "name": "AX_prime_cayley_graph_joined_union_decomposition",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "For finite simple graphs, a nontrivial joined-union decomposition exists exactly when the graph has a proper nonsingleton module; this is polynomial-time decidable, while P4 shows that not every graph decomposes.",
@@ -274,6 +296,7 @@
     },
     {
       "id": "2401.06062__01",
+      "name": "AX_prime_cayley_graph_finite_ring_characterization",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "For |R|≥3, Theorem 4.35 already characterizes X_R as prime exactly when R is semisimple, is not a field, and has at most one Wedderburn factor isomorphic to F₂.",
@@ -286,6 +309,7 @@
     },
     {
       "id": "2401.06062__02",
+      "name": "AX_prime_cayley_graph_tensor_product_complete",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "With prime meaning module-prime, and apart from convention-dependent graphs of order at most two, the product is prime exactly when d is at least two, every n_i is at least two, and at most one n_i equals two.",
@@ -298,6 +322,7 @@
     },
     {
       "id": "2410.13008__01",
+      "name": "AX_weightable_digraphs_np_characterization",
       "site_status": "solved",
       "confidence": "medium",
       "one_line": "Assuming the catalog's stated 2026 result is accurate, polynomial-time recognition puts weightability in P and hence in NP, while independently weightability is equivalent to admitting a 0–1 edge set meeting every directed cycle exactly once.",
@@ -310,6 +335,7 @@
     },
     {
       "id": "2410.16495__00",
+      "name": "AX_large_treewidth_unavoidable_induced_subgraphs",
       "site_status": "disproved",
       "confidence": "high",
       "one_line": "A theorem of Alecu, Bonnet, Bureo Villafana, and Trotignon implies that every proper hereditary candidate obstruction family fails, so the only universal hereditary core is the tautological class of all graphs.",
@@ -322,6 +348,7 @@
     },
     {
       "id": "2510.11311__04",
+      "name": "AX_c4_orientations_eulerian_avoidable",
       "site_status": "disproved",
       "confidence": "high",
       "one_line": "Lei, Wang, Xu, and Yang classify the Eulerian-avoidability of all orientations of $C_4$ and prove that the one-directed $K_{2,2}$ is not Eulerian-avoidable; hence not every orientation of $C_4$ is Eulerian-avoidable.",
@@ -338,6 +365,7 @@
     },
     {
       "id": "2603.02786__01",
+      "name": "AX_arithmetic_progression_packing_primes_asymptotic",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Hou, Liu, and Zhao prove $M_{\\mathbb{P}(n)}(n)=(\\frac16+o(1))n^3/\\ln n$, settling Conjecture 4 with its predicted constant.",
@@ -354,6 +382,7 @@
     },
     {
       "id": "2603.02786__04",
+      "name": "AX_arithmetic_progression_packing_fixed_n",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Mao, Wang, Wei, and Yang prove $M_k(n)=(1+o(1))nk$ for every fixed $n$, confirming Conjecture 7.",
@@ -370,6 +399,7 @@
     },
     {
       "id": "finding_k_edge_outerplanar_graph_embeddings",
+      "name": "OPG_k_edge_outerplanar_embedding_polynomial",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Yu proves that the minimum edge-outerplanarity of a planar graph can be computed in polynomial time, answering Bentz's question affirmatively.",
@@ -386,6 +416,7 @@
     },
     {
       "id": "imbalance_conjecture",
+      "name": "OPG_edge_imbalance_multiset_graphic",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Schreib and Yavari prove that the positive imbalance multiset $M_G$ is graphic, establishing the imbalance conjecture in full.",
@@ -402,6 +433,7 @@
     },
     {
       "id": "three_chromatic_0_2_graphs",
+      "name": "OPG_0_2_graphs_chromatic_number_3",
       "site_status": "solved",
       "confidence": "high",
       "one_line": "Williamson proves that every finite three-colourable $(0,2)$-graph is bipartite; consequently no finite $(0,2)$-graph has chromatic number exactly three.",
@@ -420,6 +452,7 @@
   "ai_results": [
     {
       "id": "1611.03196__03",
+      "name": "AX_fair_representation_bipartite_matching_under_representation",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -433,6 +466,7 @@
     },
     {
       "id": "1702.01094__01",
+      "name": "AX_large_chromatic_induced_path_uniquely_covered",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -446,6 +480,7 @@
     },
     {
       "id": "1812.02420__02",
+      "name": "AX_fractional_dichromatic_number_complexity",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -459,6 +494,7 @@
     },
     {
       "id": "1812.02420__03",
+      "name": "AX_directed_kneser_graphs_existence",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -472,6 +508,7 @@
     },
     {
       "id": "1812.09215__00",
+      "name": "AX_lipschitz_bijection_dictator_xor_inverse",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -485,6 +522,7 @@
     },
     {
       "id": "1902.10878__01",
+      "name": "AX_bipartite_concatenation_psi_symmetry",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -498,6 +536,7 @@
     },
     {
       "id": "1904.02595__00",
+      "name": "AX_direct_product_multipartite_independence_equals_irredundance",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -511,6 +550,7 @@
     },
     {
       "id": "1912.01570__00",
+      "name": "AX_planar_fvs_face_packing_ratio_2",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -524,6 +564,7 @@
     },
     {
       "id": "2008.03587__00",
+      "name": "AX_zombie_number_leaf_attachment_invariance",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -537,6 +578,7 @@
     },
     {
       "id": "2103.15175__00",
+      "name": "AX_list_ramsey_chromatic_family_exact",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -550,6 +592,7 @@
     },
     {
       "id": "2208.06858__01",
+      "name": "AX_levine_hat_monotone_success_vanishes",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -563,6 +606,7 @@
     },
     {
       "id": "2310.04265__09",
+      "name": "AX_tournament_clique_number_bounded_witness",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -576,6 +620,7 @@
     },
     {
       "id": "2401.00299__02",
+      "name": "AX_hypercube_subcube_partitions_dimension_2_asymptotics",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -589,6 +634,7 @@
     },
     {
       "id": "2405.03455__00",
+      "name": "AX_erdos_szekeres_collinear_variant_ell_dependence",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -602,6 +648,7 @@
     },
     {
       "id": "2408.02400__00",
+      "name": "AX_chromatic_cochromatic_gap_three_small_clique",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -615,6 +662,7 @@
     },
     {
       "id": "2506.08810__03",
+      "name": "AX_induced_saturated_infinite_tournament_perturbation",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -628,6 +676,7 @@
     },
     {
       "id": "2507.10840__01",
+      "name": "AX_geometric_graph_plane_path_cover_bound",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -641,6 +690,7 @@
     },
     {
       "id": "2512.10438__00",
+      "name": "AX_tournament_color_avoiding_path_non_transitive",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -654,6 +704,7 @@
     },
     {
       "id": "2604.09449__03",
+      "name": "AX_color_balanced_hamilton_cycle_bounds",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -667,6 +718,7 @@
     },
     {
       "id": "circular_colouring_the_orthogonality_graph",
+      "name": "OPG_orthogonality_graph_circular_chromatic_4",
       "site_status": "ai-proved",
       "promote_status": true,
       "claimed_verdict": "proved",
@@ -680,6 +732,7 @@
     },
     {
       "id": "covering_powers_of_cycles_with_equivalence_subgraphs",
+      "name": "OPG_cycle_powers_equivalence_covering_number_linear",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -693,6 +746,7 @@
     },
     {
       "id": "geodesic_cycles_and_tuttes_theorem",
+      "name": "OPG_3_connected_geodesic_cycles_peripheral_lengths",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -706,6 +760,7 @@
     },
     {
       "id": "melnikovs_valency_variety_problem",
+      "name": "OPG_valency_variety_chromatic_lower_bound",
       "site_status": "ai-disproved",
       "promote_status": true,
       "claimed_verdict": "disproved",
@@ -722,6 +777,7 @@
   "ill_posed_results": [
     {
       "id": "1609.05458__00",
+      "name": "AX_ryser_near_extremal_hypergraphs_projective_planes",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The catalog item is a research direction rather than a proposition, since “near-extremal,” “large piece,” and “based on a projective plane” have no specified quantitative meanings.",
@@ -733,6 +789,7 @@
     },
     {
       "id": "1611.01270__00",
+      "name": "AX_permutation_property_testing_query_bounds",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The catalog item is a research programme rather than a quantified conjecture; moreover, one natural universal Kendall-tau formulation is false in the canonical sampling model.",
@@ -744,6 +801,7 @@
     },
     {
       "id": "1705.02166__01",
+      "name": "AX_euclidean_ramsey_l3_vs_lm",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "As written, the claim is elementary for every m at least 2 with n=1, while including m=1 makes it false.",
@@ -755,6 +813,7 @@
     },
     {
       "id": "1804.06104__01",
+      "name": "AX_avd_edge_coloring_probabilistic_barrier",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "Without a formal definition of “probabilistic methods” and “on their own,” the stated methodological forecast has no determinate mathematical truth value.",
@@ -766,6 +825,7 @@
     },
     {
       "id": "1908.03788__01",
+      "name": "AX_avoidable_non_path_family_existence",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "As extracted, the question has no determinate truth value because avoidability is defined only for induced path occurrences and no corresponding predicate is specified for non-path graphs.",
@@ -777,6 +837,7 @@
     },
     {
       "id": "1909.08426__04",
+      "name": "AX_independent_set_fpt_h_free_candidates",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The catalog item is an informal research expectation rather than a proposition, because neither “very few” nor “will end up” specifies a mathematical quantifier or asymptotic notion.",
@@ -788,6 +849,7 @@
     },
     {
       "id": "1911.03427__01",
+      "name": "AX_induced_arithmetic_removal_abelian_groups",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The quoted conjecture has no determinate truth value, and the most direct uniform finite-group formulation is false.",
@@ -799,6 +861,7 @@
     },
     {
       "id": "2002.00258__00",
+      "name": "AX_surface_excluded_minors_hoppers_exist",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The quoted belief has no fixed quantifiers or specified hopper variant, although the natural strong-hopper reading forces a rigid two-unit genus-jump configuration.",
@@ -810,6 +873,7 @@
     },
     {
       "id": "2002.11100__00",
+      "name": "AX_star_contraction_clique_minor_strategy_generality",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The quoted sentence is a programmatic methodological suggestion, not a proposition with specified hypotheses, conclusions, or quantifiers.",
@@ -821,6 +885,7 @@
     },
     {
       "id": "2003.01846__00",
+      "name": "AX_outerplanar_strongly_perfect_characterization",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The quoted remark does not specify a forbidden family or an if-and-only-if assertion, so it has no determinate truth value as a conjecture.",
@@ -832,6 +897,7 @@
     },
     {
       "id": "2004.06788__00",
+      "name": "AX_cubic_many_3_edge_colorings_reflexive",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The prose claim has no truth value as stated, and its natural absolute-threshold interpretation is false even for connected simple bipartite cubic graphs.",
@@ -843,6 +909,7 @@
     },
     {
       "id": "2007.14161__00",
+      "name": "AX_twin_width_mis_dominating_approximability",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The modal claim has no definite truth value; under the natural fixed-width, supplied-sequence formulation, a constant-factor MIS approximation is equivalent to a PTAS and its existence remains open.",
@@ -854,6 +921,7 @@
     },
     {
       "id": "2102.10220__02",
+      "name": "AX_k_colorable_deletion_neighborhood_edge_cover",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "With the displayed minimum over all n-vertex graphs, m(n,k)=0 identically, while replacing the minimum by a maximum gives a meaningful problem for which only partial results are established below.",
@@ -865,6 +933,7 @@
     },
     {
       "id": "2102.10220__03",
+      "name": "AX_k_colorable_deletion_mnk_asymptotics",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "Under the literal unrestricted definition, m(n,k) has an elementary exact formula, contradicting the quoted n^2/(ek) bound and showing that an H-free hypothesis or some other restriction is missing.",
@@ -876,6 +945,7 @@
     },
     {
       "id": "2104.11626__00",
+      "name": "AX_triangle_removal_vs_dfl_growth",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The phrase “similar growth” specifies no asymptotic equivalence, and while the same-parameter Theta interpretation is false, plausible logarithmic or polynomial-equivalence versions remain open.",
@@ -887,6 +957,7 @@
     },
     {
       "id": "2109.09205__00",
+      "name": "AX_ramsey_goodness_books_threshold_not_tight",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The phrase \"not best possible\" has no quantified meaning; the bound is literally improvable for p=2 and k=1, but the intended nondegenerate asymptotic claim is unspecified.",
@@ -898,6 +969,7 @@
     },
     {
       "id": "2209.12023__00",
+      "name": "AX_twin_width_matrices_infinite_fields",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "Without an independent definition of twin-width for rational matrices the claimed equivalence is tautological or undefined; bounded grid rank does satisfy it over every infinite field, while the natural equality-contraction extension is false.",
@@ -909,6 +981,7 @@
     },
     {
       "id": "2301.02177__00",
+      "name": "AX_kromatic_claw_free_grassmannian_subvariety",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "A weak finite-Grassmannian interpretation is trivially true, whereas a faithful stable interpretation requires an unspecified compatible family and already encounters a concrete obstruction for the graph K2.",
@@ -920,6 +993,7 @@
     },
     {
       "id": "2402.04237__00",
+      "name": "AX_coloring_graph_polynomial_determination",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "Literally every graph H works by taking H'=H; under the natural requirement H' not isomorphic to H, I prove that every complete graph K_r has the larger witness 2K_r on the class of nonempty graphs.",
@@ -931,6 +1005,7 @@
     },
     {
       "id": "2503.05562__00",
+      "name": "AX_domination_packing_ratio_bounded_given_class",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "With no graph class specified the question has no single answer, and its universal interpretation is false even for the hereditary class of split graphs.",
@@ -942,6 +1017,7 @@
     },
     {
       "id": "2505.05997__00",
+      "name": "AX_largest_clique_minor_opt_approximation",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "As written, the claim is vacuous via the K_1 solution, and uniform FPT testing in fact yields a polynomial-time approximation with ratio o(OPT) by a timeout construction.",
@@ -953,6 +1029,7 @@
     },
     {
       "id": "2509.02561__00",
+      "name": "AX_small_doubling_sumset_covering_family",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "As quoted, the conjecture omits essential bounds and quantifiers and hence has no truth value, although natural level-zero and structured special cases admit rigorous coverings.",
@@ -964,6 +1041,7 @@
     },
     {
       "id": "2601.12746__00",
+      "name": "AX_circular_drawing_digraph_forbidden_characterization",
       "verdict": "ill_posed",
       "confidence": "high",
       "one_line": "The catalog item is a schematic research programme rather than a quantified conjecture, since neither the connectivity class, the containment relation, nor the permitted obstruction type is specified.",

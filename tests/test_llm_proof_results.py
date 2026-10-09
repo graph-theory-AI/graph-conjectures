@@ -17,6 +17,7 @@ from sync_llm_proof_results import (  # noqa: E402
     collect_known_resolutions,
 )
 from build import _virtual_problem_from_arxiv  # noqa: E402
+from conjecture_names import names_by_id  # noqa: E402
 
 
 class LlmProofResultTests(unittest.TestCase):
@@ -121,6 +122,14 @@ class LlmProofResultTests(unittest.TestCase):
         # A diagnostic never doubles as a literature or AI status.
         self.assertFalse(result_ids & {r["id"] for r in payload["results"]})
         self.assertFalse(result_ids & {r["id"] for r in payload["ai_results"]})
+
+    def test_checked_in_results_carry_canonical_names(self):
+        payload = json.loads((ROOT / "data" / "llm_proof_results.json").read_text())
+        names = names_by_id()
+        for key in ("results", "ai_results", "ill_posed_results"):
+            for result in payload[key]:
+                with self.subTest(list=key, id=result["id"]):
+                    self.assertEqual(result["name"], names[result["id"]])
 
     def test_source_import_matches_checked_in_data(self):
         source = ROOT.parent / "Graph-Theory-LLM-Proofs"

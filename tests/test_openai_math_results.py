@@ -20,6 +20,7 @@ DATA = ROOT / "data"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import sync_openai_math_results as sync  # noqa: E402
+from conjecture_names import names_by_id  # noqa: E402
 
 RELATION_STATUSES = {
     "resolves": {"ai-proved", "ai-disproved"},
@@ -54,6 +55,12 @@ class OpenAIMathResultsTests(unittest.TestCase):
         ids = [r["id"] for r in self.results]
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(set(ids) - _catalogue_ids(), set())
+
+    def test_every_match_carries_its_canonical_name(self):
+        names = names_by_id()
+        for r in self.results:
+            with self.subTest(id=r["id"]):
+                self.assertEqual(r["name"], names[r["id"]])
 
     def test_claims_use_only_ai_labels(self):
         for r in self.results:

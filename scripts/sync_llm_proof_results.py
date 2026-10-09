@@ -17,6 +17,8 @@ import json
 import re
 from pathlib import Path
 
+from conjecture_names import with_name
+
 
 REPOSITORY_URL = "https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs"
 
@@ -149,7 +151,7 @@ def _known_result(review_id: str, attack: dict, audit_url: str) -> dict:
         "audit_url": audit_url,
     }
     result.update({k: v for k, v in metadata.items() if k.startswith("article_")})
-    return result
+    return with_name(result)
 
 
 def _pdf_target_id(pdf_path: Path) -> str:
@@ -211,7 +213,7 @@ def collect_ai_writeups(source_dir: Path) -> list[dict]:
         attack = json.loads(
             (source_dir / leg / review_id / "verdict.json").read_text(encoding="utf-8")
         )
-        writeups.append({
+        writeups.append(with_name({
             "id": review_id,
             "site_status": f"ai-{claimed_verdict}",
             "promote_status": True,
@@ -223,7 +225,7 @@ def collect_ai_writeups(source_dir: Path) -> list[dict]:
             "assessed_at": attack.get("when", ""),
             "campaign": campaign,
             "pdf_url": f"{REPOSITORY_URL}/blob/main/{relative_pdf_path}",
-        })
+        }))
 
     writeups.sort(key=lambda result: result["id"])
     ids = [result["id"] for result in writeups]
@@ -249,7 +251,7 @@ def collect_ill_posed(source_dir: Path) -> list[dict]:
             raise ValueError(
                 f"verdict id {review_id!r} does not match {verdict_path.parent.name!r}"
             )
-        results.append({
+        results.append(with_name({
             "id": review_id,
             "verdict": "ill_posed",
             "confidence": verdict.get("confidence", "unknown"),
@@ -259,7 +261,7 @@ def collect_ill_posed(source_dir: Path) -> list[dict]:
             "model": verdict.get("model", ""),
             "assessed_at": verdict.get("when", ""),
             "artifact_url": f"{REPOSITORY_URL}/tree/main/attacks/{review_id}",
-        })
+        }))
 
     ids = [result["id"] for result in results]
     if len(ids) != len(set(ids)):
