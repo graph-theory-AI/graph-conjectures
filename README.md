@@ -72,6 +72,20 @@ The output site is inspired by
 [erdosproblems.com](https://www.erdosproblems.com/), which itself is an
 excellent companion source.
 
+## Canonical conjecture names
+
+Every record of the four corpora carries a canonical short `name` of the form
+`PREFIX_english_name`, where `PREFIX` is `OPG`, `AX`, `BM` or `OTH` and
+`english_name` is a few lowercase words conveying the statement (e.g.
+`OPG_bridgeless_cycle_double_cover`, `AX_cop_number_sublinear_treedepth`,
+`BM_hypohamiltonian_min_degree_4`, `OTH_meyniel_cop_number_sqrt_n`). The 1034
+names are distinct; slight variants of one statement share a leading stem and
+differ by a trailing qualifier. The old identifiers (OPG slug, arXiv review id,
+`bm_id`, others `id`) are unchanged and remain the keys for files, URLs and
+sibling repositories. The correspondence old id → new name is in
+[`CONJECTURE_NAMES.md`](CONJECTURE_NAMES.md) and, machine-readable, in
+[`data/conjecture_names.json`](data/conjecture_names.json).
+
 ## Relations between conjectures
 
 The corpus also carries a **verified relation graph**,
@@ -338,6 +352,7 @@ graph-conjectures/
 │   ├── intersection.json             # fuzzy OPG↔erdos matches; `confirmed` flag per row
 │   ├── arxiv_authors.json            # the 12 curated arxiv authors
 │   ├── arxiv_conjectures.json        # 768 deduped new conjectures
+│   ├── conjecture_names.json         # canonical PREFIX_english_name per conjecture (old id → name)
 │   ├── arxiv_extracted/              # 857 raw per-paper extraction outputs
 │   ├── arxiv_reviews/                # 762 per-conjecture review JSONs
 │   ├── arxiv_opg_matches.{json,tsv}  # arxiv → OPG citation matches (manually triaged)
