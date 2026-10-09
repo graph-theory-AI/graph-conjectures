@@ -99,7 +99,7 @@ No per-token cost. The only "cost" is the share of the 5-hour Max window consume
 
 ## 8. Phasing
 
-1. **Pilot (10 problems)** — pick a deliberate mix: 3 famous (`seagull_problem`, `the_erdos_hajnal_conjecture`, `reconstruction_conjecture`), 3 obscure, 3 known-recently-solved (e.g. `erdos_faber_lovasz_conjecture` — proved in 2021, expect `status: solved`), 1 with no bibliography. Inspect every output by hand. Iterate the prompt until the schema and tone are right.
+1. **Pilot (10 problems)** — pick a deliberate mix: 3 famous (`OPG_seagull_independence_2_clique_minor_half_n` (`seagull_problem`), `OPG_erdos_hajnal_induced_cliques` (`the_erdos_hajnal_conjecture`), `OPG_reconstruction_vertex_deck_isomorphic` (`reconstruction_conjecture`)), 3 obscure, 3 known-recently-solved (e.g. `OPG_erdos_faber_lovasz_cliques_chromatic` (`erdos_faber_lovasz_conjecture`) — proved in 2021, expect `status: solved`), 1 with no bibliography. Inspect every output by hand. Iterate the prompt until the schema and tone are right.
 2. **Full run (217 remaining)** — `review.py --concurrency 4`. Saves per-slug JSON; resumable. Logs everything.
 3. **Validation pass** — spot-check 10% manually; re-run any flagged outputs through Opus.
 4. **Site integration** — extend `build.py` + templates + CSS. One commit.

@@ -50,106 +50,106 @@ the book is well established; blank means "open as far as checked here".
 
 | # | Statement (abbrev.) | Attribution | Repo | Record / note | Status since book |
 |---:|---|---|:-:|---|---|
-| 1 | Reconstruction conjecture | Kelly 1942 | P | `reconstruction_conjecture` | |
-| 2 | Edge reconstruction conjecture | Harary 1964 | P | `edge_reconstruction_conjecture` | |
-| 3 | Hypomorphic infinite graphs are mutually embeddable | Halin 1970 | M | only an unrelated Halin mention in `characterizing_aleph_0_aleph_1_graphs` | Bowler–Erde–Heinig–Lehner–Pitz (Bull. LMS 2017) say their non-reconstructible locally finite trees answer a question of Halin; verify it is this one |
-| 4 | Switching reconstruction (n ≥ 5) | Stanley 1985 | P | `switching_reconstruction_conjecture` | |
-| 5 | Sidorenko's conjecture | Sidorenko 1991 | P | `sidorenkos_conjecture` | |
-| 6 | Split digraph of min outdegree d into two parts of min outdegree ≥ 2 | Alon 1996 | P | `splitting_a_digraph_with_minimum_outdegree_constraints` | |
-| 7 | r-regular graphs have nearly spanning k-regular subgraphs | Alon–Mubayi | P | `nearly_spanning_regular_subgraphs` | |
-| 8 | Path decomposition into ⌈n/2⌉ paths | Gallai | P | `decomposing_a_connected_graph_into_paths` | |
-| 9 | Even graph decomposes into ≤ (n−1)/2 cycles | Hajós | P | `decomposing_an_eulerian_graph_into_cycles` | |
-| 10 | Even tournament decomposes into Σ max(0, d⁺−d⁻) directed paths | Alspach–Mason–Pullman 1976 | P | `decomposing_an_even_tournament_in_directed_paths` | |
+| 1 | Reconstruction conjecture | Kelly 1942 | P | `OPG_reconstruction_vertex_deck_isomorphic` (`reconstruction_conjecture`) | |
+| 2 | Edge reconstruction conjecture | Harary 1964 | P | `OPG_reconstruction_edge_deleted_subgraphs` (`edge_reconstruction_conjecture`) | |
+| 3 | Hypomorphic infinite graphs are mutually embeddable | Halin 1970 | M | only an unrelated Halin mention in `OPG_aleph0_aleph1_graphs_characterization` (`characterizing_aleph_0_aleph_1_graphs`) | Bowler–Erde–Heinig–Lehner–Pitz (Bull. LMS 2017) say their non-reconstructible locally finite trees answer a question of Halin; verify it is this one |
+| 4 | Switching reconstruction (n ≥ 5) | Stanley 1985 | P | `OPG_reconstruction_switching_5_vertices` (`switching_reconstruction_conjecture`) | |
+| 5 | Sidorenko's conjecture | Sidorenko 1991 | P | `OPG_sidorenko_bipartite_homomorphism_density` (`sidorenkos_conjecture`) | |
+| 6 | Split digraph of min outdegree d into two parts of min outdegree ≥ 2 | Alon 1996 | P | `OPG_digraph_outdegree_splitting_two_parts` (`splitting_a_digraph_with_minimum_outdegree_constraints`) | |
+| 7 | r-regular graphs have nearly spanning k-regular subgraphs | Alon–Mubayi | P | `OPG_regular_nearly_spanning_k_regular_subgraph` (`nearly_spanning_regular_subgraphs`) | |
+| 8 | Path decomposition into ⌈n/2⌉ paths | Gallai | P | `OPG_gallai_path_decomposition_half_n` (`decomposing_a_connected_graph_into_paths`) | |
+| 9 | Even graph decomposes into ≤ (n−1)/2 cycles | Hajós | P | `OPG_eulerian_cycle_decomposition_hajos_n_half` (`decomposing_an_eulerian_graph_into_cycles`) | |
+| 10 | Even tournament decomposes into Σ max(0, d⁺−d⁻) directed paths | Alspach–Mason–Pullman 1976 | P | `OPG_even_tournament_directed_path_decomposition` (`decomposing_an_even_tournament_in_directed_paths`) | |
 | 11 | Barát–Thomassen: k(T)-edge-connected ⇒ T-decomposition | Barát–Thomassen 2006 | M | only cited as the parent of arXiv 1507.08208 Conj. 1.2 | **Proved** (Bensmail, Harutyunyan, Le, Merker, Thomassé, JCTB 2017) |
-| 12 | Cycle double cover conjecture | Szekeres, Seymour | P | `cycle_double_cover_conjecture` | |
+| 12 | Cycle double cover conjecture | Szekeres, Seymour | P | `OPG_bridgeless_cycle_double_cover` (`cycle_double_cover_conjecture`) | |
 | 13 | CDC with at most n−1 cycles | Bondy 1990 | M | | |
-| 14 | 5-cycle double cover (five even subgraphs) | Preissmann 1981 (Celmins) | E | mirror has the stronger `strong_5_cycle_double_cover_conjecture`; plain 5-CDC only mentioned in `cycle_double_cover_conjecture`, `m_n_cycle_covers`, `petersen_coloring_conjecture` | |
-| 15 | Sabidussi compatibility conjecture | Sabidussi 1975 | P | `decomposing_an_eulerian_graph_into_cycles_with_no_two_consecutives_edges_on_a_prescirbed_eulerian_tour` | |
+| 14 | 5-cycle double cover (five even subgraphs) | Preissmann 1981 (Celmins) | E | mirror has the stronger `OPG_bridgeless_cycle_double_cover_strong_5` (`strong_5_cycle_double_cover_conjecture`); plain 5-CDC only mentioned in `OPG_bridgeless_cycle_double_cover` (`cycle_double_cover_conjecture`), `OPG_bridgeless_cycle_double_cover_5_cycles` (`m_n_cycle_covers`), `OPG_petersen_coloring_bridgeless_cubic` (`petersen_coloring_conjecture`) | |
+| 15 | Sabidussi compatibility conjecture | Sabidussi 1975 | P | `OPG_eulerian_cycle_decomposition_avoiding_tour_transitions` (`decomposing_an_eulerian_graph_into_cycles_with_no_two_consecutives_edges_on_a_prescirbed_eulerian_tour`) | |
 | 16 | Linear arboricity conjecture: la(G) = ⌈(k+1)/2⌉ for k-regular | Akiyama–Exoo–Harary 1981 | M | only a planar refinement (arXiv 2302.13312 Conj. 2) | |
-| 17 | Bollobás–Eldridge–Catlin packing | Catlin 1974; Bollobás–Eldridge 1978 | P | `the_bollobas_eldridge_catlin_conjecture_on_graph_packing` | |
-| 18 | Cubic 3-connected on 3k vertices partitions into k copies of P₃ | Kelmans 2005 | P | `partition_of_a_cubic_3_connected_graphs_into_paths_of_length_2` | |
+| 17 | Bollobás–Eldridge–Catlin packing | Catlin 1974; Bollobás–Eldridge 1978 | P | `OPG_bollobas_eldridge_catlin_max_degree_packing` (`the_bollobas_eldridge_catlin_conjecture_on_graph_packing`) | |
+| 18 | Cubic 3-connected on 3k vertices partitions into k copies of P₃ | Kelmans 2005 | P | `OPG_cubic_3_connected_p3_path_partition` (`partition_of_a_cubic_3_connected_graphs_into_paths_of_length_2`) | |
 | 19 | P ≠ NP | Edmonds, Cook, Levin | X | not graph theory | |
 | 20 | P = NP ∩ co-NP | Edmonds 1965 | X | not graph theory | |
-| 21 | Second Hamilton cycle in a cubic graph: in P? | Chrobak–Poljak 1988 | M | `4_connected_graphs_are_not_uniquely_hamiltonian` is the existence question, not the complexity one | |
+| 21 | Second Hamilton cycle in a cubic graph: in P? | Chrobak–Poljak 1988 | M | `OPG_4_connected_second_hamilton_cycle` (`4_connected_graphs_are_not_uniquely_hamiltonian`) is the existence question, not the complexity one | |
 | 22 | k internally disjoint odd (X,Y)-paths: in co-NP? | Thomassen 1980 | M | | |
-| 23 | Lovász path removal | Lovász | P | `lovasz_path_removal_conjecture` | |
-| 24 | Kriesell's conjecture (2k edge-connected T ⇒ k edge-disjoint T-trees) | Kriesell 2003 | P | `kriesells_conjecture` | |
+| 23 | Lovász path removal | Lovász | P | `OPG_lovasz_induced_path_removal_connectivity` (`lovasz_path_removal_conjecture`) | |
+| 24 | Kriesell's conjecture (2k edge-connected T ⇒ k edge-disjoint T-trees) | Kriesell 2003 | P | `OPG_kriesell_edge_disjoint_steiner_trees` (`kriesells_conjecture`) | |
 | 25 | 2k-connected graph has a spanning k-connected *bipartite* subgraph (French text says "orienté"; English original says bipartite — check) | Thomassen 1989 | M | | f(k)-version proved (Delcourt–Ferber 2015); exact 2k bound open |
-| 26 | Orientable 5-cycle double cover | Archdeacon 1984, Jaeger 1988 | E | listed as a consequence inside `the_circular_embedding_conjecture`; also alluded to in `grunbaums_conjecture` | |
-| 27 | Planar graph has induced forest of order ≥ n/2 | Albertson–Berman 1979 | P | `large_induced_forest_in_a_planar_graph` | |
-| 28 | Planar oriented graph is 2-dicolourable | Neumann-Lara 1985 | P | `partitioning_planar_digraphs` ("Two Color Conjecture") | |
+| 26 | Orientable 5-cycle double cover | Archdeacon 1984, Jaeger 1988 | E | listed as a consequence inside `OPG_2_connected_circular_surface_embedding` (`the_circular_embedding_conjecture`); also alluded to in `OPG_grunbaum_triangulation_dual_3_edge_colorable` (`grunbaums_conjecture`) | |
+| 27 | Planar graph has induced forest of order ≥ n/2 | Albertson–Berman 1979 | P | `OPG_albertson_berman_planar_induced_forest_half` (`large_induced_forest_in_a_planar_graph`) | |
+| 28 | Planar oriented graph is 2-dicolourable | Neumann-Lara 1985 | P | `OPG_two_color_planar_oriented_acyclic_parts` (`partitioning_planar_digraphs`) ("Two Color Conjecture") | |
 | 29 | Kelmans–Seymour: 5-connected nonplanar ⇒ K₅-subdivision | Seymour 1974, Kelmans 1979 | M | | **Proved** (He, Wang, Yu, JCTB 2020, 4 papers) |
-| 30 | Jørgensen: 6-connected K₆-minor-free is apex | Jørgensen 1994 | P | `jorgensens_conjecture` | |
+| 30 | Jørgensen: 6-connected K₆-minor-free is apex | Jørgensen 1994 | P | `OPG_jorgensen_highly_connected_no_k6_minor_apex` (`jorgensens_conjecture`) | |
 | 31 | Thrackle conjecture (m ≤ n) | Conway c.1968 | M | | |
 | 32 | Planar graphs have straight-line drawings with integer edge lengths | Kemnitz–Harborth 2001 | M | | |
 | 33 | Erdős–Sós: m > n(k−1)/2 ⇒ contains every tree with k edges | Erdős–Sós 1963 | M | not in `erdos_graph.json` either | |
-| 34 | ex(n, C₂ₖ) ≥ c n^{1+1/k} | Erdős 1971 | M | mentioned in passing in `turan_number_of_a_finite_family`; erdosproblems #572 is in `erdos_graph.json` but not linked to any record | |
-| 35 | Tuza's conjecture | Tuza 1981 | P | `triangle_packing_vs_triangle_edge_transversal` | |
-| 36 | Triangle-free graph: n²/25 edges kill all odd cycles | Erdős–Faudree–Pach–Spencer 1988 | P | `odd_cycle_transversal_in_triangle_free_graphs` | |
+| 34 | ex(n, C₂ₖ) ≥ c n^{1+1/k} | Erdős 1971 | M | mentioned in passing in `OPG_turan_number_finite_family_single_member` (`turan_number_of_a_finite_family`); erdosproblems #572 is in `erdos_graph.json` but not linked to any record | |
+| 35 | Tuza's conjecture | Tuza 1981 | P | `OPG_tuza_triangle_packing_edge_transversal` (`triangle_packing_vs_triangle_edge_transversal`) | |
+| 36 | Triangle-free graph: n²/25 edges kill all odd cycles | Erdős–Faudree–Pach–Spencer 1988 | P | `OPG_triangle_free_odd_cycle_edge_transversal` (`odd_cycle_transversal_in_triangle_free_graphs`) | |
 | 37 | Constructive proof of r(k,k) ≥ cᵏ | Erdős 1969 | M | erdosproblems #78 in `erdos_graph.json` only | |
 | 38 | lim r(k,k)^{1/k} exists? value? | Erdős 1947 | M | erdosproblems #77 in `erdos_graph.json` only | |
 | 39 | r(T,T) ≤ 2n−2 for trees | Burr–Erdős 1976 | M | erdosproblems #547 in `erdos_graph.json` only | |
-| 40 | Erdős–Hajnal conjecture | Erdős–Hajnal 1989 | P | `the_erdos_hajnal_conjecture` | |
-| 41 | Hadwiger's conjecture | Hadwiger 1943 | M | only `list_hadwiger_conjecture`, `fractional_hadwiger`, and mentions; **OPG itself has no page for it** | |
-| 42 | Hajós conjecture for k = 5, 6 | Catlin 1979 | M | Hajós mentioned as disproved (k ≥ 7) in `coloring_and_immersion`, `crossing_numbers_and_coloring` | |
-| 43 | 2k-chromatic digraph contains every oriented tree on k+1 vertices | Burr 1980 | P | `oriented_trees_in_n_chromatic_digraphs` | |
-| 44 | Erdős–Faber–Lovász | 1972 | P | `erdos_faber_lovasz_conjecture` | proved for large n (Kang, Kelly, Kühn, Methuku, Osthus 2021) |
+| 40 | Erdős–Hajnal conjecture | Erdős–Hajnal 1989 | P | `OPG_erdos_hajnal_induced_cliques` (`the_erdos_hajnal_conjecture`) | |
+| 41 | Hadwiger's conjecture | Hadwiger 1943 | M | only `OPG_hadwiger_list_kt_minor_free_choosable` (`list_hadwiger_conjecture`), `OPG_hadwiger_fractional_chromatic_minor` (`fractional_hadwiger`), and mentions; **OPG itself has no page for it** | |
+| 42 | Hajós conjecture for k = 5, 6 | Catlin 1979 | M | Hajós mentioned as disproved (k ≥ 7) in `OPG_chromatic_number_forces_kt_immersion` (`coloring_and_immersion`), `OPG_crossing_number_vs_chromatic_number` (`crossing_numbers_and_coloring`) | |
+| 43 | 2k-chromatic digraph contains every oriented tree on k+1 vertices | Burr 1980 | P | `OPG_chromatic_digraph_oriented_trees_2k` (`oriented_trees_in_n_chromatic_digraphs`) | |
+| 44 | Erdős–Faber–Lovász | 1972 | P | `OPG_erdos_faber_lovasz_cliques_chromatic` (`erdos_faber_lovasz_conjecture`) | proved for large n (Kang, Kelly, Kühn, Methuku, Osthus 2021) |
 | 45 | k-chromatic K_k-free graph splits into k₁- and k₂-chromatic disjoint subgraphs (k₁+k₂ = k+1) | Lovász 1968 | M | | |
 | 46 | χ ≥ f(r,k) ⇒ K_r or induced disjoint union of two k-chromatic graphs | El-Zahar–Erdős 1985 | M | | |
-| 47 | Union of a forest and a 2-degenerate graph is 5-colourable | Tarsi | P | `coloring_the_union_of_degenerate_graphs` | |
-| 48 | Reed's χ ≤ ⌈(ω+Δ+1)/2⌉ | Reed 1998 | P | `reeds_omega_delta_and_chi_conjecture` | |
-| 49 | Gyárfás–Sumner | Gyárfás 1975, Sumner 1981 | P | `graphs_with_a_forbidden_induced_tree_are_chi_bounded` | |
+| 47 | Union of a forest and a 2-degenerate graph is 5-colourable | Tarsi | P | `OPG_forest_plus_2_degenerate_5_colorable` (`coloring_the_union_of_degenerate_graphs`) | |
+| 48 | Reed's χ ≤ ⌈(ω+Δ+1)/2⌉ | Reed 1998 | P | `OPG_reed_chromatic_omega_delta_average` (`reeds_omega_delta_and_chi_conjecture`) | |
+| 49 | Gyárfás–Sumner | Gyárfás 1975, Sumner 1981 | P | `OPG_gyarfas_sumner_forbidden_tree_chi_bounded` (`graphs_with_a_forbidden_induced_tree_are_chi_bounded`) | |
 | 50 | Triangle-free graph of infinite χ contains every finite tree induced | Gyárfás 1975 | E | implied by #49 (Gyárfás–Sumner record); no record of its own | |
-| 51 | Hoàng–McDiarmid 2-colouring without monochromatic maximum clique | 2002 | P | `2_colouring_a_graph_without_a_monochromatic_maximum_clique` | |
-| 52 | ch(bipartite) ≤ c log Δ | Alon 2000 | P | `list_chromatic_number_and_maximum_degree_of_bipartite_graphs` | |
+| 51 | Hoàng–McDiarmid 2-colouring without monochromatic maximum clique | 2002 | P | `OPG_odd_hole_free_nonmonochromatic_max_cliques` (`2_colouring_a_graph_without_a_monochromatic_maximum_clique`) | |
+| 52 | ch(bipartite) ≤ c log Δ | Alon 2000 | P | `OPG_bipartite_list_chromatic_log_max_degree` (`list_chromatic_number_and_maximum_degree_of_bipartite_graphs`) | |
 | 53 | Toroidal graph: delete 3 vertices to make it 4-colourable | Albertson 1981 | M | | |
-| 54 | Chromatic number of the plane (Hadwiger–Nelson) | Nelson 1950 | M | called "the famous problem" inside `coloring_the_odd_distance_graph` | 5 ≤ χ ≤ 7 (de Grey 2018) |
-| 55 | Berge–Fulkerson | Fulkerson 1971 | P | `the_berge_fulkerson_conjecture` | |
-| 56 | Goldberg–Seymour | Goldberg 1974, Seymour 1979 | P | `goldbergs_conjecture` | proved (Chen, Jing, Zang 2019+) — check repo review |
-| 57 | d-regular, n even, d ≥ n/2 ⇒ d-edge-colourable (1-factorization conjecture) | Hilton 1989 (Chetwynd–Hilton) | M | `goldbergs_conjecture` mentions the overfull parameter only | **Proved for large n** (Csaba, Kühn, Lo, Osthus, Treglown, Mem. AMS 2016) |
-| 58 | List edge colouring conjecture | folklore | P | `edge_list_coloring_conjecture` | |
-| 59 | Total colouring conjecture | Vizing 1964, Behzad 1965 | P | `behzads_conjecture` | |
+| 54 | Chromatic number of the plane (Hadwiger–Nelson) | Nelson 1950 | M | called "the famous problem" inside `OPG_odd_distance_graph_chromatic_infinite` (`coloring_the_odd_distance_graph`) | 5 ≤ χ ≤ 7 (de Grey 2018) |
+| 55 | Berge–Fulkerson | Fulkerson 1971 | P | `OPG_berge_fulkerson_cubic_6_perfect_matchings` (`the_berge_fulkerson_conjecture`) | |
+| 56 | Goldberg–Seymour | Goldberg 1974, Seymour 1979 | P | `OPG_goldberg_edge_chromatic_max_degree_density` (`goldbergs_conjecture`) | proved (Chen, Jing, Zang 2019+) — check repo review |
+| 57 | d-regular, n even, d ≥ n/2 ⇒ d-edge-colourable (1-factorization conjecture) | Hilton 1989 (Chetwynd–Hilton) | M | `OPG_goldberg_edge_chromatic_max_degree_density` (`goldbergs_conjecture`) mentions the overfull parameter only | **Proved for large n** (Csaba, Kühn, Lo, Osthus, Treglown, Mem. AMS 2016) |
+| 58 | List edge colouring conjecture | folklore | P | `OPG_list_edge_chromatic_equals_edge_chromatic` (`edge_list_coloring_conjecture`) | |
+| 59 | Total colouring conjecture | Vizing 1964, Behzad 1965 | P | `OPG_total_coloring_max_degree_plus_2` (`behzads_conjecture`) | |
 | 60 | Vizing's interchange conjecture (Kempe changes reach an optimal edge colouring) | Vizing 1965 | M | Kempe hits in the corpus are about vertex colourings | **Proved** (Narboni, arXiv 2302.12914, 2023; triangle-free case Bonamy et al. 2023) |
-| 61 | Acyclic edge colouring with Δ+2 colours | Fiamčík 1978 | P | `acyclic_edge_coloring` | |
+| 61 | Acyclic edge colouring with Δ+2 colours | Fiamčík 1978 | P | `OPG_acyclic_edge_coloring_delta_plus_2` (`acyclic_edge_coloring`) | |
 | 62 | No graph with a unique path of length k between every pair (k ≥ 3) | Kotzig 1979 | M | | |
-| 63 | Longest cycles in 3-connected graphs have chords | Thomassen 1976 | P | `chords_of_longest_cycles` | |
+| 63 | Longest cycles in 3-connected graphs have chords | Thomassen 1976 | P | `OPG_3_connected_longest_cycle_chord` (`chords_of_longest_cycles`) | |
 | 64 | Two longest cycles in a k-connected graph share ≥ k vertices | Smith | M | | |
 | 65 | Cyclically 4-edge-connected cubic graphs have cycles of length ≥ cn | Bondy | M | | |
-| 66 | Pairwise-intersecting cycles of length ≥ k have a k-vertex hitting set | Birmelé 2003 | M | Birmelé appears only as an author in `erdos_posa_property_for_long_directed_cycles` | |
-| 67 | Three longest paths share a vertex? | Gallai 1968 | P | `do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common` | |
-| 68 | Min outdegree k ⇒ directed path of length 2k | Thomassé 2005 | P | `directed_cycle_of_length_twice_the_minimum_outdegree`; workstream `problems/directed_path_minimum_outdegree/` | |
-| 69 | Strong oriented graph, δ⁺,δ⁻ ≥ k ⇒ directed cycle of length ≥ 2k+1 | Jackson 1981 | P | `long_directed_cycles_in_digraph_with_minimum_in_and_out_degree` | |
-| 70 | Weighted Caccetta–Häggkvist (cycle of weight ≥ 1) | Bollobás–Scott 1996 | E | stated verbatim inside the discussion of `caccetta_haggkvist_conjecture` | |
-| 71 | Caccetta–Häggkvist | 1978 | P | `caccetta_haggkvist_conjecture` | |
-| 72 | Hoàng–Reed | 1987 | P | `hoand_reed_conjecture` | |
-| 73 | Bermond–Thomassen | 1981 | P | `the_bermond_thomassen_conjecture` | |
-| 74 | Ádám's conjecture | Ádám 1964 | P | `adams_conjecture` | |
-| 75 | Stable set meeting all longest directed paths | Laborde–Payan–Xuong 1983 | P | `stable_set_meeting_all_longest_directed_paths` | |
-| 76 | Seymour's second neighbourhood | Seymour 1995 | P | `seymours_second_neighbourhood_conjecture` | |
-| 77 | Triangle-free oriented graph: feedback arc set of size ½(C(n,2)−m) | Chudnovsky–Seymour–Sullivan 2008 | P | `non_edges_vs_feedback_edge_sets_in_digraphs` | |
-| 78 | Barnette's conjecture | Barnette 1969 | P | `barnettes_conjecture` | |
-| 79 | 4-connected claw-free graphs are Hamiltonian | Matthews–Sumner 1984 | E | equivalent (Ryjáček) to `hamiltonian_cycles_in_line_graphs`, whose discussion states it | |
+| 66 | Pairwise-intersecting cycles of length ≥ k have a k-vertex hitting set | Birmelé 2003 | M | Birmelé appears only as an author in `OPG_erdos_posa_long_directed_cycles` (`erdos_posa_property_for_long_directed_cycles`) | |
+| 67 | Three longest paths share a vertex? | Gallai 1968 | P | `OPG_three_longest_paths_common_vertex` (`do_any_three_longest_paths_in_a_connected_graph_have_a_vertex_in_common`) | |
+| 68 | Min outdegree k ⇒ directed path of length 2k | Thomassé 2005 | P | `OPG_oriented_outdegree_directed_path_2k` (`directed_cycle_of_length_twice_the_minimum_outdegree`); workstream `problems/directed_path_minimum_outdegree/` | |
+| 69 | Strong oriented graph, δ⁺,δ⁻ ≥ k ⇒ directed cycle of length ≥ 2k+1 | Jackson 1981 | P | `OPG_oriented_in_out_degree_long_cycle` (`long_directed_cycles_in_digraph_with_minimum_in_and_out_degree`) | |
+| 70 | Weighted Caccetta–Häggkvist (cycle of weight ≥ 1) | Bollobás–Scott 1996 | E | stated verbatim inside the discussion of `OPG_caccetta_haggkvist_outdegree_short_cycle` (`caccetta_haggkvist_conjecture`) | |
+| 71 | Caccetta–Häggkvist | 1978 | P | `OPG_caccetta_haggkvist_outdegree_short_cycle` (`caccetta_haggkvist_conjecture`) | |
+| 72 | Hoàng–Reed | 1987 | P | `OPG_hoang_reed_outdegree_nearly_disjoint_cycles` (`hoand_reed_conjecture`) | |
+| 73 | Bermond–Thomassen | 1981 | P | `OPG_bermond_thomassen_outdegree_disjoint_cycles` (`the_bermond_thomassen_conjecture`) | |
+| 74 | Ádám's conjecture | Ádám 1964 | P | `OPG_adam_arc_reversal_fewer_cycles` (`adams_conjecture`) | |
+| 75 | Stable set meeting all longest directed paths | Laborde–Payan–Xuong 1983 | P | `OPG_digraph_stable_set_meets_longest_paths` (`stable_set_meeting_all_longest_directed_paths`) | |
+| 76 | Seymour's second neighbourhood | Seymour 1995 | P | `OPG_seymour_second_neighborhood_outdegree` (`seymours_second_neighbourhood_conjecture`) | |
+| 77 | Triangle-free oriented graph: feedback arc set of size ½(C(n,2)−m) | Chudnovsky–Seymour–Sullivan 2008 | P | `OPG_digraph_feedback_arcs_vs_non_edges` (`non_edges_vs_feedback_edge_sets_in_digraphs`) | |
+| 78 | Barnette's conjecture | Barnette 1969 | P | `OPG_barnette_cubic_planar_bipartite_hamiltonian` (`barnettes_conjecture`) | |
+| 79 | 4-connected claw-free graphs are Hamiltonian | Matthews–Sumner 1984 | E | equivalent (Ryjáček) to `OPG_thomassen_4_connected_line_graphs_hamiltonian` (`hamiltonian_cycles_in_line_graphs`), whose discussion states it | |
 | 80 | 4-regular 4-polytopes are Hamiltonian | Barnette | M | | |
-| 81 | Prism over a 3-connected planar graph is Hamiltonian | Kaiser et al. 2007 | P | `every_prism_over_a_3_connected_planar_graph_is_hamiltonian` | |
-| 82 | 4-regular graphs are not uniquely Hamiltonian | Sheehan 1975 | P | `uniquely_hamiltonian_graphs` | |
-| 83 | 4-connected graphs are not uniquely Hamiltonian | Fleischner 2007 | P | `4_connected_graphs_are_not_uniquely_hamiltonian` | |
-| 84 | Prism over cubic 3-connected planar graph has a Hamilton decomposition | Alspach–Rosenfeld 1986 | P | `decomposing_the_prism_of_a_3_connected_cubic_planar_graphs_in_hamilton_cycles` | |
+| 81 | Prism over a 3-connected planar graph is Hamiltonian | Kaiser et al. 2007 | P | `OPG_prism_planar_3_connected_hamiltonian` (`every_prism_over_a_3_connected_planar_graph_is_hamiltonian`) | |
+| 82 | 4-regular graphs are not uniquely Hamiltonian | Sheehan 1975 | P | `OPG_regular_graphs_not_uniquely_hamiltonian` (`uniquely_hamiltonian_graphs`) | |
+| 83 | 4-connected graphs are not uniquely Hamiltonian | Fleischner 2007 | P | `OPG_4_connected_second_hamilton_cycle` (`4_connected_graphs_are_not_uniquely_hamiltonian`) | |
+| 84 | Prism over cubic 3-connected planar graph has a Hamilton decomposition | Alspach–Rosenfeld 1986 | P | `OPG_prism_planar_cubic_hamilton_decomposition` (`decomposing_the_prism_of_a_3_connected_cubic_planar_graphs_in_hamilton_cycles`) | |
 | 85 | Planar cubic graph with exactly 3 Hamilton cycles has a triangle | Cantoni 1950 | M | | open; verified to order 48 (Goedgebeur, Meersman, Zamfirescu 2020) |
-| 86 | Connected vertex-transitive graphs have Hamilton paths? | Lovász 1970 | P | `hamiltonian_paths_and_cycles_in_vertex_transitive_graphs` | |
-| 87 | Cayley graphs are Hamiltonian | Parsons | P | `hamiltonicity_of_cayley_graphs` | |
+| 86 | Connected vertex-transitive graphs have Hamilton paths? | Lovász 1970 | P | `OPG_lovasz_vertex_transitive_hamiltonian_path` (`hamiltonian_paths_and_cycles_in_vertex_transitive_graphs`) | |
+| 87 | Cayley graphs are Hamiltonian | Parsons | P | `OPG_cayley_graphs_hamiltonian_cycle` (`hamiltonicity_of_cayley_graphs`) | |
 | 88 | All but finitely many connected vertex-transitive graphs are Hamiltonian | Thomassen 1976 | E | discussed (the five known exceptions) in the #86 record, but the conjecture is not a record | |
 | 89 | Chvátal's toughness conjecture (k-tough ⇒ Hamiltonian) | Chvátal 1973 | M | | |
 | 90 | Hypohamiltonian graph with minimum degree ≥ 4? | Thomassen 1978 | M | | |
 | 91 | No bipartite hypotraceable graph | Grötschel 1978 | M | | |
-| 92 | Berge's path partition conjecture | Berge 1982 | P | `linial_berge_path_partition_duality` | |
-| 93 | Woodall's conjecture | Woodall 1978 | P | `woodalls_conjecture` | |
-| 94 | 5-flow conjecture | Tutte 1954 | P | `5_flow_conjecture` | |
-| 95 | 4-flow conjecture | Tutte 1966 | P | `4_flow_conjecture` | |
-| 96 | 3-flow conjecture | Tutte 1972 | P | `3_flow_conjecture` | |
-| 97 | 4k-edge-connected ⇒ mod (2k+1)-orientation | Jaeger 1984 | P | `jaegers_modular_orientation_conjecture` | 6k-edge-connected suffices (Lovász, Thomassen, Wu, Zhang 2013) |
-| 98 | Turán: K₄⁽³⁾-free 3-graphs on 3n vertices | Turán 1941 | P | `turans_problem_for_hypergraphs` (first statement) | |
-| 99 | Turán: K₅⁽³⁾-free 3-graphs on 2n vertices | Turán 1941 | P | `turans_problem_for_hypergraphs` (second statement) | |
-| 100 | Ryser's conjecture τ ≤ (r−1)ν for r-partite r-graphs | Ryser | P | `rysers_conjecture` | |
+| 92 | Berge's path partition conjecture | Berge 1982 | P | `OPG_linial_digraph_path_partition_k_norm` (`linial_berge_path_partition_duality`) | |
+| 93 | Woodall's conjecture | Woodall 1978 | P | `OPG_woodall_dicut_disjoint_dijoins` (`woodalls_conjecture`) | |
+| 94 | 5-flow conjecture | Tutte 1954 | P | `OPG_nowhere_zero_5_flow_bridgeless` (`5_flow_conjecture`) | |
+| 95 | 4-flow conjecture | Tutte 1966 | P | `OPG_nowhere_zero_4_flow_petersen_free` (`4_flow_conjecture`) | |
+| 96 | 3-flow conjecture | Tutte 1972 | P | `OPG_nowhere_zero_3_flow_4_connected` (`3_flow_conjecture`) | |
+| 97 | 4k-edge-connected ⇒ mod (2k+1)-orientation | Jaeger 1984 | P | `OPG_jaeger_modular_orientation_4k_edge_connected` (`jaegers_modular_orientation_conjecture`) | 6k-edge-connected suffices (Lovász, Thomassen, Wu, Zhang 2013) |
+| 98 | Turán: K₄⁽³⁾-free 3-graphs on 3n vertices | Turán 1941 | P | `OPG_turan_3_uniform_k4_k5_free` (`turans_problem_for_hypergraphs`) (first statement) | |
+| 99 | Turán: K₅⁽³⁾-free 3-graphs on 2n vertices | Turán 1941 | P | `OPG_turan_3_uniform_k4_k5_free` (`turans_problem_for_hypergraphs`) (second statement) | |
+| 100 | Ryser's conjecture τ ≤ (r−1)ν for r-partite r-graphs | Ryser | P | `OPG_ryser_r_partite_hypergraph_cover_matching` (`rysers_conjecture`) | |
 
 ## The 32 missing items, grouped
 

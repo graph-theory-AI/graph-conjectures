@@ -1,6 +1,7 @@
 [
   {
     "bm_id": "bm-003",
+    "name": "BM_halin_reconstruction_infinite_hypomorphic_mutual_subgraph",
     "appendix_number": 3,
     "section": "Reconstruction",
     "title": "Halin's conjecture on hypomorphic infinite graphs",
@@ -32,6 +33,7 @@
   },
   {
     "bm_id": "bm-011",
+    "name": "BM_barat_thomassen_tree_decomposition_edge_connected",
     "appendix_number": 11,
     "section": "Covers, decompositions and packings",
     "title": "Barát–Thomassen conjecture",
@@ -65,6 +67,7 @@
   },
   {
     "bm_id": "bm-013",
+    "name": "BM_bridgeless_cycle_double_cover_small_bondy",
     "appendix_number": 13,
     "section": "Covers, decompositions and packings",
     "title": "Bondy's small cycle double cover conjecture",
@@ -96,6 +99,7 @@
   },
   {
     "bm_id": "bm-014",
+    "name": "BM_bridgeless_cycle_double_cover_5_cycles",
     "appendix_number": 14,
     "section": "Covers, decompositions and packings",
     "title": "Five cycle double cover conjecture",
@@ -142,6 +146,7 @@
   },
   {
     "bm_id": "bm-016",
+    "name": "BM_linear_arboricity_regular_graphs",
     "appendix_number": 16,
     "section": "Covers, decompositions and packings",
     "title": "Linear arboricity conjecture",
@@ -174,6 +179,7 @@
   },
   {
     "bm_id": "bm-021",
+    "name": "BM_cubic_second_hamilton_cycle_polynomial",
     "appendix_number": 21,
     "section": "Complexity",
     "title": "Finding a second Hamilton cycle in a cubic graph",
@@ -210,6 +216,7 @@
   },
   {
     "bm_id": "bm-022",
+    "name": "BM_k_disjoint_odd_paths_conp",
     "appendix_number": 22,
     "section": "Complexity",
     "title": "Internally disjoint odd paths: is it in co-NP?",
@@ -233,6 +240,7 @@
   },
   {
     "bm_id": "bm-025",
+    "name": "BM_thomassen_spanning_k_connected_bipartite_subgraph",
     "appendix_number": 25,
     "section": "Connectivity",
     "title": "Thomassen's spanning k-connected bipartite subgraph conjecture",
@@ -256,6 +264,7 @@
   },
   {
     "bm_id": "bm-026",
+    "name": "BM_bridgeless_cycle_double_cover_orientable_5",
     "appendix_number": 26,
     "section": "Embeddings",
     "title": "Orientable five cycle double cover conjecture",
@@ -302,6 +311,7 @@
   },
   {
     "bm_id": "bm-029",
+    "name": "BM_kelmans_seymour_5_connected_nonplanar_k5_subdivision",
     "appendix_number": 29,
     "section": "Embeddings",
     "title": "Kelmans–Seymour conjecture",
@@ -327,6 +337,7 @@
   },
   {
     "bm_id": "bm-031",
+    "name": "BM_conway_thrackle_edges_at_most_vertices",
     "appendix_number": 31,
     "section": "Embeddings",
     "title": "Conway's thrackle conjecture",
@@ -352,6 +363,7 @@
   },
   {
     "bm_id": "bm-032",
+    "name": "BM_harborth_planar_integer_length_straight_line_drawing",
     "appendix_number": 32,
     "section": "Embeddings",
     "title": "Harborth's conjecture (integral straight-line drawings)",
@@ -375,6 +387,7 @@
   },
   {
     "bm_id": "bm-033",
+    "name": "BM_erdos_sos_trees_edge_bound",
     "appendix_number": 33,
     "section": "Extremal problems",
     "title": "Erdős–Sós conjecture",
@@ -400,6 +413,7 @@
   },
   {
     "bm_id": "bm-034",
+    "name": "BM_even_cycle_turan_number_lower_bound",
     "appendix_number": 34,
     "section": "Extremal problems",
     "title": "Even-cycle Turán number",
@@ -436,6 +450,7 @@
   },
   {
     "bm_id": "bm-037",
+    "name": "BM_diagonal_ramsey_constructive_exponential_lower_bound",
     "appendix_number": 37,
     "section": "Ramsey numbers",
     "title": "Constructive exponential lower bound for diagonal Ramsey numbers",
@@ -467,6 +482,7 @@
   },
   {
     "bm_id": "bm-038",
+    "name": "BM_diagonal_ramsey_kth_root_limit",
     "appendix_number": 38,
     "section": "Ramsey numbers",
     "title": "Limit of $r(k,k)^{1/k}$",
@@ -496,6 +512,7 @@
   },
   {
     "bm_id": "bm-039",
+    "name": "BM_burr_erdos_tree_ramsey_2n_minus_2",
     "appendix_number": 39,
     "section": "Ramsey numbers",
     "title": "Burr–Erdős tree Ramsey conjecture",
@@ -525,6 +542,7 @@
   },
   {
     "bm_id": "bm-041",
+    "name": "BM_hadwiger_minor_chromatic",
     "appendix_number": 41,
     "section": "Vertex colouring",
     "title": "Hadwiger's conjecture",
@@ -576,6 +594,7 @@
   },
   {
     "bm_id": "bm-042",
+    "name": "BM_hajos_k5_k6_subdivision_chromatic",
     "appendix_number": 42,
     "section": "Vertex colouring",
     "title": "Hajós conjecture for $k = 5$ and $k = 6$",
@@ -607,6 +626,7 @@
   },
   {
     "bm_id": "bm-045",
+    "name": "BM_erdos_lovasz_tihany_disjoint_chromatic_split",
     "appendix_number": 45,
     "section": "Vertex colouring",
     "title": "Erdős–Lovász Tihany conjecture",
@@ -638,6 +658,7 @@
   },
   {
     "bm_id": "bm-046",
+    "name": "BM_el_zahar_erdos_induced_disjoint_union",
     "appendix_number": 46,
     "section": "Vertex colouring",
     "title": "El-Zahar–Erdős conjecture",
@@ -661,6 +682,7 @@
   },
   {
     "bm_id": "bm-050",
+    "name": "BM_gyarfas_triangle_free_infinite_chromatic_induced_trees",
     "appendix_number": 50,
     "section": "Vertex colouring",
     "title": "Gyárfás's tree conjecture for triangle-free graphs",
@@ -690,6 +712,7 @@
   },
   {
     "bm_id": "bm-053",
+    "name": "BM_albertson_toroidal_delete_3_vertices_4_colorable",
     "appendix_number": 53,
     "section": "Colouring graphs embedded in surfaces",
     "title": "Albertson's toroidal colouring conjecture",
@@ -715,6 +738,7 @@
   },
   {
     "bm_id": "bm-054",
+    "name": "BM_hadwiger_nelson_plane_unit_distance_chromatic",
     "appendix_number": 54,
     "section": "Colouring graphs embedded in surfaces",
     "title": "Chromatic number of the plane (Hadwiger–Nelson problem)",
@@ -746,6 +770,7 @@
   },
   {
     "bm_id": "bm-057",
+    "name": "BM_1_factorization_dense_regular_graphs",
     "appendix_number": 57,
     "section": "Edge colouring",
     "title": "1-factorization conjecture",
@@ -775,6 +800,7 @@
   },
   {
     "bm_id": "bm-060",
+    "name": "BM_vizing_interchange_kempe_optimal_edge_coloring",
     "appendix_number": 60,
     "section": "Edge colouring",
     "title": "Vizing's interchange conjecture",
@@ -798,6 +824,7 @@
   },
   {
     "bm_id": "bm-062",
+    "name": "BM_kotzig_unique_k_path_nonexistence",
     "appendix_number": 62,
     "section": "Paths and cycles in graphs",
     "title": "Kotzig's unique $k$-path conjecture",
@@ -823,6 +850,7 @@
   },
   {
     "bm_id": "bm-064",
+    "name": "BM_smith_longest_cycles_k_connected_intersection",
     "appendix_number": 64,
     "section": "Paths and cycles in graphs",
     "title": "Smith's conjecture on longest cycles",
@@ -859,6 +887,7 @@
   },
   {
     "bm_id": "bm-065",
+    "name": "BM_bondy_cubic_cyclically_4_connected_long_cycle",
     "appendix_number": 65,
     "section": "Paths and cycles in graphs",
     "title": "Bondy's linear-length cycle conjecture for cyclically 4-edge-connected cubic graphs",
@@ -882,6 +911,7 @@
   },
   {
     "bm_id": "bm-066",
+    "name": "BM_birmele_long_cycles_pairwise_intersecting_hitting_set",
     "appendix_number": 66,
     "section": "Paths and cycles in graphs",
     "title": "Birmelé's conjecture on long cycles",
@@ -911,6 +941,7 @@
   },
   {
     "bm_id": "bm-070",
+    "name": "BM_caccetta_haggkvist_weighted_cycle",
     "appendix_number": 70,
     "section": "Paths and cycles in digraphs",
     "title": "Weighted Caccetta–Häggkvist conjecture",
@@ -942,6 +973,7 @@
   },
   {
     "bm_id": "bm-079",
+    "name": "BM_matthews_sumner_4_connected_claw_free_hamiltonian",
     "appendix_number": 79,
     "section": "Hamilton paths and cycles",
     "title": "Matthews–Sumner conjecture",
@@ -973,6 +1005,7 @@
   },
   {
     "bm_id": "bm-080",
+    "name": "BM_barnette_simple_4_polytopes_hamiltonian",
     "appendix_number": 80,
     "section": "Hamilton paths and cycles",
     "title": "Barnette's conjecture on 4-regular 4-polytopes",
@@ -1002,6 +1035,7 @@
   },
   {
     "bm_id": "bm-085",
+    "name": "BM_cantoni_planar_cubic_three_hamilton_cycles_triangle",
     "appendix_number": 85,
     "section": "Hamilton paths and cycles",
     "title": "Cantoni's conjecture",
@@ -1025,6 +1059,7 @@
   },
   {
     "bm_id": "bm-088",
+    "name": "BM_thomassen_vertex_transitive_finitely_many_non_hamiltonian",
     "appendix_number": 88,
     "section": "Hamilton paths and cycles",
     "title": "Thomassen's conjecture on Hamiltonian vertex-transitive graphs",
@@ -1061,6 +1096,7 @@
   },
   {
     "bm_id": "bm-089",
+    "name": "BM_chvatal_toughness_k_tough_hamiltonian",
     "appendix_number": 89,
     "section": "Hamilton paths and cycles",
     "title": "Chvátal's toughness conjecture",
@@ -1086,6 +1122,7 @@
   },
   {
     "bm_id": "bm-090",
+    "name": "BM_hypohamiltonian_min_degree_4",
     "appendix_number": 90,
     "section": "Hamilton paths and cycles",
     "title": "Hypohamiltonian graphs of minimum degree at least 4",
@@ -1111,6 +1148,7 @@
   },
   {
     "bm_id": "bm-091",
+    "name": "BM_grotschel_bipartite_hypotraceable_nonexistence",
     "appendix_number": 91,
     "section": "Hamilton paths and cycles",
     "title": "Grötschel's conjecture on bipartite hypotraceable graphs",

@@ -40,7 +40,7 @@ the budget.
 
 Local source:
 
-- OPG slug: `pebbling_a_cartesian_product`
+- OPG slug: `OPG_graham_pebbling_cartesian_product` (`pebbling_a_cartesian_product`)
 - OPG statement: $p(G_1 \Box G_2)\leq p(G_1)p(G_2)$.
 - The literature uses both $p$ and $\pi$ for the pebbling number; this plan
   uses $\pi$.
@@ -478,7 +478,7 @@ treated as an unlikely byproduct, not the plan.
 ## Source Links for the Audit
 
 - Local review: `data/reviews/pebbling_a_cartesian_product.json`
-- OPG scrape: `data/problems.json`, slug `pebbling_a_cartesian_product`
+- OPG scrape: `data/problems.json`, slug `OPG_graham_pebbling_cartesian_product` (`pebbling_a_cartesian_product`)
 - Kenter--Skipper--Wilson 2020:
   https://www.sciencedirect.com/science/article/pii/S0304397519306206
 - Cusack--Green--Bekmetjev--Powers 2019:

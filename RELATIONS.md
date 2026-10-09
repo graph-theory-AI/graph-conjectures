@@ -102,44 +102,44 @@ out:
   information any more, because its target is already a theorem or its source
   is already disproved. Vacuous edges are drawn faintly on the graph. Seven of
   them appeared at once when the cycle double cover conjecture was proved
-  (see below), and three more point into it from Bondy–Murty nodes; most of the rest hang off `jaegers_modular_orientation_conjecture`,
-  `circular_flow_numbers_of_r_graphs` and `real_roots_of_the_flow_polynomial`,
+  (see below), and three more point into it from Bondy–Murty nodes; most of the rest hang off `OPG_jaeger_modular_orientation_4k_edge_connected` (`jaegers_modular_orientation_conjecture`),
+  `OPG_odd_r_graph_circular_flow_bound` (`circular_flow_numbers_of_r_graphs`) and `OPG_flow_polynomial_real_roots_below_4` (`real_roots_of_the_flow_polynomial`),
   all disproved.
 
 The six edges first flagged inconsistent were re-examined in September 2026:
 
-1. `arxiv:2509.07174__00` (coarse Menger, surface-embedded, **partial**) is the
-   same conjecture as `arxiv:2509.08762__00` (coarse Menger, bounded genus,
+1. `AX_coarse_menger_bounded_genus_surfaces` (`arxiv:2509.07174__00`) (coarse Menger, surface-embedded, **partial**) is the
+   same conjecture as `AX_coarse_menger_bounded_genus` (`arxiv:2509.08762__00`) (coarse Menger, bounded genus,
    **solved**) — one of the two reviews is stale. Still flagged
    **inconsistent**.
-2. `arxiv:2306.04710__02` (Δ(1,2,2) hero in {K₁+P⃗₂}-free digraphs, **open**)
-   ⇒ `arxiv:2202.13306__00` (Δ(1,2,2) hero in oriented complete multipartite
+2. `AX_heroes_delta_1_2_2_k1_p2_free` (`arxiv:2306.04710__02`) (Δ(1,2,2) hero in {K₁+P⃗₂}-free digraphs, **open**)
+   ⇒ `AX_heroes_complete_multipartite_delta_1_2_2` (`arxiv:2202.13306__00`) (Δ(1,2,2) hero in oriented complete multipartite
    graphs, **disproved**) — oriented complete multipartite digraphs are
    {K₁+P⃗₂}-free, so the counterexample would disprove the source conjecture
    too. Now flagged **to verify**.
-3. `arxiv:1710.11281__01` (cop number bounded by genus, **solved**) ⇒
-   `arxiv:1710.11281__04` (cop number finiteness on bounded surfaces,
+3. `AX_cop_number_riemannian_surfaces_genus_bounded` (`arxiv:1710.11281__01`) (cop number bounded by genus, **solved**) ⇒
+   `AX_cop_number_riemannian_surfaces_area_supremum` (`arxiv:1710.11281__04`) (cop number finiteness on bounded surfaces,
    **partial**) — medium confidence (the argument uses Gromov's systolic
    inequality). Now flagged **to verify**.
-4. `arxiv:1802.03727__01` (clique or dense bipartite subgraph in high-degree
+4. `AX_dense_bipartite_induced_or_large_clique` (`arxiv:1802.03727__01`) (clique or dense bipartite subgraph in high-degree
    graphs, **solved** by the import via Kwan–Sudakov–Tran) ⇒
-   `arxiv:1802.03727__00` (separation choosability grows with minimum degree,
+   `AX_separation_choosability_grows_min_degree` (`arxiv:1802.03727__00`) (separation choosability grows with minimum degree,
    **open**). Now flagged **to verify**.
-5. `arxiv:1802.04179__01` (the informal conjecture that 11/3 is not tight for
+5. `AX_planar_c4_c5_fractional_chromatic_11_3` (`arxiv:1802.04179__01`) (the informal conjecture that 11/3 is not tight for
    {C₄,C₅}-free planar graphs, **solved** via Xu–Zhu's 7/2 bound) was marked
-   the same conjecture as `arxiv:1802.04179__00` (determine that constant,
+   the same conjecture as `AX_planar_c4_c5_fractional_chromatic_infimum` (`arxiv:1802.04179__00`) (determine that constant,
    still open: **partial**, infimum in [3, 7/2]). They are not the same
    statement, so the edge (e040) was **removed**; `__01` keeps its corpus page
    but no longer appears in the relation graph.
-6. `arxiv:2510.11311__03` (characterize Eulerian-avoidable digraphs, **open**)
-   ⇒ `arxiv:2510.11311__04` (every orientation of C₄ is Eulerian-avoidable,
+6. `AX_eulerian_avoidable_digraphs_characterization` (`arxiv:2510.11311__03`) (characterize Eulerian-avoidable digraphs, **open**)
+   ⇒ `AX_c4_orientations_eulerian_avoidable` (`arxiv:2510.11311__04`) (every orientation of C₄ is Eulerian-avoidable,
    **disproved** by the import via Lei–Wang–Xu–Yang). Now flagged
    **to verify**.
 
 The "to verify" edges are not used to change any status: the implications are
 AI-checked only, and must be formally verified or peer reviewed first.
 
-The fourth August inconsistency, `arxiv:1802.03727__02` ⇒ `arxiv:1802.03727__03`,
+The fourth August inconsistency, `AX_dense_bipartite_induced_triangle_free_log` (`arxiv:1802.03727__02`) ⇒ `AX_dense_bipartite_induced_large_girth` (`arxiv:1802.03727__03`),
 was cleared by the same import, which marked `__03` solved.
 
 Each needs a human glance before the review JSONs are edited.
@@ -154,13 +154,13 @@ outward — but seven edges lost their content at once:
 
 | source | edge |
 |---|---|
-| `opg:m_n_cycle_covers` (the (5,2)-cover conjecture) | `e084` |
-| `opg:strong_5_cycle_double_cover_conjecture` | `e086` |
-| `opg:the_circular_embedding_conjecture` | `e087` |
-| `opg:faithful_cycle_covers` | `e088` |
-| `opg:petersen_coloring_conjecture` | `e091` |
-| `opg:cycle_double_covers_containing_predefined_2_regular_subgraphs` | `e098` |
-| `opg:decomposing_eulerian_graphs` | `e187` |
+| `OPG_bridgeless_cycle_double_cover_5_cycles` (`opg:m_n_cycle_covers`) (the (5,2)-cover conjecture) | `e084` |
+| `OPG_bridgeless_cycle_double_cover_strong_5` (`opg:strong_5_cycle_double_cover_conjecture`) | `e086` |
+| `OPG_2_connected_circular_surface_embedding` (`opg:the_circular_embedding_conjecture`) | `e087` |
+| `OPG_faithful_cycle_cover_even_weights` (`opg:faithful_cycle_covers`) | `e088` |
+| `OPG_petersen_coloring_bridgeless_cubic` (`opg:petersen_coloring_conjecture`) | `e091` |
+| `OPG_bridgeless_cycle_double_cover_prescribed_2_factor` (`opg:cycle_double_covers_containing_predefined_2_regular_subgraphs`) | `e098` |
+| `OPG_eulerian_cycle_decomposition_compatible_transition_system` (`opg:decomposing_eulerian_graphs`) | `e187` |
 
 All seven are kept — the arguments are still correct mathematics, and they are
 the reason each of those pages was interesting — but they are now flagged
@@ -169,18 +169,18 @@ whatever it says *beyond* CDC, and the reviewer notes on the seven pages now say
 what that is.
 
 The Bondy–Murty extension added three more edges into CDC, all vacuous as
-well: Bondy's small CDC conjecture (`bm:bm-013`), the 5-cycle double cover
-conjecture (`bm:bm-014`, the same statement as `opg:m_n_cycle_covers`) and the
-orientable 5-CDC conjecture (`bm:bm-026`, which also implies `bm:bm-014`).
+well: Bondy's small CDC conjecture (`BM_bridgeless_cycle_double_cover_small_bondy`, `bm:bm-013`), the 5-cycle double cover
+conjecture (`BM_bridgeless_cycle_double_cover_5_cycles` (`bm:bm-014`), the same statement as `OPG_bridgeless_cycle_double_cover_5_cycles` (`opg:m_n_cycle_covers`)) and the
+orientable 5-CDC conjecture (`BM_bridgeless_cycle_double_cover_orientable_5` (`bm:bm-026`), which also implies `BM_bridgeless_cycle_double_cover_5_cycles` (`bm:bm-014`)).
 
 The orientable 5-CDC conjecture also implies the 5-flow conjecture (Oum,
 Section 9.3 and Lemma 22: an orientable k-CDC with directed even subgraphs
 C_1..C_k gives the nowhere-zero Z_k-flow Σ i·χ_{C_i}). It is now edge `e246`,
-`bm:bm-026` ⇒ `opg:5_flow_conjecture`, confirmed by a referee who read the
+`BM_bridgeless_cycle_double_cover_orientable_5` (`bm:bm-026`) ⇒ `OPG_nowhere_zero_5_flow_bridgeless` (`opg:5_flow_conjecture`), confirmed by a referee who read the
 paper. One relation from the paper is still missing: the 5-CDC conjecture is
 equivalent to its graphic-matroid form (Conjecture 28), but the corpus has no
 matroid nodes. The `related_only` verdict on
-`cycle_double_cover_conjecture` ↔ `the_berge_fulkerson_conjecture` (`e188`) is
+`OPG_bridgeless_cycle_double_cover` (`cycle_double_cover_conjecture`) ↔ `OPG_berge_fulkerson_cubic_6_perfect_matchings` (`the_berge_fulkerson_conjecture`) (`e188`) is
 confirmed by the proof: Berge–Fulkerson is untouched by it.
 
 ## Bondy–Murty extension (September 2026)
@@ -219,10 +219,10 @@ edge's `provenance.merged_edge_ids` / `provenance.merge_note`:
 
 | kept | dropped | relation |
 |---|---|---|
-| `e010` | `e037` | `arxiv:1605.07411__00` ≡ `opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded` |
-| `e027` | `e122` | `arxiv:2407.18800__00` ≡ `arxiv:2407.18800__01` |
-| `e187` | `e190` | `opg:decomposing_eulerian_graphs` ⇒ `opg:cycle_double_cover_conjecture` |
-| `e189` | `e202` | `opg:cycle_double_cover_conjecture` — `opg:three_4_flows_conjecture` (`related_only`, found from both pages) |
+| `e010` | `e037` | `AX_gyarfas_sumner_oriented_iff_forest` (`arxiv:1605.07411__00`) ≡ `OPG_gyarfas_sumner_forbidden_tree_chi_bounded` (`opg:graphs_with_a_forbidden_induced_tree_are_chi_bounded`) |
+| `e027` | `e122` | `AX_toroidal_5_choosability_critical_6_critical` (`arxiv:2407.18800__00`) ≡ `AX_toroidal_5_choosability_equals_5_colorable` (`arxiv:2407.18800__01`) |
+| `e187` | `e190` | `OPG_eulerian_cycle_decomposition_compatible_transition_system` (`opg:decomposing_eulerian_graphs`) ⇒ `OPG_bridgeless_cycle_double_cover` (`opg:cycle_double_cover_conjecture`) |
+| `e189` | `e202` | `OPG_bridgeless_cycle_double_cover` (`opg:cycle_double_cover_conjecture`) — `OPG_three_4_flows_bridgeless_edge_partition` (`opg:three_4_flows_conjecture`) (`related_only`, found from both pages) |
 
 ## Structure of the graph
 

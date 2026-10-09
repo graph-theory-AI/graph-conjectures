@@ -1,5 +1,6 @@
 [
   {
+    "name": "AX_restricted_difference_3_ap_free_density",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 8",
@@ -31,6 +32,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_restricted_difference_triangle_removal_lemma",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 9",
@@ -62,6 +64,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_flow_reconfiguration_5_flow_connected",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.1",
@@ -96,6 +99,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_flow_reconfiguration_group_implies_integer",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 2.6",
@@ -130,6 +134,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_regular_digraph_directed_treewidth_ratio_limit",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 2",
@@ -159,6 +164,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_regular_digraph_directed_treewidth_best_constant",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Question on optimal directed tree-width constant for regular digraphs",
@@ -188,6 +194,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_polynomial_nikiforov_all_graphs_viral",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.8",
@@ -223,6 +230,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_color_balanced_bipartite_matching_sqrt_k",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.1",
@@ -254,6 +262,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_color_balanced_complete_matching_constant_bound",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.2",
@@ -285,6 +294,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_color_balanced_spanning_forest_bounds",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6.3",
@@ -316,6 +326,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_color_balanced_hamilton_cycle_bounds",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6.4",
@@ -347,6 +358,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_spanning_trees_pivot_gray_code",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -379,6 +391,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_spanning_tree_anticoncentration_min_degree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.1",
@@ -410,6 +423,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_spanning_tree_nonisomorphic_count_min_degree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.2",
@@ -441,6 +455,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_borodin_kostochka_list_dp_equality_threshold",
     "role": "states",
     "kind": "Question",
     "title": "Question 5",
@@ -472,6 +487,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sun_free_graphs_chi_bounded",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on sun-free $\\chi$-boundedness without net exclusion",
@@ -502,6 +518,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_arithmetic_progression_packing_constant_4_3",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -534,6 +551,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_arithmetic_progression_packing_primes_asymptotic",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -566,6 +584,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_arithmetic_progression_packing_near_sqrt_n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -598,6 +617,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_arithmetic_progression_packing_two_regimes",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6",
@@ -630,6 +650,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_arithmetic_progression_packing_fixed_n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7",
@@ -662,6 +683,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tverberg_number_s_convex_sets",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.4",
@@ -692,6 +714,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_large_treewidth_unavoidable_induced_subgraphs",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -723,6 +746,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_vertex_transitive_digraph_linear_perimeter_gap",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.1",
@@ -760,6 +784,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_vertex_transitive_digraph_circumference_vs_undirected",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.2",
@@ -797,6 +822,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_vertex_transitive_digraph_longest_cycles_intersect",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.3",
@@ -834,6 +860,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_vertex_transitive_digraph_path_vs_cycle",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.4",
@@ -871,6 +898,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_sublinear_treedepth",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 9",
@@ -905,6 +933,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_ordering_clique_approximation_algorithm",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.2",
@@ -936,6 +965,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_c_fas_paths_matchings_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4.4",
@@ -967,6 +997,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_domination_packing_ratio_bounded_2_independence",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -1003,6 +1034,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_domination_2_independence_tied_classes",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 2",
@@ -1039,6 +1071,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_color_avoiding_path_non_transitive",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 5.1",
@@ -1070,6 +1103,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degenerate_kr_free_fractional_chromatic_max",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4.1",
@@ -1107,6 +1141,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degenerate_triangle_free_subexponential_order_coloring",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6.1",
@@ -1144,6 +1179,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degenerate_triangle_free_max_degree_coloring",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6.2",
@@ -1181,6 +1217,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degenerate_kr_free_extremal_order_exponential",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6.3",
@@ -1218,6 +1255,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degenerate_kr_free_fractional_chromatic_sublinear",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6.4",
@@ -1255,6 +1293,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_3_coloring_diameter_2_quasipolynomial",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -1286,6 +1325,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_circular_drawing_digraph_forbidden_characterization",
     "role": "states",
     "kind": "Informal",
     "title": "Open Question on Circular Drawing Characterisation",
@@ -1317,6 +1357,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_geometric_graph_monotone_path_cover_superlinear",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -1349,6 +1390,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_geometric_graph_plane_path_cover_bound",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 5.1",
@@ -1381,6 +1423,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_geometric_graph_zigzag_path_cover_number",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 5.2",
@@ -1413,6 +1456,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mis_planar_induced_minor_free_quasipolynomial",
     "role": "states",
     "kind": "Question",
     "title": "Question 2",
@@ -1446,6 +1490,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_genus_distribution_unimodal",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 10",
@@ -1475,6 +1520,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_genus_distribution_log_concave_triangulations",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 11",
@@ -1504,6 +1550,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_anticomplete_xy_paths_erdos_posa_optimal",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6",
@@ -1534,6 +1581,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_spectrally_symmetric_graph_edge_density",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -1567,6 +1615,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_modular_chromatic_index_0k_graphs",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 13",
@@ -1603,6 +1652,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_dom_enum_incomparability_st_free_posets",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7.1",
@@ -1635,6 +1685,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_dom_enum_incomparability_cobipartite_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7.3",
@@ -1667,6 +1718,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_schnyder_wood_uihpt_weak_limit",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -1699,6 +1751,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_schnyder_wood_half_plane_triangulations_existence",
     "role": "states",
     "kind": "Informal",
     "title": "Open question on Schnyder woods for general half-plane triangulations",
@@ -1731,6 +1784,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_schnyder_wood_random_wooded_triangulations_limit",
     "role": "states",
     "kind": "Informal",
     "title": "Open question on local limit of uniformly random wooded triangulations",
@@ -1763,6 +1817,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_generic_norm_distinct_distances_lower_bound",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -1793,6 +1848,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tree_independence_polynomial_biclique_free",
     "role": "states",
     "kind": "Question",
     "title": "Question 5.2",
@@ -1824,6 +1880,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tree_independence_polynomial_induced_biclique_number",
     "role": "states",
     "kind": "Question",
     "title": "Question 5.3",
@@ -1855,6 +1912,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ordered_complete_graph_monochromatic_nonnested_matching",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.1",
@@ -1892,6 +1950,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_4_regular_graph_polynomial_coefficient",
     "role": "states",
     "kind": "Question",
     "title": "Problem 2.1",
@@ -1929,6 +1988,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cycles_union_k4_copies_4_colorable",
     "role": "states",
     "kind": "Question",
     "title": "Problem 3.1",
@@ -1966,6 +2026,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cubic_truncation_strong_6_edge_coloring",
     "role": "states",
     "kind": "Question",
     "title": "Problem 4.1",
@@ -2003,6 +2064,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cubic_2_homogeneous_coloring_4_colors",
     "role": "states",
     "kind": "Conjecture",
     "title": "Problem 5.1",
@@ -2040,6 +2102,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cubic_2_homogeneous_coloring_finite_exceptions",
     "role": "states",
     "kind": "Conjecture",
     "title": "Problem 5.2",
@@ -2077,6 +2140,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bridgeless_2_flow_4_flow_pair",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.1",
@@ -2114,6 +2178,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bicritical_snarks_almost_group_connected",
     "role": "states",
     "kind": "Conjecture",
     "title": "Problem 7.1",
@@ -2151,6 +2216,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypergraph_ramsey_polynomial_iterated_blowup",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1",
@@ -2187,6 +2253,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypergraph_ramsey_tower_tightly_connected",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.2",
@@ -2223,6 +2290,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_reachability_network_min_transpositions",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -2255,6 +2323,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_reachability_network_2_uniformity_lazy_transpositions",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -2287,6 +2356,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_odd_cycle_orientations_avoidable",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.1",
@@ -2319,6 +2389,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_height_function_digraphs_not_avoidable",
     "role": "states",
     "kind": "Question",
     "title": "Question 6.2",
@@ -2351,6 +2422,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_c4_orientations_avoidable",
     "role": "states",
     "kind": "Question",
     "title": "Question 6.3",
@@ -2383,6 +2455,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_eulerian_avoidable_digraphs_characterization",
     "role": "states",
     "kind": "Problem",
     "title": "Eulerian-avoidability characterization",
@@ -2415,6 +2488,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_c4_orientations_eulerian_avoidable",
     "role": "states",
     "kind": "Question",
     "title": "Question 6.4",
@@ -2447,6 +2521,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cyclic_clique_minor_min_degree_bound",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.2",
@@ -2483,6 +2558,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_lollipop_active_path_complete_graph_criterion",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.1",
@@ -2519,6 +2595,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_lollipop_active_vertices_optimal_cycle",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.2",
@@ -2555,6 +2632,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_min_degree_3_cycle_linear_chords",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.3",
@@ -2591,6 +2669,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_quasi_isometry_multiplicative_to_additive_classes",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -2626,6 +2705,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_graph_cut_small_chromatic_number",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -2659,6 +2739,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_circuit_distance_polygons_np_hard",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 21",
@@ -2690,6 +2771,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clique_ramsey_minimizer_complete_graph",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -2721,6 +2803,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clique_ramsey_minimizer_q_colors",
     "role": "states",
     "kind": "Informal",
     "title": "q-color generalization of Conjecture 1.2",
@@ -2752,6 +2835,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tea_sharing_optimal_sequence_exponential_length",
     "role": "states",
     "kind": "Question",
     "title": "Question 6.1",
@@ -2789,6 +2873,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_strong_coloring_number_bramble_polynomial_expansion",
     "role": "states",
     "kind": "Question",
     "title": "Question 2",
@@ -2822,6 +2907,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fat_minor_quasi_isometry_trees_planar",
     "role": "states",
     "kind": "Informal",
     "title": "Informal question: validity of Conjecture 1.2 for trees and planar graphs",
@@ -2857,6 +2943,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_coarse_menger_bounded_genus",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture: coarse Menger for bounded genus",
@@ -2892,6 +2979,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_coarse_menger_bounded_genus_surfaces",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2 (Coarse Menger conjecture for surfaces)",
@@ -2927,6 +3015,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_coarse_treewidth_additive_quasi_isometry",
     "role": "states",
     "kind": "Informal",
     "title": "Open question on Theorem 1.2 with $L=1$",
@@ -2962,6 +3051,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_small_doubling_sumset_covering_family",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 15",
@@ -2992,6 +3082,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_saturated_no_finite_infinite_family",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 21",
@@ -3029,6 +3120,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_saturated_flip_graph_disconnected",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 22",
@@ -3066,6 +3158,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_saturated_countable_tournament_arc_reversal",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 23",
@@ -3103,6 +3196,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_saturated_infinite_tournament_perturbation",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 24",
@@ -3140,6 +3234,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_saturated_infinite_hypergraph",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 25",
@@ -3177,6 +3272,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_saturated_infinite_edge_colored_clique",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 26",
@@ -3214,6 +3310,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_coarse_menger_distance_2_paths",
     "role": "states",
     "kind": "Informal",
     "title": "Open case: Coarse Menger Conjecture for c=2",
@@ -3249,6 +3346,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_regular_4_critical_no_critical_edge",
     "role": "states",
     "kind": "Question",
     "title": "Problem 5.2",
@@ -3279,6 +3377,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cyclic_permutation_swap_diameter_prime",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.4",
@@ -3310,6 +3409,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cyclic_permutation_swap_diameter_extremal",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.6",
@@ -3341,6 +3441,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cyclic_permutation_swap_diameter_monotone",
     "role": "states",
     "kind": "Question",
     "title": "Question 3.9",
@@ -3372,6 +3473,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_partition_polytope_diameter_4_thirds",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -3405,6 +3507,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_shotgun_assembly_second_threshold_all_radii",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (second phase transition for all radii)",
@@ -3437,6 +3540,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_shotgun_assembly_second_threshold_radius_2",
     "role": "states",
     "kind": "Question",
     "title": "Question",
@@ -3469,6 +3573,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_1_independent_percolation_q3_signs_model",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.2",
@@ -3501,6 +3606,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_1_independent_percolation_hypercube_giant_threshold",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6.4",
@@ -3533,6 +3639,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_negative_p_energy_path_minimum",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -3565,6 +3672,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_merge_width_radius_1_chi_bounded",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.4",
@@ -3595,6 +3703,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_merge_width_transduction_neighborhood_complexity",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.7",
@@ -3625,6 +3734,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_regular_independence_edge_deletion_cubic_infinite",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.1",
@@ -3656,6 +3766,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_regular_independence_edge_deletion_degree_4",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.2",
@@ -3687,6 +3798,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_r_partite_hypergraph_matching_drop_deletion",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.3",
@@ -3718,6 +3830,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cayley_line_hypergraph_matching_drop",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.4",
@@ -3749,6 +3862,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_positive_square_energy_at_least_n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -3782,6 +3896,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_positive_square_energy_unicyclic_odd_cycle",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.1",
@@ -3815,6 +3930,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_positive_square_energy_equality_trees",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.2",
@@ -3848,6 +3964,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_positive_square_energy_equals_n_unicyclic",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.3",
@@ -3881,6 +3998,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_positive_square_energy_clique_number_3",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.4",
@@ -3914,6 +4032,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_positive_square_energy_maximal_planar_3n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.5",
@@ -3947,6 +4066,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_even_cycle_saturation_edge_addition",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.7",
@@ -3979,6 +4099,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_even_cycle_saturation_polynomial_size",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.8",
@@ -4011,6 +4132,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_largest_clique_minor_opt_approximation",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: polytime $f(\\mathrm{OPT})$-approximation for largest complete minor",
@@ -4043,6 +4165,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_one_crossing_5_critical_degree_four",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -4078,6 +4201,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_one_crossing_4_colorable_degree_5",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -4113,6 +4237,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_one_crossing_4_connected_degree_four",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -4148,6 +4273,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_one_crossing_bichromatic_forbidding_diamond_generation",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 30",
@@ -4183,6 +4309,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_rooted_kk_minor_free_unrealizable_colorings",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -4213,6 +4340,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_embedding_faces_gnp_logarithmic",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.13",
@@ -4246,6 +4374,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_embedding_faces_gnp_all_p",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.1",
@@ -4279,6 +4408,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_embedding_faces_dense_logarithmic",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.3",
@@ -4312,6 +4442,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_embedding_faces_nonorientable_complete",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.5",
@@ -4345,6 +4476,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_embedding_faces_nonorientable_vs_orientable",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.6",
@@ -4378,6 +4510,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_defective_coloring_blowup_chromatic_ratio",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.4",
@@ -4408,6 +4541,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_intersectionwise_chi_guarding_classes",
     "role": "states",
     "kind": "Question",
     "title": "Question 1 (Intersectionwise χ-guarding)",
@@ -4439,6 +4573,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_oriented_graph_semidegree_non_antidirected_paths",
     "role": "states",
     "kind": "Question",
     "title": "Question 5.1",
@@ -4472,6 +4607,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_subcubic_triangle_free_fractional_19_7",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.6",
@@ -4503,6 +4639,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chromatic_threshold_odd_cycles_undirected",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -4534,6 +4671,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chromatic_threshold_digraph_cycle_orientations",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.2",
@@ -4565,6 +4703,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chromatic_threshold_digraph_fixed_subdigraph",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.1",
@@ -4596,6 +4735,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chromatic_threshold_digraph_minimum_epsilon",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.2",
@@ -4627,6 +4767,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_quasi_clique_minor_gap_infimum",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.6",
@@ -4659,6 +4800,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kt_minor_free_recoloring_single_class",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.7",
@@ -4691,6 +4833,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_domination_packing_ratio_bounded_given_class",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -4723,6 +4866,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_domination_packing_ratio_bounded_characterization",
     "role": "states",
     "kind": "Question",
     "title": "Question 9.1",
@@ -4755,6 +4899,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_rainbow_cycle_average_degree_loglog_factor",
     "role": "states",
     "kind": "Question",
     "title": "Question 10.1",
@@ -4788,6 +4933,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_rainbow_expander_color_separated_spanning_decomposition",
     "role": "states",
     "kind": "Question",
     "title": "Question 10.2",
@@ -4821,6 +4967,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_group_subset_signed_product_identity",
     "role": "states",
     "kind": "Question",
     "title": "Question 10.3",
@@ -4854,6 +5001,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_transpositions_product_identity_minimum",
     "role": "states",
     "kind": "Question",
     "title": "Question 10.4",
@@ -4887,6 +5035,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_annulus_digraph_winding_one_crossing_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -4916,6 +5065,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_weightable_digraphs_np_characterization",
     "role": "states",
     "kind": "Question",
     "title": "Informal Question (NP-characterization of weightable digraphs)",
@@ -4945,6 +5095,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_subdivision_containment_subcubic_planar_dichotomy",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -4977,6 +5128,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_disjoint_paths_variants_complexity_gap",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Question on Complexity Gap Between Induced Disjoint Paths Variants",
@@ -5009,6 +5161,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_multidimensional_ramsey_r2_superexponential",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4.1",
@@ -5040,6 +5193,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_multidimensional_ramsey_r2_vs_erdos_szekeres",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4.2",
@@ -5071,6 +5225,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_free_chromatic_spectral_radius_log",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.7",
@@ -5101,6 +5256,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_f2n_two_coloring_no_monochromatic_subspace",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5.1",
@@ -5133,6 +5289,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_padded_strings_unavoidable_substring_sets",
     "role": "states",
     "kind": "Question",
     "title": "Question 8.3",
@@ -5165,6 +5322,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypercube_subcube_partitions_matchings_counting",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.1",
@@ -5196,6 +5354,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypercube_subcube_partitions_ratio_growth",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.2",
@@ -5227,6 +5386,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypercube_subcube_partitions_dimension_2_asymptotics",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.9",
@@ -5258,6 +5418,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypercube_subcube_partitions_dimension_2_bound",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on $f_2(d)$",
@@ -5289,6 +5450,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypercube_subcube_partitions_ratio_subexponential",
     "role": "states",
     "kind": "Question",
     "title": "Problem 1.10",
@@ -5320,6 +5482,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_unavoidability_bounded_average_degree_polynomial",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6",
@@ -5354,6 +5517,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_unavoidability_linear_blowup_closure",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7",
@@ -5388,6 +5552,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_unavoidability_tree_blowup_optimal_constant",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 8",
@@ -5422,6 +5587,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_unavoidability_vertex_deletion_ratio_bounded",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9",
@@ -5456,6 +5622,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_unavoidability_tree_extensions_exponential",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 10",
@@ -5490,6 +5657,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_unavoidability_linear_extension_closure",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 11",
@@ -5524,6 +5692,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_unavoidability_forest_extensions_rate",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 12",
@@ -5558,6 +5727,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypercube_statistic_lambda_d_1_limit",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on $\\lambda(d,1)$",
@@ -5589,6 +5759,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypercube_statistic_lambda_tight_bounds",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem on tight bounds for $\\lambda(d,s)$",
@@ -5620,6 +5791,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_odd_minor_free_clustered_chromatic_treedepth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -5653,6 +5825,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_positive_square_energy_lower_bound_4n_5",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (improved linear bound)",
@@ -5685,6 +5858,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_split_digraph_strong_2_kernel_half",
     "role": "states",
     "kind": "Question",
     "title": "Open question on strong 2-kernels in split digraphs",
@@ -5720,6 +5894,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_genus_approximation_spherical_density_regime",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem (Spherical Density Regime)",
@@ -5750,6 +5925,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chromatic_cochromatic_gap_three_small_clique",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.5",
@@ -5779,6 +5955,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clustered_coloring_strong_product_path_tight",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7",
@@ -5815,6 +5992,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clustered_coloring_strong_product_exponent_tight",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 8",
@@ -5851,6 +6029,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_convex_drawings_vs_pseudocircular_drawings",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: convex drawings vs. pseudocircular drawings",
@@ -5884,6 +6063,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_toroidal_5_choosability_critical_6_critical",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -5914,6 +6094,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_toroidal_5_choosability_equals_5_colorable",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -5944,6 +6125,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_toroidal_5_choosability_edge_width_4",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -5974,6 +6156,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_toroidal_5_choosability_prism_canvas_spacing",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 8",
@@ -6004,6 +6187,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_even_hole_free_independent_set_polynomial",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: Polynomial-time MWIS on even-hole-free graphs",
@@ -6037,6 +6221,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_even_hole_free_coloring_polynomial",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: Polynomial-time Coloring on even-hole-free graphs",
@@ -6070,6 +6255,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_alon_tarsi_orientation_half_out_degree",
     "role": "states",
     "kind": "Question",
     "title": "Question 6.1",
@@ -6103,6 +6289,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_alon_tarsi_matching_removal_half_delta",
     "role": "states",
     "kind": "Question",
     "title": "Question 6.2",
@@ -6136,6 +6323,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_s_color_connected_vertices_asymptotic",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.2",
@@ -6168,6 +6356,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_s_color_connected_vertices_transition",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.3",
@@ -6200,6 +6389,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_intersecting_hypergraph_cover_number_min_edges",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.4",
@@ -6232,6 +6422,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_intersecting_hypergraph_subset_edges_minimum",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.5",
@@ -6264,6 +6455,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_intersecting_hypergraph_uniform_subset_edge_counts",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.6",
@@ -6296,6 +6488,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_host_hereditary_turan_number",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.1",
@@ -6327,6 +6520,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_host_hereditary_turan_even_cycles",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.1",
@@ -6358,6 +6552,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_acyclic_subgraph_chromatic_oriented_function",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.1",
@@ -6389,6 +6584,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_acyclic_subgraph_chromatic_tournament_exponent",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.1",
@@ -6420,6 +6616,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_rainbow_stacking_random_colorings_sharp_threshold",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3.1",
@@ -6451,6 +6648,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_rainbow_stacking_odd_complete_proper_colorings",
     "role": "states",
     "kind": "Question",
     "title": "Question 3.3",
@@ -6482,6 +6680,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_erdos_szekeres_collinear_variant_ell_dependence",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (Introduction)",
@@ -6516,6 +6715,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_multicolor_ramsey_hypergraph_tower_height",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.1",
@@ -6547,6 +6747,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_multicolor_ramsey_3_graph_every_exponent",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4.1",
@@ -6578,6 +6779,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kt_minor_free_hypergraph_chromatic_bound",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -6607,6 +6809,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kt_minor_free_hypergraph_3_colorable",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -6636,6 +6839,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_erdos_hajnal_polynomial_rodl_hereditary_families",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 10",
@@ -6667,6 +6871,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_meyniel_cop_number_k_uniform_hypergraph",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -6700,6 +6905,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cover_free_families_optimal_size",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 5.1 (cover-free families)",
@@ -6730,6 +6936,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_reconstruction_mis_queries_randomized_nonadaptive",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 5.2 (randomised non-adaptive optimality)",
@@ -6760,6 +6967,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_reconstruction_mis_queries_adaptive_deterministic",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 5.3 (adaptive vs non-adaptive gap)",
@@ -6790,6 +6998,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_off_diagonal_3_ramsey_pair_complexity",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.1",
@@ -6825,6 +7034,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_off_diagonal_3_ramsey_purely_exponential",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.3",
@@ -6860,6 +7070,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_off_diagonal_3_ramsey_superpolynomial_exponent",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.6",
@@ -6895,6 +7106,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_off_diagonal_3_ramsey_linear_subexponential",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.7",
@@ -6930,6 +7142,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_off_diagonal_3_ramsey_tripartite_nlogn",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on tripartite off-diagonal Ramsey numbers",
@@ -6965,6 +7178,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_oriented_triangle_free_acyclic_number_sqrt",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -6997,6 +7211,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_oriented_triangle_free_dichromatic_number_max",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -7029,6 +7244,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_coloring_graph_polynomial_determination",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 11",
@@ -7061,6 +7277,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_coloring_graph_polynomial_random_graph_distinguishing",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 12",
@@ -7093,6 +7310,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_even_hole_diamond_free_tree_independence",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.6",
@@ -7127,6 +7345,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_even_hole_kt_free_logarithmic_treewidth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.7",
@@ -7161,6 +7380,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_cycle_packing_bounded_mis_polynomial",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -7201,6 +7421,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_cycle_packing_sparse_twin_width",
     "role": "states",
     "kind": "Question",
     "title": "Open Question: bounded twin-width for sparse $\\mathcal{O}_k$-free graphs",
@@ -7241,6 +7462,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_cycle_packing_odd_mis_tractable",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture: MIS tractable in bounded-iocp graphs",
@@ -7281,6 +7503,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_anti_sidorenko_orientation_every_tree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.12",
@@ -7313,6 +7536,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pure_pairs_blockade_transversal_triangle_polynomial",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.3",
@@ -7352,6 +7576,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pure_pairs_blockade_polynomial_ordered_graphs",
     "role": "states",
     "kind": "Informal",
     "title": "Informal: which graphs H admit polynomial-size pure pairs",
@@ -7391,6 +7616,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pure_pairs_blockade_strong_transversal_characterization",
     "role": "states",
     "kind": "Informal",
     "title": "Informal: characterization of graphs with the strong transversal property",
@@ -7430,6 +7656,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hitting_max_stable_sets_forest_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.8",
@@ -7461,6 +7688,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hitting_max_stable_sets_pt_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.13",
@@ -7492,6 +7720,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hitting_max_stable_sets_p5_polynomial",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.17",
@@ -7523,6 +7752,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hitting_max_stable_sets_mt_polynomial",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.20",
@@ -7554,6 +7784,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hitting_max_stable_sets_two_stars",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on $\\eta$-boundedness for disjoint union of two stars",
@@ -7585,6 +7816,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_universal_graph_bounded_density_edge_count",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1",
@@ -7619,6 +7851,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_prime_cayley_graph_joined_union_decomposition",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -7654,6 +7887,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_prime_cayley_graph_finite_ring_characterization",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.28",
@@ -7689,6 +7923,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_prime_cayley_graph_tensor_product_complete",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.31",
@@ -7724,6 +7959,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_forward_connected_pairs_approximation_ratio",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -7755,6 +7991,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_strong_balanced_bitree_linear_constant",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 2",
@@ -7786,6 +8023,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_left_maximal_dfs_tree_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3",
@@ -7817,6 +8055,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_forward_connected_pairs_request_approximation",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4",
@@ -7848,6 +8087,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_strong_forward_cover_log_n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -7879,6 +8119,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_hypergraph_ramsey_double_exponential_degree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.1",
@@ -7912,6 +8153,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_hypergraph_turan_exponent_max_degree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.2",
@@ -7945,6 +8187,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_hypergraph_turan_latin_square_exponent",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.4",
@@ -7978,6 +8221,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_hypergraph_turan_dense_linear_subhypergraph",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.5",
@@ -8011,6 +8255,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ell_holed_graphs_structure_small_ell",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: characterisation of ℓ-holed graphs for ℓ ∈ {4, 5, 6}",
@@ -8047,6 +8292,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_near_eulerian_triangulation_precoloring_polynomial",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -8079,6 +8325,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_near_eulerian_triangulation_precoloring_separated_faces",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -8111,6 +8358,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_neighborhood_complexity_planar_tight_bound",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 41",
@@ -8141,6 +8389,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_neighborhood_complexity_kt_minor_free_polynomial",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 42",
@@ -8171,6 +8420,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroes_complete_multipartite_delta_1_2_2",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.4",
@@ -8202,6 +8452,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroes_k1_join_delta_1_1_h",
     "role": "states",
     "kind": "Question",
     "title": "Question 5.4",
@@ -8233,6 +8484,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_local_chromatic_out_neighborhood_degeneracy",
     "role": "states",
     "kind": "Question",
     "title": "Question 10",
@@ -8268,6 +8520,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_local_chromatic_out_neighborhood_cycle",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 11",
@@ -8303,6 +8556,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_local_chromatic_random_tournament",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 12",
@@ -8338,6 +8592,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_local_chromatic_sublog_threshold_3",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 13",
@@ -8373,6 +8628,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_complete_topological_graph_linear_disjoint_edges",
     "role": "states",
     "kind": "Problem",
     "title": "Optimal disjoint-edges bound in complete simple topological graphs",
@@ -8404,6 +8660,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mwis_qptas_forest_subdivision_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -8436,6 +8693,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pt_free_3_coloring_polynomial_linear_forests",
     "role": "states",
     "kind": "Informal",
     "title": "Converse to Theorem 1.1 (3-Coloring dichotomy for $H$-free graphs)",
@@ -8467,6 +8725,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_h_free_coloring_dichotomy_all_k",
     "role": "states",
     "kind": "Informal",
     "title": "Full dichotomy for $k$-Coloring on $H$-free graphs ($k\\geq 3$)",
@@ -8498,6 +8757,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clean_classes_t_clock_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -8529,6 +8789,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clean_classes_finite_family_characterization",
     "role": "states",
     "kind": "Question",
     "title": "Question: finite families yielding clean H-free classes",
@@ -8562,6 +8823,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_flip_distance_complexity_binary_trees_rotation",
     "role": "states",
     "kind": "Informal",
     "title": "Complexity of Rotation Distance Between Binary Search Trees",
@@ -8592,6 +8854,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_flip_distance_complexity_rectangulations",
     "role": "states",
     "kind": "Informal",
     "title": "Complexity of Flip Distance Between Rectangulations",
@@ -8622,6 +8885,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_treedepth_bound_treewidth_binary_tree_path",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: sharpness of the treedepth bound in Theorem 1",
@@ -8656,6 +8920,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_number_arbitrary_growth_rate_approximation",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 10",
@@ -8686,6 +8951,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_non_averaging_sets_n_quarter_tight",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on h(n)",
@@ -8717,6 +8983,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degree_bounded_classes_polynomial_bounding_function",
     "role": "states",
     "kind": "Problem",
     "title": "Polynomial degree-bounding function for hereditary degree-bounded classes",
@@ -8750,6 +9017,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degree_bounded_classes_c4_free_polynomial",
     "role": "states",
     "kind": "Problem",
     "title": "Polynomial bound in k for C4-free subgraphs",
@@ -8783,6 +9051,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pure_pairs_sparse_excluded_linear_side",
     "role": "states",
     "kind": "Question",
     "title": "Possibility 1.6",
@@ -8822,6 +9091,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pure_pairs_sparse_excluded_stronger_coherence",
     "role": "states",
     "kind": "Informal",
     "title": "Open question on Theorem 3.3 with stronger coherence",
@@ -8861,6 +9131,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_vertex_critical_edge_robust_fixed_k",
     "role": "states",
     "kind": "Problem",
     "title": "Open case of Erdős's problem for fixed small k",
@@ -8891,6 +9162,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_regular_graph_top_eigenvalues_limit_points",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -8921,6 +9193,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_separating_path_system_strong_2n",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3",
@@ -8954,6 +9227,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_separating_path_system_rainbow_cover_linear",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4",
@@ -8987,6 +9261,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_simultaneous_ordering",
     "role": "states",
     "kind": "Question",
     "title": "Question 3.5",
@@ -9019,6 +9294,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_substitution_polynomial_bounded",
     "role": "states",
     "kind": "Question",
     "title": "Question 3.10",
@@ -9051,6 +9327,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_twin_width_bounded",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.12",
@@ -9083,6 +9360,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_twin_width_ordering",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.13",
@@ -9115,6 +9393,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_bst_ordering",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.16",
@@ -9147,6 +9426,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_gyarfas_sumner_backedge",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.3 (Gyárfás-Sumner for Tournaments)",
@@ -9179,6 +9459,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ordered_graph_matching_free_chi_bounded",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.11",
@@ -9211,6 +9492,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_domination_cluster",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5.3 (Large dom implies an ω̄-cluster)",
@@ -9243,6 +9525,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_local_global",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5.6",
@@ -9275,6 +9558,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_bounded_witness",
     "role": "states",
     "kind": "Question",
     "title": "Question 5.9",
@@ -9307,6 +9591,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_critical_infinitely_many",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5.10",
@@ -9339,6 +9624,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_clique_number_substitution_digraphs",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6.1",
@@ -9371,6 +9657,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sublinear_separators_product_structure_tree_depth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture (product structure with bounded tree-depth and tight clique size)",
@@ -9401,6 +9688,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sublinear_separators_product_structure_treewidth",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem 6",
@@ -9431,6 +9719,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_f_free_induced_girth_preserving_bounded",
     "role": "states",
     "kind": "Informal",
     "title": "Girth Conjecture (strengthening of Theorem 3)",
@@ -9466,6 +9755,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_menger_bounded_degree_linear_separator",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -9498,6 +9788,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_2_extremal_digraphs_hajos_characterization",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9.2",
@@ -9529,6 +9820,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_happy_triples_bound_small_max_degree",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on happy triples for $l < k/2$",
@@ -9560,6 +9852,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cube_complex_boundary_distance_rigidity",
     "role": "states",
     "kind": "Question",
     "title": "Question 1",
@@ -9592,6 +9885,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_connectivity_code_torus_product_cycles",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: m(C_t × C_s) for all t, s",
@@ -9621,6 +9915,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_levine_hat_intersecting_success_vanishes",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.1",
@@ -9653,6 +9948,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_levine_hat_monotone_success_vanishes",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.2",
@@ -9685,6 +9981,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_levine_hat_intersecting_kneser_independence",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.6",
@@ -9717,6 +10014,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independence_ratio_random_subset_gap_positive",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.8",
@@ -9749,6 +10047,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independence_ratio_binomial_subset_gap_positive",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.9",
@@ -9781,6 +10080,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_sqrt_edges_bound_multicolor",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Problem: extending the $\\sqrt{m}$ Ramsey bound to more than two colors for graphs",
@@ -9812,6 +10112,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_set_coloring_ramsey_zero_rate_equality",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (Equality in Theorem 1.1 near the zero-rate threshold)",
@@ -9844,6 +10145,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_vantage_sign_patterns_r_dependence_gap",
     "role": "states",
     "kind": "Problem",
     "title": "Gap in $r$-dependence of sign-pattern bound",
@@ -9876,6 +10178,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_vantage_square_roots_sum_components_gap",
     "role": "states",
     "kind": "Problem",
     "title": "Gap in connected-component count for sums of square roots",
@@ -9908,6 +10211,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_vantage_protrusive_ordering_5_points",
     "role": "states",
     "kind": "Problem",
     "title": "Five-point protrusive-but-not-witnessed construction",
@@ -9940,6 +10244,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_strong_eh_backedge_forest",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -9980,6 +10285,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_strong_eh_three_backedges_d5",
     "role": "states",
     "kind": "Informal",
     "title": "Informal question: can the D5-freeness hypothesis in Theorem 1.6 be dropped?",
@@ -10020,6 +10326,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_separable_index_pattern_avoiding_polynomial",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.2",
@@ -10052,6 +10359,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_separable_index_parameterized_complexity",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.3",
@@ -10084,6 +10392,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_graph_correspondence_chromatic_n_logn",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -10114,6 +10423,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_goodness_books_threshold_not_tight",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Belief on Non-Optimality of p-Goodness Bound",
@@ -10145,6 +10455,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_goodness_regularity_free_proof",
     "role": "states",
     "kind": "Question",
     "title": "Question on Eliminating the Regularity Lemma from Nikiforov–Rousseau's General Theorem",
@@ -10176,6 +10487,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_square_root_np_complete",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -10207,6 +10519,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minor_free_underlying_treewidth_polynomial_treedepth",
     "role": "states",
     "kind": "Question",
     "title": "Question 1",
@@ -10244,6 +10557,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_topological_minor_free_treewidth_product_structure",
     "role": "states",
     "kind": "Question",
     "title": "Question 2",
@@ -10281,6 +10595,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minor_free_p_centered_coloring_polynomial",
     "role": "states",
     "kind": "Question",
     "title": "Question 3",
@@ -10318,6 +10633,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_multiplicity_polite_integers",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -10348,6 +10664,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_multiplicity_mixed_blowup_coloring",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5.3",
@@ -10378,6 +10695,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_multiplicity_lollipop_bonbon",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5.4",
@@ -10408,6 +10726,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroic_sets_bounded_dichromatic_finite_families",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -10440,6 +10759,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroes_oriented_star_delta_1_m_m",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: hero status of $\\Delta(1,m,m')$ for degree-4 oriented stars",
@@ -10472,6 +10792,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroes_delta_1_2_2_k1_p2_free",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: hero status of $\\Delta(1,2,2)$",
@@ -10504,6 +10825,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_flash_rainbow_edge_coloring_exact",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.7",
@@ -10537,6 +10859,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kromatic_claw_free_grassmannian_subvariety",
     "role": "states",
     "kind": "Informal",
     "title": "Grassmannian Subvariety Construction Problem",
@@ -10568,6 +10891,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minor_free_choosability_trivial_bound_characterization",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -10598,6 +10922,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_embedding_expected_faces_third_n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -10628,6 +10953,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_forest_free_polynomial_chi_good",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (every forest is good)",
@@ -10668,6 +10994,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_broom_nondominating_copy_no_scattering",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.3",
@@ -10708,6 +11035,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_forest_free_multibounding_chi_bound",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.6",
@@ -10743,6 +11071,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_neighborly_boxes_limit_one_half",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on the asymptotic of n(2,d)",
@@ -10775,6 +11104,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_neighborly_boxes_limit_exists",
     "role": "states",
     "kind": "Question",
     "title": "Open question on existence of lim n(2,d)/d^2",
@@ -10807,6 +11137,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_odd_degree_linear_forests_matching",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -10839,6 +11170,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_path_induced_rooted_tree_polynomial_chi",
     "role": "states",
     "kind": "Question",
     "title": "Polynomial bounds for path-induced copy theorem (1.2)",
@@ -10874,6 +11206,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_forest_free_polynomial_chi_gyarfas_sumner",
     "role": "states",
     "kind": "Informal",
     "title": "Polynomial bounds for the Gyárfás-Sumner conjecture",
@@ -10909,6 +11242,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_codes_even_edges_density_vanishes",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -10938,6 +11272,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_codes_k4_density_vanishes",
     "role": "states",
     "kind": "Informal",
     "title": "Informal question: is $d_{K_4}(n) = o(1)$?",
@@ -10967,6 +11302,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_codes_linear_even_h_bounds",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem: tighter bounds for linear graph-codes",
@@ -10996,6 +11332,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_codes_cube_length_interval_vectors",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem: binary vectors with cube-length forbidden symmetric difference",
@@ -11025,6 +11362,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_codes_odd_intersection_edge_coloring",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem: minimum edge-coloring with odd intersection property",
@@ -11054,6 +11392,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_even_hole_free_chordal_modulator",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (chordal modulator characterization for even-hole-free graphs)",
@@ -11087,6 +11426,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_point_set_random_distances_reconstruction_threshold",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on sharp threshold for linear-proportion reconstruction",
@@ -11120,6 +11460,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_forest_free_polynomial_chi_bounded",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -11154,6 +11495,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_path_free_polynomial_chi_tau_d",
     "role": "states",
     "kind": "Question",
     "title": "Question: Extending Theorem 1.6 to paths",
@@ -11188,6 +11530,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hereditary_tau_d_bounded_implies_polynomial_esperet",
     "role": "states",
     "kind": "Question",
     "title": "Question: Polynomial bound analogue of Esperet's conjecture for $\\tau_d$",
@@ -11222,6 +11565,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_set_reconfiguration_diameter_k4_cubic",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -11254,6 +11598,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_set_reconfiguration_diameter_max_k",
     "role": "states",
     "kind": "Question",
     "title": "Question 8",
@@ -11286,6 +11631,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_dope_matrices_generic_conditions_ert_sufficient",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on Sufficiency of Conditions E, R, T for Generic Tuples",
@@ -11317,6 +11663,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_total_coloring_delta_plus_2",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -11348,6 +11695,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_z3_flow_critical_density_genus_coefficient",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.6",
@@ -11382,6 +11730,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_directed_sidorenko_bipartite_homomorphism",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -11414,6 +11763,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_directed_sidorenko_forcing_cycle_homomorphism",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.7",
@@ -11446,6 +11796,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sidorenko_asymmetric_classical_equivalent",
     "role": "states",
     "kind": "Informal",
     "title": "Equivalence of asymmetric and classical Sidorenko properties",
@@ -11478,6 +11829,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_turan_h_free_bounded_matching_number",
     "role": "states",
     "kind": "Informal",
     "title": "Extension to H-free graphs",
@@ -11508,6 +11860,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_segment_graphs_kr_free_linear_induced",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.2",
@@ -11539,6 +11892,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_linear_growth_tree_strong_product_subgraph",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 14",
@@ -11575,6 +11929,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_graph_hereditary_extremal_probability_range",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (characterizing edge probabilities for Theorem 1.1)",
@@ -11606,6 +11961,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_graph_hereditary_extremal_bipartite_asymptotics",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (accurate estimate in the bipartite case)",
@@ -11637,6 +11993,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_graph_hereditary_extremal_polynomial_saving",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (polynomial saving in the bipartite case)",
@@ -11668,6 +12025,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_subdigraph_half_vertices_min_outdegree_gap",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: closing the gap for $d(s)$",
@@ -11697,6 +12055,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_c4_diamond_theta_prism_bounded_treewidth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.6",
@@ -11729,6 +12088,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_grid_ramsey_rectangle_vs_clique",
     "role": "states",
     "kind": "Problem",
     "title": "Grid Ramsey Problem (gr(G_{2x2}, K_n))",
@@ -11763,6 +12123,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_grid_ramsey_equals_hypergraph_clique_star",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture: r(K^(3)_4, S^(3)_n) and gr(G_{2x2}, K_n) have the same order",
@@ -11797,6 +12158,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypergraph_ramsey_k4_minus_edge_star",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture: r(K^(3)_{4-e}, S^(3)_n) = Theta(n^2 / log n)",
@@ -11831,6 +12193,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_intersection_graphs_asymptotic_dimension_tight",
     "role": "states",
     "kind": "Informal",
     "title": "Optimal bound question",
@@ -11861,6 +12224,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_forest_free_polynomial_chi_omega_power",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -11900,6 +12264,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_twin_width_matrices_infinite_fields",
     "role": "states",
     "kind": "Informal",
     "title": "Open question on twin-width over infinite fields",
@@ -11932,6 +12297,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_monochromatic_subset_sums_density_tight",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on tightness of the upper bound for all r ≥ 3",
@@ -11963,6 +12329,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clique_3_triangle_free_induced_bounded",
     "role": "states",
     "kind": "Question",
     "title": "Question 3.1",
@@ -11995,6 +12362,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_odd_dicycle_free_digraph_dichromatic_bounded",
     "role": "states",
     "kind": "Question",
     "title": "Question 3.2",
@@ -12027,6 +12395,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_four_families_free_logarithmic_treewidth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.10",
@@ -12059,6 +12428,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_5_coloring_p4_rp3_free_complexity",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem: 5-Coloring complexity for H-free graphs with a P4 component",
@@ -12090,6 +12460,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_coloring_rp3_free_np_hard",
     "role": "states",
     "kind": "Informal",
     "title": "Open Question: NP-hardness of List-k-Coloring on rP3-free graphs",
@@ -12121,6 +12492,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cell_3_colorable_3_flowable_subcontraction",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 11",
@@ -12152,6 +12524,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_lazy_transpositions_shuffle_t_counters_exact",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3",
@@ -12184,6 +12557,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_threshold_ramsey_multiplicity_paths_exact",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -12216,6 +12590,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_rodl_h_free_restricted_union_cover",
     "role": "states",
     "kind": "Informal",
     "title": "Union cover variant (open problem)",
@@ -12256,6 +12631,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_irregular_subgraph_property_range",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on Property (*) for d = o(n/log n)",
@@ -12287,6 +12663,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_arithmetic_hyperbolic_surface_diameter_log_volume",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on the actual diameter",
@@ -12316,6 +12693,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_groups_uniform_twin_width_strictly_stronger",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (uniform twin-width strictly stronger than twin-width)",
@@ -12348,6 +12726,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_groups_infinite_twin_width_explicit_construction",
     "role": "states",
     "kind": "Question",
     "title": "Question (explicit group with infinite twin-width)",
@@ -12380,6 +12759,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_twin_width_queue_number_separation",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (separating twin-width and queue number on sparse graphs)",
@@ -12412,6 +12792,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_counting_perfect_matchings_alpha_2_hard",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -12442,6 +12823,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_set_coloring_ramsey_chromatic_variant_equality",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on R(n;r,s) vs R'(n;r,s) near Turán density",
@@ -12476,6 +12858,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_littlewood_offord_geometric_nonzero_vectors",
     "role": "states",
     "kind": "Question",
     "title": "Question 1",
@@ -12507,6 +12890,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_littlewood_offord_o_minimal_sqrt_n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -12538,6 +12922,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_oriented_tree_avoiding_2_coloring_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "Open Complexity Problem (2-F-PFC for oriented trees of maximum degree ≥ 3)",
@@ -12569,6 +12954,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_large_chromatic_dense_minor_edge_density",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on improving the $g(t)$ lower bound",
@@ -12599,6 +12985,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_twin_width_approximation_unordered_graphs",
     "role": "states",
     "kind": "Problem",
     "title": "Open Challenge: Efficient Approximation of Twin-Width for Unordered Graphs",
@@ -12631,6 +13018,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_arrangement_graphs_4_critical_infinite_family",
     "role": "states",
     "kind": "Informal",
     "title": "Belief on 4-vertex-critical arrangement graphs",
@@ -12665,6 +13053,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k6_minor_6_regular_graphs",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -12705,6 +13094,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k6_minor_min_6_max_8",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture: min degree $\\geq 6$, max degree $\\leq 8$ forces $K_6$ minor",
@@ -12745,6 +13135,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k6_minor_bipartite_min_degree_5",
     "role": "states",
     "kind": "Question",
     "title": "Open Question: minimum degree five in Theorem 1.6",
@@ -12785,6 +13176,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k5_minor_bipartite_average_degree_5",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture: average degree $\\geq 5$ and max degree $\\leq 6$ forces $K_5$ minor in bipartite graphs",
@@ -12825,6 +13217,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_r_free_digraphs_near_acyclic",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on r-free digraphs with r > 2n/3",
@@ -12856,6 +13249,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_orientation_feedback_arc_surplus",
     "role": "states",
     "kind": "Informal",
     "title": "Suspected directed surplus of a random B-free orientation (Remark 1.6)",
@@ -12887,6 +13281,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_structured_graph_codes_f2c_odd_n",
     "role": "states",
     "kind": "Problem",
     "title": "Open case of Theorem 3 for odd $n$",
@@ -12920,6 +13315,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_unit_segment_graphs_twin_width_delineated",
     "role": "states",
     "kind": "Question",
     "title": "Open Question (unit segment graphs delineation)",
@@ -12954,6 +13350,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_weak_coloring_number_quadratic_log",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -12984,6 +13381,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tree_bounded_growth_r_burnable",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7",
@@ -13019,6 +13417,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_poly_chi_bounded_hereditary_characterization",
     "role": "states",
     "kind": "Question",
     "title": "Question (which hereditary classes are poly-χ-bounded?)",
@@ -13059,6 +13458,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_poly_chi_bounded_odd_multihole_free",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem (poly-χ-bounded for k-multihole with only odd cycles)",
@@ -13099,6 +13499,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_forest_free_polynomial_chi_gyarfas_sumner_all_forests",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture (polynomial Gyárfás–Sumner)",
@@ -13139,6 +13540,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_poly_chi_bounded_trees_disjoint_union",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem (disjoint union of good trees)",
@@ -13179,6 +13581,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_poly_chi_bounded_self_isolating_all",
     "role": "states",
     "kind": "Question",
     "title": "Question (are all graphs self-isolating?)",
@@ -13219,6 +13622,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chordal_digraphs_dichromatic_construction_size",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on construction size",
@@ -13250,6 +13654,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_ramsey_chromatic_family_exact",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture on $R_\\ell(\\mathcal{H}_s, k)$",
@@ -13282,6 +13687,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_ramsey_exponential_constant_k3",
     "role": "states",
     "kind": "Informal",
     "title": "Determine the exponential constant in $R_\\ell(H,k)$",
@@ -13314,6 +13720,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kst_minor_free_choosable_k44_k35",
     "role": "states",
     "kind": "Question",
     "title": "Question 1",
@@ -13343,6 +13750,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kst_minor_free_choosable_2s_t",
     "role": "states",
     "kind": "Question",
     "title": "Question 2",
@@ -13372,6 +13780,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kst_minor_free_choosable_woodall_fixed_s",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: Woodall's conjecture for fixed s",
@@ -13401,6 +13810,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kst_minor_free_choosable_woodall_smallest_counterexample",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: smallest counterexample to Woodall's conjecture",
@@ -13430,6 +13840,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_acyclic_digraph_ramsey_bounded_degree_polynomial",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on parameters governing $\\overrightarrow{r}_1(H)$",
@@ -13461,6 +13872,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_removal_vs_dfl_growth",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on similar growth of $N_{DFL}(\\varepsilon)$ and $1/\\delta_{TRL}(\\varepsilon)$",
@@ -13491,6 +13903,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_implicit_representation_speed_sqrt_n_labels",
     "role": "states",
     "kind": "Question",
     "title": "Question (Section 3, implicit representation for speed $2^{O(n\\log n)}$)",
@@ -13520,6 +13933,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_implicit_representation_speed_n23_labels",
     "role": "states",
     "kind": "Question",
     "title": "Question (Section 3, implicit representation for speed $2^{n^{1+\\varepsilon}}$)",
@@ -13549,6 +13963,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k_creature_free_polynomial_minimal_separators",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -13583,6 +13998,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_convex_complete_geometric_k_planar_partition",
     "role": "states",
     "kind": "Question",
     "title": "Question 9",
@@ -13619,6 +14035,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_lipschitz_bijection_dictator_xor_inverse",
     "role": "states",
     "kind": "Question",
     "title": "Informal Question (Section 2)",
@@ -13649,6 +14066,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degenerate_graphs_polynomial_kempe_sequences",
     "role": "states",
     "kind": "Question",
     "title": "Polynomial Kempe sequences for degenerate graphs",
@@ -13680,6 +14098,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_surface_k_dicolorability_complexity_4_5",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4.4",
@@ -13712,6 +14131,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_plane_graphs_weak_diameter_2_coloring",
     "role": "states",
     "kind": "Question",
     "title": "Question 6",
@@ -13742,6 +14162,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_grid_arithmetic_progression_discrepancy_tight",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture (Section 7)",
@@ -13773,6 +14194,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_active_clustering_clique_algorithm_optimal",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -13805,6 +14227,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_near_triangulation_4_coloring_extension_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -13835,6 +14258,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_plane_near_cubic_coloring_cone_b5",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 8",
@@ -13865,6 +14289,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_polynomial_expansion_bounded_twin_width_speculation",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (polynomial expansion and bounded twin-width)",
@@ -13897,6 +14322,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_twin_width_nowhere_dense_fo_superclass",
     "role": "states",
     "kind": "Question",
     "title": "Question (common superclass for FPT FO model checking)",
@@ -13929,6 +14355,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kt_minor_free_list_chromatic_2t",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -13958,6 +14385,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sublinear_separators_fractional_treewidth_fragile",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (fractional treewidth-fragility of sublinear-separator classes)",
@@ -13987,6 +14415,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fo_minimization_approximation_bounded_expansion_ptas",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 6",
@@ -14016,6 +14445,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fo_maximization_approximation_nowhere_dense",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 7",
@@ -14045,6 +14475,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_random_embedding_expected_faces_linear",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -14078,6 +14509,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_c5_free_triangle_removal_exponent",
     "role": "states",
     "kind": "Informal",
     "title": "Optimality of the $o(n^{3/2})$ bound in Corollary 1.4",
@@ -14110,6 +14542,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_linear_equation_free_sets_sqrt_n",
     "role": "states",
     "kind": "Informal",
     "title": "Improvement of the bound in Theorem 1.12",
@@ -14142,6 +14575,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_odd_cycle_ramsey_multiplicity_exact",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -14174,6 +14608,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_twin_width_connected_domination_no_kernel",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: no-kernel lower bound at twin-width 4 for Connected/Total k-Dominating Set",
@@ -14207,6 +14642,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_multiplicative_group_matrix_rank_sharp_bounds",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: improved quantitative rank bounds",
@@ -14237,6 +14673,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kt_minor_free_universal_graph_separators",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (Section 1): Balanced Separator for $U_t$",
@@ -14270,6 +14707,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bipartite_asymmetric_list_sizes_optimal",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3",
@@ -14301,6 +14739,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bipartite_asymmetric_list_sizes_krivelevich_alon",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7",
@@ -14332,6 +14771,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_free_planar_3_coloring_count",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -14362,6 +14802,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_irregular_spanning_subgraph_regular_graphs",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1",
@@ -14392,6 +14833,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_irregular_spanning_subgraph_min_degree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -14422,6 +14864,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_poly_chi_bounded_forests_known_complete",
     "role": "states",
     "kind": "Informal",
     "title": "Informal remark on completeness of known forests satisfying Esperet's conjecture",
@@ -14461,6 +14904,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hat_guessing_degenerate_bounded",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Belief on Degeneracy Bound for Hat Guessing Number",
@@ -14491,6 +14935,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hat_guessing_random_graph_sublinear",
     "role": "states",
     "kind": "Question",
     "title": "Question on Typical Hat Guessing Number of G(n,1/2)",
@@ -14521,6 +14966,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hat_guessing_universal_vertex_addition",
     "role": "states",
     "kind": "Problem",
     "title": "Problem on Hat Guessing Number After Adding a Universal Vertex",
@@ -14551,6 +14997,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_divisible_subdivision_clique_minor_f_growth",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (asymptotic behavior of f(H,q))",
@@ -14581,6 +15028,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_divisible_subdivision_g_q_linear",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (linearity of g(q))",
@@ -14611,6 +15059,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_runsort_permuton_horizontal_uniformity_direct",
     "role": "states",
     "kind": "Informal",
     "title": "Direct Proof of Horizontal Uniformity",
@@ -14642,6 +15091,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_friends_strangers_random_connectivity_threshold",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (§1.2, Theorem 1.1 remarks)",
@@ -14673,6 +15123,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_friends_strangers_isolated_vertex_cutoff_coincide",
     "role": "states",
     "kind": "Question",
     "title": "Open Question (§1.2, Theorem 1.4 remarks)",
@@ -14704,6 +15155,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_c4_free_counting_lemma_characterization",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -14736,6 +15188,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_c4_free_counting_petersen_dodecahedron",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem 2.17",
@@ -14768,6 +15221,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_zombie_number_leaf_attachment_invariance",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.1",
@@ -14801,6 +15255,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_zombie_number_subdivision_increase",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.2",
@@ -14834,6 +15289,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_convex_unit_distance_realization_gk",
     "role": "states",
     "kind": "Question",
     "title": "Open Question on Convex Unit Distance Realization of Graphs $G_k$",
@@ -14864,6 +15320,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_forest_of_lanterns_pervasive",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture: every forest of lanterns is pervasive",
@@ -14899,6 +15356,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_crossing_critical_max_degree_optimal_bounds",
     "role": "states",
     "kind": "Informal",
     "title": "Optimal degree bounds $D_c$ for small $c$",
@@ -14937,6 +15395,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_treewidth_fragile_weighted_vertex_cover_ptas",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: PTAS for weighted minimization problems in fractionally treewidth-fragile classes",
@@ -14967,6 +15426,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_intersection_graphs_polynomial_weak_coloring_numbers",
     "role": "states",
     "kind": "Question",
     "title": "Question (polynomial weak coloring numbers for intersection graph classes)",
@@ -14999,6 +15459,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ladder_minor_bumping_universal_constant",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on Universal N0 for Bumping a Ladder",
@@ -15032,6 +15493,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_poset_cover_graph_unavoidable_minors_characterization",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: Characterization of Unavoidable Graphs",
@@ -15065,6 +15527,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_poset_cover_graph_unavoidable_minors_kelly",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6",
@@ -15098,6 +15561,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hitting_max_independent_sets_graph_chromatic",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on Chromatic Number of $G_{m,t}$",
@@ -15127,6 +15591,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sunflower_bounded_vc_dimension_exponential",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1",
@@ -15158,6 +15623,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k_colorable_deletion_clique_free_sharp",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture on sharpness of Theorem 1.1",
@@ -15189,6 +15655,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k_colorable_deletion_odd_wheel_sharp",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture on sharpness of Theorem 1.5",
@@ -15220,6 +15687,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k_colorable_deletion_neighborhood_edge_cover",
     "role": "states",
     "kind": "Question",
     "title": "Question 2.1",
@@ -15251,6 +15719,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k_colorable_deletion_mnk_asymptotics",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on $m(n,k)$ for fixed $k \\geq 2$",
@@ -15282,6 +15751,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_link_hypergraph_ramsey_rate_odd_girth",
     "role": "states",
     "kind": "Informal",
     "title": "Exact Ramsey growth rate dependence on G for link hypergraphs",
@@ -15312,6 +15782,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypergraph_independence_fk_order",
     "role": "states",
     "kind": "Problem",
     "title": "Determine the order of f_k(N; s, t) in general",
@@ -15342,6 +15813,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_path_powers_exponent_constant",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem: exact constant in the exponent",
@@ -15384,6 +15856,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_twin_width_mis_dominating_approximability",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on MIS approximability vs. Min Dominating Set",
@@ -15417,6 +15890,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_erdos_hajnal_c8_complement_c8",
     "role": "states",
     "kind": "Problem",
     "title": "Erdős-Hajnal property for $\\{C_8, \\overline{C_8}\\}$",
@@ -15457,6 +15931,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_star_contraction_clique_minor_strategy_generality",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on the generality of the probabilistic minor strategy",
@@ -15488,6 +15963,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ordered_pure_pairs_n_polylog",
     "role": "states",
     "kind": "Informal",
     "title": "Informal belief on Conjecture 1.7 and polylog bound",
@@ -15527,6 +16003,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_map_isomorphism_quadratic_lower_bound",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -15559,6 +16036,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_map_isomorphism_superlinear_lower_bound",
     "role": "states",
     "kind": "Informal",
     "title": "Open subproblem: conditional superlinear lower bound",
@@ -15591,6 +16069,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_interactive_sum_choice_strict_non_complete",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1",
@@ -15621,6 +16100,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minimal_complements_count_sqrt_n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7",
@@ -15652,6 +16132,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minimal_complements_count_prime_order",
     "role": "states",
     "kind": "Question",
     "title": "Question 8",
@@ -15683,6 +16164,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_maximal_supplement_solid_subset_optimal",
     "role": "states",
     "kind": "Question",
     "title": "Question 9",
@@ -15714,6 +16196,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minimal_complements_random_subset_threshold",
     "role": "states",
     "kind": "Question",
     "title": "Question 10",
@@ -15745,6 +16228,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_h_free_anticomplete_pairs_linear",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -15790,6 +16274,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_h_free_anticomplete_pairs_triangle",
     "role": "states",
     "kind": "Informal",
     "title": "Open case H = K3 for Conjecture 1.4",
@@ -15835,6 +16320,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_h_free_c_sparse_pairs",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.4",
@@ -15880,6 +16366,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bipartite_concatenation_phi_ceiling_formula",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (Introduction) — analogue of Kneser's theorem",
@@ -15921,6 +16408,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bipartite_concatenation_psi_symmetry",
     "role": "states",
     "kind": "Question",
     "title": "Open Question — symmetry of $\\psi$ (biconstrained case)",
@@ -15962,6 +16450,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_gnp_subgraph_count_anticoncentration_bound",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.12",
@@ -15993,6 +16482,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_surface_triangle_free_3_coloring_linear",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (linear-time 3-coloring output)",
@@ -16024,6 +16514,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_even_hole_k4_diamond_free_treewidth",
     "role": "states",
     "kind": "Question",
     "title": "Open Question: (even hole, K4, diamond)-free treewidth/cliquewidth",
@@ -16056,6 +16547,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_theta_triangle_free_bounded_degree_treewidth",
     "role": "states",
     "kind": "Question",
     "title": "Open Question: (theta, triangle)-free graphs of bounded degree",
@@ -16088,6 +16580,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_s123_free_cliquewidth",
     "role": "states",
     "kind": "Question",
     "title": "Open Question: (triangle, S1,2,3)-free graphs cliquewidth",
@@ -16120,6 +16613,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mis_complexity_even_hole_k4_free",
     "role": "states",
     "kind": "Problem",
     "title": "Maximum Independent Set complexity for (even hole, K4)-free and (theta, triangle)-free graphs",
@@ -16152,6 +16646,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mis_complexity_subdivided_claw_free_p7",
     "role": "states",
     "kind": "Problem",
     "title": "Maximum Independent Set complexity for H-free graphs when H contains P7, S1,1,3, or S1,2,2",
@@ -16184,6 +16679,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_oriented_matroid_even_directed_circuit",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.4",
@@ -16215,6 +16711,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_near_sunflower_exponential_bound",
     "role": "states",
     "kind": "Conjecture",
     "title": "Near-sunflower analogue of the Erdős-Rado Sunflower Conjecture",
@@ -16245,6 +16742,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_binary_focal_family_bound_not_tight",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on non-tightness of upper bound for binary focal families",
@@ -16275,6 +16773,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_single_conflict_coloring_euler_genus_sqrt",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -16307,6 +16806,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_single_conflict_coloring_degenerate_log_n",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on single-conflict chromatic number of degenerate graphs",
@@ -16339,6 +16839,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroic_sets_bounded_dichromatic_characterization",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.2",
@@ -16370,6 +16871,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroic_sets_hero_oriented_forest",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.2",
@@ -16401,6 +16903,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroic_sets_clique_oriented_forest",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.4",
@@ -16432,6 +16935,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_heroic_sets_minimal_tournament_families",
     "role": "states",
     "kind": "Informal",
     "title": "Research direction: minimal heroic tournament families",
@@ -16463,6 +16967,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_fractional_vertex_arboricity_2",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1",
@@ -16495,6 +17000,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_shortest_even_hole_detection",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: Finding a Shortest Even Hole",
@@ -16525,6 +17031,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_holes_length_divisible_3_detection",
     "role": "states",
     "kind": "Question",
     "title": "Open Question: Detecting Holes of Length Divisible by Three",
@@ -16555,6 +17062,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_crossing_number_kn_minus_matching",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -16584,6 +17092,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_detour_path_excess_3",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (induced st-path of excess length three)",
@@ -16619,6 +17128,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_long_odd_hole_heavy_path_lemma",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (heavy path extension)",
@@ -16654,6 +17164,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_long_odd_hole_detection_running_time",
     "role": "states",
     "kind": "Question",
     "title": "Open Question (running time improvement for long hole detection)",
@@ -16689,6 +17200,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_even_hole_free_bounded_degree_treewidth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -16722,6 +17234,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bounded_degree_treewidth_induced_wall",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -16755,6 +17268,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_ramsey_k12_odd_k",
     "role": "states",
     "kind": "Informal",
     "title": "Open question on $R_\\ell(K_{1,2}, k)$ for odd $k$",
@@ -16788,6 +17302,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_ramsey_clique_2_colors_equality",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on equality $R_\\ell(K_r, 2) = R(K_r, 2)$ for $r > 3$",
@@ -16821,6 +17336,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_4_colorability_fixed_surface_complexity",
     "role": "states",
     "kind": "Informal",
     "title": "4-colorability on Fixed Surfaces (Open Step in Thomassen's Program)",
@@ -16852,6 +17368,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_symmetric_intersecting_vector_families_size",
     "role": "states",
     "kind": "Question",
     "title": "Size of symmetric intersecting families in $[k]^n$",
@@ -16884,6 +17401,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_symmetric_intersecting_vector_families_set_intersecting",
     "role": "states",
     "kind": "Informal",
     "title": "Largest symmetric intersecting families are set-intersecting",
@@ -16916,6 +17434,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_symmetric_intersecting_vector_families_polynomial_gain",
     "role": "states",
     "kind": "Problem",
     "title": "Polynomial improvement on symmetric intersecting family size bound",
@@ -16948,6 +17467,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_neighbor_sum_distinguishing_delta_plus_constant",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: $\\Delta + O(1)$ bound for neighbour sum distinguishing colourings",
@@ -16978,6 +17498,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_avd_edge_coloring_probabilistic_barrier",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture: probabilistic methods insufficient for the $\\Delta+2$ bound",
@@ -17008,6 +17529,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_exterior_algebra_self_annihilating_extremal",
     "role": "states",
     "kind": "Informal",
     "title": "Question on extremal self-annihilating subspaces (Theorem 2.3)",
@@ -17038,6 +17560,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_exterior_algebra_mutually_annihilating_extremal",
     "role": "states",
     "kind": "Informal",
     "title": "Question on extremal mutually annihilating pairs (Theorem 2.4)",
@@ -17068,6 +17591,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sublinear_separator_expansion_exponent_exact",
     "role": "states",
     "kind": "Informal",
     "title": "Informal open question on the exact value of $b_\\varepsilon$",
@@ -17097,6 +17621,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sublinear_separator_expansion_exponent_one_sided",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture $b'_\\varepsilon = b_\\varepsilon$ for $0<\\varepsilon<\\tfrac{1}{2}$",
@@ -17126,6 +17651,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chi_bounded_not_polynomially_chi_bounded",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: χ-bounded vs. polynomially χ-bounded",
@@ -17156,6 +17682,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_small_classes_bounded_twin_width",
     "role": "states",
     "kind": "Conjecture",
     "title": "The Small Conjecture",
@@ -17189,6 +17716,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_polynomial_expansion_bounded_twin_width",
     "role": "states",
     "kind": "Question",
     "title": "Question: polynomial expansion and twin-width",
@@ -17222,6 +17750,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_recoloring_girth_5_six_colors",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -17252,6 +17781,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_expansions_edge_erdos_posa",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (edge-EP property characterization for planar graph expansions)",
@@ -17283,6 +17813,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_layered_treewidth_bounded_queue_number",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on queue-number of bounded layered treewidth graphs",
@@ -17316,6 +17847,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_coherent_ideal_forest_filleting",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.4",
@@ -17356,6 +17888,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_detour_path_fixed_k",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.5",
@@ -17391,6 +17924,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_girth_exponent_quarter",
     "role": "states",
     "kind": "Informal",
     "title": "Optimality of the exponent 1/4",
@@ -17423,6 +17957,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_group_connectivity_exponentially_many_flows",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.10",
@@ -17455,6 +17990,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_short_rainbow_cycles_proper_incident_edges",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -17491,6 +18027,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_short_rainbow_circuits_matroids",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 12",
@@ -17527,6 +18064,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mis_approximation_h_free_improved",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5 (Improved Approximation Conjecture)",
@@ -17559,6 +18097,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mis_approximation_h_free_optimal_exponent",
     "role": "states",
     "kind": "Informal",
     "title": "Question: optimal approximation exponent for MIS in H-free graphs",
@@ -17591,6 +18130,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_plane_triangle_free_distant_precoloring_extension",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -17622,6 +18162,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cubic_many_3_edge_colorings_reflexive",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on reflexive graphs and coloring abundance",
@@ -17653,6 +18194,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pentagon_contact_representation_algorithm_terminates",
     "role": "states",
     "kind": "Informal",
     "title": "Algorithm Termination Conjecture",
@@ -17684,6 +18226,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_blowup_ramsey_prefactor_depends_on_g",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on unavoidable G-dependence in Theorem 2",
@@ -17715,6 +18258,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_3_graph_homeomorph_exponent_5_2",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -17747,6 +18291,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mycielski_graphs_independence_ratio",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on minimum independence ratio of Mycielski graphs",
@@ -17787,6 +18332,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_epsilon_t_nets_size_computation",
     "role": "states",
     "kind": "Problem",
     "title": "The $\\varepsilon$-$t$-Net Problem",
@@ -17820,6 +18366,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_corruption_detection_expansion_threshold",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem: Expansion vs. Corruption Detection",
@@ -17851,6 +18398,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_perfect_graphs_combinatorial_mwis_algorithm",
     "role": "states",
     "kind": "Problem",
     "title": "Combinatorial polynomial-time algorithm for MWIS in perfect graphs",
@@ -17884,6 +18432,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mwis_p7_free_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "MWIS in P7-free graphs",
@@ -17917,6 +18466,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_outerplanar_strongly_perfect_characterization",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (outerplanar strongly perfect graphs)",
@@ -17948,6 +18498,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clique_factor_product_dimension_asymptotics",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: asymptotic behavior of $Q(s,r)$ when $s$ and $r$ grow together",
@@ -17978,6 +18529,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_recoloring_linear_diameter_min_colors",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3",
@@ -18008,6 +18560,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_gnm_subgraph_moderate_deviations_sparse",
     "role": "states",
     "kind": "Problem",
     "title": "Remark 1.2 (Open Problem on Sparse Densities)",
@@ -18039,6 +18592,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_surface_excluded_minors_hoppers_exist",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on Existence of Hoppers for Large Euler Genus",
@@ -18069,6 +18623,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fractional_chromatic_hall_ratio_gap_function",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4",
@@ -18100,6 +18655,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fractional_chromatic_hall_ratio_degree_weighted",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 5",
@@ -18131,6 +18687,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bounded_expansion_hall_ratio_shallow_minors",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 8",
@@ -18162,6 +18719,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_perfect_graphs_combinatorial_mis_algorithm",
     "role": "states",
     "kind": "Problem",
     "title": "Combinatorial Polynomial-Time Algorithm for MIS/MWIS in Perfect Graphs",
@@ -18194,6 +18752,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_mwis_long_hole_prism_free_fpt",
     "role": "states",
     "kind": "Informal",
     "title": "FPT Algorithm for MWIS in (Long-Hole, k-Prism)-Free Graphs",
@@ -18226,6 +18785,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hat_guessing_number_degree_degeneracy_bounds",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.4",
@@ -18258,6 +18818,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hat_guessing_number_complete_bipartite",
     "role": "states",
     "kind": "Informal",
     "title": "Open question: exact value of $HG(K_{n,n})$",
@@ -18290,6 +18851,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_grundy_coloring_half_graph_free_fpt",
     "role": "states",
     "kind": "Problem",
     "title": "FPT on $H_{t,t}$-free graphs for Grundy Coloring and b-Chromatic Core",
@@ -18322,6 +18884,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_grundy_coloring_biclique_free_fpt",
     "role": "states",
     "kind": "Problem",
     "title": "FPT on $K_{t,t}$-free graphs for Grundy Coloring",
@@ -18354,6 +18917,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_partial_grundy_coloring_parameterized_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "Parameterized complexity of Partial Grundy Coloring on general graphs",
@@ -18386,6 +18950,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_circular_digraph_homomorphism_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 2.15",
@@ -18417,6 +18982,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_circular_digraph_homomorphism_np_complete_cyclic",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.16",
@@ -18448,6 +19014,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fractional_dichromatic_number_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3.21",
@@ -18479,6 +19046,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_directed_kneser_graphs_existence",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 5.40",
@@ -18510,6 +19078,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_strong_coloring_numbers_tame_representation",
     "role": "states",
     "kind": "Question",
     "title": "Question 6",
@@ -18541,6 +19110,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_strong_coloring_numbers_tame_representation_negative",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture: negative answer to Question 6",
@@ -18572,6 +19142,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_lattice_cube_list_colorability_threshold",
     "role": "states",
     "kind": "Informal",
     "title": "Optimal n for $L^d_n$-list-colorability",
@@ -18605,6 +19176,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_prism_pyramid_theta_turtle_free_separators",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.2",
@@ -18637,6 +19209,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_even_hole_free_independent_set_complexity",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: MIS complexity in even-hole-free graphs",
@@ -18669,6 +19242,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_prism_pyramid_theta_wheel_free_separators",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: polynomial separator property for (prism, pyramid, theta, even wheel)-free graphs",
@@ -18701,6 +19275,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangulation_4_coloring_complex_mixed_parity",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 8",
@@ -18731,6 +19306,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bounded_vc_dimension_erdos_hajnal",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4.1",
@@ -18762,6 +19338,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_fvs_face_packing_ratio_2",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -18796,6 +19373,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_f3n_subspace_free_sets_exponential_base",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Question (correct exponential constant in r(n,m))",
@@ -18826,6 +19404,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_popular_progression_tower_height_small_primes",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture (Theorem 2 extends to primes p < 19)",
@@ -18856,6 +19435,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_binary_matroid_claw_triangle_chi_bounded",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.6",
@@ -18889,6 +19469,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_arithmetic_removal_higher_complexity",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (Extending Induced Arithmetic Removal to Higher Complexity and General Groups)",
@@ -18920,6 +19501,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_arithmetic_removal_abelian_groups",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (Induced Arithmetic Removal for Arbitrary Abelian Groups)",
@@ -18951,6 +19533,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_induced_arithmetic_removal_complexity_1_polynomial",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (Polynomial Quantitative Bound for Complexity 1 Systems)",
@@ -18982,6 +19565,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_edge_statistics_induced_density_1_over_e",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1 (The Edge-statistics Conjecture)",
@@ -19014,6 +19598,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_edge_statistics_large_inducibility_1_over_e",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2 (The Large Inducibility Conjecture)",
@@ -19046,6 +19631,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_erdos_posa_planar_minor_constant_polynomial",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (constant c vs. |H|)",
@@ -19078,6 +19664,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_book_number_triangle_count_extremal_density",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1",
@@ -19109,6 +19696,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_perfect_graphs_combinatorial_independent_set_algorithm",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: Combinatorial algorithm for MIS on perfect graphs",
@@ -19140,6 +19728,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_p_entropic_matroids_prime_representable",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: p-entropic matroids linear for prime p",
@@ -19170,6 +19759,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_set_h_free_polynomial_dichotomy",
     "role": "states",
     "kind": "Conjecture",
     "title": "Classical MIS Dichotomy Conjecture",
@@ -19202,6 +19792,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_set_h_free_fpt_dichotomy",
     "role": "states",
     "kind": "Problem",
     "title": "Parameterized MIS Dichotomy",
@@ -19234,6 +19825,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_set_fpt_blownup_p4_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -19266,6 +19858,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_set_fpt_blownup_path_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -19298,6 +19891,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_set_fpt_h_free_candidates",
     "role": "states",
     "kind": "Informal",
     "title": "Informal belief on FPT candidates",
@@ -19330,6 +19924,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_disproportionate_division_2n_minus_2_cuts",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (f(n) = 2n−2)",
@@ -19361,6 +19956,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_disproportionate_division_circle_measure_bipartition",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.1",
@@ -19392,6 +19988,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_isomorphism_h1_h2_free_dichotomy",
     "role": "states",
     "kind": "Question",
     "title": "Research Question (Introduction)",
@@ -19426,6 +20023,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_graph_isomorphism_fpt_clique_width",
     "role": "states",
     "kind": "Question",
     "title": "Open Question: FPT Algorithm for Graph Isomorphism Parameterized by Clique-Width",
@@ -19460,6 +20058,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clique_width_h1_h2_free_boundedness",
     "role": "states",
     "kind": "Problem",
     "title": "Open Cases: Clique-Width Classification for $(H_1,H_2)$-Free Graphs",
@@ -19494,6 +20093,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_widespread_multigraph_all",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.8",
@@ -19528,6 +20128,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_widespread_multigraph_chi_2_subdivision_free",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.10",
@@ -19562,6 +20163,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_subdivision_free_chi_bounded_multigraph_characterization",
     "role": "states",
     "kind": "Question",
     "title": "Open Question: first pervasiveness characterisation",
@@ -19596,6 +20198,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bounded_subdeterminant_integer_programs_polynomial",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on polynomial-time solvability of bounded sub-determinant integer programs",
@@ -19629,6 +20232,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_stable_set_bounded_ocp_arbitrary_genus",
     "role": "states",
     "kind": "Informal",
     "title": "Open question on stable set for bounded ocp and arbitrary Euler genus",
@@ -19662,6 +20266,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_quantum_ergodicity_small_spectral_window",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem on quantum ergodicity over small spectral windows (Remark 1.2)",
@@ -19693,6 +20298,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_avoidable_paths_two_disjoint_pk",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.12",
@@ -19725,6 +20331,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_avoidable_non_path_family_existence",
     "role": "states",
     "kind": "Question",
     "title": "Question 4.1",
@@ -19757,6 +20364,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kt_minor_free_independence_n_over_t",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -19787,6 +20395,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minor_ramsey_ks_free_sublinear_bound",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on $MR_t(s,k)$ for $s \\geq 4$",
@@ -19817,6 +20426,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cycle_count_m_edges_exponential_base",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -19850,6 +20460,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tree_decomposition_edge_connectivity_leaf_count",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -19880,6 +20491,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bipartite_digraph_caccetta_haggkvist_girth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -19914,6 +20526,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bipartite_digraph_caccetta_haggkvist_asymmetric",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -19948,6 +20561,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypercube_coloring_1_ball_reconstruction_threshold",
     "role": "states",
     "kind": "Problem",
     "title": "Gap problem for 1-ball reconstruction threshold",
@@ -19979,6 +20593,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_c4_c5_fractional_chromatic_infimum",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.3",
@@ -20009,6 +20624,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_c4_c5_fractional_chromatic_11_3",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on optimality of 11/3",
@@ -20039,6 +20655,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_behrend_sets_avoiding_mixed_sign_patterns",
     "role": "states",
     "kind": "Informal",
     "title": "Informal question on Behrend-style sets avoiding affine patterns with mixed-sign coefficients",
@@ -20072,6 +20689,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_corners_popular_difference_abelian_groups",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on extending Mandache's Theorem 1.1 to all abelian groups",
@@ -20105,6 +20723,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minor_closed_class_dichromatic_number_2",
     "role": "states",
     "kind": "Question",
     "title": "Question 1",
@@ -20134,6 +20753,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_hypergraph_max_cut_excess_sqrt_m",
     "role": "states",
     "kind": "Informal",
     "title": "Θ(√m) excess conjecture for hypergraph cuts",
@@ -20166,6 +20786,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_perfect_matching_flip_switchable_recognition",
     "role": "states",
     "kind": "Informal",
     "title": "Open Question: Recognition of Switchable Graphs",
@@ -20202,6 +20823,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_direct_product_multipartite_independence_equals_irredundance",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -20232,6 +20854,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pt_free_3_coloring_polynomial_large_t",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: Complexity of 3-colourability of $P_t$-free graphs",
@@ -20274,6 +20897,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pt_free_independent_set_polynomial_t_7",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: Polynomial-time maximum independent set on $P_t$-free graphs",
@@ -20316,6 +20940,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_generalized_coloring_number_cc_characterization",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem: Characterization of parameters satisfying (CC)",
@@ -20347,6 +20972,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cluster_vertex_deletion_2_approximation",
     "role": "states",
     "kind": "Informal",
     "title": "2-Approximation Conjecture for Cluster-VD",
@@ -20378,6 +21004,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_quantum_sorting_poset_lower_bounds_equivalent",
     "role": "states",
     "kind": "Informal",
     "title": "Conjecture on LB and QLB equivalence",
@@ -20409,6 +21036,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_local_search_ptas_monotone_fo_optimization",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (Section 1.1)",
@@ -20438,6 +21066,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_disjoint_paths_stability_two_np_complete",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (vertex-disjoint paths, stability number two)",
@@ -20473,6 +21102,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_distributed_coloring_sparse_sublinear_rounds",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem on sublinear round complexity",
@@ -20509,6 +21139,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_distributed_delta_list_coloring_randomized_rounds",
     "role": "states",
     "kind": "Question",
     "title": "Question on randomized list-coloring round complexity",
@@ -20545,6 +21176,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bounded_clique_large_chi_consecutive_holes",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.8",
@@ -20579,6 +21211,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_separation_choosability_grows_min_degree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.3",
@@ -20610,6 +21243,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_dense_bipartite_induced_or_large_clique",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -20641,6 +21275,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_dense_bipartite_induced_triangle_free_log",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -20672,6 +21307,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_dense_bipartite_induced_large_girth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.6",
@@ -20703,6 +21339,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_frozen_coloring_glauber_delta_o_n",
     "role": "states",
     "kind": "Informal",
     "title": "Informal: Δ = o(n) condition not necessary for Corollary 2",
@@ -20734,6 +21371,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_frozen_coloring_probability_exponent",
     "role": "states",
     "kind": "Informal",
     "title": "Informal: Exponent in Theorem 1 not optimal",
@@ -20765,6 +21403,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_generalized_turan_additive_approximation_np_hard",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.8",
@@ -20795,6 +21434,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_degenerate_graphs_flexibility_d_plus_1_lists",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -20826,6 +21466,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_online_ramsey_random_painter_growth_rate",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7",
@@ -20858,6 +21499,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_subgraph_query_complexity_km_random",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9",
@@ -20890,6 +21532,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_online_ramsey_off_diagonal_alteration_bound",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on generalization of Theorem 4 to all $\\tilde{r}(m,n)$",
@@ -20922,6 +21565,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_correlation_polytope_extension_complexity_treewidth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -20955,6 +21599,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_neighborhoods_critical_bounded_clique",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.3",
@@ -20986,6 +21631,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_neighborhoods_chromatic_below_delta",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.4",
@@ -21017,6 +21663,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_sparse_strong_erdos_hajnal_forests",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5 (sparse strong EH-property)",
@@ -21053,6 +21700,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ternary_graphs_3_colorable",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem: 3-colourability of ternary graphs",
@@ -21093,6 +21741,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_girth_5_planar_fractional_hub_colors",
     "role": "states",
     "kind": "Informal",
     "title": "Informal conjecture on improved color ratio in Theorem 5",
@@ -21123,6 +21772,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_arithmetic_k_cycle_removal_optimal_exponent",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.4",
@@ -21154,6 +21804,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kt_immersion_free_clique_count",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture on maximum cliques with no $K_t$-immersion",
@@ -21184,6 +21835,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kt_subdivision_free_clique_count_exponent",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture on optimal exponential constant for $K_t$-subdivision clique count",
@@ -21214,6 +21866,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_large_fractional_chromatic_high_girth_subgraph",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -21244,6 +21897,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_large_chromatic_high_girth_dense_subgraph",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 6",
@@ -21274,6 +21928,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clustered_chromatic_minor_closed_treedepth_bound",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -21310,6 +21965,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_erdos_posa_planar_minor_k_log_k",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -21348,6 +22004,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_erdos_posa_treewidth_packing_k_log_k",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
@@ -21386,6 +22043,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_pt_free_3_coloring_polynomial_all_t",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -21418,6 +22076,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_algebraic_connectivity_graph_complement_supremum",
     "role": "states",
     "kind": "Question",
     "title": "Closing Question",
@@ -21450,6 +22109,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_decodable_zero_rate_codes_asymptotics",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on exact asymptotics of maxcode_L for even L",
@@ -21481,6 +22141,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_free_digraph_domination_polynomial_alpha",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3.5",
@@ -21520,6 +22181,7 @@
     ]
   },
   {
+    "name": "AX_cop_number_planar_classification",
     "role": "states",
     "kind": "Problem",
     "title": "Classification of planar graphs by cop number",
@@ -21550,6 +22212,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_outerplanar_classification",
     "role": "states",
     "kind": "Problem",
     "title": "Classification of outerplanar graphs by cop number",
@@ -21580,6 +22243,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_capture_time_planar_linear_tightness",
     "role": "states",
     "kind": "Problem",
     "title": "Tightness of linear capture time bound for planar graphs",
@@ -21610,6 +22274,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_capture_time_higher_genus_bounds",
     "role": "states",
     "kind": "Question",
     "title": "Capture time bounds for higher genus graphs",
@@ -21640,6 +22305,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_c_closed_graphs_maximal_cliques_exponent",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (exact exponent for maximal cliques in c-closed graphs)",
@@ -21673,6 +22339,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_erdos_ginzburg_ziv_constant_fixed_k",
     "role": "states",
     "kind": "Informal",
     "title": "Open Question on s((Z/kZ)^n) for fixed k",
@@ -21703,6 +22370,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_nice_forest_families_eventually",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -21739,6 +22407,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ramsey_nice_forest_families_infinitely_often",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -21775,6 +22444,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_permutation_property_testing_query_bounds",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem (better query complexity bounds for property testing)",
@@ -21805,6 +22475,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_euclidean_ramsey_unit_distance_vs_copy",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -21835,6 +22506,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_euclidean_ramsey_l3_vs_lm",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: $E^n \\not\\to (\\ell_3, \\ell_m)$ for large $m$",
@@ -21865,6 +22537,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_euclidean_ramsey_diameter_free_bound",
     "role": "states",
     "kind": "Problem",
     "title": "Open problem: removing diameter dependence from Theorem 1.1",
@@ -21895,6 +22568,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_rodl_theorem_polynomial_delta_dependence",
     "role": "states",
     "kind": "Informal",
     "title": "Polynomial dependence of $\\delta$ on $d$ in Rödl's theorem",
@@ -21940,6 +22614,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_chromatic_fraction_delta_small_clique",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.5",
@@ -21972,6 +22647,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_list_chromatic_reed_bound",
     "role": "states",
     "kind": "Informal",
     "title": "List-chromatic analogue of Reed's Conjecture",
@@ -22004,6 +22680,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_free_planar_2_degenerate_7_8",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.1",
@@ -22034,6 +22711,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_free_planar_2_degenerate_5_6",
     "role": "states",
     "kind": "Informal",
     "title": "Informal belief: 5/6 bound attainable",
@@ -22064,6 +22742,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bounded_clique_large_chi_consecutive_holes_extension",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (generalization of 1.3 to bounded clique number)",
@@ -22098,6 +22777,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_constricting_hole_lengths_bounded_gaps",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.5",
@@ -22132,6 +22812,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_constricting_hole_lengths_density_zero",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.6",
@@ -22166,6 +22847,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_controlled_triangle_free_chromatic_4_hole",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Question (on 2.1 for ℓ = 4)",
@@ -22200,6 +22882,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_polynomial_expansion_balanced_separator_constant_m",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (constant-size M)",
@@ -22229,6 +22912,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_jaeger_antisymmetric_z5_flow_edge_connected_digraphs",
     "role": "states",
     "kind": "Informal",
     "title": "Antisymmetric variant of Jaeger's weak 3-flow conjecture",
@@ -22261,6 +22945,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_spaghetti_tree_path_decomposition_chi_bounded",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -22294,6 +22979,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_gnp_h_free_clique_count_threshold",
     "role": "states",
     "kind": "Question",
     "title": "Motivating Question (Introduction)",
@@ -22325,6 +23011,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_clique_chromatic_dense_gnp_tight_constant",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on Tight Constant for Clique Chromatic Number",
@@ -22355,6 +23042,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_genus_sqrt_g_growth",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 8",
@@ -22384,6 +23072,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_riemannian_surfaces_genus_bounded",
     "role": "states",
     "kind": "Question",
     "title": "Question (Riemannian surfaces): cop number bounded by genus",
@@ -22413,6 +23102,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_riemannian_surfaces_cop_convergence",
     "role": "states",
     "kind": "Question",
     "title": "Question (Riemannian surfaces): cop converging to robber",
@@ -22442,6 +23132,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_riemannian_surfaces_worst_genus",
     "role": "states",
     "kind": "Question",
     "title": "Question (Riemannian surfaces): worst surfaces of fixed genus",
@@ -22471,6 +23162,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_riemannian_surfaces_area_supremum",
     "role": "states",
     "kind": "Question",
     "title": "Question (Riemannian surfaces): supremum of cop number for geometrically bounded surfaces",
@@ -22500,6 +23192,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cop_number_riemannian_surfaces_constant_curvature",
     "role": "states",
     "kind": "Question",
     "title": "Question (Riemannian surfaces): constant curvature surfaces",
@@ -22529,6 +23222,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_gnp_chromatic_concentration_lower_bound",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem on lower bound for concentration interval",
@@ -22558,6 +23252,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_minor_closed_col_star_characterization",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -22588,6 +23283,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ryser_near_extremal_hypergraphs_projective_planes",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Problem (projective plane structure in near-extremal constructions)",
@@ -22618,6 +23314,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_cover_graph_poset_dimension_height",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: dimension of posets with planar cover graphs vs. height",
@@ -22649,6 +23346,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_free_planar_3_coloring_requests",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -22679,6 +23377,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_fvs_linear_forest_free_complexity",
     "role": "states",
     "kind": "Informal",
     "title": "Complexity of Independent Feedback Vertex Set for H-free graphs (linear forest cases)",
@@ -22712,6 +23411,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_additive_chi_approx_minor_closed_triangle_free",
     "role": "states",
     "kind": "Informal",
     "title": "Open question: additive approximation for triangle-free graphs",
@@ -22742,6 +23442,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_additive_chi_approx_kk_minor_free",
     "role": "states",
     "kind": "Informal",
     "title": "Open question: better additive approximation for $K_{4k_0+1}$-minor-free graphs",
@@ -22772,6 +23473,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_perfect_graphs_tight_skew_partitions_count",
     "role": "states",
     "kind": "Informal",
     "title": "Open Question on Number of Tight Skew Partitions",
@@ -22808,6 +23510,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_girth_5_planar_list_critical_bounded",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.7",
@@ -22839,6 +23542,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_large_chromatic_rainbow_hole_consecutive_vertices",
     "role": "states",
     "kind": "Question",
     "title": "Question (rainbow hole with $s$ consecutive rainbow vertices)",
@@ -22873,6 +23577,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_large_chromatic_induced_path_uniquely_covered",
     "role": "states",
     "kind": "Question",
     "title": "Question (uniquely-covered vertices in an induced path)",
@@ -22907,6 +23612,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_h_free_clique_maximizers_polynomial_error",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (error term in Proposition 1.4)",
@@ -22937,6 +23643,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_kk_free_bounded_treewidth_max_chromatic",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3",
@@ -22967,6 +23674,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_multitasking_interference_increases_with_depth",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem (interference worsens with depth)",
@@ -23004,6 +23712,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_multitasking_capacity_average_degree_log_n",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (multitasker at average degree $\\Theta(\\log n)$)",
@@ -23041,6 +23750,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_quartic_eulerian_digraphs_diplanar_obstructions",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1.2",
@@ -23072,6 +23782,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_identifying_codes_hereditary_vc_dimension_dichotomy",
     "role": "states",
     "kind": "Informal",
     "title": "VC-Dimension Dichotomy for Identifying Codes (Approximation)",
@@ -23105,6 +23816,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ordered_removal_lemma_regularity_free_proof",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem: Regularity-free proof for the ordered removal lemma",
@@ -23136,6 +23848,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ordered_removal_lemma_binary_matrices_polynomial",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem: Better parameter dependence for ordered binary matrix removal",
@@ -23167,6 +23880,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_bipartite_johnson_lindenstrauss_bounded_norms",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.4",
@@ -23197,6 +23911,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_thin_overlays_sublinear_separators_unbounded_degree",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (Section 1.2): dropping bounded-degree assumption",
@@ -23226,6 +23941,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_independent_set_apx_hard_nonsublinear_separators",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem (Section 1.2): APX-hardness on classes without sublinear separators",
@@ -23255,6 +23971,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_large_domination_forces_si",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 3",
@@ -23287,6 +24004,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tournament_large_domination_small_subtournament",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4",
@@ -23319,6 +24037,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_independence_number_n_over_4",
     "role": "states",
     "kind": "Informal",
     "title": "Open Problem (independence number of planar graphs)",
@@ -23349,6 +24068,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_graphs_bounded_queue_number",
     "role": "states",
     "kind": "Problem",
     "title": "Queue Number of Planar Graphs",
@@ -23380,6 +24100,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_spanning_tree_polytope_xc_bounded_genus",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -23412,6 +24133,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_spanning_tree_polytope_xc_minor_closed",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -23444,6 +24166,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fair_representation_path_partition_independent_set",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.6",
@@ -23479,6 +24202,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fair_representation_knn_perfect_matching",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.9",
@@ -23514,6 +24238,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fair_representation_matching_delta_plus_2",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.14",
@@ -23549,6 +24274,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_fair_representation_bipartite_matching_under_representation",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.15",
@@ -23584,6 +24310,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_k_coloring_maximal_local_connectivity_k",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.7",
@@ -23617,6 +24344,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_c4_c7_free_3_choosable",
     "role": "states",
     "kind": "Informal",
     "title": "Open Question on 3-Choosability for Forbidden Cycles 4–7 and 4–6",
@@ -23647,6 +24375,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_planar_c4_c8_free_correspondence_coloring",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture on Correspondence Chromatic Number of Planar Graphs Without Cycles 4–8",
@@ -23677,6 +24406,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_outdegree_transitive_tournament_subdivision_semidegree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 3",
@@ -23715,6 +24445,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_subdivision_oriented_trees_min_outdegree",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -23753,6 +24484,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_subdivision_maderian_disjoint_union",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 7",
@@ -23791,6 +24523,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_subdivision_oriented_trees_chromatic_2k",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 11",
@@ -23829,6 +24562,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_subdivision_dichromatic_complete_digraph",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 12",
@@ -23867,6 +24601,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_digraph_subdivision_strong_connectivity_maderian",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 16",
@@ -23905,6 +24640,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_tree_pathwidth_path_partition_height_2k",
     "role": "states",
     "kind": "Informal",
     "title": "Optimality of factor 2 in Lemma 4",
@@ -23937,6 +24673,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangular_lattice_5_colorings_kempe_class",
     "role": "states",
     "kind": "Problem",
     "title": "Open case: WSK algorithm on the triangular lattice for q=5",
@@ -23969,6 +24706,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_gallai_path_decomposition_odd_semi_cliques",
     "role": "states",
     "kind": "Question",
     "title": "Question 1.1",
@@ -23999,6 +24737,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_subcubic_tsp_walk_5_4_n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1",
@@ -24034,6 +24773,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cone_crossing_number_minimum_function",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -24066,6 +24806,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cone_crossing_number_2_page_redrawing",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 4",
@@ -24098,6 +24839,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_cone_crossing_number_simple_graphs_asymptotics",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture on $f_s(k)$ asymptotics",
@@ -24130,6 +24872,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_properly_colored_kn_longest_rainbow_cycle",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: error term for longest rainbow cycle",
@@ -24161,6 +24904,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_majority_coloring_digraphs_3_colors",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -24194,6 +24938,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_majority_coloring_digraphs_1_over_k",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 9",
@@ -24227,6 +24972,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_majority_coloring_digraphs_beta_3_colors",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem 1",
@@ -24260,6 +25006,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_majority_coloring_tournaments_3_colors",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem 2",
@@ -24293,6 +25040,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_majority_coloring_eulerian_digraphs_3_colors",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem 3",
@@ -24326,6 +25074,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_majority_coloring_digraphs_2_colorable_recognition",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem 5",
@@ -24359,6 +25108,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_majority_coloring_digraphs_choosability_constant",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem 7",
@@ -24392,6 +25142,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_majority_coloring_digraphs_fractional_weight",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem 8",
@@ -24425,6 +25176,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_barat_thomassen_refined_max_degree_connectivity",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.2",
@@ -24457,6 +25209,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_triangle_free_planar_fractional_chromatic_bound",
     "role": "states",
     "kind": "Informal",
     "title": "Fractional Chromatic Number Bound for Planar Triangle-Free Graphs",
@@ -24489,6 +25242,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chen_chvatal_lines_bridges_finite_exceptions",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2.2",
@@ -24521,6 +25275,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_chen_chvatal_lines_bridges_path_elongation",
     "role": "states",
     "kind": "Informal",
     "title": "Open question on counter-examples to ℓ(G)+br(G)≥|G|",
@@ -24553,6 +25308,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_gyarfas_sumner_oriented_iff_forest",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 2",
@@ -24588,6 +25344,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_oriented_chi_bounded_forbidden_oriented_star",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 4",
@@ -24623,6 +25380,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_oriented_chi_bounded_forbidden_p4_orientations",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -24658,6 +25416,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_block_stable_random_graph_diameter_bound",
     "role": "states",
     "kind": "Informal",
     "title": "Informal Conjecture (diameter bound improvement)",
@@ -24688,6 +25447,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_token_sliding_chordal_clique_tree_degree",
     "role": "states",
     "kind": "Question",
     "title": "Question 1",
@@ -24718,6 +25478,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ordered_ramsey_matching_vs_triangle_order",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: ordered Ramsey number of matchings vs triangles",
@@ -24750,6 +25511,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_ordered_ramsey_matching_exponent_gap",
     "role": "states",
     "kind": "Informal",
     "title": "Open problem: true ordered Ramsey number of matchings",
@@ -24782,6 +25544,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_social_graphs_contraction_clique_count_characterization",
     "role": "states",
     "kind": "Problem",
     "title": "Characterization of Social Graphs",
@@ -24812,6 +25575,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_4_colorability_fixed_surface_polynomial_time",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: polynomial-time 4-colorability on fixed surfaces",
@@ -24850,6 +25614,7 @@
     ]
   },
   {
+    "name": "AX_szeged_wiener_difference_2_connected_2n",
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 5",
@@ -24883,6 +25648,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_set_mapping_theorem_l_equals_1",
     "role": "states",
     "kind": "Problem",
     "title": "Open Problem: Reducing l to 1 in the Set Mapping Theorem",
@@ -24914,6 +25680,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_normal_graphs_cover_sizes_max_order",
     "role": "states",
     "kind": "Problem",
     "title": "Problem 1",
@@ -24944,6 +25711,7 @@
     "also_stated_in": []
   },
   {
+    "name": "AX_normal_graphs_random_gnp_whp",
     "role": "states",
     "kind": "Question",
     "title": "Open Question (normality of random graphs)",

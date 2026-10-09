@@ -207,7 +207,9 @@ def build_relations_graph(relations: dict, node_meta: dict[str, dict]) -> dict |
         x, y = positions[nid]
         nodes.append({
             "id": nid, "x": x, "y": y,
-            "name": m["name"], "status": m.get("status") or "unclear",
+            "name": m["name"], "canonical": m.get("canonical", ""),
+            "origin": m.get("origin"),
+            "status": m.get("status") or "unclear",
             "url": m["url"], "source": m["source"], "kind": m.get("kind", ""),
             "statement": _clip(m.get("statement"), 2000),
             "context": _clip(m.get("context"), 1500),

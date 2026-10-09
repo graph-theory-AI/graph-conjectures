@@ -19,7 +19,7 @@ out, zero hallucinated papers found).
 
 ## Recommended fixes, in priority order
 
-### 1. Relabel `ptas_for_feedback_arc_set_in_tournaments` (real labeling issue)
+### 1. Relabel `OPG_tournament_feedback_arc_set_ptas` (`ptas_for_feedback_arc_set_in_tournaments`) (real labeling issue)
 
 - File: `data/reviews/ptas_for_feedback_arc_set_in_tournaments.json`
 - Currently `status: "solved"`, but the PTAS is due to Kenyon-Mathieu & Schudy
@@ -43,8 +43,8 @@ out, zero hallucinated papers found).
 ### 3. Patch two statement-parsing failures
 
 - File: `data/problems.json` (via `scraper/parse.py`)
-- `obstacle_number_of_planar_graphs` and
-  `what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian`
+- `OPG_planar_obstacle_number_bounded` (`obstacle_number_of_planar_graphs`) and
+  `OPG_successive_shortest_spanning_trees_hamiltonian` (`what_is_the_smallest_number_of_disjoint_spanning_trees_made_a_graph_hamiltonian`)
   have empty `statements[]` although `statement_html` is present (these two pages
   phrase the problem outside the `envtheorem` div — 225/227 problems have it).
 - Consequence: the site renders fine (it uses `statement_html`), but any consumer
@@ -58,15 +58,15 @@ out, zero hallucinated papers found).
 - Files: `data/intersection.json`, `README.md`
 - At least 6 of the 15 fuzzy matches are wrong pairings, verified against the
   local `data/erdos_graph.json` statements:
-  - `chromatic_number_of_common_graphs` → erdős #761 (about *cochromatic* number)
-  - `behzads_conjecture` (total colouring) → #631 (list chromatic number)
-  - `monochromatoc_reachability_in_arc_colored_digraphs` → #638 (monochromatic-triangle Ramsey family)
-  - `erdos_posa_property_for_long_directed_cycles` → #580 (trees in dense graphs)
-  - `unfriendly_partitions` → #583 (Gallai path partition)
-  - `odd_cycle_transversal_in_triangle_free_graphs` → #24 (counting C₅'s in triangle-free graphs)
+  - `OPG_common_graphs_bounded_chromatic_number` (`chromatic_number_of_common_graphs`) → erdős #761 (about *cochromatic* number)
+  - `OPG_total_coloring_max_degree_plus_2` (`behzads_conjecture`) (total colouring) → #631 (list chromatic number)
+  - `OPG_arc_colored_digraph_monochromatic_absorbing_set` (`monochromatoc_reachability_in_arc_colored_digraphs`) → #638 (monochromatic-triangle Ramsey family)
+  - `OPG_erdos_posa_long_directed_cycles` (`erdos_posa_property_for_long_directed_cycles`) → #580 (trees in dense graphs)
+  - `OPG_countable_graph_unfriendly_partition` (`unfriendly_partitions`) → #583 (Gallai path partition)
+  - `OPG_triangle_free_odd_cycle_edge_transversal` (`odd_cycle_transversal_in_triangle_free_graphs`) → #24 (counting C₅'s in triangle-free graphs)
 - This is well-contained: `scraper/build.py` only surfaces the 2 manually
-  confirmed entries (`erdos_faber_lovasz_conjecture` → #19,
-  `the_erdos_hajnal_conjecture` → #61 — both correct).
+  confirmed entries (`OPG_erdos_faber_lovasz_cliques_chromatic` (`erdos_faber_lovasz_conjecture`) → #19,
+  `OPG_erdos_hajnal_induced_cliques` (`the_erdos_hajnal_conjecture`) → #61 — both correct).
 - Fix: either prune the wrong rows, or add a `"confirmed": true/false` field per
   row; and soften the README wording — it currently calls the file "manually
   curated", which only holds for the confirmed subset.

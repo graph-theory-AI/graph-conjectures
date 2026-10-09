@@ -9,6 +9,7 @@
   "results": [
     {
       "id": "bm-041",
+      "name": "BM_hadwiger_minor_chromatic",
       "relation": "resolves",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -26,6 +27,7 @@
     },
     {
       "id": "seagull_problem",
+      "name": "OPG_seagull_independence_2_clique_minor_half_n",
       "relation": "resolves",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -43,6 +45,7 @@
     },
     {
       "id": "1907.12999__00",
+      "name": "AX_kt_minor_free_independence_n_over_t",
       "relation": "implies",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -61,6 +64,7 @@
     },
     {
       "id": "fractional_hadwiger",
+      "name": "OPG_hadwiger_fractional_chromatic_minor",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "high",
@@ -78,6 +82,7 @@
     },
     {
       "id": "list_hadwiger_conjecture",
+      "name": "OPG_hadwiger_list_kt_minor_free_choosable",
       "relation": "resolves",
       "site_status": "ai-proved",
       "match_confidence": "high",
@@ -95,6 +100,7 @@
     },
     {
       "id": "2110.09403__00",
+      "name": "AX_kt_minor_free_list_chromatic_2t",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "high",
@@ -112,6 +118,7 @@
     },
     {
       "id": "2201.09115__01",
+      "name": "AX_kst_minor_free_choosable_2s_t",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "medium",
@@ -130,6 +137,7 @@
     },
     {
       "id": "2206.13635__00",
+      "name": "AX_kt_minor_free_hypergraph_chromatic_bound",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "medium",
@@ -148,6 +156,7 @@
     },
     {
       "id": "sidorenkos_conjecture",
+      "name": "OPG_sidorenko_bipartite_homomorphism_density",
       "relation": "resolves",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -165,6 +174,7 @@
     },
     {
       "id": "2210.16971__00",
+      "name": "AX_directed_sidorenko_bipartite_homomorphism",
       "relation": "implies",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -183,6 +193,7 @@
     },
     {
       "id": "2210.16971__01",
+      "name": "AX_directed_sidorenko_forcing_cycle_homomorphism",
       "relation": "implies",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -202,6 +213,7 @@
     },
     {
       "id": "rysers_conjecture",
+      "name": "OPG_ryser_r_partite_hypergraph_cover_matching",
       "relation": "resolves",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -224,6 +236,7 @@
     },
     {
       "id": "2505.05339__02",
+      "name": "AX_r_partite_hypergraph_matching_drop_deletion",
       "relation": "implies",
       "site_status": "ai-disproved",
       "match_confidence": "high",
@@ -247,6 +260,7 @@
     },
     {
       "id": "the_crossing_number_of_the_complete_graph",
+      "name": "OPG_crossing_number_complete_graph_harary_hill",
       "relation": "resolves",
       "site_status": "ai-proved",
       "match_confidence": "high",
@@ -264,6 +278,7 @@
     },
     {
       "id": "the_crossing_number_of_the_complete_bipartite_graph",
+      "name": "OPG_crossing_number_complete_bipartite_zarankiewicz",
       "relation": "resolves",
       "site_status": "ai-proved",
       "match_confidence": "high",
@@ -281,6 +296,7 @@
     },
     {
       "id": "2009.03418__00",
+      "name": "AX_crossing_number_kn_minus_matching",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "high",
@@ -298,6 +314,7 @@
     },
     {
       "id": "seymours_second_neighbourhood_conjecture",
+      "name": "OPG_seymour_second_neighborhood_outdegree",
       "relation": "resolves",
       "site_status": "ai-proved",
       "match_confidence": "high",
@@ -315,6 +332,7 @@
     },
     {
       "id": "caccetta_haggkvist_conjecture",
+      "name": "OPG_caccetta_haggkvist_outdegree_short_cycle",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "high",
@@ -333,6 +351,7 @@
     },
     {
       "id": "bm-054",
+      "name": "BM_hadwiger_nelson_plane_unit_distance_chromatic",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "high",
@@ -350,6 +369,7 @@
     },
     {
       "id": "barnettes_conjecture",
+      "name": "OPG_barnette_cubic_planar_bipartite_hamiltonian",
       "relation": "resolves",
       "site_status": "ai-proved",
       "match_confidence": "high",
@@ -367,6 +387,7 @@
     },
     {
       "id": "decomposing_an_eulerian_graph_into_cycles",
+      "name": "OPG_eulerian_cycle_decomposition_hajos_n_half",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "high",
@@ -384,6 +405,7 @@
     },
     {
       "id": "1704.02367__01",
+      "name": "AX_ordered_removal_lemma_binary_matrices_polynomial",
       "relation": "partial",
       "site_status": null,
       "match_confidence": "high",

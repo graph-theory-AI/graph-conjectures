@@ -26,6 +26,7 @@ Outputs:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import logging
 import re
@@ -41,6 +42,40 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from relations_layout import build_relations_graph, relations_by_node  # noqa: E402
 
 log = logging.getLogger("build")
+
+# Detail pages live at <corpus dir>/<canonical PREFIX_english_name>/; the old
+# id (OPG slug, arXiv review id, bm/others id) only gets a redirect page.
+CORPUS_DIRS = {"opg": "op", "arxiv": "arxiv", "bm": "bm", "others": "others"}
+PAGE_NAMES: dict[str, str] = {}   # old id -> canonical name, filled in main()
+
+
+def page_path(source: str, page_id: str) -> str:
+    """Site-relative URL of a detail page, e.g. bm/BM_hadwiger_minor_chromatic/."""
+    return f"{CORPUS_DIRS[source]}/{PAGE_NAMES.get(page_id) or page_id}/"
+
+
+def row_page_path(row: dict) -> str:
+    """page_path() for an index row of any corpus (OPG problems have no _source)."""
+    source = row.get("_source") or "opg"
+    if source == "opg":
+        return page_path("opg", row["slug"])
+    return page_path(source, row.get("_review_id") or row.get("safe_id") or row["slug"])
+
+
+def _write_redirect(site_dir: Path, old_path: str, new_path: str) -> None:
+    """Leave a stub at an old page URL (both paths site-relative, two levels deep)."""
+    target = "../../" + new_path
+    out = site_dir / old_path
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "index.html").write_text(
+        "<!doctype html>\n<meta charset=\"utf-8\">\n"
+        f"<title>Moved to {new_path}</title>\n"
+        f"<link rel=\"canonical\" href=\"{target}\">\n"
+        f"<meta http-equiv=\"refresh\" content=\"0; url={target}\">\n"
+        f"<script>location.replace(\"{target}\" + location.search + location.hash);</script>\n"
+        f"<p>This page moved to <a href=\"{target}\">{new_path}</a>.</p>\n",
+        encoding="utf-8",
+    )
 
 
 # ── helpers ────────────────────────────────────────────────────────────────────
@@ -304,16 +339,16 @@ def _timeline_row(
 
     if source == "arxiv":
         page_slug = item.get("_review_id") or item.get("safe_id") or item.get("slug", "")
-        url = f"arxiv/{page_slug}/"
+        url = page_path("arxiv", page_slug)
         subtitle = item.get("paper_title", "")
     elif source == "bm":
-        url = f"bm/{item.get('bm_id', '')}/"
+        url = page_path("bm", item.get("bm_id", ""))
         subtitle = f"Bondy–Murty, Graph Theory, Appendix A, item {item.get('appendix_number')}"
     elif source == "others":
-        url = f"others/{item.get('slug', '')}/"
+        url = page_path("others", item.get("slug", ""))
         subtitle = item.get("workstream", "")
     else:
-        url = f"op/{item.get('slug', '')}/"
+        url = page_path("opg", item.get("slug", ""))
         subtitle = ""
 
     return {
@@ -492,6 +527,11 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "posted_by":       None,
         "posted_at":       rec.get("published", ""),
         "canonical_url":   rec.get("abs_url", f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else ""),
+        "_origin":         {
+            "label":  f"arXiv:{arxiv_id}",
+            "url":    rec.get("abs_url", f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else ""),
+            "detail": rec.get("paper_title", ""),
+        },
         "_erdos":          None,
         "_review":         rec.get("_review"),
         "_known_resolution": rec.get("_known_resolution"),
@@ -501,6 +541,25 @@ def _virtual_problem_from_arxiv(rec: dict) -> dict:
         "_review_id":      rec.get("_review_id"),
         "_nice_name":      nice_name,
         "_paper_label":    paper_label,
+    }
+
+
+def _bm_origin(rec: dict, source: str) -> dict:
+    """Where a Bondy–Murty / others record comes from: the book page, or the workstream."""
+    src = rec.get("source") or {}
+    if source != "bm":
+        return {"label": "research workstream", "url": src.get("url", ""),
+                "detail": src.get("reference", "")}
+    pdf, page = src.get("pdf_url"), src.get("pdf_page")
+    detail = "Théorie des graphes (French edition, 2025)"
+    if src.get("book_page"):
+        detail += f", p. {src['book_page']}"
+    if src.get("english_edition"):
+        detail += f"; also {src['english_edition']}"
+    return {
+        "label":  f"Bondy–Murty, Appendix A, item {rec.get('appendix_number')}",
+        "url":    f"{pdf}#page={page}" if pdf and page else src.get("url", ""),
+        "detail": detail,
     }
 
 
@@ -547,6 +606,7 @@ def _virtual_problem_from_bm(rec: dict, source: str = "bm") -> dict:
         "posted_by":       None,
         "posted_at":       str(year) if isinstance(year, int) else "",
         "canonical_url":   src.get("url", ""),
+        "_origin":         _bm_origin(rec, source),
         "_erdos":          None,
         "_review":         rec.get("_review"),
         "_openai_result":  rec.get("_openai_result"),
@@ -628,6 +688,12 @@ def main(argv: list[str] | None = None) -> int:
     # ── load OPG data ──────────────────────────────────────────────────────────
     problems   = json.loads((args.data_dir / "problems.json").read_text(encoding="utf-8"))
     categories = json.loads((args.data_dir / "categories.json").read_text(encoding="utf-8"))
+    # canonical PREFIX_english_name, keyed by page id (OPG slug, arXiv review id, bm/others id)
+    canonical_names = {
+        e["id"]: e["name"] for e in json.loads(
+            (args.data_dir / "conjecture_names.json").read_text(encoding="utf-8"))["names"]
+    }
+    PAGE_NAMES.update(canonical_names)
 
     intersection_path = args.data_dir / "intersection.json"
     intersection = (
@@ -889,6 +955,10 @@ def main(argv: list[str] | None = None) -> int:
     others_rows = [_virtual_problem_from_bm(r, source="others") for r in others_records]
     log.info("built %d 'others' virtual row(s)", len(others_rows))
 
+    for prob in problems:
+        prob["_origin"] = {"label": f"Open Problem Garden: {prob['slug']}",
+                           "url": prob.get("canonical_url", ""), "detail": ""}
+
     # ── compute _search for every row ──────────────────────────────────────────
     for row in problems + arxiv_rows + bm_rows + others_rows:
         row["_search"] = _build_search_text(row)
@@ -908,8 +978,10 @@ def main(argv: list[str] | None = None) -> int:
             statement = statement[len(kind):].lstrip(" .: ")
         rel_node_meta["opg:" + prob["slug"]] = {
             "name":      prob["title"],
+            "canonical": canonical_names.get(prob["slug"], ""),
+            "origin":    prob["_origin"],
             "status":    (prob.get("_review") or {}).get("status"),
-            "url":       f"op/{prob['slug']}/",
+            "url":       page_path("opg", prob["slug"]),
             "source":    "opg",
             "kind":      kind,
             "statement": statement,
@@ -922,8 +994,10 @@ def main(argv: list[str] | None = None) -> int:
             continue
         rel_node_meta["arxiv:" + rid] = {
             "name":      row["title"],
+            "canonical": canonical_names.get(rid, ""),
+            "origin":    row["_origin"],
             "status":    (row.get("_review") or {}).get("status"),
-            "url":       f"arxiv/{rid}/",
+            "url":       page_path("arxiv", rid),
             "source":    "arxiv",
             "kind":      row.get("kind", ""),
             "statement": row.get("statement_text", ""),
@@ -933,8 +1007,10 @@ def main(argv: list[str] | None = None) -> int:
     for row in bm_rows + others_rows:
         rel_node_meta[f"{row['_source']}:" + row["bm_id"]] = {
             "name":      row["title"],
+            "canonical": canonical_names.get(row["bm_id"], ""),
+            "origin":    row["_origin"],
             "status":    (row.get("_review") or {}).get("status"),
-            "url":       f"{row['_source']}/{row['bm_id']}/",
+            "url":       page_path(row["_source"], row["bm_id"]),
             "source":    row["_source"],
             "kind":      row.get("kind", ""),
             "statement": row.get("statement_text", ""),
@@ -1005,6 +1081,12 @@ def main(argv: list[str] | None = None) -> int:
         trim_blocks=True,
         lstrip_blocks=True,
     )
+    # cache-busting token so browsers refetch style.css whenever it changes
+    env.globals["static_version"] = hashlib.sha1(
+        (args.static_dir / "style.css").read_bytes()).hexdigest()[:10]
+    env.globals["canonical_names"] = canonical_names
+    env.globals["page_url"] = row_page_path
+    env.globals["opg_page_url"] = lambda slug: page_path("opg", slug)
 
     common = {
         "build_date":           date.today().isoformat(),
@@ -1088,7 +1170,8 @@ def main(argv: list[str] | None = None) -> int:
     op_dir.mkdir(parents=True, exist_ok=True)
     template = env.get_template("problem.html")
     for prob in problems:
-        slug_dir = op_dir / prob["slug"]
+        slug_dir = args.site_dir / page_path("opg", prob["slug"])
+        _write_redirect(args.site_dir, f"op/{prob['slug']}/", page_path("opg", prob["slug"]))
         slug_dir.mkdir(parents=True, exist_ok=True)
         node_id = "opg:" + prob["slug"]
         (slug_dir / "index.html").write_text(
@@ -1122,7 +1205,8 @@ def main(argv: list[str] | None = None) -> int:
             # Use review_id (<safe_id>__<NN>) so papers with multiple conjectures
             # get one page per conjecture instead of overwriting each other.
             page_slug = row.get("_review_id") or row["safe_id"]
-            sub_dir = arxiv_dir / page_slug
+            sub_dir = args.site_dir / page_path("arxiv", page_slug)
+            _write_redirect(args.site_dir, f"arxiv/{page_slug}/", page_path("arxiv", page_slug))
             sub_dir.mkdir(parents=True, exist_ok=True)
             node_id = "arxiv:" + page_slug
             (sub_dir / "index.html").write_text(
@@ -1149,17 +1233,18 @@ def main(argv: list[str] | None = None) -> int:
             for r in row.get("related", []):
                 corpus, note = r.get("corpus"), r.get("note", "")
                 if corpus == "opg" and r.get("slug") in opg_titles:
-                    related.append({"url": f"op/{r['slug']}/", "title": opg_titles[r["slug"]],
+                    related.append({"url": page_path("opg", r["slug"]), "title": opg_titles[r["slug"]],
                                     "note": note, "external": False})
                 elif corpus == "arxiv" and r.get("id") in arxiv_titles:
-                    related.append({"url": f"arxiv/{r['id']}/", "title": arxiv_titles[r["id"]],
+                    related.append({"url": page_path("arxiv", r["id"]), "title": arxiv_titles[r["id"]],
                                     "note": note, "external": False})
                 elif corpus == "erdosproblems" and r.get("id"):
                     related.append({"url": f"https://www.erdosproblems.com/{r['id']}",
                                     "title": f"erdosproblems.com #{r['id']}", "note": note, "external": True})
                 else:
                     log.warning("%s %s: unresolved related record %r", sub, row["bm_id"], r)
-            sub_dir = bm_dir / row["bm_id"]
+            sub_dir = args.site_dir / page_path(sub, row["bm_id"])
+            _write_redirect(args.site_dir, f"{sub}/{row['bm_id']}/", page_path(sub, row["bm_id"]))
             sub_dir.mkdir(parents=True, exist_ok=True)
             node_id = f"{sub}:" + row["bm_id"]
             (sub_dir / "index.html").write_text(

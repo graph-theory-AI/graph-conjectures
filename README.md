@@ -70,7 +70,7 @@ Reviewed status counts:
 | disproved     |   13 |    22 |           1 | counterexample in the literature                          |
 | unclear       |    1 |     3 |           0 | insufficient information to decide                       |
 
-One OPG problem (`ptas_for_feedback_arc_set_in_tournaments`) counts as
+One OPG problem (`OPG_tournament_feedback_arc_set_ptas`, `ptas_for_feedback_arc_set_in_tournaments`) counts as
 `solved` although it was already solved before it was posted on OPG
 (Kenyon-Mathieu–Schudy, STOC 2007). Its review has
 `solved_before_posting: true`, and its page says so.
@@ -82,18 +82,36 @@ second-neighbourhood conjectures, Sidorenko's and Ryser's conjectures
 (counterexamples), and the Harary–Hill and Zarankiewicz crossing-number formulas.
 See [Recently claimed](#recently-claimed-openais-manuscript-collection-october-2026).
 Before that, the **cycle double cover conjecture**
-(`/op/cycle_double_cover_conjecture/`) moved `partial` → `solved` in September
+(`OPG_bridgeless_cycle_double_cover`, `/op/cycle_double_cover_conjecture/`) moved `partial` → `solved` in September
 2026 after the July 2026 OpenAI proof and Sang-il Oum's exposition
 ([arXiv:2607.16356](https://arxiv.org/abs/2607.16356)); see
 [Recently resolved](#recently-resolved-the-cycle-double-cover-conjecture).
 
 **44 of the arXiv-extracted records** were also identified as direct progress
 on existing OPG problems and attached as citations on those OPG pages (e.g. on
-`/op/caccetta_haggkvist_conjecture/` and 20 other pages).
+`OPG_caccetta_haggkvist_outdegree_short_cycle` (`/op/caccetta_haggkvist_conjecture/`) and 20 other pages).
 
 The output site is inspired by
 [erdosproblems.com](https://www.erdosproblems.com/), which itself is an
 excellent companion source.
+
+## Canonical conjecture names
+
+Every record of the four corpora carries a canonical short `name` of the form
+`PREFIX_english_name`, where `PREFIX` is `OPG`, `AX`, `BM` or `OTH` and
+`english_name` is a few lowercase words conveying the statement (e.g.
+`OPG_bridgeless_cycle_double_cover`, `AX_cop_number_sublinear_treedepth`,
+`BM_hypohamiltonian_min_degree_4`, `OTH_meyniel_cop_number_sqrt_n`). The 1034
+names are distinct; slight variants of one statement share a leading stem and
+differ by a trailing qualifier. The old identifiers (OPG slug, arXiv review id,
+`bm_id`, others `id`) are unchanged and remain the keys for data files and
+sibling repositories. Site pages are addressed by the canonical name
+(`/bm/BM_cubic_second_hamilton_cycle_polynomial/`); the old address (`/bm/bm-021/`)
+redirects there; the result files `data/llm_proof_results.json` and
+`data/openai_math_results.json` are keyed by them and also carry the `name`.
+The correspondence old id → new name is in
+[`CONJECTURE_NAMES.md`](CONJECTURE_NAMES.md) and, machine-readable, in
+[`data/conjecture_names.json`](data/conjecture_names.json).
 
 ## Relations between conjectures
 
@@ -140,44 +158,44 @@ manuscript's TeX source. Status changes:
 
 | page | before | after | OpenAI manuscript | Lean |
 |---|---|---|---|---|
-| `bm-041` Hadwiger's conjecture | open | **ai-disproved** | A counterexample to Hadwiger's conjecture: $\alpha(G)\le2$ and $h(G)<26m/75+2/3<m/2\le\chi(G)$ | no |
-| `seagull_problem` | partial | **ai-disproved** | same graphs: no clique minor on $m/2$ vertices | no |
-| `1907.12999__00` ($\alpha\ge n/t$ without a $K_{t+1}$ minor) | open | **ai-disproved** | same graphs, with $t=h(G)$ | no |
-| `list_hadwiger_conjecture` | partial | **ai-proved** | A linear list-coloring bound in terms of the Hadwiger number | yes |
-| `sidorenkos_conjecture` | partial | **ai-disproved** | A counterexample to Sidorenko's conjecture (35 vertices, 66 edges) | yes |
-| `2210.16971__00`, `2210.16971__01` (directed Sidorenko and forcing) | open | **ai-disproved** | same graph, through Theorems 1.5 and 1.8 of the source paper | Sidorenko part only |
-| `rysers_conjecture` | partial | **ai-disproved** | two papers: intersecting $r$-partite hypergraphs with $\tau=r$ | yes |
-| `2505.05339__02` (deletion form implying Ryser) | open | **ai-disproved** | same hypergraphs | yes |
-| `the_crossing_number_of_the_complete_graph` | partial | **ai-proved** | The crossing number of complete graphs (Harary–Hill) | yes |
-| `the_crossing_number_of_the_complete_bipartite_graph` | partial | **ai-proved** | The crossing number of complete bipartite graphs (Zarankiewicz) | yes |
-| `seymours_second_neighbourhood_conjecture` | partial | **ai-proved** | A proof of Seymour's second-neighborhood conjecture | yes |
-| `barnettes_conjecture` | partial | **ai-proved** | Paired states and Hamiltonian cycles in cubic bipartite planar graphs | yes |
+| `BM_hadwiger_minor_chromatic` (`bm-041`) Hadwiger's conjecture | open | **ai-disproved** | A counterexample to Hadwiger's conjecture: $\alpha(G)\le2$ and $h(G)<26m/75+2/3<m/2\le\chi(G)$ | no |
+| `OPG_seagull_independence_2_clique_minor_half_n` (`seagull_problem`) | partial | **ai-disproved** | same graphs: no clique minor on $m/2$ vertices | no |
+| `AX_kt_minor_free_independence_n_over_t` (`1907.12999__00`) ($\alpha\ge n/t$ without a $K_{t+1}$ minor) | open | **ai-disproved** | same graphs, with $t=h(G)$ | no |
+| `OPG_hadwiger_list_kt_minor_free_choosable` (`list_hadwiger_conjecture`) | partial | **ai-proved** | A linear list-coloring bound in terms of the Hadwiger number | yes |
+| `OPG_sidorenko_bipartite_homomorphism_density` (`sidorenkos_conjecture`) | partial | **ai-disproved** | A counterexample to Sidorenko's conjecture (35 vertices, 66 edges) | yes |
+| `AX_directed_sidorenko_bipartite_homomorphism` (`2210.16971__00`), `AX_directed_sidorenko_forcing_cycle_homomorphism` (`2210.16971__01`) (directed Sidorenko and forcing) | open | **ai-disproved** | same graph, through Theorems 1.5 and 1.8 of the source paper | Sidorenko part only |
+| `OPG_ryser_r_partite_hypergraph_cover_matching` (`rysers_conjecture`) | partial | **ai-disproved** | two papers: intersecting $r$-partite hypergraphs with $\tau=r$ | yes |
+| `AX_r_partite_hypergraph_matching_drop_deletion` (`2505.05339__02`) (deletion form implying Ryser) | open | **ai-disproved** | same hypergraphs | yes |
+| `OPG_crossing_number_complete_graph_harary_hill` (`the_crossing_number_of_the_complete_graph`) | partial | **ai-proved** | The crossing number of complete graphs (Harary–Hill) | yes |
+| `OPG_crossing_number_complete_bipartite_zarankiewicz` (`the_crossing_number_of_the_complete_bipartite_graph`) | partial | **ai-proved** | The crossing number of complete bipartite graphs (Zarankiewicz) | yes |
+| `OPG_seymour_second_neighborhood_outdegree` (`seymours_second_neighbourhood_conjecture`) | partial | **ai-proved** | A proof of Seymour's second-neighborhood conjecture | yes |
+| `OPG_barnette_cubic_planar_bipartite_hamiltonian` (`barnettes_conjecture`) | partial | **ai-proved** | Paired states and Hamiltonian cycles in cubic bipartite planar graphs | yes |
 
 Nine further entries link a manuscript as partial progress, with their status
 unchanged:
 
-- `bm-054`: the chromatic number of the plane is 6 or 7.
-- `caccetta_haggkvist_conjecture`: the second-neighbourhood proof gives a
+- `BM_hadwiger_nelson_plane_unit_distance_chromatic` (`bm-054`): the chromatic number of the plane is 6 or 7.
+- `OPG_caccetta_haggkvist_outdegree_short_cycle` (`caccetta_haggkvist_conjecture`): the second-neighbourhood proof gives a
   cycle of length at most 3 when both minimum degrees are at least $n/3$, and
   the girth-four case of Behzad–Chartrand–Wall. Both are listed as open on the
   page. The case $r=n/3$, which bounds only the outdegree, stays open.
-- `fractional_hadwiger`: part (a) fails; parts (b) and (c) are not addressed.
-- `2110.09403__00`, `2201.09115__01`: linear list-colouring bounds, but the
+- `OPG_hadwiger_fractional_chromatic_minor` (`fractional_hadwiger`): part (a) fails; parts (b) and (c) are not addressed.
+- `AX_kt_minor_free_list_chromatic_2t` (`2110.09403__00`), `AX_kst_minor_free_choosable_2s_t` (`2201.09115__01`): linear list-colouring bounds, but the
   constants $2t$ and $2s+t$ remain open.
-- `2206.13635__00`: $h(t)=O(t)$ for hypergraphs.
-- `decomposing_an_eulerian_graph_into_cycles`: $O(n)$ cycles; Hajós's bound
+- `AX_kt_minor_free_hypergraph_chromatic_bound` (`2206.13635__00`): $h(t)=O(t)$ for hypergraphs.
+- `OPG_eulerian_cycle_decomposition_hajos_n_half` (`decomposing_an_eulerian_graph_into_cycles`): $O(n)$ cycles; Hajós's bound
   remains open.
-- `2009.03418__00`: only the $t=0$ case.
-- `1704.02367__01`: polynomial removal is ruled out; exponential dependence is open.
+- `AX_crossing_number_kn_minus_matching` (`2009.03418__00`): only the $t=0$ case.
+- `AX_ordered_removal_lemma_binary_matrices_polynomial` (`1704.02367__01`): polynomial removal is ruled out; exponential dependence is open.
 
-Some entries are not settled despite overlapping topics. `bm-050`
+Some entries are not settled despite overlapping topics. `BM_gyarfas_triangle_free_infinite_chromatic_induced_trees` (`bm-050`)
 (Gyárfás–Sumner for triangle-free graphs) is a different statement from the
-Gyárfás tree-cover conjecture that family 162 disproves. `bm-042` (Hajós for
+Gyárfás tree-cover conjecture that family 162 disproves. `BM_hajos_k5_k6_subdivision_chromatic` (`bm-042`) (Hajós for
 $k=5,6$) is untouched.
 
 The first three changes rest on the Hadwiger counterexample. That manuscript is
 outside OpenAI's Lean formalization of family 157, which covers only the
-list-colouring bound. The forcing corollary used for `2210.16971__01` is likewise
+list-colouring bound. The forcing corollary used for `AX_directed_sidorenko_forcing_cycle_homomorphism` (`2210.16971__01`) is likewise
 outside the Lean scope of family 161. The `ai-*` labels keep these claims apart
 from the literature so they can be revisited once expositions or referee reports
 appear, as happened for the cycle double cover conjecture below.
@@ -200,15 +218,15 @@ What this repository changed as a result (September 2026):
 
 | page | before | after |
 |---|---|---|
-| `cycle_double_cover_conjecture` | partial | **solved** |
-| `the_circular_embedding_conjecture` | partial | partial — but the **cubic case is now settled** |
-| `m_n_cycle_covers` | partial | partial — the **(8,2) box of the chart is now a theorem** |
-| `strong_5_cycle_double_cover_conjecture`, `faithful_cycle_covers`, `cycle_double_covers_containing_predefined_2_regular_subgraphs`, `decomposing_eulerian_graphs`, `petersen_coloring_conjecture` | partial/open | unchanged; their implication *into* CDC is now flagged vacuous |
-| `the_berge_fulkerson_conjecture` | partial | unchanged; the `related_only` reading is confirmed — CDC transfers nothing to it |
+| `OPG_bridgeless_cycle_double_cover` (`cycle_double_cover_conjecture`) | partial | **solved** |
+| `OPG_2_connected_circular_surface_embedding` (`the_circular_embedding_conjecture`) | partial | partial — but the **cubic case is now settled** |
+| `OPG_bridgeless_cycle_double_cover_5_cycles` (`m_n_cycle_covers`) | partial | partial — the **(8,2) box of the chart is now a theorem** |
+| `OPG_bridgeless_cycle_double_cover_strong_5` (`strong_5_cycle_double_cover_conjecture`), `OPG_faithful_cycle_cover_even_weights` (`faithful_cycle_covers`), `OPG_bridgeless_cycle_double_cover_prescribed_2_factor` (`cycle_double_covers_containing_predefined_2_regular_subgraphs`), `OPG_eulerian_cycle_decomposition_compatible_transition_system` (`decomposing_eulerian_graphs`), `OPG_petersen_coloring_bridgeless_cubic` (`petersen_coloring_conjecture`) | partial/open | unchanged; their implication *into* CDC is now flagged vacuous |
+| `OPG_berge_fulkerson_cubic_6_perfect_matchings` (`the_berge_fulkerson_conjecture`) | partial | unchanged; the `related_only` reading is confirmed — CDC transfers nothing to it |
 
 Explicitly **not** settled by the proof, and still open on the site: the 5-cycle
 double cover conjecture (Celmins, Preissmann — the `(5,2)` case of
-`m_n_cycle_covers`), the orientable 5-CDC conjecture (Archdeacon, Jaeger), which
+`OPG_bridgeless_cycle_double_cover_5_cycles` (`m_n_cycle_covers`)), the orientable 5-CDC conjecture (Archdeacon, Jaeger), which
 would imply the 5-flow conjecture, the oriented cycle double cover conjecture,
 Bondy's $n-1$ small cycle double cover conjecture for simple 2-edge-connected
 graphs, the strong embedding conjecture for non-cubic graphs, and
@@ -427,6 +445,7 @@ graph-conjectures/
 │   ├── bm_build_records.py           # Bondy–Murty Appendix A records → JSON
 │   ├── sync_llm_proof_results.py     # Graph-Theory-LLM-Proofs import
 │   ├── sync_openai_math_results.py   # hand-checked OpenAI manuscript matches → JSON
+│   ├── conjecture_names.py           # id → canonical name, added to the result files above
 │   ├── arxiv_fetch_all.py            # legacy /api/query driver (kept for reference)
 │   ├── arxiv_disambig.py             # legacy disambiguation gate
 │   ├── status.sh                     # snapshot all OPG workers
@@ -438,6 +457,7 @@ graph-conjectures/
 │   ├── intersection.json             # fuzzy OPG↔erdos matches; `confirmed` flag per row
 │   ├── arxiv_authors.json            # the 12 curated arxiv authors
 │   ├── arxiv_conjectures.json        # 768 deduped new conjectures
+│   ├── conjecture_names.json         # canonical PREFIX_english_name per conjecture (old id → name)
 │   ├── arxiv_extracted/              # 857 raw per-paper extraction outputs
 │   ├── arxiv_reviews/                # 762 per-conjecture review JSONs
 │   ├── arxiv_opg_matches.{json,tsv}  # arxiv → OPG citation matches (manually triaged)

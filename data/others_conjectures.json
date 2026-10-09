@@ -1,6 +1,7 @@
 [
   {
     "id": "meyniels-conjecture",
+    "name": "OTH_meyniel_cop_number_sqrt_n",
     "title": "Meyniel's conjecture on the cop number",
     "kind": "Conjecture",
     "section": "Cops and Robbers",

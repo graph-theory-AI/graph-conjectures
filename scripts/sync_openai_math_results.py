@@ -30,6 +30,8 @@ import re
 import subprocess
 from pathlib import Path
 
+from conjecture_names import with_name
+
 PROJECT = Path(__file__).resolve().parent.parent
 OUT = PROJECT / "data" / "openai_math_results.json"
 
@@ -468,7 +470,7 @@ def collect(source_dir: Path) -> dict:
         for key in ("derivation", "caveats"):
             if match.get(key):
                 result[key] = match[key]
-        results.append(result)
+        results.append(with_name(result))
 
     ids = [r["id"] for r in results]
     if len(ids) != len(set(ids)):
