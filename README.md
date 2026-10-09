@@ -32,6 +32,23 @@ are excluded. These model-generated results use the separate `ai-proved` or
 settles the problem, the ordinary literature status takes precedence while the
 AI artifact remains available on the detail page.
 
+The same two labels record claims from OpenAI's October 2026 collection of
+model-generated manuscripts ([github.com/openai/math](https://github.com/openai/math),
+722 manuscripts in 372 result families). Matches against the catalogue are made
+by hand, after reading each manuscript's TeX source, and listed in
+[`scripts/sync_openai_math_results.py`](scripts/sync_openai_math_results.py). An
+entry moves to `ai-proved` or `ai-disproved` only when a manuscript settles its
+exact statement, either directly or through a short argument recorded on the page.
+Partial progress is linked without changing the status. See
+[OpenAI's manuscript collection](#recently-claimed-openais-manuscript-collection-october-2026).
+
+The site also displays a separate `ill-posed` diagnostic on 23 arXiv records
+flagged by the automated attacks in
+[Graph-Theory-LLM-Proofs](https://github.com/graph-theory-AI/Graph-Theory-LLM-Proofs).
+These unrefereed model self-reports do not overwrite the literature-review
+status; each affected detail page links to the complete attack artifact and
+includes its reason and caveat.
+
 **Four corpora, one merged index:**
 
 | corpus | count | scope |
@@ -45,10 +62,10 @@ Reviewed status counts:
 
 | status        | OPG  | arXiv | Bondy–Murty | meaning                                                 |
 |---------------|-----:|------:|------------:|----------------------------------------------------------|
-| open          |   51 |   518 |          13 | no significant progress found in literature search       |
-| partial       |  135 |   118 |          21 | progress since posting                                   |
-| ai-proved     |    1 |    10 |           0 | confirmed model-generated proof artifact                 |
-| ai-disproved  |    3 |     8 |           0 | confirmed model-generated counterexample/disproof        |
+| open          |   51 |   514 |          12 | no significant progress found in literature search       |
+| partial       |  127 |   118 |          21 | progress since posting                                   |
+| ai-proved     |    6 |    10 |           0 | model-generated proof (confirmed write-up or OpenAI manuscript) |
+| ai-disproved  |    6 |    12 |           1 | model-generated counterexample/disproof (same sources)   |
 | solved        |   23 |    83 |           3 | fully proved in the literature                            |
 | disproved     |   13 |    22 |           1 | counterexample in the literature                          |
 | unclear       |    1 |     3 |           0 | insufficient information to decide                       |
@@ -58,8 +75,14 @@ One OPG problem (`ptas_for_feedback_arc_set_in_tournaments`) counts as
 (Kenyon-Mathieu–Schudy, STOC 2007). Its review has
 `solved_before_posting: true`, and its page says so.
 
-The most recent status change is the **cycle double cover conjecture**
-(`/op/cycle_double_cover_conjecture/`), moved `partial` → `solved` in September
+The most recent status changes come from **OpenAI's manuscript collection**
+(October 2026). Thirteen entries moved to `ai-proved` or `ai-disproved`, among
+them Hadwiger's conjecture (counterexample), Barnette's and Seymour's
+second-neighbourhood conjectures, Sidorenko's and Ryser's conjectures
+(counterexamples), and the Harary–Hill and Zarankiewicz crossing-number formulas.
+See [Recently claimed](#recently-claimed-openais-manuscript-collection-october-2026).
+Before that, the **cycle double cover conjecture**
+(`/op/cycle_double_cover_conjecture/`) moved `partial` → `solved` in September
 2026 after the July 2026 OpenAI proof and Sang-il Oum's exposition
 ([arXiv:2607.16356](https://arxiv.org/abs/2607.16356)); see
 [Recently resolved](#recently-resolved-the-cycle-double-cover-conjecture).
@@ -114,6 +137,64 @@ verified or peer reviewed before that status can change), and 1 duplicate
 edge is **inconsistent** (its endpoints have different statuses). See
 [`RELATIONS.md`](RELATIONS.md) for the design, findings, and caveats;
 pipeline provenance lives in `data/relations_work/`.
+
+## Recently claimed: OpenAI's manuscript collection (October 2026)
+
+On 6 October 2026 OpenAI released
+[github.com/openai/math](https://github.com/openai/math): 722 manuscripts in
+372 result families, produced by an unreleased internal model and not peer
+reviewed. OpenAI's Lean scope pages (`lean/docs/<family>.md`) name the manuscripts
+whose main result is formalized. The formalization catalogue as a whole is marked
+`review: unchecked`, and this project has not run its Comparator checks.
+
+On 7 October 2026 every family in Combinatorics and Theoretical computer science,
+plus the graph-related families from other sections, was compared with all 1034
+catalogue entries (commit `adc7f12`). Each match was checked against the
+manuscript's TeX source. Status changes:
+
+| page | before | after | OpenAI manuscript | Lean |
+|---|---|---|---|---|
+| `bm-041` Hadwiger's conjecture | open | **ai-disproved** | A counterexample to Hadwiger's conjecture: $\alpha(G)\le2$ and $h(G)<26m/75+2/3<m/2\le\chi(G)$ | no |
+| `seagull_problem` | partial | **ai-disproved** | same graphs: no clique minor on $m/2$ vertices | no |
+| `1907.12999__00` ($\alpha\ge n/t$ without a $K_{t+1}$ minor) | open | **ai-disproved** | same graphs, with $t=h(G)$ | no |
+| `list_hadwiger_conjecture` | partial | **ai-proved** | A linear list-coloring bound in terms of the Hadwiger number | yes |
+| `sidorenkos_conjecture` | partial | **ai-disproved** | A counterexample to Sidorenko's conjecture (35 vertices, 66 edges) | yes |
+| `2210.16971__00`, `2210.16971__01` (directed Sidorenko and forcing) | open | **ai-disproved** | same graph, through Theorems 1.5 and 1.8 of the source paper | Sidorenko part only |
+| `rysers_conjecture` | partial | **ai-disproved** | two papers: intersecting $r$-partite hypergraphs with $\tau=r$ | yes |
+| `2505.05339__02` (deletion form implying Ryser) | open | **ai-disproved** | same hypergraphs | yes |
+| `the_crossing_number_of_the_complete_graph` | partial | **ai-proved** | The crossing number of complete graphs (Harary–Hill) | yes |
+| `the_crossing_number_of_the_complete_bipartite_graph` | partial | **ai-proved** | The crossing number of complete bipartite graphs (Zarankiewicz) | yes |
+| `seymours_second_neighbourhood_conjecture` | partial | **ai-proved** | A proof of Seymour's second-neighborhood conjecture | yes |
+| `barnettes_conjecture` | partial | **ai-proved** | Paired states and Hamiltonian cycles in cubic bipartite planar graphs | yes |
+
+Nine further entries link a manuscript as partial progress, with their status
+unchanged:
+
+- `bm-054`: the chromatic number of the plane is 6 or 7.
+- `caccetta_haggkvist_conjecture`: the second-neighbourhood proof gives a
+  cycle of length at most 3 when both minimum degrees are at least $n/3$, and
+  the girth-four case of Behzad–Chartrand–Wall. Both are listed as open on the
+  page. The case $r=n/3$, which bounds only the outdegree, stays open.
+- `fractional_hadwiger`: part (a) fails; parts (b) and (c) are not addressed.
+- `2110.09403__00`, `2201.09115__01`: linear list-colouring bounds, but the
+  constants $2t$ and $2s+t$ remain open.
+- `2206.13635__00`: $h(t)=O(t)$ for hypergraphs.
+- `decomposing_an_eulerian_graph_into_cycles`: $O(n)$ cycles; Hajós's bound
+  remains open.
+- `2009.03418__00`: only the $t=0$ case.
+- `1704.02367__01`: polynomial removal is ruled out; exponential dependence is open.
+
+Some entries are not settled despite overlapping topics. `bm-050`
+(Gyárfás–Sumner for triangle-free graphs) is a different statement from the
+Gyárfás tree-cover conjecture that family 162 disproves. `bm-042` (Hajós for
+$k=5,6$) is untouched.
+
+The first three changes rest on the Hadwiger counterexample. That manuscript is
+outside OpenAI's Lean formalization of family 157, which covers only the
+list-colouring bound. The forcing corollary used for `2210.16971__01` is likewise
+outside the Lean scope of family 161. The `ai-*` labels keep these claims apart
+from the literature so they can be revisited once expositions or referee reports
+appear, as happened for the cycle double cover conjecture below.
 
 ## Recently resolved: the cycle double cover conjecture
 
@@ -253,7 +334,20 @@ arXiv extraction contains. The same driver reviews them:
 
 Pages render under `/others/<id>/` with a link back to the workstream.
 
-### D. Site build
+### D. OpenAI manuscript matches
+
+The hand-checked matches live in `MATCHES` in
+`scripts/sync_openai_math_results.py`. The script resolves each listed
+manuscript against a checkout of the OpenAI repository, adding the PDF link
+pinned to the checked commit and the Lean flag from `lean/docs/<family>.md`:
+
+```bash
+git clone https://github.com/openai/math ../openai-math
+.venv/bin/python scripts/sync_openai_math_results.py --source-dir ../openai-math
+#                                                   # → data/openai_math_results.json
+```
+
+### E. Site build
 
 ```bash
 .venv/bin/python scraper/build.py --confirmed-only
@@ -289,6 +383,10 @@ Bondy–Murty branch:
 Others branch:
   data/others_conjectures.json                              hand-written workstream conjectures
   bm_review.py --records … → data/others_reviews/<id>.json  status reviews
+
+AI results:
+  sync_llm_proof_results.py    → data/llm_proof_results.json   Graph-Theory-LLM-Proofs import
+  sync_openai_math_results.py  → data/openai_math_results.json OpenAI manuscript matches
 
 Site:
   build.py        →  site/                    Jinja2 → static HTML, KaTeX
@@ -341,6 +439,8 @@ graph-conjectures/
 │   ├── arxiv_review_partition.py     # review-bucket partition
 │   ├── arxiv_review_run_worker.sh    # review worker
 │   ├── bm_build_records.py           # Bondy–Murty Appendix A records → JSON
+│   ├── sync_llm_proof_results.py     # Graph-Theory-LLM-Proofs import
+│   ├── sync_openai_math_results.py   # hand-checked OpenAI manuscript matches → JSON
 │   ├── arxiv_fetch_all.py            # legacy /api/query driver (kept for reference)
 │   ├── arxiv_disambig.py             # legacy disambiguation gate
 │   ├── status.sh                     # snapshot all OPG workers
@@ -361,6 +461,8 @@ graph-conjectures/
 │   ├── bondy_murty_reviews/          # 38 per-item status reviews
 │   ├── others_conjectures.json       # hand-written workstream conjectures (Meyniel, …)
 │   ├── others_reviews/               # their status reviews
+│   ├── llm_proof_results.json        # imported literature corrections and AI write-ups
+│   ├── openai_math_results.json      # 22 entries matched to OpenAI manuscripts
 │   ├── relations.json                # 225 verified conjecture-to-conjecture relations
 │   ├── relations_work/               # relation-pipeline provenance (tags, candidates, verdicts)
 │   ├── categories.json
