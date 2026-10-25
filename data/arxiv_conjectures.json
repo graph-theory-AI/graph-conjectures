@@ -16232,7 +16232,7 @@
     "role": "states",
     "kind": "Conjecture",
     "title": "Conjecture 1.4",
-    "statement_text": "For every graph $H$ there exists $\\varepsilon > 0$ such that in every $H$-free $\\varepsilon$-bounded graph $G$ with $|G| > 1$ vertices, there is an anticomplete $(\\varepsilon|G|, \\varepsilon|G|)$-pair.",
+    "statement_text": "For every graph $H$ there exists $\\varepsilon > 0$ such that in every $H$-free $\\varepsilon$-bounded graph $G$ with $|G| > 1$ vertices, there is an anticomplete $(\\varepsilon|G|^\\varepsilon, \\varepsilon|G|)$-pair.",
     "context_text": "A graph $G$ is $\\varepsilon$-bounded if its maximum degree is less than $\\varepsilon|G|$. By a theorem of Rödl, $H$ satisfies Conjecture 1.3 if and only if both $H$ and $\\bar{H}$ satisfy Conjecture 1.4, so the two conjectures are equivalent over all $H$. For certain graphs $H$, however, 1.4 is more tractable than 1.3.",
     "attributed_to": "paper authors",
     "attributed_year": null,
