@@ -20,12 +20,13 @@ items as <span class="attack-badge attack-ill-posed">ill-posed</span> in the for
 These diagnostics are displayed alongside, and never replace, the literature-review status.</p>
 {% endif %}
 
-<p>A handful of further conjectures are added by hand because they are the subject of a research
-workstream under <code>problems/</code> in the repository but appear in none of the corpora above
-(source badge <span class="badge source source-others">others</span>); each such page links to its workstream.</p>
+<p>A handful of further conjectures are added by hand because they appear in none of the corpora above
+(source badge <span class="badge source source-others">others</span>): most are the subject of a research
+workstream under <code>problems/</code> in the repository, and their pages link to it; the others link to
+their literature source.</p>
 
 <p>The merged index contains {{ problem_count }} OPG problems, {{ arxiv_count }} arXiv-extracted conjectures,
-{{ bm_count }} Bondy–Murty appendix items and {{ others_count }} other workstream conjecture{{ 's' if others_count != 1 else '' }}.
+{{ bm_count }} Bondy–Murty appendix items and {{ others_count }} other hand-added conjecture{{ 's' if others_count != 1 else '' }}.
 Each reviewed item is classified as <code>open</code>, <code>partial</code>, <code>solved</code>,
 <code>disproved</code>, or <code>unclear</code>. Separate <code>ai-proved</code> and
 <code>ai-disproved</code> labels identify model-generated arguments listed in the
