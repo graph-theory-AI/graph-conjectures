@@ -26,7 +26,7 @@
     "kind": "Informal",
     "title": "Informal Conjecture on Tight Constant for Clique Chromatic Number",
     "statement_text": "It seems plausible that $\\chi_c(G(n, 1/2)) = (1/2 + o(1)) \\log n$ whp.",
-    "context_text": "The paper establishes $\\chi_c(G(n,1/2)) = \\Theta(\\log n)$ whp, with the upper bound $(1/2+o(1))\\log_2 n$ coming from McDiarmid–Mitsche–Pratat. The authors note that the constant $\\frac{1}{2000}$ in their lower bound can certainly be improved but that the method as presented does not suffice to pin down the tight constant.",
+    "context_text": "A clique is maximal if it is not properly contained in a larger clique. A clique coloring of $G$ is a vertex coloring in which no maximal clique with at least two vertices is monochromatic, and the clique chromatic number $\\chi_c(G)$ is the minimum number of colors of a clique coloring. $G(n,1/2)$ is the binomial random graph, whp means with probability tending to $1$ as $n\\to\\infty$, and logarithms are in base 2. McDiarmid, Mitsche and Prałat proved $\\chi_c(G(n,1/2))\\le(1/2+o(1))\\log n$ whp and asked for any nontrivial lower bound; the authors prove $\\chi_c(G(n,1/2))\\ge\\frac{1}{2000}\\log n$ whp, so $\\chi_c=\\Theta(\\log n)$, and the same holds for every fixed edge probability $p\\in(0,1)$ (although the ratio between the upper bound $\\Theta(\\log n/p)$ and their lower bound $\\Omega(\\log n/\\log(1/p))$ grows as $p\\to0$). They made no attempt to optimize constants; the constant $\\frac1{2000}$ can certainly be improved, but their method does not seem sufficient to determine the tight constant, which they suggest matches the upper bound.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

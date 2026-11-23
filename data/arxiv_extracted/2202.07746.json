@@ -48,7 +48,7 @@
     "kind": "Conjecture",
     "title": "Conjecture 4",
     "statement_text": "For any simple graph $G$ of order $n$, $E[F] \\leq \\frac{1}{3}n + 1$.",
-    "context_text": "The paper proves $E[F] \\leq \\frac{\\pi^2}{6}n$ for simple graphs (Theorem 8), but no examples approaching this constant are known. A chain of triangles connected by cut edges achieves $E[F] = \\frac{1}{3}n+1$, which the authors conjecture is the true optimal bound.",
+    "context_text": "An embedding is a 2-cell embedding of $G$ in an orientable closed surface, considered up to homeomorphisms inducing the identity on $G$; embeddings correspond bijectively to rotation systems, i.e. a choice of a cyclic ordering of the half-edges (darts) at each vertex. $F$ is the number of faces of an embedding chosen uniformly at random, equivalently obtained by choosing a uniformly random local rotation independently at each vertex; by Euler's formula, bounding $\\mathbb{E}[F]$ is equivalent to bounding the average genus. Stahl proved $\\mathbb{E}[F]\\le n\\log n$ for simple graphs, and Halasz, Masařík, Šámal and the present authors conjectured an $O(n)$ bound. The paper confirms it, proving $\\mathbb{E}[F]\\le n(H_{2\\mu}+1)$ ($H_k$ the harmonic number) for $n$-vertex multigraphs with maximum edge-multiplicity $\\mu$, which is tight up to a constant factor, and $\\mathbb{E}[F]\\le\\frac{\\pi^2}{6}n$ for simple graphs; no simple graphs are known coming close to that constant. A chain of triangles joined by cut edges has $\\mathbb{E}[F]=\\frac13 n+1$, and the authors conjecture this is optimal.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

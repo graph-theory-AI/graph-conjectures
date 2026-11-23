@@ -26,7 +26,7 @@
     "kind": "Problem",
     "title": "Open case of Erdős's problem for fixed small k",
     "statement_text": "For every fixed $k \\geq 4$ and arbitrarily large $r$, does there exist a $k$-chromatic vertex-critical graph $G$ such that $\\chi(G - R) = k$ for every $R \\subseteq E(G)$ with $|R| \\leq r$?",
-    "context_text": "Theorem 1 resolves Erdős's problem for all sufficiently large $k$ (as a function of $r$), but leaves open the regime where $k \\geq 4$ is held fixed as a small constant while $r$ grows. The authors explicitly flag this as an interesting remaining open case.",
+    "context_text": "A graph $G$ is $k$-chromatic vertex-critical if $\\chi(G)=k$ but $\\chi(G-v)=k-1$ for every vertex $v$, and $k$-chromatic edge-critical if $\\chi(G-e)=k-1$ for every edge $e$; an edge $e$ is critical if $\\chi(G-e)<\\chi(G)$. Dirac conjectured in 1970 that for every $k\\ge4$ there is a $k$-chromatic vertex-critical graph with no critical edge; this was proved by Brown ($k=5$), Lattanzio ($k\\ge5$ with $k-1$ not prime) and Jensen (all $k\\ge5$), leaving only $k=4$ open. Erdős (1985) asked for the strengthening that for every $k\\ge4$ and every $r$ there is a $k$-chromatic vertex-critical graph that remains $k$-chromatic after deleting any $r$ edges (Problem 5.14 in Jensen and Toft's book). Little was known for $r\\ge2$. The authors prove that for every $r$ there is $k_0(r)$ such that the answer is yes for every $k\\ge k_0(r)$, using uniform hypergraphs that have a perfect matching after deleting any vertex but are locally sparse; the case where $k\\ge4$ is fixed and $r$ tends to infinity remains open.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

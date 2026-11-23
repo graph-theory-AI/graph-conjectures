@@ -4,7 +4,7 @@
     "kind": "Problem",
     "title": "Problem 3",
     "statement_text": "For integers $k \\geq 4$ and $t \\geq k - 1$, what is the maximum chromatic number of $K_k$-free graphs of tree-width at most $t$?",
-    "context_text": "Theorem 2 establishes that $g(t,k) > \\bigl(1 - \\frac{1}{2^{k-2}}\\bigr)t$ for all $t \\geq 0$ and $k \\geq 2$, providing a lower bound on the maximum chromatic number. The case $k = 3$ (triangle-free) is completely resolved by Theorem 1, which gives the tight bound $\\lceil(t+3)/2\\rceil$, but the question remains open for $k \\geq 4$.",
+    "context_text": "Every graph of tree-width $t$ is $t$-degenerate, hence $(t+1)$-colourable, and $K_{t+1}$ shows this is tight. The authors prove that triangle-free graphs of tree-width at most $t$ have chromatic number at most $\\lceil(t+3)/2\\rceil$, and that this is tight. More generally, define $g(t,2)=g(0,k)=1$ for all $t\\ge0$, $k\\ge2$, and $g(t,k)=\\lceil(t+1)/2\\rceil+g(\\lfloor(t-1)/2\\rfloor,k-1)$ for $t\\ge1$, $k\\ge3$; they prove that for all $t\\ge0$ and $k\\ge2$ there is a $K_k$-free graph of tree-width at most $t$ with chromatic number at least $g(t,k)$. Here $g(t,3)=\\lceil(t+3)/2\\rceil$ for $t\\ge1$ (so the case $k=3$ is completely resolved) and $g(t,k)>(1-\\frac{1}{2^{k-2}})t$. This lower bound motivates the question for $k\\ge4$, which the authors were not able to resolve. In the list colouring setting the analogous question is easy: $K_{t,t^t}$ has tree-width $t$ but is not colourable from some assignment of lists of size $t$.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

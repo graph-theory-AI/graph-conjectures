@@ -4,7 +4,7 @@
     "kind": "Conjecture",
     "title": "Conjecture 1",
     "statement_text": "There exists a constant $c > 1$ such that every $n$-vertex triangle-free planar graph has at least $c^{n^{\\log_{9/2} 3}}$ distinct proper 3-colorings.",
-    "context_text": "Theorem 1 of the paper provides, for infinitely many $n$, an $n$-vertex triangle-free planar graph with at most $64^{n^{\\log_{9/2} 3}} < 64^{n^{0.731}}$ 3-colorings, improving Thomassen's construction. The authors conjecture that the exponent $\\log_{9/2} 3 \\approx 0.731$ in the upper bound is optimal, making Conjecture 1 the matching lower-bound statement.",
+    "context_text": "By Grötzsch's theorem every triangle-free planar graph is 3-colorable. Thomassen conjectured that such graphs have exponentially many proper 3-colorings, and proved that every $n$-vertex triangle-free planar graph has at least $c^{n^{1/12}}$ of them for some constant $c>1$; he later disproved his exponential conjecture by exhibiting, for infinitely many $n$, $n$-vertex triangle-free planar graphs with at most $2^{15n/\\log_2 n}$ 3-colorings. The authors improve this construction: for infinitely many $n$ there is an $n$-vertex triangle-free planar graph with at most $64^{n^{\\log_{9/2} 3}}<64^{n^{0.731}}$ proper 3-colorings. Since it does not seem possible to improve the exponent $\\log_{9/2}3\\approx 0.731$ with the same method, they conjecture that this exponent is optimal, which is the matching lower bound stated here.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

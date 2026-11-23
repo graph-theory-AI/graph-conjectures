@@ -28,7 +28,7 @@
     "kind": "Problem",
     "title": "Erdős-Hajnal property for $\\{C_8, \\overline{C_8}\\}$",
     "statement_text": "Does $\\{C_8, \\overline{C_8}\\}$ have the Erdős-Hajnal property?",
-    "context_text": "The paper proves that $\\{C_6, \\overline{C_6}\\}$ (result 1.7) and $\\{C_7, \\overline{C_7}\\}$ (result 1.8) each have the Erdős-Hajnal property. The authors remark that it would be nice to know whether the same holds for $\\{C_8, \\overline{C_8}\\}$, but that this remains open.",
+    "context_text": "A graph $G$ is $\\mathcal{H}$-free if no induced subgraph of $G$ is isomorphic to a member of $\\mathcal{H}$; $\\overline{H}$ denotes the complement of $H$ and $|G|$ the number of vertices. A set $\\mathcal{H}$ of graphs has the Erdős–Hajnal property if there exists $\\tau>0$ such that $\\max(\\alpha(G),\\omega(G))\\ge|G|^\\tau$ for every $\\mathcal{H}$-free graph $G$; the Erdős–Hajnal conjecture asserts that every single graph has it. Excluding both $C_8$ and $\\overline{C_8}$ is a stronger restriction than excluding $C_8$ alone, so the question is a weakening of the conjecture for $C_8$. The paper's main result is that $C_5$ has the Erdős–Hajnal property; with the same method the authors also prove that $\\{C_6,\\overline{C_6}\\}$ and $\\{C_7,\\overline{C_7}\\}$ have it, that $\\{C,\\overline{H}\\}$ has it for every cycle $C$ and forest $H$, and that a cycle together with the complements of all cycles of length at least $\\ell$ has it. They remark that it would be nice to know whether $\\{C_8,\\overline{C_8}\\}$ has the property, but this remains open.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

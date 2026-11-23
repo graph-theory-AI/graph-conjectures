@@ -2,7 +2,7 @@
 
 {% block main %}
 <div class="index-controls">
-  <input type="search" id="filter" placeholder="Filter by title, author, subject, keyword, status, source…" autofocus>
+  <input type="search" id="filter" placeholder="Filter by title, name (e.g. BM_hadwiger), author, subject, keyword, status, source…" autofocus>
   <span class="index-count"><span id="visible-count">{{ rows|length }}</span> / {{ rows|length }} rows</span>
   {% if review_count %}
   <span class="status-summary" title="OPG literature-review status counts">

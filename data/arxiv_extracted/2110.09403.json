@@ -46,7 +46,7 @@
     "kind": "Problem",
     "title": "Problem 1",
     "statement_text": "Does every $K_t$-minor-free graph $G$ satisfy $\\chi_\\ell(G) \\leq 2t$?",
-    "context_text": "Having established the lower bound $(2-o(1))t$ for the maximum list chromatic number of $K_t$-minor free graphs, the author asks whether the probabilistic lower-bound construction is essentially optimal up to lower-order terms, or whether the lower bound can be further improved beyond $2t$.",
+    "context_text": "The list chromatic number $\\chi_\\ell(G)$ is the smallest $k$ such that $G$ has a proper coloring choosing each vertex's color from its list $L(v)$, for every assignment of lists with $|L(v)|\\ge k$ for all $v$. Kawarabayashi and Mohar (2007) conjectured that there is an absolute constant $c$ such that every $K_t$-minor-free graph has $\\chi_\\ell(G)\\le ct$ (List Hadwiger conjecture), and believed it holds with $c=\\frac{3}{2}$; Barát, Joret and Wood had shown $c\\ge\\frac{4}{3}$ is necessary (a graph with no $K_{3t+2}$-minor and list chromatic number greater than $4t$). The best known upper bound is $O(t(\\log\\log t)^2)$ (Delcourt and Postle). Refuting the $\\frac{3}{2}$ conjecture, this paper shows via a probabilistic construction that for every $\\varepsilon\\in(0,1)$ and $t\\ge t_0(\\varepsilon)$ there is a graph with no $K_t$-minor and $\\chi_\\ell(G)\\ge(2-\\varepsilon)t$, so $c\\ge 2$ is necessary. The author asks whether this lower-bound construction could be optimal up to the lower-order term, or whether a further improvement of the lower bound is possible.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

@@ -74,3 +74,7 @@ problems/tournament_clique_number_omega_cluster/data/ground_projection_law_all.j
 /problems/chen_chvatal_lines_plus_bridges/:
 /problems/chen_chvatal_lines_plus_bridges/:20
 /problems/chen_chvatal_lines_plus_bridges/:24
+
+# Downloaded arXiv sources used to write conjecture contexts (third-party, kept
+# locally for further work, not committed)
+/papers/
