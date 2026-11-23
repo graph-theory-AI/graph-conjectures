@@ -29,7 +29,7 @@
     "kind": "Conjecture",
     "title": "Conjecture 5",
     "statement_text": "Let $G$ be a 2-connected graph of order $n \\geq 10$ not isomorphic to $K_n$, $K^2_n$, or $K^{n-2}_n$. Then $\\eta(G) \\geq 2n$.",
-    "context_text": "The authors note that while $\\eta(K_n)=0$ and $\\eta(K^2_n)=\\eta(K^{n-2}_n)=2n-6$, computer search found only finitely many 2-connected graphs with $\\eta(G)<2n$ and none on 10 or more vertices, motivating this stronger bound beyond the three exceptional families.",
+    "context_text": "Graphs are simple. The Wiener index is $W(G)=\\sum_{\\{a,b\\}\\subseteq V}d(a,b)$, the sum of distances over all pairs of vertices, and the Szeged index is $\\mathrm{Sz}(G)=\\sum_{ab\\in E}n_{ab}(a)\\,n_{ab}(b)$, where $n_{ab}(a)$ is the number of vertices strictly closer to $a$ than to $b$. Let $\\eta(G)=\\mathrm{Sz}(G)-W(G)$; it is non-negative for connected graphs, with equality exactly for block graphs. For $2\\le t\\le n-2$, $K_n^t$ is the graph obtained from $K_{n-1}$ by adding a new vertex adjacent to $t$ of the old vertices (it is $2$-connected and non-complete). The authors prove that every $2$-connected non-complete graph on $n$ vertices has $\\eta(G)\\ge2n-6$ (which implies the conjecture of Nadjafi-Arani, Khodashenas and Ashrafi that $\\eta(G)\\ge\\sum_i(2n_i-6)$ over the non-complete blocks of orders $n_i$), and $\\eta(G)\\ge2n-5$ unless $G$ is $K_n^2$ or $K_n^{n-2}$. Since $\\eta(K_n)=0$ and $\\eta(K_n^2)=\\eta(K_n^{n-2})=2n-6$, and a computer search found $2$-connected graphs with $\\eta(G)<2n$ only on at most $9$ vertices (none on $10$ vertices), they conjecture this stronger bound.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

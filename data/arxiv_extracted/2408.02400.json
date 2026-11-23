@@ -46,7 +46,7 @@
     "kind": "Problem",
     "title": "Problem 1.5",
     "statement_text": "Let $k\\geq 5$. Is there a graph $G_{k}$ with $\\omega(G_{k})<5$, $\\zeta(G_{k})=k$ and $\\chi(G_{k})=\\zeta(G_{k})+3$?",
-    "context_text": "After disproving Conjecture 1.2, the authors ask whether the gap $\\chi(G)-\\zeta(G)$ can reach $3$ for graphs with $\\omega(G)<5$ and arbitrarily large cochromatic number $\\zeta(G)$. Theorem 1.4 guarantees such graphs exist with gap at least $2$ for all large $k$, but gap $3$ remains open.",
+    "context_text": "The cochromatic number $\\zeta(G)$ of a graph $G$ is the minimum size of a partition of $V(G)$ into homogeneous sets, i.e. sets that are independent or cliques; clearly $\\zeta(G)\\le\\chi(G)$, and $\\omega(G)$ is the clique number. Erdős, Gimbel and Straight (1988) conjectured that every graph $G$ with $\\omega(G)<5$ and $\\zeta(G)>3$ satisfies $\\chi(G)\\le\\zeta(G)+2$ (Erdős problem no. 762), their own examples of $K_5$-free graphs with $\\chi(G)>\\zeta(G)+2$ all having $\\zeta(G)\\le3$; Erdős and Gimbel (1993) also asked whether there are only finitely many graphs with $\\omega(G)<5$ and $\\chi(G)>\\zeta(G)+2$. The authors disprove the conjecture and answer the finiteness question negatively by proving that there are infinitely many graphs $G$ with $\\omega(G)<5$, $\\zeta(G)=4$ and $\\chi(G)=7$. The question left open is whether the conclusion of the Erdős–Gimbel–Straight conjecture remains false when $\\zeta(G)$ is required to be large, i.e. whether a gap $\\chi-\\zeta=3$ is possible with $\\omega<5$ for every value $k\\ge5$ of the cochromatic number.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

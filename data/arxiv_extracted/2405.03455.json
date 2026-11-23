@@ -4,7 +4,7 @@
     "kind": "Problem",
     "title": "Open Problem (Introduction)",
     "statement_text": "Determine the correct dependence of $ES_{\\ell}(n)$ on $\\ell$.",
-    "context_text": "The paper establishes that $(3\\ell-1)\\cdot 2^{n-5} < ES_{\\ell}(n) < \\ell^{2}\\cdot 2^{n+C\\sqrt{n\\log n}}$, leaving a gap in the dependence on $\\ell$. In the regime where $n$ is fixed and $\\ell\\to\\infty$, the cups-caps theorem gives $ES_{\\ell}(n)=O(\\ell)$, which is best possible up to constants, but the general joint dependence on both parameters remains open.",
+    "context_text": "A planar point set is in convex position if it is the vertex set of a convex polygon. For $\\ell,n\\ge3$, $ES_\\ell(n)$ is the minimum $N$ such that every set of $N$ points in the plane contains either $\\ell$ collinear points or $n$ points in convex position; thus $ES_3(n)=ES(n)$ is the classical Erdős–Szekeres number for point sets in general position, for which $2^{n-2}+1\\le ES(n)\\le 4^{n+o(n)}$ (Erdős and Szekeres conjectured the lower bound to be tight, and Suk proved $ES(n)=2^{n+o(n)}$). The authors prove that there is a constant $C>0$ such that $(3\\ell-1)\\cdot2^{n-5}<ES_\\ell(n)<\\ell^2\\cdot2^{n+C\\sqrt{n\\log n}}$ for all $\\ell,n\\ge3$, so the dependence on $\\ell$ is between linear and quadratic. Their proof goes through a new cups-caps theorem for arbitrary point sets, which implies that for fixed $n$ and $\\ell\\to\\infty$, $ES_\\ell(n)=O(\\ell)$, best possible up to constants; the joint dependence on $\\ell$ remains open.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

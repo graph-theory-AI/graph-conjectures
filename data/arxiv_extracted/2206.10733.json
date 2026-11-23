@@ -50,7 +50,7 @@
     "kind": "Informal",
     "title": "Open problem on happy triples for $l < k/2$",
     "statement_text": "It would be interesting to consider the best upper bound on the number of happy triples in a graph with $k$ edges and maximum degree at most $l$, for the regime when $l < k/2$.",
-    "context_text": "Lemma 2 establishes a tight bound on happy triples when $l \\geq k/2$, achieved by specific extremal graphs. The authors note that their algorithmic/dynamic-programming approach gives little insight into the $l < k/2$ regime; for example, for $l=3$ and $k=3t$ the extremal graph output is $K_{t,3}$, which does not actually have maximum degree 3 for $t \\geq 4$.",
+    "context_text": "In a graph $G$, a set $\\{u,v,w\\}$ of three vertices is a happy triple if $G[\\{u,v,w\\}]$ has at least two edges. The authors prove that a graph with $k$ edges and maximum degree at most $l\\ge k/2$ has at most $\\binom{l}{2}+\\binom{k-l+1}{2}$ happy triples, and that this is best possible: for $l>k/2$ it is attained by joining the centres of the stars $K_{1,l-1}$ and $K_{1,k-l}$ by an edge, and for $l=k/2$ by $K_{2,l}$ (for $l\\ge k$ the maximum is $\\binom{k}{2}$, attained by $K_{1,k}$). This bound is used to count triangles with two edges of the same colour, in the authors' improved bounds for the triangle case of Aharoni's rainbow generalisation of the Caccetta–Häggkvist conjecture. For $l<k/2$ the question is open; the authors' computer program (a dynamic programming upper bound) gives little insight: for example, for $l=3$ and $k=3t$ the value it outputs is the number of happy triples of $K_{t,3}$, which does not have maximum degree $3$ for $t\\ge4$.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

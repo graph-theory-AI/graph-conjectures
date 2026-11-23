@@ -26,7 +26,7 @@
     "kind": "Question",
     "title": "Question 1.1",
     "statement_text": "Does every connected graph $G$ that is not an odd semi-clique admit a path decomposition into $\\lfloor \\frac{|V(G)|}{2} \\rfloor$ paths?",
-    "context_text": "An odd semi-clique is a graph obtained from a clique on $2k+1$ vertices by deleting at most $k-1$ edges; a simple counting argument shows such a graph cannot be decomposed into $k$ paths. The authors ask whether odd semi-cliques are the only obstructions to a stronger, ceiling-free version of Gallai's conjecture.",
+    "context_text": "Graphs are finite and simple. A path decomposition of $G$ is a collection of paths of $G$ such that each edge belongs to exactly one of them. Gallai's conjecture states that every connected graph on $n$ vertices can be decomposed into at most $\\lceil n/2\\rceil$ paths; it is sharp when all degrees are odd, holds (by Lovász's path-and-cycle decomposition theorem) for graphs with at most one vertex of even degree, and the authors confirm it for graphs of maximum degree at most five. Because the ceiling causes technical complications, the authors propose a stronger, ceiling-free version with explicit exceptions. An odd semi-clique is a graph obtained from a clique on $2k+1$ vertices by deleting at most $k-1$ edges; such a graph has at least $\\binom{2k+1}{2}-(k-1)=2k^2+1$ edges while $k$ paths on $2k+1$ vertices have at most $2k^2$ edges, so it cannot be decomposed into $k=\\lfloor|V(G)|/2\\rfloor$ paths. The question asks whether these are the only obstructions.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",

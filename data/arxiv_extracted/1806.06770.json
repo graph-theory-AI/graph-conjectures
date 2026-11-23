@@ -28,7 +28,7 @@
     "kind": "Question",
     "title": "Closing Question",
     "statement_text": "What is the supremum of all real numbers $c$ such that for any graph $G$ of order at least $2$, $$\\max\\{\\lambda_2(G), \\lambda_2(\\bar{G})\\} \\geq c\\,?$$",
-    "context_text": "The paper proves the supremum is at least $\\tfrac{2}{5}$. The self-complementary path $P_4$ satisfies $\\lambda_2(P_4) = 2 - \\sqrt{2} < 0.5858$, giving an upper bound on the supremum. The exact value is left open.",
+    "context_text": "For a graph $G$ of order $n$, the Laplacian is $L(G)=D(G)-A(G)$, with $D(G)$ the diagonal matrix of degrees and $A(G)$ the adjacency matrix; its eigenvalues are $0=\\lambda_1(G)\\le\\lambda_2(G)\\le\\dots\\le\\lambda_n(G)$, and $\\lambda_2(G)$ is the algebraic connectivity of $G$ (positive if and only if $G$ is connected). $\\bar G$ denotes the complement of $G$; since the Laplacian eigenvalues of $\\bar G$ are $0$ and $n-\\lambda_i(G)$ for $i\\ge2$, one has $\\lambda_2(\\bar G)=n-\\lambda_n(G)$. The Laplacian spread conjecture states that $\\lambda_n(G)-\\lambda_2(G)\\le n-1$, equivalently $\\lambda_2(G)+\\lambda_2(\\bar G)\\ge1$ for every graph of order $n\\ge2$; it was known for trees, unicyclic, bicyclic, tricyclic, cactus and quasi-tree graphs, graphs of diameter other than 3, and bipartite and triangle-free graphs. The authors give the first positive constant lower bound, proving $\\max\\{\\lambda_2(G),\\lambda_2(\\bar G)\\}\\ge\\frac25$ by a routing (weighted congestion) argument, and ask for the best constant. The self-complementary path $P_4$ has $\\lambda_2(P_4)=2-\\sqrt2<0.5858$, so the supremum lies between $\\frac25$ and $2-\\sqrt2$.",
     "attributed_to": "paper authors",
     "attributed_year": null,
     "paper_contribution": "",
