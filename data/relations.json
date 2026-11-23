@@ -3956,6 +3956,25 @@
     "upheld": null,
     "bm_candidate_id": "b042"
    }
+  },
+  {
+   "source": "opg:graceful_tree_conjecture",
+   "target": "others:graceful-lobster-conjecture",
+   "relation": "implies",
+   "verdict": "confirmed",
+   "confidence": "high",
+   "argument": "Every lobster is a tree, and the two records use the same definition of a graceful labeling (an injective labeling of the vertices with 0, ..., m whose edge differences are exactly 1, ..., m). So if all trees are graceful, all lobsters are. The converse fails as a logical implication: lobsters are a proper subclass of trees (for example, the spider with three legs of length 3 is not a lobster).",
+   "citations": [
+    "http://www.openproblemgarden.org/op/graceful_tree_conjecture",
+    "https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS6"
+   ],
+   "provenance": {
+    "edge_id": "e247",
+    "origin": "manual",
+    "n_finders": 1,
+    "reattacked": false,
+    "upheld": null
+   }
   }
  ]
 }

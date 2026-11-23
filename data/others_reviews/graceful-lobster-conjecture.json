@@ -1,0 +1,56 @@
+{
+  "review_id": "graceful-lobster-conjecture",
+  "id": "graceful-lobster-conjecture",
+  "conjecture_title": "Graceful Lobster Conjecture",
+  "reviewed_at": "2026-11-22",
+  "model": "claude-sonnet-4-6",
+  "search_enabled": true,
+  "status": "partial",
+  "confidence": "high",
+  "summary": "Bermond's conjecture that every lobster is graceful remains open. Significant partial results are established: lobsters with an almost perfect matching (a matching covering all but one vertex) are graceful (Krop, 2014); certain families defined by adjacency-matrix constructions are graceful (Ghosh, 2013); and earlier work covers lobsters with a perfect matching and all trees of diameter at most 5. An asymptotic result (Letzter–Pokrovskiy–Williams, 2025) shows every sufficiently large tree has an almost graceful labelling (gracesize ≥ (1−ε)(n−1)), which applies to lobsters but does not resolve the exact conjecture. Gallian's dynamic survey (version November 2026) continues to list the conjecture as open.",
+  "since_posted": [
+    {
+      "title": "Lobsters with an almost perfect matching are graceful",
+      "authors": "Elliot Krop",
+      "year": 2014,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1402.3994",
+      "arxiv_id": "1402.3994",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Every lobster that has a matching covering all but one vertex is graceful."
+    },
+    {
+      "title": "On certain classes of graceful lobsters",
+      "authors": "Shamik Ghosh",
+      "year": 2013,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/1306.2932",
+      "arxiv_id": "1306.2932",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Uses adjacency-matrix methods to identify several families of graceful lobsters and indicates constructions for further classes."
+    },
+    {
+      "title": "On the gracesize of trees",
+      "authors": "Shoham Letzter, Alexey Pokrovskiy, Ella Williams",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2511.11331",
+      "arxiv_id": "2511.11331",
+      "doi": null,
+      "kind": "partial",
+      "claim": "Every sufficiently large tree (hence lobster) has gracesize ≥ (1−ε)(n−1), giving an asymptotic almost-graceful result, but falling short of proving exact gracefulness."
+    }
+  ],
+  "internal_refs_verified": [
+    "graceful_tree_conjecture"
+  ],
+  "search_queries": [
+    "Graceful Lobster Conjecture graph labeling status 2024 2025",
+    "lobster graceful labeling tree conjecture arXiv recent",
+    "Bermond conjecture lobster graceful 2025 2026 solved proof",
+    "\"graceful lobster\" OR \"lobster graceful\" graph labeling 2024 2025 2026"
+  ],
+  "notes": "Gallian's dynamic survey DS6 (version dated November 2026, confirmed from the journal landing page) is the authoritative ongoing record; the conjecture is still listed as open there. The Letzter–Pokrovskiy–Williams 2025 asymptotic result applies to all trees including lobsters, but only in the almost-graceful sense (not every edge-label achieved, just (1−ε) fraction). No paper settling the full conjecture was found in an extended search through November 2026. The related corpus record is the general Graceful Tree Conjecture (OPG: graceful_tree_conjecture), of which this is the lobster special case."
+}

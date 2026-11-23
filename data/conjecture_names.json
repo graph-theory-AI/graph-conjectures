@@ -2,7 +2,7 @@
   "description": "Canonical short names for every conjecture in the corpus, of the form PREFIX_english_name. PREFIX identifies the corpus (OPG: openproblemgarden.org, AX: arXiv-extracted, BM: Bondy–Murty Appendix A, OTH: others); english_name is a few lowercase words giving the gist of the statement, keeping any classical name (author names or a nickname such as seagull) under which the conjecture is known. Names are unique across all corpora. Slight variants of one statement share a leading stem and differ by a trailing qualifier. The `id` column is the pre-existing identifier (OPG slug, arXiv review id <arxiv_id>__<NN>, Bondy–Murty bm_id, or others id), which stays the key for data files and sibling repositories. Site pages live at `site_path`, built from the canonical name; the old /<dir>/<id>/ URL redirects there.",
   "generated_at": "2026-10-06",
   "pattern": "^(OPG|AX|BM|OTH)_[a-z0-9]+(_[a-z0-9]+){1,7}$",
-  "count": 1034,
+  "count": 1035,
   "names": [
     {
       "name": "OPG_odd_hole_free_nonmonochromatic_max_cliques",
@@ -8275,6 +8275,14 @@
       "id": "meyniels-conjecture",
       "title": "Meyniel's conjecture on the cop number",
       "site_path": "/others/OTH_meyniel_cop_number_sqrt_n/"
+    },
+    {
+      "name": "OTH_bermond_lobsters_graceful",
+      "corpus": "others",
+      "prefix": "OTH",
+      "id": "graceful-lobster-conjecture",
+      "title": "Graceful Lobster Conjecture",
+      "site_path": "/others/OTH_bermond_lobsters_graceful/"
     }
   ]
 }
