@@ -54,12 +54,16 @@ def page_path(source: str, page_id: str) -> str:
     return f"{CORPUS_DIRS[source]}/{PAGE_NAMES.get(page_id) or page_id}/"
 
 
+def row_page_id(row: dict) -> str:
+    """Page id of an index row of any corpus (OPG problems have no _source)."""
+    if (row.get("_source") or "opg") == "opg":
+        return row["slug"]
+    return row.get("_review_id") or row.get("safe_id") or row["slug"]
+
+
 def row_page_path(row: dict) -> str:
-    """page_path() for an index row of any corpus (OPG problems have no _source)."""
-    source = row.get("_source") or "opg"
-    if source == "opg":
-        return page_path("opg", row["slug"])
-    return page_path(source, row.get("_review_id") or row.get("safe_id") or row["slug"])
+    """page_path() for an index row of any corpus."""
+    return page_path(row.get("_source") or "opg", row_page_id(row))
 
 
 def _write_redirect(site_dir: Path, old_path: str, new_path: str) -> None:
@@ -961,7 +965,12 @@ def main(argv: list[str] | None = None) -> int:
 
     # ── compute _search for every row ──────────────────────────────────────────
     for row in problems + arxiv_rows + bm_rows + others_rows:
-        row["_search"] = _build_search_text(row)
+        # The canonical name comes first, with underscores and with spaces, so
+        # that typing its beginning ("bm_hadwiger" or "bm hadwiger") finds it.
+        canonical = canonical_names.get(row_page_id(row), "").lower()
+        if canonical:
+            canonical = f"{canonical} {canonical.replace('_', ' ')} "
+        row["_search"] = canonical + _build_search_text(row)
 
     # ── conjecture relation graph (optional; data/relations.json) ──────────────
     relations_path = args.data_dir / "relations.json"
