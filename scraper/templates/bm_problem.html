@@ -130,7 +130,8 @@
 
 <footer class="canonical">
 {% if p._source == 'bm' %}<a href="{{ p.source_info.pdf_url }}#page={{ p.source_info.pdf_page }}">View the appendix page on HAL</a>
-{% else %}<a href="{{ p.source_info.url }}">View the workstream on GitHub</a>{% endif %}
+{% elif p.workstream %}<a href="{{ p.source_info.url }}">View the workstream on GitHub</a>
+{% else %}<a href="{{ p.source_info.url }}">View the source</a>{% endif %}
 </footer>
 </article>
 {% endblock %}

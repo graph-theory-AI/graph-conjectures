@@ -37,5 +37,30 @@
       "url": "https://github.com/graph-theory-AI/graph-conjectures/tree/main/problems/meyniels_conjecture",
       "reference": "P. Frankl, Cops and robbers in graphs with large girth and Cayley graphs, Discrete Applied Mathematics 17 (1987) 301–305"
     }
+  },
+  {
+    "id": "graceful-lobster-conjecture",
+    "name": "OTH_bermond_lobsters_graceful",
+    "title": "Graceful Lobster Conjecture",
+    "kind": "Conjecture",
+    "section": "Labeling",
+    "statement_text": "Every lobster is graceful: if $T$ is a lobster with $m$ edges, there is an injective labeling $f\\colon V(T)\\to\\{0,1,\\dots,m\\}$ such that $\\{|f(u)-f(v)| : uv\\in E(T)\\} = \\{1,2,\\dots,m\\}$.",
+    "context_text": "A caterpillar is a tree whose non-leaf vertices induce a path; a lobster is a tree that becomes a caterpillar after all its leaves are deleted. Caterpillars are graceful (Rosa 1967), so lobsters are the natural next class towards the Graceful Tree Conjecture (Ringel–Kotzig), of which this conjecture is a special case. Known partial results include lobsters with a perfect matching (Morgan 2002), all trees of diameter at most 5 (Hrnčiar and Haviar 2001), and many families defined by the numbers of branches at the spine vertices (Wang, Jin, Lu and Zhang 1994; Mishra and coauthors 2010–2017; Superdock 2013). Krop (arXiv:1402.3994; Bull. Inst. Combin. Appl. 74 (2015)) claims the case of lobsters with an almost perfect matching. Every tree with at most 35 vertices is graceful (Fang, arXiv:1003.3045), so small cases carry no information on the conjecture.",
+    "attributed_to": "J.-C. Bermond",
+    "attributed_year": 1979,
+    "coverage": "missing",
+    "related": [
+      {
+        "corpus": "opg",
+        "slug": "graceful_tree_conjecture",
+        "note": "the Graceful Tree Conjecture (all trees are graceful), which contains this conjecture as the special case of lobsters"
+      }
+    ],
+    "notes": "Stated in J.-C. Bermond, 'Graceful graphs, radio antennae and French windmills' (1979), and listed as open in Gallian's dynamic survey of graph labeling. Not in the corpus before this record: Open Problem Garden has only the general Graceful Tree Conjecture, the arXiv extraction has no lobster-gracefulness record, and the Bondy–Murty appendix does not list it. Added on request (issue #25), without a workstream in this repository.",
+    "source": {
+      "title": "J. A. Gallian, A dynamic survey of graph labeling, Electron. J. Combin. DS6 (lists the conjecture as open)",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS6",
+      "reference": "J.-C. Bermond, Graceful graphs, radio antennae and French windmills, in Graph Theory and Combinatorics (Milton Keynes, 1978), Research Notes in Math. 34, Pitman, London, 1979, 18–37"
+    }
   }
 ]

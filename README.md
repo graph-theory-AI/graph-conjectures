@@ -56,7 +56,7 @@ includes its reason and caveat.
 | **OPG**    |  227 | full graph-theory tag of openproblemgarden.org |
 | **arXiv**  |  768 | new conjectures from 857 arxiv papers (2016–2026) by 12 curated authors |
 | **Bondy–Murty** | 38 | items of Appendix A (100 "unsolved problems") of Bondy & Murty's *Graph Theory* that the two corpora above did not cover ([cross-check](BONDY_MURTY_APPENDIX_A.md)) |
-| **others** | 1 | conjectures studied in a `problems/` workstream but absent from OPG and the arXiv extraction (currently Meyniel's cop-number conjecture) |
+| **others** | 2 | hand-added conjectures absent from OPG and the arXiv extraction: Meyniel's cop-number conjecture (studied in a `problems/` workstream) and Bermond's Graceful Lobster Conjecture |
 
 Reviewed status counts:
 
@@ -101,7 +101,7 @@ Every record of the four corpora carries a canonical short `name` of the form
 `PREFIX_english_name`, where `PREFIX` is `OPG`, `AX`, `BM` or `OTH` and
 `english_name` is a few lowercase words conveying the statement (e.g.
 `OPG_bridgeless_cycle_double_cover`, `AX_cop_number_sublinear_treedepth`,
-`BM_hypohamiltonian_min_degree_4`, `OTH_meyniel_cop_number_sqrt_n`). The 1034
+`BM_hypohamiltonian_min_degree_4`, `OTH_meyniel_cop_number_sqrt_n`). The 1035
 names are distinct; slight variants of one statement share a leading stem and
 differ by a trailing qualifier. The old identifiers (OPG slug, arXiv review id,
 `bm_id`, others `id`) are unchanged and remain the keys for data files and
@@ -128,7 +128,9 @@ conjecture-name collision); 190 edges survived, and 4 duplicate pairs the
 phase-B dedup had missed were merged in September 2026. An incremental pass
 then connected the Bondy–Murty and `others` corpora, adding 39 edges (34
 confirmed, 5 plausible) out of 42 candidates, plus one follow-up edge
-(orientable 5-CDC ⇒ 5-flow). "Verified" means
+(orientable 5-CDC ⇒ 5-flow), and one hand-added edge (Graceful Tree Conjecture ⇒
+Graceful Lobster Conjecture, a direct specialization not put through the referee pass).
+"Verified" means
 checked by adversarial AI referees, **not** formally verified — no argument
 has been machine-checked in a proof assistant such as Rocq or Lean.
 Confronting each edge with the review statuses of its two endpoints is now
@@ -327,16 +329,17 @@ English statement, the attribution, and `related` pointers to the nearest
 OPG / arXiv / erdosproblems.com records. Pages render under `/bm/<bm_id>/`.
 
 **Other workstream conjectures.** `data/others_conjectures.json` holds
-hand-written records with the same shape (plus a `workstream` path) for
-conjectures that a `problems/` workstream studies but that neither OPG nor the
-arXiv extraction contains. The same driver reviews them:
+hand-written records with the same shape (plus an optional `workstream` path) for
+well-known conjectures that neither OPG nor the arXiv extraction contains, usually
+because a `problems/` workstream studies them. The same driver reviews them:
 
 ```bash
 .venv/bin/python scraper/bm_review.py --records data/others_conjectures.json \
     --out-dir data/others_reviews --system-prompt scraper/others_review_system_prompt.md --all
 ```
 
-Pages render under `/others/<id>/` with a link back to the workstream.
+Pages render under `/others/<id>/` with a link back to the workstream, or to the
+literature source when the record has none.
 
 ### D. OpenAI manuscript matches
 
@@ -464,7 +467,7 @@ graph-conjectures/
 │   ├── arxiv_internal_refs.{json,tsv} # intra-corpus cross-refs (Phase 1)
 │   ├── bondy_murty_conjectures.json  # 38 Bondy–Murty Appendix A items not covered elsewhere
 │   ├── bondy_murty_reviews/          # 38 per-item status reviews
-│   ├── others_conjectures.json       # hand-written workstream conjectures (Meyniel, …)
+│   ├── others_conjectures.json       # hand-written conjectures (Meyniel, graceful lobsters)
 │   ├── others_reviews/               # their status reviews
 │   ├── llm_proof_results.json        # imported literature corrections and AI write-ups
 │   ├── openai_math_results.json      # 22 entries matched to OpenAI manuscripts

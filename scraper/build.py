@@ -548,7 +548,8 @@ def _bm_origin(rec: dict, source: str) -> dict:
     """Where a Bondy–Murty / others record comes from: the book page, or the workstream."""
     src = rec.get("source") or {}
     if source != "bm":
-        return {"label": "research workstream", "url": src.get("url", ""),
+        label = "research workstream" if rec.get("workstream") else "literature source"
+        return {"label": label, "url": src.get("url", ""),
                 "detail": src.get("reference", "")}
     pdf, page = src.get("pdf_url"), src.get("pdf_page")
     detail = "Théorie des graphes (French edition, 2025)"
